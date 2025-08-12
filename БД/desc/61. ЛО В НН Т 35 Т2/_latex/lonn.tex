@@ -1,0 +1,198 @@
+% Строчки для суммарной таблицы, в следующей строке прописаны используемые экземпляры узлов
+%===s control, LLN0, LVCBPTRC1, LVCBRECRBRE1, LVBTSRBLC1
+
+%\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Логика отключения выключателя стороны НН трансформатора (ЛО НН)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\color{uniblue}{\subsubsection{Общие сведения}}
+%\color{black}
+
+\item Общие сведения
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+% ЗДЕСЬ ВЕТВЛЕНИЕ, если исполнение Т2 то вставляем первый абзац
+\ifboolexpr{bool {isT2}}
+{
+    \item
+    В составе устройства предусматриваются две функции <<ЛО НН1>> и <<ЛО НН2>> (для стороны НН1 и НН2 соответственно), ниже приводится общее описание работы функции <<ЛО НН>>. 
+}
+{}
+
+\item
+Функциональный блок <<ЛО НН>> служит для формирования команды отключения в схему выключателя ввода стороны НН трансформатора (функция <<ЛО>>), команды запрета АПВ (функция <<ЗАПВ>>) в схему АПВ выключателя ввода секции НН и команды запрета АВР (функция <<ЗАВР>>) в схему АВР секций НН. 
+\item
+В составе устройства предусматривается одна логика отключения стороны НН трансформатора (для схем управления вводным выключателелем секции НН).
+\item
+Функциональный блок <<ЛО НН>> может быть выведен из работы оперативно путем активации сигнала <<ОВ~ЛО~НН>>.
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛОГИКА ОТКЛЮЧЕНИЯ ВЫКЛЮЧАТЕЛЯ НН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\color{uniblue}{\subsubsection{Логика отключения выключателя ввода стороны НН (ЛО)}}
+%\color{black}
+
+\item Логика отключения выключателя ввода стороны НН (ЛО)
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Ввод функции <<ЛО>> в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ЛО НН / ЛО: Ввод>>.
+\item
+Функция <<ЛО>> может быть выведена из работы оперативно путем активации сигнала <<ОВ ЛО НН / ЛО>>, что характеризуется активным состоянием сигнала <<ЛО НН / ЛО: Оперативный вывод>> на выходе функции.  
+\item
+Функция принимает сигнал срабатывания от общей логики отключения трансформатора и формирует сигналы <<ЛО НН / ЛО: Отключение>> и <<ЛО НН / ЛО: Отключить аварийно>>, сигнал <<ЛО НН / ЛО: Отключить аварийно>> является импульсным, время импульса определяется выдержкой времени таймера T1 (уставка <<Тимп>>).
+\item
+Алгоритм работы <<ЛО>> выполнен в соответствии с рисунком \ref{lonn:img_lov}. В таблице \ref{lonn:tbl_lov} приведены параметры, необходимые для настройки функции <<ЛО>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/61. ЛО В НН Т 35 Т2/_latex/img/lov.pdf}
+\captionof{figure}{Функциональная схема <<ЛО>>}\label{lonn:img_lov}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<ЛО>>\hfill\vspace{-0.5\baselineskip}}\label{lonn:tbl_lov}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lonn:tbl_lov}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*LVCBPTRC1|LVTRESCBOFF1
+%===t1*LVCBPTRC1
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Длительность импульса (Тимп) & \centering T1 & \centering 0,05 ... 60,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛОГИКА ЗАПРЕТА АПВ НН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\color{uniblue}{\subsubsection{Логика запрета АПВ выключателя ввода стороны НН (Запрет АПВ)}}
+%\color{black}
+
+\item Логика запрета АПВ выключателя ввода стороны НН (Запрет АПВ)
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Ввод функции <<Запрет АПВ>> в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ЛО НН / ЗАПВ: Ввод>>.
+\item
+Функция <<Запрет АПВ>> может быть выведена из работы оперативно путем активации сигнала <<ОВ ЛО НН / ЗАПВ>>, что характеризуется активным состоянием сигнала <<ЛО НН / ЗАПВ: Оперативный вывод>> на выходе функции.
+\item
+Функция принимает сигнал срабатывания от общей логики отключения и формирует сигналы <<ЛО НН / ЗАПВ: Запрет АПВ>>.
+\item
+Алгоритм работы <<Запрет АПВ>> выполнен в соответствии с рисунком \ref{lonn:img_zapv}. В таблице \ref{lonn:tbl_zapv} приведены параметры, необходимые для настройки функции <<Запрет АПВ>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/61. ЛО В НН Т 35 Т2/_latex/img/zapv.pdf}
+\captionof{figure}{Функциональная схема <<Запрет АПВ>>}\label{lonn:img_zapv}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<Запрет АПВ>>\hfill\vspace{-0.5\baselineskip}}\label{lonn:tbl_zapv}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lonn:tbl_zapv}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*LVCBRECRBRE1|LVTRESCBOFF1
+%===t1*LVCBRECRBRE1
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛОГИКА ЗАПРЕТА АВР НН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\color{uniblue}{\subsubsection{Логика запрета АВР стороны НН (Запрет АВР)}}
+%\color{black}
+
+\item Логика запрета АВР стороны НН (Запрет АВР)
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item\sloppy
+Ввод функции <<Запрет АВР>> в работу осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ЛО НН / ЗАВР: Ввод>>.
+\item
+Функция <<Запрет АВР>> может быть выведена из работы оперативно путем активации сигнала <<ОВ ЛО НН / ЗАВР>>, что характеризуется активным состоянием сигнала <<ЛО НН / ЗАВР: Оперативный вывод>> на выходе функции.
+\item
+Функция принимает сигнал срабатывания от общей логики отключения и формирует сигналы <<ЛО НН / ЗАВР: Запрет АВР>>.
+\item
+Алгоритм работы <<Запрет АВР>> выполнен в соответствии с рисунком \ref{lonn:img_zavr}. В таблице \ref{lonn:tbl_azvr} приведены параметры, необходимые для настройки функции <<Запрет АВР>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/61. ЛО В НН Т 35 Т2/_latex/img/zavr.pdf}
+\captionof{figure}{Функциональная схема <<Запрет АВР>>}\label{lonn:img_zavr}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<Запрет АВР>>\hfill\vspace{-0.5\baselineskip}}\label{lonn:tbl_azvr}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lonn:tbl_azvr}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*LVBTSRBLC1|LVTRESCBOFF1
+%===t1*LVBTSRBLC1
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
+
+\end{enumerate}

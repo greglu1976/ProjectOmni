@@ -1,0 +1,32 @@
+% Пример расчета ТО для Т менее 6,3 МВА
+\item \textbf{Выбор уставки токовой отсечки}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=3pt]
+%\begin{enumerate}[label={}, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+По выражению (\ref{eq:to1}) определяется первичный ток срабатывания токовой отсечки $I_{\textsl{с.з.ТО}}$:
+\begin{equation*}
+    I_{\textsl{с.з.ТО}} = k_{\textsl{н}} \cdot I_{\textsl{к.макс.}}^{(3)} = 1,2 \cdot 581 = 697,2\; (\textsl{А})  ,
+\end{equation*}
+
+\item
+Для оценки чувствительности токовой отсечки необходимо определить коэффициент чувствительности по формуле:
+\begin{equation*}
+k_{\textsl{ч}} = \frac{I_{\textsl{к.мин(k1)}}^{(2)}}{I_{\textsl{с.з.ТО}}}= \frac{0,87 \cdot 2570}{697,2} = 3,2 > 2,0,
+\end{equation*}
+
+\item
+Уставка задается в относительных единицах от номинального тока аналогового входа устройства, для этого полученное значение пересчитывается по следующему выражению:
+\begin{equation*}
+    I_{\textsl{ср}} = \frac{I_{\textsl{с.з.МТЗ}}^I}{I_{\textsl{ном.вх.уст}}} \cdot \frac{I_{\textsl{ном.вт.ТТ}}}{I_{\textsl{ном.пер.ТТ}}} = \frac{697,2}{5} \cdot \frac{5}{600} = 1,16\; (\textsl{о.е.}),
+\end{equation*}
+\begin{eqexpl}[15mm]
+    \item{$I_{\textsl{ном.вх.уст}}$} номинальный ток аналоговых входов устройства, 1 или 5 А;
+    \item{$I_{\textsl{ном.вт.ТТ}}$} номинальный вторичный ток ТТ, А;
+    \item{$I_{\textsl{ном.пер.ТТ}}$} номинальный первичный ток ТТ, А.
+\end{eqexpl}
+\item
+Параметр \textbf{$I_{\textsl{ср}}$} <<Ток срабатывания>> функции ТО принимается \textbf{равным 1,16}.
+
+\end{enumerate}

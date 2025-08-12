@@ -1,0 +1,43 @@
+\begin{flushleft}
+\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Логика отключения трансформатора от внешних защит (ЛОвнеш)}}
+\color{black}
+\nopagebreak
+\vspace{3mm}
+\end{flushleft}
+
+\par
+Функциональный блок <<ЛОвнеш>> принимает сигналы срабатывания от внешних защитных функций и формирует общий сигнал отключения при срабатывании внешних защит.
+
+\par
+Алгоритм работы <<ЛОвнеш>> выполнен в соответствии с рисунком \ref{lovnesh:img1}. В таблице \ref{lovnesh:tbl1} приведены параметры, необходимые для настройки функции <<ЛОвнеш>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/34. ЛОвнеш Т 35 Т/_latex/img/1.pdf}
+\captionof{figure}{Функциональная схема логики отключения трансформатора от внешних защит}\label{lovnesh:img1}
+\end{figure}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{5cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{1cm}|}
+
+\caption{Параметры для настройки функции <<ЛОвнеш>>\hfill\vspace{-0.5\baselineskip}}\label{lovnesh:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+\centering Ввод функции в работу (Ввод функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\ 1 = Предусмотрено & \centering - & \centering\arraybackslash - \\ 
+\hline
+\end{longtable}
+

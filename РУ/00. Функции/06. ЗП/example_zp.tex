@@ -1,0 +1,26 @@
+\item \textbf{Выбор уставок защиты от перегрузки}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=3pt]
+%\begin{enumerate}[label={}, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+По выражению (\ref{eq:zp1}) определяется первичный ток срабатывания защиты от перегрузки $I_{\textsl{с.з.ЗП}}$:
+\begin{equation*}
+    I_{\textsl{с.з.ЗП}} = \frac{K_{\textsl{отс}}}{K_{\textsl{в}}} \cdot I_{\textsl{ном.ст.}} = \frac{1,05}{0,95} \cdot 250 = 276\; (\textsl{А}),
+\end{equation*}
+
+Уставка задается в относительных единицах от номинального тока аналогового входа устройства, для этого полученное значение пересчитывается по следующему выражению:
+\begin{equation*}
+    I_{\textsl{ср}} = \frac{I_{\textsl{с.з.ЗП}}}{I_{\textsl{ном.вх.уст}}} \cdot \frac{I_{\textsl{ном.вт.ТТ}}}{I_{\textsl{ном.пер.ТТ}}} = \frac{276}{5} \cdot \frac{5}{400} = 0,7\; (\textsl{о.е.}),
+\end{equation*}
+\begin{eqexpl}[15mm]
+    \item{$I_{\textsl{ном.вх.уст}}$} номинальный ток аналоговых входов устройства, 1 или 5 А;
+    \item{$I_{\textsl{ном.вт.ТТ}}$} номинальный вторичный ток ТТ, А;
+    \item{$I_{\textsl{ном.пер.ТТ}}$} номинальный первичный ток ТТ, А.
+\end{eqexpl}
+
+\item
+Параметр \textbf{$I_{\textsl{ср}}$} <<Ток срабатывания>> функции ЗП принимается \textbf{равным 0,7}.
+\item
+Параметр \textbf{$T_{\textsl{ср}}$} <<Выдержка времени срабатывания>> функции ЗП принимается \textbf{равным 10 c}.
+\end{enumerate}

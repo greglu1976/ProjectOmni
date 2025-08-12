@@ -1,0 +1,203 @@
+% КООРДИНАТЫ ДЛЯ ЛИНИЙ
+% (А, В) -- (А, С) --(D, С)
+%
+%                      | B(^)
+%                      | 
+%    D(<>) ------------A(<>)C(^)
+
+\def\aDelta{4} %смещение координаты А
+\def\dCoord{11} % начальная левая координата для всех линий определяется как 7+\aDelta
+
+\newgeometry{
+  a4paper,
+  top=15mm,
+  bottom=10mm,
+  right=5mm,
+  left=20mm,
+}
+\begin{landscape}
+
+\setlength{\headsep}{7.5mm} 
+\setlength{\topmargin}{-27mm}
+\setlength{\footskip}{0mm}
+
+\color{uniblue}{\section[(обязательное) Код заказа устройства для архитектуры I типа]{(обязательное)\\Код заказа устройства для архитектуры I типа}\label{app:card}}
+\color{black}
+
+\scriptsize
+\hspace{\dimexpr 6.45cm + \aDelta cm} % Добавляем отступ слева в 2 см
+\textbf{ЮНИТ-М319-Т2-
+    \tikz[baseline=(char.base)]{
+        \node[rectangle, fill=uniblue, text=white, inner sep=2pt] (char) {\textbf{M1}};
+    } -
+    \tikz[baseline=(char.base)]{
+        \node[rectangle, fill=unired, text=white, inner sep=2pt] (char) {\textbf{M2}};
+    } -
+    {\textbf{K002}
+    } - 
+    {\textbf{K002}
+    } - 
+    {\textbf{K002}
+    } - 
+    {\textbf{B001}
+    } - 
+    {\textbf{B001}
+    } -
+    {\textbf{B001}
+    } -
+    {\textbf{B021}
+    } -
+    {\textbf{B021}
+    } - 
+    {\textbf{B021}
+    } -  
+    \tikz[baseline=(char.base)]{
+        \node[rectangle, fill=uniblue, text=white, inner sep=2pt] (char) {\textbf{M12}};
+    } - 
+    {\textbf{X}
+    } -      
+    \tikz[baseline=(char.base)]{
+        \node[rectangle, fill=unired, text=white, inner sep=2pt] (char) {\textbf{M14}};
+    } - 
+    \tikz[baseline=(char.base)]{
+        \node[rectangle, fill=uniblue, text=white, inner sep=2pt] (char) {\textbf{Ф}};
+    } - 
+    \tikz[baseline=(char.base)]{
+        \node[rectangle, fill=unired, text=white, inner sep=2pt] (char) {\textbf{В}};
+    }                                     
+}
+
+\setlength{\extrarowheight}{0.0cm} % высота ячеек в таблице
+
+\scriptsize
+\vspace{0.3cm}
+
+\begin{flushleft}
+    \hspace{\aDelta cm}
+    \begin{tabular}{|p{6.2cm}|p{2.1cm}|}
+        \hline
+        \rowcolor{uniblue} % Синий цвет с прозрачностью
+        \multicolumn{2}{|l|}{\textcolor{white}{Модуль в слоте М1}} \\ % Объединение ячеек
+        \hline
+        Модуль источника питания Uном=/\~{} 110 В & Р01 \\ 
+        \hline
+        Модуль источника питания Uном=/\~{} 220 В    & Р02 \\
+        \hline
+        Модуль источника питания Uном=/\~{} 220 В, блок конденсаторов    & Р02c \\
+        \hline
+        Модуль источника питания Uном=24 В    & Р04 \\
+        \hline
+    \end{tabular}
+\end{flushleft}
+
+% Начинаем TikZ
+\begin{tikzpicture}[overlay]
+    \draw[uniblue, very thick] (8.6+\aDelta, 2.6) -- (8.6+\aDelta, 2.05) -- (\dCoord, 2.05); % Новые координаты
+\end{tikzpicture}
+
+\begin{flushleft}
+    \hspace{\aDelta cm}
+    \begin{tabular}{|p{6.2cm}|p{2.1cm}|}
+        \hline
+        \rowcolor{unired}
+        \multicolumn{2}{|l|}{\textcolor{white}{Модуль в слоте М2}} \\ % Объединение ячеек
+        \hline
+        Нет модуля или в слоте М1 установлены модули: P05, P02c & X \\ 
+        \hline
+        Модуль дискретных входов    & B001,B021 \\
+        \hline
+        Модуль реле    & K001,K002,K003,K004 \\
+        \hline
+    \end{tabular}
+\end{flushleft}
+
+% Начинаем TikZ
+\begin{tikzpicture}[overlay]
+    \draw[unired, very thick] (9.26+\aDelta, 4.1) -- (9.26+\aDelta, 1.35) -- (\dCoord, 1.35); % Новые координаты
+\end{tikzpicture}
+
+
+\begin{flushleft}
+    \hspace{\aDelta cm}
+    \begin{tabular}{|p{6.2cm}|p{2.1cm}|}
+        \hline
+        \rowcolor{uniblue}
+        \multicolumn{2}{|l|}{\textcolor{white}{Модуль в слоте М12}} \\ % Объединение ячеек
+        \hline
+        \makecell[l]{Модуль измерительный \\ a - количество фазных ТТ с номинальным током 5А; \\ b - количество фазных ТТ с номинальным током 1А; \\ c - количество чувствительных ТТ с номинальным \\током 1А; \\ d - количество чувствительных ТТ с номинальным \\током 0,2А.}
+          & M046.abcd \\ 
+        \hline
+    \end{tabular}
+\end{flushleft}
+
+% Начинаем TikZ
+\begin{tikzpicture}[overlay]
+    \draw[uniblue, very thick] (17.4+\aDelta, 7.0) -- (17.4+\aDelta, 2.6) -- (\dCoord, 2.6); % Новые координаты
+\end{tikzpicture}
+
+\begin{flushleft}
+    \hspace{\aDelta cm}
+    \begin{tabular}{|p{6.2cm}|p{2.1cm}|}
+        \hline
+        \rowcolor{unired}
+        \multicolumn{2}{|l|}{\textcolor{white}{Модуль в слоте М14}} \\ % Объединение ячеек
+        \hline
+        \makecell[l]{Модуль центрального процессора с интерфейсами:\\ Ethernet - 4 шт.} & C01.ар \\ 
+        \hline
+        \makecell[l]{Модуль центрального процессора с интерфейсами:\\ Ethernet - 4 шт., CANbus - 2 шт., RS485 - 2 шт.} & C02.ар \\ 
+        \hline
+        \multicolumn{2}{|p{8.3cm}|}{\makecell[l]{где, \textbf{a:} \\0 - 4 слота под установку SFP модулей; \\ 1 - 2xRJ45 100Base-TX + 2 слота под установку SFP модулей.}} \\ 
+        \hline 
+        \multicolumn{2}{|p{8.3cm}|}{\makecell[l]{где, \textbf{p:} \\
+        0 - МЭК 61850-8-1; \\ 
+        1 - МЭК 61850-8-1, МЭК 60870-5-104, Modbus-TCP;\\
+        2 - МЭК 60870-5-104/103/101, Modbus-RTU/TCP (только для модуля C02);\\
+        3 - МЭК 61850-8-1, МЭК 60870-5-104/103/101, Modbus-RTU/TCP \\(только для модуля C02).
+        }} \\ 
+        \hline                          
+    \end{tabular}
+\end{flushleft}
+
+% Начинаем TikZ
+\begin{tikzpicture}[overlay]
+    \draw[unired, very thick] (18.6+\aDelta, 12.1) -- (18.6+\aDelta, 4.65) -- (\dCoord, 4.65); % Новые координаты
+\end{tikzpicture}
+
+\begin{flushleft}
+    \hspace{\aDelta cm}
+    \begin{tabular}{|p{6.2cm}|p{2.1cm}|}
+        \hline
+        \rowcolor{uniblue}
+        \multicolumn{2}{|l|}{\textcolor{white}{Версия функциональной схемы устройства}} \\ % Объединение ячеек
+        \hline
+        \multicolumn{2}{|p{8.74cm}|}{\makecell[l]{Номер версии (справочно, опционально)}} \\ 
+        \hline 
+    \end{tabular}
+\end{flushleft}
+
+% Начинаем TikZ
+\begin{tikzpicture}[overlay]
+    \draw[uniblue, very thick] (19.26+\aDelta, 12.8) -- (19.26+\aDelta, 0.7) -- (\dCoord, 0.7); % Новые координаты
+\end{tikzpicture}
+
+\begin{flushleft}
+    \hspace{\aDelta cm}
+    \begin{tabular}{|p{6.2cm}|p{2.1cm}|}
+        \hline
+        \rowcolor{unired}
+        \multicolumn{2}{|l|}{\textcolor{white}{Версия встроенного программного обеспечения}} \\ % Объединение ячеек
+        \hline
+        \multicolumn{2}{|p{8.74cm}|}{\makecell[l]{Номер версии (справочно, опционально)}} \\ 
+        \hline 
+    \end{tabular}
+\end{flushleft}
+
+% Начинаем TikZ
+\begin{tikzpicture}[overlay]
+    \draw[unired, very thick] (19.8+\aDelta, 13.7) -- (19.8+\aDelta, 0.6) -- (\dCoord, 0.6); % Новые координаты
+\end{tikzpicture}
+
+\clearpage %!!!!!!!!!!БЕЗ ЭТОГО ХРЕНЬ
+\end{landscape}
+\restoregeometry
+

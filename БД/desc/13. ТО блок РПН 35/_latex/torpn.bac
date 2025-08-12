@@ -1,0 +1,57 @@
+% Строчки для суммарной таблицы, в следующей строке прописаны используемые экземпляры узлов
+%===s control, LLN0, PTOC1
+
+\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Токовый орган блокировки РПН (ТО РПН)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Функция <<ТО РПН>> служит для формирования сигнала превышения допустимого тока через устройство РПН трансформатора для блокировки переключения устройства РПН.
+\item
+Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ТО РПН: Ввод>>.
+\item
+Функция <<ТО РПН>> может быть выведена из работы оперативно путем активации сигнала <<ОВ ТО РПН>>, что характеризуется активным состоянием сигнала <<ТО РПН: Оперативный вывод>> на выходе функции.
+\item
+Функция <<ТО РПН>> контролирует повышение любого фазного тока (\textsl{IA, IB, IC}) стороны ВН трансформатора выше заданной уставки, при превышении заданной уставки выдается пусковой сигнал для блокировки переключений РПН трансформатора.
+\item
+В качестве измерительных органов в токовых органах применяются ИО тока максимального действия, принцип работы которых заключается в пофазном сравнении действующего значения основной гармоники тока с уставкой срабатывания. Коэффициент возврата порогового элемента равен 0,95.
+
+\item
+Алгоритм работы <<ТО РПН>> выполнен в соответствии с рисунком \ref{torpn:img1}. В таблице \ref{torpn:tbl1} приведены параметры, необходимые для настройки функции <<ТО РПН>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/13. ТО блок РПН 35/_latex/img/1.pdf}
+\captionof{figure}{Функциональная схема <<ТО РПН>>}\label{torpn:img1}
+\end{figure}
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<ТО РПН>>\hfill\vspace{-0.5\baselineskip}}\label{torpn:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{torpn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%===t1*PTOC1
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср) & \centering I> & \centering 0,10 ... 30,00 & \centering о.е. & \centering\arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+\end{enumerate}

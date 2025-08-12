@@ -1,0 +1,20 @@
+% Пример расчета ТО для Т более 6,3 МВА - не проходит по чувствительности
+\item \textbf{Выбор уставки токовой отсечки}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=3pt]
+%\begin{enumerate}[label={}, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+По выражению (\ref{eq:to1}) определяется первичный ток срабатывания токовой отсечки $I_{\textsl{с.з.ТО}}$:
+\begin{equation*}
+    I_{\textsl{с.з.ТО}} = k_{\textsl{н}} \cdot I_{\textsl{к.макс.}}^{(3)} = 1,2 \cdot 1586 = 1903\; (\textsl{А})  ,
+\end{equation*}
+
+\item
+Для оценки чувствительности токовой отсечки необходимо определить коэффициент чувствительности по формуле:
+\begin{equation*}
+k_{\textsl{ч}} = \frac{I_{\textsl{к.мин(k1)}}^{(2)}}{I_{\textsl{с.з.ТО}}}= \frac{0,87 \cdot 1320}{1903} = 0,6 < 2,0,
+\end{equation*}
+Токовая отсечка не удовлетворяет требованиям по чувствительности и выводится из работы.
+
+\end{enumerate}

@@ -1,0 +1,85 @@
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\rhead{ЮНИТ-М300-Т2}
+\lhead{ЮТКБ.656122.609 РЭ7}
+\lfoot{Руководство по эксплуатации }
+\rfoot{{\thepage}}
+\renewcommand{\footrulewidth}{1pt}
+
+% В финальной версии РЭ эта страница ИСКЛЮЧАЕТСЯ!!!
+% необходима только для отслеживания изменений
+
+\pagecolor{yellow!5}
+
+\begin{flushleft}
+
+\color{olive}{\large\textbf{Готовность функций}}\color{black}
+\footnotesize
+
+{\color{olive}\large{\faQuestionCircle}} или '-' -- давно не проверялось на актуальность, {\color{teal}\large{\faPlusSquare}} -- актуально на указанную дату, {\color{cyan}\large{\faBan}} -- не требуется \\ {\color{orange}\large{\faSpinner}} -- зависло в ожидании по какие то причинам (нужно свериться с другим устройством, но там еще не готово и пр.) \\ {\color{red}\large{\faMinusSquare}} -- не сделано
+
+
+\setlength{\extrarowheight}{0.2cm} % высота ячеек в таблице
+\begin{longtable}{|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|>{\centering\arraybackslash}m{5.6cm}|}
+\hline
+\rowcolor{gray!30}
+Функция & Описание & Рисунок & Таблица & Конфлюэнс & Дата & Примечание \\ 
+\hline
+\endfirsthead
+\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\hline
+\rowcolor{gray!30}
+Функция & Описание & Рисунок & Таблица & Конфлюэнс & Дата & Примечание \\ 
+\hline
+\endhead
+\hline
+\endfoot
+\hline
+\endlastfoot
+\centering МТЗ & \centering {\color{yellow}\large{\faPlusSquare}} & \centering {\color{yellow}\large{\faPlusSquare}} & \centering {\color{yellow}\large{\faPlusSquare}} & \centering {\color{yellow}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Первичные правки, функция только для этого исполнения \\
+\hline
+\centering ТО & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Берется из Т  \\
+\hline
+\centering ЛЗТ & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Берется из Т  \\
+\hline
+\centering ЗП & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \color{purple}09.09.24 & \centering\arraybackslash Берется из Т  \\
+\hline
+\centering ТК ЗДЗ & \centering \centering {\color{teal}\large{\faPlusSquare}} & \centering \centering {\color{teal}\large{\faPlusSquare}} & \centering \centering {\color{teal}\large{\faPlusSquare}} & \centering \centering {\color{teal}\large{\faPlusSquare}} & \color{purple}09.09.24 & \centering\arraybackslash Берется из Т  \\
+\hline
+\centering ТО РПН & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \color{purple}09.09.24 & \centering\arraybackslash Берется из Т  \\
+\hline
+\centering КЦН НН & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Доработан общий блок КЦН, используется лог. перемен isT2  \\
+\hline
+\centering ЛО ГЗоткл & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Берется из Т \\
+\hline
+\centering ЛО ГЗсигн & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Берется из Т  \\
+\hline
+\centering ЛО ГЗ РПН & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Берется из Т \\
+\hline
+
+\centering ЛО Т & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash  Доработан общий блок ЛО Т, используются лог. перемен isT2, isT  \\
+\hline
+\centering ЛО ВН & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Берется из Т, есть ветвление  \\
+\hline
+\centering ЛО НН & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash используется лог. перемен isT2  \\
+\hline
+\centering УРОВ ВН & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Берется из Т  \\
+\hline
+\centering КРВ & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Берется из Т  \\
+\hline
+\centering КСВ & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Берется из Т \\
+\hline
+\centering {КП В} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Берется из Т\\
+\hline
+\centering {КА В} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}09.09.24 & \centering\arraybackslash Берется из Т \\
+\hline
+\centering Пред. сигнализация & \centering {\color{olive}\large{\faQuestionCircle}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}17.09.24 & \centering\arraybackslash Добавлен раздел в ФБ  \\
+\hline
+\centering Сборка сигналов & \centering {\color{olive}\large{\faQuestionCircle}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering \color{purple}17.09.24 & \centering\arraybackslash Добавлен раздел в ФБ  \\
+\hline
+\centering ФСУ & \centering {\color{cyan}\large{\faBan}} & \centering {\color{teal}\large{\faPlusSquare}} & \centering {\color{cyan}\large{\faBan}} & \centering {\color{red}\large{\faMinusSquare}} & \centering \color{purple}17.09.24 & \centering\arraybackslash  Первая версия \\
+\hline
+\end{longtable}
+
+\end{flushleft}

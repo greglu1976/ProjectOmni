@@ -1,0 +1,73 @@
+% Строчки для суммарной таблицы, в следующей строке прописаны используемые экземпляры узлов
+%===s CALH1
+
+\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Предупредительная сигнализация устройства (ПС)\label{ps:punkt}}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Функциональный блок <<ПС>> принимает сигналы срабатывания защитных и сервисных функций устройства и формирует следующие сигналы:
+\begin{itemize}
+	\item импульсный сигнал предупредительной сигнализации <<ПС: Пуск (имп)>>;
+	\item длительный сигнал предупредительной сигнализации <<ПС: Пуск>>.
+\end{itemize}
+
+\item
+Выходные сигналы функционального блока могут быть использованы для дальнейшего конфигурирования (например, на выходное реле) и применяться в цепях участковых и индивидуальных табло, сигнальных ламп, сигнальных реле, звуковой сигнализации и пр.
+\item
+Логика работы <<ПС>> выполнена в соответствии с рисунком \ref{ps:img1}. В таблице \ref{ps:tbl1} приведены параметры, необходимые для настройки функционального блока <<ПС>>. 
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/44. Пред.сигн. Т2/_latex/img/1.pdf}
+\captionof{figure}{Функциональная схема <<ПС>>}\label{ps:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<ПС>>\hfill\vspace{-0.5\baselineskip}}\label{ps:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ps:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%===t1*CALH1
+\centering Контроль сигнала <<ГЗ сигн>> (Контр\_ГЗ\_сигн) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+\centering Контроль сигнала <<Низ.изол. ГЗ>> (Контр\_Низ\_изол\_ГЗ) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+\centering Контроль сигнала <<ГЗ заблокирована>> (Контр\_ГЗ\_блок) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+\centering Контроль сигнала <<ОТ сигн>> (Контр\_ОТ\_сигн) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+\centering Контроль сигнала <<ОТ НН сигн>> (Контр\_ОТ\_НН\_сигн) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+\centering Контроль сигнала <<Внеш. откл>> (Контр\_Внеш\_откл) & \centering SGF6 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+\centering Контроль сигнала <<Вых. цепи разобраны>> (Контр\_Вых\_цеп\_разоб) & \centering SGF7 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+\centering Контроль сигнала <<БИ выведены>> (Контр\_БИ\_выведены) & \centering SGF8 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+\centering Контроль сигнала <<Прев. вр. пер. КА>> (Контр\_Вр\_пркл\_КА) & \centering SGF9 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+\centering Контроль общего внешнего сигнала (Контр\_общ\_внеш\_сигн) & \centering SGF10 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}

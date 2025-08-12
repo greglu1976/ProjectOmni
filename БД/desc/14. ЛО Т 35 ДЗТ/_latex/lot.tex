@@ -1,0 +1,130 @@
+% Строчки для суммарной таблицы, в следующей строке прописаны используемые экземпляры узлов
+%===s control, LLN0, PTRC1, RBRE1
+
+\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Логика отключения трансформатора (ЛО Т)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\color{uniblue}{\subsubsection{Общие сведения}}
+%\color{black}
+
+\item Общие сведения
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Функциональный блок <<ЛО Т>> принимает сигналы срабатывания защитных функций трансформатора в составе устройства и сигналов отключения от некоторых внешних устройств РЗ (действующих на отключение трансформатора со всех сторон с запретом АПВ) и формирует общие сигналы отключения трансформатора и запрета АПВ выключателей сторон трансформатора.
+\item
+Функциональный блок <<ЛО~Т>> может быть выведен из работы оперативно путем активации сигнала <<ОВ~ЛО~Т>>.
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛОГИКА ОТКЛЮЧЕНИЯ ОБЩАЯ Т %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\color{uniblue}{\subsubsection{Логика отключения трансформатора (ЛО)}}
+%\color{black}
+
+\item Логика отключения трансформатора (ЛО)
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Ввод функции <<ЛО>> в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ЛО Т / ЛО: Ввод>>.
+\item
+Функция <<ЛО>> может быть выведена из работы оперативно путем активации сигнала <<ОВ ЛО Т / ЛО>>, что характеризуется активным состоянием сигнала <<ЛО Т / ЛО: Оперативный вывод>> на выходе функции.
+\item
+При появлении сигналов срабатывания от защитных функций в составе устройства или сигнала отключения от внешней автоматики охлаждения функция формирует сигнал <<ЛО Т / ЛО: Срабатывание>>.
+\item
+Алгоритм работы <<ЛО>> выполнен в соответствии с рисунком \ref{loobsh:img1}. В таблице \ref{loobsh:tbl1} приведены параметры, необходимые для настройки функции <<ЛО>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/14. ЛО Т 35 ДЗТ/_latex/img/loobsh.pdf}
+\captionof{figure}{Функциональная схема <<ЛО>>}\label{loobsh:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<ЛО>>\hfill\vspace{-0.5\baselineskip}}\label{loobsh:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{loobsh:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PTRC1|TPRMOFFLVLGC
+%===t1*PTRC1
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛОГИКА ЗАПРЕТА АПВ НН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\color{uniblue}{\subsubsection{Логика запрета АПВ выключателей трансформатора (ЗАПВ)}}
+%\color{black}
+
+\item Логика запрета АПВ выключателей трансформатора (ЗАПВ)
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Ввод функции <<Запрет АПВ>> в работу на этапе параметрирования устройства  осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ЛО Т / ЗАПВ: Ввод>>.
+\item
+Функция <<Запрет АПВ>> может быть выведена из работы оперативно путем активации сигнала <<ОВ ЛО Т / ЗАПВ>>, что характеризуется активным состоянием сигнала <<ЛО Т / ЗАПВ: Оперативный вывод>> на выходе функции.
+\item
+Функция принимает сигнал срабатывания от общей логики отключения и формирует сигнал <<ЛО Т / ЗАПВ: Запрет АПВ>>. 
+Алгоритм работы <<Запрет АПВ>> выполнен в соответствии с рисунком \ref{zapvvnutr:img2}. В таблице \ref{zapvvnutr:tbl2} приведены параметры, необходимые для настройки функции <<Запрет АПВ>>.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/14. ЛО Т 35 ДЗТ/_latex/img/zapvvnutr.pdf}
+\captionof{figure}{Функциональная схема <<ЗАПВ>>}\label{zapvvnutr:img2}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<ЗАПВ>>\hfill\vspace{-0.5\baselineskip}}\label{zapvvnutr:tbl2}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{zapvvnutr:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*RBRE1|TPRMOFFLVLGC
+%===t1*RBRE1
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
+
+\end{enumerate}

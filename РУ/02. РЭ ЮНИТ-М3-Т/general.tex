@@ -1,0 +1,164 @@
+\input{preamble.tex}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX КАТАЛОГА ОПИСАНИЯ ФУНКЦИОНАЛЬНЫХ БЛОКОВ
+\newcommand{\fbpath}{//192.168.11.240/Company/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М3/Трансформатор/ИЭУ Т 35 кВ Россети/02. Разработка РУ/00. Функции/}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX КАТАЛОГА ОБЩЕЙ ЧАСТИ
+%\newcommand{\genpath}{I:/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М3/Трансформатор/ИЭУ Т 35 кВ Россети/04. Разработка РЭ/103. Общие разделы РЭ/}
+%\newcommand{\genpath}{//192.168.11.240/Company/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М3/Трансформатор/ИЭУ Т 35 кВ Россети/04. Разработка РЭ/103. Общие разделы РЭ/}
+\newcommand{\genpath}{//192.168.11.240/Company/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М3/Трансформатор/ИЭУ Т 35 кВ Россети/02. Разработка РУ/}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX ПРИЛОЖЕНИЙ
+%\newcommand{\apppath}{I:/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М3/Трансформатор/ИЭУ Т 35 кВ Россети/04. Разработка РЭ/02. РЭ ЮНИТ-М3-Т/}
+\newcommand{\apppath}{//192.168.11.240/Company/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М3/Трансформатор/ИЭУ Т 35 кВ Россети/04. Разработка РЭ/02. РЭ ЮНИТ-М3-Т/}
+
+% МЕТАДАННЫЕ
+\hypersetup{
+    pdftitle={Микропроцессорное устройство защиты и автоматики трансформатора ЮНИТ-М300-Т. Методические указания по расчету уставок защит и автоматики},
+    pdfauthor={ООО "Юнител Инжиниринг"},
+    pdfsubject={Расчет уставок функций РЗА в составе устройства ЮНИТ-М300-Т},
+    pdfkeywords={ЮНИТ-М300-Т, Юнител, РЗА, Релейная защита и автоматика},
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗДЕСЬ ДЛЯ ВЫВОД СОДЕРЖАНИЯ БОЛЬШИМИ БУКВАМИ ПОСЕРЕДИНЕ ЛИСТА см. ГОСТ-2.105-2019, п.6.2.5
+%%% почему то в преамбуле не работает
+\makeatletter
+\renewcommand{\tableofcontents}{\centering{\textbf{\large\MakeUppercase{\contentsname}}}\@starttoc{toc}}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage % НУЖНО!!!
+\input{title0.tex} % подключаем титульный лист
+\clearpage
+
+\newpage  % НУЖНО!!!
+\input{title1.tex}
+\clearpage
+
+\newpage
+\input{section_format.tex}% Здесь только определение формата для страниц разделов
+\clearpage
+
+\newpage
+\input{toc.tex}
+\clearpage
+
+\newpage
+\include{toa_general.tex}
+
+\newpage
+%\include{section1.tex}
+
+% input не вставляет возврат строки, а include вставляет
+\newpage
+\input{section2.tex}
+
+\newpage
+\input{\fbpath/02. ТО 35/to.tex}
+\newpage
+\input{\fbpath/01. МТЗ Т/mtz.tex}
+\newpage
+\input{\fbpath/07. ЗОП/zop.tex}
+\newpage
+\input{\fbpath/06. ЗП/zp.tex}
+\newpage
+\input{\fbpath/03. КЦН НН/kznnn.tex}
+
+\newpage
+\input{\fbpath/09. УРОВ/urov.tex}
+
+
+% Собираем пример расчета
+\newpage
+\input{\genpath/000. Общее/beginT.tex}
+
+\input{\fbpath/02. ТО 35/example1_to.tex}
+\input{\fbpath/01. МТЗ Т/example1_mtz.tex}
+\input{\fbpath/07. ЗОП/example_zop.tex}
+\input{\fbpath/06. ЗП/example1_zp.tex}
+
+\input{\fbpath/09. УРОВ/example1_urov.tex}
+\input{\genpath/000. Общее/end.tex}
+
+
+%\input{\fbpath/26. УРОВ 35/_latex/urov35.tex}
+
+%\input{\fbpath/30. КРВ/_latex/krv.tex}
+
+%\input{\fbpath/31. КСВ/_latex/ksv.tex}
+
+%\input{\fbpath/32. КП/_latex/kp.tex}
+
+%\input{\fbpath/39. КА/_latex/ka.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩАЯ ЧАСТЬ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% ИСПОЛЬЗОВАНИЕ ПО НАЗНАЧЕНИЮ
+%\newpage
+%\input{\genpath/Использование по назначению/_latex/use.tex}
+
+% ТЕХОБСЛУЖИВАНИЕ И РЕМОНТ
+%\newpage
+%\input{\genpath/Тех обсл и ремонт/_latex/repair.tex}
+
+% ТРАНСПОРТИРОВАНИЕ
+%\newpage
+%\input{\genpath/Трансп и хранение/_latex/trans.tex}
+
+%УТИЛИЗАЦИЯ
+%\newpage
+%\input{\genpath/Утилизация/_latex/util.tex}
+
+%ГАРАНТИЯ
+%\newpage
+%\input{\genpath/Гарантия/_latex/garant.tex}
+
+%ТЕХПОДДЕРЖКА
+%\newpage
+%\input{\genpath/Тех поддержка/_latex/support.tex}
+
+% ПРИЛОЖЕНИЯ
+
+% УСТАНОВКИ ДЛЯ ПРИЛОЖЕНИЙ
+\input{startapp.tex}
+
+%===a
+
+%ПРИЛОЖЕНИЕ А
+%===a1
+%\newpage
+%\input{\apppath/Приложение А. Сигналы/_latex/app1.tex}
+%===a1
+
+%ПРИЛОЖЕНИЕ Б
+%\newpage
+%\input{\apppath/Приложение Б. ФСУ/_latex/app2.tex}
+
+%ПРИЛОЖЕНИЕ В
+%\newpage
+%\input{\apppath/Приложение В. Тест/_latex/app3.tex}
+
+%ПРИЛОЖЕНИЕ Г
+%\newpage
+%\input{\genpath/Элементы ФС/_latex/appElmtFSU.tex}
+
+%===a
+
+% УСТАНОВКИ ДЛЯ ПРИЛОЖЕНИЙ
+\input{endapp.tex}
+
+%СПИСОК ЛИТЕРАТУРЫ
+\newpage
+\input{bib.tex}
+
+%ЛИСТ РЕГИСТРАЦИИ ИЗМЕНЕНИЙ
+%\newpage
+%\input{\genpath/Лист рег изм/_latex/izm.tex}
+\newpage
+\input{izm.tex}
+
+\end{document}

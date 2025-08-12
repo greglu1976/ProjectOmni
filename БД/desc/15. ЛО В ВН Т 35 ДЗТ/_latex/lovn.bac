@@ -1,0 +1,72 @@
+% Строчки для суммарной таблицы, в следующей строке прописаны используемые экземпляры узлов
+%===s control, LLN0, HVCBPTRC1
+
+\needspace{3\baselineskip}
+\color{uniblue}{\subsection{Логика отключения выключателя стороны ВН трансформатора (ЛО ВН)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Функциональный блок <<ЛО ВН>> служит для формирования команды отключения выключателя стороны ВН трансформатора (посредством функции <<ЛО>>) от защит в составе устройства и внешних защит, которые действуют через данное микропроцессорное устройство. 
+\item
+Функция <<ЛО>> (логика отключения выключателя стороны ВН трансформатора) входит в состав функционального блока <<ЛО ВН>>.
+\item
+Ввод функции <<ЛО>> в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ЛО ВН / ЛО: Ввод>>.
+\item
+Функция <<ЛО>> может быть выведена из работы оперативно путем активации сигнала <<ОВ ЛО ВН>>, что характеризуется активным состоянием сигнала <<ЛО ВН / ЛО: Оперативный вывод>> на выходе функции.
+\item
+При появлении синалов срабатывания от общей логики отключения трансформатора и внешних устройств РЗА сторон НН функция формирует сигналы <<Отключение>> и <<Отключить аварийно>>, сигнал <<Отключить аварийно>> является импульсным, время импульса определяется выдержкой времени таймера T1 (уставка <<Тимп>>). 
+Алгоритм работы <<ЛО>> выполнен в соответствии с рисунком \ref{lovn:img1}. В таблице \ref{lovn:tbl1} приведены параметры, необходимые для настройки функции <<ЛО>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+% ЗДЕСЬ ВЕТВЛЕНИЕ, в зависимости от типа вставляем разные рисунки
+\ifboolexpr{bool {isT}}
+{
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/15. ЛО В ВН Т 35 ДЗТ/_latex/img/t.pdf}
+}{}
+\ifboolexpr{bool {isDZT2}}
+{
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/15. ЛО В ВН Т 35 ДЗТ/_latex/img/dzt.pdf}
+}{}
+\ifboolexpr{bool {isT2}}
+{
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/15. ЛО В ВН Т 35 ДЗТ/_latex/img/dzt.pdf}
+}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\captionof{figure}{Функциональная схема <<ЛО>>}\label{lovn:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<ЛО>>\hfill\vspace{-0.5\baselineskip}}\label{lovn:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lovn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%===t1*HVCBPTRC1
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering\arraybackslash -- \\
+\hline
+\centering Длительность импульса (Тимп) & \centering T1 & \centering 0,05 ... 60,00 & \centering с & \centering\arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
+

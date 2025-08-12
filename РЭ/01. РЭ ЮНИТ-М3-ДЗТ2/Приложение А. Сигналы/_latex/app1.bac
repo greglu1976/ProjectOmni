@@ -1,0 +1,995 @@
+\newgeometry{
+  a4paper,
+  top=15mm,
+  bottom=10mm,
+  right=8mm,
+  left=20mm,
+}
+\begin{landscape}
+
+\setlength{\headsep}{7.5mm} 
+\setlength{\topmargin}{-27mm}
+\setlength{\footskip}{0mm}
+%\setlength{\textwidth}{80mm}
+
+\color{uniblue}{\section[(справочное) Перечень сигналов ФСУ, предназначенных для \\конфигурирования устройства ЮНИТ-М300-ДЗТ2]{(справочное)\\Перечень сигналов ФСУ, предназначенных для конфигурирования устройства ЮНИТ-М300-ДЗТ2}\label{app:signals}}
+\color{black}
+
+\small % сделаем шрифт в таблице поменьше
+% В таблице ниже убрал правую и левую горизонтальные линии чтобы не сливались и жирно видно - также в настройках geometry прищлось поле right =8mm а не 5 mm 
+% так как строки ниже колонтитулов спускались
+\begin{longtable}{
+>{\centering\arraybackslash}m{6.8cm}
+|>{\centering\arraybackslash}m{5cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{1cm}
+|>{\centering\arraybackslash}m{1.2cm}
+}
+
+%\caption{Перечень сигналов ФСУ, предназначенных для конфигурирования устройств ЮНИТ-М300\vspace{-0.5\baselineskip}}\label{appA:tbl1}\\ % выравнивает надпись посередине таблицы
+\caption{Перечень сигналов ФСУ, предназначенных для конфигурирования устройства\hfill\vspace{-0.5\baselineskip}}\label{appA:tbl1}\\ 
+
+\hline
+\rowcolor{gray!30}
+Полное наименование сигнала & Наименование сигнала на ФСУ & Дискретные входы & Выходные реле & Светодиоды & ФК & РС & РАС & Пуск РАС \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{appA:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Полное наименование сигналов & Наименование сигналов на ФСУ & Дискретные входы & Выходные реле & Светодиоды & ФК & РС & РАС & Пуск РАС \\ 
+%\hline
+\endhead
+
+%\hline
+\endfoot
+
+%\hline
+\endlastfoot
+
+%===t2
+\multicolumn{9}{c|}{Системные сигналы} \\
+\hline
+\raggedright СИСТ/ БУ: Индикация местного управления & \centering Местное & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Неисправность АЦП & \centering Неиспр. АЦП & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Неисправность ЦП & \centering Неиспр. ЦП & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Неисправность встроенного ПО & \centering Неиспр. ПО & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Неисправность модуля аналоговых входов (слот М12) & \centering Неиспр. МАнВх12 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Неисправность модуля дискретных входов/выходов (слот М3) & \centering Неиспр. МДВхВых3 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Неисправность модуля дискретных входов/выходов (слот М4) & \centering Неиспр. МДВхВых4 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Неисправность модуля дискретных входов/выходов (слот М8) & \centering Неиспр. МДВхВых8 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Неисправность модуля дискретных входов/выходов (слот М9) & \centering Неиспр. МДВхВых9 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Неисправность модуля дискретных входов/выходов (слот М10) & \centering Неиспр. МДВхВых10 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Неисправность модуля дискретных входов/выходов (слот М11) & \centering Неиспр. МДВхВых11 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Установлено подключение через сервисный порт & \centering Подкл. установлено & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Конфигурация изменена & \centering Изм. конфигурации & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Индикация потери оперативного питания & \centering Потеря питания & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Сброс часов или памяти вследствие перезагрузки & \centering Сброс часов & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Сигнал готовности к работе & \centering ГОТ. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СИСТ/ Диагностика: Изменение встраиваемого ПО & \centering Изменение ПО & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СИСТ/ Диагностика: Индикация логического узла-прокси & \centering Прокси & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Индикация наличия оперативного питания & \centering Нал.опер.пит. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Неисправность цепей оперативного питания & \centering Неиспр.опер.пит. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Отказ источника питания & \centering Отказ ист.пит. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Ошибка авторизации & \centering Ошибка авториз. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Ошибка конфигурации & \centering Ошибка конфиг. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Индикация работы по летнему времени & \centering Летн. время & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Необходимость корректировки конфигурации на прием GOOSE 1 & \centering Корр. конф.Go1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Состояние подписки GOOSE 1 & \centering Состояние Go1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Подписка на дублированное GOOSE 1 сообщение с признаком симуляции & \centering Подп. симул.Go1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Необходимость корректировки конфигурации на прием GOOSE 2 & \centering Корр. конф.Go2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Состояние подписки GOOSE 2 & \centering Состояние Go2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Подписка на дублированное GOOSE 2 сообщение с признаком симуляции & \centering Подп. симул.Go2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Необходимость корректировки конфигурации на прием GOOSE 3 & \centering Корр. конф.Go3 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Состояние подписки GOOSE 3 & \centering Состояние Go3 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Подписка на дублированное GOOSE 3 сообщение с признаком симуляции & \centering Подп. симул.Go3 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Необходимость корректировки конфигурации на прием GOOSE 4 & \centering Корр. конф.Go4 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Состояние подписки GOOSE 4 & \centering Состояние Go4 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Подписка на дублированное GOOSE 4 сообщение с признаком симуляции & \centering Подп. симул.Go4 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Необходимость корректировки конфигурации на прием GOOSE 5 & \centering Корр. конф.Go5 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Состояние подписки GOOSE 5 & \centering Состояние Go5 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Подписка на дублированное GOOSE 5 сообщение с признаком симуляции & \centering Подп. симул.Go5 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Необходимость корректировки конфигурации на прием GOOSE 6 & \centering Корр. конф.Go6 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Состояние подписки GOOSE 6 & \centering Состояние Go6 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Подписка на дублированное GOOSE 6 сообщение с признаком симуляции & \centering Подп. симул.Go6 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Необходимость корректировки конфигурации на прием GOOSE 7 & \centering Корр. конф.Go7 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Состояние подписки GOOSE 7 & \centering Состояние Go7 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Подписка на дублированное GOOSE 7 сообщение с признаком симуляции & \centering Подп. симул.Go7 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Необходимость корректировки конфигурации на прием GOOSE 8 & \centering Корр. конф.Go8 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Состояние подписки GOOSE 8 & \centering Состояние Go8 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ Диагностика: Подписка на дублированное GOOSE 8 сообщение с признаком симуляции & \centering Подп. симул.Go8 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых3: Состояние ДВых1 & \centering Состояние ДВых1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых3: Состояние ДВых2 & \centering Состояние ДВых2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых3: Состояние ДВых3 & \centering Состояние ДВых3 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых3: Состояние ДВых4 & \centering Состояние ДВых4 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых3: Состояние ДВых5 & \centering Состояние ДВых5 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых3: Состояние ДВых6 & \centering Состояние ДВых6 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых3: Состояние ДВых7 & \centering Состояние ДВых7 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых3: Состояние ДВых8 & \centering Состояние ДВых8 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых4: Состояние ДВых1 & \centering Состояние ДВых1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых4: Состояние ДВых2 & \centering Состояние ДВых2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых4: Состояние ДВых3 & \centering Состояние ДВых3 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых4: Состояние ДВых4 & \centering Состояние ДВых4 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых4: Состояние ДВых5 & \centering Состояние ДВых5 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых4: Состояние ДВых6 & \centering Состояние ДВых6 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых4: Состояние ДВых7 & \centering Состояние ДВых7 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВых4: Состояние ДВых8 & \centering Состояние ДВых8 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх1 & \centering Состояние ДВх1 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх2 & \centering Состояние ДВх2 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх3 & \centering Состояние ДВх3 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх4 & \centering Состояние ДВх4 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх5 & \centering Состояние ДВх5 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх6 & \centering Состояние ДВх6 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх7 & \centering Состояние ДВх7 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх8 & \centering Состояние ДВх8 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх9 & \centering Состояние ДВх9 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх10 & \centering Состояние ДВх10 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх11 & \centering Состояние ДВх11 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх12 & \centering Состояние ДВх12 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх13 & \centering Состояние ДВх13 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх8: Состояние ДВх14 & \centering Состояние ДВх14 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх1 & \centering Состояние ДВх1 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх2 & \centering Состояние ДВх2 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх3 & \centering Состояние ДВх3 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх4 & \centering Состояние ДВх4 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх5 & \centering Состояние ДВх5 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх6 & \centering Состояние ДВх6 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх7 & \centering Состояние ДВх7 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх8 & \centering Состояние ДВх8 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх9 & \centering Состояние ДВх9 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх10 & \centering Состояние ДВх10 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх11 & \centering Состояние ДВх11 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх12 & \centering Состояние ДВх12 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх13 & \centering Состояние ДВх13 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх9: Состояние ДВх14 & \centering Состояние ДВх14 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх1 & \centering Состояние ДВх1 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх2 & \centering Состояние ДВх2 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх3 & \centering Состояние ДВх3 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх4 & \centering Состояние ДВх4 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх5 & \centering Состояние ДВх5 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх6 & \centering Состояние ДВх6 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх7 & \centering Состояние ДВх7 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх8 & \centering Состояние ДВх8 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх9 & \centering Состояние ДВх9 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх10 & \centering Состояние ДВх10 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх11 & \centering Состояние ДВх11 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх12 & \centering Состояние ДВх12 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх13 & \centering Состояние ДВх13 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх10: Состояние ДВх14 & \centering Состояние ДВх14 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх1 & \centering Состояние ДВх1 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх2 & \centering Состояние ДВх2 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх3 & \centering Состояние ДВх3 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх4 & \centering Состояние ДВх4 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх5 & \centering Состояние ДВх5 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх6 & \centering Состояние ДВх6 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх7 & \centering Состояние ДВх7 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх8 & \centering Состояние ДВх8 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх9 & \centering Состояние ДВх9 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх10 & \centering Состояние ДВх10 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх11 & \centering Состояние ДВх11 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх12 & \centering Состояние ДВх12 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх13 & \centering Состояние ДВх13 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ПлДВх11: Состояние ДВх14 & \centering Состояние ДВх14 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ФК: Управление ИЭУ & \centering Управление ИЭУ & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ФК: Комплект & \centering Комплект & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ФК: Режим работы ГЗ Т откл & \centering ГЗоткл & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ФК: Режим работы ГЗ Т сигн & \centering ГЗсигн & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ФК: Режим работы ГЗ РПН & \centering ГЗ РПН & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ФК: Режим работы ДЗТ & \centering ДЗТ & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ФК: Режим работы ЗПО & \centering ЗПО & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ФК: Режим работы УРОВ & \centering УРОВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ФК: Действие на В ВН & \centering Действие на В ВН & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ФК: Действие на В НН1 & \centering Действие на В НН1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ФК: Действие на В НН2 & \centering Действие на В НН2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ШС: Состояние основного канала & \centering Осн. канал & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ШС: Состояние резервного канала & \centering Рез. канал & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ШС: Переполнение буфера выходных данных & \centering Переполн. вых. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright СИСТ/ ШС: Переполнение буфера входных данных & \centering Переполн. вх. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{9}{c|}{Виртуальные ключи} \\
+\hline
+\raggedright Оперативный вывод функции ДЗТ & \centering ОВ ДЗТ & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод ДТО на сигнал & \centering ДТО на сигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ДТО & \centering ОВ ДТО & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод ДТЗт на сигнал & \centering ДТЗт на сигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ДТЗт & \centering ОВ ДТЗт & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции КЦТнеб & \centering ОВ КЦТнеб & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции КЦТ & \centering ОВ КЦТ & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции КЦТ стороны 1 & \centering ОВ КЦТст1 & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции КЦТ стороны 2 & \centering ОВ КЦТст2 & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции КЦТ стороны 3 & \centering ОВ КЦТст3 & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ЗПО & \centering ОВ ЗПО & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод ЗПО на сигнал & \centering ЗПО на сигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ТО ЗПО & \centering ОВ ТО ЗПО & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ТО ЗПО ВН & \centering ОВ ТО ЗПО ВН & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ТО ЗПО НН1 & \centering ОВ ТО ЗПО НН1 & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ТО ЗПО НН2 & \centering ОВ ТО ЗПО НН2 & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ЗП & \centering ОВ ЗП & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ЗП ВН & \centering ОВ ЗП ВН & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ЗП НН1 & \centering ОВ ЗП НН1 & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ЗП НН2 & \centering ОВ ЗП НН2 & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Ввод ЗП на отключение & \centering ЗП на откл & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции РТПО & \centering ОВ РТПО & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции РТПО ВН & \centering ОВ РТПО ВН & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции РТПО НН1 & \centering ОВ РТПО НН1 & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции РТПО НН2 & \centering ОВ РТПО НН2 & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ТК ЗДЗ & \centering ОВ ТК ЗДЗ & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ТО РПН & \centering ОВ ТО РПН & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ГЗоткл & \centering ОВ ГЗоткл & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод ГЗоткл на сигнал & \centering ГЗоткл на сигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ГЗсигн & \centering ОВ ГЗсигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод ГЗсигн на отключение & \centering ГЗсигн на откл & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ГЗ РПН & \centering ОВ ГЗ РПН & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод ГЗ РПН на сигнал & \centering ГЗ РПН на сигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ЛО ТЗ & \centering ОВ ЛО ТЗ & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО ДТм & \centering ОВ ЛО ДТм & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО ДТо & \centering ОВ ЛО ДТо & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО РД & \centering ОВ ЛО РД & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод ДТм на сигнал & \centering ДТм на сигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод ДТо на сигнал & \centering ДТо на сигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод РД на сигнал & \centering РД на сигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ЛО ТС & \centering ОВ ЛО ТС & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО ПК & \centering ОВ ЛО ПК & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО ОК & \centering ОВ ЛО ОК & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО ДУм расширителя & \centering ОВ ЛО ДУм расшир & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод ПК на сигнал & \centering ПК на сигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод ОК на сигнал & \centering ОК на сигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Перевод ДУм расширителя на сигнал & \centering ДУм расшир на сигн & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ЛО Т & \centering ОВ ЛО Т & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО Т / ЛО & \centering ОВ ЛО Т / ЛО & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО Т / ЗАПВ & \centering ОВ ЛО Т / ЗАПВ & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ЛО ВН & \centering ОВ ЛО ВН & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ЛО НН1 & \centering ОВ ЛО НН1 & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО НН1 / ЛО & \centering ОВ ЛО НН1 / ЛО & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО НН1 / ЗАПВ & \centering ОВ ЛО НН1 / ЗАПВ & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ЛО НН2 & \centering ОВ ЛО НН2 & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО НН2 / ЛО & \centering ОВ ЛО НН2 / ЛО & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод ЛО НН2 / ЗАПВ & \centering ОВ ЛО НН2 / ЗАПВ & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции УРОВ & \centering ОВ УРОВ & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Оперативный вывод функции ПДС & \centering ОВ ПДС & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright Оперативный вывод функции ПДС НКУ & \centering ОВ ПДС НКУ & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright Режим приема симулированных данных & \centering Прием сим.данных & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{9}{c|}{Виртуальные кнопки} \\
+\hline
+\raggedright Сброс блокировки технологических и газовых защит & \centering Сброс блок. ГЗ,ТЗ & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright Сброс статистических данных устройства & \centering Сброс стат. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\raggedright Сброс светодиодов & \centering Сброс СД & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright Сброс времени & \centering Сброс времени & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{9}{c|}{Сигналы функциональной логики} \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Пуск ДТО по фазе A & \centering Пуск ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Пуск ДТО по фазе В & \centering Пуск ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Пуск ДТО по фазе С & \centering Пуск ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Срабатывание ДТЗт & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе A & \centering Срабатывание ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе В & \centering Срабатывание ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе С & \centering Срабатывание ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Срабатывание ДТЗт на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе A на сигнал & \centering Сраб. ф.А сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе В на сигнал & \centering Сраб. ф.В сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе С на сигнал & \centering Сраб. ф.С сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Пуск ИО по фазе А & \centering ИО IA & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Пуск ИО по фазе В & \centering ИО IB & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТЗт: Пуск ИО по фазе С & \centering ИО IС & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Пуск ДТО по фазе A & \centering Пуск ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Пуск ДТО по фазе В & \centering Пуск ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Пуск ДТО по фазе С & \centering Пуск ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Срабатывание ДТО & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Срабатывание ДТО по фазе A & \centering Срабатывание ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Срабатывание ДТО по фазе В & \centering Срабатывание ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Срабатывание ДТО по фазе С & \centering Срабатывание ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Срабатывание ДТО на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Срабатывание ДТО по фазе A на сигнал & \centering Сраб. ф.А сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Срабатывание ДТО по фазе В на сигнал & \centering Сраб. ф.В сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Срабатывание ДТО по фазе С на сигнал & \centering Сраб. ф.С сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Пуск ИО по фазе А & \centering ИО IA & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Пуск ИО по фазе В & \centering ИО IB & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ ДТО: Пуск ИО по фазе С & \centering ИО IС & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ Д2Г: Пуск Д2Г & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ Д2Г: Пуск Д2Г по фазе A & \centering Пуск ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ Д2Г: Пуск Д2Г по фазе В & \centering Пуск ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ Д2Г: Пуск Д2Г по фазе С & \centering Пуск ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ Д5Г: Пуск Д5Г & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ Д5Г: Пуск Д5Г по фазе A & \centering Пуск ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ Д5Г: Пуск Д5Г по фазе В & \centering Пуск ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ Д5Г: Пуск Д5Г по фазе С & \centering Пуск ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ БВКЗ: Срабатывание БВКЗ & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ БВКЗ: Срабатывание БВКЗ по фазе А & \centering Срабатывание ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ БВКЗ: Срабатывание БВКЗ по фазе В & \centering Срабатывание ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ БВКЗ: Срабатывание БВКЗ по фазе С & \centering Срабатывание ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ КЦТнеб: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ КЦТнеб: Срабатывание фазы А & \centering Срабатывание ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ КЦТнеб: Срабатывание фазы В & \centering Срабатывание ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ КЦТнеб: Срабатывание фазы С & \centering Срабатывание ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ КЦТнеб: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ДЗТ/ КЦТнеб: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст1: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст1: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст1: Срабатывание при асимметрии & \centering Сраб. асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст1: Пуск при асимметрии & \centering Пуск асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст1: Пуск при обрыве провода & \centering Пуск обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст1: Срабатывание при обрыве провода & \centering Срабатывание обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст2: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст2: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст2: Срабатывание при асимметрии & \centering Сраб. асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст2: Пуск при асимметрии & \centering Пуск асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст2: Пуск при обрыве провода & \centering Пуск обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст2: Срабатывание при обрыве провода & \centering Срабатывание обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст3: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст3: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст3: Срабатывание при асимметрии & \centering Сраб. асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст3: Пуск при асимметрии & \centering Пуск асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст3: Пуск при обрыве провода & \centering Пуск обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТст3: Срабатывание при обрыве провода & \centering Срабатывание обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright КЦТ/ КЦТ: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗПО/ ЗПО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗПО/ ЗПО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗПО/ ЗПО: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗПО/ ЗПО: Срабатывание ЗПО & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗПО/ ЗПО: Срабатывание ЗПО на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО ВН: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО ВН: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО ВН: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО НН1: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО НН1: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО НН1: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО НН2: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО НН2: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО НН2: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО\_общ: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО\_общ: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО ЗПО/ ТО ЗПО\_общ: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП ВН: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП ВН: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП ВН: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП ВН: Пуск ИО максимального тока & \centering ИО Iмакс & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП ВН: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП ВН: Срабатывание на отключение & \centering Сраб. на откл & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН1: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН1: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН1: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН1: Пуск ИО максимального тока & \centering ИО Iмакс & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН1: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН1: Срабатывание на отключение & \centering Сраб. на откл & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН2: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН2: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН2: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН2: Пуск ИО максимального тока & \centering ИО Iмакс & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН2: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП НН2: Срабатывание на отключение & \centering Сраб. на откл & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЗП/ ЗП: Срабатывание на отключение & \centering Сраб. на откл & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО ВН: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО ВН: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО ВН: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО НН1: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО НН1: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО НН1: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО НН2: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО НН2: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО НН2: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО\_общ: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО\_общ: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright РТПО/ РТПО\_общ: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТК ЗДЗ/ ТК ЗДЗ: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТК ЗДЗ/ ТК ЗДЗ: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТК ЗДЗ/ ТК ЗДЗ: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО РПН/ ТО РПН: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО РПН/ ТО РПН: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ТО РПН/ ТО РПН: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗоткл/ ЛО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗоткл/ ЛО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗоткл/ ЛО: Блокировка ГЗоткл & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗоткл/ ЛО: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗоткл/ ЛО: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗсигн/ ЛО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗсигн/ ЛО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗсигн/ ЛО: Блокировка ГЗсигн & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗсигн/ ЛО: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗсигн/ ЛО: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗ РПН/ ЛО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗ РПН/ ЛО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗ РПН/ ЛО: Блокировка ГЗ РПН & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗ РПН/ ЛО: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ГЗ РПН/ ЛО: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО ДТм: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО ДТм: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО ДТм: Срабатывание датчика температуры масла заблокировано & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО ДТм: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО ДТм: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО РД: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО РД: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО РД: Срабатывание реле давления заблокировано & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО РД: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО РД: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО ДТо: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО ДТо: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО ДТо: Срабатывание датчика температуры обмотки заблокировано & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО ДТо: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТЗ/ ЛО ДТо: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ПК: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ПК: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ПК: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ПК: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ОК: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ОК: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ОК: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ОК: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ДУм расширителя: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ДУм расширителя: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ДУм расширителя: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ТС/ ЛО ДУм расширителя: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО Т/ ЛО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО Т/ ЛО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО Т/ ЛО: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО Т/ ЛО: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО Т/ ЗАПВ: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО Т/ ЗАПВ: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО Т/ ЗАПВ: Запрет АПВ & \centering Запрет АПВ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ВН/ ЛО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ВН/ ЛО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ВН/ ЛО: Отключение & \centering Отключение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО ВН/ ЛО: Отключить аварийно & \centering Отключить аварийно & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН1/ ЛО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН1/ ЛО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН1/ ЛО: Отключение & \centering Отключение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН1/ ЛО: Отключить аварийно & \centering Отключить аварийно & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН1/ ЗАПВ: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН1/ ЗАПВ: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН1/ ЗАПВ: Запрет АПВ & \centering Запрет АПВ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН2/ ЛО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН2/ ЛО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН2/ ЛО: Отключение & \centering Отключение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН2/ ЛО: Отключить аварийно & \centering Отключить аварийно & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН2/ ЗАПВ: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН2/ ЗАПВ: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ЛО НН2/ ЗАПВ: Запрет АПВ & \centering Запрет АПВ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright УРОВ ВН/ УРОВ: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright УРОВ ВН/ УРОВ: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright УРОВ ВН/ УРОВ: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright УРОВ ВН/ УРОВ: Пуск ИО максимального тока & \centering ИО Iмакс & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright УРОВ ВН/ УРОВ: Срабатывание УРОВ & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright УРОВ ВН/ УРОВ: Срабатывание УРОВ  <<на себя>> & \centering Сраб <<на себя>> & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ПДС/ КСО: Авария & \centering Авария & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ПДС/ КСО: Неисправность & \centering Низкая изоляция & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ПДС/ ДУм РПН: Высокий уровень масла & \centering Выс. ур. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ДУм РПН: Низкий уровень масла & \centering Низк. ур. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ГЗ РПН: Отключение & \centering Отключение & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ГЗ РПН: Низкая изоляция  & \centering Низкая изоляция & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ДУм расширителя: Высокий уровень масла & \centering Выс. ур. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ДУм расширителя: Низкий уровень масла & \centering Низк. ур. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ДТм: Отключение & \centering Отключение & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ДТм: Сигнал & \centering Сигнал & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ДТм: Низкая изоляция & \centering Низкая изоляция & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ПК: Срабатывание & \centering Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ГЗ Т: Отключение & \centering Отключение & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ГЗ Т: Сигнал & \centering Сигнал & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ГЗ Т: Низкая изоляция ГЗоткл & \centering Низкая изол. ГЗоткл & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ГЗ Т: Низкая изоляция ГЗсигн & \centering Низкая изол. ГЗсигн & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ОК: Срабатывание & \centering Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ РД: Отключение & \centering Отключение & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ РД: Низкая изоляция & \centering Низкая изоляция & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ДТо: Отключение & \centering Отключение & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ДТо: Сигнал & \centering Сигнал & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ДТо: Низкая изоляция & \centering Низкая изоляция & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС/ ДТм РПН: Срабатывание & \centering Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ Дверь: Дверь шкафа закрыта & \centering Дверь закр. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ Дверь: Дверь шкафа открыта & \centering Дверь откр. & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ОТ ГЗ: Неисправность & \centering Неисправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ОТ ТЗ, ТС: Неисправность & \centering Неисправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ SG1: Рабочее положение & \centering Рабочее положение & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ SG2: Рабочее положение & \centering Рабочее положение & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ SG3: Рабочее положение & \centering Рабочее положение & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ SA1: Цепь введена & \centering Цепь введена & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ SA2: Цепь введена & \centering Цепь введена & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ SA3: Цепь введена & \centering Цепь введена & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ SA4: Цепь введена & \centering Цепь введена & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ОТ ЗДЗ1: Неисправность & \centering Неисправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ОТ ЗДЗ2: Неисправность & \centering Неисправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ОТ УРОВ1: Неисправность & \centering Неисправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ОТ УРОВ2: Неисправность & \centering Неисправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ОТ ИЭУ ТН1: Неисправность & \centering Неисправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ОТ ИЭУ ТН2: Неисправность & \centering Неисправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ВнешСигн1: Срабатывание & \centering Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ВнешСигн2: Срабатывание & \centering Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ВнешСигн3: Срабатывание & \centering Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright ПДС НКУ/ ВнешСигн4: Срабатывание & \centering Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash -- \\
+\hline
+\raggedright СС/ СС: Сигнализация от ТЗ & \centering ТЗ сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СС/ СС: Сигнализация от ГЗ & \centering ГЗ сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СС/ СС: Низкая изоляция ГЗ & \centering Низ.изол. ГЗ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СС/ СС: Низкая изоляция ТЗ & \centering Низ.изол. ТЗ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СС/ СС: ГЗ заблокирована & \centering ГЗ заблокирована & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СС/ СС: ТЗ заблокирована & \centering ТЗ заблокирована & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СС/ СС: Сигнализация от ТС & \centering ТС сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СС/ СС: Контроль оперативного тока & \centering ОТ сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СС/ СС: Контроль оперативного тока НН & \centering ОТ НН сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СС/ СС: Внешнее отключение & \centering Внеш. откл & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СС/ СС: Выходные цепи разобраны & \centering Вых.цепи разобраны & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright СС/ СС: БИ выведены & \centering БИ выведены & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ПС/ ПС: Пуск предупредительной сигнализации (импульс) & \centering Пуск (имп) & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+\raggedright ПС/ ПС: Пуск предупредительной сигнализации & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\
+\hline
+%===t2
+\end{longtable} 
+
+\clearpage
+\normalsize
+%\includepdf[pages={1},width=0.5\textwidth, angle=90]{1.pdf} вставляем и поворачиваем pdf
+%\begin{center}
+%\includegraphics[width=1.4\textwidth]{1.pdf}
+%\end{center}
+
+\end{landscape}
+\restoregeometry
+
+

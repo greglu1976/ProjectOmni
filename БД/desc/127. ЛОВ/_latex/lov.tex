@@ -1,0 +1,373 @@
+%\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Логика отключения/включения (ЛОВ)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\color{uniblue}{\subsubsection{Общие сведения}}
+%\color{black}
+
+\item Общие сведения
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Функция логики отключения/включения выключателя предназначена для подачи аварийных команд управления на выключатель при действии устройств РЗА.
+
+\item
+Функциональный блок <<ЛОВ>> состоит из следующих функций:
+\begin{itemize}
+\item логика отключения от релейной защиты (ЛО РЗ); 
+\item логика отключения от противоаварийной автоматики (ЛО ПА);
+\item логика включения от противоаварийной автоматики (ЛВ ПА)
+\item логика запрета АПВ (ЗАПВ).
+\end{itemize}
+
+
+\item
+Функциональный блок <<ЛОВ>> может быть полностью выведен из работы оперативно путем активации сигнала <<ОВ ЛОВ>>.
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Логика отключения от релейной защиты (ЛО РЗ) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Логика отключения от релейной защиты (ЛО РЗ)
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Функция <<ЛО РЗ>> формирует сигналы аварийного отключения (<<ЛО РЗ: Отключение>>, <<ЛО РЗ: Отключить>>) при срабатывании функций релейной защиты в составе устройства, а также от четырех назначаемых сигналов внешнего отключения (<<Откл. внешнее 1-4>>).
+
+\item
+Сигнал <<ЛО РЗ: Отключение>> является суммарным сигналом отключения от отдельных функций и существует пока активен хотя бы один сигнал срабатывания защитных функций.
+
+\item
+Сигнал <<ЛО РЗ: Отключить>> воздействует на выходные реле для отключения выключателя, длительность сигнала задается уставкой Т1.
+
+\item
+Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ЛО РЗ: Ввод>>.
+
+\item
+Функция <<ЛО РЗ>> может быть выведена из работы оперативно путем активации сигнала <<ОВ ЛО РЗ>>, что характеризуется активным состоянием сигнала <<ЛО РЗ: Оперативный вывод>> на выходе функции.
+
+
+\item
+Алгоритм работы функции <<ЛО РЗ>> выполнен в соответствии с рисунком \ref{lorz:img1}. В таблице \ref{lorz:tbl1} приведены параметры, необходимые для настройки пускового органа <<ЛО РЗ>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/127. ЛОВ/_latex/img/lorz.pdf}
+\captionof{figure}{Функциональная схема <<ЛО РЗ>>}\label{lorz:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки <<ЛО РЗ>>\hfill\vspace{-0.5\baselineskip}}\label{lorz:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lorz:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+
+%==+t1*OFFPTRC1|LVLINONOFFLGC
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Длительность импульса (Tимп) & \centering Т1 & \centering 0,05 ... 60,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Логика отключения от противоаварийной автоматики (ЛО ПА) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Логика отключения от противоаварийной автоматики (ЛО ПА)
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+
+\item
+Функция <<ЛО ПА>> формирует сигналы аварийного отключения (<<ЛО ПА: Отключение>>, <<ЛО ПА: Отключить>>) при срабатывании внешних функций противоаварийной автоматики, с учетом внешнего сигнала блокировки <<Блок. команд ПА>>.
+
+\item
+Сигнал <<ЛО ПА: Отключение>> является сигналом отключения от внешних функций ПА и существует пока активен сигнал <<Отключение от ПА>> на входе устройства с учетом внешнего сигнала блокировки <<Блок. команд ПА>>.
+
+\item
+Сигнал <<ЛО ПА: Отключить>> воздействует на выходные реле для отключения выключателя, длительность сигнала задается уставкой Т1.
+
+\item
+Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ЛО ПА: Ввод>>.
+
+\item
+Функция <<ЛО ПА>> может быть выведена из работы оперативно путем активации сигнала <<ОВ ПА>>, что характеризуется активным состоянием сигнала <<ЛО ПА: Оперативный вывод>> на выходе функции.
+
+
+\item
+Алгоритм работы функции <<ЛО ПА>> выполнен в соответствии с рисунком \ref{lopa:img1}. В таблице \ref{lopa:tbl1} приведены параметры, необходимые для настройки пускового органа <<ЛО ПА>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/127. ЛОВ/_latex/img/lopa.pdf}
+\captionof{figure}{Функциональная схема <<ЛО ПА>>}\label{lopa:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<ЛО ПА>>\hfill\vspace{-0.5\baselineskip}}\label{lopa:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lopa:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*ECAPTRC1|LVLINONOFFLGC
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Длительность импульса (Tимп) & \centering Т1 & \centering 0,05 ... 60,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Логика отключения от противоаварийной автоматики (ЛО ПА) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Логика включения от противоаварийной автоматики (ЛВ ПА) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Логика включения от противоаварийной автоматики (ЛВ ПА)
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+
+\item
+Функция <<ЛВ ПА>> формирует сигнал аварийного включения (<<ЛВ ПА: Включить>>) при срабатывании внешних функций противоаварийной автоматики на включение присоединения.
+
+\item
+Функция предусматривает пуск как от внутреннего, так и от внешнего сигнала. Тип пуска выбирается уставкой SGF2:
+\begin{itemize}
+    \item Тип пуска <<Внутренний>>. В данном типе пуска активный сигнал на отключение от ПА в случае аварийного отключения выключателя является необходимым условием для срабатывания триггера. Таймер Т3 уменьшает время прохождения сигнала до 1 секунды. При пропадании сигнала отключения от ПА, отсутствии блокировки команд ПА и отсутствии условий сброса RS-триггера формируются пусковые условия функции.
+    \item Тип пуска <<Внешний>>. В данном режиме пуск функции будет осуществлен при наличии вышеописаных условий и внешнего дискретного сигнала на входе устройства. 
+\end{itemize}    
+\item    
+Сброс триггера осуществляется при наличии одного из условий:
+\begin{itemize}
+    \item функция выведена из работы;
+    \item выключатель аварийно отключился в результате срабатывания логики отключения от релейной защиты (РЗ). Если сигнал <<ЛО РЗ: Отключение>> пропал, то этот сигнал продлится на время таймера Т4, которое составляет 1 секунду;
+    \item отсутствие сигнала РФК из логики КСВ.
+\end{itemize}
+
+\item
+По истечении выдержки времени таймера Т1 и отсутствии блокировки включения из логики КСВ формируется команда на включение выключателя. При сохранении условий пуска, по истечении выдержки времени таймера Т1 происходит сброс триггера восстанавливая схему в исходное состояние.
+
+\item
+Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ЛВ ПА: Ввод>>.
+
+\item
+Функция <<ЛВ ПА>> может быть выведена из работы оперативно путем активации сигнала <<ОВ ПА>>, что характеризуется активным состоянием сигнала <<ЛВ ПА: Оперативный вывод>> на выходе функции.
+
+\item
+Алгоритм работы функции <<ЛВ ПА>> выполнен в соответствии с рисунком \ref{lvpa:img1}. В таблице \ref{lvpa:tbl1} приведены параметры, необходимые для настройки пускового органа <<ЛВ ПА>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/127. ЛОВ/_latex/img/lvpa.pdf}
+\captionof{figure}{Функциональная схема <<ЛВ ПА>>}\label{lvpa:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<ЛВ ПА>>\hfill\vspace{-0.5\baselineskip}}\label{lvpa:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lvpa:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*ONPTRC1|LVLINONOFFLGC
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Тип пуска (Тип\_пуска) & \centering SGF2 & \centering 0 = Внешний\\1 = Внутренний & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания (Тср) & \centering Т1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Логика включения от противоаварийной автоматики (ЛВ ПА) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Запрет АПВ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Логика запрета АПВ (ЗАПВ)
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Запрет АПВ может быть необходим в определённых ситуациях для предотвращения повторных срабатываний и возможных повреждений оборудования.
+\item
+Сигнал <<ЗАПВ: Запрет АПВ>> формируется, если присутствует сигнал срабатывания защит на любом из входов, которые заведены под запрет АПВ с помощью выбора уставки программного переключателя. Контроль всех входных сигналов, выполняется соответствующими уставками (SGF1 \ldots SGF42).
+
+\item
+Ввод функции в работу осуществляется при наличии введеной функции АПВ в работу (<<АПВ: Ввод>>). Информация о введенной функции отображается выходным сигналом <<ЗАПВ: Ввод>>.
+
+\item
+Функция <<ЗАПВ>> может быть выведена из работы оперативно путем активации сигнала <<ОВ ЛОВ>>, что характеризуется активным состоянием сигнала <<ЗАПВ: Оперативный вывод>> на выходе функции.
+
+\item
+Алгоритм работы функции <<ЗАПВ>> выполнен в соответствии с рисунком \ref{zapv:img1}. В таблице \ref{zapv:tbl1} приведены параметры, необходимые для настройки пускового органа <<ЗАПВ>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/127. ЛОВ/_latex/img/zapv.pdf}
+\captionof{figure}{Функциональная схема <<ЗАПВ>>}\label{zapv:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<ЗАПВ>>\hfill\vspace{-0.5\baselineskip}}\label{zapv:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{zapv:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*RBRE1|LVLINONOFFLGC
+\centering Режим запрета АПВ при срабатывании ДЗфф 1 ступени (ЗапАПВ\_ДЗфф\_1ст) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ДЗфф 2 ступени (ЗапАПВ\_ДЗфф\_2ст) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ДЗфф 3 ступени (ЗапАПВ\_ДЗфф\_3ст) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ДЗфз 1 ступени (ЗапАПВ\_ДЗфз\_1ст) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ДЗфз 2 ступени (ЗапАПВ\_ДЗфз\_2ст) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании НЗОЗЗ (ЗапАПВ\_НЗОЗЗ) & \centering SGF6 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ТЗНП 1 ступени (ЗапАПВ\_ТЗНП\_1ст) & \centering SGF7 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ТЗНП 2 ступени (ЗапАПВ\_ТЗНП\_2ст ) & \centering SGF8 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ТО (ЗапАПВ\_ТО) & \centering SGF9 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании МТЗ 1 ступени (ЗапАПВ\_МТЗ\_1ст) & \centering SGF10 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании МТЗ 2 ступени (ЗапАПВ\_МТЗ\_2ст) & \centering SGF11 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании МТЗ 3 ступени (ЗапАПВ\_МТЗ\_3ст) & \centering SGF12 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗОП (ЗапАПВ\_ЗОП) & \centering SGF13 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании АУ (ЗапАПВ\_АУ) & \centering SGF14 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗП (ЗапАПВ\_ЗП) & \centering SGF15 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ГСОЗЗ (ЗапАПВ\_ГСОЗЗ) & \centering SGF16 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ГЗоткл (ЗапАПВ\_Сраб\_ГЗоткл) & \centering SGF17 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ГЗсигн (ЗапАПВ\_Сраб\_ГЗсигн) & \centering SGF18 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ДТм (ЗапАПВ\_Сраб\_ДТм) & \centering SGF19 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ДТо (ЗапАПВ\_Сраб\_ДТо) & \centering SGF20 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЛО РД (ЗапАПВ\_Сраб\_ЛО\_РД) & \centering SGF21 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ОУ ДЗ (ЗапАПВ\_ОУ\_ДЗ) & \centering SGF22 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ОУ ТЗНП (ЗапАПВ\_ОУ\_ТЗНП) & \centering SGF23 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ОУ МТЗ (ЗапАПВ\_ОУ\_МТЗ) & \centering SGF24 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗПЧ 1 ступени (ЗапАПВ\_ЗПЧ\_1ст) & \centering SGF25 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗПЧ 2 ступени (ЗапАПВ\_ЗПЧ\_2ст) & \centering SGF26 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗИЧ 1 ступени (ЗапАПВ\_ЗИЧ\_1ст) & \centering SGF27 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗИЧ 2 ступени (ЗапАПВ\_ЗИЧ\_2ст) & \centering SGF28 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗСЧ 1 ступени (ЗапАПВ\_ЗСЧ\_1ст) & \centering SGF29 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗСЧ 2 ступени (ЗапАПВ\_ЗСЧ\_2ст) & \centering SGF30 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при наличии отключения от АЧР (ЗапАПВ\_АЧР) & \centering SGF31 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗДЗ (ЗапАПВ\_ЗДЗ) & \centering SGF32 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗМН 1 ступени (ЗапАПВ\_ЗМН\_1ст) & \centering SGF33 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗМН 2 ступени (ЗапАПВ\_ЗМН\_2ст) & \centering SGF34 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗПН 1 ступени (ЗапАПВ\_ЗПН\_1ст) & \centering SGF35 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании ЗПН 2 ступени (ЗапАПВ\_ЗПН\_2ст) & \centering SGF36 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при срабатывании УРОВ «на себя» (ЗапАПВ\_УРОВ\_на\_себя) & \centering SGF37 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при наличии отключения от ЛО ПА (ЗапАПВ\_Откл\_ЛО\_ПА) & \centering SGF38 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при наличии отключения внешнего 1 (ЗапАПВ\_Откл\_внеш\_1) & \centering SGF39 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при наличии отключения внешнего 2 (ЗапАПВ\_Откл\_внеш\_2) & \centering SGF40 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при наличии отключения внешнего 3 (ЗапАПВ\_Откл\_внеш\_3) & \centering SGF41 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АПВ при наличии отключения внешнего 4 (ЗапАПВ\_Откл\_внеш\_4) & \centering SGF42 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Запрет АПВ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{enumerate}

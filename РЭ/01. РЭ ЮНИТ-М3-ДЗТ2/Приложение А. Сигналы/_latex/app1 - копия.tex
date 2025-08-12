@@ -1,0 +1,653 @@
+\newgeometry{
+  a4paper,
+  top=15mm,
+  bottom=12mm,
+  right=5mm,
+  left=20mm,
+}
+\begin{landscape}
+
+\setlength{\headsep}{7.5mm} 
+\setlength{\topmargin}{-27mm}
+%\setlength{\textwidth}{305mm}
+
+\color{uniblue}{\section[(справочное) Перечень сигналов ФСУ, предназначенных для конфигурирования устройств ЮНИТ-М300]{(справочное)\\Перечень сигналов ФСУ, предназначенных для конфигурирования устройств ЮНИТ-М300}}
+\color{black}
+
+\setlength{\footskip}{0mm}
+
+\begin{longtable}{
+|>{\centering\arraybackslash}m{6.8cm}
+|>{\centering\arraybackslash}m{5cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{1cm}
+|>{\centering\arraybackslash}m{1cm}
+|}
+
+\caption{Перечень сигналов ФСУ, предназначенных для конфигурирования устройств ЮНИТ-М300\vspace{-0.5\baselineskip}}\label{appA:tbl1}\\ % выравнивает надпись посередине таблицы
+
+\hline
+\rowcolor{gray!30}
+Полное наименование сигнала & Наименование сигнала на ФСУ & Дискретные входы & Выходные реле & Светодиоды & ФК & РС & РАС & Пуск РАС \\ 
+\hline
+\endfirsthead
+\caption{\emph{Продолжение\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\hline
+\rowcolor{gray!30}
+Полное наименование сигналов & Наименование сигналов на ФСУ & Дискретные входы & Выходные реле & Светодиоды & ФК & РС & РАС & Пуск РАС \\ 
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+%===t2
+\multicolumn{9}{|c|}{Сигналы функциональной логики} \\
+\hline
+\centering ДЗТ/ control: Оперативный вывод функции ДЗТ & \centering ОВ ДЗТ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ control: Перевод ДТО на сигнал & \centering ДТО на сигн & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ control: Оперативный вывод функции ДТО & \centering ОВ ДТО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ control: Перевод ДТЗт на сигнал & \centering ДТЗт на сигн & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ control: Оперативный вывод функции ДТЗт & \centering ОВ ДТЗт & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ control: Оперативный вывод функции КЦТнеб & \centering ОВ КЦТнеб & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Индикация исправности логического узла & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Индикация поведения логического узла & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Пуск ДТО по фазе A & \centering Пуск ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Пуск ДТО по фазе В & \centering Пуск ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Пуск ДТО по фазе С & \centering Пуск ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Срабатывание ДТЗт & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе A & \centering Срабатывание ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе В & \centering Срабатывание ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе С & \centering Срабатывание ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Срабатывание ДТЗт на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе A на сигнал & \centering Сраб. ф.А сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе В на сигнал & \centering Сраб. ф.В сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Срабатывание ДТЗт по фазе С на сигнал & \centering Сраб. ф.С сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТЗт: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Индикация исправности логического узла & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Индикация поведения логического узла & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Пуск ДТО по фазе A & \centering Пуск ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Пуск ДТО по фазе В & \centering Пуск ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Пуск ДТО по фазе С & \centering Пуск ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Срабатывание ДТО & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Срабатывание ДТО по фазе A & \centering Срабатывание ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Срабатывание ДТО по фазе В & \centering Срабатывание ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Срабатывание ДТО по фазе С & \centering Срабатывание ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Срабатывание ДТО на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Срабатывание ДТО по фазе A на сигнал & \centering Сраб. ф.А сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Срабатывание ДТО по фазе В на сигнал & \centering Сраб. ф.В сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Срабатывание ДТО по фазе С на сигнал & \centering Сраб. ф.С сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ ДТО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д2Г: Индикация исправности логического узла Д2Г & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д2Г: Индикация поведения логического узла Д2Г & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д2Г: Пуск Д2Г & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д2Г: Пуск Д2Г по фазе A & \centering Пуск ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д2Г: Пуск Д2Г по фазе В & \centering Пуск ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д2Г: Пуск Д2Г по фазе С & \centering Пуск ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д5Г: Индикация исправности логического узла Д5Г & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д5Г: Индикация поведения логического узла Д5Г & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д5Г: Пуск Д5Г & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д5Г: Пуск Д5Г по фазе A & \centering Пуск ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д5Г: Пуск Д5Г по фазе В & \centering Пуск ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ Д5Г: Пуск Д5Г по фазе С & \centering Пуск ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ БВКЗ: Индикация исправности логического узла БВКЗ & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ БВКЗ: Индикация поведения логического узла БВКЗ & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ БВКЗ: Срабатывание БВКЗ & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ БВКЗ: Срабатывание БВКЗ по фазе А & \centering Срабатывание ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ БВКЗ: Срабатывание БВКЗ по фазе В & \centering Срабатывание ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ БВКЗ: Срабатывание БВКЗ по фазе С & \centering Срабатывание ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ КЦТнеб: Индикация исправности логического узла КЦНнеб & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ КЦТнеб: Индикация поведения логического узла КЦНнеб & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ КЦТнеб: Срабатывание КЦНнеб & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ КЦТнеб: Срабатывание КЦНнеб фазы А & \centering Срабатывание ф.А & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ КЦТнеб: Срабатывание КЦНнеб фазы В & \centering Срабатывание ф.В & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ КЦТнеб: Срабатывание КЦНнеб фазы С & \centering Срабатывание ф.С & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ КЦТнеб: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ДЗТ/ КЦТнеб: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ control: Оперативный вывод функции КЦТ & \centering ОВ КЦТ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ control: Оперативный вывод функции КЦТ стороны 1 & \centering ОВ КЦТст1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ control: Оперативный вывод функции КЦТ стороны 2 & \centering ОВ КЦТст2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ control: Оперативный вывод функции КЦТ стороны 3 & \centering ОВ КЦТст3 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ КЦТст1: Индикация исправности логического узла КЦТст1 & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ КЦТст1: Индикация поведения логического узла КЦТст1 & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ КЦТст1: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ КЦТст1: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ КЦТст1: Срабатывание КЦТст1 при асимметрии & \centering Сраб. асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ КЦТст1: Пуск КЦТст1 при асимметрии & \centering Пуск асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ КЦТст1: Пуск КЦТст1 при обрыве провода & \centering Пуск обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering КЦТ/ КЦТст1: Срабатывание КЦТст1 при обрыве провода & \centering Срабатывание обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗПО/ control: Оперативный вывод функции ЗПО & \centering ОВ ЗПО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗПО/ control: Перевод ЗПО на сигнал & \centering ЗПО на сигн & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗПО/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗПО/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗПО/ ЗПО: Индикация исправности логического узла ЗПО & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗПО/ ЗПО: Индикация поведения логического узла ЗПО & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗПО/ ЗПО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗПО/ ЗПО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗПО/ ЗПО: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗПО/ ЗПО: Срабатывание ЗПО & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗПО/ ЗПО: Срабатывание ЗПО на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ control: Оперативный вывод функции ТО ЗПО & \centering ОВ ТО ЗПО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ control: Оперативный вывод функции ТО ЗПО ВН & \centering ОВ ТО ЗПО ВН & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ control: Оперативный вывод функции ТО ЗПО НН1 & \centering ОВ ТО ЗПО НН1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ control: Оперативный вывод функции ТО ЗПО НН2 & \centering ОВ ТО ЗПО НН2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО ВН: Индикация исправности логического узла ТО ВН & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО ВН: Индикация поведения логического узла ТО ВН & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО ВН: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО ВН: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО ВН: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО НН1: Индикация исправности логического узла ТО НН1 & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО НН1: Индикация поведения логического узла ТО НН1 & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО НН1: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО НН1: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО НН1: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО НН2: Индикация исправности логического узла ТО НН2 & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО НН2: Индикация поведения логического узла ТО НН2 & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО НН2: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО НН2: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО НН2: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО общий: Индикация исправности логического узла ТО общий & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО общий: Индикация поведения логического узла Тообщий & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО общий: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО общий: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО ЗПО/ ТО общий: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ control: Оперативный вывод функции ЗП & \centering ОВ ЗП & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ control: Оперативный вывод функции ЗП ВН & \centering ОВ ЗП ВН & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ control: Оперативный вывод функции ЗП НН1 & \centering ОВ ЗП НН1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ control: Оперативный вывод функции ЗП НН2 & \centering ОВ ЗП НН2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ control: Перевод ЗП на отключение & \centering ЗП на откл & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП ВН: Индикация исправности логического узла ЗП ВН & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП ВН: Индикация поведения логического узла ЗП ВН & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП ВН: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП ВН: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП ВН: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП ВН: Пуск ИО максимального тока & \centering ИО Iмакс & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП ВН: Срабатывание ЗП ВН & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП ВН: Срабатывание ЗП ВН на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН1: Индикация исправности логического узла ЗП НН1 & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН1: Индикация поведения логического узла ЗП НН1 & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН1: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН1: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН1: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН1: Пуск ИО максимального тока & \centering ИО Iмакс & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН1: Срабатывание ЗП НН1 & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН1: Срабатывание ЗП НН1 на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН2: Индикация исправности логического узла ЗП НН2 & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН2: Индикация поведения логического узла ЗП НН2 & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН2: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН2: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН2: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН2: Пуск ИО максимального тока & \centering ИО Iмакс & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН2: Срабатывание ЗП НН2 & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЗП/ ЗП НН2: Срабатывание ЗП НН2 на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ control: Оперативный вывод функции РТПО & \centering ОВ РТПО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ control: Оперативный вывод функции РТПО ВН & \centering ОВ РТПО ВН & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ control: Оперативный вывод функции РТПО НН1 & \centering ОВ РТПО НН1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ control: Оперативный вывод функции РТПО НН2 & \centering ОВ РТПО НН2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО ВН: Индикация исправности логического узла РТПО ВН & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО ВН: Индикация поведения логического узла РТПО ВН & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО ВН: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО ВН: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО ВН: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО НН1: Индикация исправности логического узла РТПО НН1 & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО НН1: Индикация поведения логического узла РТПО НН1 & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО НН1: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО НН1: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО НН1: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО НН2: Индикация исправности логического узла РТПО НН2 & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО НН2: Индикация поведения логического узла РТПО НН2 & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО НН2: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО НН2: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО НН2: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ ТО общий: Индикация исправности логического узла ТО общий & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ ТО общий: Индикация поведения логического узла Тообщий & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО общий: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО общий: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering РТПО/ РТПО общий: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТК ЗДЗ/ control: Оперативный вывод функции ТК ЗДЗ & \centering ОВ ТК ЗДЗ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТК ЗДЗ/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТК ЗДЗ/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТК ЗДЗ/ ТК ЗДЗ: Индикация исправности логического узла ТК ЗДЗ & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТК ЗДЗ/ ТК ЗДЗ: Индикация поведения логического узла ТК ЗДЗ & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТК ЗДЗ/ ТК ЗДЗ: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТК ЗДЗ/ ТК ЗДЗ: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТК ЗДЗ/ ТК ЗДЗ: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО РПН/ control: Оперативный вывод функции ТО РПН & \centering ОВ ТО РПН & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО РПН/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО РПН/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО РПН/ ТО РПН: Индикация исправности логического узла ТО РПН & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО РПН/ ТО РПН: Индикация поведения логического узла ТО РПН & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО РПН/ ТО РПН: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО РПН/ ТО РПН: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ТО РПН/ ТО РПН: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ control: Оперативный вывод функции Гзоткл & \centering ОВ ГЗоткл & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ control: Перевод ГЗоткл на сигнал & \centering ГЗоткл на сигн & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ control: Сброс блокировки технологических и газовых защит & \centering Сброс блок. ГЗ,ТЗ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ ЛО: Индикация поведения логического узла ЛО ГЗоткл & \centering Поведение & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ ЛО: Индикация исправности логического узла ЛО ГЗоткл & \centering Исправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ ЛО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ ЛО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ ЛО: Перевод на сигнал ГЗоткл & \centering Перевод на сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ ЛО: Срабатывание ГЗоткл заблокировано & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ ЛО: Сигнал ГЗоткл & \centering Сигнал & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ ЛО: Отключение ГЗоткл & \centering Отключение & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ control: Оперативный вывод функции Гзоткл & \centering ОВ ГЗоткл & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ control: Перевод ГЗоткл на сигнал & \centering ГЗоткл на сигн & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗоткл/ control: Сброс блокировки технологических и газовых защит & \centering Сброс блок. ГЗ,ТЗ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО Гзсигн/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО Гзсигн/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО Гзсигн/ ЛО: Индикация поведения логического узла ЛО ГЗсигн & \centering Поведение & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО Гзсигн/ ЛО: Индикация исправности логического узла ЛО ГЗсигн & \centering Исправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО Гзсигн/ ЛО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО Гзсигн/ ЛО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО Гзсигн/ ЛО: Перевод на отключение ГЗсигн & \centering Перевод на откл & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО Гзсигн/ ЛО: Срабатывание ГЗсигн заблокировано & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО Гзсигн/ ЛО: Сигнал ГЗсигн & \centering Сигнал & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО Гзсигн/ ЛО: Отключение ГЗсигн & \centering Отключение & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ control: Оперативный вывод функции ГЗ РПН & \centering ОВ ГЗ РПН & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ control: Перевод ГЗ РПН на сигнал & \centering ГЗ РПН на сигн & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ control: Сброс блокировки технологических и газовых защит & \centering Сброс блок. ГЗ,ТЗ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ ЛО: Индикация поведения логического узла ЛО ГЗ РПН & \centering Поведение & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ ЛО: Индикация исправности логического узла ЛО ГЗ РПН & \centering Исправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ ЛО: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ ЛО: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ ЛО: Перевод на сигнал ГЗ РПН & \centering Перевод на сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ ЛО: Срабатывание ГЗ РПН заблокировано & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ ЛО: Сигнал ГЗ РПН & \centering Сигнал & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ГЗ РПН/ ЛО: Отключение ГЗ РПН & \centering Отключение & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ control: Оперативный вывод ЛО ТЗ & \centering ОВ ЛО ТЗ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ control: Оперативный вывод ЛО ДТм & \centering ОВ ЛО ДТм & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ control: Оперативный вывод ЛО ДТо & \centering ОВ ЛО ДТо & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ control: Оперативный вывод ЛО РД & \centering ОВ ЛО РД & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ control: Сброс блокировки технологических и газовых защит & \centering Сброс блок. ГЗ,ТЗ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТм: Индикация поведения логического узла ЛО ДТм & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТм: Индикация исправности логического узла ЛО ДТм & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТм: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТм: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТм: Срабатывание датчика температуры масла заблокировано & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТм: Отключение ЛО ДТм & \centering Отключение & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО РД: Индикация поведения логического узла ЛО РД & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО РД: Индикация исправности логического узла ЛО РД & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО РД: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО РД: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО РД: Срабатывание реле давления заблокировано & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО РД: Отключение ЛО РД & \centering Отключение & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТо: Индикация поведения логического узла ЛО ДТо & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТо: Индикация исправности логического узла ЛО ДТо & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТо: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТо: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТо: Срабатывание датчика температуры обмотки заблокировано & \centering Заблокировано & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТЗ/ ЛО ДТо: Отключение ЛО ДТо & \centering Отключение & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ control: Оперативный вывод ЛО ТС & \centering ОВ ЛО ТС & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ control: Оперативный вывод ЛО ПК & \centering ОВ ЛО ПК & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ control: Оперативный вывод ЛО ОК & \centering ОВ ЛО ОК & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ control: Оперативный вывод ЛО Дут & \centering ОВ ЛО ДУт & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ control: Перевод ПК на сигнал & \centering ПК на сигн & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ control: Перевод ОК на сигнал & \centering ОК на сигн & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ control: Перевод ДУт на сигнал & \centering ДУт на сигн & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ПК: Индикация поведения логического узла ЛО ПК & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ПК: Индикация исправности логического узла ЛО ПК & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ПК: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ПК: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ПК: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ПК: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ОК: Индикация поведения логического узла ЛО ОК & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ОК: Индикация исправности логического узла ЛО ОК & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ОК: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ОК: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ОК: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ОК: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ДУт: Индикация поведения логического узла ЛО ДУт & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ДУт: Индикация исправности логического узла ЛО Дут & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ДУт: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ДУт: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ДУт: Срабатывание на сигнал & \centering Срабатывание сигн & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering ЛО ТС/ ЛО ДУт: Срабатывание & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ control: Оперативный вывод функции УРОВ & \centering ОВ УРОВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ БУ: Индикация исправности логического устройства & \centering Исправность LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ БУ: Индикация поведения логического устройства & \centering Поведение LD & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ УРОВ: Индикация исправности логического узла УРОВ & \centering Исправность & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ УРОВ: Индикация поведения логического узла УРОВ & \centering Поведение & \centering + & \centering + & \centering + & \centering + & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ УРОВ: Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ УРОВ: Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ УРОВ: Пуск & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ УРОВ: Пуск "На себя" & \centering Пуск "На себя" & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ УРОВ: Пуск ИО максимального тока & \centering ИО Iмакс & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ УРОВ: Срабатывание УРОВ & \centering Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering УРОВ/ УРОВ: Срабатывание УРОВ  "На себя" & \centering Сраб "На себя" & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t2
+\end{longtable} 
+
+\clearpage
+
+%\includepdf[pages={1},width=0.5\textwidth, angle=90]{1.pdf} вставляем и поворачиваем pdf
+%\begin{center}
+%\includegraphics[width=1.4\textwidth]{1.pdf}
+%\end{center}
+
+\end{landscape}
+\restoregeometry
+
+

@@ -1,0 +1,208 @@
+\documentclass[12pt,table, hidelinks]{extarticle} % что то меняется , не понятно article or extarticle...
+\usepackage[T1, T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+%\usepackage[dvips]{graphicx}
+\usepackage{graphicx}
+%\usepackage{svg}
+
+
+\usepackage{unicode-math} % Задать шрифт для математических формул
+\setmathfont{Stix Two Math}
+%\setmathfont{Arial}
+
+% для KOMA script чтобы в документе менять формат А3 А4 и ориентацию
+\usepackage{typearea}
+
+\usepackage[
+a4paper,
+includehead,
+includefoot,
+nomarginpar,% We don't want any margin paragraphs
+%textwidth=10cm,% Set \textwidth to 10cm
+headheight=10mm,% Set \headheight to 10mm
+top=1mm,
+bottom=7mm, 
+left=22mm,
+right=7mm,
+]{geometry}
+
+%\savegeometry{standard}
+\setlength{\topmargin}{-27mm}
+\setlength{\headsep}{7mm} % Устанавливаем отступ между колонтитулом и текстом 10pt !!! Сдвигает а4 landscape
+%\setlength{\footskip}{10pt} % Устанавливаем отступ между текстом и колонтитулом внизу страницы 20pt
+%\setlength{\topskip}{0pt} % Установка вертикального промежутка между верхним краем текста и колонтитулом на 0pt
+\setlength{\textheight}{268mm}
+\setlength{\footskip}{-5mm}
+
+
+\usepackage{fancyhdr}
+
+%\usepackage{lmodern}
+
+
+%\usepackage{longtable}
+%\usepackage{amsfonts}
+
+\usepackage{xcolor} % ПРИ КОМПИЛЯЦИИ В ЛИНУКС УБРАТЬ ЭТУ СТРОКУ, да вообще ее убрать
+\usepackage{colortbl}
+
+%\usepackage{array}
+
+\usepackage{hyperref}
+
+\graphicspath{{./images/}}
+
+\usepackage{fontspec}
+\setsansfont[
+        Ligatures=TeX,
+        BoldFont={Arial Narrow Bold},
+        ItalicFont={Arial Narrow Italic},
+        BoldItalicFont={Arial Narrow Bold Italic}
+    ]{Arial Narrow}
+\renewcommand\familydefault{\sfdefault}
+%\setmainfont{Arial Narrow}
+\usepackage{fancyhdr}
+
+\usepackage{parskip}% для абзацев и отступа
+\setlength{\parindent}{1cm}
+\setlength{\parskip}{1mm}
+\setlength{\intextsep}{0mm} % отступ между плавающими элементами
+
+
+\usepackage{indentfirst}
+
+% Определяем цвета фирмы
+\definecolor{unired}{RGB}{247, 148, 29} 
+\definecolor{uniblue}{RGB}{30, 73, 115}
+\definecolor{unigray}{RGB}{88, 89, 91}
+
+\usepackage{longtable,booktabs}
+\usepackage{calc} % for calculating minipage widths
+
+
+% Это для таблицы, чтобы жестко ширину столбцов выставлять НЕ ТРЕБУЕТСЯ???
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+\usepackage{bigstrut}
+
+\usepackage[labelsep=endash]{caption} % выравнить надписи к рисункам тире вместо двоеточия
+\DeclareCaptionLabelFormat{myformat}{\textls[75]{#1 #2}} % Здесь устанавливается разрежение текста для надписей Рисунок и Таблица
+\captionsetup[figure]{name=Рисунок, justification=centering, labelformat=myformat} 
+\captionsetup[table]{justification=justified, labelformat=myformat} % Убираем отступ при переносе строки в наименовании таблицы
+\setlength{\belowcaptionskip}{0mm} % отступ после подписи
+%\setlength{\abovecaptionskip}{0mm} % отступ до подписи
+
+% нумерация таблиц и рисунков ИСПОЛЬЗУЕТСЯ!!!
+\counterwithin*{figure}{subsection}
+\counterwithin*{table}{subsection}
+% * means don't change the representation, because we'll do it now
+
+\usepackage{titlesec}
+
+% Форматирование заголовков секций и подразделов
+\titleformat{\section}
+  {\normalfont\Large\bfseries\MakeUppercase}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\MakeUppercase}{\thesubsection}{1em}{}
+
+\renewcommand{\thefigure}{%
+  \ifnum\value{subsection}>0
+    \thesubsection.%
+  \else
+    \thesection.%
+  \fi
+  \arabic{figure}%
+}
+\renewcommand{\thetable}{%
+  \ifnum\value{subsection}>0
+    \thesubsection.%
+  \else
+    \thesection.%
+  \fi
+  \arabic{table}%
+}
+%%%%%%%%%%%%%%% ЭТОТ КОД ДЕЛАЕТ ТОЖЕ САМОЕ? %%%%%%%%%%%%%%%%%%%
+%\usepackage{chngcntr}
+%\counterwithin{figure}{subsection}
+%\counterwithin{table}{subsection}
+%\renewcommand{\thefigure}{\thesubsection.\arabic{figure}}
+%\renewcommand{\thetable}{\thesubsection.\arabic{table}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{multirow} % Для центрирования содержимого ячейки по вертикали - ИСПОЛЬЗУЕТСЯ!!!
+\usepackage{amsmath} % для вывода формул
+\usepackage{eqexpl} % для вывода пояснений к формулам
+\eqexplSetDelim{--}
+\eqexplSetIntro{где}
+
+\usepackage{titlesec}
+\usepackage{appendix}
+%\titlespacing{\chapter}{0pt}{-30pt}{12pt} как пример
+\titlespacing{\section}{0pt}{0pt}{5mm}
+\titlespacing{\subsection}{0pt}{3mm}{0mm}
+\titlespacing{\subsubsection}{0pt}{2mm}{2mm}
+
+
+%\usepackage[bitstream-charter]{mathdesign} % проверить когда формулы будут в тексте
+\uchyph=0 % отключаем перенос в словах с заглавной буквы - чтобы ГЗоткл не переносил например
+
+
+% Заменяем точки на тире в перечислении (списке)
+% - дефис, -- тире, --- длинное тире
+\usepackage{enumitem}
+
+\setlist[itemize]{label=---}
+%\setlist[itemize]{label=$\circ$} % окружность
+%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float}
+
+
+% не допускает в конце странцы заголовок и одна или две строки , переносит на след страницу
+% необходимо указывать непосредственно в разделе
+\usepackage{needspace} %ИСПОЛЬЗУЕТСЯ!!!
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tabularray}
+\usepackage{tabularx}
+
+
+\usepackage{tocloft}  % точки для глав в оглавлении ИСПОЛЬЗУЕТСЯ!!!
+\usepackage{tocvsec2} % для подавления отображения подразделов в toc для приложений, не знаю, если подразделы появятся
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % точки для глав в оглавлении ИСПОЛЬЗУЕТСЯ!!!
+
+\usepackage{pdflscape}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}
+
+%\usepackage{lscape} % УДАЛИТЬ???
+\usepackage{lipsum}
+\usepackage[absolute]{textpos}
+\usepackage{etoolbox}
+
+\usepackage{pdfpages} % попробуем вставить векторный рисунок
+
+
+%\titlespacing{\subsection}{0pt}{\parskip}{-\parskip} % отступ между сабсекцией и лонгтейбл?
+%\titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+
+%\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+%\titlespacing{\section}{0pt}{\parskip}{-\parskip}
+%\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+%\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+
+\usepackage{fontawesome} % Подключить пакет шрифтов fontawesome
+
+\usepackage{microtype} % для разрежения текста
+
+\usepackage{etoolbox} % для проверки логических условий
+
+

@@ -1,0 +1,76 @@
+\color{uniblue}\section[Пример расчета уставок защит трансформатора]{\sloppy Пример расчета уставок защит трансформатора} 
+\color{black}
+
+%\begin{enumerate}[label={}, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\begin{enumerate}[label=\arabic{section}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\setlength{\itemsep}{15pt} % Отступ между пунктами этого перечисления 15pt
+\item Исходные данные
+
+%\begin{enumerate}[label={}, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\begin{enumerate}[label=\arabic{section}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+В  настоящем  примере  дан  расчет уставок защит и автоматики понижающего двухобмоточного трансформатора типа ТМН-4000/35 с параметрами, приведенными в таблице \ref{sett:tbl1}. Поясняющая схема приведена на рисунке \ref{sett:img1}.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{\genpath/000. Общее/schemasT.pdf}
+\captionof{figure}{Поясняющая схема и схема замещения защищаемого трансформатора}\label{sett:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{7.2cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
+\caption{Параметры защищаемого трансформатора\hfill\vspace{-0.5\baselineskip}}\label{sett:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Обозначение параметра & Единица измерения & Значение \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{sett:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Обозначение параметра & Единица измерения & Значение \\ 
+\endhead
+\endfoot
+\endlastfoot
+\raggedright 1 Схема соединения & \centering -- & \centering -- & \centering\arraybackslash Y/$\Delta$-11 \\
+\hline
+\raggedright 2 Номинальная мощность & \centering Sном & \centering МВА & \centering\arraybackslash 4 \\
+\hline
+\raggedright 3 Номинальное напряжение обмотки ВН & \centering Uном,в & \centering кВ & \centering\arraybackslash 35 \\
+\hline
+\raggedright 4 Номинальное напряжение обмотки НН & \centering Uном,н & \centering кВ & \centering\arraybackslash 6,3 \\
+\hline
+\raggedright 5 Диапазон регулирования напряжения РПН со стороны ВН & \centering -- & \centering -- & \centering\arraybackslash \pm 6x1,5\% \\
+\hline
+\raggedright 6 Напряжение короткого замыкания & \centering Uк & \centering \% & \centering\arraybackslash 7,5 \\
+\hline
+\end{longtable}
+\normalsize
+
+\item 
+Схема замещения и расчетные значения токов короткого замыкания приведены на рисунке \ref{sett:img2}.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\genpath/000. Общее/schemasT2.pdf}
+\captionof{figure}{Схема замещения защищаемого трансформатора и результаты расчета токов КЗ}\label{sett:img2}
+\end{figure}
+
+\item
+На трансформаторе установлены трансформаторы тока на стороне ВН с коэффициентом трансформации 400/5, на стороне НН с коэффициентом трансформации 1500/5. Трансформаторы тока по сторонам ВН и НН собраны в <<звезду>>, полярными выводами к трансформатору.
+
+\item Номинальный ток трансформатора со стороны ВН:
+\begin{equation*}
+    I_{\textsl{ном,в}} = \frac{S_{\textsl{ном}}}{\sqrt{3} \cdot U_{\textsl{ном,в}}}  = \frac{4 \cdot 10^6}{\sqrt{3} \cdot 37 \cdot 10^3} = 62,4\; (\textsl{А}),
+\end{equation*}
+\item Номинальный ток трансформатора со стороны НН:
+\begin{equation*}
+    I_{\textsl{ном,н}} = \frac{S_{\textsl{ном}}}{\sqrt{3} \cdot U_{\textsl{ном,н}}}  = \frac{4 \cdot 10^6}{\sqrt{3} \cdot 11 \cdot 10^3} = 210\; (\textsl{А}),
+\end{equation*}
+
+\end{enumerate}
+
+% КОНЕЦ ОБЩЕЙ ЧАСТИ
