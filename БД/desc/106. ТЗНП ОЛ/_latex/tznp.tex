@@ -14,10 +14,16 @@
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
 \item
-Токовая защита нулевой последовательности <<ТЗНП>> предназначена для селективной защиты от замыканий на землю в линиях среднего и высокого напряжения, а также для резервирования защит трансформаторов при замыканиях на землю в сети низкого напряжения, работающей с заземленной нейтралью.
+Токовая защита нулевой последовательности предназначена для селективной защиты от замыканий на землю в линиях среднего и высокого напряжения, а также для резервирования защит трансформаторов при замыканиях на землю в сети низкого напряжения, работающей с заземленной нейтралью.
 
 \item
 Устройство содержит две ступени ТЗНП с независимой выдержкой времени от КЗ на землю, реагирующие на первую гармонику тока нулевой последовательности.
+
+\item
+Основные характеристики функционального блока <<ТЗНП>>:
+\begin{itemize}
+    \item погрешность по углу при номинальных значениях тока и напряжения не более 5$^\circ$.
+\end{itemize}
 
 \item
 Логическая часть реализует группу пусковых органов с независимыми уставками, предусматривает таймеры выдержек времени на срабатывание, логику пусков и блокировок, коммутацию внутренних пусковых сигналов для формирования выходного сигнала автоматического ускорения.
@@ -220,7 +226,7 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/106. ТЗНП ОЛ/_latex/img/onmnp.pdf}
+\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/106. ТЗНП ОЛ/_latex/img/onmnp.pdf}
 \captionof{figure}{Функциональная схема <<ОНМ НП>>}\label{tznp:imgonm1}
 \end{figure}
 
@@ -275,7 +281,7 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/106. ТЗНП ОЛ/_latex/img/bntnp.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/106. ТЗНП ОЛ/_latex/img/bntnp.pdf}
 \captionof{figure}{Функциональная схема <<БНТ НП>>}\label{tznp:img3}
 \end{figure}
 
@@ -309,7 +315,6 @@
 
 \end{enumerate}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОРГАН АУ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \item Автоматическое ускорение ТЗНП (АУ ТЗНП)
@@ -327,7 +332,7 @@
 \begin{figure}[H]
 \centering
 
-\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/106. ТЗНП ОЛ/_latex/img/au.pdf}
+\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/106. ТЗНП ОЛ/_latex/img/au.pdf}
 \captionof{figure}{Функциональная схема АУ ТЗНП}\label{tznp:imgau}
 \vspace{3mm}
 \end{figure}
@@ -383,7 +388,7 @@
 \begin{figure}[H]
 \centering
 
-\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/106. ТЗНП ОЛ/_latex/img/ou.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/106. ТЗНП ОЛ/_latex/img/ou.pdf}
 \captionof{figure}{Функциональная схема ОУ ТЗНП}\label{tznp:imgou}
 \vspace{3mm}
 \end{figure}
