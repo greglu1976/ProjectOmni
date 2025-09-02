@@ -1,6 +1,3 @@
-% Строчки для суммарной таблицы, в следующей строке прописаны используемые экземпляры узлов
-%===s control, LLN0, CBCSWI1
-
 %\needspace{4\baselineskip}
 \color{uniblue}{\subsection{\raggedright{Контроллер присоединения (КП)}}}
 \color{black}
@@ -8,9 +5,6 @@
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\color{uniblue}{\subsubsection{Общие сведения}}
-%\color{black}
 
 \item Общие сведения
 
@@ -32,6 +26,14 @@
 Функциональный блок <<КП>> может быть выведен из работы оперативно путем активации сигнала <<ОВ КП>>, о чем сигнализирует активное состояние сигнала <<КП: Оперативный вывод>>.
 \item
 Логика управления режимами работы функционального блока <<КП>> выполнена в соответствии с рисунком \ref{kp:img_gen}. В таблице \ref{kp:tbl_gen} приведены параметры, необходимые для настройки функционального блока <<КП>>. 
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/45. КП В/_latex/img/1.pdf}
+\captionof{figure}{Функциональная схема управления режимами работы <<КП>>}
+\label{kp:img_gen}
+\end{figure}
 
 \small
 \begin{longtable}{|>{\centering\arraybackslash}m{5cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{1cm}|}
@@ -59,14 +61,6 @@
 %===t1
 \end{longtable}
 \normalsize
-
-\vspace{3mm}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/45. КП В/_latex/img/1.pdf}
-\captionof{figure}{Функциональная схема управления режимами работы <<КП>>}
-\label{kp:img_gen}
-\end{figure}
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  УПРАВЛЕНИЕ ВЫКЛЮЧАТЕЛЕМ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

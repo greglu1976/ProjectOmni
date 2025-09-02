@@ -1,15 +1,9 @@
-% Строчки для суммарной таблицы, в следующей строке прописаны используемые экземпляры узлов
-%===s control, LLN0, PTOC1, PTOC2, PTOC3, PHAR1, PTUV1, PTUV2, RBLC1 
-
 %\needspace{4\baselineskip}
 \color{uniblue}{\subsection{Максимальная токовая защита трансформатора (МТЗ)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%color{uniblue}{\subsubsection{Общие сведения}}
-%\color{black}
 
 \item Общие сведения
 
@@ -64,13 +58,6 @@
 \item
 Алгоритм работы ступеней МТЗ выполнен в соответствии с рисунком \ref{mtzvn:img1}. В таблице \ref{mtzvn:tbl1} приведены параметры, необходимые для настройки функции <<МТЗ>>.
 
-\vspace{3mm}
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{\fbpath/24. МТЗ Т2/_latex/img/mtzst.pdf}
-\captionof{figure}{Функциональная схема ступеней <<МТЗ 1 ст>>, <<МТЗ 2 ст>>, <<МТЗ 3 ст>>}\label{mtzvn:img1}
-\end{figure}
-
 \small
 \begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки <<МТЗ>>\hfill\vspace{-0.5\baselineskip}}\label{mtzvn:tbl1}\\ 
@@ -123,6 +110,13 @@
 \end{longtable}
 \normalsize
 
+\vspace{3mm}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/24. МТЗ Т2/_latex/img/mtzst.pdf}
+\captionof{figure}{Функциональная схема ступеней <<МТЗ 1 ст>>, <<МТЗ 2 ст>>, <<МТЗ 3 ст>>}\label{mtzvn:img1}
+\end{figure}
+
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОРГАН КПОН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -152,9 +146,9 @@
 Алгоритм работы <<КПОН>> выполнен в соответствии с рисунком \ref{mtzvn:img2}. В таблице \ref{mtzvn:tbl2} приведены параметры, необходимые для настройки функции <<КПОН>>.
 
 \vspace{3mm}
-\begin{figure}[H]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/24. МТЗ Т2/_latex/img/kpon.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/24. МТЗ Т2/_latex/img/kpon.pdf}
 \captionof{figure}{Функциональная схема <<КПОН>>}\label{mtzvn:img2}
 \end{figure}
 
@@ -217,7 +211,7 @@
 Алгоритм работы функции <<БНТ>> выполнен в соответствии с рисунком \ref{mtzvn:img3}. В таблице \ref{mtzvn:tbl3} приведены параметры, необходимые для настройки функции <<БНТ>>.
 
 \vspace{3mm}
-\begin{figure}[H]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{\fbpath/24. МТЗ Т2/_latex/img/bnt.pdf}
 \captionof{figure}{Функциональная схема БНТ}\label{mtzvn:img3}
@@ -269,9 +263,9 @@
 \item
 Алгоритм работы <<БЛЗШ>> выполнен в соответствии с рисунком \ref{mtzvn:img4}. В таблице \ref{mtzvn:tbl4} приведены параметры, необходимые для настройки функции <<БЛЗШ>>.
 
-\begin{figure}[H]
+\begin{figure}[!h]
 \centering
-\includegraphics[scale=0.8,keepaspectratio]{\fbpath/24. МТЗ Т2/_latex/img/blzsh.pdf}
+\includegraphics[width=0.65\textwidth,height=0.65\textheight,keepaspectratio]{\fbpath/24. МТЗ Т2/_latex/img/blzsh.pdf}
 \captionof{figure}{Функциональная схема БЛЗШ}\label{mtzvn:img4}
 \vspace{3mm}
 \end{figure}
@@ -305,4 +299,5 @@
 
 \end{enumerate}
 
+\FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.
 \end{enumerate}

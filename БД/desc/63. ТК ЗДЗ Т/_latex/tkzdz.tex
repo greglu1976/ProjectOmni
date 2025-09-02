@@ -1,6 +1,3 @@
-% Строчки для суммарной таблицы, в следующей строке прописаны используемые экземпляры узлов
-%===s control, LLN0, PTOC1
-
 \needspace{4\baselineskip}
 \color{uniblue}{\subsection{Токовый контроль для защиты от дуговых замыканий (ТК ЗДЗ)}}
 \color{black}
@@ -8,7 +5,7 @@
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
 
 \item
-Функция <<ТК ЗДЗ>> служит для формирования сигнала наличия тока через трансформатор для алгоритмов дуговых защит секций НН. 
+Токовый контроль ЗДЗ служит для формирования сигнала наличия тока через трансформатор для алгоритмов дуговых защит секций НН. 
 \item
 Ввод функции токового контроля в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ТК ЗДЗ: Ввод>>.
 \item
@@ -28,10 +25,10 @@
 Алгоритм работы функции <<ТК ЗДЗ>> выполнен в соответствии с рисунком \ref{tkzdz:img1}. В таблице \ref{tkzdz:tbl1} приведены параметры, необходимые для настройки функции <<ТК ЗДЗ>>.
 
 \vspace{3mm}
-\begin{figure}[H]
+\begin{figure}[!h]
 \centering
 
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/63. ТК ЗДЗ Т/_latex/img/1.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/63. ТК ЗДЗ Т/_latex/img/1.pdf}
 
 \captionof{figure}{Функциональная схема <<ТК ЗДЗ>>}\label{tkzdz:img1}
 \end{figure}
@@ -65,4 +62,6 @@
 %===t1
 \end{longtable}
 \normalsize
+
+\FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.
 \end{enumerate}

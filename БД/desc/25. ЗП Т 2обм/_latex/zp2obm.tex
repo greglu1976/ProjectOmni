@@ -8,7 +8,7 @@
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
 
 \item
-Функциональный блок <<ЗП>> служит для контроля перегрузки трансформатора по току и имеет в своем составе функцию контроля перегрузки по питающей стороне трансформатора 35 кВ. 
+Защита от перегрузки служит для контроля перегрузки трансформатора по току и имеет в своем составе функцию контроля перегрузки по питающей стороне трансформатора 35 кВ. 
 \item
 %\sloppy % потому что здесь криво выводит строку
 Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ЗП: Ввод>>.
@@ -24,9 +24,9 @@
 Алгоритм работы <<ЗП>> выполнен в соответствии с рисунком \ref{zp:img1}. В таблице \ref{zp:tbl1} приведены параметры, необходимые для настройки функционального блока <<ЗП>>.
 
 \vspace{3mm}
-\begin{figure}[H]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/25. ЗП Т 2обм/_latex/img/1.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/25. ЗП Т 2обм/_latex/img/1.pdf}
 \captionof{figure}{Функциональная схема <<ЗП>>}\label{zp:img1}
 \end{figure}
 
@@ -60,5 +60,6 @@
 \end{longtable}
 \normalsize
 
+\FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.
 \end{enumerate}
 

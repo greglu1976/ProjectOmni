@@ -1,22 +1,15 @@
-% Строчки для суммарной таблицы, в следующей строке прописаны используемые экземпляры узлов
-%===s control, LLN0, PDIF1, PDIF2, HF2PHAR1, HF5PHAR1, BLKRCTR1, RCTR1, RMXU1, RMXU2, RMXU3 
-
 %\needspace{4\baselineskip}
 \color{uniblue}{\subsection{Дифференциальная токовая защита трансформатора (ДЗТ)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\color{uniblue}{\subsubsection{Общие сведения}}
-%\color{black}
-
 \item Общие сведения
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
 \item
-Функциональный блок <<ДЗТ>> применяется в качестве основной защиты двухобмоточного или трехобмоточного силового трансформатора. <<ДЗТ>> обладает абсолютной селективностью и высоким быстродействием. Работа дифференциальных токовых функций не зависит от режима заземления нейтрали сети, и, следовательно, <<ДЗТ>>  может быть использована в качестве основной защиты от всех видов коротких замыканий. Функциональный блок содержит две независимые друг от друга защитные функции:
+Дифференциальная токовая защита применяется в качестве основной защиты двухобмоточного или трехобмоточного силового трансформатора. ДЗТ обладает абсолютной селективностью и высоким быстродействием. Работа дифференциальных токовых функций не зависит от режима заземления нейтрали сети, и, следовательно, ДЗТ  может быть использована в качестве основной защиты от всех видов коротких замыканий. Функциональный блок содержит две независимые друг от друга защитные функции:
 \begin{itemize}
 \item дифференциальный токовый орган с торможением (ДТЗт);
 \item дифференциальная токовая отсечка (ДТО).
@@ -29,6 +22,13 @@
     \item функция блокировки при внешний коротких замыканиях (БВКЗ);
     \item функция контроля токовых цепей по величине небаланса (КЦТнеб).
 \end{itemize}
+
+\item
+Основные характеристики функционального блока <<ДЗТ>>:
+\begin{itemize}
+    \item полное время срабатывания чувствительной ступени ДЗТ при дифференциальном токе более двухкратного тока уставки, в том числе с учетом наличия апериодической составляющей, с учетом времени срабатывания выходного реле - не более 50 мс.
+\end{itemize}
+
 \item
 Оперативный вывод функционального блока <<ДЗТ>> из работы происходит при появлении активного сигнала на входе <<ОВ ДЗТ>>, при этом осуществляется вывод защитных функций <<ДТО>> и <<ДТЗт>>. 
 \end{enumerate}
@@ -274,7 +274,7 @@ I_{\textsl{торм.C}} = \frac{1}{2}(\left | I_{C,1*}|+|I_{C,2*}|+|I_{C,3*} \ri
 
 \vspace{1mm}
 \begin{figure}[H]
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{\fbpath/17. ДЗТ 35/_latex/img/dtz.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/17. ДЗТ 35/_latex/img/dtz.pdf}
 \captionof{figure}{Функциональная схема <<ДТЗт>>}
 \label{dzt:img1}
 \end{figure}
@@ -345,12 +345,6 @@ I_{\textsl{торм.C}} = \frac{1}{2}(\left | I_{C,1*}|+|I_{C,2*}|+|I_{C,3*} \ri
 \item
 Алгоритм работы функции <<ДТО>> выполнен в соответствии с рисунком \ref{dzt:img2}. В таблице \ref{dzt:tbl2} приведены параметры, необходимые для настройки функции <<ДТО>>.
 
-\vspace{1mm}
-\begin{figure}[H]
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{\fbpath/17. ДЗТ 35/_latex/img/dto.pdf}
-\captionof{figure}{Функциональная схема <<ДТО>>}
-\label{dzt:img2}
-\end{figure}
 \small
 \begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ДТО>>\hfill\vspace{-0.5\baselineskip}}\label{dzt:tbl2}\\ 
@@ -381,6 +375,14 @@ I_{\textsl{торм.C}} = \frac{1}{2}(\left | I_{C,1*}|+|I_{C,2*}|+|I_{C,3*} \ri
 %===t1
 \end{longtable}
 \normalsize
+
+\vspace{1mm}
+\begin{figure}[H]
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{\fbpath/17. ДЗТ 35/_latex/img/dto.pdf}
+\captionof{figure}{Функциональная схема <<ДТО>>}
+\label{dzt:img2}
+\end{figure}
+
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ДЕТЕКТОР 2 ГАРМОНИКИ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
