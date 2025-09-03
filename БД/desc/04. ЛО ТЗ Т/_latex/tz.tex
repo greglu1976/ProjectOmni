@@ -1,15 +1,9 @@
-% Строчки для суммарной таблицы, в следующей строке прописаны используемые экземпляры узлов
-%===s control, LLN0, OILPTRC1, VLVPTRC1, WINPTRC1
 \needspace{4\baselineskip} 
 \color{uniblue}{\subsection{\sloppy Логика отключения при срабатывании технологических защит \mbox{трансформатора} (ЛО ТЗ)}}
 \color{black}
 
 % здесь для чтобы переноса небыло в заголовке
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ОБЩИЕ ПАРАМЕТРЫ  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\needspace{4\baselineskip}    
-%\color{uniblue}{\subsubsection{Общие сведения}}
-%\color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
 
@@ -32,7 +26,7 @@
 \item
 В таблице \ref{lotz:tbl1} приведены параметры, необходимые для настройки функций в составе функционального блока <<ЛО ТЗ>>.
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Общие параметры для настройки функционального блока <<ЛО ТЗ>>\hfill\vspace{-0.5\baselineskip}}\label{lotz:tbl1}\\ 
 \hline
 \rowcolor{gray!30}
@@ -87,7 +81,7 @@
 Алгоритм работы <<ЛО ДТм>> выполнен в соответствии с рисунком \ref{lotzdtm:img1}. В таблице \ref{lotzdtm:tbl1} приведены параметры, необходимые для настройки функции <<ЛО~ДТм>>.
 
 \vspace{3mm}
-\begin{figure}[H]
+\begin{figure}[!h]
 \centering %
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/04. ЛО ТЗ Т/_latex/img/lotzdtm.pdf}
 \captionof{figure}{Функциональная схема <<ЛО~ДТм>>}
@@ -95,7 +89,7 @@
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ЛО ДТм>>\hfill\vspace{-0.5\baselineskip}}\label{lotzdtm:tbl1}\\ 
 \hline
 \rowcolor{gray!30}
@@ -124,11 +118,9 @@
 \normalsize
 
 \end{enumerate}
+\FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ДАТЧИК ОБМОТКИ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\needspace{2\baselineskip}
-%\color{uniblue}{\subsubsection{Логика отключения при срабатывании датчика температуры обмотки (ЛО ДТо)}}
-%\color{black}
 \item Логика отключения при срабатывании датчика температуры обмотки (ЛО ДТо)
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt] 
@@ -161,7 +153,7 @@
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ЛО ДТo>>\hfill\vspace{-0.5\baselineskip}}\label{lotzdto:tbl1}\\ 
 \hline
 \rowcolor{gray!30}
@@ -188,12 +180,10 @@
 %===t1
 \end{longtable}
 \normalsize
-\end{enumerate}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  РЕЛЕ ДАВЛЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\needspace{2\baselineskip}
-%\color{uniblue}{\subsubsection{Логика отключения при срабатывании реле давления трансформатора (ЛО РД)}}
-%\color{black}
+\end{enumerate}
+\FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  РЕЛЕ ДАВЛЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \item Логика отключения при срабатывании реле давления трансформатора (ЛО РД)
 
@@ -223,7 +213,7 @@
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ЛО РД>>\hfill\vspace{-0.5\baselineskip}}\label{lotzrd:tbl1}\\ 
 \hline
 \rowcolor{gray!30}
@@ -254,3 +244,4 @@
 \end{enumerate}
 
 \end{enumerate}
+\FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.

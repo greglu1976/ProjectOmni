@@ -1,6 +1,3 @@
-% Строчки для суммарной таблицы, в следующей строке прописаны используемые экземпляры узлов
-%===s control, LLN0, LVCBPTRC1, LVCBRECRBRE1
-
 \needspace{3\baselineskip}
 \color{uniblue}{\subsection{Логика отключения выключателя стороны НН трансформатора (ЛО НН)}}
 \color{black}
@@ -8,9 +5,6 @@
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\color{uniblue}{\subsubsection{Общие сведения}}
-%\color{black}
 
 \item Общие сведения
 
@@ -27,9 +21,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛОГИКА ОТКЛЮЧЕНИЯ ВЫКЛЮЧАТЕЛЯ НН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\color{uniblue}{\subsubsection{Логика отключения выключателя ввода стороны НН (ЛО)}}
-%\color{black}
-
 \item Логика отключения выключателя ввода стороны НН (ЛО)
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
@@ -44,14 +35,14 @@
 Алгоритм работы <<ЛО>> выполнен в соответствии с рисунком \ref{lonn:img1}. В таблице \ref{lonn:tbl1} приведены параметры, необходимые для настройки функции <<ЛО>>.
 
 \vspace{3mm}
-\begin{figure}[H]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/16. ЛО В НН Т 35 ДЗТ/_latex/img/1.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/16. ЛО В НН Т 35 ДЗТ/_latex/img/1.pdf}
 \captionof{figure}{Функциональная схема <<ЛО>>}\label{lonn:img1}
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ЛО>>\hfill\vspace{-0.5\baselineskip}}\label{lonn:tbl1}\\ 
 \hline
 \rowcolor{gray!30}
@@ -80,10 +71,8 @@
 \normalsize
 
 \end{enumerate}
+\FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛОГИКА ЗАПРЕТА АПВ НН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\color{uniblue}{\subsubsection{Логика запрета АПВ выключателя ввода стороны НН (Запрет АПВ)}}
-%\color{black}
 
 \item Логика запрета АПВ выключателя ввода стороны НН (Запрет АПВ)
 
@@ -98,14 +87,14 @@
 \item
 Алгоритм работы <<Запрет АПВ>> выполнен в соответствии с рисунком \ref{lonn:img2}. В таблице \ref{lonn:tbl2} приведены параметры, необходимые для настройки функции <<Запрет АПВ>>.
 
-\begin{figure}[H]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/16. ЛО В НН Т 35 ДЗТ/_latex/img/2.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/16. ЛО В НН Т 35 ДЗТ/_latex/img/2.pdf}
 \captionof{figure}{Функциональная схема <<Запрет АПВ>>}\label{lonn:img2}
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<Запрет АПВ>>\hfill\vspace{-0.5\baselineskip}}\label{lonn:tbl2}\\ 
 \hline
 \rowcolor{gray!30}
@@ -134,3 +123,4 @@
 \end{enumerate}
 
 \end{enumerate}
+\FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.

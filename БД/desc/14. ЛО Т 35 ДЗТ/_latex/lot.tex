@@ -17,9 +17,6 @@
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛОГИКА ОТКЛЮЧЕНИЯ ОБЩАЯ Т %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\color{uniblue}{\subsubsection{Логика отключения трансформатора (ЛО)}}
-%\color{black}
-
 \item Логика отключения трансформатора (ЛО)
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
@@ -34,14 +31,14 @@
 Алгоритм работы <<ЛО>> выполнен в соответствии с рисунком \ref{loobsh:img1}. В таблице \ref{loobsh:tbl1} приведены параметры, необходимые для настройки функции <<ЛО>>.
 
 \vspace{3mm}
-\begin{figure}[H]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/14. ЛО Т 35 ДЗТ/_latex/img/loobsh.pdf}
 \captionof{figure}{Функциональная схема <<ЛО>>}\label{loobsh:img1}
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ЛО>>\hfill\vspace{-0.5\baselineskip}}\label{loobsh:tbl1}\\ 
 \hline
 \rowcolor{gray!30}
@@ -68,10 +65,8 @@
 \normalsize
 
 \end{enumerate}
+\FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛОГИКА ЗАПРЕТА АПВ НН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\color{uniblue}{\subsubsection{Логика запрета АПВ выключателей трансформатора (ЗАПВ)}}
-%\color{black}
 
 \item Логика запрета АПВ выключателей трансформатора (ЗАПВ)
 
@@ -85,14 +80,14 @@
 Функция принимает сигнал срабатывания от общей логики отключения и формирует сигнал <<ЛО Т / ЗАПВ: Запрет АПВ>>. 
 Алгоритм работы <<Запрет АПВ>> выполнен в соответствии с рисунком \ref{zapvvnutr:img2}. В таблице \ref{zapvvnutr:tbl2} приведены параметры, необходимые для настройки функции <<Запрет АПВ>>.
 
-\begin{figure}[H]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/14. ЛО Т 35 ДЗТ/_latex/img/zapvvnutr.pdf}
 \captionof{figure}{Функциональная схема <<ЗАПВ>>}\label{zapvvnutr:img2}
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ЗАПВ>>\hfill\vspace{-0.5\baselineskip}}\label{zapvvnutr:tbl2}\\ 
 \hline
 \rowcolor{gray!30}
@@ -121,3 +116,4 @@
 \end{enumerate}
 
 \end{enumerate}
+\FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.
