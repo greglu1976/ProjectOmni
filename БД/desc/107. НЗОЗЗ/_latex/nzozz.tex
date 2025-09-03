@@ -66,19 +66,18 @@
 \item
 В режиме, когда уставка находится в положение <<Не предусмотрено>> пусковые условия формируются без учета контроля цепей БНН в любом направлении. В режиме блокировки работа ступени запрещается до момента исчезновения неисправности БНН в любом направлении. В режиме деблокировки наличие неисправности в цепях напряжения, контролируемых по входному сигналу <<БННш: Срабатывание>>, позволяет ПО функционировать без учета направления.
 
-
 \item
 Алгоритм работы пускового органа <<ПО 3I0>> выполнен в соответствии с рисунком \ref{nzozz:img1}. В таблице \ref{nzozz:tbl1} приведены параметры, необходимые для настройки пускового органа <<ПО 3I0>>.
 
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/107. НЗОЗЗ/_latex/img/po3i0.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/107. НЗОЗЗ/_latex/img/po3i0.pdf}
 \captionof{figure}{Функциональная схема <<ПО 3I0>>}\label{nzozz:img1}
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки ПО 3I0\hfill\vspace{-0.5\baselineskip}}\label{nzozz:tbl1}\\ 
 \hline
 \rowcolor{gray!30}
@@ -95,7 +94,6 @@
 \endfoot
 %\hline
 \endlastfoot
-
 %==+t1*ZSPSDE1|LVTRSDE
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
@@ -139,12 +137,12 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/107. НЗОЗЗ/_latex/img/po3i0vg.pdf}
+\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/107. НЗОЗЗ/_latex/img/po3i0vg.pdf}
 \captionof{figure}{Функциональная схема <<ПО 3I0вг>>}\label{nzozz:img2}
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ПО 3I0вг>>\hfill\vspace{-0.5\baselineskip}}\label{nzozz:tbl2}\\ 
 \hline
 \rowcolor{gray!30}
@@ -172,7 +170,6 @@
 
 \end{enumerate}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Пусковой орган по 3U0 (ПО 3U0) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \item Пусковой орган по 3U0 (ПО 3U0)
@@ -192,19 +189,18 @@
 \item
 Формирование разрешения ПО осуществляется, когда уставка SGF2 << Реж\_БНН\_3U0>> находится в режиме деблокировки с активным сигналом от неисправности БНН или в режиме блокировки с отсутствием сигнала от БНН и срабатывании <<ПО 3U0>> выше заданной уставки. В режиме, когда уставка находится в положение <<Не предусмотрено>> разрешение ПО формируется без учета контроля цепей БНН пока сохранялись условия срабатывания <<ПО 3U0>>.
 
-
 \item
 Алгоритм работы пускового органа <<ПО 3U0>> выполнен в соответствии с рисунком \ref{nzozz:img3}. В таблице \ref{nzozz:tbl3} приведены параметры, необходимые для настройки пускового органа  <<ПО 3U0>>.
 
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/107. НЗОЗЗ/_latex/img/po3u0.pdf}
+\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/107. НЗОЗЗ/_latex/img/po3u0.pdf}
 \captionof{figure}{Функциональная схема <<ПО 3U0>>}\label{nzozz:img3}
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ПО 3U0>>\hfill\vspace{-0.5\baselineskip}}\label{nzozz:tbl3}\\ 
 \hline
 \rowcolor{gray!30}
@@ -332,7 +328,7 @@
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ЛОППЗ>>\hfill\vspace{-0.5\baselineskip}}\label{nzozz:tbl4}\\ 
 \hline
 \rowcolor{gray!30}
@@ -421,15 +417,8 @@
 \item
 Алгоритм работы функции <<ОНМ НП>> выполнен в соответствии с рисунком \ref{nzozz:imgonm1}. В таблице \ref{nzozz:tblonm} приведены параметры, необходимые для настройки функции <<ОНМ НП>>.
 
-\vspace{3mm}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/107. НЗОЗЗ/_latex/img/onmnp.pdf}
-\captionof{figure}{Функциональная схема <<ОНМ НП>>}\label{nzozz:imgonm1}
-\end{figure}
-
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ОНМ НП>>\hfill\vspace{-0.5\baselineskip}}\label{nzozz:tblonm}\\ 
 \hline
 \rowcolor{gray!30}
@@ -452,6 +441,13 @@
 %===t1
 \end{longtable}
 \normalsize
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/107. НЗОЗЗ/_latex/img/onmnp.pdf}
+\captionof{figure}{Функциональная схема <<ОНМ НП>>}\label{nzozz:imgonm1}
+\end{figure}
 
 \end{enumerate}
 
@@ -497,7 +493,7 @@
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки выходной логики НЗОЗЗ\hfill\vspace{-0.5\baselineskip}}\label{nzozz:tblvl}\\ 
 \hline
 \rowcolor{gray!30}
@@ -540,6 +536,5 @@
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Выходная логика НЗОЗЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \end{enumerate}

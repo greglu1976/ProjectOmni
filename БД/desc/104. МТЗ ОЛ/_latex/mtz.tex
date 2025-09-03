@@ -1,13 +1,9 @@
-
 %\needspace{4\baselineskip}
 \color{uniblue}{\subsection{Максимальная токовая защита трансформатора (МТЗ)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\color{uniblue}{\subsubsection{Общие сведения}}
-%\color{black}
 
 \item Общие сведения
 
@@ -50,9 +46,6 @@
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  СТУПЕНЬ МТЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\color{uniblue}{\subsubsection{Ступени максимальной токовой защиты (МТЗ 1 ст, МТЗ 2 ст, МТЗ 3 ст)}}
-%\color{black}
 
 \item Ступени максимальной токовой защиты (МТЗ 1 ст, МТЗ 2 ст, МТЗ 3 ст)
 
@@ -145,7 +138,7 @@
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки ступени МТЗ\hfill\vspace{-0.5\baselineskip}}\label{mtz:tbl1}\\ 
 \hline
 \rowcolor{gray!30}
@@ -163,7 +156,6 @@
 \endfoot
 %\hline
 \endlastfoot
-
 %==+t1*PTOC1|LVTUVTOC
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
@@ -205,12 +197,7 @@
 
 \end{enumerate}
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОРГАН ОНМ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\color{uniblue}{\subsubsection{Орган направления мощности (ОНМ)}}
-%\color{black}
 
 \item Орган направления мощности (ОНМ)
 
@@ -249,22 +236,8 @@
 \item
 Алгоритм работы органа направления мощности (<<ОНМ>>) выполнен в соответствии с рисунком \ref{mtz:imgonm1}. Алгоритм работы логики определения направления, входящий в состав органа направления, выполнен в соответствии с рисунком \ref{mtz:imgonm2}. В таблице \ref{mtz:tblonm} приведены параметры, необходимые для настройки функции <<ОНМ>>.
 
-\vspace{3mm}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/onm.pdf}
-\captionof{figure}{Функциональная схема <<ОНМ>>}\label{mtz:imgonm1}
-\end{figure}
-
-\vspace{3mm}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/onm1.pdf}
-\captionof{figure}{ Функциональная схема логики определения направления}\label{mtz:imgonm2}
-\end{figure}
-
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ОНМ>>\hfill\vspace{-0.5\baselineskip}}\label{mtz:tblonm}\\ 
 \hline
 \rowcolor{gray!30}
@@ -288,8 +261,21 @@
 \end{longtable}
 \normalsize
 
-\end{enumerate}
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/onm.pdf}
+\captionof{figure}{Функциональная схема <<ОНМ>>}\label{mtz:imgonm1}
+\end{figure}
 
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/onm1.pdf}
+\captionof{figure}{ Функциональная схема логики определения направления}\label{mtz:imgonm2}
+\end{figure}
+
+\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОРГАН КПОН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -324,7 +310,7 @@
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<КПОН>>\hfill\vspace{-0.5\baselineskip}}\label{mtzvn:tbl2}\\ 
 \hline
 \rowcolor{gray!30}
@@ -387,7 +373,7 @@
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<БНТ>>\hfill\vspace{-0.5\baselineskip}}\label{mtzvn:tbl3}\\ 
 \hline
 \rowcolor{gray!30}
@@ -440,7 +426,7 @@
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<БЛЗШ>>\hfill\vspace{-0.5\baselineskip}}\label{mtzvn:tbl4}\\ 
 \hline
 \rowcolor{gray!30}
@@ -494,7 +480,7 @@
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<АУ МТЗ>>\hfill\vspace{-0.5\baselineskip}}\label{mtz:tblau}\\ 
 \hline
 \rowcolor{gray!30}
@@ -550,7 +536,7 @@
 \end{figure}
 
 \small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.4cm}|>{\centering\arraybackslash}m{3.6cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
 \caption{Параметры для настройки функции <<ОУ МТЗ>>\hfill\vspace{-0.5\baselineskip}}\label{mtz:tblou}\\ 
 \hline
 \rowcolor{gray!30}
