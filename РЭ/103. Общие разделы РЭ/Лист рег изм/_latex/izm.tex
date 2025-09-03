@@ -1,22 +1,24 @@
-
 \KOMAoption{paper}{a4, portrait}
 \areaset{180mm}{267mm}
 \fancyheadoffset{0pt} % обновляем хедер и футер
 
 \newgeometry{
-includehead,
-includefoot,
-headheight=10mm,% Set \headheight to 10mm
-top=0mm, %============
-bottom=10mm, %============
-left=22mm,
-right=7mm,
+  includehead,
+  includefoot,
+  nomarginpar,
+  top=6mm,
+  bottom=6mm,
+  left=22mm,
+  right=10mm,
+  headheight=14.5pt,
+  headsep=3mm,        % Добавить headsep
+  footskip=7mm,
 }
-\headsep=0.3cm
-\setlength{\footskip}{45pt}
-\setlength{\extrarowheight}{0.1cm} % высота ячеек в таблице
+%\headsep=0.3cm
+%\setlength{\footskip}{45pt}
+%\setlength{\extrarowheight}{0.1cm} % высота ячеек в таблице
 
-\begin{longtable}{|>{\centering\arraybackslash}m{0.6cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{2.2cm}|>{\centering\arraybackslash}m{1.3cm}|>{\centering\arraybackslash}m{1cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}m{0.6cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{2.2cm}|>{\centering\arraybackslash}m{1.1cm}|>{\centering\arraybackslash}m{1cm}|}
 \hline
 
 \multicolumn{9}{|c|}{Лист регистрации изменений} \\
