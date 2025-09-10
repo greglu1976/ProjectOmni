@@ -110,11 +110,10 @@
     \endfoot
     \endlastfoot
 
-    \centering Основные функции & \flushleft\arraybackslash Основные защиты трансформатора (дифференциальная, газовая),
-    технологические защиты трансформатора, УРОВ ВН трансформатора  \\  \hline
+    \centering Основные функции & \flushleft\arraybackslash Функции защиты отходящего присоединения 6-35 кВ для различных режимов заземления нейтрали (ДЗ, ТО, МТЗ, ТЗНП, ЗОП, ЗП, ГСОЗЗ, НЗОЗЗ и пр.), функции автоматики отходящего присоединения 6-35 кВ (АПВ, КП, управление коммутационными аппаратами), УРОВ  \\  \hline
 
     \multirow{7}{*}{\centering Сервисные функции} & \flushleft\arraybackslash Сигнализация (обеспечение ввода служебных дискретных сигналов о состоянии оборудования шкафа РЗА, формирование отчетов по изменению состояния дискретных внешних и внутренних сигналов и выдачу отчетов в АСУ~ТП, формирование и выдачу сигналов аварийной и предупредительной сигнализации в схему резервной сигнализации) \\ \cline{2-2}
-    & \flushleft\arraybackslash  Осциллографирование и журналирование (запись доаварийных, аварийных и послеаварийных режимов с сохранением осциллограмм в энергонезависимой памяти устройства, запись о событиях по изменению конфигурации устройства, изменения состояния внутренних сигналов алгоритмов, обновление встраиваемого программного обеспечения и пр. с метками времени и описанием события в энергонезависимой памяти устройства) \\ \cline{2-2}
+    & \flushleft\arraybackslash  Осциллографирование и журналирование (определение места повреждения, запись доаварийных, аварийных и послеаварийных режимов с сохранением осциллограмм в энергонезависимой памяти устройства, запись о событиях по изменению конфигурации устройства, изменения состояния внутренних сигналов алгоритмов, обновление встраиваемого программного обеспечения и пр. с метками времени и описанием события в энергонезависимой памяти устройства) \\ \cline{2-2}
     & \flushleft\arraybackslash Самодиагностика (непрерывный оперативный контроль работоспособности в течение всего времени работ) \\ \cline{2-2}
     & \flushleft\arraybackslash Конфигурирование (задание/переключение уставок, ввод в работу / вывод из работы, изменение параметров самоописания устройства, перезагрузка устройства, ввод/вывод тестового режима, изменение режима работы информационных сервисов, возможность переопределения связей входных и выходных логических сигналов алгоритмов устройства с дискретными входами, выходными реле, светодиодными индикаторами и функциональными клавишами управления) \\ \cline{2-2}
     & \flushleft\arraybackslash Тестовый режим (обработка принятых сигналов и отправка отчетов с установленным флагом <<Тест>>) \\ \cline{2-2}
@@ -161,7 +160,7 @@
 \end{itemize}
 
 \item
-В устройстве установливается измерительный модуль в зависимости от карты заказа, например модуль <<М044>> (в котором предусмотрено четыре канала для измерения переменного тока и четыре канала для измерения переменного напряжения), в устройстве <<ЮНИТ-М314>> занимает место в слотах <<М08>>, <<М09>>, а в устройстве <<ЮНИТ-М319>> занимает место в слотах <<М12>>, <<М13>>.
+В устройстве устанавливается измерительный модуль в зависимости от карты заказа, например модуль <<М044>> (в котором предусмотрено четыре канала для измерения переменного тока и четыре канала для измерения переменного напряжения), в устройстве <<ЮНИТ-М314>> занимает место в слотах <<М08>>, <<М09>>, а в устройстве <<ЮНИТ-М319>> занимает место в слотах <<М12>>, <<М13>>.
 
 \item
 Подробное описание параметров настроек и технических характеристик модулей дискретных входов, модулей дискретного управления и измерительных модулей приводится в документации ЮТКБ.656122.609 РЭ <<Устройство защиты и автоматики серии <<ЮНИТ-М300>>. Руководство по эксплуатации общее>>.
@@ -223,54 +222,34 @@
 %\hline
 \endlastfoot
 
-\raggedright Фазные токи ВН & \centering 1 & \centering Ia\_{\text{ВН}}  & \centering\arraybackslash + \\
+\raggedright Фазные токи & \centering 1 & \centering Ia  & \centering\arraybackslash + \\
 \hline
-\raggedright >>             & \centering 2 & \centering Ib\_{\text{ВН}}  & \centering\arraybackslash + \\
+\raggedright >>             & \centering 2 & \centering Ib  & \centering\arraybackslash + \\
 \hline
-\raggedright >>             & \centering 3 & \centering Ic\_{\text{ВН}}  & \centering\arraybackslash + \\
-\hline
-
-\raggedright Фазные токи НН1 & \centering 4 & \centering Ia\_{\text{НН1}}  & \centering\arraybackslash + \\
-\hline
-\raggedright >>              & \centering 5 & \centering Ib\_{\text{НН1}}  & \centering\arraybackslash + \\
-\hline
-\raggedright >>              & \centering 6 & \centering Ic\_{\text{НН1}}  & \centering\arraybackslash + \\
+\raggedright >>             & \centering 3 & \centering Ic  & \centering\arraybackslash + \\
 \hline
 
-\raggedright Фазные токи НН2 & \centering 7 & \centering Ia\_{\text{НН2}}  & \centering\arraybackslash + \\
+\raggedright Фазные напряжения & \centering 4 & \centering Ua  & \centering\arraybackslash + \\
 \hline
-\raggedright >>              & \centering 8 & \centering Ib\_{\text{НН2}}  & \centering\arraybackslash + \\
+\raggedright >>              & \centering 5 & \centering Ub  & \centering\arraybackslash + \\
 \hline
-\raggedright >>              & \centering 9 & \centering Ic\_{\text{НН2}}  & \centering\arraybackslash + \\
-\hline
-
-\raggedright Вычисленный ток ОП ВН & \centering 10 & \centering I2\_{\text{ВН}}  & \centering\arraybackslash + \\
-\hline
-\raggedright Вычисленный ток НП ВН & \centering 11 & \centering 3I0\_{\text{ВН}}  & \centering\arraybackslash + \\
+\raggedright >>              & \centering 6 & \centering Uc  & \centering\arraybackslash + \\
 \hline
 
-\raggedright Вычисленный ток ОП НН1 & \centering 12 & \centering I2\_{\text{НН1}}  & \centering\arraybackslash + \\
-\hline
-\raggedright Вычисленный ток НП НН1 & \centering 13 & \centering 3I0\_{\text{НН1}}  & \centering\arraybackslash + \\
+\raggedright Напряжение <<разомкнутого треугольника>>  & \centering 7 & \centering Uhk  & \centering\arraybackslash + \\
 \hline
 
-\raggedright Вычисленный ток ОП НН2 & \centering 14 & \centering I2\_{\text{НН2}}  & \centering\arraybackslash + \\
-\hline
-\raggedright Вычисленный ток НП НН2 & \centering 15 & \centering 3I0\_{\text{НН2}}  & \centering\arraybackslash + \\
+\raggedright Частота & \centering 8 & \centering F  & \centering\arraybackslash + \\
 \hline
 
-\raggedright Дифференциальные токи & \centering 16 & \centering Ia\_{\text{дифф}}  & \centering\arraybackslash + \\
+\raggedright Вычисленный ток ОП & \centering 9 & \centering I2  & \centering\arraybackslash + \\
 \hline
-\raggedright >>                    & \centering 17 & \centering Ib\_{\text{дифф}}  & \centering\arraybackslash + \\
-\hline
-\raggedright >>                    & \centering 18 & \centering Ic\_{\text{дифф}}  & \centering\arraybackslash + \\
+\raggedright Вычисленный ток НП & \centering 10 & \centering 3I0  & \centering\arraybackslash + \\
 \hline
 
-\raggedright Тормозные токи & \centering 19 & \centering Ia\_{\text{торм}}  & \centering\arraybackslash - \\
+\raggedright Вычисленное напряжение ОП & \centering 11 & \centering U2  & \centering\arraybackslash + \\
 \hline
-\raggedright >>             & \centering 20 & \centering Ib\_{\text{торм}}  & \centering\arraybackslash - \\
-\hline
-\raggedright >>              & \centering 21 & \centering Ic\_{\text{торм}}  & \centering\arraybackslash - \\
+\raggedright Вычисленный напряжение НП & \centering 12 & \centering 3U0  & \centering\arraybackslash + \\
 \hline
 
 \end{longtable}
