@@ -1,5 +1,5 @@
 
-\needspace{4\baselineskip}
+%\needspace{4\baselineskip}
 \color{uniblue}{\subsection{Дистанционная защита (ДЗ)}}
 \color{black}
 
@@ -79,7 +79,12 @@
     \begin{align}
         \dot U_{ab\textsl{ расч.поляр.}} = \dot U_{1M}(t)\angle{30^\circ}, \\
         \dot U_{bc\textsl{ расч.поляр.}} = \dot U_{1M}(t)\angle{-90^\circ}, \\
-        \dot U_{ca\textsl{ расч.поляр.}} = \dot U_{1M}(t)\angle{150^\circ}, \\
+        \dot U_{ca\textsl{ расч.поляр.}} = \dot U_{1M}(t)\angle{150^\circ}, 
+    \end{align}
+\end{subequations}
+\vspace{-\abovedisplayskip}
+\begin{subequations}\label{eq:group111}
+    \begin{align}
         \dot U_{a\textsl{ расч.поляр.}} = \dot U_{1}(t)\angle{0^\circ}, \\
         \dot U_{b\textsl{ расч.поляр.}} = \dot U_{1}(t)\angle{240^\circ}, \\
         \dot U_{c\textsl{ расч.поляр.}} = \dot U_{1}(t)\angle{120^\circ},
@@ -102,7 +107,7 @@
         ang \left( \dot Z_{ca}(t) = \frac{\dot U_{1M}(t)\angle{120^\circ} }{\dot I_c(t) - \dot I_a(t)} \right),
     \end{align}
 \end{subequations}
-
+\vspace{-\abovedisplayskip}
 \begin{subequations}\label{eq:group3}
     \begin{align}
         ang \left( \dot Z_{a}(t) = \frac{\dot U_{1}(t)}{\dot I_a(t) + 3\dot I_0(t) \dot k_0} \right), \\
@@ -151,10 +156,10 @@
 \item
 Ступени ДЗ  имеют многоугольную  характеристику  срабатывания  ненаправленного  реле сопротивления с вырезом нагрузки, как показано на рисунке \ref{dz:img0}. Принцип работы дистанционной защиты с данной  многоугольной характеристикой основан на проверке попадания значений вычисленных сопротивлений в зону срабатывания, которая определяется значениями уставок по сопротивлению (Rср, Xср, Фхс, Фкн). Коэффициент возврата органа построения характеристики равен 1,05. 
 
-\vspace{3mm}
+%\vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/101. ДЗ/_latex/img/char.pdf}
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/101. ДЗ/_latex/img/char.pdf}
 \captionof{figure}{Характеристика срабатывания реле сопротивления ступени ДЗ}\label{dz:img0}
 \end{figure}
 
