@@ -1,0 +1,63 @@
+
+%\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Сигнализация замыканий на землю (СЗЗ)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Функция <<СЗЗ>> предназначена для определения замыканий на землю в сетях с компенсированной или изолированной нейтралью. 
+\item
+Функция фиксирует наличие замыкания на землю по повышению напряжения 3U0 выше заданной уставки и, через выдержку времени, определяемую уставкой таймера Т1, выдает сигнализацию замыкания на землю.
+
+\item
+При повышении напряжения НП выше уставки и отсутствии блокирующих сигналов происходит пуск защиты. По истечении выдержки времени Т1, в течение которой величина напряжения НП постоянно была выше уставки срабатывания, происходит срабатывание защиты.
+Прохождение сигнала срабатывания СЗЗ блокируется при появлении сигнала неисправности цепей напряжения БНН, если введена уставка (SGF2 <<Реж\_БНН>> в положении <<С контролем>>).
+
+\item
+Ввод СЗЗ в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<СЗЗ: Ввод>>.
+\item
+Функция <<СЗЗ>> может быть выведена из работы оперативно путем активации сигнала <<ОВ СЗЗ>>. Выведенное состояние функции характеризуется активным состоянием сигнала <<СЗЗ: Оперативный вывод>>.
+
+\item
+Алгоритм работы функции <<СЗЗ>> выполнен в соответствии с рисунком \ref{szz:img1}. В таблице \ref{szz:tbl1} приведены параметры, необходимые для настройки функции <<СЗЗ>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/203. СЗЗ/_latex/img/szz.pdf}
+\captionof{figure}{Функциональная схема <<СЗЗ>>}\label{szz:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<СЗЗ>>\hfill\vspace{-0.5\baselineskip}}\label{szz:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{szz:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*ZSPTOV1|VT_LVZSTOV
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания НП (3U0ср) & \centering 3U0$>$ & \centering 2,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим контроля от БНН (Реж\_БНН) & \centering SGF2 & \centering 0 = Без контроля\\1 = С контролем & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
