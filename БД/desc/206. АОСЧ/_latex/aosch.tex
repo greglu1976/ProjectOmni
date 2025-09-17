@@ -1,0 +1,535 @@
+
+%\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Автоматическое ограничения снижения частоты (АОСЧ)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Общие сведения
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Функция автоматического ограничения снижения частоты (АОСЧ) предназначена для предотвращения недопустимого по условиям устойчивой работы генерирующего оборудования и энергопринимающих установок потребителей электрической энергии снижения частоты и полного погашения энергосистемы или её части при возникновении дефицита активной мощности, в том числе при аварийном выделении энергосистемы или её части на изолированную работу.
+\item
+В устройстве реализована функция АОСЧ, которая предотвращает образование лавины частоты и/или лавины напряжения в энергосистеме. Предотвращение осуществляется отключением части нагрузки. Отключенная нагрузка впоследствии может быть вновь включена устройством автоматически.
+
+\item
+АОСЧ включает в себя следующие функции:
+\begin{itemize}
+    \item автоматическая частотная разгрузка (АЧР) в составе:
+    \begin{itemize}   
+    \item блокировка по скорости снижения частоты (БССЧ), см. п.\ref{punktbssch};
+    \item контроль напряжения и частоты смежной секции шин (КССШ), см. п.\ref{punktksssh};
+    \item подсистемы АЧР-1 и АЧР-2 (АЧР1, АЧР2), см. п.\ref{punktachr};
+    \item специальная очередь АЧР (САЧР), см. п.\ref{punktsachr};
+    \item общая функция сборки сигналов срабатывания функций в составе АЧР, см. п.\ref{punktssachr};
+    \end{itemize} 
+    \item частотное автоматическое повторное включение (ЧАПВ), см. п.\ref{punktchapv};
+    \item общая функция сборки сигналов срабатывания функций в составе ЧАПВ, см. п.\ref{punktsschapv}.   
+\end{itemize}
+
+\item
+Основные характеристики АОСЧ:
+\begin{itemize}
+    \item основная погрешность срабатывания ИО частоты не более 20 мГц;
+    \item основная погрешность возврата ИО частоты не более 20 мГц;
+    \item основная погрешность срабатывания ИО скорости изменения частоты должна быть не более 150 мГц;
+    \item основная погрешность ИО частоты в рабочем диапазоне при напряжении входного сигнала 100 В не более 10 мГц;
+    \item время срабатывания и возврата ИО частоты не более 60 мс;
+    \item время срабатывания ИО скорости изменения частоты должно быть не более 200 мс.
+\end{itemize}
+
+\item
+Функциональный блок <<АОСЧ>> может быть полностью выведен из работы оперативно путем активации сигнала <<ОВ АОСЧ>>.
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БССЧ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Блокировка по скорости снижения частоты (БССЧ) \label{punktbssch}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+В устройстве предусмотрена блокировка для предотвращения срабатывания АЧР при выбеге электродвигателей. Блокировка срабатывания при выбеге электродвигателей будет сохраняться в том числе и после снижения частоты ниже 45,0 Гц.
+
+\item
+Ввод функции <<БССЧ>> в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<БССЧ: Ввод>>.
+
+\item
+Функция <<БССЧ>> может быть выведена из работы оперативно путем активации сигнала <<ОВ АЧР>> (совместно со всеми функциями устройства АЧР).
+
+\item
+Срабатывание функции происходит при превышении скорости снижения частоты уставки. Уставкой SGF2 <<Усл\_БССЧ>> контролируется условие возврата ИО БССЧ, если уставка SGF2 выставлена в положение <<Возврат F>>, то возврат органа происходит при сбросе триггера, подхватывающего блокировку, при превышении уставки частоты, если уставка SGF2 выставлена в положение <<Возврат dF/dt>>, то возврат органа происходит при снижении скорости изменения частоты.
+
+\item
+Пуск блокировки осуществляется после срабатывания ИО по скорости снижения частоты выше уставки, информируя выходными сигналами <<БССЧ: ИО dFосн/dt>> и <<БССЧ: Пуск>>. Срабатывание функции происходит после отсчета выдержки времени, задаваемого уставкой T1.
+
+\item
+Алгоритм работы функции <<БССЧ>> выполнен в соответствии с рисунком \ref{bssch:img1}. В таблице \ref{bssch:tbl} приведены параметры, необходимые для настройки функции <<БССЧ>>.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<БССЧ>>\hfill\vspace{-0.5\baselineskip}}\label{bssch:tbl}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{bssch:tbl}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*ECARACT1|RTUV
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень) & \centering SGF2 & \centering 0 = 1 ступень\\1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/206. АОСЧ/_latex/img/bssch.pdf}
+\captionof{figure}{Функциональная схема <<БССЧ>>}\label{bssch:img1}
+\end{figure}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КССШ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Контроль напряжения и частоты смежной секции шин (КССШ) \label{punktksssh}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Ввод функции <<КССШ>> в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<КССШ: Ввод>>.
+\item
+Функция <<КССШ>> может быть выведена из работы оперативно путем активации сигнала <<ОВ АЧР>> (совместно со всеми функциями устройства АЧР).
+
+\item
+Функция КССШ контролирует напряжение смежной секции и частоту для пуска АЧР. Срабатывание функции осуществляется при одновременном выполнении следующих условий:
+\begin{itemize}
+    \item частота смежной секции ниже уставки;
+    \item все три линейные напряжения смежной секции выше уставки.
+\end{itemize}
+
+\item
+Наличие выходного сигнала «КССШ: ИО Uсм>» соответствует наличию номинального напряжения на смежной секции. В этом режиме при снижении частоты и наличии номинального напряжения на смежной секции собираются условия для разрешения АЧР, формируя выходным сигналом <<КССШ: Срабатывание>>. Срабатывание функции происходит без выдержки времени.
+\item
+При отсутствии напряжения на соседней секции, если уставка SGF2 <<Разреш\_АЧР>> установлена в положение <<Предусмотрено>>, функция формирует выходной сигнал <<КССШ: Срабатывание>> без контроля частоты на смежной секции.
+
+\item
+Алгоритм работы функции <<КССШ>> выполнен в соответствии с рисунком \ref{ksssh:img1}. В таблице \ref{ksssh:tbl} приведены параметры, необходимые для настройки функции <<КССШ>>.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<КССШ>>\hfill\vspace{-0.5\baselineskip}}\label{ksssh:tbl}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ksssh:tbl}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*ECARACT1|RTUV
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень) & \centering SGF2 & \centering 0 = 1 ступень\\1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/206. АОСЧ/_latex/img/ksssh.pdf}
+\captionof{figure}{Функциональная схема <<КССШ>>}\label{ksssh:img1}
+\end{figure}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  АЧР1 и АЧР2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Очереди АЧР-1 и АЧР-2 (АЧР1, АЧР2) \label{punktachr}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Очереди АЧР-1, АЧР-2 включают следующие функции:
+\begin{itemize}
+    \item очередь АЧР-1 с четырьмя ступенями (АЧР1-1, АЧР1-2, АЧР1-3, АЧР1-4);
+    \item очередь АЧР-2 с четырьмя ступенями (АЧР2-1, АЧР2-2, АЧР2-3, АЧР2-4).
+\end{itemize}
+\item
+Ввод ступени (m) очереди (n) АЧР в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной ступени отображается выходным сигналом для каждой ступени <<АЧР(n) (m): Ввод>>, здесь и далее в этом подразделе: (n) -- номер очереди, $n\in\{1,2\}$, (m) -- номер ступени, $m\in\{1,2,3,4\}$.
+
+\item
+Для срабатывания каждой ступени очереди АЧР1, АЧР2 необходимо одновременное наличие следующих условий:
+\begin{itemize}
+    \item ступень введена в работу;
+    \item снижение частоты ниже уставки (наличие выходного сигнала «АЧР(n) (m): ИО F<»);
+    \item снижение частоты не ниже 45 Гц (отсутствие выходного сигнала «АЧР(n) (m): ИО F<45»);
+    \item наличие напряжения на основной секции контролируемое уставкой SGF2 (отсутствие выходного сигнала «АЧР(n) (m): ИО U<»);
+    \item отсутствие сигналов блокировки <<БНН: Срабатывание>>, <<БССЧ: Срабатывание>>, <<Блокировка АЧР(n) (m)>>;
+    \item наличие разрешающего сигнала от смежной секции <<КССШ: Срабатывание>>.
+\end{itemize}
+
+\item
+Ввод контролей блокировки по скорости снижения частоты и контроль частоты смежной секции осуществляется с помощью соответствующих уставок SGF3 <<Контр\_БССЧ>>, SGF4 <<Контр\_КССШ>>.
+\item
+Срабатывание ступени происходит после отсчета выдержки времени, задаваемая уставкой Т1.
+\item
+При активном состоянии входного сигнала <<АЧР(n) (m)>> (ключ <<АЧР(n) (m)>> введен) действие ступени АЧР переводится на сигнал.
+\item
+Предусмотрена возможность продления сигнала пуска ИО частоты на время, задаваемое уставкой Т2.
+
+\item
+Ввод ступени <<АЧР(n) (m)>> в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<АЧР(n) (m): Ввод>>.
+\item
+Ступень <<АЧР(n) (m)>> может быть выведена из работы оперативно путем активации сигнала <<ОВ АЧР>> (совместно со всеми функциями устройства АЧР). Состояние ступени характеризуется активным состоянием сигнала <<АЧР(n) (m): Оперативный вывод>>.
+
+\item
+При активном состоянии входного сигнала <<АЧР(n) (m) на сигн>> действие соответствующей ступени АЧР переводится на сигнал.
+
+\item
+Алгоритм работы ступени АЧР выполнен в соответствии с рисунком \ref{achr:img1}. В таблице \ref{achr:tbl1} приведены параметры, необходимые для настройки ступени АЧР.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки очереди АЧР\hfill\vspace{-0.5\baselineskip}}\label{achr:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{achr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*ECARTUV1|RTUV
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания (Uср) & \centering U$<$ & \centering 5,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП (U1ср) & \centering U1$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП смежной секции (U1ср\_см) & \centering U1см$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ОП (U2ср) & \centering U2$>$ & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Частота срабатывания (Fср) & \centering F$<$ & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Разность частот срабатывания и возврата (dFвозвр) & \centering -- & \centering 0,04 ... 1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Уставка по скорости снижения напряжения (dU/dt) & \centering dU/dt$>$ & \centering 1 ... 20 & \centering В/с & \centering \arraybackslash 1 \\
+\hline
+\centering Контроль напряжения ОП (Контр\_U2) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль скорости снижения напряжения (Контр\_dU/dt) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль частоты (Контр\_F) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль напряжения ПП смежной секции (Контр\_Uсм) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Коэффициент возврата по скорости снижения напряжения (Kвозвр) & \centering -- & \centering 0,20 ... 0,99 & \centering -- & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени возврата АОСН (Твозвр) & \centering T2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок) & \centering T3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр) & \centering T4 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/206. АОСЧ/_latex/img/achr.pdf}
+\captionof{figure}{Функциональная схема ступени АЧР}\label{achr:img1}
+\end{figure}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  САЧР %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Специальная очередь АЧР (САЧР) \label{punktsachr}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Специальная очередь АЧР предназначена для предотвращения автоматической или оперативной разгрузки энергоблоков АЭС при снижении частоты ниже 49,0 Гц и срабатывания основного объема АЧР.
+
+\item
+Для срабатывания САЧР необходимо одновременное наличие следующих условий:
+\begin{itemize}
+    \item функция введена в работу;
+    \item снижение частоты ниже уставки (наличие выходного сигнала «САЧР: ИО F<»);
+    \item снижение частоты не ниже 45 Гц (отсутствие выходного сигнала «САЧР: ИО F<45»);
+    \item наличие напряжения на основной секции контролируемое уставкой SGF2 (отсутствие выходного сигнала «САЧР: ИО U<»);
+    \item отсутствие сигналов блокировки <<БНН: Срабатывание>>, <<БССЧ: Срабатывание>>, <<Блокировка САЧР>>;
+    \item наличие разрешающего сигнала от смежной секции <<КССШ: Срабатывание>>.
+\end{itemize}
+
+\item
+Ввод контролей блокировки по скорости снижения частоты и контроль частоты смежной секции осуществляется с помощью соответствующих уставок SGF3 <<Контр\_БССЧ>>, SGF4 <<Контр\_КССШ>>.
+\item
+Срабатывание ступени происходит после отсчета выдержки времени, задаваемая уставкой Т1.
+\item
+При активном состоянии входного сигнала <<САЧР на сигн>> (ключ <<АЧР(n) (m)>> введен) действие ступени АЧР переводится на сигнал.
+\item
+Предусмотрена возможность продления сигнала пуска ИО частоты на время, задаваемое уставкой Т2.
+
+\item
+Ввод функции САЧР в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<САЧР: Ввод>>.
+\item
+Функция <<САЧР>> может быть выведена из работы оперативно путем активации сигнала <<ОВ АЧР>> (совместно со всеми функциями устройства АЧР). Состояние ступени характеризуется активным состоянием сигнала <<САЧР: Оперативный вывод>>.
+
+\item
+При активном состоянии входного сигнала <<САЧР на сигн>>  действие функции САЧР переводится на сигнал.
+
+\item
+Алгоритм работы САЧР выполнен в соответствии с рисунком \ref{sachr:img1}. В таблице \ref{sachr:tbl1} приведены параметры, необходимые для настройки ступени САЧР.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки САЧР\hfill\vspace{-0.5\baselineskip}}\label{sachr:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{sachr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*ECARTUV1|RTUV
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания (Uср) & \centering U$<$ & \centering 5,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП (U1ср) & \centering U1$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП смежной секции (U1ср\_см) & \centering U1см$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ОП (U2ср) & \centering U2$>$ & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Частота срабатывания (Fср) & \centering F$<$ & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Разность частот срабатывания и возврата (dFвозвр) & \centering -- & \centering 0,04 ... 1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Уставка по скорости снижения напряжения (dU/dt) & \centering dU/dt$>$ & \centering 1 ... 20 & \centering В/с & \centering \arraybackslash 1 \\
+\hline
+\centering Контроль напряжения ОП (Контр\_U2) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль скорости снижения напряжения (Контр\_dU/dt) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль частоты (Контр\_F) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль напряжения ПП смежной секции (Контр\_Uсм) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Коэффициент возврата по скорости снижения напряжения (Kвозвр) & \centering -- & \centering 0,20 ... 0,99 & \centering -- & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени возврата АОСН (Твозвр) & \centering T2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок) & \centering T3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр) & \centering T4 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/206. АОСЧ/_latex/img/achr.pdf}
+\captionof{figure}{Функциональная схема САЧР}\label{sachr:img1}
+\end{figure}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩИЕ ЦЕПИ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Сборка сигналов АЧР \label{punktssachr}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Формирование сигнала <<АЧРобщ: Срабатывание>> возможно при срабатывании любой ступени АЧР1, АЧР2, САЧР, в том числе переведенной в работу только на сигнал.
+
+\item
+Алгоритм работы функции сборки сигналов АЧР выполнен в соответствии с рисунком \ref{achr:imgcmn}.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/206. АОСЧ/_latex/img/common.pdf}
+\captionof{figure}{Функциональная схема сборки сигналов АЧР}\label{achr:imgcmn}
+\end{figure}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ЧАПВ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Частотное автоматическое повторное включение (ЧАПВ) \label{punktchapv}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Функция ЧАПВ предназначена для автоматического включения отключенных устройствами АЧР потребителей электрической энергии в процессе восстановления частоты в энергосистеме.
+
+
+
+
+
+
+
+
+
+
+
+
+\item
+Для срабатывания САЧР необходимо одновременное наличие следующих условий:
+\begin{itemize}
+    \item функция введена в работу;
+    \item снижение частоты ниже уставки (наличие выходного сигнала «САЧР: ИО F<»);
+    \item снижение частоты не ниже 45 Гц (отсутствие выходного сигнала «САЧР: ИО F<45»);
+    \item наличие напряжения на основной секции контролируемое уставкой SGF2 (отсутствие выходного сигнала «САЧР: ИО U<»);
+    \item отсутствие сигналов блокировки <<БНН: Срабатывание>>, <<БССЧ: Срабатывание>>, <<Блокировка САЧР>>;
+    \item наличие разрешающего сигнала от смежной секции <<КССШ: Срабатывание>>.
+\end{itemize}
+
+\item
+Ввод контролей блокировки по скорости снижения частоты и контроль частоты смежной секции осуществляется с помощью соответствующих уставок SGF3 <<Контр\_БССЧ>>, SGF4 <<Контр\_КССШ>>.
+\item
+Срабатывание ступени происходит после отсчета выдержки времени, задаваемая уставкой Т1.
+\item
+При активном состоянии входного сигнала <<САЧР на сигн>> (ключ <<АЧР(n) (m)>> введен) действие ступени АЧР переводится на сигнал.
+\item
+Предусмотрена возможность продления сигнала пуска ИО частоты на время, задаваемое уставкой Т2.
+
+\item
+Ввод ступеней в составе функции ЧАПВ в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<ЧАПВ(m): Ввод>>.
+\item
+Функция <<САЧР>> может быть выведена из работы оперативно путем активации сигнала <<ОВ АЧР>> (совместно со всеми функциями устройства АЧР). Состояние ступени характеризуется активным состоянием сигнала <<САЧР: Оперативный вывод>>.
+
+\item
+При активном состоянии входного сигнала <<САЧР на сигн>>  действие функции САЧР переводится на сигнал.
+
+\item
+Алгоритм работы САЧР выполнен в соответствии с рисунком \ref{sachr:img1}. В таблице \ref{sachr:tbl1} приведены параметры, необходимые для настройки ступени САЧР.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки САЧР\hfill\vspace{-0.5\baselineskip}}\label{sachr:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{sachr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*ECARTUV1|RTUV
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания (Uср) & \centering U$<$ & \centering 5,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП (U1ср) & \centering U1$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП смежной секции (U1ср\_см) & \centering U1см$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ОП (U2ср) & \centering U2$>$ & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Частота срабатывания (Fср) & \centering F$<$ & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Разность частот срабатывания и возврата (dFвозвр) & \centering -- & \centering 0,04 ... 1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Уставка по скорости снижения напряжения (dU/dt) & \centering dU/dt$>$ & \centering 1 ... 20 & \centering В/с & \centering \arraybackslash 1 \\
+\hline
+\centering Контроль напряжения ОП (Контр\_U2) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль скорости снижения напряжения (Контр\_dU/dt) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль частоты (Контр\_F) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль напряжения ПП смежной секции (Контр\_Uсм) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Коэффициент возврата по скорости снижения напряжения (Kвозвр) & \centering -- & \centering 0,20 ... 0,99 & \centering -- & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени возврата АОСН (Твозвр) & \centering T2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок) & \centering T3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр) & \centering T4 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/206. АОСЧ/_latex/img/achr.pdf}
+\captionof{figure}{Функциональная схема САЧР}\label{sachr:img1}
+\end{figure}
+
+\end{enumerate}
+
+
+
+
+
+\end{enumerate}
