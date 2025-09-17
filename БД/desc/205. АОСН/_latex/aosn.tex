@@ -19,8 +19,8 @@
     \item три очереди АОСН, см. п.\ref{punktaosn};
     \item 15 функций для реализации управляющих воздействий очередей УВ АОСН, см. п.\ref{punktstaosn};
     \item три функции АПВН, см. п.\ref{punktapvn};
-    \item 15 функций для реализации управляющих воздействий функций УВ АПВН;
-    \item общая функция объединения срабатывания функций в составе функционального блока <<АОСН>>.   
+    \item 15 функций для реализации управляющих воздействий функций УВ АПВН, см. п.\ref{punktstapvn};
+    \item общая функция сборки сигналов срабатывания функций в составе АОСН, см. п.\ref{punktssaosn}.   
 \end{itemize}
 
 \item
@@ -49,10 +49,10 @@
 Ввод каждой очереди АОСН в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной очереди отображается выходным сигналом для каждой очереди <<АОСН(n): Ввод>>, здесь и далее в этом подразделе: (n) -- номер очереди, $n\in\{1,2,3\}$.
 
 \item
-Очереди <<АОСН>> могут быть выведены из работы оперативно путем активации общего сигнала вывода всех трех очередей <<ОВ АОСН>> либо по отдельности каждая своим сигналом оперативного вывода(<<ОВ АОСН(n)>>). Состояние очереди характеризуется активным состоянием сигнала <<АОСН(n): Оперативный вывод>> на выходе функции.
+Очереди <<АОСН>> могут быть выведены из работы оперативно путем активации общего сигнала вывода всех трех очередей <<ОВ АОСН>> либо по отдельности каждая своим сигналом оперативного вывода(<<ОВ АОСН(n)>>). Состояние очереди характеризуется активным состоянием сигнала <<АОСН(n): Оперативный вывод>>.
 
 \item
-При активном состоянии входного сигнала <<АОСН(n) на сигн>>  действие очереди (n) АОСН переводится на сигнал.
+При активном состоянии входного сигнала <<АОСН(n) на сигн>>  действие соответствующей очереди АОСН переводится на сигнал.
 
 \item
 В каждой из очередей предусмотрены следующие измерительные органы:
@@ -110,32 +110,40 @@
 \endfoot
 %\hline
 \endlastfoot
-%==+t1*ZSPTOC1|LVZSTOC
+%==+t1*ECARTUV1|RTUV
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Режим оперативного блокирования ЧС (Реж\_БЧС) & \centering SGF8 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Напряжение срабатывания (Uср) & \centering U$<$ & \centering 5,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
-\centering Режим контроля от БНТ (Реж\_БНТ) & \centering SGF7 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Напряжение срабатывания ПП (U1ср) & \centering U1$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
-\centering Ток срабатывания НП (3I0ср) & \centering 3I0$>$ & \centering 0,10 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering Напряжение срабатывания ПП смежной секции (U1ср\_см) & \centering U1см$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
-\centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Напряжение срабатывания ОП (U2ср) & \centering U2$>$ & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
-\centering Режим направленности (Направленность) & \centering SGF2 & \centering 1 = Ненаправленная\\2 = Прямонаправленная\\3 = Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
+\centering Частота срабатывания (Fср) & \centering F$<$ & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
 \hline
-\centering Режим ОНМ НП при неисправности ЦН (Реж\_БНН\_ОНМ\_НП) & \centering SGF3 & \centering 0 = Блокировка\\1 = Деблокировка & \centering -- & \centering \arraybackslash -- \\
+\centering Разность частот срабатывания и возврата (dFвозвр) & \centering -- & \centering 0,04 ... 1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
 \hline
-\centering Режим ПО 3U0 при неисправности ЦН (Реж\_БНН\_3U0) & \centering SGF5 & \centering 0 = Блокировка\\1 = Деблокировка & \centering -- & \centering \arraybackslash -- \\
+\centering Уставка по скорости снижения напряжения (dU/dt) & \centering dU/dt$>$ & \centering 1 ... 20 & \centering В/с & \centering \arraybackslash 1 \\
 \hline
-\centering Напряжение срабатывания НП (3U0ср) & \centering 3U0$>$ & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\centering Контроль напряжения ОП (Контр\_U2) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Режим контроля от ПО 3U0 (Реж\_3U0) & \centering SGF6 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Контроль скорости снижения напряжения (Контр\_dU/dt) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Характеристика срабатывания (Характеристика) & \centering -- & \centering 16 = Независимая\\11 = Кривая A\\10 = Кривая B\\12 = Кривая C\\4 = Кривая D\\2 = Кривая E\\1 = Кривая F\\17 = Кривая RXIDG & \centering -- & \centering \arraybackslash -- \\
+\centering Контроль частоты (Контр\_F) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Коэффициент регулировки времени срабатывания зависимой характеристики (К) & \centering -- & \centering 0,05 ... 15,00 & \centering -- & \centering \arraybackslash 0,01 \\
+\centering Контроль напряжения ПП смежной секции (Контр\_Uсм) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Независимая выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Коэффициент возврата по скорости снижения напряжения (Kвозвр) & \centering -- & \centering 0,20 ... 0,99 & \centering -- & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени возврата АОСН (Твозвр) & \centering T2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок) & \centering T3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр) & \centering T4 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
@@ -185,8 +193,12 @@
 \endfoot
 %\hline
 \endlastfoot
-%==+t1*RDIR1|LVZSTOC
-\centering Угол максимальной чувствительности (Фмч) & \centering φмч & \centering -179,0 ... 180,0 & \centering град. & \centering \arraybackslash 0,1 \\
+%==+t1*ECARACT1|RTUV
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень) & \centering SGF2 & \centering 0 = 1 ступень\\1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
@@ -201,10 +213,9 @@
 
 \end{enumerate}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ОЧЕРЕДЬ АПВН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\item Функции АПВН (АПВН1, АПВН2, АПВН3) \label{punktapvn}
+\item Ступени АПВН (АПВН1, АПВН2, АПВН3) \label{punktapvn}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
@@ -212,62 +223,47 @@
 После срабатывания АОСН возникает необходимость автоматической сборки нормальной схемы при восстановлении рабочего уровня напряжения, для этого в устройстве предусмотрена функция автоматического повторного включения по напряжению.
 
 \item
-Ввод каждой функции <<АПВН>> в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом для каждой функции <<АПВН(n): Ввод>>.
+Ввод каждой ступени <<АПВН>> в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной ступени отображается выходным сигналом для каждой функции <<АПВН(n): Ввод>>.
 
 \item
-Функции <<АПВН>> могут быть выведены из работы оперативно путем активации общего сигнала вывода всех трех функций <<ОВ АПВН>> либо по отдельности каждая своим сигналом оперативного вывода(<<ОВ АПВН(n)>>). Состояние очереди характеризуется активным состоянием сигнала <<АПВН(n): Оперативный вывод>> на выходе функции.
+Ступени <<АПВН>> могут быть выведены из работы оперативно путем активации общего сигнала вывода всех трех ступеней <<ОВ АПВН>> либо по отдельности каждая своим сигналом оперативного вывода (<<ОВ АПВН(n)>>). Состояние ступени характеризуется активным состоянием сигнала <<АПВН(n): Оперативный вывод>>.
 
 \item
-При активном состоянии входного сигнала <<АПВН(n) на сигн>>  действие функции (n) АПВН переводится на сигнал.
+При активном состоянии входного сигнала <<АПВН(n) на сигн>> действие соответствующей ступени АПВН переводится на сигнал.
 
 \item
-В каждой из функций предусмотрены следующие измерительные органы:
+В каждой из ступеней предусмотрены следующие измерительные органы:
 \begin{itemize}
     \item ИО максимального действия по значению напряжения прямой последовательности. Срабатывание осуществляется при превышении напряжения заданной уставки;
     \item ИО по снижению частоты. Функция реагирует на снижение частоты ниже уставки.
 \end{itemize}
 
-
-
-
+\item
+Если все линейные напряжения восстанавливаются до уровня, при котором срабатывает одна из ступеней АПВН, запускается выдержка времени таймера Т1 и, если пусковые условия сохраняются, то происходит срабатывание данной ступени.
 
 \item
-Пусковым условием АОСН является одновременное выполнение условий:
-\begin{itemize}
-    \item отсутствие сигналов: срабатывания напряжения обратной последовательности, скорости снижения напряжения, линейных напряжений (реализованных через выдержку времени на срабатывание T3 и подхвата T4), снижение частоты ниже порогового значения;
-    \item снижение напряжения на обеих секциях;
-    \item отсутствие срабатываний БНН и блокировки АОСН.
-\end{itemize}
+При длительном срабатывании АОСН (больше выдержки времени таймера Т3), происходит сброс разрешения АПВН при введенной уставке SGF5.
+\item
+По окончании работы АОСН, таймером Т4 продлевается сигнал срабатывания АОСН на время 5 мс, который остается в памяти триггера и фиксирует команду разрешения АПВН при отсутствии сигналов сброса.
+\item
+Запрет работы АПВН от многократных включений потребителей регулируется уставкой SGF3.
+\item
+Если уставка SGF3 введена в работу, то при срабатывании функции АПВН и одновременном срабатывании 15-ти управляющих воздействий формируется блокировка от повторного действия АПВН и по истечению выдержки Т2, при введенной уставке SGF4, происходит сброс всей схемы АПВН.
+\item
+Также, после окончания пусковых условий, сигнал пуска продлевается на 5 мс таймером Т6 и при наличии хотя бы одного из управляющих воздействий АПВН, таймером Т5 продлевается сигал УВ на 5 мс в результате чего осуществляется сброс схемы АПВН.
 
 \item
-В случае снижения напряжения прямой последовательности основной и смежной секции до порога срабатывания очереди АОСН, запускается выдержка времени данной очереди и в случае сохранения пусковых условий, происходит срабатывание данной очереди АОСН. Кроме того, необходимо отсутствие остальных блокирующих сигналов АОСН, как общих, так и по каждой очереди.
-
-\item
-Блокировка пуска очереди АОСН осуществляется при выполнении одного из условий:
-\begin{itemize}
-    \item срабатывание ИО ОП при введенной уставке SGF2;
-    \item срабатывание ИО по скорости снижения напряжения при введенной уставке SGF3;
-    \item срабатывание ИО по скорости снижения напряжения по истечению времени таймера Т3. При пропадании сигнала, блокировка снимается по истечению времени таймера Т4;
-    \item наличие входных сигналов <<БНН: Срабатывание>>, <<Блокировка АОСН(n)>>.
-\end{itemize}
-
-\item
-Срабатывание очереди АОСН происходит при наличии пускового сигнала через выдержку времени T1 и при отсутствии сигнала <<АОСН(n) на сигн>>. При наличии сигнала <<АОСН(n) на сигн>> действие очереди переводится на сигнал <<АОСН(n): Срабатывание сигн>>, при этом выходной сигнал <<АОСН(n): Срабатывание>> блокируется.
-\item
-Для исключения кратковременных пусков ступеней, в соответствии с ГОСТ Р 70411-2022, предусмотрена возможность продления сигнала пуска ИО частоты на время, задаваемое уставкой Т2.
-
-\item
-Алгоритм работы очереди АОСН выполнен в соответствии с рисунком \ref{aosn:img1}. В таблице \ref{aosn:tbl1} приведены параметры, необходимые для настройки очереди АОСН.
+Алгоритм работы ступени АПВН выполнен в соответствии с рисунком \ref{apvn:img1}. В таблице \ref{apvn:tbl1} приведены параметры, необходимые для настройки ступени АПВН.
 
 \small
 \begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки очереди АОСН\hfill\vspace{-0.5\baselineskip}}\label{aosn:tbl1}\\ 
+\caption{Параметры для настройки ступени АПВН\hfill\vspace{-0.5\baselineskip}}\label{apvn:tbl1}\\ 
 \hline
 \rowcolor{gray!30}
 Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
 \hline
 \endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{aosn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{apvn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
 \hline
 \rowcolor{gray!30}
 Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
@@ -277,32 +273,28 @@
 \endfoot
 %\hline
 \endlastfoot
-%==+t1*ZSPTOC1|LVZSTOC
+%==+t1*RECRTOV1|RTUV
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Режим оперативного блокирования ЧС (Реж\_БЧС) & \centering SGF8 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Напряжение срабатывания ПП (Uср) & \centering U1$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
-\centering Режим контроля от БНТ (Реж\_БНТ) & \centering SGF7 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Частота срабатывания (Fср) & \centering F$<$ & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
 \hline
-\centering Ток срабатывания НП (3I0ср) & \centering 3I0$>$ & \centering 0,10 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering Контроль частоты (Контр\_F) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Блокировка АПВН от многократных включений (Блок\_повт\_АПВН) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Режим направленности (Направленность) & \centering SGF2 & \centering 1 = Ненаправленная\\2 = Прямонаправленная\\3 = Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
+\centering Автоматический возврат схемы АПВН (Авт\_возвр\_АПВН) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Режим ОНМ НП при неисправности ЦН (Реж\_БНН\_ОНМ\_НП) & \centering SGF3 & \centering 0 = Блокировка\\1 = Деблокировка & \centering -- & \centering \arraybackslash -- \\
+\centering Сброс сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Сброс\_АПВН) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Режим ПО 3U0 при неисправности ЦН (Реж\_БНН\_3U0) & \centering SGF5 & \centering 0 = Блокировка\\1 = Деблокировка & \centering -- & \centering \arraybackslash -- \\
+\centering Разность частот срабатывания и возврата (dFвозвр) & \centering -- & \centering 0,04 ... 1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
 \hline
-\centering Напряжение срабатывания НП (3U0ср) & \centering 3U0$>$ & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Режим контроля от ПО 3U0 (Реж\_3U0) & \centering SGF6 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Выдержка времени автоматического сброса блокировки после повторного действия АОСН (Тсброс\_блок) & \centering T2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Характеристика срабатывания (Характеристика) & \centering -- & \centering 16 = Независимая\\11 = Кривая A\\10 = Кривая B\\12 = Кривая C\\4 = Кривая D\\2 = Кривая E\\1 = Кривая F\\17 = Кривая RXIDG & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Коэффициент регулировки времени срабатывания зависимой характеристики (К) & \centering -- & \centering 0,05 ... 15,00 & \centering -- & \centering \arraybackslash 0,01 \\
-\hline
-\centering Независимая выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени сброса сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Тсброс\_разреш) & \centering T3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
@@ -312,15 +304,92 @@
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/205. АОСН/_latex/img/apvn.pdf}
-\captionof{figure}{Функциональная схема очереди АОСН}\label{aosn:img1}
+\captionof{figure}{Функциональная схема очереди АПВН}\label{apvn:img1}
 \end{figure}
 
 \end{enumerate}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УВ АПВН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\item Реализация управляющих воздействий от ступеней АПВН (УВ АПВН) \label{punktstapvn}
 
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
+\item
+Для реализации управляющих воздействий при срабатывании ступеней АПВН предусмотрено 15 индивидуально параметрируемых функций: УВ1 АПВН ... УВ15 АПВН (<<УВ(m)~АПВН>>).  
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item
+Уставкой SGF2 контролируется от какой ступени АПВН будут формироваться УВ. Срабатывание функции происходит по истечении выдержки времени таймера Т1, наличии сигнала пуска соответствующей ступени и отсутствии сигнала <<УВ(m) АПВН на сигн>>.
+\item
+При активном состоянии входного сигнала <<УВ(m) АПВН на сигн>> (ключ <<УВ(m)АПВН на сигн>> введен) действие УВ(m) АПВН переводится на сигнал.
+
+\item
+Алгоритм работы функции <<УВ(m) АПВН>> выполнен в соответствии с рисунком \ref{uvapvn:imgonm1}. В таблице \ref{uvapvn:tblonm} приведены параметры, необходимые для настройки функции <<УВ(m) АПВН>>.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<УВ(m) АПВН>>\hfill\vspace{-0.5\baselineskip}}\label{uvapvn:tblonm}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{uvapvn:tblonm}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*RECRACT1|RTUV
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень) & \centering SGF2 & \centering 0 = 1 ступень\\1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/205. АОСН/_latex/img/uvapvn.pdf}
+\captionof{figure}{Функциональная схема <<УВ(m) АПВН>>}\label{uvapvn:imgonm1}
+\end{figure}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩИЕ ЦЕПИ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Сборка сигналов АОСН \label{punktssaosn}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Формирование сигнала <<АОСНобщ: Срабатывание АОСН>> возможно при срабатывании любой ступени АОСН, УВ АОСН, в том числе переведенной в работу только на сигнал.  
+
+\item
+Формирование сигнала <<АПВНобщ: Срабатывание АПВН>> возможно при срабатывании любой ступени АПВН, УВ АПВН, в том числе переведенной в работу только на сигнал.
+
+\item
+Формирование общего сигнала <<АОСНобщ: Срабатывание>> возможно при появлении сигнала <<АОСНобщ: Срабатывание АОСН>>, либо <<АОСНобщ: Срабатывание АПВН>>.
+
+\item
+Алгоритм работы функции сборки сигналов АОСН выполнен в соответствии с рисунком \ref{common:imgonm1}.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/205. АОСН/_latex/img/common.pdf}
+\captionof{figure}{Функциональная схема сборки сигналов АОСН}\label{common:imgonm1}
+\end{figure}
+
+\end{enumerate}
+
 
 \end{enumerate}
