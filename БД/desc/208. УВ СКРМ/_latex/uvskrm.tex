@@ -1,0 +1,56 @@
+
+%\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Блокировка выходных воздействий на СКРМ}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+В целях блокировки прохождения сигнала от противоаварийной автоматики на включение СКРМ после отключения СКРМ от своих защит предусматривается логика блокировки. В устройстве предусмотрено две функции блокирующие прохождение воздействий на СКРМ (УВ СКРМ(n)), здесь и далее в этом подразделе: (n) -- номер функции, $n\in\{1,2\}$. 
+\item
+Блокировка УВ СКРМ остается в памяти триггера до прихода команды сброса. Сброс триггера осуществляется при помощи ФК <<Сброс блок УВ СКРМ (n)>>.
+
+\item
+Ввод УВ СКРМ в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<УВ СКРМ(n): Ввод>>.
+\item
+Функция <<УВ СКРМ(n)>> может быть выведена из работы оперативно путем активации сигнала <<ОВ УВ СКРМ(n)>>. Выведенное состояние функции характеризуется активным состоянием сигнала <<УВ СКРМ(n): Оперативный вывод>>.
+
+\item
+При активном состоянии входного сигнала <<УВ СКРМ(n) на сигн>> (ключ <<УВ СКРМ(n) на сигн>> введен) действие УВ СКРМ(n) переводится на сигнал.
+
+\item
+Алгоритм работы функции <<УВ СКРМ(n)>> выполнен в соответствии с рисунком \ref{uvskrm:img1}. В таблице \ref{uvskrm:tbl1} приведены параметры, необходимые для настройки функции <<УВ СКРМ(n)>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/208. УВ СКРМ/_latex/img/uvskrm.pdf}
+\captionof{figure}{Функциональная схема УВ СКРМ}\label{uvskrm:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<УВ СКРМ>>\hfill\vspace{-0.5\baselineskip}}\label{uvskrm:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{uvskrm:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PBLC1|COMPBLC
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
