@@ -1,0 +1,56 @@
+
+\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Контроль отсутствия напряжения (КОН)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Функция КОН контролирует отсутствие напряжения на электрооборудовании.
+
+\item
+Контроль отсутствия напряжения на электрооборудовании срабатывает без выдержки времени при одновременном снижении всех линейных напряжений секции ниже уставки. Блокировка пусковых условий функции формируется при наличии неисправности цепей напряжения (БНН).
+
+\item
+Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<КОН: Ввод>>.
+
+\item
+Функция <<КОН>> может быть выведена из работы оперативно путем активации сигнала <<ОВ КОН>>, что характеризуется активным состоянием сигнала <<КОН: Оперативный вывод>> на выходе функции. 
+\item
+Алгоритм работы функции <<КОН>> выполнен в соответствии с рисунком \ref{kon:img1}. В таблице \ref{kon:tbl1} приведены параметры, необходимые для настройки функции <<КОН>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/211. КОН ТН/_latex/img/kon.pdf}
+\captionof{figure}{Функциональная схема <<КОН>>}\label{kon:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<КОН>>\hfill\vspace{-0.5\baselineskip}}\label{kon:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{kon:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PTUV1|VT_VOLABS
+\centering Ввод функции в работу (Ввод\_функции) & \centering Ввод\_функции & \centering 0 ... 1 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\centering Напряжение срабатывания (Uср) & \centering Uср & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
