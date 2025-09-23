@@ -1,6 +1,6 @@
 
 %\needspace{4\baselineskip}
-\color{uniblue}{\subsection{Максимальная токовая защита трансформатора (МТЗ)}}
+\color{uniblue}{\subsection{Максимальная токовая защита (МТЗ)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
@@ -105,13 +105,6 @@
 \begin{itemize}
     \item деблокировка (чувствительная уставка); 
     \item блокировка (грубая уставка). 
-\end{itemize}
-
-\item
-Для ступени МТЗ предусмотрено два режима работы с контролем напряжения секции шин определяемые уставкой SGF6:
-\begin{itemize}
-    \item  управляющее напряжение; 
-    \item  вольтметровая блокировка. 
 \end{itemize}
 
 \item
@@ -399,13 +392,14 @@
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОРГАН БЛЗШ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%% ИСПОЛЬЗУЕМ ЛОГИЧЕСКИЕ УСЛОВИЯ!!!
+\ifboolexpr{bool {isOL}}
+{
 \item Блокировка логической защиты шин (БЛЗШ)
-
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
 \item
-Функция блокировки логической защиты шин (<<БЛЗШ>>) предусматривается для блокировки ЛЗШ на вводном и секционном выключателях секции. В качестве воздействующих величин используются сигналы пуска ступеней МТЗ. Состояние программного переключателя SGF1 <<БлокЛЗШ\_выбор\_ст>> определяет ступень МТЗ, от которой будет производиться блокировка ЛЗШ.
+Функция блокировки логической защиты шин (<<БЛЗШ>>) предусматривается для блокировки ЛЗШ на вводном и секционном выключателях секции. В качестве воздействующих величин используются сигналы пуска ступеней МТЗ. Состояние программного переключателя SGF1 <<БлокЛЗ\_выбор\_ст>> определяет ступень МТЗ, от которой будет производиться блокировка ЛЗШ.
 \item
 Алгоритм работы <<БЛЗШ>> выполнен в соответствии с рисунком \ref{mtzvn:img4}. В таблице \ref{mtzvn:tbl4} приведены параметры, необходимые для настройки функции <<БЛЗШ>>.
 
@@ -440,7 +434,49 @@
 \hline
 %===t1
 \end{longtable}
-\normalsize
+\normalsize    
+}{}
+\ifboolexpr{bool {isVV}}{
+\item Блокировка логической защиты трансформатора (БЛЗТ)
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Функция блокировки логической защиты трансформатора (<<БЛЗТ>>) предусматривается для блокировки ЛЗТ вышестоящего силового трансформатора. В качестве воздействующих величин используются сигналы пуска ступеней МТЗ. Состояние программного переключателя SGF1 <<БлокЛЗ\_выбор\_ст>> определяет ступень МТЗ, от которой будет производиться блокировка ЛЗТ.
+\item
+Алгоритм работы <<БЛЗТ>> выполнен в соответствии с рисунком \ref{mtzvn:img4}. В таблице \ref{mtzvn:tbl4} приведены параметры, необходимые для настройки функции <<БЛЗТ>>.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/blzt.pdf}
+\captionof{figure}{Функциональная схема БЛЗТ}\label{mtzvn:img4}
+\vspace{3mm}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<БЛЗТ>>\hfill\vspace{-0.5\baselineskip}}\label{mtzvn:tbl4}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{mtzvn:tbl4}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*RBLC1|VV_LVTUVTOC
+\centering Выбор ступени блокировки (БлокЛЗ\_выбор\_ст) & \centering SGF1 & \centering 1 = Не предусмотрено\\2 = 1 ступень\\3 = 2 ступень\\4 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize     
+}{}
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ОРГАН БЛЗШ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -567,7 +603,7 @@
 \begin{figure}[H]
 \centering
 
-\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/vl.pdf}
+\includegraphics[width=0.65\textwidth,height=0.65\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/vl.pdf}
 \captionof{figure}{Функциональная схема ОУ МТЗ}\label{mtz:imgvl}
 \vspace{3mm}
 \end{figure}

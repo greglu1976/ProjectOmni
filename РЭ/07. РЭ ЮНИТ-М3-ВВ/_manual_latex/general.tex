@@ -9,6 +9,15 @@
 % ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX ПРИЛОЖЕНИЙ
 \newcommand{\apppath}{//192.168.11.240/Company/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М3/Проект/РЭ/07. РЭ ЮНИТ-М3-ВВ/}
 
+% ЗАДАЕМ ПЕРЕМЕННЫЕ УКАЗЫВАЮЩИЕ КАКИЕ ФУНКЦИИ СОБИРАТЬ
+% isOL, isVV, isSV
+\newbool{isOL}
+\boolfalse{isOL} % выбираем устройство М300-ОЛ
+\newbool{isVV}
+\booltrue{isVV}
+\newbool{isSV}
+\boolfalse{isSV} 
+
 % МЕТАДАННЫЕ
 \hypersetup{
     pdftitle={Микропроцессорное устройство защиты и автоматики трансформатора ЮНИТ-М300-ВВ. Руководство по эксплуатации},
@@ -61,21 +70,35 @@
 
 \input{\fbpath/102. БК/_latex/bk.tex}
 
+\input{\fbpath/302. ЛЗШ/_latex/lzsh.tex}
+
+\input{\fbpath/105. АУ/_latex/au.tex}
+
+\input{\fbpath/104. МТЗ ОЛ/_latex/mtz.tex}
+
+\input{\fbpath/108. ЗДЗ/_latex/zdz.tex}
+
+\input{\fbpath/12. ТК ЗДЗ 35/_latex/tkzdz.tex}
+
+\input{\fbpath/55. ЗОП/_latex/zop.tex}
+
+\input{\fbpath/109. ЗП ОЛ/_latex/zp.tex}
+
+\input{\fbpath/106. ТЗНП ОЛ/_latex/tznp.tex}
+
+\input{\fbpath/111. УРОВ ОЛ/_latex/urov.tex}
+
+\input{\fbpath/303. ЗМН ВВ/_latex/zmn.tex}
+
+\input{\fbpath/114. БННш/_latex/bnnsh.tex}
+
+\input{\fbpath/304. БННвв/_latex/bnnvv.tex}
+
+
+
 %\input{\fbpath/103. ТО ОЛ/_latex/to.tex}
 
-%\input{\fbpath/104. МТЗ ОЛ/_latex/mtz.tex}
-
-%\input{\fbpath/105. АУ/_latex/au.tex}
-
-%\input{\fbpath/106. ТЗНП ОЛ/_latex/tznp.tex}
-
 %\input{\fbpath/107. НЗОЗЗ/_latex/nzozz.tex}
-
-%\input{\fbpath/108. ЗДЗ/_latex/zdz.tex}
-
-%\input{\fbpath/55. ЗОП/_latex/zop.tex}
-
-%\input{\fbpath/109. ЗП ОЛ/_latex/zp.tex}
 
 %\input{\fbpath/110. ГСОЗЗ/_latex/gsozz.tex}
 
@@ -85,13 +108,13 @@
 
 %\input{\fbpath/04. ЛО ТЗ Т/_latex/tz.tex}
 
-%\input{\fbpath/111. УРОВ ОЛ/_latex/urov.tex}
 
-%\input{\fbpath/112. ЗМН/_latex/zmn.tex}
+
+
 
 %\input{\fbpath/113. ЗПН/_latex/zpn.tex}
 
-%\input{\fbpath/114. БННш/_latex/bnnsh.tex}
+
 
 %\input{\fbpath/115. БННп/_latex/bnnp.tex}
 
@@ -208,6 +231,10 @@
 %ПРИЛОЖЕНИЕ
 \newpage
 \input{\apppath/Приложение. Характеристики/appchars.tex}
+
+%ПРИЛОЖЕНИЕ ПС
+\newpage
+\input{\apppath/Приложение. ЛЗШ/_latex/app.tex}
 
 
 %ПРИЛОЖЕНИЕ ПС
