@@ -1,0 +1,72 @@
+
+%\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Контроль отсутствия напряжения до ввода (КОНвв)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Функция контролирует отсутствие напряжения до ввода. Функция используется для АПВ, а также для оперативного включения.
+
+\item
+Пусковые  условия  функции  формируются  без  выдержки  времени  при  снижении  всех  линейных напряжений до ввода ниже уставки и одновременном выполнении следующих условий, если уставка SGF2 выставлена в положение <<Измеренный>>:
+\begin{itemize}
+    \item функция введена в работу;
+    \item минимальное из подведенных линейных напряжений, измеренных до ввода ниже уставки;
+    \item отсутствует срабатывание ИО напряжения обратной последовательности;
+    \item не активный сигнал срабатывания БННвв.
+\end{itemize}
+
+\item
+Предусмотрена блокировка функции при срабатывании ИО обратной последовательности напряжения выше уставки и наличии сигнала срабатывания БННвв.
+\item
+Если  уставка  SGF2 <<Реж\_пуска>>  выставлена  в  положение  <<Внешний>>,  работа  функции  осуществляется  при наличии  активного  внешнего  дискретного  сигнала  <<Отсутствие  Uвв>>  без  учета  срабатывания измерительных органов. 
+
+\item
+Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<КОНвв: Ввод>>.
+\item
+Функция <<КОНвв>> может быть выведена из работы оперативно путем активации сигнала <<ОВ КОНвв>>, что характеризуется активным состоянием сигнала <<КОНвв: Оперативный вывод>> на выходе функции. 
+\item
+Алгоритм работы функции <<КОНвв>> выполнен в соответствии с рисунком \ref{konvv:img1}. В таблице \ref{konvv:tbl1} приведены параметры, необходимые для настройки функции <<КОНвв>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/307. КОНвв/_latex/img/konvv.pdf}
+\captionof{figure}{Функциональная схема <<КОНвв>>}\label{konvv:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<КОНвв>>\hfill\vspace{-0.5\baselineskip}}\label{konvv:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{konvv:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PTUV1|VV_VOLABS2
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания (Uср) & \centering U$<$ & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ОП (U2ср) & \centering U2$>$ & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Контроль ТН (Контроль\_ТН) & \centering SGF3 & \centering 0 = 3 фазы\\1 = 2 фазы & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим пуска (Реж\_пуска) & \centering SGF2  & \centering 0 = Измеренный\\1 = Внешний & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}

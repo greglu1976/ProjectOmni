@@ -1,0 +1,52 @@
+
+%\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Запрет АВР (ЗАВР)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Функция предназначена  для объединения сигналов, действующих на запрет АВР.
+\item
+На  запрет  АВР  влияют  сигналы  как  из  внутренней  логики,  так  и  наличие  внешних  дискретных сигналов. Запрет от некоторых сигналов, при их присутствии, задается через соответствующие уставки (SGF1~<<ЗапАВР\_сам\_откл>>, SGF2~<<ЗапАВР\_неиспр\_В>>, SGF3~<<ЗапАВР\_СЗЗ>>).
+
+\item
+Алгоритм работы функции <<ЗАВР>> выполнен в соответствии с рисунком \ref{zavr:img1}. В таблице \ref{zavr:tbl1} приведены параметры, необходимые для настройки функции <<ЗАВР>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/309. ЗАВР/_latex/img/zavr.pdf}
+\captionof{figure}{Функциональная схема <<ЗАВР>>}\label{zavr:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<ЗАВР>>\hfill\vspace{-0.5\baselineskip}}\label{zavr:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{zavr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*BTSRBLC1|VV_LVBTS
+\centering Режим запрета АВР от самопроизвольного отключения (ЗапАВР\_сам\_откл) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета АВР от неисправности выключателя (ЗапАВР\_неиспр\_В) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим запрета от СЗЗ (ЗапАВР\_СЗЗ) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
