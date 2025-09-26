@@ -67,6 +67,9 @@
 \endlastfoot
 
 %===t2
+\multicolumn{9}{c}{\textbf{Виртуальные кнопки}} \\
+\hline
+\raggedright Сброс & \centering Сброс & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \multicolumn{9}{c}{\textbf{Виртуальные ключи}} \\
 \hline
 \raggedright Вывод терминала & \centering Вывод терминала & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
@@ -127,6 +130,7 @@
 \raggedright Программная деблокировка управления первым выкатным элементом & \centering Програм.деблок. ВЭ1 & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Программная деблокировка управления вторым выкатным элементом & \centering Програм.деблок. ВЭ2 & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Программная деблокировка управления заземляющим ножом & \centering Програм.деблок. ЗН & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Оперативный вывод функции КА & \centering ОВ КА & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \multicolumn{9}{c}{\textbf{Общие сигналы функциональной логики}} \\
 \hline
 \rowcolor{gray!15} 
@@ -631,6 +635,39 @@
 \multicolumn{9}{c}{Оперативная блокировка заземляющего ножа (ОБР ЗН)} \\
 \hline
 \raggedright  Разрешение управления заземляющим ножом & \centering Разрешить управ. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!15} 
+\multicolumn{9}{c}{Коммутационные аппараты (КА)} \\
+\hline
+\raggedright  Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Выключатель (В)} \\
+\hline
+\raggedright  Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Промежуточное положение выключателя & \centering Промеж. положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Выключатель отключен & \centering Отключен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Выключатель включен & \centering Включен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Неисправное положение выключателя & \centering Неиспр. положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Команда «отключить» выключатель через выходное реле & \centering Отключить (реле) & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Команда «включить» выключатель через выходное реле & \centering Включить (реле) & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Зазмляющий нож (ЗН)} \\
+\hline
+\raggedright  Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Промежуточное положение заземляющего ножа & \centering Промеж. положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Заземляющий нож отключен & \centering Отключен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Заземляющий нож включен & \centering Включен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Неисправное положение заземляющего ножа & \centering Неиспр. положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Команда «отключить» заземляющий нож через выходное реле & \centering Отключить (реле) & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Команда «включить» заземляющий нож через выходное реле & \centering Включить (реле) & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Выкатной элемент (ВЭ)} \\
+\hline
+\raggedright  Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Промежуточное положение выкатного элемента & \centering Промеж. положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Положение выкатного элемента «Выкачен» & \centering Выкачен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Положение выкатного элемента «Вкачен» & \centering Вкачен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Неисправное положение выкатного элемента & \centering Неиспр. положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Ремонтное положение выкатного элемента & \centering Ремонт. положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Команда «выкатить» выкатной элемент через выходное реле & \centering Выкатить (реле) & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Команда «вкатить» выкатной элемент через выходное реле & \centering Вкатить (реле) & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \multicolumn{9}{c}{\textbf{Диагностические сигналы модулей в составе устройства}} \\
 \hline
 \rowcolor{gray!15} 
