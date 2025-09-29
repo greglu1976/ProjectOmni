@@ -70,6 +70,7 @@
 \multicolumn{9}{c}{\textbf{Виртуальные кнопки}} \\
 \hline
 \raggedright Сброс & \centering Сброс & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сброс счетчиков ресурса выключателя & \centering Сброс КРВ & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \multicolumn{9}{c}{\textbf{Виртуальные ключи}} \\
 \hline
 \raggedright Вывод терминала & \centering Вывод терминала & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
@@ -131,6 +132,8 @@
 \raggedright Программная деблокировка управления вторым выкатным элементом & \centering Програм.деблок. ВЭ2 & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Программная деблокировка управления заземляющим ножом & \centering Програм.деблок. ЗН & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Оперативный вывод функции КА & \centering ОВ КА & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Оперативный вывод функции КСВ & \centering ОВ КСВ & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Оперативный вывод функции ПДС НКУ & \centering ОВ ПДС НКУ & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \multicolumn{9}{c}{\textbf{Общие сигналы функциональной логики}} \\
 \hline
 \rowcolor{gray!15} 
@@ -678,6 +681,139 @@
 \raggedright  Ремонтное положение выкатного элемента & \centering Ремонт. положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright  Команда «выкатить» выкатной элемент через выходное реле & \centering Выкатить (реле) & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright  Команда «вкатить» выкатной элемент через выходное реле & \centering Вкатить (реле) & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!15} 
+\multicolumn{9}{c}{Контроль силового выключателя (КСВ)} \\
+\hline
+\raggedright  Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  В самопроизвольно отключен & \centering В самопр. отключен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Неисправность В & \centering Неисправность В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  В аварийно отключен & \centering В аварийно отключен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Реле фиксации команды & \centering РФК & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Блокировка включения В & \centering Блокировка вкл & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Блокировка отключения В & \centering Блокировка откл & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Неисправность цепей ЭМУ & \centering Неиспр. цепей ЭМУ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Защита ЭМВ & \centering Защита ЭМВ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Защита ЭМО1 & \centering Защита ЭМО1 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Защита ЭМО2 & \centering Защита ЭМО2 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!15} 
+\multicolumn{9}{c}{Контроль ресурса выключателя (КРВ)} \\
+\hline
+\raggedright  Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Превышен коммутационный ресурс выключателя & \centering Превышен ком.рес. В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Превышен механический ресурс выключателя & \centering Превышен мех.рес. В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Превышен ресурс выключателя & \centering Превышен ресурс В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!15} 
+\multicolumn{9}{c}{Предупредительная сигнализация (ПС)} \\
+\hline
+\raggedright  Пуск предупредительной сигнализации (импульс) & \centering Пуск (имп) & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Пуск предупредительной сигнализации & \centering Пуск & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!15} 
+\multicolumn{9}{c}{Сборка сигналов (СС)} \\
+\hline
+\raggedright  Сигнализация цепей опер.тока & \centering ОТ сигн & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Выходные цепи разобраны & \centering Вых.цепи разобраны & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  БИ выведены & \centering БИ выведены & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Неисправность КА & \centering Неисправность КА & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Превышение времени переключения КА & \centering Прев. вр. пер. КА & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Общий внешний сигнал & \centering Общ. внеш. сигнал & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!15} 
+\multicolumn{9}{c}{Преобразователь дискретных сигналов (ПДС)} \\
+\hline
+\raggedright  Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Выключатель (В)} \\
+\hline
+\raggedright  Положение ключа режима управления привода В & \centering Ключ М/Д Привода В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Поведение местного управления & \centering Повед. местн. упр. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Положение ключа режима управления & \centering Ключ упр. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Право переключения на уровне станции & \centering Перекр. ур. станц. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Заземляющий нож (ЗН)} \\
+\hline
+\raggedright  Поведение местного управления & \centering Повед. местн. упр. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Положение ключа режима управления & \centering Ключ упр. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Право переключения на уровне станции & \centering Перекр. ур. станц. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Выкатной элемент 1 (ВЭ1)} \\
+\hline
+\raggedright  Ремонтное положение коммутационного аппарата & \centering Ремонт КА & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Поведение местного управления & \centering Повед. местн. упр. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Положение ключа режима управления & \centering Ключ упр. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Право переключения на уровне станции & \centering Перекр. ур. станц. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Выкатной элемент 2 (ВЭ2)} \\
+\hline
+\raggedright  Ремонтное положение коммутационного аппарата & \centering Ремонт КА & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Поведение местного управления & \centering Повед. местн. упр. & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright  Положение ключа режима управления & \centering Ключ упр. & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright  Право переключения на уровне станции & \centering Перекр. ур. станц. & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{Контроль цепей выключателя (КЦВ)} \\
+\hline
+\raggedright  Контроль цепи ЭМВ & \centering Контроль цепи ЭМВ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Контроль цепи ЭМО1 & \centering Контроль цепи ЭМО1 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Контроль цепи ЭМО2 & \centering Контроль цепи ЭМО2 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Работа ЭМВ & \centering Работа ЭМВ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Работа ЭМО1 & \centering Работа ЭМО1 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Работа ЭМО2 & \centering Работа ЭМО2 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Контроль пружины (КПруж)} \\
+\hline
+\raggedright  Пружина не заведена & \centering Пружина не заведена & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Контроль изоляции (КИ)} \\
+\hline
+\raggedright  Аварийный уровень изоляции & \centering Авар.уров.изоляции & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Низкий уровень изоляции & \centering Низ.уров.изоляции & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!15} 
+\multicolumn{9}{c}{Преобразователь дискретных сигналов НКУ (ПДС НКУ)} \\
+\hline
+\raggedright  Функция введена в работу & \centering Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Функция оперативно выведена из работы & \centering Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Дверь шкафа (Дверь)} \\
+\hline
+\raggedright  Дверь отсека/ шкафа закрыта & \centering Отсек/ шкаф закрыт & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright  Дверь отсека/ шкафа открыта & \centering Отсек/ шкаф открыт & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Переключатель аварийной деблокировки смежной ячейки (Пер.ав.дебл.см.яч.)} \\
+\hline
+\raggedright  Цепи аварийной деблокировки ячейки выведены & \centering Цепь выведена & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Переключатель SA1 (SA1)} \\
+\hline
+\raggedright  Цепь управления введена & \centering Цепь введена & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Переключатель SA2 (SA2)} \\
+\hline
+\raggedright  Цепь управления введена & \centering Цепь введена & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Переключатель SA3 (SA3)} \\
+\hline
+\raggedright  Цепь управления введена & \centering Цепь введена & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Переключатель SA4 (SA4)} \\
+\hline
+\raggedright  Цепь управления введена & \centering Цепь введена & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Испытательный блок SG1 (SG1)} \\
+\hline
+\raggedright  Рабочее положение испытательного блока & \centering Рабочее положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Испытательный блок SG2 (SG2)} \\
+\hline
+\raggedright  Рабочее положение испытательного блока & \centering Рабочее положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Испытательный блок SG3 (SG3)} \\
+\hline
+\raggedright  Рабочее положение испытательного блока & \centering Рабочее положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Автоматический выключатель SF1 (SF1)} \\
+\hline
+\raggedright  Автоматический выключатель отключен & \centering Отключен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Автоматический выключатель SF2 (SF2)} \\
+\hline
+\raggedright  Автоматический выключатель отключен & \centering Отключен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Оперток цепей сигнализации выключателя (ОТ ЦСВ)} \\
+\hline
+\raggedright  Неисправность ОТ цепей сигнализации В & \centering Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Оперток ЭМО1, ЭМВ выключателя (ОТ ЭМО1, ЭМВ)} \\
+\hline
+\raggedright  Неисправность оперативного тока цепей ЭМВ, ЭМО1 & \centering Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Оперток ЭМО2 выключателя (ОТ ЭМО2)} \\
+\hline
+\raggedright  Неисправность оперативного тока цепей ЭМО2 & \centering Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Оперток ОБР 1 (ОТ ОБР 1)} \\
+\hline
+\raggedright  Неисправность оперативного тока цепей ОБР 1 & \centering Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Оперток ОБР 2 (ОТ ОБР 2)} \\
+\hline
+\raggedright  Неисправность оперативного тока цепей ОБР 2 & \centering Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \multicolumn{9}{c}{\textbf{Диагностические сигналы модулей в составе устройства}} \\
 \hline
 \rowcolor{gray!15} 
