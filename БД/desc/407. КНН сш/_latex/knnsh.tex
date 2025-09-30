@@ -1,0 +1,69 @@
+
+\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Контроль наличия напряжения на 1(2) секции шин (КНН 1сш, КНН 2сш)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Функция контролирует наличие напряжения на 1(2) секции шин с дополнительным контролем симметрии по $U_2$. Функция используется для АВР, а также для оперативного включения.
+
+\item
+Пусковые условия функции формируются без выдержки времени при превышении всех линейных напряжений на секции шин выше уставки и одновременном выполнении следующих условий, если уставка SGF2 выставлена в положение <<Измеренный>>:
+\begin{itemize}
+    \item функция введена в работу;
+    \item минимальное из подведенных линейных напряжений, измеренных с ТН секции шин, выше уставки;
+    \item отсутствует срабатывание ИО напряжения обратной последовательности.
+\end{itemize}
+\item
+Предусмотрена блокировка функции при срабатывании ИО обратной последовательности напряжения выше уставки.
+\item
+Если уставка SGF2 выставлена в положение <<Внешний>>, работа функции осуществляется при наличии активного внешнего дискретного сигнала <<Наличие U 1(2)сш>> без учета срабатывания измерительных органов.
+
+\item
+Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной функции отображается выходным сигналом <<КНН 1(2)сш: Ввод>>.
+
+\item
+Функция <<КНН 1(2)сш>> может быть выведена из работы оперативно путем активации сигнала <<ОВ КНН 1(2)сш>>, что характеризуется активным состоянием сигнала <<КНН 1(2)сш: Оперативный вывод>> на выходе функции. 
+\item
+Алгоритм работы функции <<КНН 1(2)сш>> выполнен в соответствии с рисунком \ref{knnsh:img1}. В таблице \ref{knnsh:tbl1} приведены параметры, необходимые для настройки функции <<КНН 1(2)сш>>.
+
+\vspace{3mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/407. КНН сш/_latex/img/knnsh.pdf}
+\captionof{figure}{Функциональная схема <<КНН 1(2)сш>>}\label{knnsh:img1}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<КНН 1(2)сш>>\hfill\vspace{-0.5\baselineskip}}\label{knnsh:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{knnsh:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PTOV1|SV_VOLPRES1
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания (Uср) & \centering U$>$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ОП (U2ср) & \centering U2$>$ & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим пуска (Реж\_пуска) & \centering SGF2 & \centering 0 = Измеренный\\1 = Внешний & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+\end{enumerate}
