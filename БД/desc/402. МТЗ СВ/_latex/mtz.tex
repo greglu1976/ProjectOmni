@@ -34,14 +34,10 @@
 \item
 В составе функционального блока <<МТЗ>> предусмотрены следующие функции:
 \begin{itemize}
-\item три независимые направленные/ненаправленные ступени максимальной токовой защиты;
+\item четыре независимые направленные/ненаправленные ступени максимальной токовой защиты;
 \item комбинированный пусковой орган напряжения;
 \item блокировка при броске намагничивающего тока;
-
-\ifboolexpr{bool {isOL}}
-{\item блокировка логической защиты шин;}
-{\item блокировка логической защиты трансформатора;}
-
+\item блокировка логической защиты шин;
 \item орган направления мощности.
 \end{itemize}
 
@@ -52,20 +48,20 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  СТУПЕНЬ МТЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\item Ступени максимальной токовой защиты (МТЗ 1 ст, МТЗ 2 ст, МТЗ 3 ст)
+\item Ступени максимальной токовой защиты (МТЗ 1 ст, МТЗ 2 ст, МТЗ 3 ст МТЗ 4 ст)
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
 \item
 Ввод каждой ступени МТЗ в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 <<Ввод\_функции>>. Информация о введенной ступени отображается выходным сигналом для каждой ступени (<<МТЗ 1 ст: Ввод>>, <<МТЗ 2 ст: Ввод>>, <<МТЗ 3 ст: Ввод>>).
 \item
-Каждая из ступеней <<МТЗ>> может быть выведена из работы оперативно путем активации сигнала оперативного вывода (<<ОВ МТЗ 1 ст>>, <<ОВ МТЗ 2 ст>>, <<ОВ МТЗ 3 ст>>), что характеризуется активным состоянием сигнала <<Оперативный вывод>> (<<МТЗ 1 ст: Оперативный вывод>>, <<МТЗ 2 ст: Оперативный вывод>>, <<МТЗ 3 ст: Оперативный вывод>>) на выходе функции.
+Каждая из ступеней <<МТЗ>> может быть выведена из работы оперативно путем активации сигнала оперативного вывода (<<ОВ МТЗ 1 ст>>, <<ОВ МТЗ 2 ст>>, <<ОВ МТЗ 3 ст>>, <<ОВ МТЗ 4 ст>>), что характеризуется активным состоянием сигнала <<Оперативный вывод>> (<<МТЗ 1 ст: Оперативный вывод>>, <<МТЗ 2 ст: Оперативный вывод>>, <<МТЗ 3 ст: Оперативный вывод>>, <<МТЗ 4 ст: Оперативный вывод>>) на выходе функции.
 \item
-При активном состоянии входного сигнала <<МТЗ 1 ст на сигн>>, <<МТЗ 2 ст на сигн>>, <<МТЗ 3 ст на сигн>> действие соответствующей ступени МТЗ переводится на сигнал.
+При активном состоянии входного сигнала <<МТЗ 1 ст на сигн>>, <<МТЗ 2 ст на сигн>>, <<МТЗ 3 ст на сигн>>, <<МТЗ 4 ст на сигн>> действие соответствующей ступени МТЗ переводится на сигнал.
 \item
 В качестве измерительных органов применяется ИО тока максимального действия, которые контролируют превышение фазными токами заданной величины с коэффициентом возврата равным 0,95. Выбор режима работы ИО (независимая или обратнозависимая характеристика) осуществляется уставкой характеристики срабатывания <<Характеристика>>.
 \item
-При срабатывании ИО активируются соответствующие выходные сигналы для ступени N МТЗ (N=1,2,3):
+При срабатывании ИО активируются соответствующие выходные сигналы для ступени N МТЗ (N=1,2,3,4):
 \begin{itemize}
     \item <<МТЗ N ст.: ИО IА>>;
     \item <<МТЗ N ст.: ИО IВ>>;
@@ -76,14 +72,16 @@
 \begin{itemize}
     \item <<МТЗ 1 ст.: Пуск>>;
     \item <<МТЗ 2 ст.: Пуск>>;
-    \item <<МТЗ 3 ст.: Пуск>>.
+    \item <<МТЗ 3 ст.: Пуск>>;
+    \item <<МТЗ 4 ст.: Пуск>>.
 \end{itemize}
 \item
 При наличии пусковых условий функции запускается таймер Т1 зависимой/независимой выдержки времени на срабатывание. По истечении выдержки времени Т1, в течение которой величина тока постоянно превышала уровень тока срабатывания, активируются соответствующие выходные сигналы срабатывания:
 \begin{itemize}
     \item <<МТЗ 1 ст.: Срабатывание>>;
     \item <<МТЗ 2 ст.: Срабатывание>>;
-    \item <<МТЗ 3 ст.: Срабатывание>>.
+    \item <<МТЗ 3 ст.: Срабатывание>>;
+    \item <<МТЗ 4 ст.: Срабатывание>>.
 \end{itemize}
 
 \item
@@ -131,8 +129,8 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/mtzst.pdf}
-\captionof{figure}{Функциональная схема ступеней <<МТЗ 1 ст>>, <<МТЗ 2 ст>>, <<МТЗ 3 ст>>}\label{mtz:img1}
+\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/402. МТЗ СВ/_latex/img/mtzst.pdf}
+\captionof{figure}{Функциональная схема ступени МТЗ}\label{mtz:img1}
 \end{figure}
 
 \small
@@ -153,7 +151,7 @@
 \endfoot
 %\hline
 \endlastfoot
-%==+t1*PTOC1|LVTUVTOC
+%==+t1*PTOC1|SV_LVTUVTOC
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Ток срабатывания (Iср) & \centering I$>$ & \centering 0,10 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
@@ -226,7 +224,7 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/char.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/402. МТЗ СВ/_latex/img/char.pdf}
 \captionof{figure}{Характеристика органа направления мощности}\label{mtz:imgonm}
 \end{figure}
 
@@ -251,7 +249,7 @@
 \endfoot
 %\hline
 \endlastfoot
-%==+t1*RDIR1|LVTUVTOC
+%==+t1*RDIR1|SV_LVTUVTOC
 \centering Угол максимальной чувствительности (Фмч) & \centering φмч & \centering -179,0 ... 180,0 & \centering град. & \centering \arraybackslash 0,1 \\
 \hline
 %===t1
@@ -261,14 +259,14 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/onm.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/402. МТЗ СВ/_latex/img/onm.pdf}
 \captionof{figure}{Функциональная схема <<ОНМ>>}\label{mtz:imgonm1}
 \end{figure}
 
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/onm1.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/402. МТЗ СВ/_latex/img/onm1.pdf}
 \captionof{figure}{ Функциональная схема логики определения направления}\label{mtz:imgonm2}
 \end{figure}
 
@@ -299,7 +297,7 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/kpon.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/402. МТЗ СВ/_latex/img/kpon.pdf}
 \captionof{figure}{Функциональная схема <<КПОН>>}\label{mtzvn:img2}
 \end{figure}
 
@@ -322,7 +320,7 @@
 \endfoot
 %\hline
 \endlastfoot
-%==+t1*PTUV1|LVTUVTOC
+%==+t1*PTUV1|SV_LVTUVTOC
 \centering Напряжение срабатывания (Uср) & \centering U$<$ & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
 \centering Напряжение срабатывания ОП (U2ср) & \centering U2$>$ & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
@@ -360,7 +358,7 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/bnt.pdf}
+\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/402. МТЗ СВ/_latex/img/bnt.pdf}
 \captionof{figure}{Функциональная схема <<БНТ>>}\label{mtzvn:img3}
 \end{figure}
 
@@ -382,7 +380,7 @@
 \endfoot
 %\hline
 \endlastfoot
-%==+t1*PHAR1|LVTUVTOC
+%==+t1*PHAR1|SV_LVTUVTOC
 \centering Отношение тока второй гармоники к току основной гармоники (Ih2/Ih1) & \centering I2г/I1г$>$ & \centering 5 ... 100 & \centering \% & \centering \arraybackslash 1 \\
 \hline
 \centering Ток блокировки (Iср) & \centering I$>$ & \centering 0,1 ... 15,0 & \centering о.е. & \centering \arraybackslash 0,1 \\
@@ -396,9 +394,7 @@
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОРГАН БЛЗШ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% ИСПОЛЬЗУЕМ ЛОГИЧЕСКИЕ УСЛОВИЯ!!!
-\ifboolexpr{bool {isOL}}
-{
+
 \item Блокировка логической защиты шин (БЛЗШ)
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
@@ -409,8 +405,7 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/blzsh.pdf}
-%\includegraphics[scale=0.9,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/blzsh.pdf}
+\includegraphics[width=0.65\textwidth,height=0.65\textheight,keepaspectratio]{\fbpath/402. МТЗ СВ/_latex/img/blzsh.pdf}
 \captionof{figure}{Функциональная схема БЛЗШ}\label{mtzvn:img4}
 \vspace{3mm}
 \end{figure}
@@ -433,54 +428,12 @@
 \endfoot
 %\hline
 \endlastfoot
-%==+t1*RBLC1|LVTUVTOC
-\centering Выбор ступени блокировки (БлокЛЗ\_выбор\_ст) & \centering SGF1 & \centering 1 = Не предусмотрено\\2 = 1 ступень\\3 = 2 ступень\\4 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
+%==+t1*RBLC1|SV_LVTUVTOC
+\centering Выбор ступени блокировки (БлокЛЗШ\_выбор\_ст) & \centering SGF1 & \centering 1 = Не предусмотрено\\2 = 1 ступень\\3 = 2 ступень\\4 = 3 ступень\\5 = 4 ступень\\6 = 1 или 3 ступень\\7 = 2 или 4 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
 %===t1
 \end{longtable}
 \normalsize    
-}{}
-\ifboolexpr{bool {isVV} or bool {isSV}}{
-\item Блокировка логической защиты трансформатора (БЛЗТ)
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
-
-\item
-Функция блокировки логической защиты трансформатора (<<БЛЗТ>>) предусматривается для блокировки ЛЗТ вышестоящего силового трансформатора. В качестве воздействующих величин используются сигналы пуска ступеней МТЗ. Состояние программного переключателя SGF1 <<БлокЛЗ\_выбор\_ст>> определяет ступень МТЗ, от которой будет производиться блокировка ЛЗТ.
-\item
-Алгоритм работы <<БЛЗТ>> выполнен в соответствии с рисунком \ref{mtzvn:img4}. В таблице \ref{mtzvn:tbl4} приведены параметры, необходимые для настройки функции <<БЛЗТ>>.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/blzt.pdf}
-\captionof{figure}{Функциональная схема БЛЗТ}\label{mtzvn:img4}
-\vspace{3mm}
-\end{figure}
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки функции <<БЛЗТ>>\hfill\vspace{-0.5\baselineskip}}\label{mtzvn:tbl4}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{mtzvn:tbl4}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-%\hline
-\endlastfoot
-%==+t1*RBLC1|VV_LVTUVTOC
-\centering Выбор ступени блокировки (БлокЛЗ\_выбор\_ст) & \centering SGF1 & \centering 1 = Не предусмотрено\\2 = 1 ступень\\3 = 2 ступень\\4 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
-\hline
-%===t1
-\end{longtable}
-\normalsize     
-}{}
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ОРГАН БЛЗШ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -501,7 +454,7 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/au.pdf}
+\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/402. МТЗ СВ/_latex/img/au.pdf}
 \captionof{figure}{Функциональная схема АУ МТЗ}\label{mtz:imgau}
 \vspace{3mm}
 \end{figure}
@@ -524,8 +477,8 @@
 \endfoot
 %\hline
 \endlastfoot
-%==+t1*AUAPSSU1|LVTUVTOC
-\centering Выбор ускоряемой ступени (Выбор\_ст) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень\\3 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
+%==+t1*AUAPSSU1|SV_LVTUVTOC
+\centering Выбор ускоряемой ступени (Выбор\_ст) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень\\3 = 3 ступень\\4 = 4 ступень\\5 = 1 или 3 ступень\\6 = 2 или 4 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
 %===t1
 \end{longtable}
@@ -541,7 +494,7 @@
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
 \item
-Оперативное ускорение предусматривает ускорение второй или третьей ступени МТЗ. Оперативное ускорение может вводиться:
+Оперативное ускорение предусматривает ускорение одной или нескольких ступеней МТЗ. Оперативное ускорение может вводиться:
 \begin{itemize}
     \item при выводе основной защиты оборудования;
     \item при опробовании оборудования рабочим напряжением;
@@ -549,7 +502,7 @@
 \end{itemize}
 
 \item
-В данном алгоритме при введенном ключе <<Ввод ОУ МТЗ>> предусмотрена возможность оперативного ускорения второй или третьей ступени МТЗ. Выбор ускоряемой ступени осуществляется программным переключателем SGF1 <<Выбор\_ст\_ОУ>>. При введенной функции и появлению сигнала пуска выбранной ступени по истечению выдержки времени, определяемой уставкой T1, формируется сигнал срабатывания.
+В данном алгоритме при введенном ключе <<Ввод ОУ МТЗ>> предусмотрена возможность оперативного ускорения одной или нескольтких ступеней МТЗ. Выбор ускоряемых ступеней осуществляется программным переключателем SGF1 <<Выбор\_ст\_ОУ>>. При введенной функции и появлению сигнала пуска выбранной ступени по истечению выдержки времени, определяемой уставкой T1, формируется сигнал срабатывания.
 
 \item
 Алгоритм работы <<ОУ МТЗ>> выполнен в соответствии с рисунком \ref{mtz:imgou}. В таблице \ref{mtz:tblou} приведены параметры, необходимые для настройки функции <<ОУ МТЗ>>.
@@ -557,7 +510,7 @@
 \begin{figure}[H]
 \centering
 
-\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/ou.pdf}
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/402. МТЗ СВ/_latex/img/ou.pdf}
 \captionof{figure}{Функциональная схема ОУ МТЗ}\label{mtz:imgou}
 \vspace{3mm}
 \end{figure}
@@ -580,8 +533,8 @@
 \endfoot
 %\hline
 \endlastfoot
-%==+t1*OPAPSSU1|LVTUVTOC
-\centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ) & \centering SGF1 & \centering 2 = 2 ступень\\3 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
+%==+t1*OPAPSSU1|SV_LVTUVTOC
+\centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень\\3 = 3 ступень\\4 = 4 ступень\\5 = 1 или 3 ступень\\6 = 2 или 4 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ) & \centering T1 & \centering 0,00 ... 3,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
@@ -607,7 +560,7 @@
 \begin{figure}[H]
 \centering
 
-\includegraphics[width=0.65\textwidth,height=0.65\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/vl.pdf}
+\includegraphics[width=0.65\textwidth,height=0.65\textheight,keepaspectratio]{\fbpath/402. МТЗ СВ/_latex/img/vl.pdf}
 \captionof{figure}{Функциональная схема внешней логики МТЗ}\label{mtz:imgvl}
 \vspace{3mm}
 \end{figure}

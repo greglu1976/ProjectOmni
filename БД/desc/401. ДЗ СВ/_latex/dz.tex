@@ -194,7 +194,12 @@
 %\hline
 \endlastfoot
 %==+t1*LLN0|SV_LVDIS
-
+\centering Учет нагрузочного режима в характеристике срабатывания (Вырез\_нагрузки) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Активное сопротивление для отстройки от режима максимальной нагрузки (Rнг) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Угол наклона для отстройки от режима максимальной нагрузки (Фнг) & \centering -- & \centering 5,0 ... 60,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -237,7 +242,32 @@
 %\hline
 \endlastfoot
 %==+t1*PPPDIS1|SV_LVDIS
-
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн) & \centering -- & \centering -45,0 ... 0,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Активное сопротивление срабатывания (Rср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Реактивное сопротивление срабатывания (Xср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Угол наклона характеристики срабатывания (Фхс) & \centering -- & \centering 30,0 ... 89,9 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим направленности (Направленность) & \centering SGF3 & \centering 1 = Ненаправленная\\2 = Прямонаправленная\\3 = Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Подхват от ненаправленного пуска или отдельной ступени (Подхват) & \centering SGF9 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БК (Реж\_БК) & \centering SGF7 & \centering 1 = С контролем от БК=б\\2 = С контролем от БК=м & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БНН (Реж\_БНН) & \centering SGF8 & \centering 0 = Без контроля\\1 = С контролем & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от ОПО (Реж\_ОПО) & \centering SGF6 & \centering 1 = По току\\2 = По току и напряжению\\3 = По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Тип ПО (Контр\_ПО) & \centering SGF5 & \centering 1 = Без контроля\\2 = С контролем от БК\\3 = С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -265,7 +295,30 @@
 %\hline
 \endlastfoot
 %==+t1*PPPDIS2|SV_LVDIS
-
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн) & \centering -- & \centering -45,0 ... 0,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Активное сопротивление срабатывания (Rср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Реактивное сопротивление срабатывания (Xср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Угол наклона характеристики срабатывания (Фхс) & \centering -- & \centering 30,0 ... 89,9 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим направленности (Направленность) & \centering SGF3 & \centering 1 = Ненаправленная\\2 = Прямонаправленная\\3 = Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БК (Реж\_БК) & \centering SGF7 & \centering 1 = С контролем от БК=б\\2 = С контролем от БК=м & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БНН (Реж\_БНН) & \centering SGF8 & \centering 0 = Без контроля\\1 = С контролем & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от ОПО (Реж\_ОПО) & \centering SGF6 & \centering 1 = По току\\2 = По току и напряжению\\3 = По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Тип ПО (Контр\_ПО) & \centering SGF5 & \centering 1 = Без контроля\\2 = С контролем от БК\\3 = С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -358,7 +411,10 @@
 %\hline
 \endlastfoot
 %==+t1*DISRDIR1|SV_LVDIS
-
+\centering Угол направленности во II квадранте (Фнапр\_II) & \centering φ2 & \centering 90,0 ... 130,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Угол направленности в IV квадранте (Фнапр\_IV) & \centering φ1 & \centering -40,0 ... 0,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -420,7 +476,14 @@
 %\hline
 \endlastfoot
 %==+t1*DISPGSU1|SV_LVDIS
-
+\centering Ток срабатывания ПО ДЗ по току (Iср) & \centering I$>$$>$ & \centering 0,10 ... 5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Ток срабатывания ПО ДЗ по току и напряжению (IсрU) & \centering I$>$ & \centering 0,10 ... 5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Напряжение срабатывания ПО по току и напряжению (Uср) & \centering U$<$ & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим контроля от БНН (Реж\_БНН) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -465,7 +528,8 @@
 %\hline
 \endlastfoot
 %==+t1*AUAPSSU1|SV_LVDIS
-
+\centering Выбор ускоряемой ступени (Выбор\_ст) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень\\3 = 3 ступень\\4 = 4 ступень\\5 = 1 или 3 ступень\\6 = 2 или 4 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
 %===t1
 \end{longtable}
 \normalsize
