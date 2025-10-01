@@ -8,10 +8,6 @@
 \item
 Функция контролирует отсутствие напряжения на 1(2) секции шин. Функция используется для АПВ, а также для включения с контролем синхронизма. Функция используется для АВР, а также для оперативного включения.
 
-
-
-
-
 \item
 Пусковые условия функции формируются без выдержки времени при снижении всех линейных напряжений ниже уставки и одновременном выполнении следующих условий если уставка SGF2 выставлена в положение <<Измеренный>>:
 \begin{itemize}
@@ -51,7 +47,14 @@
 %\hline
 \endlastfoot
 %==+t1*PTUV1|SV_VOLABS1
-
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания (Uср) & \centering U$<$ & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ОП (U2ср) & \centering U2$>$ & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим пуска (Реж\_пуска) & \centering SGF2 & \centering 0 = Измеренный\\1 = Внешний & \centering -- & \centering \arraybackslash -- \\
+\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -59,7 +62,7 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/408. КОН сш/_latex/img/konsh.pdf}
+\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/408. КОН сш/_latex/img/konsh.pdf}
 \captionof{figure}{Функциональная схема <<КОН 1(2)сш>>}\label{konsh:img1}
 \end{figure}
 
