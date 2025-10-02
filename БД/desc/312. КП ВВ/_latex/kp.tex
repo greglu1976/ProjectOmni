@@ -1,4 +1,5 @@
 
+% ПРИМЕНИМО К КП ВВ и КП СВ - изменения только в схема ОБР, для этого логическое условие испольуется!
 %\needspace{4\baselineskip}
 \color{uniblue}{\subsection{\raggedright{Контроллер присоединения (КП)}}}
 \color{black}
@@ -68,12 +69,23 @@
 \endfoot
 %\hline
 \endlastfoot
+\ifboolexpr{bool {isVV}}
+{
 %==+t1*LLN0|VV_SWCTRL
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Ввод ОБР КА в работу (ОБР\_КА) & \centering SG1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 %===t1
+}
+{
+%==+t1*LLN0|SV_SWCTRL
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ввод ОБР КА в работу (ОБР\_КА) & \centering SG1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+}
 \end{longtable}
 \normalsize
 
@@ -171,6 +183,9 @@
 \endfoot
 %\hline
 \endlastfoot
+
+\ifboolexpr{bool {isVV}}
+{
 %==+t1*CBCSWI1|VV_SWCTRL
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
@@ -185,6 +200,23 @@
 \centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС) & \centering T3 & \centering 1,00 ... 60,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
+}
+{
+%==+t1*CBCSWI1|SV_SWCTRL
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Включение с контролем синхронизма (Контроль\_синхр) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения выключателя (Tперекл) & \centering T1 & \centering 0,01 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк) & \centering T2 & \centering 0,01 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС) & \centering T3 & \centering 1,00 ... 60,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+}
 \end{longtable}
 \normalsize
 
@@ -264,6 +296,9 @@
 \endfoot
 %\hline
 \endlastfoot
+
+\ifboolexpr{bool {isVV}}
+{
 %==+t1*ESCSWI1|VV_SWCTRL
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
@@ -272,6 +307,17 @@
 \centering Выдержка времени подавления выдачи положения "Не определено" (Тблк) & \centering T2 & \centering 0,05 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
+}
+{
+%==+t1*ESCSWI1|SV_SWCTRL
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл) & \centering T1 & \centering 0,05 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк) & \centering T2 & \centering 0,05 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+}
 \end{longtable}
 \normalsize
 
@@ -356,6 +402,9 @@
 \endfoot
 %\hline
 \endlastfoot
+
+\ifboolexpr{bool {isVV}}
+{
 %==+t1*WECSWI1|VV_SWCTRL
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
@@ -364,6 +413,17 @@
 \centering Выдержка времени подавления выдачи положения "Не определено" (Тблк) & \centering T2 & \centering 0,05 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
+}
+{
+%==+t1*WECSWI1|SV_SWCTRL
+\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл) & \centering T1 & \centering 0,05 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк) & \centering T2 & \centering 0,05 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+}
 \end{longtable}
 \normalsize
 
@@ -702,7 +762,18 @@
 %\hline
 \endlastfoot
 %==+t1*CBCILO1|SV_SWCTRL
-
+\centering Ввод ОБР В в работу (ОБР\_В) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль ЗН (Контр\_ЗН) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА1 (Контр\_KA1) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_KA2) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль от ВЭ2 (Контр\_от\_ВЭ2) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА4 (Контр\_KA4) & \centering SGF6 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -733,7 +804,7 @@
 Внешние дискретные входы назначаются в проекте непосредственно под схему объекта. Блокировка управления ЗН выполняется при несоблюдении какого-либо из условий, предусмотренных алгоритмом логики <<ОБР ЗН>>.
 
 \item
-Алгоритм работы <<ОБР ЗН>> выполнен в соответствии с рисунком \ref{kp:img_obrzn}. В таблице \ref{kp:tbl_obrzn} приведены параметры, необходимые для настройки функции <<ОБР ЗН>>.
+Алгоритм работы <<ОБР ЗН>> выполнен в соответствии с рисунком \ref{kp:img_obrzn}.
 
 \vspace{3mm}
 \begin{figure}[H]
@@ -759,7 +830,8 @@
 Разрешение управления ВЭ1 формируется при выполнении необходимых условий:
 \begin{itemize}
 	\item отсутствие процесса переключения коммутационных аппаратов (сигнал <<КП: Идет переключение>>);
-	\item активное состояние сигнала <<ВЭ1: Вкачен>> для разрешения команды выкатить ВЭ1 или одновременное наличие следующих сигналов для разрешения команды вкатить ВЭ1: <<ВЭ1: Выкачен>>, <<ЗН: Отключен>>, <<КА1 Отключен>>, <<КА2 Отключен>>, <<КА3 Отключен>>, <<КА4 Отключен>>, если введен контроль данных сигналов соответствующими уставками.
+	\item отключенное положение выключателя (сигнал <<В: Отключен>>);
+	\item активное состояние сигнала <<ВЭ1: Вкачен>> для разрешения команды выкатить ВЭ1 или одновременное наличие следующих сигналов для разрешения команды вкатить ВЭ1: <<ВЭ1: Выкачен>>, <<ЗН: Отключен>>, <<КА1 Отключен>>, <<КА2 Отключен>>, если введен контроль данных сигналов соответствующими уставками, также необходимо подтверждение от схемы ОБР ВЭ2 (наличие сигнала <<ВЭ2: Выкачен>> или, в случае, вкаченного положения<ВЭ2: Вкачен>>, одновременное наличие сигнала <<КА3 Отключен>> и <<КА4 Отключен>> - при введенном программном переключателе SGF3).
 \end{itemize}
 
 \item
@@ -771,7 +843,7 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/312. КП ВВ/_latex/img/obrve1.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/312. КП ВВ/_latex/img/svobrve1.pdf}
 \captionof{figure}{Функциональная схема <<ОБР ВЭ1>>}\label{kp:img_obrve1}
 \end{figure}
 
@@ -793,14 +865,12 @@
 \endfoot
 %\hline
 \endlastfoot
-%==+t1*WECILO1|VV_SWCTRL
+%==+t1*WECILO1|SV_SWCTRL
 \centering Контроль КА1 (Контр\_КА1) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Контроль КА2 (Контр\_КА2) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Контроль КА3 (Контр\_КА3) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА4 (Контр\_КА4) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Контроль КА4 (Контр\_КА4) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 %===t1
 \end{longtable}
@@ -822,26 +892,50 @@
 Разрешение управления ВЭ1 формируется при выполнении необходимых условий:
 \begin{itemize}
 	\item отсутствие процесса переключения коммутационных аппаратов (сигнал <<КП: Идет переключение>>);
-	\item активное состояние сигнала <<ВЭ2: Вкачен>> для разрешения команды выкатить ВЭ2 или активное состояние сигнала <<ВЭ2: Выкачен>> для разрешения команды вкатить ВЭ2.
+	\item при вкаченном положении ВЭ2 (активное состояние сигнала <<ВЭ2: Вкачен>>) необходимо выполнение любого из условий: отключен выключатель или выкачен ВЭ1 (сигналы <<ВЭ1: Выкачен>>, <<В: Отключен>>);
+	\item в случае выкаченного положения ВЭ2 необходимо выполнение следующих условий: отключен выключатель или выкачен ВЭ1 (сигналы <<ВЭ1: Выкачен>>, <<В: Отключен>>), отключен заземляющий нож (сигнал <<ЗН: Отключен>>) и наличие сигнала <<КА5 Отключен>> -- при введенном программном переключателе SGF1.
 \end{itemize}
 
 \item
 Внешние дискретные входы назначаются в проекте непосредственно под схему объекта. Блокировка управления ВЭ2 выполняется при несоблюдении какого-либо из условий, предусмотренных алгоритмом логики <<ОБР ВЭ2>>.
 
 \item
-Алгоритм работы <<ОБР ВЭ2>> выполнен в соответствии с рисунком \ref{kp:img_obrve2}.
+Алгоритм работы <<ОБР ВЭ2>> выполнен в соответствии с рисунком \ref{kp:img_obrve2}. В таблице \ref{kp:tbl_obrve2} приведены параметры, необходимые для настройки функции <<ОБР ВЭ2>>.
 
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/312. КП ВВ/_latex/img/obrve2.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/312. КП ВВ/_latex/img/svobrve2.pdf}
 \captionof{figure}{Функциональная схема <<ОБР ВЭ2>>}\label{kp:img_obrve2}
 \end{figure}
 
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции <<ОБР ВЭ2>>\hfill\vspace{-0.5\baselineskip}}\label{kp:tbl_obrve2}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{kp:tbl_obrve2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*WECILO2|SV_SWCTRL
+\centering Контроль КА5 (Контр\_КА5) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Оперативная блокировка выкатного элемента 1 (ОБР ВЭ1) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 }
 
