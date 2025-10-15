@@ -81,245 +81,78 @@
 \raggedright Ввод режима приоритета регулирования по 2 секции & \centering Ввод регул по 2секц & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \multicolumn{9}{c}{\textbf{Общие сигналы функциональной логики}} \\
 \hline
-\rowcolor{gray!15} 
+\rowcolor{gray!15}
 \multicolumn{9}{c}{Автоматика регулирования напряжения трансформатора (АРНТ)} \\
 \hline
 \multicolumn{9}{c}{Контроль привода РПН (Контроль РПН)} \\
 \hline
-\raggedright  Переключение не началось & \centering ПМ не пошел & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Длительное переключение (привод остановился в промежуточном положении) & \centering ПМ застрял & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Самопроизвольное переключение & \centering ПМ побежал & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Отказ привода РПН & \centering ПМ отказал & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Команда на отключение автомата питания привода РПН & \centering Отключить АВ ПМ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Сигнализация максимального количества переключений РПН & \centering Ресурс исчерпан & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Режим автоматического регулирования & \centering Авто.регулирование & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Блокировка автоматики регулирования & \centering Блокировка авт.рег. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Идет переключение & \centering Переключение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Действие АРНТ на привод РПН & \centering Работа АРНТ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Команда «прибавить» в привод РПН & \centering Прибавить в привод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Команда «убавить» привод РПН & \centering Убавить в привод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\rowcolor{gray!15} 
+\raggedright Переключение не началось & \centering ПМ не пошел & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Длительное переключение (привод остановился в промежуточном положении) & \centering ПМ застрял & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Самопроизвольное переключение & \centering ПМ побежал & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Отказ привода РПН & \centering ПМ отказал & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнализация максимального количества переключений РПН & \centering Ресурс исчерпан & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Автоматика регулирования напряжения (АРН)} \\
+\hline
+\raggedright Команда на отключение автомата питания привода РПН & \centering Отключить АВ ПМ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Режим автоматического регулирования & \centering Авто.регулирование & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блокировка автоматики регулирования & \centering Блокировка авт.рег. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Действие АРНТ на привод РПН & \centering Работа АРНТ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда «прибавить» в привод РПН & \centering Прибавить в привод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда «убавить» привод РПН & \centering Убавить в привод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Привод РПН (Привод РПН)} \\
+\hline
+\raggedright Идет переключение & \centering Переключение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{Автоматика регулирования напряжения трансформатора (АРНТ)} \\
+\hline
+\multicolumn{9}{c}{Выбор ТН (Выбор ТН)} \\
+\hline
+\raggedright Автоматический выбор регулируемой секции & \centering Авто выбор секц & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Приоритет регулирования по 2 секции & \centering Приоритет 2 секц & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Регулирование по 1 секции & \centering Регулируемая 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Контроль 1 секции & \centering Контролируемая 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Регулирование по 2 секции & \centering Регулируемая 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Контроль 2 секции & \centering Контролируемая 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Автоматика регулирования напряжения (АРН)} \\
+\hline
+\raggedright Нет связи с регулируемыми шинами & \centering Нет связи с шинами & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Напряжение выше границы зоны нечувствительности & \centering Напряжение выше & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Напряжение ниже границы зоны нечувствительности & \centering Напряжение ниже & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Напряжение значительно выше границы зоны нечувствительности & \centering Знач.повыш.напряж. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!15}
 \multicolumn{9}{c}{Автоматика регулирования напряжения трансформатора (АРНТ)} \\
 \hline
 \multicolumn{9}{c}{Автоматика регулирования напряжения (АРН)} \\
 \hline
-\raggedright  Нет связи с регулируемыми шинами & \centering Нет связи с шинами & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Напряжение выше границы зоны нечувствительности & \centering Напряжение выше & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Напряжение ниже границы зоны нечувствительности & \centering Напряжение ниже & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Напряжение значительно выше границы зоны нечувствительности & \centering Знач.повыш.напряж. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\multicolumn{9}{c}{Выбор ТН (Выбор ТН)} \\
+\raggedright Перегрузка секции 1 & \centering Перегрузка 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Высокое напряжение секции 1 & \centering Высок. напряж. 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Низкое напряжение секции 1 & \centering Низк. напряж. 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Высокое напряжение НП секции 1 & \centering Превышение 3U0 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Высокое напряжение ОП секции 1 & \centering Превышение U2 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Перегрузка секции 2 & \centering Перегрузка 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Перенапряжение секции 2 & \centering Высокое напряж.2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Низкое напряжение секции 2 & \centering Низкое напряж. 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Высокое напряжение НП секции 2 & \centering Превышение 3U0 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Высокое напряжение ОП секции 2 & \centering Превышение U2 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блокировка по перегрузке & \centering Блокир.по перегруз. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блокировка по перенапряжению & \centering Перенапряжение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блокировка по низкому напряжению & \centering Низк.напр.на шинах & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ненормальный режим на секции & \centering Ненормальный режим & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блокировка РПН по току & \centering Блокир.по току ВН & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Блокировка по низкому уровню масла & \centering Блок.по уров. масла & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Привод РПН заблокирован & \centering Привод заблокирован & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{Защитный автомат питания привода РПН (АВ РПН)} \\
 \hline
-\raggedright  Автоматический выбор регулируемой секции & \centering Авто выбор секц & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Приоритет регулирования по 2 секции & \centering Приоритет 2 секц & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Регулирование по 1 секции & \centering Регулируемая 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Контроль 1 секции & \centering Контролируемая 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Регулирование по 2 секции & \centering Регулируемая 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright  Контроль 2 секции & \centering Контролируемая 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\multicolumn{9}{c}{\textbf{Диагностические сигналы модулей в составе устройства}} \\
+\raggedright Отключено питание привода & \centering Отключен автомат ПМ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Датчик температуры масла РПН (ДТм)} \\
 \hline
-\rowcolor{gray!15} 
-\multicolumn{9}{c}{{Слот М1. Модуль питания (P02c)}} \\
+\raggedright Блокировка по низкой температуре & \centering Блок.по температуре & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Датчик уровня масла РПН (ДУм)} \\
 \hline
-\raggedright Критическая неисправность 12 В & \centering Слот М1. Крит. неисправность 12 В & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Некритическая неисправность 12 В & \centering Слот М1. Некрит. неисправность 12 В & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Критическая неисправность внешнего питания & \centering Слот М1. Крит. неисправность внешнего питания & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Некритическая неисправность внешнего питания & \centering Слот М1. Некрит. неисправность внешнего питания & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Критическая неисправность модуля питания & \centering Слот М1. Крит. неисправность модуля питания & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Некритическая неисправность модуля питания & \centering Слот М1. Некрит. неисправность модуля питания & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Несимметрия внешнего питания & \centering Слот М1. Несимметрия питания & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Перегрузка по питанию & \centering Слот М1. Перегрузка по питанию & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность АЦП & \centering Слот М1. Неисправность АЦП & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус сигнального реле & \centering Слот М1. Статус сигнального реле & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус светодиода «Готовность» & \centering Слот М1. Статус светодиода «Готовность» & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус светодиода «Тест» & \centering Слот М1. Статус светодиода «Тест» & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус сигнализации «Неисправность» & \centering Слот М1. Статус сигнализации «Неисправность» & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус входа PPS & \centering Слот М1. Статус входа PPS & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Наличие внешнего питания & \centering Слот М1. Наличие внешнего питания & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Внутренняя неисправность & \centering Слот М1. Внутренняя неисправность & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Критическая ошибка & \centering Слот М1. Модуль не определен & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\rowcolor{gray!15} 
-\multicolumn{9}{c}{{Слот М3. Модуль выходных реле (K002)}} \\
+\raggedright Высокий уровень масла & \centering Высок. уров. масла & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\multicolumn{9}{c}{Привод РПН (Привод РПН)} \\
 \hline
-\raggedright Отказ модуля & \centering Слот М3. Отказ модуля & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Модуль не определен & \centering Слот М3. Модуль не определен & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М3. Реле1. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М3. Реле2. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М3. Реле3. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М3. Реле4. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М3. Реле5. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М3. Реле6. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М3. Реле7. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М3. Реле8. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\rowcolor{gray!15} 
-\multicolumn{9}{c}{{Слот М4. Модуль выходных реле (K001)}} \\
-\hline
-\raggedright Отказ модуля & \centering Слот М4. Отказ модуля & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Модуль не определен & \centering Слот М4. Модуль не определен & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М4. Реле1. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М4. Реле2. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М4. Реле3. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М4. Реле4. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М4. Реле5. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М4. Реле6. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М4. Реле7. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М4. Реле8. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\rowcolor{gray!15} 
-\multicolumn{9}{c}{{Слот М5. Модуль выходных реле (K001)}} \\
-\hline
-\raggedright Отказ модуля & \centering Слот М5. Отказ модуля & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Модуль не определен & \centering Слот М5. Модуль не определен & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М5. Реле1. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М5. Реле2. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М5. Реле3. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М5. Реле4. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М5. Реле5. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М5. Реле6. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М5. Реле7. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М5. Реле8. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\rowcolor{gray!15} 
-\multicolumn{9}{c}{{Слот М6. Модуль выходных реле (K001)}} \\
-\hline
-\raggedright Отказ модуля & \centering Слот М6. Отказ модуля & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Модуль не определен & \centering Слот М6. Модуль не определен & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М6. Реле1. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М6. Реле2. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М6. Реле3. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М6. Реле4. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М6. Реле5. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М6. Реле6. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М6. Реле7. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М6. Реле8. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\rowcolor{gray!15} 
-\multicolumn{9}{c}{{Слот М7. Модуль выходных реле (K001)}} \\
-\hline
-\raggedright Отказ модуля & \centering Слот М7. Отказ модуля & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Модуль не определен & \centering Слот М7. Модуль не определен & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М7. Реле1. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М7. Реле2. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М7. Реле3. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М7. Реле4. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М7. Реле5. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М7. Реле6. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М7. Реле7. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М7. Реле8. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\rowcolor{gray!15} 
-\multicolumn{9}{c}{{Слот М8. Модуль дискретных входов (B021)}} \\
-\hline
-\raggedright Отказ модуля & \centering Слот М8. Отказ модуля & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Модуль не определен & \centering Слот М8. Модуль не определен & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ1. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ2. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ3. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ4. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ5. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ6. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ7. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ8. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ9. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ10. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ11. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ12. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ13. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М8. ДВ14. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\rowcolor{gray!15} 
-\multicolumn{9}{c}{{Слот М9. Модуль дискретных входов (B021)}} \\
-\hline
-\raggedright Отказ модуля & \centering Слот М9. Отказ модуля & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Модуль не определен & \centering Слот М9. Модуль не определен & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ1. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ2. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ3. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ4. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ5. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ6. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ7. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ8. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ9. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ10. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ11. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ12. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ13. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М9. ДВ14. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\rowcolor{gray!15} 
-\multicolumn{9}{c}{{Слот М10. Модуль дискретных входов (B021)}} \\
-\hline
-\raggedright Отказ модуля & \centering Слот М10. Отказ модуля & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Модуль не определен & \centering Слот М10. Модуль не определен & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ1. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ2. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ3. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ4. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ5. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ6. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ7. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ8. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ9. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ10. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ11. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ12. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ13. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М10. ДВ14. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\rowcolor{gray!15} 
-\multicolumn{9}{c}{{Слот М11. Модуль дискретных входов (B001)}} \\
-\hline
-\raggedright Отказ модуля & \centering Слот М11. Отказ модуля & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Модуль не определен & \centering Слот М11. Модуль не определен & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М11. ДВ1. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М11. ДВ2. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М11. ДВ3. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М11. ДВ4. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М11. ДВ5. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М11. ДВ6. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М11. ДВ7. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Статус & \centering Слот М11. ДВ8. Статус & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\rowcolor{gray!15} 
-\multicolumn{9}{c}{{Слот М14. Центральный процессор (C01)}} \\
-\hline
-\raggedright Отказ модуля & \centering Отказ модуля ЦП & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность ПЗУ & \centering Неисправность ПЗУ ЦП & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность ПЗУ MPU & \centering Неисправность ПЗУ MPU & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность ПЗУ DSP1 & \centering Неисправность ПЗУ DSP1 & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность flash & \centering Неисправность flash & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность ОЗУ & \centering Неисправность ОЗУ ЦП & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность ОЗУ MPU & \centering Неисправность ОЗУ MPU & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность ОЗУ DSP1 & \centering Неисправность ОЗУ DSP1 & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность ОЗУ IPU1 & \centering Неисправность ОЗУ IPU1 & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность часов реального времени & \centering Неисправность часов ЦП & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Критическая ошибка I2C & \centering Ошибка I2C ЦП & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Ошибка контрольной суммы уставок/конфигурации & \centering Ошибка КС уставок & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность ПО & \centering Неисправность ПО ЦП & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Несовместимая версия ПО & \centering Несовместимая версия ПО ЦП & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Критическая ошибка SPI & \centering Неисправность SPI ЦП & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Конфигурация не соответствует коду заказа & \centering Ошибка конфигурации ЦП & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неверно заданы уставки & \centering Неверные уставки & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность IPC & \centering Неисправность IPC & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность IPC для MPU-DSP1 & \centering Неисправность IPC для MPU-DSP1 & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность IPC для DSP1-IPU1 & \centering Неисправность IPC для DSP1-IPU1 & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность IPC для MPU-IPU1 & \centering Неисправность IPC для MPU-IPU1 & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Интерфейс RED12. Неисправность связи & \centering RED12.Неисправность & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Интерфейс RED34. Неисправность связи & \centering RED34.Неисправность & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность связи по интерфейсу Eth1 & \centering X1.Неисправность & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Интерфейс Eth1. Переполнение буфера выходных данных & \centering X1.Переп.вых.буфер & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Интерфейс Eth1. Переполнение буфера входных данных & \centering X1.Переп.вх.буфер & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность связи по интерфейсу Eth2 & \centering X2.Неисправность & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Интерфейс Eth2. Переполнение буфера выходных данных & \centering X2.Переп.вых.буфер & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Интерфейс Eth2. Переполнение буфера входных данных & \centering X2.Переп.вх.буфер & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность связи по интерфейсу Eth3 & \centering X2.Неисправность & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Интерфейс Eth3. Переполнение буфера выходных данных & \centering X3.Переп.вых.буфер & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Интерфейс Eth3. Переполнение буфера входных данных & \centering X3.Переп.вх.буфер & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность связи по интерфейсу Eth4 & \centering X2.Неисправность & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Интерфейс Eth4. Переполнение буфера выходных данных & \centering X4.Переп.вых.буфер & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Интерфейс Eth4. Переполнение буфера входных данных & \centering X4.Переп.вх.буфер & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Температура ЦП ниже допустимой & \centering Температура ЦП < < & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Температура ЦП выше допустимой & \centering Температура ЦП > > & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Температура ЦП выше нормы & \centering Температура ЦП > & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Температура ЦП ниже нормы & \centering Температура ЦП < & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Сброс встроенных часов или памяти вследствии перезагрузки & \centering Сброс часов & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Неисправность памяти архивов (flash-память) & \centering Неисправность архивов & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Программная перезагрузка & \centering Перезагрузка ПО & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Перезагрузка в результате потери питания & \centering Перезапуск по питанию & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Перезагрузка при ошибке ПО & \centering Перезапуск по ошибкам ПО & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
-\raggedright Изменение уставок & \centering Изменение уставок & \centering -- & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline 
+\raggedright Местное управление привода & \centering Местное упр.ПМ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 %===t2
 \end{longtable} 
 
