@@ -93,60 +93,25 @@
 \endfoot
 %\hline
 \endlastfoot
-
-%==+t1*AVTR1|_TTCC3> Привод РПН
-\multicolumn{5}{|c|}{ Привод РПН } \\ \hline 
-\centering Блокировка от контролируемой секции (БлкКонтрСекц) & \centering БлкКонтрСекц & \centering 0 ... 1 & \centering -- & \centering \arraybackslash 1 \\
+%==+t1*AVTR1|_TTCC3
+\centering Блокировка от контролируемой секции (БлкКонтрСекц) & \centering БлкКонтрСекц & \centering Не предусмотрено\\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 %===t1
-
-%==+t1*ATCC1|_TTCC3> АРН
-\multicolumn{5}{|c|}{ АРН } \\ \hline 
-\centering Допустимый ток перегрузки секции, выше которого запрет на повышение (Iвв>блк) & \centering Iвв$>$блк & \centering 1,000 ... 2,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+%==+t1*ATCC1|_TTCC3
+\centering Допустимый ток перегрузки секции, выше которого запрет на повышение (Iвв>блк) & \centering Iвв>блк & \centering 1,000 ... 2,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
 \hline
-\centering Верхняя уставка напряжения для блокировки автоматических команд на понижение (U»блк) & \centering U$>$$>$блк & \centering 1,00 ... 2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering Верхняя уставка напряжения для блокировки автоматических команд на понижение (U\verb|>>|блк) & \centering U\verb|>>|блк & \centering 1,00 ... 2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
 \hline
-\centering Нижняя уставка напряжения блокировки автоматических команд на повышение (U«блк) & \centering U$<$$<$блк & \centering 0,00 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering Нижняя уставка напряжения блокировки автоматических команд на повышение (U\verb|<<|блк) & \centering U\verb|<<|блк & \centering 0,00 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
 \hline
 \centering Максимальное утроенное напряжения нулевой последовательности блокировки автоматических команд на повышение (3U0блк) & \centering 3U0блк & \centering 0,00 ... 2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
 \hline
 \centering Максимальное напряжение обратной последовательности блокировки автоматических команд на повышение (U2блк) & \centering U2блк & \centering 0,00 ... 2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
 \hline
-\centering Ток перегрузки РПН (Iрпн>блк) & \centering Iрпн$>$блк & \centering 1,00 ... 2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering Ток перегрузки РПН (Iрпн>блк) & \centering Iрпн>блк & \centering 1,00 ... 2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
-
-
 \end{longtable}
 \normalsize
-
-
-
-% % ФОРМУЛА №1
-% \begin{equation*}
-% \begin{bmatrix}
-% I_{A,n*}\\ 
-% I_{B,n*}\\ 
-% I_{C,n*}
-% \end{bmatrix}= k_{AM,n}\times \begin{bmatrix}
-% M_{11,n} & M_{12,n} & M_{13,n}\\ 
-% M_{21,n} & M_{22,n} & M_{23,n}\\ 
-% M_{31,n} & M_{32,n} & M_{33,n}
-% \end{bmatrix}\times \begin{bmatrix}
-% I_{A,n}\\ 
-% I_{B,n}\\ 
-% I_{C,n}
-% \end{bmatrix},
-% \end{equation*}
-% \begin{eqexpl}[25mm]
-% \item{$n$}индекс, обозначающий сторону (плечо) ДЗТ;
-% \item{$k_{AM,n}$}коэффициент амплитудного выравнивания;
-% \item{$I_{A,n},I_{B,n},I_{C,n}$}измеренные фазные токи стороны $n$;
-% \item{$M_{11,n}\dots M_{33,n} $}коэффициенты матрицы компенсации фазового сдвига в соответствие  с группой соединения обмоток трансформатора.
-% \end{eqexpl}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Выкатной элемент (ВЭ) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \end{enumerate}
