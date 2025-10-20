@@ -1,0 +1,112 @@
+
+% ДЛЯ КА ВВ и КА СВ! КА СВ отличие только во входах на включение выключателя в схеме В используются xlsx VV_SwitchDevice и SV_SwitchDevice
+\needspace{3\baselineskip}
+\color{uniblue}{\subsection{Сигнализация}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+
+
+%\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+        
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Функция сигнализации (см. рисунок 2.15) принимает сигналы неисправностей, контроля положения испытательных блоков и двери. Функция формирует следующие обобщенные сигналы:
+    \begin{itemize}
+        \item вызов;
+        \item неисправность;
+        \item БИ в нерабочем положении.
+    \end{itemize}
+
+
+\item Ключом «Вывод терминала» блокируется формирование выходных сигналов. 
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции сигнализации\hfill\vspace{-0.5\baselineskip}}\label{mtzvn:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{mtzvn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+
+
+%==+t1*PLGSOCC1|_TTCC6> ПДС НКУ
+\multicolumn{5}{|c|}{ ПДС НКУ } \\ \hline 
+\centering Контроль положения блока испытательного №1 (КонтрSG1) & \centering КонтрSG1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №2 (КонтрSG2) & \centering КонтрSG2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №3 (КонтрSG3) & \centering КонтрSG3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №4 (КонтрSG4) & \centering КонтрSG4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №5 (КонтрSG5) & \centering КонтрSG5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №6 (КонтрSG6) & \centering КонтрSG6 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №7 (КонтрSG7) & \centering КонтрSG7 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения двери (КонтрДвери) & \centering КонтрДвери & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль оперативного тока технологической сигнализации (КонтрОТ) & \centering КонтрОТ & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания сигнализации (Тсигн) & \centering Тсигн & \centering 1 ... 100000 & \centering мс & \centering \arraybackslash 1 \\
+\hline
+%===t1
+
+
+
+
+\end{longtable}
+\normalsize
+
+
+
+
+
+
+
+
+
+
+
+% % ФОРМУЛА №1
+% \begin{equation*}
+% \begin{bmatrix}
+% I_{A,n*}\\ 
+% I_{B,n*}\\ 
+% I_{C,n*}
+% \end{bmatrix}= k_{AM,n}\times \begin{bmatrix}
+% M_{11,n} & M_{12,n} & M_{13,n}\\ 
+% M_{21,n} & M_{22,n} & M_{23,n}\\ 
+% M_{31,n} & M_{32,n} & M_{33,n}
+% \end{bmatrix}\times \begin{bmatrix}
+% I_{A,n}\\ 
+% I_{B,n}\\ 
+% I_{C,n}
+% \end{bmatrix},
+% \end{equation*}
+% \begin{eqexpl}[25mm]
+% \item{$n$}индекс, обозначающий сторону (плечо) ДЗТ;
+% \item{$k_{AM,n}$}коэффициент амплитудного выравнивания;
+% \item{$I_{A,n},I_{B,n},I_{C,n}$}измеренные фазные токи стороны $n$;
+% \item{$M_{11,n}\dots M_{33,n} $}коэффициенты матрицы компенсации фазового сдвига в соответствие  с группой соединения обмоток трансформатора.
+% \end{eqexpl}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Выкатной элемент (ВЭ) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{enumerate}
