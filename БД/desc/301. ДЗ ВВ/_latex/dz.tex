@@ -249,7 +249,7 @@
 \hline
 \centering Режим направленности (Направленность) & \centering SGF3 & \centering 1 = Ненаправленная\\2 = Прямонаправленная\\3 = Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Подхват от ненаправленного пуска или отдельной ступени (Подхват) & \centering SGF9 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Подхват от ненаправленного пуска или отдельной ступени  (Подхват) & \centering SGF9 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Режим контроля от БК (Реж\_БК) & \centering SGF7 & \centering 1 = С контролем от БК-б\\2 = С контролем от БК-м & \centering -- & \centering \arraybackslash -- \\
 \hline
@@ -261,7 +261,7 @@
 \hline
 \centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0 ... 10000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
 %===t1
 \end{longtable}
@@ -312,7 +312,7 @@
 \hline
 \centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0 ... 10000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
 %===t1
 \end{longtable}
@@ -369,7 +369,7 @@
 \hline
 \centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0 ... 10000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
 %===t1
 \end{longtable}
@@ -528,11 +528,11 @@
 %\hline
 \endlastfoot
 %==+t1*DISPGSU1|VV_LVDIS
-\centering Ток срабатывания ПО ДЗ по току (Iср) & \centering I$>$$>$ & \centering 0,10 ... 5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering Ток срабатывания ПО ДЗ по току (Iср) & \centering I\verb|>>| & \centering 0,10 ... 5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
 \hline
-\centering Ток срабатывания ПО ДЗ по току и напряжению (IсрU) & \centering I$>$ & \centering 0,10 ... 5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering Ток срабатывания ПО ДЗ по току и напряжению (IсрU) & \centering I> & \centering 0,10 ... 5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
 \hline
-\centering Напряжение срабатывания ПО по току и напряжению (Uср) & \centering U$<$ & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\centering Напряжение срабатывания ПО по току и напряжению (Uср) & \centering U< & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
 \centering Режим контроля от БНН (Реж\_БНН) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
@@ -638,7 +638,7 @@
 %==+t1*OPAPSSU1|VV_LVDIS
 \centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ) & \centering SGF1 & \centering 1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ) & \centering T1 & \centering 0,00 ... 3,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ) & \centering T1 & \centering 0 ... 3000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
 %===t1
 \end{longtable}

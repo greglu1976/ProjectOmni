@@ -122,13 +122,13 @@
 \hline
 \centering Контроль работы ЭМВ (Контр\_раб\_ЭМВ) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Длительность формирования сигнала о неисправном положении В (Tнеиспр\_В) & \centering T1 & \centering 0,01 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Длительность формирования сигнала о неисправном положении В (Tнеиспр\_В) & \centering T1 & \centering 10 ... 10000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Длительность формирования команды «Отключить В (реле)» (Тимп\_откл) & \centering T2 & \centering 0,05 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Длительность формирования команды «Отключить В (реле)» (Тимп\_откл) & \centering T2 & \centering 50 ... 10000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Длительность формирования команды «Включить В (реле)» (Тимп\_вкл) & \centering T3 & \centering 0,05 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Длительность формирования команды «Включить В (реле)» (Тимп\_вкл) & \centering T3 & \centering 50 ... 10000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Время для исключения «опрокидывания» В (Тпрод\_вкл) & \centering T4 & \centering 0,00 ... 1,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Время для исключения «опрокидывания» В (Тпрод\_вкл) & \centering T4 & \centering 0 ... 1000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
 %===t1
 \end{longtable}
@@ -186,11 +186,11 @@
 \hline
 \centering Режим включения ЗН (Режим\_вкл) & \centering SGF3 & \centering 0 = Длительный\\1 = Импульсный & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Длительность формирования сигнала о неисправном положении ЗН (Tнеиспр\_ЗН) & \centering T1 & \centering 0,01 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Длительность формирования сигнала о неисправном положении ЗН (Tнеиспр\_ЗН) & \centering T1 & \centering 10 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Длительность формирования команды «Отключить ЗН (реле)» (Тимп\_откл) & \centering T2 & \centering 0,10 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Длительность формирования команды «Отключить ЗН (реле)» (Тимп\_откл) & \centering T2 & \centering 100 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Длительность формирования команды «Включить ЗН (реле)» (Тимп\_вкл) & \centering T3 & \centering 0,10 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Длительность формирования команды «Включить ЗН (реле)» (Тимп\_вкл) & \centering T3 & \centering 100 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
 %===t1
 \end{longtable}
@@ -264,11 +264,11 @@
 \hline
 \centering Контроль ремонтного положения (Контр\_рем\_полож) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Длительность формирования сигнала о неисправном положении ВЭ (Tнеиспр\_ВЭ) & \centering T1 & \centering 0,01 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Длительность формирования сигнала о неисправном положении ВЭ (Tнеиспр\_ВЭ) & \centering T1 & \centering 10 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Длительность формирования команды «Выкатить ВЭ (реле)» (Тимп\_выкат) & \centering T2 & \centering 0,10 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Длительность формирования команды «Выкатить ВЭ (реле)» (Тимп\_выкат) & \centering T2 & \centering 100 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Длительность формирования команды «Вкатить ВЭ (реле)» (Тимп\_вкат) & \centering T3 & \centering 0,10 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Длительность формирования команды «Вкатить ВЭ (реле)» (Тимп\_вкат) & \centering T3 & \centering 100 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
 %===t1
 \end{longtable}
