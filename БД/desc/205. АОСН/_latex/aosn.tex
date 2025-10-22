@@ -111,19 +111,19 @@
 %==+t1*ECARTUV1|RTUV
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Напряжение срабатывания (Uср) & \centering U$<$ & \centering 5,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\centering Напряжение срабатывания (Uср) & \centering U< & \centering 5,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
-\centering Напряжение срабатывания ПП (U1ср) & \centering U1$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\centering Напряжение срабатывания ПП (U1ср) & \centering U1< & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
-\centering Напряжение срабатывания ПП смежной секции (U1ср\_см) & \centering U1см$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\centering Напряжение срабатывания ПП смежной секции (U1ср\_см) & \centering U1см< & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
-\centering Напряжение срабатывания ОП (U2ср) & \centering U2$>$ & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\centering Напряжение срабатывания ОП (U2ср) & \centering U2> & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
-\centering Частота срабатывания (Fср) & \centering F$<$ & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\centering Частота срабатывания (Fср) & \centering F< & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
 \hline
 \centering Разность частот срабатывания и возврата (dFвозвр) & \centering -- & \centering 0,04 ... 1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
 \hline
-\centering Уставка по скорости снижения напряжения (dU/dt) & \centering dU/dt$>$ & \centering 1 ... 20 & \centering В/с & \centering \arraybackslash 1 \\
+\centering Уставка по скорости снижения напряжения (dU/dt) & \centering dU/dt> & \centering 1 ... 20 & \centering В/с & \centering \arraybackslash 1 \\
 \hline
 \centering Контроль напряжения ОП (Контр\_U2) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
@@ -135,13 +135,13 @@
 \hline
 \centering Коэффициент возврата по скорости снижения напряжения (Kвозвр) & \centering -- & \centering 0,20 ... 0,99 & \centering -- & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Выдержка времени возврата АОСН (Твозвр) & \centering T2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени возврата АОСН (Твозвр) & \centering T2 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок) & \centering T3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок) & \centering T3 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр) & \centering T4 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр) & \centering T4 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
 %===t1
 \end{longtable}
@@ -196,7 +196,7 @@
 \hline
 \centering Номер ступени, действующей на срабатывание УВ (Ступень) & \centering SGF2 & \centering 0 = 1 ступень\\1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания УВ АОСН (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени срабатывания УВ АОСН (Тср) & \centering T1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
 %===t1
 \end{longtable}
@@ -274,9 +274,9 @@
 %==+t1*RECRTOV1|RTUV
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Напряжение срабатывания ПП (Uср) & \centering U1$<$ & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\centering Напряжение срабатывания ПП (Uср) & \centering U1< & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
-\centering Частота срабатывания (Fср) & \centering F$<$ & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\centering Частота срабатывания (Fср) & \centering F< & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
 \hline
 \centering Контроль частоты (Контр\_F) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
@@ -288,11 +288,11 @@
 \hline
 \centering Разность частот срабатывания и возврата (dFвозвр) & \centering -- & \centering 0,04 ... 1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Выдержка времени автоматического сброса блокировки после повторного действия АОСН (Тсброс\_блок) & \centering T2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени автоматического сброса блокировки после повторного действия АОСН (Тсброс\_блок) & \centering T2 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Выдержка времени сброса сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Тсброс\_разреш) & \centering T3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени сброса сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Тсброс\_разреш) & \centering T3 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
 %===t1
 \end{longtable}
@@ -347,7 +347,7 @@
 \hline
 \centering Номер ступени, действующей на срабатывание УВ (Ступень) & \centering SGF2 & \centering 0 = 1 ступень\\1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания УВ АПВН (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени срабатывания УВ АПВН (Тср) & \centering T1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
 %===t1
 \end{longtable}
