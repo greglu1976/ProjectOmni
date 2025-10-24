@@ -1,0 +1,27 @@
+\KOMAoption{paper}{a4, portrait}
+\areaset{267mm}{180mm}
+\fancyheadoffset{0pt} % обновляем хедер и футер
+
+\newgeometry{
+  top=14mm,
+  bottom=11mm,
+  right=10mm,
+  left=22mm,
+}
+
+\begin{landscape}
+
+\setlength{\footskip}{15.5pt}
+
+\color{uniblue}{\section[(рекомендуемое) Взаимодействие устройств включенных \newline на параллельную работу трансформаторов ]{(рекомендуемое)\\Взаимодействие устройств включенных на параллельную работу трансформаторов }\label{app:parallel}}
+\color{black}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.5\textwidth,height=1.5\textheight,keepaspectratio]{\apppath/Приложение. Паралл/_latex/img/1.pdf}
+  \captionof{figure}{Фукциональные взаимосвязи устройств при регулировании напряжения параллельно работающих трансформаторов}\label{appParall:img1}
+ \end{figure}
+
+\clearpage
+\end{landscape}
+\restoregeometry
