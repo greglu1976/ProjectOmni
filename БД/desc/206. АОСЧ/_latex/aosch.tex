@@ -99,7 +99,7 @@
 \hline
 \centering Уставка возврата органа БССЧ по частоте (Fвозвр) & \centering F> & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени срабатывания (Tср) & \centering Т1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени срабатывания (Tср) & \centering Т1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
@@ -261,9 +261,9 @@
 \hline
 \centering Контроль смежной секции (Контр\_КССШ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания (Tср) & \centering Т1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени срабатывания (Tср) & \centering Т1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени возврата (Tвозвр) & \centering Т2 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени возврата (Tвозвр) & \centering Т2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
@@ -351,9 +351,9 @@
 \hline
 \centering Контроль смежной секции (Контр\_КССШ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания (Tср) & \centering Т1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени срабатывания (Tср) & \centering Т1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени возврата (Tвозвр) & \centering Т2 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени возврата (Tвозвр) & \centering Т2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
@@ -380,10 +380,10 @@
 \item
 Алгоритм работы функции сборки сигналов АЧР выполнен в соответствии с рисунком \ref{achr:imgcmn}.
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/206. АОСЧ/_latex/img/common.pdf}
+\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/206. АОСЧ/_latex/img/common.pdf}
 \captionof{figure}{Функциональная схема сборки сигналов АЧР}\label{achr:imgcmn}
 \end{figure}
 
@@ -470,11 +470,11 @@
 \hline
 \centering Сброс сигнала разрешения ЧАПВ при длительном наличии сигнала срабатывания АЧР (Сброс\_ЧАПВ) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания (Тср) & \centering Т1 & \centering 5000 ... 240000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени срабатывания (Тср) & \centering Т1 & \centering 5,00 ... 240,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени автоматического сброса блокировки после повторного действия АЧР (Твозвр) & \centering Т2 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени автоматического сброса блокировки после повторного действия АЧР (Твозвр) & \centering Т2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени сброса сигнала разрешения ЧАПВ при длительном наличии сигнала срабатывания АЧР (Тсброс) & \centering Т3 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени сброса сигнала разрешения ЧАПВ при длительном наличии сигнала срабатывания АЧР (Тсброс) & \centering Т3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}

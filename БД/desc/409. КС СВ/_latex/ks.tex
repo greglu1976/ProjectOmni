@@ -131,14 +131,17 @@
 \item
 Функция <<КС>> может быть выведена из работы оперативно путем активации сигнала <<ОВ КС>>, что характеризуется активным состоянием сигнала <<КС: Оперативный вывод>> на выходе функции.
 
+% ПРЕДУПРЕЖДЕНИЕ !
 \noindent
-\colorbox{yellow!40}{
-  \begin{minipage}{\dimexpr\linewidth-2\fboxsep}
-    {\faExclamationTriangle} Оперативный вывод функции <<КС>> дает разрешение на оперативное включение выключателя без контроля синхронизма.
-  \end{minipage}
-}
-%\colorbox{blue!50}{\faExclamationTriangle}  Предупреждение! 
-%\colorbox{red}{\faBolt}  Опасность! 
+\fboxrule=1.2pt % задаём толщину рамки (жирная линия)
+\noindent
+\fbox{%
+  \begin{minipage}{\dimexpr\linewidth-2\fboxrule-2\fboxsep}
+    {\hspace*{0.5em}\textcolor{unired}{\Large\faExclamationTriangle}}\hspace{0.5em}
+    \hyphenpenalty=10000  Оперативный вывод функции <<КС>> дает безусловное разрешение на оперативное включение выключателя без контроля синхронизма, что может привести к ошибочному несинхронному включению оборудования.
+  \end{minipage}%
+}\vspace{1mm}
+%%%%%%%%%%%%%%%%%%%
 
 \item
 Алгоритм работы функции <<КС>> выполнен в соответствии с рисунком \ref{ks:img1}. В таблице \ref{ks:tbl1} приведены параметры, необходимые для настройки функции <<КС>>.
@@ -196,7 +199,7 @@
 \hline
 \centering Максимально допустимый угол включения выключателя (dФус) & \centering dФус< & \centering 10,0 ... 90,0 & \centering град. & \centering \arraybackslash 0,1 \\
 \hline
-\centering Время включения выключателя (Tопер) & \centering Tопер & \centering 10 ... 2000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Время включения выключателя (Tопер) & \centering Tопер & \centering 0,01 ... 2,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}

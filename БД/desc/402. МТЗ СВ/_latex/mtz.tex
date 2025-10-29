@@ -162,9 +162,9 @@
 \hline
 \centering Ввод функции включения на «холодную» нагрузку (Ввод\_ФВН) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Время отключенного состояния выключателя (Тзагруб.) & \centering T2 & \centering 0 ... 20000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Время отключенного состояния выключателя (Тзагруб.) & \centering T2 & \centering 0,00 ... 20,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Время ввода загрубления (Тсброс.загруб.) & \centering T3 & \centering 0 ... 20000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Время ввода загрубления (Тсброс.загруб.) & \centering T3 & \centering 0,00 ... 20,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 \centering Тип пуска по напряжению (Тип\_КПОН) & \centering SGF6 & \centering 1 = Управляющее напряжение\\2 = Вольтметровая блокировка & \centering -- & \centering \arraybackslash -- \\
 \hline
@@ -184,7 +184,7 @@
 \hline
 \centering Коэффициент регулировки времени срабатывания зависимой характеристики (К) & \centering -- & \centering 0,05 ... 15,00 & \centering -- & \centering \arraybackslash 0,01 \\
 \hline
-\centering Независимая выдержка времени срабатывания (Tср) & \centering T1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Независимая выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
@@ -536,7 +536,7 @@
 %==+t1*OPAPSSU1|SV_LVTUVTOC
 \centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень\\3 = 3 ступень\\4 = 4 ступень\\5 = 1 или 3 ступень\\6 = 2 или 4 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ) & \centering T1 & \centering 0 ... 3000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ) & \centering T1 & \centering 0,00 ... 3,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}

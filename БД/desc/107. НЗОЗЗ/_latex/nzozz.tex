@@ -119,15 +119,17 @@
 \item
 В качестве воздействующей величины <<ПО 3I0вг>> использует значение суммы высших гармонических составляющих (3, 5, 7, 9 и 11 гармоник) в токе нулевой последовательности. Полученное значение сравнивается с уставкой. Пуск <<ПО 3I0вг>> осуществляется по истечению фиксированной выдержки времени таймера Т1.
 
+% ИНФОРМАЦИЯ - 
+\vspace{1mm}
 \noindent
-\colorbox{blue!20}{
-  \begin{minipage}{\dimexpr\linewidth-2\fboxsep}
-    {\faInfoCircle} При отсутствии в измерительном модуле канала для непосредственного измерения тока 3I0, работа пускового органа по 3I0вг не предусмотрена.
-  \end{minipage}
-}
-
-%\colorbox{blue!50}{\faExclamationTriangle}  Предупреждение! 
-%\colorbox{red}{\faBolt}  Опасность! 
+\fboxrule=1.2pt % задаём толщину рамки (жирная линия)
+\noindent
+\fbox{%
+  \begin{minipage}{\dimexpr\linewidth-2\fboxrule-2\fboxsep}
+    {\hspace*{0.5em}\textcolor{uniblue}{\Large\faInfoCircle}}\hspace{0.5em}
+    При отсутствии в измерительном модуле канала для непосредственного измерения тока 3I0, работа пускового органа по 3I0вг не предусмотрена.
+  \end{minipage}%
+}\vspace{1mm}
 
 \item
 Алгоритм работы пускового органа <<ПО 3I0вг>> выполнен в соответствии с рисунком \ref{nzozz:img2}. В таблице \ref{nzozz:tbl2} приведены параметры, необходимые для настройки пускового органа <<ПО 3I0вг>>.
@@ -356,15 +358,15 @@
 \hline
 \centering Направление замыкания (Направление) & \centering SGF2 & \centering 0 = Прямое\\1 = Обратное & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени возврата ИО U0 (TвозU0) & \centering T3 & \centering 1 ... 1000 & \centering мс & \centering \arraybackslash 1 \\
+\centering Выдержка времени возврата ИО U0 (TвозU0) & \centering T3 & \centering 0,001 ... 1,000 & \centering с & \centering \arraybackslash 0,001 \\
 \hline
 \centering Число выбросов, определяющих импульс (Nср) & \centering -- & \centering 2 ... 10 & \centering -- & \centering \arraybackslash 1 \\
 \hline
-\centering Выдержка времени возврата ЛОПЗ (Tвоз) & \centering T2 & \centering 1 ... 1000 & \centering мс & \centering \arraybackslash 1 \\
+\centering Выдержка времени возврата ЛОПЗ (Tвоз) & \centering T2 & \centering 0,001 ... 1,000 & \centering с & \centering \arraybackslash 0,001 \\
 \hline
 \centering Число импульсов для пуска (Кср) & \centering -- & \centering 2 ... 100 & \centering -- & \centering \arraybackslash 1 \\
 \hline
-\centering Независимая выдержка времени срабатывания (Tср) & \centering T1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Независимая выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
@@ -518,7 +520,7 @@
 \hline
 \centering Коэффициент регулировки времени срабатывания зависимой характеристики (Kср) & \centering -- & \centering 0,05 ... 15,00 & \centering -- & \centering \arraybackslash 0,01 \\
 \hline
-\centering Независимая выдержка времени срабатывания (Tср) & \centering T1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Независимая выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}

@@ -135,13 +135,13 @@
 \hline
 \centering Коэффициент возврата по скорости снижения напряжения (Kвозвр) & \centering -- & \centering 0,20 ... 0,99 & \centering -- & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени возврата АОСН (Твозвр) & \centering T2 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени возврата АОСН (Твозвр) & \centering T2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок) & \centering T3 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок) & \centering T3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр) & \centering T4 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр) & \centering T4 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
@@ -196,16 +196,16 @@
 \hline
 \centering Номер ступени, действующей на срабатывание УВ (Ступень) & \centering SGF2 & \centering 0 = 1 ступень\\1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания УВ АОСН (Тср) & \centering T1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени срабатывания УВ АОСН (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
 \normalsize
 
-\vspace{3mm}
+\vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/205. АОСН/_latex/img/uvaosn.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/205. АОСН/_latex/img/uvaosn.pdf}
 \captionof{figure}{Функциональная схема <<УВ(m) АОСН>>}\label{uvaosn:imgonm1}
 \end{figure}
 
@@ -288,11 +288,11 @@
 \hline
 \centering Разность частот срабатывания и возврата (dFвозвр) & \centering -- & \centering 0,04 ... 1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени автоматического сброса блокировки после повторного действия АОСН (Тсброс\_блок) & \centering T2 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени автоматического сброса блокировки после повторного действия АОСН (Тсброс\_блок) & \centering T2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
-\centering Выдержка времени сброса сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Тсброс\_разреш) & \centering T3 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени сброса сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Тсброс\_разреш) & \centering T3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
@@ -347,16 +347,16 @@
 \hline
 \centering Номер ступени, действующей на срабатывание УВ (Ступень) & \centering SGF2 & \centering 0 = 1 ступень\\1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания УВ АПВН (Тср) & \centering T1 & \centering 0 ... 100000 & \centering мс & \centering \arraybackslash 10 \\
+\centering Выдержка времени срабатывания УВ АПВН (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
 \hline
 %===t1
 \end{longtable}
 \normalsize
 
-\vspace{3mm}
+\vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/205. АОСН/_latex/img/uvapvn.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/205. АОСН/_latex/img/uvapvn.pdf}
 \captionof{figure}{Функциональная схема <<УВ(m) АПВН>>}\label{uvapvn:imgonm1}
 \end{figure}
 
