@@ -5,14 +5,24 @@
 %\fancyhead[R]{\raisebox{-0.48\width}{\includegraphics[scale=1.2]{uni.pdf}}}
 \fancyhead[R]{\raisebox{-0.35\width}{\includegraphics[scale=0.45]{uni.pdf}}} % УТВЕРЖДЕНО 20.02.25!!! С Егоровым
 
-\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0pt}
 \lfoot{\color{uniblue}\href{https://uni-eng.ru}{https://uni-eng.ru}}
-%\lfoot{\color{blue}{\hyperref[https://uni-eng.ru]{https://uni-eng.ru}}}
 \rfoot {ООО «Юнител Инжиниринг»}
 
-\textcolor{unired}{\vspace{15mm}\hrule height 0.03cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ПОДЛОЖКА %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    % Сначала рисуем серый прямоугольник
+    \put(22mm,95mm){\color{unigray!25}\rule{0.85\paperwidth}{0.5\paperheight}}%
+    % Затем поверх размещаем изображение
+    \put(25mm,102mm){\includegraphics[width=0.83\paperwidth]{1.png}}%
+  }%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vskip 155mm % УТВЕРЖДЕНО 20.02.25!!! С Егоровым
+\textcolor{unired}{\vspace{15mm}\hrule height 0.05cm}
+
+\vskip 175mm % 155mm УТВЕРЖДЕНО 20.02.25!!! С Егоровым
 
 \begin{flushleft}
 
@@ -31,5 +41,5 @@
 \sloppy{\color{unired}{\textbf{\LARGE{\MakeUppercase{ЮТКБ.656122.609 РЭ6}}}}}
 %\vskip 30mm
 %\centering\color{red}{\textbf{\LARGE{ВЕРСИЯ 0.4+++ от 28.05.25}}}
-
+\textcolor{uniblue}{\vspace{20mm}\hrule height 0.05cm}
 \end{flushleft}
