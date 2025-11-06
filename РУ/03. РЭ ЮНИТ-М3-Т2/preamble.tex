@@ -1,13 +1,10 @@
-\documentclass[12pt,table, hidelinks]{extarticle} % что то меняется , не понятно article or extarticle...
-%\usepackage[T1, T2A]{fontenc} % вроде как не нужны для lualatex
-%\usepackage[utf8]{inputenc} % вроде как не нужны для lualatex
-\usepackage[T2A]{fontenc} 
+\documentclass[a4paper, 12pt,table, hidelinks, DIV=calc]{extarticle} % что то меняется , не понятно article or extarticle...
+%\usepackage[T2A]{fontenc}
+\usepackage{fontspec}
 \usepackage[english,russian]{babel}
-%\usepackage[dvips]{graphicx}
 \usepackage{graphicx}
-%\usepackage{svg}
 
-
+\setmainfont{Arial Narrow}
 \usepackage{unicode-math} % Задать шрифт для математических формул
 \setmathfont{Stix Two Math}
 %\setmathfont{Arial}
@@ -19,22 +16,24 @@
 a4paper,
 includehead,
 includefoot,
-nomarginpar,% We don't want any margin paragraphs
-%textwidth=10cm,% Set \textwidth to 10cm
-headheight=10mm,% Set \headheight to 10mm
-top=1mm,
-bottom=7mm, 
+nomarginpar,
+top=6mm,
+bottom=6mm,
 left=22mm,
-right=7mm,
+right=10mm,
+headheight=14.5pt,
+headsep=3mm,        % Добавить headsep
+footskip=7mm,
+%textheight=276mm    % Должен удовлетворять формуле
 ]{geometry}
 
 %\savegeometry{standard}
-\setlength{\topmargin}{-27mm}
-\setlength{\headsep}{7mm} % Устанавливаем отступ между колонтитулом и текстом 10pt !!! Сдвигает а4 landscape
+%\setlength{\topmargin}{-27mm}
+%\setlength{\headsep}{7mm} % Устанавливаем отступ между колонтитулом и текстом 10pt !!! Сдвигает а4 landscape
 %\setlength{\footskip}{10pt} % Устанавливаем отступ между текстом и колонтитулом внизу страницы 20pt
 %\setlength{\topskip}{0pt} % Установка вертикального промежутка между верхним краем текста и колонтитулом на 0pt
-\setlength{\textheight}{268mm}
-\setlength{\footskip}{-5mm}
+%\setlength{\textheight}{268mm}
+%\setlength{\footskip}{-5mm}
 
 
 %\usepackage{fancyhdr}
