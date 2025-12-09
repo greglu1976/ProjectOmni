@@ -1,0 +1,227 @@
+{
+  "Id": 0,
+  "Name": "АМТЗ-Ф",
+  "Description": "Аварийная МТЗ-Ф (используется в составе LD АМТЗ)",
+  "Directory": null,
+  "Scope": null,
+  "Version": 1,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ia",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "Ib",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "Ic",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 8,
+      "Name": "БК-I-м",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "Вывод АМТЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "АМТЗ активна",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 22,
+      "Name": "П.АМТЗ-Ф",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 23,
+      "Name": "Ср.АМТЗ-Ф",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "79c8a4fa-c466-46b7-91e4-946b67e1d7ca",
+          "Name": "Iср. АМТЗ-Ф",
+          "VariableName": "",
+          "Value": 40.0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Default": 0.0,
+          "Step": 0.001,
+          "Description": "",
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "79c8a4fa-c466-46b7-91e4-946b67e1d7ca",
+          "Name": "Iср. АМТЗ-Ф",
+          "VariableName": "",
+          "Value": 40.0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Default": 0.0,
+          "Step": 0.001,
+          "Description": "",
+          "DataType": "Single",
+          "IsConstant": false
+        }
+      },
+      "Index": 6,
+      "Name": "Уставка[Single]_1",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "f1fad5eb-09cb-464b-8c13-d7654c9bf734",
+          "Name": "БК-I-м АМТЗ-Ф",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "f1fad5eb-09cb-464b-8c13-d7654c9bf734",
+          "Name": "БК-I-м АМТЗ-Ф",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        }
+      },
+      "Index": 11,
+      "Name": "Уставка[UInt16]_1",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "4e5d9e70-444f-46e5-a272-1f22e294dea6",
+          "Name": "АМТЗ-Ф",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "4e5d9e70-444f-46e5-a272-1f22e294dea6",
+          "Name": "АМТЗ-Ф",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        }
+      },
+      "Index": 16,
+      "Name": "Уставка[UInt16]_2",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "f210d288-8a89-4923-825c-88aa01f33628",
+          "Name": "Тср АМТЗ-ОП",
+          "VariableName": "",
+          "Value": 120,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 120,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "f210d288-8a89-4923-825c-88aa01f33628",
+          "Name": "Тср АМТЗ-ОП",
+          "VariableName": "",
+          "Value": 120,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 120,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt32",
+          "IsConstant": false
+        }
+      },
+      "Index": 24,
+      "Name": "Уставка[UInt32]_1",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

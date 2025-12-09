@@ -1,0 +1,587 @@
+{
+  "Id": 0,
+  "Name": "ТНЗНП ступень",
+  "Description": "ТНЗНП ступень (используется в составе LD ТНЗНП ЛЭП 110-220 кВ)",
+  "Directory": null,
+  "Scope": null,
+  "Version": 1,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 5,
+      "Name": "3I0",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 6,
+      "Name": "Вывод ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "ОНМНП-Р",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "ОНМНП-Б",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "ОНМОП-Р",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "ОНМОП-Б",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "Ср.ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "Ввод АУ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "Пуск АУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 15,
+      "Name": "БНН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 16,
+      "Name": "ЧС ТНЗНП выведена",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 17,
+      "Name": "ИО БНТ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 18,
+      "Name": "БСТО",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 19,
+      "Name": "ИО ТНЗНП-N",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 20,
+      "Name": "П.ТНЗНП-N",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 21,
+      "Name": "Ср.ТНЗНП-N",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "21a7cfa9-3450-41ed-9187-2030d60fe676",
+          "Name": "Контр.направл.ТНЗНП",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "21a7cfa9-3450-41ed-9187-2030d60fe676",
+          "Name": "Контр.направл.ТНЗНП",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        }
+      },
+      "Index": 22,
+      "Name": "Контр.направл.ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "b1821951-c5c3-4885-9fc6-31d25623fc36",
+          "Name": "Направл.ТНЗНП",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "b1821951-c5c3-4885-9fc6-31d25623fc36",
+          "Name": "Направл.ТНЗНП",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        }
+      },
+      "Index": 23,
+      "Name": "Направл.ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "c388a26f-9450-4237-a43b-8c8638ebe904",
+          "Name": "Iср ТНЗНП",
+          "VariableName": "",
+          "Value": 40.0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Default": 0.0,
+          "Step": 0.001,
+          "Description": "",
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "c388a26f-9450-4237-a43b-8c8638ebe904",
+          "Name": "Iср ТНЗНП",
+          "VariableName": "",
+          "Value": 40.0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Default": 0.0,
+          "Step": 0.001,
+          "Description": "",
+          "DataType": "Single",
+          "IsConstant": false
+        }
+      },
+      "Index": 24,
+      "Name": "Iср ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "c1ddc245-d531-4155-a8c2-920bd29342ec",
+          "Name": "ТНЗНП",
+          "VariableName": "",
+          "Value": 1,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "c1ddc245-d531-4155-a8c2-920bd29342ec",
+          "Name": "ТНЗНП",
+          "VariableName": "",
+          "Value": 1,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        }
+      },
+      "Index": 25,
+      "Name": "ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "a6211a89-f2f8-4d92-8c2b-a20fc6ef2e57",
+          "Name": "Тип ОНМ ТНЗНП",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "a6211a89-f2f8-4d92-8c2b-a20fc6ef2e57",
+          "Name": "Тип ОНМ ТНЗНП",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        }
+      },
+      "Index": 26,
+      "Name": "Тип ОНМ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "dee0916b-f042-4014-9c89-e698fd369ab9",
+          "Name": "Тср ТНЗНП",
+          "VariableName": "",
+          "Value": 120,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 120,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "dee0916b-f042-4014-9c89-e698fd369ab9",
+          "Name": "Тср ТНЗНП",
+          "VariableName": "",
+          "Value": 120,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 120,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt32",
+          "IsConstant": false
+        }
+      },
+      "Index": 27,
+      "Name": "Тср ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "efa4ecb5-f8de-4c5d-8eb6-fccc6a266819",
+          "Name": "БНН ТНЗНП",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "efa4ecb5-f8de-4c5d-8eb6-fccc6a266819",
+          "Name": "БНН ТНЗНП",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        }
+      },
+      "Index": 28,
+      "Name": "БНН ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "4e0b633d-072c-4761-b6ab-013b2ebd710f",
+          "Name": "Вывод напр.при ср.ТНЗНП",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "4e0b633d-072c-4761-b6ab-013b2ebd710f",
+          "Name": "Вывод напр.при ср.ТНЗНП",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        }
+      },
+      "Index": 70,
+      "Name": "Вывод напр.при ср.ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "b2b193b2-aed6-4145-a338-65efd63bee6e",
+          "Name": "Вывод напр.при АУ",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "b2b193b2-aed6-4145-a338-65efd63bee6e",
+          "Name": "Вывод напр.при АУ",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        }
+      },
+      "Index": 71,
+      "Name": "Вывод напр.при АУ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "cff5d171-259f-4a48-b649-a2ffe137f5c0",
+          "Name": "Вывод ТНЗНП по чувств.",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "cff5d171-259f-4a48-b649-a2ffe137f5c0",
+          "Name": "Вывод ТНЗНП по чувств.",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        }
+      },
+      "Index": 75,
+      "Name": "Вывод ТНЗНП по чувств.",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "79678090-85e5-4793-a9ca-50d23c38eeb3",
+          "Name": "БНТ ТНЗНП",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "79678090-85e5-4793-a9ca-50d23c38eeb3",
+          "Name": "БНТ ТНЗНП",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        }
+      },
+      "Index": 76,
+      "Name": "БНТ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "e960d9bb-cbf4-4d1b-b304-5c1654273d18",
+          "Name": "БСТО ТНЗНП",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "e960d9bb-cbf4-4d1b-b304-5c1654273d18",
+          "Name": "БСТО ТНЗНП",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        }
+      },
+      "Index": 77,
+      "Name": "БСТО ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

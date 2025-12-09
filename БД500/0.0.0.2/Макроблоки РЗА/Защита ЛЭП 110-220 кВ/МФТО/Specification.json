@@ -1,0 +1,221 @@
+{
+  "Id": 0,
+  "Name": "МФТО",
+  "Description": "Междуфазная токовая отсечка (используется в составе LD МФТО)",
+  "Directory": null,
+  "Scope": null,
+  "Version": 1,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 1,
+      "Name": "Ia",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "Ib",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 3,
+      "Name": "Ic",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 4,
+      "Name": "БСТО",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Вывод МФТО",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 7,
+      "Name": "П.МФТО",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "Ср.МФТО",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "4f83b6df-8e64-4180-a6c4-c57763a85fb6",
+          "Name": "Iср МФТО",
+          "VariableName": "",
+          "Value": 40.0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Default": 0.0,
+          "Step": 0.001,
+          "Description": "",
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "4f83b6df-8e64-4180-a6c4-c57763a85fb6",
+          "Name": "Iср МФТО",
+          "VariableName": "",
+          "Value": 40.0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Default": 0.0,
+          "Step": 0.001,
+          "Description": "",
+          "DataType": "Single",
+          "IsConstant": false
+        }
+      },
+      "Index": 9,
+      "Name": "Iср МФТО",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "77bb368f-f6f4-4047-8cf4-1367c39d4d28",
+          "Name": "МФТО",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "77bb368f-f6f4-4047-8cf4-1367c39d4d28",
+          "Name": "МФТО",
+          "VariableName": "",
+          "Value": 0,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt16",
+          "IsConstant": false
+        }
+      },
+      "Index": 10,
+      "Name": "МФТО",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "d724f2b7-5acf-4320-819a-268c79a9c744",
+          "Name": "Тср.МФТО",
+          "VariableName": "",
+          "Value": 120,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 120,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "d724f2b7-5acf-4320-819a-268c79a9c744",
+          "Name": "Тср.МФТО",
+          "VariableName": "",
+          "Value": 120,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 120,
+          "Default": 0,
+          "Step": 1,
+          "Description": "",
+          "DataType": "UInt32",
+          "IsConstant": false
+        }
+      },
+      "Index": 11,
+      "Name": "Уставка[UInt32]_1",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "431579fb-4f3b-4a74-8e5b-1f0a8ae2a814",
+          "Name": "БСТО МФТО",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "431579fb-4f3b-4a74-8e5b-1f0a8ae2a814",
+          "Name": "БСТО МФТО",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        }
+      },
+      "Index": 26,
+      "Name": "Уставка[Boolean]_1",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

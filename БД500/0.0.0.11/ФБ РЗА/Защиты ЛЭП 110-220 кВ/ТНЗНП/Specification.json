@@ -1,0 +1,287 @@
+{
+  "Id": 0,
+  "Name": "ТНЗНП",
+  "Description": "ТНЗНП ЛЭП 110-220 кВ (используется в составе LD ТНЗНП 110-220 кВ)",
+  "Directory": null,
+  "Scope": null,
+  "Version": 1,
+  "SchemaNodeType": "FunctionalBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "3I0",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "Вывод ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "ОНМНП-Р",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "ОНМНП-Б",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "ОНМОП-Р",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "ОНМОП-Б",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "Ср.ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "Ввод АУ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "Пуск АУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "БНН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "ЧС ТНЗНП выведена",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "ИО БНТ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "БСТО",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 14,
+      "Name": "ИО ТНЗНП-1",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 15,
+      "Name": "П.ТНЗНП-1",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 16,
+      "Name": "Ср.ТНЗНП-1",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 17,
+      "Name": "ИО ТНЗНП-2",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 18,
+      "Name": "П.ТНЗНП-2",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 19,
+      "Name": "Ср.ТНЗНП-2",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 20,
+      "Name": "ИО ТНЗНП-3",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 21,
+      "Name": "П.ТНЗНП-3",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 22,
+      "Name": "Ср.ТНЗНП-3",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 23,
+      "Name": "ИО ТНЗНП-4",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 24,
+      "Name": "П.ТНЗНП-4",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 25,
+      "Name": "Ср.ТНЗНП-4",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 26,
+      "Name": "ИО ТНЗНП-5",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 27,
+      "Name": "П.ТНЗНП-5",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 28,
+      "Name": "Ср.ТНЗНП-5",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 29,
+      "Name": "ИО ТНЗНП-6",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 30,
+      "Name": "П.ТНЗНП-6",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 31,
+      "Name": "Ср.ТНЗНП-6",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "3e9aefbc-4271-4433-bcce-d547adf21cb7",
+          "Name": "Вывод напр.при ср.ТНЗНП",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "3e9aefbc-4271-4433-bcce-d547adf21cb7",
+          "Name": "Вывод напр.при ср.ТНЗНП",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        }
+      },
+      "Index": 32,
+      "Name": "Вывод напр.при ср.ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "acad6f25-53cc-4238-8504-d22c23732546",
+          "Name": "Вывод напр.при АУ",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "acad6f25-53cc-4238-8504-d22c23732546",
+          "Name": "Вывод напр.при АУ",
+          "VariableName": "",
+          "Value": false,
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Default": false,
+          "Step": false,
+          "Description": "",
+          "DataType": "Boolean",
+          "IsConstant": false
+        }
+      },
+      "Index": 33,
+      "Name": "Вывод напр.при АУ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}
