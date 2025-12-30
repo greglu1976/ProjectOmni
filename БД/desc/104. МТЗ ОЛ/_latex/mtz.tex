@@ -158,7 +158,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*PTOC1|LVTUVTOC
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
@@ -194,12 +194,11 @@
 \centering Коэффициент регулировки времени срабатывания зависимой характеристики (К) & \centering -- & \centering 0,05 ... 15,00 & \centering -- & \centering \arraybackslash 0,01 \\
 \hline
 \centering Независимая выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
 
-\vspace{2mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/mtzst.pdf}
@@ -239,7 +238,7 @@
 \item 
 Для правильной работы в случае близких коротких замыканий в функции предусмотрено запоминание угла мощности за два периода перед пуском токового измерительного органа на протяжении 40 мс. Запоминание угла мощности осуществляется сразу после поступления пускового сигнала и возможно лишь при условии, что напряжение превышает 1 В до момента запуска. Зафиксированный угол мощности применяется ОНМ только в том случае, если напряжение опускается ниже 0,9 В. В случае активации БНН режим работы «по памяти» блокируется. Длительность работы блока по предшествующему значению мощности в этом случае осуществляется в течение 300 мс. Поясняющая диаграмма определения направления мощности приведена на рисунке \ref{mtz:imgonm}.
 
-\vspace{2mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/char.pdf}
@@ -265,23 +264,22 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*RDIR1|LVTUVTOC
 \centering Угол максимальной чувствительности (Фмч) & \centering φмч & \centering -179,0 ... 180,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/onm.pdf}
 \captionof{figure}{Функциональная схема логики ОНМ}\label{mtz:imgonm1}
 \end{figure}
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/onm1.pdf}
@@ -313,7 +311,7 @@
 \item
 Алгоритм работы функции выполнен в соответствии с рисунком \ref{mtzvn:img2}. В таблице \ref{mtzvn:tbl2} приведены параметры, необходимые для настройки функции.
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/kpon.pdf}
@@ -337,7 +335,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*PTUV1|LVTUVTOC
 \centering Напряжение срабатывания (Uср) & \centering U< & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
@@ -345,7 +343,6 @@
 \centering Напряжение срабатывания ОП (U2ср) & \centering U2> & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
 \centering Режим пуска (Реж\_пуска) & \centering SGF1 & \centering 0 = По Uмин\\1 = Комбинированный\\2 = Внешний & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -376,7 +373,7 @@
 \item
 Алгоритм работы функции выполнен в соответствии с рисунком \ref{mtzvn:img3}. В таблице \ref{mtzvn:tbl3} приведены параметры, необходимые для настройки функции.
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/bnt.pdf}
@@ -399,7 +396,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*PHAR1|LVTUVTOC
 \centering Отношение тока второй гармоники к току основной гармоники (Ih2/Ih1) & \centering I2г/I1г> & \centering 5 ... 100 & \centering \% & \centering \arraybackslash 1 \\
@@ -407,7 +404,6 @@
 \centering Ток блокировки (Iср) & \centering I> & \centering 0,1 ... 15,0 & \centering о.е. & \centering \arraybackslash 0,1 \\
 \hline
 \centering Перекрестная блокировка (Перекрест\_блок) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -430,12 +426,12 @@
 \item
 Алгоритм работы функции выполнен в соответствии с рисунком \ref{mtzvn:img4}. В таблице \ref{mtzvn:tbl4} приведены параметры, необходимые для настройки функции.
 
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/blzsh.pdf}
 %\includegraphics[scale=0.9,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/blzsh.pdf}
 \captionof{figure}{Функциональная схема БЛЗШ}\label{mtzvn:img4}
-\vspace{3mm}
 \end{figure}
 
 \small
@@ -454,11 +450,10 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*RBLC1|LVTUVTOC
 \centering Выбор ступени блокировки (БлокЛЗ\_выбор\_ст) & \centering SGF1 & \centering 1 = Не предусмотрено\\2 = 1 ступень\\3 = 2 ступень\\4 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize    
@@ -476,11 +471,11 @@
 \item
 Алгоритм работы функции выполнен в соответствии с рисунком \ref{mtzvn:img4}. В таблице \ref{mtzvn:tbl4} приведены параметры, необходимые для настройки функции.
 
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/blzt.pdf}
 \captionof{figure}{Функциональная схема БЛЗТ}\label{mtzvn:img4}
-\vspace{3mm}
 \end{figure}
 
 \small
@@ -499,11 +494,10 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*RBLC1|VV_LVTUVTOC
 \centering Выбор ступени блокировки (БлокЛЗ\_выбор\_ст) & \centering SGF1 & \centering 1 = Не предусмотрено\\2 = 1 ступень\\3 = 2 ступень\\4 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize     
@@ -530,11 +524,11 @@
 \item
 Алгоритм работы функции выполнен в соответствии с рисунком \ref{mtz:imgau}. В таблице \ref{mtz:tblau} приведены параметры, необходимые для настройки функции.
 
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/au.pdf}
 \captionof{figure}{Функциональная схема логики АУ МТЗ}\label{mtz:imgau}
-\vspace{3mm}
 \end{figure}
 
 \small
@@ -553,11 +547,10 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*AUAPSSU1|LVTUVTOC
 \centering Выбор ускоряемой ступени (Выбор\_ст) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень\\3 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -588,12 +581,11 @@
 \item
 Алгоритм работы функции выполнен в соответствии с рисунком \ref{mtz:imgou}. В таблице \ref{mtz:tblou} приведены параметры, необходимые для настройки функции.
 
+\vspace{1mm}
 \begin{figure}[H]
 \centering
-
 \includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/ou.pdf}
 \captionof{figure}{Функциональная схема логики ОУ МТЗ}\label{mtz:imgou}
-\vspace{3mm}
 \end{figure}
 
 \small
@@ -612,13 +604,12 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*OPAPSSU1|LVTUVTOC
 \centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ) & \centering SGF1 & \centering 2 = 2 ступень\\3 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ) & \centering T1 & \centering 0,00 ... 3,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -636,14 +627,13 @@
 Для функции предусмотрен общий выходной сигнал «Пуск МТЗ», который формируется при наличии пуска любой ступени МТЗ. Общий сигнал пуска МТЗ участвует в логике таких функций как: УРОВ, БНН, АУ.
 
 \item
-Алгоритм работы внешней логики МТЗ выполнен в соответствии с рисунком \ref{mtz:imgvl}. 
+Алгоритм работы внешней логики МТЗ выполнен в соответствии с рисунком \ref{mtz:imgvl}.
 
+\vspace{1mm}
 \begin{figure}[H]
 \centering
-
 \includegraphics[width=0.65\textwidth,height=0.65\textheight,keepaspectratio]{\fbpath/104. МТЗ ОЛ/_latex/img/vl.pdf}
 \captionof{figure}{Функциональная схема внешней логики МТЗ}\label{mtz:imgvl}
-\vspace{3mm}
 \end{figure}
 
 \end{enumerate}

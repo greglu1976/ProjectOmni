@@ -25,22 +25,6 @@
 Алгоритм работы ЛО Т выполнен в соответствии с рисунком \ref{loobsh:img1}.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{3mm}
-\begin{figure}[H]
-\centering
-% ЗДЕСЬ ВЕТВЛЕНИЕ, рисунок для исполнения Т2
-\ifboolexpr{bool {isT2}}
-{\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/35. ЛО Т 35 Т/_latex/img/_2.pdf}}{}
-
-% ЗДЕСЬ ВЕТВЛЕНИЕ, рисунок для исполнения Т
-\ifboolexpr{bool {isT}}
-{\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/35. ЛО Т 35 Т/_latex/img/_1.pdf}}{}
-
-\captionof{figure}{Функциональная схема ЛО Т}\label{loobsh:img1}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -77,11 +61,10 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*PTRC1|TOFFLVLGC
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -123,7 +106,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*RBRE1|TOFFLVLGC
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
@@ -131,7 +114,6 @@
 \centering Режим запрета АПВ при срабатывании 2 ступени МТЗ (ЗАПВ\_МТЗ\_2ст) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Режим запрета АПВ при срабатывании 3 ступени МТЗ (ЗАПВ\_МТЗ\_3ст) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -169,7 +151,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*LVCBRBLC1|TOFFLVLGC
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
@@ -177,12 +159,27 @@
 \centering Режим запрета АВР при срабатывании 2 ступени МТЗ (ЗАВР\_МТЗ\_2ст) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Режим запрета АВР при срабатывании 3 ступени МТЗ (ЗАВР\_МТЗ\_3ст) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
 
 \end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1mm}
+\begin{figure}[H]
+\centering
+% ЗДЕСЬ ВЕТВЛЕНИЕ, рисунок для исполнения Т2
+\ifboolexpr{bool {isT2}}
+{\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/35. ЛО Т 35 Т/_latex/img/_2.pdf}}{}
+
+% ЗДЕСЬ ВЕТВЛЕНИЕ, рисунок для исполнения Т
+\ifboolexpr{bool {isT}}
+{\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/35. ЛО Т 35 Т/_latex/img/_1.pdf}}{}
+
+\captionof{figure}{Функциональная схема ЛО Т}\label{loobsh:img1}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.
 
