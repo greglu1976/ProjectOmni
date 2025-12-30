@@ -135,7 +135,7 @@
 \item
 Ступени  ДЗ  предусматривают  работу  в  направленном  режиме.  Если  предусмотрен  контроль направленности  при  АУ  (уставка  SGF4  введена  в  работу),  то  наличие  сигнала  «АУ:  Ввод  ускорения» позволяет выполнить пуск ступени ДЗ на момент включения выключателя без контроля направления. В каждой ступени ДЗ предусмотрена  возможность  выбора  направленного  режима  работы  контуров. Контроль  направленности  осуществляется  с  помощью  уставки  SGF3.  Для  обеспечения  строгой направленности  действия  ступени,  используется  орган  направления  (ОН).  Направление  действия меняется  в  зависимости  от  положения  уставки  «Ненаправленная»,  «Прямонаправленная», «Обратнонаправленная». Характеристики срабатывания прямонаправленных и обратнонаправленных ступеней ДЗ приведены на рис. \ref{dz:img00}.
 
-%\vspace{2mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/301. ДЗ ВВ/_latex/img/2.pdf}
@@ -194,7 +194,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*LLN0|VV_LVDIS
 \centering Учет нагрузочного режима в характеристике срабатывания (Вырез\_нагрузки) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
@@ -202,7 +202,6 @@
 \centering Активное сопротивление для отстройки от режима максимальной нагрузки (Rнг) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
 \hline
 \centering Угол наклона для отстройки от режима максимальной нагрузки (Фнг) & \centering -- & \centering 5,0 ... 60,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -219,7 +218,7 @@
 \item
 Алгоритм работы первой ступени ДЗ по контуру «фаза-фаза» выполнен в соответствии с рисунком \ref{dz:dz1ffimg1}. В таблице \ref{dz:dz1fftbl1} приведены параметры, необходимые для настройки функции первой ступени ДЗ по контуру «фаза-фаза».
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/301. ДЗ ВВ/_latex/img/dz1ff.pdf}
@@ -242,7 +241,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*PPPDIS1|VV_LVDIS
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
@@ -270,7 +269,6 @@
 \centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -295,7 +293,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*PPPDIS2|VV_LVDIS
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
@@ -321,12 +319,11 @@
 \centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/301. ДЗ ВВ/_latex/img/dz2ff.pdf}
@@ -352,7 +349,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*PPPDIS3|VV_LVDIS
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
@@ -378,12 +375,11 @@
 \centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/301. ДЗ ВВ/_latex/img/dz3ff.pdf}
@@ -408,7 +404,7 @@
 \item
 ОН  выполнен  в  виде  отдельного  функционального  модуля  с  собственными  уставками.  ОН  ДЗ осуществляет построение характеристики ОН по уставкам, ограничивающим характеристику срабатывания органа в прямом направлении во втором и четвертом квадрантах («Угол во 2 квадр.» - $\varphi2$ и «Угол в 4 квадр.» – $\varphi1$ соответственно), и, используя положение  вектора  сопротивления  на  плоскости  характеристики, формирует выходные сигналы прямого либо обратного направления согласно характеристике, изображенной на \ref{dz:onimg0}.
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{\fbpath/301. ДЗ ВВ/_latex/img/charon.pdf}
@@ -446,7 +442,7 @@
 \item
 Алгоритм работы органа направления выполнен в соответствии с рисунком \ref{dz:onimg1}. Алгоритм работы логики определения направления, входящий в состав органа направления, выполнен в соответствии с рисунком \ref{dz:onimg2}. В таблице \ref{dz:ontbl1} приведены параметры, необходимые для настройки функции.
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/301. ДЗ ВВ/_latex/img/on1.pdf}
@@ -469,18 +465,17 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*DISRDIR1|VV_LVDIS
 \centering Угол направленности во II квадранте (Фнапр\_II) & \centering φ2 & \centering 90,0 ... 130,0 & \centering град. & \centering \arraybackslash 0,1 \\
 \hline
 \centering Угол направленности в IV квадранте (Фнапр\_IV) & \centering φ1 & \centering -40,0 ... 0,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/301. ДЗ ВВ/_latex/img/on2.pdf}
@@ -513,7 +508,7 @@
 \item
 Алгоритм работы функции выполнен в соответствии с рисунком \ref{dz:opoimg1}. В таблице \ref{dz:opotbl1} приведены параметры, необходимые для настройки функции.
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/301. ДЗ ВВ/_latex/img/opo.pdf}
@@ -536,7 +531,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*DISPGSU1|VV_LVDIS
 \centering Ток срабатывания ПО ДЗ по току (Iср) & \centering I\verb|>>| & \centering 0,10 ... 5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
@@ -546,7 +541,6 @@
 \centering Напряжение срабатывания ПО по току и напряжению (Uср) & \centering U< & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
 \centering Режим контроля от БНН (Реж\_БНН) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -568,7 +562,7 @@
 \item
 Алгоритм работы функции выполнен в соответствии с рисунком \ref{dz:audzimg1}. В таблице \ref{dz:audztbl1} приведены параметры, необходимые для настройки функции.
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/301. ДЗ ВВ/_latex/img/audz.pdf}
@@ -591,11 +585,10 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*AUAPSSU1|VV_LVDIS
 \centering Выбор ускоряемой ступени (Выбор\_ст) & \centering SGF1 & \centering 1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -624,7 +617,7 @@
 \item
 Алгоритм работы функции выполнен в соответствии с рисунком \ref{dz:oudzimg1}. В таблице \ref{dz:oudztbl1} приведены параметры, необходимые для настройки функции.
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/301. ДЗ ВВ/_latex/img/oudz.pdf}
@@ -647,13 +640,12 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*OPAPSSU1|VV_LVDIS
 \centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ) & \centering SGF1 & \centering 1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ) & \centering T1 & \centering 0,00 ... 3,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -671,7 +663,7 @@
 \item
 Алгоритм работы  внешней логики ДЗ выполнен в соответствии с рисунком \ref{dz:vlimg1}.
 
-\vspace{3mm}
+\vspace{1mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/301. ДЗ ВВ/_latex/img/vldz.pdf}
