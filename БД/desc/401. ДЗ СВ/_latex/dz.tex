@@ -180,12 +180,12 @@
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
 \item
-Уставки  «Вырез  нагрузки»,  «Rнг»,  «Фнг»  являются  общими  для  всех  ступеней ДЗ. Общие параметры для настройки функции «ДЗ» приведены в таблице \ref{dz:tbl0}.
+Уставки  «Вырез  нагрузки»,  «Rнг»,  «Фнг»  являются  общими  для  всех  ступеней ДЗ. Общие параметры для настройки функционального блока «ДЗ» приведены в таблице \ref{dz:tbl0}.
 
 %================================================== Таблица =====================================
 \small
 \begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Общие параметры для настройки функции «ДЗ»\hfill\vspace{-0.5\baselineskip}}\label{dz:tbl0}\\ 
+\caption{Общие параметры для настройки ДЗ\hfill\vspace{-0.5\baselineskip}}\label{dz:tbl0}\\ 
 \hline
 \rowcolor{gray!30}
 Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
@@ -199,7 +199,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*LLN0|SV_LVDIS
 \centering Учет нагрузочного режима в характеристике срабатывания (Вырез\_нагрузки) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
@@ -207,7 +207,6 @@
 \centering Активное сопротивление для отстройки от режима максимальной нагрузки (Rнг) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
 \hline
 \centering Угол наклона для отстройки от режима максимальной нагрузки (Фнг) & \centering -- & \centering 5,0 ... 60,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -222,18 +221,18 @@
 При активном состоянии входного сигнала «ДЗ-фф(n)ст. на сигн» действие ступени переводится на сигнал.
 
 \item
-Алгоритм работы первой(третьей) ступени ДЗ по контуру «фаза-фаза» выполнен в соответствии с рисунком \ref{dz:dz1ffimg1}. В таблице \ref{dz:dz1fftbl1} приведены параметры, необходимые для настройки первой(третьей) ступени ДЗ по контуру «фаза-фаза».
+Алгоритм работы первой(третьей) ступени ДЗ по контуру «фаза-фаза» выполнен в соответствии с рисунком \ref{dz:dz1ffimg1}. В таблице \ref{dz:dz1fftbl1} приведены параметры, необходимые для настройки первой (третьей) ступени ДЗ по контуру «фаза-фаза».
 
 \vspace{3mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/401. ДЗ СВ/_latex/img/dz1ff.pdf}
-\captionof{figure}{Функциональная схема логики первой(третьей) ступени ДЗ по контуру «фаза-фаза»}\label{dz:dz1ffimg1}
+\captionof{figure}{Функциональная схема логики первой (третьей) ступени ДЗ по контуру «фаза-фаза»}\label{dz:dz1ffimg1}
 \end{figure}
 
 \small
 \begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки первой(третьей) ступени ДЗ по контуру «фаза-фаза»\hfill\vspace{-0.5\baselineskip}}\label{dz:dz1fftbl1}\\ 
+\caption{Параметры для настройки первой (третьей) ступени ДЗ по контуру «фаза-фаза»\hfill\vspace{-0.5\baselineskip}}\label{dz:dz1fftbl1}\\ 
 \hline
 \rowcolor{gray!30}
 Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
@@ -247,7 +246,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*PPPDIS1|SV_LVDIS
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
@@ -275,17 +274,16 @@
 \centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
 
 \item
-Алгоритм работы второй(четвертой) ступени ДЗ по контуру «фаза-фаза» выполнен в соответствии с рисунком \ref{dz:dz2ffimg1}. В таблице \ref{dz:dz2fftbl1} приведены параметры, необходимые для настройки второй(четвертой) ступени ДЗ по контуру «фаза-фаза».
+Алгоритм работы второй (четвертой) ступени ДЗ по контуру «фаза-фаза» выполнен в соответствии с рисунком \ref{dz:dz2ffimg1}. В таблице \ref{dz:dz2fftbl1} приведены параметры, необходимые для настройки второй (четвертой) ступени ДЗ по контуру «фаза-фаза».
 
 \small
 \begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки второй(четвертой) ступени ДЗ по контуру «фаза-фаза»\hfill\vspace{-0.5\baselineskip}}\label{dz:dz2fftbl1}\\ 
+\caption{Параметры для настройки второй (четвертой) ступени ДЗ по контуру «фаза-фаза»\hfill\vspace{-0.5\baselineskip}}\label{dz:dz2fftbl1}\\ 
 \hline
 \rowcolor{gray!30}
 Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
@@ -300,7 +298,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*PPPDIS2|SV_LVDIS
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
@@ -326,7 +324,6 @@
 \centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -335,7 +332,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/401. ДЗ СВ/_latex/img/dz2ff.pdf}
-\captionof{figure}{Функциональная схема логики второй(четвертой) ступени ДЗ по контуру «фаза-фаза»}\label{dz:dz2ffimg1}
+\captionof{figure}{Функциональная схема логики второй (четвертой) ступени ДЗ по контуру «фаза-фаза»}\label{dz:dz2ffimg1}
 \end{figure}
 
 \end{enumerate}
@@ -416,13 +413,12 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*DISRDIR1|SV_LVDIS
 \centering Угол направленности во II квадранте (Фнапр\_II) & \centering φ2 & \centering 90,0 ... 130,0 & \centering град. & \centering \arraybackslash 0,1 \\
 \hline
 \centering Угол направленности в IV квадранте (Фнапр\_IV) & \centering φ1 & \centering -40,0 ... 0,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -483,7 +479,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*DISPGSU1|SV_LVDIS
 \centering Ток срабатывания ПО ДЗ по току (Iср) & \centering I\verb|>>| & \centering 0,10 ... 5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
@@ -493,7 +489,6 @@
 \centering Напряжение срабатывания ПО по току и напряжению (Uср) & \centering U< & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
 \hline
 \centering Режим контроля от БНН (Реж\_БНН) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -518,7 +513,7 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/401. ДЗ СВ/_latex/img/audz.pdf}
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/401. ДЗ СВ/_latex/img/audz.pdf}
 \captionof{figure}{Функциональная схема логики АУ ДЗ}\label{dz:audzimg1}
 \end{figure}
 
@@ -538,11 +533,10 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*AUAPSSU1|SV_LVDIS
 \centering Выбор ускоряемой ступени (Выбор\_ст) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень\\3 = 3 ступень\\4 = 4 ступень\\5 = 1 или 3 ступень\\6 = 2 или 4 ступень & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -594,13 +588,12 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*OPAPSSU1|SV_LVDIS
 \centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень\\3 = 3 ступень\\4 = 4 ступень\\5 = 1 или 3 ступень\\6 = 2 или 4 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ) & \centering T1 & \centering 0,00 ... 3,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize

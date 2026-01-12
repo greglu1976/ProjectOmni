@@ -17,7 +17,7 @@
 ТЗНП может применяться в качестве:
 \begin{itemize}
     \item селективной защиты от замыканий на землю в линиях среднего и высокого напряжения;
-    \item резервной защиты трансформаторов при замыканиях на землю в сети низкого напряжения, работающей с заземленной нейтралью;
+    \item резервной защиты трансформаторов при замыканиях на землю в сети низкого напряжения, работающей с заземленной нейтралью.
 \end{itemize}
 
 \item
@@ -37,7 +37,7 @@
 \begin{itemize}
 \item четыре независимые направленные/ненаправленные ступени -- функции «ТЗНП 1 ст.», «ТЗНП 2 ст.», «ТЗНП 3 ст.», «ТЗНП 4 ст.»;
 \item блокировка при броске намагничивающего тока -- функция «БНТ»;
-\item орган направления мощности нулевой последовательности-- функция «ОНМ НП».
+\item орган направления мощности нулевой последовательности -- функция «ОНМ НП».
 \end{itemize}
 
 \item
@@ -150,7 +150,7 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*ZSPTOC1|SV_LVZSTOC
 \centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
@@ -178,7 +178,6 @@
 \centering Коэффициент регулировки времени срабатывания зависимой характеристики (К) & \centering -- & \centering 0,05 ... 15,00 & \centering -- & \centering \arraybackslash 0,01 \\
 \hline
 \centering Независимая выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -250,11 +249,10 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*RDIR1|SV_LVZSTOC
 \centering Угол максимальной чувствительности (Фмч) & \centering φмч & \centering -179,0 ... 180,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -314,13 +312,12 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*PHAR1|SV_LVZSTOC
 \centering Отношение тока второй гармоники к току основной гармоники (Ih2/Ih1) & \centering I2г/I1г> & \centering 5 ... 100 & \centering \% & \centering \arraybackslash 1 \\
 \hline
 \centering Ток блокировки НП (3I0ср) & \centering 3I0> & \centering 0,1 ... 15,0 & \centering о.е. & \centering \arraybackslash 0,1 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -334,7 +331,7 @@
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
 \item
-В устройстве предусмотрен режим автоматического ускорения ступеней ТЗНП. Выбор ускоряемых ступеней защиты осуществляется из соображений надежного охвата, защищаемого энергообъекта.
+В устройстве предусмотрен режим автоматического ускорения ступеней ТЗНП. Выбор ускоряемых ступеней защиты осуществляется из соображений надежного охвата защищаемого энергообъекта.
 
 \item
 Предусмотрена возможность автоматического ускорения для любой ступени ТЗНП. Ускоряемая ступень выбирается уставкой SGF1. Автоматическое ускорение срабатывает без выдержки времени.
@@ -366,11 +363,10 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*AUAPSSU1|SV_LVZSTOC
 \centering Выбор ускоряемой ступени (Выбор\_ст) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень\\3 = 3 ступень\\4 = 4 ступень\\5 = 1 или 3 ступень\\6 = 2 или 4 ступень & \centering -- & \centering \arraybackslash -- \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
@@ -422,13 +418,12 @@
 \endhead
 %\hline
 \endfoot
-%\hline
+\hline
 \endlastfoot
 %==+t1*OPAPSSU1|SV_LVZSTOC
 \centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень\\3 = 3 ступень\\4 = 4 ступень\\5 = 1 или 3 ступень\\6 = 2 или 4 ступень & \centering -- & \centering \arraybackslash -- \\
 \hline
 \centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ) & \centering T1 & \centering 0,00 ... 3,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
 %===t1
 \end{longtable}
 \normalsize
