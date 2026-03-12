@@ -1,0 +1,95 @@
+%\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Контроль отсутствия напряжения}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
+
+
+\item
+В логике сигнализации контролируются уровни изоляции ТТ. Накладка «Откл. авар. Изол. ТТ» 
+позволяет сформировать сигнал на отключеие.
+
+\item
+Устройство формирует выходное воздействие на сигнализацию «Сигн. Сраб.» и «Сигню сраб. 
+(фикс)» по схеме «ИЛИ» в следующих случаях: 
+
+\begin{itemize}
+    \item Отключении БСК; 
+    \item Срабатывании сигнальной ступени ЗВП;
+    \item Срабатывании сигнальной ступени ЗПВГ; 
+    \item Срабатывании сигнальной ступени ЗПН; 
+    \item Срабатывании ЗНР; 
+    \item Срабатывании УРОВ.
+\end{itemize}
+
+\item
+Устройство формирует выходное воздействие на сигнализацию «Сигн. неиспр.» и «Сигн неиспр. 
+(фикс)» по схеме «ИЛИ» в следующих случаях:
+
+\begin{itemize}
+    \item Неиспр. ЦТ ДТЗ; 
+    \item Неиспр. ЦТ ДТЗ НП;
+    \item Неиспр. ТТ; 
+    \item Неиспр. ОТ терм;
+    \item Неиспр. ЦН.  
+\end{itemize}
+
+\item
+Сброс фиксации производится с помощь «Сброс» 
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/Логика сигнализации/img/lo_sign.pdf}
+\captionof{figure}{Функциональный блок логики сигнализации}\label{pict:lo_sign}
+\end{figure}
+
+
+\small
+\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
+\begin{longtable}
+{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
+\caption{Перечень уставок БНН\hfill\vspace{-0.5\baselineskip}}\label{ksn:tbl2} \\ 
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
+\hhline{|-|-|-|-|}
+\endfirsthead
+
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ksn:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
+\hhline{|-|-|-|-|}
+\endhead
+\hhline{|-|-|-|-|}
+
+\endfoot
+\endlastfoot
+
+%%%%%%%%%%%%содержимое%%%%%%%%%%%%%%
+
+\end{longtable}
+\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
+\normalsize
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate} 

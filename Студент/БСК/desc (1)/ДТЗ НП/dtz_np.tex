@@ -1,0 +1,196 @@
+%\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Дифференциальная токовая защита нулевой последовательности}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
+
+
+\item Общие сведения 
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Дифференциальная токовая защита нулевой последовательности (ДТЗ НП) применяется в 
+качестве быстродействующей защиты с абсолютной селективностью при КЗ на землю. Данная функция 
+применяется для защиты оборудования с резистивным или глухим заземлением нейтрали и имеет 
+высокую чувствительность к замыканиям вблизи нейтрали. Данная защита может быть использована 
+для защиты (авто)трансформатора, шунтирующего реактора, батареи статических конденсаторов и др.
+
+\item
+Цепи измерения защиты подключаются на ток нейтрали и фазные токи контролируемых плеч. 
+Защита может контролировать до четырех трехфазных токовых плеч. 
+
+\end{enumerate}
+
+\item Расчетные величины
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Перед расчетом дифференциального тока и тока торможения производится цифровое 
+выравнивание токов по амплитудному значению, которое обеспечивается умножением измеренного 
+значения тока на соответствующий коэффициент, определяемый по формуле: 
+
+\begin{equation}
+\label{eq:Kvyr}
+K_{\textsl{выр, N}} = \frac{I_{\textsl{ном.ТТ, перв,j}}}{I_{\textsl{баз,j}}}
+\end{equation}
+
+\begin{eqexpl}[25mm]
+\item{$I_{\textsl{ном.ТТ, перв,j}}$} номинальный первичный ток измерительного ТТ стороны j; 
+\item{$I_{\textsl{баз,j}}$} базисный ток стороны j, значение которого рассчитывается по формуле: 
+\end{eqexpl}
+
+\begin{equation}
+\label{eq:Ibaz}
+I_{\textsl{баз,j}} = \frac{S_{\textsl{баз}}}{\sqrt{3}U_{\textsl{ном,j}}}
+\end{equation}
+
+\begin{eqexpl}[25mm]
+\item{$U_{\textsl{ном,j}}$} номинальное напряжение стороны j силового трансформатора;
+\item{$S_{\textsl{баз}}$} базисная мощность.
+\end{eqexpl}
+
+\begin{equation}
+\label{eq:IDIFF}
+I_{\textsl{диф}} = I_{\textsl{Н}} \cdot K_{\textsl{выр,Н}} + 3I0_{\textsl{1}} \cdot K_{\textsl{выр,1}} + ... + 3I0_{\textsl{N}} \cdot K_{\textsl{выр,N}}
+\end{equation}
+
+\begin{eqexpl}[25mm]
+\item{$I_{\textsl{Н}}$} измеренное значение тока нейтрали;
+\item{$3I0$} расчетное значение тока нулевой последовательности трехфазного тока; 
+\item{$N$} количество контролируемых трехфазных плеч. 
+\end{eqexpl}
+
+\item
+Ток торможения численно равен суммарному фазному току, имеющему максимальное значение: 
+
+\begin{equation}
+\label{eq:Ibaz}
+I_{\textsl{торм}} = max \left[  I_{\textsl{A,1}} \cdot K_{\textsl{выр,1}}; I_{\textsl{В,1}} \cdot K_{\textsl{выр,1}}; I_{\textsl{С,1}} \cdot K_{\textsl{выр,1}} ... I_{\textsl{А,N}} \cdot K_{\textsl{выр,N}}; I_{\textsl{B,N}} \cdot K_{\textsl{выр,N}}; I_{\textsl{C,N}} \cdot K_{\textsl{выр,N}}     \right]
+\end{equation}
+
+
+\end{enumerate}
+
+\item Характеристика срабатывания
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Защита имеет характеристику срабатывания, состоящую из двух участков: первый участок 
+горизонтальный (без торможения), второй участок наклонный (с торможением). Характеристика 
+срабатывания защиты описывается следующими параметрами:
+
+\begin{itemize}
+    \item \textbf{Iср.диф} – минимальный дифференциальный ток срабатывания; 
+    \item \textbf{Iнач.торм} – начальный ток торможения наклонного участка;
+    \item \textbf{Kторм} – коэффициент торможения наклонного участка.
+\end{itemize}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/ДТЗ НП/img/har_srab_dz.pdf}
+\captionof{figure}{Характеристика срабатывания дифференциальной защиты}\label{pict:har_srab_dz}
+\end{figure}
+
+\item
+Значение срабатывания дифференциальной защиты с торможением на соответствующем участке 
+характеристики определяется по формулам:
+
+\begin{itemize}
+    \item участок 1: $I_{\textsl{диф}} \geq I_{\textsl{ср.диф}}$, при $I_{\textsl{торм}} \leq I_{\textsl{нач.торм}}$
+    \item участок 2: $I_{\textsl{диф}} \geq I_{\textsl{ср.диф}} + K_{\textsl{торм}} \cdot (I_{\textsl{торм}} - I_{\textsl{нач.торм}})$, при $I_{\textsl{торм}} \geq I_{\textsl{нач.торм}}$ 
+\end{itemize}
+
+\end{enumerate}
+
+
+\item Орган направленности
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Для повышения устойчивости несрабатывания защиты при возникновении внешних замыканий, 
+сопровождающихся глубоким насыщением токов фаз предусмотрен дополнительный критерий, 
+контролирующий угол между суммарным значением тока 3I0 (суммарным среди всех контролируемых 
+плеч) и током нейтрали Iн. Характеристика срабатывания данного органа направленности представлена 
+на рисунке. Орган направленности разрешает работу защиты в том случае, если угол между суммарным 
+током 3I0 и том нейтрали составляет менее 90 градусов. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/ДТЗ НП/img/har_srab_napr.pdf}
+\captionof{figure}{Характеристика срабатывания органа направленности}\label{pict:har_srab_napr}
+\end{figure}
+
+\end{enumerate}
+
+\item Контроль исправности цепей измерения
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Любое КЗ на землю в первичной сети сопровождается появлением тока нулевой 
+последовательности в цепи нейтрали. Данный факт позволяет реализовать контроль исправности 
+измерительных цепей тока. Наличие тока в нейтрали фиксируется по превышению его значения 
+регулируемого порога \textbf{«Iмин»}. Появление дифференциального тока при отсутствии тока в нейтрали 
+воспринимается устройством как неисправность токовых цепей, срабатывание защиты при этом 
+блокируется. При сохранении данного условия в течение времени \textbf{«Тнеисп»} формируется выходной 
+сигнал о неисправности защиты.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/ДТЗ НП/img/DTZ_NP.pdf}
+\captionof{figure}{Функциональный блок ДТЗ НП}\label{pict:DTZ_NP}
+\end{figure}
+
+\end{enumerate}
+
+
+\small
+\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
+\begin{longtable}
+{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
+\caption{Перечень уставочных параметров ДТЗ НП\hfill\vspace{-0.5\baselineskip}}\label{ksn:tbl2} \\ 
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
+\hhline{|-|-|-|-|}
+\endfirsthead
+
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ksn:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
+\hhline{|-|-|-|-|}
+\endhead
+\hhline{|-|-|-|-|}
+
+\endfoot
+\endlastfoot
+
+%%%%%%%%%%%%содержимое%%%%%%%%%%%%%%
+
+\end{longtable}
+\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
+\normalsize
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate} 
