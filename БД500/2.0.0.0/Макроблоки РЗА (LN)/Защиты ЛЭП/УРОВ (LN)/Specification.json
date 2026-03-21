@@ -1,0 +1,619 @@
+{
+  "Id": 0,
+  "Name": "УРОВ (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ia",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "Ib",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "Ic",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 3,
+      "Name": "Пуск УРОВ В N1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "Пуск УРОВ В N2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Ср.ЗНР",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Ср.защит",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "РПВ В от ЭМО",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "Пуск УРОВ НН В",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "РПО В от ЭМВ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "Вывод УРОВ В",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "В в ремонте",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "ИО УРОВ В",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Ср.УРОВ В на себя",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Ср.УРОВ В",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "4538901a-6557-4be2-98b4-5f5e79955690",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 40.0,
+          "LogicValue": {
+            "Origin": 40.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "4538901a-6557-4be2-98b4-5f5e79955690",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 40.0,
+          "LogicValue": {
+            "Origin": 40.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Iср УРОВ В",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "f01cc7c1-9af6-45bb-b1fb-fcfa83acfcc0",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_2_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "f01cc7c1-9af6-45bb-b1fb-fcfa83acfcc0",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_2_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "Контр.по I УРОВ В на себя",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "e29dfc28-8bb8-46a6-8f8e-9c13884826f3",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "e29dfc28-8bb8-46a6-8f8e-9c13884826f3",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "Тср УРОВ В на себя",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "7a1d7ef2-6a2a-4fa7-aca1-82bffa9cc1f6",
+          "Name": "Programmnyj_klyuch_3_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "7a1d7ef2-6a2a-4fa7-aca1-82bffa9cc1f6",
+          "Name": "Programmnyj_klyuch_3_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 3,
+      "Name": "УРОВ В на себя",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "f53f5e98-0434-4346-84cf-0b12d55eb5c1",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_2_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "f53f5e98-0434-4346-84cf-0b12d55eb5c1",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_2_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 4,
+      "Name": "Тср УРОВ В",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "deb1972b-17c1-42ec-8b49-039be2510a7a",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "deb1972b-17c1-42ec-8b49-039be2510a7a",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 5,
+      "Name": "Фикс.УРОВ В",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "8b55c4c1-d525-43dd-ae5b-830af27a73ec",
+          "Name": "Programmnyj_klyuch_2_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "8b55c4c1-d525-43dd-ae5b-830af27a73ec",
+          "Name": "Programmnyj_klyuch_2_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 6,
+      "Name": "Контр.РПВ В",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "91e87d9b-ce3a-457e-8438-1cfabf982c68",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "91e87d9b-ce3a-457e-8438-1cfabf982c68",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 7,
+      "Name": "УРОВ В",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

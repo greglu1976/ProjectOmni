@@ -1,0 +1,741 @@
+{
+  "Id": 0,
+  "Name": "ТУ ОТФ (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Прием ТУ ОТФ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "РС-ФФ-2 с охв.",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "РС-ФФ-3 напр.",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "РС-ФФ-4 напр.",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "РС-ФЗ-2 напр.",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Ввод ДЗ-ФЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "БК-I-б",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "БК-I-м",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "БК-Z",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "ИО ТНЗНП-4",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "ОНМНП-Р",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "Вывод ЛС",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "Ср.защит на ТУ ОТФ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср. ТУ ОТФ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Выход ТУ ОТФ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "fbd56cc4-c35f-416c-aaea-51f18fb68000",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "fbd56cc4-c35f-416c-aaea-51f18fb68000",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Тср ТУ ОТФ",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "1fbdf4ff-29d3-45bf-9388-5c4aeeccdefc",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "1fbdf4ff-29d3-45bf-9388-5c4aeeccdefc",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "Контр.РС-ФФ-2 с охв.",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "9ea9507b-d276-4564-8676-a96c6b302adc",
+          "Name": "Programmnyj_klyuch_2_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "9ea9507b-d276-4564-8676-a96c6b302adc",
+          "Name": "Programmnyj_klyuch_2_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "Контр.РС-ФФ-3",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "ac8e4ce9-2dca-4bbf-9024-867eb1aa4677",
+          "Name": "Programmnyj_klyuch_3_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "ac8e4ce9-2dca-4bbf-9024-867eb1aa4677",
+          "Name": "Programmnyj_klyuch_3_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 3,
+      "Name": "Контр.РС-ФФ-4",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "b99a9b69-226f-4e3a-a852-60e228e4a2ec",
+          "Name": "Programmnyj_klyuch_4_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "b99a9b69-226f-4e3a-a852-60e228e4a2ec",
+          "Name": "Programmnyj_klyuch_4_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 4,
+      "Name": "Контр.РС-ФЗ-2",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "1dd54b16-54e2-48f8-b288-b43da3a6b71e",
+          "Name": "Pereklyuchatel_Vkh_4_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "БК",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "БК-I-б",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "БК-I-м",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "БК-Z",
+                "SubstituteValue": 3
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "1dd54b16-54e2-48f8-b288-b43da3a6b71e",
+          "Name": "Pereklyuchatel_Vkh_4_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "БК",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "БК-I-б",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "БК-I-м",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "БК-Z",
+                "SubstituteValue": 3
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 5,
+      "Name": "БК ТУ ОТФ",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "2f3fad86-f7df-44db-8d8e-70c2335ffbe2",
+          "Name": "Programmnyj_klyuch_5_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "2f3fad86-f7df-44db-8d8e-70c2335ffbe2",
+          "Name": "Programmnyj_klyuch_5_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 6,
+      "Name": "Контр.ИО ТНЗНП-4",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "3951929a-d8aa-4883-9c56-91f28aae11d3",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "3951929a-d8aa-4883-9c56-91f28aae11d3",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 7,
+      "Name": "Контр.ОНМНП-Р",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "5052e6ce-d900-4ecb-9aea-e74e8a013b6a",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_2_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "5052e6ce-d900-4ecb-9aea-e74e8a013b6a",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_2_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 8,
+      "Name": "ТУ ОТФ",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

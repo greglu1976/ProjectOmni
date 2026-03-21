@@ -1,0 +1,1929 @@
+{
+  "Id": 0,
+  "Name": "Контроль AI (М147)",
+  "Description": "",
+  "Directory": null,
+  "Scope": null,
+  "Version": 0,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ia",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "Ib",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "Ic",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 3,
+      "Name": "3I0пар ЛЭП",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 4,
+      "Name": "Ua",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 5,
+      "Name": "Ub",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 6,
+      "Name": "Uc",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 7,
+      "Name": "Uни",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 8,
+      "Name": "Uик",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 9,
+      "Name": "Uиф",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 10,
+      "Name": "Uотб",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 11,
+      "Name": "f",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 12,
+      "Name": "Rab",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 13,
+      "Name": "Rbc",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 14,
+      "Name": "Rca",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 15,
+      "Name": "Xab",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 16,
+      "Name": "Xbc",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 17,
+      "Name": "Xca",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 18,
+      "Name": "Фab",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 19,
+      "Name": "Фbc",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 20,
+      "Name": "Фca",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 21,
+      "Name": "Сброс фиксации",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср.Реле макс Ia",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Ср.Реле макс Ia (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Ср.Реле мин Ia",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "Ср.Реле мин Ia (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "Ср.Реле макс Ib",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Ср.Реле макс Ib (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Ср.Реле мин Ib",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "Ср.Реле мин Ib (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "Ср.Реле макс Ic",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "Ср.Реле макс Ic (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "Ср.Реле мин Ic",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "Ср.Реле мин Ic (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "Ср.Реле макс 3I0пар ЛЭП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "Ср.Реле макс 3I0пар ЛЭП (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "Ср.Реле мин 3I0пар ЛЭП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 15,
+      "Name": "Ср.Реле мин 3I0пар ЛЭП (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 16,
+      "Name": "Ср.Реле макс Ua",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 17,
+      "Name": "Ср.Реле макс Ua (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 18,
+      "Name": "Ср.Реле мин Ua",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 19,
+      "Name": "Ср.Реле мин Ua (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 20,
+      "Name": "Ср.Реле макс Ub",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 21,
+      "Name": "Ср.Реле макс Ub (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 22,
+      "Name": "Ср.Реле мин Ub",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 23,
+      "Name": "Ср.Реле мин Ub (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 24,
+      "Name": "Ср.Реле макс Uc",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 25,
+      "Name": "Ср.Реле макс Uc (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 26,
+      "Name": "Ср.Реле мин Uc",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 27,
+      "Name": "Ср.Реле мин Uc (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 28,
+      "Name": "Ср.Реле макс Uни",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 29,
+      "Name": "Ср.Реле макс Uни (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 30,
+      "Name": "Ср.Реле мин Uни",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 31,
+      "Name": "Ср.Реле мин Uни (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 32,
+      "Name": "Ср.Реле макс Uик",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 33,
+      "Name": "Ср.Реле макс Uик (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 34,
+      "Name": "Ср.Реле мин Uик",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 35,
+      "Name": "Ср.Реле мин Uик (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 36,
+      "Name": "Ср.Реле макс Uиф",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 37,
+      "Name": "Ср.Реле макс Uиф (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 38,
+      "Name": "Ср.Реле мин Uиф",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 39,
+      "Name": "Ср.Реле мин Uиф (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 40,
+      "Name": "Ср.Реле макс Uотб",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 41,
+      "Name": "Ср.Реле макс Uотб (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 42,
+      "Name": "Ср.Реле мин Uотб",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 43,
+      "Name": "Ср.Реле мин Uотб (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 44,
+      "Name": "Ср.Реле макс f",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 45,
+      "Name": "Ср.Реле макс f (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 46,
+      "Name": "Ср.Реле мин f",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 47,
+      "Name": "Ср.Реле мин f (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 48,
+      "Name": "РС-AB",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 49,
+      "Name": "РС-AB (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 50,
+      "Name": "РС-BC",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 51,
+      "Name": "РС-BC (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 52,
+      "Name": "РС-CA (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 53,
+      "Name": "РС-CA",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "56c9160d-bd60-4984-9bf6-b5883e4c3f9f",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "56c9160d-bd60-4984-9bf6-b5883e4c3f9f",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Реле макс Ia",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "32e501c6-76e8-4a59-9cca-de6e78807144",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.9,
+          "LogicValue": {
+            "Origin": 0.9,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "32e501c6-76e8-4a59-9cca-de6e78807144",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.9,
+          "LogicValue": {
+            "Origin": 0.9,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "Реле мин Ia",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "270be7d2-5243-400d-8c45-e2fc67bd5e53",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_2_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.5,
+          "LogicValue": {
+            "Origin": 1.5,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "270be7d2-5243-400d-8c45-e2fc67bd5e53",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_2_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.5,
+          "LogicValue": {
+            "Origin": 1.5,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "Реле макс Ib",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "b2fe4597-db6d-4091-a5bd-67bfef91261f",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_2_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.4,
+          "LogicValue": {
+            "Origin": 1.4,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "b2fe4597-db6d-4091-a5bd-67bfef91261f",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_2_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.4,
+          "LogicValue": {
+            "Origin": 1.4,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 3,
+      "Name": "Реле мин Ib",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "c7a3f734-14dd-410a-b81a-bbbe161e915b",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_3_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 2.0,
+          "LogicValue": {
+            "Origin": 2.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "c7a3f734-14dd-410a-b81a-bbbe161e915b",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_3_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 2.0,
+          "LogicValue": {
+            "Origin": 2.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 4,
+      "Name": "Реле макс Iс",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "c14d7648-305d-4f8e-9cb0-6186cadb8da3",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_3_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.9,
+          "LogicValue": {
+            "Origin": 1.9,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "c14d7648-305d-4f8e-9cb0-6186cadb8da3",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_3_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.9,
+          "LogicValue": {
+            "Origin": 1.9,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 5,
+      "Name": "Реле мин Ic",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "453e68bf-363b-4d70-a7e5-1ae049badf86",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_4_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.3,
+          "LogicValue": {
+            "Origin": 0.3,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "453e68bf-363b-4d70-a7e5-1ae049badf86",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_4_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.3,
+          "LogicValue": {
+            "Origin": 0.3,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 6,
+      "Name": "Реле макс 3I0пар ЛЭП",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "79cbf0c7-6c3a-4887-ad60-7c9d7745597a",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_4_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.2,
+          "LogicValue": {
+            "Origin": 0.2,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "79cbf0c7-6c3a-4887-ad60-7c9d7745597a",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_4_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.2,
+          "LogicValue": {
+            "Origin": 0.2,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 7,
+      "Name": "Реле мин 3I0пар ЛЭП",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "c276c752-3de1-4be4-b07a-530354d433bf",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_5_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "c276c752-3de1-4be4-b07a-530354d433bf",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_5_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 8,
+      "Name": "Реле макс Ua",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "15be6f2d-90ad-4f7f-adce-6cd6286e595f",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_5_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 9.0,
+          "LogicValue": {
+            "Origin": 9.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "15be6f2d-90ad-4f7f-adce-6cd6286e595f",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_5_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 9.0,
+          "LogicValue": {
+            "Origin": 9.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 9,
+      "Name": "Реле мин Ua",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "89bf5ad2-a148-4f9e-9154-eeef537a2891",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_6_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "89bf5ad2-a148-4f9e-9154-eeef537a2891",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_6_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 10,
+      "Name": "Реле макс Ub",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "f7579bc6-c6f3-45fb-97aa-7b7319f93606",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_6_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 19.0,
+          "LogicValue": {
+            "Origin": 19.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "f7579bc6-c6f3-45fb-97aa-7b7319f93606",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_6_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 19.0,
+          "LogicValue": {
+            "Origin": 19.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 11,
+      "Name": "Реле мин Ub",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "f089d302-0265-44f2-a5b6-bdc1fc6e0f24",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_7_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 30.0,
+          "LogicValue": {
+            "Origin": 30.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "f089d302-0265-44f2-a5b6-bdc1fc6e0f24",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_7_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 30.0,
+          "LogicValue": {
+            "Origin": 30.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 12,
+      "Name": "Реле макс Uc",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "54d76ee1-5a24-428c-807f-f7a9cfee339d",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_7_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 29.0,
+          "LogicValue": {
+            "Origin": 29.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "54d76ee1-5a24-428c-807f-f7a9cfee339d",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_7_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 29.0,
+          "LogicValue": {
+            "Origin": 29.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 13,
+      "Name": "Реле мин Uc",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "cc3e6499-e62f-4c8e-8a6c-7a7f0bb08273",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_8_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 40.0,
+          "LogicValue": {
+            "Origin": 40.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "cc3e6499-e62f-4c8e-8a6c-7a7f0bb08273",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_8_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 40.0,
+          "LogicValue": {
+            "Origin": 40.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 14,
+      "Name": "Реле макс Uни",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "30895c30-0313-48f1-844c-159ac1fb1e0d",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_8_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 39.0,
+          "LogicValue": {
+            "Origin": 39.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "30895c30-0313-48f1-844c-159ac1fb1e0d",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_8_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 39.0,
+          "LogicValue": {
+            "Origin": 39.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 15,
+      "Name": "Реле мин Uни",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "1ef5fb92-af36-48a4-aad4-303324640399",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_9_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 45.0,
+          "LogicValue": {
+            "Origin": 45.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "1ef5fb92-af36-48a4-aad4-303324640399",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_9_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 45.0,
+          "LogicValue": {
+            "Origin": 45.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 16,
+      "Name": "Реле макс Uик",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "53f4606c-6ac1-41b3-a66a-da59471d06b9",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_9_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 44.0,
+          "LogicValue": {
+            "Origin": 44.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "53f4606c-6ac1-41b3-a66a-da59471d06b9",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_9_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 44.0,
+          "LogicValue": {
+            "Origin": 44.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 17,
+      "Name": "Реле мин Uик",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "6719a1db-8eeb-44bd-8ff4-c96ccd0df06e",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_10_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 50.0,
+          "LogicValue": {
+            "Origin": 50.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "6719a1db-8eeb-44bd-8ff4-c96ccd0df06e",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_10_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 50.0,
+          "LogicValue": {
+            "Origin": 50.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 18,
+      "Name": "Реле макс Uиф",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "92ffa671-b507-43d6-8c69-fe1e786a3b7f",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_10_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 49.0,
+          "LogicValue": {
+            "Origin": 49.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "92ffa671-b507-43d6-8c69-fe1e786a3b7f",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_10_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 49.0,
+          "LogicValue": {
+            "Origin": 49.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 19,
+      "Name": "Реле мин Uиф",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "f237c9e8-2886-4538-b559-97d13cbb1016",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_11_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 8.0,
+          "LogicValue": {
+            "Origin": 8.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "f237c9e8-2886-4538-b559-97d13cbb1016",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_11_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 8.0,
+          "LogicValue": {
+            "Origin": 8.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 20,
+      "Name": "Реле макс Uотб",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "9cf27200-0228-4c35-bd4a-599467638710",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_11_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 7.0,
+          "LogicValue": {
+            "Origin": 7.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "9cf27200-0228-4c35-bd4a-599467638710",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_11_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 7.0,
+          "LogicValue": {
+            "Origin": 7.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 21,
+      "Name": "Реле мин Uотб",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "637ee1eb-5048-4986-ab20-563360cfcbe1",
+          "Name": "Rele_s_pryam_ukazaniem_porogov_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 51.0,
+          "LogicValue": {
+            "Origin": 51.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 55.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "637ee1eb-5048-4986-ab20-563360cfcbe1",
+          "Name": "Rele_s_pryam_ukazaniem_porogov_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 51.0,
+          "LogicValue": {
+            "Origin": 51.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 55.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 22,
+      "Name": "Реле макс f",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "a84cc765-1a95-49e6-b80f-0b194dae2667",
+          "Name": "Rele_s_pryam_ukazaniem_porogov_max_float_1_x_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 50.9,
+          "LogicValue": {
+            "Origin": 50.9,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 55.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "a84cc765-1a95-49e6-b80f-0b194dae2667",
+          "Name": "Rele_s_pryam_ukazaniem_porogov_max_float_1_x_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 50.9,
+          "LogicValue": {
+            "Origin": 50.9,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 55.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 23,
+      "Name": "f возврата (реле макс f)",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "322368cf-02a9-43cc-8e4d-0e02a3a2a7b8",
+          "Name": "Rele_s_pryam_ukazaniem_porogov_min_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 49.0,
+          "LogicValue": {
+            "Origin": 49.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 45.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "322368cf-02a9-43cc-8e4d-0e02a3a2a7b8",
+          "Name": "Rele_s_pryam_ukazaniem_porogov_min_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 49.0,
+          "LogicValue": {
+            "Origin": 49.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 45.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 24,
+      "Name": "Реле мин f",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "2a2b1a6e-8388-4972-885e-280549cc56d9",
+          "Name": "Rele_s_pryam_ukazaniem_porogov_min_float_1_x_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 49.1,
+          "LogicValue": {
+            "Origin": 49.1,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 45.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "2a2b1a6e-8388-4972-885e-280549cc56d9",
+          "Name": "Rele_s_pryam_ukazaniem_porogov_min_float_1_x_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 49.1,
+          "LogicValue": {
+            "Origin": 49.1,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 45.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 25,
+      "Name": "f возврата (реле мин f)",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "cde214c4-9b1f-4af2-ace7-dc9ce358dc3e",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_11_k_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.95,
+          "LogicValue": {
+            "Origin": 0.95,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "cde214c4-9b1f-4af2-ace7-dc9ce358dc3e",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_11_k_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.95,
+          "LogicValue": {
+            "Origin": 0.95,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 26,
+      "Name": "k возврата макс",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "9cc4610e-b2a6-4d5b-9d97-c9f275943883",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_11_k_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.05,
+          "LogicValue": {
+            "Origin": 1.05,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 2.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "9cc4610e-b2a6-4d5b-9d97-c9f275943883",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_11_k_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.05,
+          "LogicValue": {
+            "Origin": 1.05,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 2.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 27,
+      "Name": "k возврата мин",
+      "Usage": "Setting",
+      "DataType": "Single"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

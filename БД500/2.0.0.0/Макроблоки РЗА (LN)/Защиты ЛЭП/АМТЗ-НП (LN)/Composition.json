@@ -1,0 +1,2720 @@
+{
+  "ConstantBlocks": [
+    {
+      "Output": {
+        "Id": "02ebcb1b-b6e1-4178-b8b4-6a3dfa76027e",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Boolean",
+        "LegUsage": "Output",
+        "CanLink": true
+      },
+      "Constant": {
+        "Id": "1cf65593-d4be-4ae2-bf2f-de86d1b92d23",
+        "Name": "Pereklyuchatel_Vkh_2_bool_const_2_x0",
+        "Description": {
+          "Description": ""
+        },
+        "LogicValue": {
+          "Origin": true,
+          "Description": null,
+          "PredefinedEnumKey": "Введено/выведено",
+          "PredefinedValues": [
+            {
+              "DisplayText": "Введено",
+              "SubstituteValue": true
+            },
+            {
+              "DisplayText": "Выведено",
+              "SubstituteValue": false
+            }
+          ]
+        },
+        "Value": true,
+        "DataType": "Boolean"
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Константа[Boolean]_1",
+      "DisplayName": "лог.1",
+      "Version": 1,
+      "Type": "ConstantBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "2d0020c8-15c0-4afd-b016-749f166ab799",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "ConstantBlock"
+        },
+        "Specification": {
+          "Id": 65100,
+          "Name": "Константа[Boolean]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "ConstantBlock",
+          "InputLegs": [],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M5,0C2,0,0,2,0,5L0,25C0,27,2,28,5,28L150,28C152,28,153,27,154,26L154,26 165,16A5,5,27,0,0,165,12L154,2C154,2 154,2 154,2 153,1 152,0 150,0L5,0z",
+            "M23,0L23,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": -55.29411764705884,
+        "Y": 285.9294117647058
+      },
+      "Id": "ffe79939-b506-4f5e-8f68-b6d549ea5bc6"
+    }
+  ],
+  "EndConnectors": [],
+  "StartConnectors": [],
+  "InputBlocks": [
+    {
+      "Output": {
+        "Id": "bb8af7c2-c0fa-4bb2-9d48-cbccc908cdfa",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Single",
+        "LegUsage": "Output",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "1b2b31e2-ac33-4c81-b2b7-d033b8734f27",
+        "Name": "Rele_s_k_tom_vozvrata_max_float_1_x",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": 0.0,
+        "DataType": "Single"
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Вход[Single]_1",
+      "DisplayName": "3I0",
+      "Version": 1,
+      "Type": "InputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "73f56431-6757-4543-9303-e32725d0254f",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "InputBlock"
+        },
+        "Specification": {
+          "Id": 65009,
+          "Name": "Вход[Single]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "InputBlock",
+          "InputLegs": [],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Output",
+              "DataType": "Single"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M4,0L156,0A5,5,0,0,1,160,4L160,24A5,5,0,0,1,156,28L4,28A5,5,0,0,1,0,24L0,4A5,5,0,0,1,4,0z",
+            "M137,0L137,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": -53.854833865062545,
+        "Y": 203.2933115770845
+      },
+      "Id": "cc9984c4-3f2a-4939-bd02-92b38e79f631"
+    },
+    {
+      "Output": {
+        "Id": "023e9243-1851-4b75-b975-a57b59839256",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Boolean",
+        "LegUsage": "Output",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "b20480ee-a14b-42c3-b790-60ea421a075e",
+        "Name": "Pereklyuchatel_Vkh_2_bool_const_1_x1",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": false,
+        "DataType": "Boolean"
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Вход[Boolean]_1",
+      "DisplayName": "БК-I-м",
+      "Version": 1,
+      "Type": "InputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "9142d4a3-de50-48c1-b8f4-596053c9f277",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "InputBlock"
+        },
+        "Specification": {
+          "Id": 65000,
+          "Name": "Вход[Boolean]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "InputBlock",
+          "InputLegs": [],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M4.46,0C2.15,0,0,2.15,0,4.46L0,24.46C0,26.61,2.15,28,4.46,28L151.08,28.12C152.53,28.12,153.88,27.39,154.66,26.27L154.66,26.27 165,16.08A5.29,5.29,27.01,0,0,165,12.08L154.66,2.02C154.66,2.02 154.66,2.02 154.66,2.02 153.88,0.89 152.53,0.15 151.08,0.15L4.46,0z",
+            "M23,0L23,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": -56.0,
+        "Y": 331.0
+      },
+      "Id": "2564edd0-fb1c-423c-bd0e-d0d02152ee39"
+    },
+    {
+      "Output": {
+        "Id": "d40de7a4-6212-4337-8348-c68d3256761b",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Boolean",
+        "LegUsage": "Output",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "a11bfd1e-e4bc-4858-b286-03822a3f2b71",
+        "Name": "ILI2_1_x1",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": false,
+        "DataType": "Boolean"
+      },
+      "InstanceNumber": 1,
+      "ExecutionOrder": 0,
+      "Name": "Вход[Boolean]_2",
+      "DisplayName": "Вывод АМТЗ",
+      "Version": 1,
+      "Type": "InputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "9142d4a3-de50-48c1-b8f4-596053c9f277",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "InputBlock"
+        },
+        "Specification": {
+          "Id": 65000,
+          "Name": "Вход[Boolean]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "InputBlock",
+          "InputLegs": [],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M4.46,0C2.15,0,0,2.15,0,4.46L0,24.46C0,26.61,2.15,28,4.46,28L151.08,28.12C152.53,28.12,153.88,27.39,154.66,26.27L154.66,26.27 165,16.08A5.29,5.29,27.01,0,0,165,12.08L154.66,2.02C154.66,2.02 154.66,2.02 154.66,2.02 153.88,0.89 152.53,0.15 151.08,0.15L4.46,0z",
+            "M23,0L23,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": -56.0,
+        "Y": 521.0
+      },
+      "Id": "c228780e-1b7a-42e4-a1a4-ce37a9e9ac2c"
+    },
+    {
+      "Output": {
+        "Id": "4f5f388c-020f-4eed-a46d-e27ea3270b17",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Boolean",
+        "LegUsage": "Output",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "ab87cf8d-5238-4608-acd1-5d6c7079411d",
+        "Name": "ILI2_1_x2",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": false,
+        "DataType": "Boolean"
+      },
+      "InstanceNumber": 2,
+      "ExecutionOrder": 0,
+      "Name": "Вход[Boolean]_3",
+      "DisplayName": "Вывод терминала",
+      "Version": 1,
+      "Type": "InputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "9142d4a3-de50-48c1-b8f4-596053c9f277",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "InputBlock"
+        },
+        "Specification": {
+          "Id": 65000,
+          "Name": "Вход[Boolean]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "InputBlock",
+          "InputLegs": [],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M4.46,0C2.15,0,0,2.15,0,4.46L0,24.46C0,26.61,2.15,28,4.46,28L151.08,28.12C152.53,28.12,153.88,27.39,154.66,26.27L154.66,26.27 165,16.08A5.29,5.29,27.01,0,0,165,12.08L154.66,2.02C154.66,2.02 154.66,2.02 154.66,2.02 153.88,0.89 152.53,0.15 151.08,0.15L4.46,0z",
+            "M23,0L23,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": -56.0,
+        "Y": 559.0
+      },
+      "Id": "6df2b7c1-26d1-42e2-8e13-b6e72cfbdb08"
+    },
+    {
+      "Output": {
+        "Id": "c5473fa1-456b-48c3-a72d-324f4549ee65",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Boolean",
+        "LegUsage": "Output",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "047bc767-6dce-49e3-a1c0-f65054b18e4a",
+        "Name": "I2_3_x2",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": false,
+        "DataType": "Boolean"
+      },
+      "InstanceNumber": 3,
+      "ExecutionOrder": 0,
+      "Name": "Вход[Boolean]_4",
+      "DisplayName": "АМТЗ активна",
+      "Version": 1,
+      "Type": "InputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "9142d4a3-de50-48c1-b8f4-596053c9f277",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "InputBlock"
+        },
+        "Specification": {
+          "Id": 65000,
+          "Name": "Вход[Boolean]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "InputBlock",
+          "InputLegs": [],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M4.46,0C2.15,0,0,2.15,0,4.46L0,24.46C0,26.61,2.15,28,4.46,28L151.08,28.12C152.53,28.12,153.88,27.39,154.66,26.27L154.66,26.27 165,16.08A5.29,5.29,27.01,0,0,165,12.08L154.66,2.02C154.66,2.02 154.66,2.02 154.66,2.02 153.88,0.89 152.53,0.15 151.08,0.15L4.46,0z",
+            "M23,0L23,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": -57.0,
+        "Y": 619.0
+      },
+      "Id": "3f715344-778c-4581-9a6c-268d4a8a89d4"
+    }
+  ],
+  "OutputBlocks": [
+    {
+      "Input": {
+        "Id": "7312b59b-46aa-4665-9d4d-4195b3fa9c9e",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Boolean",
+        "LegUsage": "Input",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "fca6932b-c838-40d3-881d-91048aa77d57",
+        "Name": "I2_2_y",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": false,
+        "DataType": "Boolean"
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Выход[Boolean]_1",
+      "DisplayName": "П.АМТЗ-НП",
+      "Version": 1,
+      "Type": "OutputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "819bcbf5-80fb-4fc9-a123-d5c6ee653be5",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "OutputBlock"
+        },
+        "Specification": {
+          "Id": 65050,
+          "Name": "Выход[Boolean]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "OutputBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M160.54,0C162.85,0,165,2.15,165,4.46L165,24.46A4,4,0,0,1,160.54,28L13.92,28.12C12.47,28.12,11.12,27.39,10.34,26.27L0,16.08A5.29,5.29,0,0,1,0,12.08L10.34,2.02C11.12,0.89,12.47,0.15,13.92,0.15L160.54,0z",
+            "M142,0L142,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": 2116.0,
+        "Y": 203.0
+      },
+      "Id": "e9bb738d-3d79-4134-b12a-4fcf5c843c27"
+    },
+    {
+      "Input": {
+        "Id": "b5f6b7cf-99e0-48b4-871e-3f705de21635",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Boolean",
+        "LegUsage": "Input",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "3d794341-d351-412b-840b-478db6fde877",
+        "Name": "Nezavisimoe_RV_na_srabatyvanie_1_y",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": false,
+        "DataType": "Boolean"
+      },
+      "InstanceNumber": 1,
+      "ExecutionOrder": 0,
+      "Name": "Выход[Boolean]_2",
+      "DisplayName": "Ср.АМТЗ-НП",
+      "Version": 1,
+      "Type": "OutputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "819bcbf5-80fb-4fc9-a123-d5c6ee653be5",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "OutputBlock"
+        },
+        "Specification": {
+          "Id": 65050,
+          "Name": "Выход[Boolean]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "OutputBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M160.54,0C162.85,0,165,2.15,165,4.46L165,24.46A4,4,0,0,1,160.54,28L13.92,28.12C12.47,28.12,11.12,27.39,10.34,26.27L0,16.08A5.29,5.29,0,0,1,0,12.08L10.34,2.02C11.12,0.89,12.47,0.15,13.92,0.15L160.54,0z",
+            "M142,0L142,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": 2113.0,
+        "Y": 307.0
+      },
+      "Id": "060fff25-e3ea-42f2-a7df-931d6e953e36"
+    }
+  ],
+  "SettingBlocks": [
+    {
+      "SettingLeg": {
+        "Setting": {
+          "Data": {
+            "Id": "b61d35b1-9480-4be8-838e-93fdc0de6d41",
+            "Name": "3I0ср АМТЗ-НП",
+            "Description": {
+              "Description": ""
+            },
+            "Value": 40.0,
+            "LogicValue": {
+              "Origin": 40.0,
+              "Description": null,
+              "PredefinedEnumKey": null,
+              "PredefinedValues": []
+            },
+            "Multiplier": "None",
+            "Unit": "",
+            "Min": 0.0,
+            "Max": 40.0,
+            "Step": 0.001,
+            "DataType": "Single",
+            "IsConstant": false
+          },
+          "SettingId": null,
+          "OriginData": null,
+          "OriginSettingId": "00000000-0000-0000-0000-000000000000"
+        },
+        "Id": "81343dfc-2053-45ea-b9d1-5e64f0285aa3",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Single",
+        "LegUsage": "Setting",
+        "CanLink": true
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Уставка[Single]_1",
+      "DisplayName": "3I0ср АМТЗ-НП",
+      "Version": 1,
+      "Type": "SettingBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "5bccaf60-a870-4e97-a2ba-eb3e0f0bb57b",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "SettingBlock"
+        },
+        "Specification": {
+          "Id": 65159,
+          "Name": "Уставка[Single]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "SettingBlock",
+          "InputLegs": [],
+          "OutputLegs": [],
+          "SettingLegs": [
+            {
+              "Setting": {
+                "Data": null,
+                "SettingId": "00000000-0000-0000-0000-000000000000",
+                "OriginData": null,
+                "OriginSettingId": "00000000-0000-0000-0000-000000000000"
+              },
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Setting",
+              "DataType": "Single"
+            }
+          ],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M5,0C2,0,0,2,0,5L0,25C0,27,2,28,5,28L150,28C152,28,153,27,154,26L154,26 165,16A5,5,27,0,0,165,12L154,2C154,2 154,2 154,2 153,1 152,0 150,0L5,0z",
+            "M23,0L23,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": -52.986207512400256,
+        "Y": 243.25012379955027
+      },
+      "Id": "bc93c492-8f40-4e6b-b76e-2da3607f061d"
+    },
+    {
+      "SettingLeg": {
+        "Setting": {
+          "Data": {
+            "Id": "5bf2ae26-c0f5-400c-88f2-bfc1d13b62ee",
+            "Name": "БК-I-м АМТЗ-НП",
+            "Description": {
+              "Description": ""
+            },
+            "Value": 0,
+            "LogicValue": {
+              "Origin": 0,
+              "Description": null,
+              "PredefinedEnumKey": "Ввод функции",
+              "PredefinedValues": [
+                {
+                  "DisplayText": "Введено",
+                  "SubstituteValue": 0
+                },
+                {
+                  "DisplayText": "Выведено",
+                  "SubstituteValue": 1
+                }
+              ]
+            },
+            "Multiplier": "None",
+            "Unit": "",
+            "Min": 0,
+            "Max": 65535,
+            "Step": 1,
+            "DataType": "UInt16",
+            "IsConstant": false
+          },
+          "SettingId": null,
+          "OriginData": null,
+          "OriginSettingId": "00000000-0000-0000-0000-000000000000"
+        },
+        "Id": "34b1a8b5-f376-45f3-b3ec-d5fe8dedf971",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "UInt16",
+        "LegUsage": "Setting",
+        "CanLink": true
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Уставка[UInt16]_1",
+      "DisplayName": "БК-I-м АМТЗ-НП",
+      "Version": 1,
+      "Type": "SettingBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "fd88554a-135f-45af-92b0-35312627ceb5",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "SettingBlock"
+        },
+        "Specification": {
+          "Id": 65156,
+          "Name": "Уставка[UInt16]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "SettingBlock",
+          "InputLegs": [],
+          "OutputLegs": [],
+          "SettingLegs": [
+            {
+              "Setting": {
+                "Data": null,
+                "SettingId": "00000000-0000-0000-0000-000000000000",
+                "OriginData": null,
+                "OriginSettingId": "00000000-0000-0000-0000-000000000000"
+              },
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Setting",
+              "DataType": "UInt16"
+            }
+          ],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M5,0C2,0,0,2,0,5L0,25C0,27,2,28,5,28L150,28C152,28,153,27,154,26L154,26 165,16A5,5,27,0,0,165,12L154,2C154,2 154,2 154,2 153,1 152,0 150,0L5,0z",
+            "M23,0L23,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": -54.61538461538461,
+        "Y": 380.79999999999995
+      },
+      "Id": "1315216b-ff14-48c4-ba54-8fd681933b8f"
+    },
+    {
+      "SettingLeg": {
+        "Setting": {
+          "Data": {
+            "Id": "aa1dffe9-e4df-46d4-9d95-4dcec4c9b149",
+            "Name": "АМТЗ-НП",
+            "Description": {
+              "Description": ""
+            },
+            "Value": 0,
+            "LogicValue": {
+              "Origin": 0,
+              "Description": null,
+              "PredefinedEnumKey": "Ввод функции",
+              "PredefinedValues": [
+                {
+                  "DisplayText": "Введено",
+                  "SubstituteValue": 0
+                },
+                {
+                  "DisplayText": "Выведено",
+                  "SubstituteValue": 1
+                }
+              ]
+            },
+            "Multiplier": "None",
+            "Unit": "",
+            "Min": 0,
+            "Max": 65535,
+            "Step": 1,
+            "DataType": "UInt16",
+            "IsConstant": false
+          },
+          "SettingId": null,
+          "OriginData": null,
+          "OriginSettingId": "00000000-0000-0000-0000-000000000000"
+        },
+        "Id": "52a2a5ed-0d7a-4024-80c1-d0129bd32650",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "UInt16",
+        "LegUsage": "Setting",
+        "CanLink": true
+      },
+      "InstanceNumber": 1,
+      "ExecutionOrder": 0,
+      "Name": "Уставка[UInt16]_2",
+      "DisplayName": "АМТЗ-НП",
+      "Version": 1,
+      "Type": "SettingBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "fd88554a-135f-45af-92b0-35312627ceb5",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "SettingBlock"
+        },
+        "Specification": {
+          "Id": 65156,
+          "Name": "Уставка[UInt16]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "SettingBlock",
+          "InputLegs": [],
+          "OutputLegs": [],
+          "SettingLegs": [
+            {
+              "Setting": {
+                "Data": null,
+                "SettingId": "00000000-0000-0000-0000-000000000000",
+                "OriginData": null,
+                "OriginSettingId": "00000000-0000-0000-0000-000000000000"
+              },
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Setting",
+              "DataType": "UInt16"
+            }
+          ],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M5,0C2,0,0,2,0,5L0,25C0,27,2,28,5,28L150,28C152,28,153,27,154,26L154,26 165,16A5,5,27,0,0,165,12L154,2C154,2 154,2 154,2 153,1 152,0 150,0L5,0z",
+            "M23,0L23,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": 290.0,
+        "Y": 580.0
+      },
+      "Id": "439ff08f-a3eb-49f6-a69b-9750e518e16b"
+    },
+    {
+      "SettingLeg": {
+        "Setting": {
+          "Data": {
+            "Id": "52ec36b5-b5ea-4f02-8066-af54fc97ad2e",
+            "Name": "Тср АМТЗ-НП",
+            "Description": {
+              "Description": ""
+            },
+            "Value": 100000,
+            "LogicValue": {
+              "Origin": 100000,
+              "Description": null,
+              "PredefinedEnumKey": null,
+              "PredefinedValues": []
+            },
+            "Multiplier": "None",
+            "Unit": "",
+            "Min": 0,
+            "Max": 100000,
+            "Step": 1,
+            "DataType": "UInt32",
+            "IsConstant": false
+          },
+          "SettingId": null,
+          "OriginData": null,
+          "OriginSettingId": "00000000-0000-0000-0000-000000000000"
+        },
+        "Id": "89ef0b86-7386-4041-9e7c-57dc890a8888",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "UInt32",
+        "LegUsage": "Setting",
+        "CanLink": true
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Уставка[UInt32]_1",
+      "DisplayName": "Тср АМТЗ-НП",
+      "Version": 1,
+      "Type": "SettingBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "d6c46757-875f-44b9-936e-bc9b80f41f79",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "SettingBlock"
+        },
+        "Specification": {
+          "Id": 65157,
+          "Name": "Уставка[UInt32]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "SettingBlock",
+          "InputLegs": [],
+          "OutputLegs": [],
+          "SettingLegs": [
+            {
+              "Setting": {
+                "Data": null,
+                "SettingId": "00000000-0000-0000-0000-000000000000",
+                "OriginData": null,
+                "OriginSettingId": "00000000-0000-0000-0000-000000000000"
+              },
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Setting",
+              "DataType": "UInt32"
+            }
+          ],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M5,0C2,0,0,2,0,5L0,25C0,27,2,28,5,28L150,28C152,28,153,27,154,26L154,26 165,16A5,5,27,0,0,165,12L154,2C154,2 154,2 154,2 153,1 152,0 150,0L5,0z",
+            "M23,0L23,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": 1575.5555555555557,
+        "Y": 387.8222222222222
+      },
+      "Id": "f643628a-1138-43f0-a1ec-7046109cc8f3"
+    }
+  ],
+  "RetainBlocks": [],
+  "PrimitiveBlocks": [
+    {
+      "Inputs": [
+        {
+          "Id": "5741921b-775b-4401-96d3-06b58ab8113d",
+          "Index": 0,
+          "Name": "x",
+          "DataType": "Single",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "be87ae57-c1f8-4253-9104-caf518df5697",
+          "Index": 0,
+          "Name": "Ср.",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [
+        {
+          "Setting": {
+            "Data": null,
+            "SettingId": "b61d35b1-9480-4be8-838e-93fdc0de6d41",
+            "OriginData": {
+              "Id": "9dc0b6f3-d7d0-446d-a6b2-335136037547",
+              "Name": "x ср",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 0.0,
+              "LogicValue": {
+                "Origin": 0.0,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": -3.4028235E+38,
+              "Max": 3.4028235E+38,
+              "Step": 0.001,
+              "DataType": "Single",
+              "IsConstant": false
+            },
+            "OriginSettingId": null
+          },
+          "Id": "80eda462-5ffd-4f32-bf27-87890a1892fb",
+          "Index": 0,
+          "Name": "x ср",
+          "DataType": "Single",
+          "LegUsage": "Setting",
+          "CanLink": true
+        },
+        {
+          "Setting": {
+            "Data": {
+              "Id": "5ddae7d2-6339-43d0-82b4-0453aa71bd9c",
+              "Name": "k возврата",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 0.95,
+              "LogicValue": {
+                "Origin": 0.95,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": 0.0,
+              "Max": 1.0,
+              "Step": 0.001,
+              "DataType": "Single",
+              "IsConstant": true
+            },
+            "SettingId": null,
+            "OriginData": {
+              "Id": "12a1d949-0b93-48f6-8e42-fafbfaecb8d0",
+              "Name": "k возврата",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 0.0,
+              "LogicValue": {
+                "Origin": 0.0,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": -3.4028235E+38,
+              "Max": 3.4028235E+38,
+              "Step": 0.001,
+              "DataType": "Single",
+              "IsConstant": false
+            },
+            "OriginSettingId": null
+          },
+          "Id": "f946e3fd-c5f9-4ec5-98d5-5699be0982cf",
+          "Index": 1,
+          "Name": "k возврата",
+          "DataType": "Single",
+          "LegUsage": "Setting",
+          "CanLink": false
+        }
+      ],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Реле с к-том возврата max float_1",
+      "DisplayName": "3I0ср АМТЗ-НП",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "dafd3bfc-8c4f-4c1c-bef6-c26f6f21daa3",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 64,
+          "Name": "Реле с к-том возврата max float",
+          "Description": null,
+          "Directory": "Измерительные органы",
+          "Scope": "Реле макс",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x",
+              "Usage": "Input",
+              "DataType": "Single"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "Ср.",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [
+            {
+              "Setting": {
+                "Data": {
+                  "Id": "c84e2e91-cf96-4f58-abb4-fec8123b5fac",
+                  "Name": "x ср",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0.0,
+                  "LogicValue": {
+                    "Origin": 0.0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": -3.4028235E+38,
+                  "Max": 3.4028235E+38,
+                  "Step": 0.001,
+                  "DataType": "Single",
+                  "IsConstant": false
+                },
+                "SettingId": null,
+                "OriginData": {
+                  "Id": "c84e2e91-cf96-4f58-abb4-fec8123b5fac",
+                  "Name": "x ср",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0.0,
+                  "LogicValue": {
+                    "Origin": 0.0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": -3.4028235E+38,
+                  "Max": 3.4028235E+38,
+                  "Step": 0.001,
+                  "DataType": "Single",
+                  "IsConstant": false
+                },
+                "OriginSettingId": null
+              },
+              "Index": 0,
+              "Name": "x ср",
+              "Usage": "Setting",
+              "DataType": "Single"
+            },
+            {
+              "Setting": {
+                "Data": {
+                  "Id": "4042746f-005d-4e71-9189-99084f9a7f6a",
+                  "Name": "k возврата",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0.0,
+                  "LogicValue": {
+                    "Origin": 0.0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": -3.4028235E+38,
+                  "Max": 3.4028235E+38,
+                  "Step": 0.001,
+                  "DataType": "Single",
+                  "IsConstant": false
+                },
+                "SettingId": null,
+                "OriginData": {
+                  "Id": "4042746f-005d-4e71-9189-99084f9a7f6a",
+                  "Name": "k возврата",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0.0,
+                  "LogicValue": {
+                    "Origin": 0.0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": -3.4028235E+38,
+                  "Max": 3.4028235E+38,
+                  "Step": 0.001,
+                  "DataType": "Single",
+                  "IsConstant": false
+                },
+                "OriginSettingId": null
+              },
+              "Index": 1,
+              "Name": "k возврата",
+              "Usage": "Setting",
+              "DataType": "Single"
+            }
+          ],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 150.0,
+        "Y": 182.0
+      },
+      "Id": "2c51a2fa-b6a4-43a8-bd94-f557d040a691"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "0a276505-5109-41e2-b3a2-9d7c0d80ed48",
+          "Index": 0,
+          "Name": "x1",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        },
+        {
+          "Id": "4a306791-3447-41fe-84c7-787ff218a85d",
+          "Index": 1,
+          "Name": "x2",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "72bf58a5-87b9-4787-a499-b81855928800",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "И2_1",
+      "DisplayName": "И2_1",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "f3cd6969-4b2d-4acc-b212-3940fae2fe3c",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 126,
+          "Name": "И2",
+          "Description": null,
+          "Directory": "Логические элементы",
+          "Scope": "И",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x1",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            },
+            {
+              "Index": 1,
+              "Name": "x2",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 970.0,
+        "Y": 182.0
+      },
+      "Id": "02f79bca-0337-481e-b841-a8be266e3e3a"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "2c2d075f-cbb2-42e9-a77d-15b16f1ef3a6",
+          "Index": 0,
+          "Name": "x1",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        },
+        {
+          "Id": "199955d8-e707-4ec3-aeea-af31cec307de",
+          "Index": 1,
+          "Name": "x2",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "7ce7d5a7-0ca3-4a81-aaa6-138b633af459",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [],
+      "InstanceNumber": 1,
+      "ExecutionOrder": 0,
+      "Name": "ИЛИ2_1",
+      "DisplayName": "ИЛИ2_1",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "6f8fd8a9-05fa-462c-ac13-a6ac58218afc",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 111,
+          "Name": "ИЛИ2",
+          "Description": null,
+          "Directory": "Логические элементы",
+          "Scope": "ИЛИ",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x1",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            },
+            {
+              "Index": 1,
+              "Name": "x2",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 150.0,
+        "Y": 500.0
+      },
+      "Id": "64e54ed7-f4d2-42c1-8cdc-d6332e8ac8e2"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "a113ffb9-e60e-4c77-b7a3-97a568f04331",
+          "Index": 0,
+          "Name": "x1",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        },
+        {
+          "Id": "a3e6c132-26a5-497c-86ae-979d0d660f89",
+          "Index": 1,
+          "Name": "x2",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "84bbc292-d227-496a-a292-a2d5d1b9899b",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "ИЛИ2_2",
+      "DisplayName": "ИЛИ2_2",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "6f8fd8a9-05fa-462c-ac13-a6ac58218afc",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 111,
+          "Name": "ИЛИ2",
+          "Description": null,
+          "Directory": "Логические элементы",
+          "Scope": "ИЛИ",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x1",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            },
+            {
+              "Index": 1,
+              "Name": "x2",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 710.0,
+        "Y": 290.0
+      },
+      "Id": "3782d646-bf9a-4876-894d-001751c2ab8d"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "b44d343b-314e-4813-b5ff-57fa4744f6ba",
+          "Index": 0,
+          "Name": "x0",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        },
+        {
+          "Id": "de0aa206-d075-40a9-81ea-6ace91236d77",
+          "Index": 1,
+          "Name": "x1",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "fc06c328-c553-4326-8f65-f555beb29d3a",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [
+        {
+          "Setting": {
+            "Data": null,
+            "SettingId": "5bf2ae26-c0f5-400c-88f2-bfc1d13b62ee",
+            "OriginData": {
+              "Id": "c217077b-dd4d-4e68-ab51-773f84f58d74",
+              "Name": "S",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 0,
+              "LogicValue": {
+                "Origin": 0,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": 0,
+              "Max": 65535,
+              "Step": 1,
+              "DataType": "UInt16",
+              "IsConstant": false
+            },
+            "OriginSettingId": null
+          },
+          "Id": "78c3bd1a-36f0-41b9-ae79-5d131c6ed091",
+          "Index": 0,
+          "Name": "S",
+          "DataType": "UInt16",
+          "LegUsage": "Setting",
+          "CanLink": true
+        }
+      ],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Переключатель Вх 2 bool const_1",
+      "DisplayName": "БК-I-м АМТЗ-НП",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "db04c422-587b-4643-a0cd-dfc238529986",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 339,
+          "Name": "Переключатель Вх 2 bool const",
+          "Description": null,
+          "Directory": "Переключатели",
+          "Scope": "Переключатель",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x0",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            },
+            {
+              "Index": 1,
+              "Name": "x1",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [
+            {
+              "Setting": {
+                "Data": {
+                  "Id": "92ccba6e-2610-4e32-980d-ca06f5fde003",
+                  "Name": "S",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0,
+                  "LogicValue": {
+                    "Origin": 0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": 0,
+                  "Max": 65535,
+                  "Step": 1,
+                  "DataType": "UInt16",
+                  "IsConstant": false
+                },
+                "SettingId": null,
+                "OriginData": {
+                  "Id": "92ccba6e-2610-4e32-980d-ca06f5fde003",
+                  "Name": "S",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0,
+                  "LogicValue": {
+                    "Origin": 0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": 0,
+                  "Max": 65535,
+                  "Step": 1,
+                  "DataType": "UInt16",
+                  "IsConstant": false
+                },
+                "OriginSettingId": null
+              },
+              "Index": 0,
+              "Name": "S",
+              "Usage": "Setting",
+              "DataType": "UInt16"
+            }
+          ],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 260.0,
+        "Y": 290.0
+      },
+      "Id": "3e1c0980-5e47-4e3c-9505-941ffe1af14a"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "2008c944-f8c1-4dfe-ae1f-296340991a4d",
+          "Index": 0,
+          "Name": "x0",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        },
+        {
+          "Id": "c358244c-9e9a-485c-be50-ea2ac66e870c",
+          "Index": 1,
+          "Name": "x1",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "804260b0-f967-4321-8465-b5d99838207f",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [
+        {
+          "Setting": {
+            "Data": null,
+            "SettingId": "aa1dffe9-e4df-46d4-9d95-4dcec4c9b149",
+            "OriginData": {
+              "Id": "ac952e1c-2d2a-47c5-ac6a-671600783b85",
+              "Name": "S",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 0,
+              "LogicValue": {
+                "Origin": 0,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": 0,
+              "Max": 65535,
+              "Step": 1,
+              "DataType": "UInt16",
+              "IsConstant": false
+            },
+            "OriginSettingId": null
+          },
+          "Id": "a51e6284-64f5-4bda-bdda-3f588caf472d",
+          "Index": 0,
+          "Name": "S",
+          "DataType": "UInt16",
+          "LegUsage": "Setting",
+          "CanLink": true
+        }
+      ],
+      "Retains": [],
+      "InstanceNumber": 1,
+      "ExecutionOrder": 0,
+      "Name": "Переключатель Вх 2 bool const_2",
+      "DisplayName": "АМТЗ-НП",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "db04c422-587b-4643-a0cd-dfc238529986",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 339,
+          "Name": "Переключатель Вх 2 bool const",
+          "Description": null,
+          "Directory": "Переключатели",
+          "Scope": "Переключатель",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x0",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            },
+            {
+              "Index": 1,
+              "Name": "x1",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [
+            {
+              "Setting": {
+                "Data": {
+                  "Id": "92ccba6e-2610-4e32-980d-ca06f5fde003",
+                  "Name": "S",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0,
+                  "LogicValue": {
+                    "Origin": 0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": 0,
+                  "Max": 65535,
+                  "Step": 1,
+                  "DataType": "UInt16",
+                  "IsConstant": false
+                },
+                "SettingId": null,
+                "OriginData": {
+                  "Id": "92ccba6e-2610-4e32-980d-ca06f5fde003",
+                  "Name": "S",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0,
+                  "LogicValue": {
+                    "Origin": 0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": 0,
+                  "Max": 65535,
+                  "Step": 1,
+                  "DataType": "UInt16",
+                  "IsConstant": false
+                },
+                "OriginSettingId": null
+              },
+              "Index": 0,
+              "Name": "S",
+              "Usage": "Setting",
+              "DataType": "UInt16"
+            }
+          ],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 530.0,
+        "Y": 480.0
+      },
+      "Id": "ae6a6df0-8201-47db-8a26-09b84d07c65b"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "69fb2adc-da27-4975-bac2-1bebdb9da68a",
+          "Index": 0,
+          "Name": "x1",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        },
+        {
+          "Id": "a2b26cfd-b3de-42a4-bc76-c2d2441ef5ce",
+          "Index": 1,
+          "Name": "x2",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "75498919-ba54-480d-b452-43af745890c5",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [],
+      "InstanceNumber": 1,
+      "ExecutionOrder": 0,
+      "Name": "И2_2",
+      "DisplayName": "И2_2",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "f3cd6969-4b2d-4acc-b212-3940fae2fe3c",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 126,
+          "Name": "И2",
+          "Description": null,
+          "Directory": "Логические элементы",
+          "Scope": "И",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x1",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            },
+            {
+              "Index": 1,
+              "Name": "x2",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 1240.0,
+        "Y": 182.0
+      },
+      "Id": "2464e509-195b-400d-8636-f373221d4ba5"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "bc5e0a33-1a4d-40da-81c2-6a4481af68c1",
+          "Index": 0,
+          "Name": "x",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "78687cb0-60c0-4151-8f2d-5fde30770791",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "НЕ_1",
+      "DisplayName": "НЕ_1",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "a9dac55e-83cd-4050-8b41-787c27bb98c2",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 258,
+          "Name": "НЕ",
+          "Description": null,
+          "Directory": "Логические элементы",
+          "Scope": "НЕ",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 970.0,
+        "Y": 480.0
+      },
+      "Id": "9500ecce-c793-44c2-9499-a0176895c30a"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "d66e67b4-a35e-4c4f-a830-3ee1e8c1292b",
+          "Index": 0,
+          "Name": "x1",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        },
+        {
+          "Id": "4d60e7c6-7538-4f4d-8ef6-5c1d9be28bd1",
+          "Index": 1,
+          "Name": "x2",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "7a8a0aec-1c24-4c21-9ca8-aa2a5462cd6c",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [],
+      "InstanceNumber": 2,
+      "ExecutionOrder": 0,
+      "Name": "И2_3",
+      "DisplayName": "И2_3",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "f3cd6969-4b2d-4acc-b212-3940fae2fe3c",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 126,
+          "Name": "И2",
+          "Description": null,
+          "Directory": "Логические элементы",
+          "Scope": "И",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x1",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            },
+            {
+              "Index": 1,
+              "Name": "x2",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 1510.0,
+        "Y": 286.0
+      },
+      "Id": "6d31445f-8be7-4819-b8a4-aeb635177a32"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "081e836f-7566-44f5-9f42-a92539b58a65",
+          "Index": 0,
+          "Name": "x",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "18feef34-8148-4e39-91d5-babf0a4cb228",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [
+        {
+          "Setting": {
+            "Data": null,
+            "SettingId": "52ec36b5-b5ea-4f02-8066-af54fc97ad2e",
+            "OriginData": {
+              "Id": "55a8c977-8d8c-447a-8624-9d7b5906649b",
+              "Name": "Т(время)",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 0,
+              "LogicValue": {
+                "Origin": 0,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": 0,
+              "Max": 4294967295,
+              "Step": 1,
+              "DataType": "UInt32",
+              "IsConstant": false
+            },
+            "OriginSettingId": null
+          },
+          "Id": "3feebd45-55fd-46d6-b10f-48636b4d96a3",
+          "Index": 0,
+          "Name": "Т(время)",
+          "DataType": "UInt32",
+          "LegUsage": "Setting",
+          "CanLink": true
+        }
+      ],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Независимое РВ на срабатывание_1",
+      "DisplayName": "Тср АМТЗ-НП",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "03a84f42-1e46-40d8-9e55-64a2da4d9f14",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 57,
+          "Name": "Независимое РВ на срабатывание",
+          "Description": null,
+          "Directory": "Таймеры (импульсные элементы)",
+          "Scope": "Импульсный элемент",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [
+            {
+              "Setting": {
+                "Data": {
+                  "Id": "0197466f-d567-4002-84be-f0e2082b113c",
+                  "Name": "Т(время)",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0,
+                  "LogicValue": {
+                    "Origin": 0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": 0,
+                  "Max": 4294967295,
+                  "Step": 1,
+                  "DataType": "UInt32",
+                  "IsConstant": false
+                },
+                "SettingId": null,
+                "OriginData": {
+                  "Id": "0197466f-d567-4002-84be-f0e2082b113c",
+                  "Name": "Т(время)",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0,
+                  "LogicValue": {
+                    "Origin": 0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": 0,
+                  "Max": 4294967295,
+                  "Step": 1,
+                  "DataType": "UInt32",
+                  "IsConstant": false
+                },
+                "OriginSettingId": null
+              },
+              "Index": 0,
+              "Name": "Т(время)",
+              "Usage": "Setting",
+              "DataType": "UInt32"
+            }
+          ],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 1814.0,
+        "Y": 286.0
+      },
+      "Id": "b20a82c9-409d-4d75-9dd2-a5f9687ab3e7"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "3e94d17f-18b4-41b7-8d84-fadf06f9185a",
+          "Index": 0,
+          "Name": "in0",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "5dedf2ed-418e-450e-a464-b178936f2030",
+          "Index": 0,
+          "Name": "out0",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "FB_Feedback_bool_1",
+      "DisplayName": "FB_Feedback_bool_1",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "e8d826ae-1a88-4b8d-810d-a584bfea1cc2",
+          "LibraryId": "a57d0580-c7d0-4f53-8c69-a04a6ab187cc",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 65250,
+          "Name": "FB_Feedback_bool",
+          "Description": null,
+          "Directory": "Интерфейсные блоки",
+          "Scope": "Обратная связь",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "in0",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "out0",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 450.0,
+        "Y": 390.0
+      },
+      "Id": "86058a0e-08fc-434b-9b86-d79e5de35bd5"
+    }
+  ],
+  "MacroBlocks": [],
+  "FunctionalBlocks": [],
+  "Links": [
+    {
+      "Id": "a2183507-ca9e-4f4c-8513-c5313ee814b2",
+      "SchemaNodeFromId": "cc9984c4-3f2a-4939-bd02-92b38e79f631",
+      "SchemaNodeToId": "2c51a2fa-b6a4-43a8-bd94-f557d040a691",
+      "LegFromId": "bb8af7c2-c0fa-4bb2-9d48-cbccc908cdfa",
+      "LegToId": "5741921b-775b-4401-96d3-06b58ab8113d",
+      "BendPoints": []
+    },
+    {
+      "Id": "54e022e7-16e5-437c-aff9-47249d0178e9",
+      "SchemaNodeFromId": "bc93c492-8f40-4e6b-b76e-2da3607f061d",
+      "SchemaNodeToId": "2c51a2fa-b6a4-43a8-bd94-f557d040a691",
+      "LegFromId": "81343dfc-2053-45ea-b9d1-5e64f0285aa3",
+      "LegToId": "80eda462-5ffd-4f32-bf27-87890a1892fb",
+      "BendPoints": [
+        {
+          "X": 140.0,
+          "Y": 257.0
+        },
+        {
+          "X": 140.0,
+          "Y": 237.0
+        }
+      ]
+    },
+    {
+      "Id": "610651dc-9d56-48d3-bc4e-bcf4ab03b6e5",
+      "SchemaNodeFromId": "2c51a2fa-b6a4-43a8-bd94-f557d040a691",
+      "SchemaNodeToId": "02f79bca-0337-481e-b841-a8be266e3e3a",
+      "LegFromId": "be87ae57-c1f8-4253-9104-caf518df5697",
+      "LegToId": "0a276505-5109-41e2-b3a2-9d7c0d80ed48",
+      "BendPoints": []
+    },
+    {
+      "Id": "72739066-da87-4f3f-b476-8adc6d617e98",
+      "SchemaNodeFromId": "c228780e-1b7a-42e4-a1a4-ce37a9e9ac2c",
+      "SchemaNodeToId": "64e54ed7-f4d2-42c1-8cdc-d6332e8ac8e2",
+      "LegFromId": "d40de7a4-6212-4337-8348-c68d3256761b",
+      "LegToId": "2c2d075f-cbb2-42e9-a77d-15b16f1ef3a6",
+      "BendPoints": []
+    },
+    {
+      "Id": "dec0928f-eb9b-4066-9fe5-944bdea77642",
+      "SchemaNodeFromId": "6df2b7c1-26d1-42e2-8e13-b6e72cfbdb08",
+      "SchemaNodeToId": "64e54ed7-f4d2-42c1-8cdc-d6332e8ac8e2",
+      "LegFromId": "4f5f388c-020f-4eed-a46d-e27ea3270b17",
+      "LegToId": "199955d8-e707-4ec3-aeea-af31cec307de",
+      "BendPoints": [
+        {
+          "X": 140.0,
+          "Y": 573.0
+        },
+        {
+          "X": 140.0,
+          "Y": 555.0
+        }
+      ]
+    },
+    {
+      "Id": "a1d849d7-3574-4c1b-93f1-9839775501af",
+      "SchemaNodeFromId": "3782d646-bf9a-4876-894d-001751c2ab8d",
+      "SchemaNodeToId": "02f79bca-0337-481e-b841-a8be266e3e3a",
+      "LegFromId": "84bbc292-d227-496a-a292-a2d5d1b9899b",
+      "LegToId": "4a306791-3447-41fe-84c7-787ff218a85d",
+      "BendPoints": [
+        {
+          "X": 960.0,
+          "Y": 325.0
+        },
+        {
+          "X": 960.0,
+          "Y": 237.0
+        }
+      ]
+    },
+    {
+      "Id": "59a47863-1016-4fca-955f-7f92cbe76a55",
+      "SchemaNodeFromId": "3e1c0980-5e47-4e3c-9505-941ffe1af14a",
+      "SchemaNodeToId": "3782d646-bf9a-4876-894d-001751c2ab8d",
+      "LegFromId": "fc06c328-c553-4326-8f65-f555beb29d3a",
+      "LegToId": "a113ffb9-e60e-4c77-b7a3-97a568f04331",
+      "BendPoints": []
+    },
+    {
+      "Id": "94b2f46c-ccdd-4d23-a5b6-46b6b730098a",
+      "SchemaNodeFromId": "2564edd0-fb1c-423c-bd0e-d0d02152ee39",
+      "SchemaNodeToId": "3e1c0980-5e47-4e3c-9505-941ffe1af14a",
+      "LegFromId": "023e9243-1851-4b75-b975-a57b59839256",
+      "LegToId": "de0aa206-d075-40a9-81ea-6ace91236d77",
+      "BendPoints": []
+    },
+    {
+      "Id": "346616be-6b79-47fc-8d04-e2db61014986",
+      "SchemaNodeFromId": "64e54ed7-f4d2-42c1-8cdc-d6332e8ac8e2",
+      "SchemaNodeToId": "ae6a6df0-8201-47db-8a26-09b84d07c65b",
+      "LegFromId": "7ce7d5a7-0ca3-4a81-aaa6-138b633af459",
+      "LegToId": "c358244c-9e9a-485c-be50-ea2ac66e870c",
+      "BendPoints": []
+    },
+    {
+      "Id": "77bfbdf2-915e-45e5-82d5-6bfc25ddde78",
+      "SchemaNodeFromId": "ffe79939-b506-4f5e-8f68-b6d549ea5bc6",
+      "SchemaNodeToId": "3e1c0980-5e47-4e3c-9505-941ffe1af14a",
+      "LegFromId": "02ebcb1b-b6e1-4178-b8b4-6a3dfa76027e",
+      "LegToId": "b44d343b-314e-4813-b5ff-57fa4744f6ba",
+      "BendPoints": [
+        {
+          "X": 230.0,
+          "Y": 300.0
+        },
+        {
+          "X": 230.0,
+          "Y": 325.0
+        }
+      ]
+    },
+    {
+      "Id": "33774e09-aa9a-44e8-888d-0216a2aead07",
+      "SchemaNodeFromId": "ffe79939-b506-4f5e-8f68-b6d549ea5bc6",
+      "SchemaNodeToId": "ae6a6df0-8201-47db-8a26-09b84d07c65b",
+      "LegFromId": "02ebcb1b-b6e1-4178-b8b4-6a3dfa76027e",
+      "LegToId": "2008c944-f8c1-4dfe-ae1f-296340991a4d",
+      "BendPoints": [
+        {
+          "X": 230.0,
+          "Y": 300.0
+        },
+        {
+          "X": 230.0,
+          "Y": 490.0
+        },
+        {
+          "X": 520.0,
+          "Y": 490.0
+        },
+        {
+          "X": 520.0,
+          "Y": 515.0
+        }
+      ]
+    },
+    {
+      "Id": "c7c77719-a793-435a-8a83-2e8f01659e9d",
+      "SchemaNodeFromId": "1315216b-ff14-48c4-ba54-8fd681933b8f",
+      "SchemaNodeToId": "3e1c0980-5e47-4e3c-9505-941ffe1af14a",
+      "LegFromId": "34b1a8b5-f376-45f3-b3ec-d5fe8dedf971",
+      "LegToId": "78c3bd1a-36f0-41b9-ae79-5d131c6ed091",
+      "BendPoints": [
+        {
+          "X": 250.0,
+          "Y": 395.0
+        },
+        {
+          "X": 250.0,
+          "Y": 365.0
+        }
+      ]
+    },
+    {
+      "Id": "47fca7c1-be20-44fc-b9da-6a5ec944cffb",
+      "SchemaNodeFromId": "439ff08f-a3eb-49f6-a69b-9750e518e16b",
+      "SchemaNodeToId": "ae6a6df0-8201-47db-8a26-09b84d07c65b",
+      "LegFromId": "52a2a5ed-0d7a-4024-80c1-d0129bd32650",
+      "LegToId": "a51e6284-64f5-4bda-bdda-3f588caf472d",
+      "BendPoints": [
+        {
+          "X": 520.0,
+          "Y": 594.0
+        },
+        {
+          "X": 520.0,
+          "Y": 555.0
+        }
+      ]
+    },
+    {
+      "Id": "3e256d16-84b0-4519-a039-d1739ffb6c65",
+      "SchemaNodeFromId": "02f79bca-0337-481e-b841-a8be266e3e3a",
+      "SchemaNodeToId": "2464e509-195b-400d-8636-f373221d4ba5",
+      "LegFromId": "72bf58a5-87b9-4787-a499-b81855928800",
+      "LegToId": "69fb2adc-da27-4975-bac2-1bebdb9da68a",
+      "BendPoints": []
+    },
+    {
+      "Id": "87233c0f-be5a-418c-ab8e-1ab3ce96721d",
+      "SchemaNodeFromId": "9500ecce-c793-44c2-9499-a0176895c30a",
+      "SchemaNodeToId": "2464e509-195b-400d-8636-f373221d4ba5",
+      "LegFromId": "78687cb0-60c0-4151-8f2d-5fde30770791",
+      "LegToId": "a2b26cfd-b3de-42a4-bc76-c2d2441ef5ce",
+      "BendPoints": [
+        {
+          "X": 1230.0,
+          "Y": 515.0
+        },
+        {
+          "X": 1230.0,
+          "Y": 237.0
+        }
+      ]
+    },
+    {
+      "Id": "fcc10893-fd51-437b-a510-0c29a8eabd75",
+      "SchemaNodeFromId": "ae6a6df0-8201-47db-8a26-09b84d07c65b",
+      "SchemaNodeToId": "9500ecce-c793-44c2-9499-a0176895c30a",
+      "LegFromId": "804260b0-f967-4321-8465-b5d99838207f",
+      "LegToId": "bc5e0a33-1a4d-40da-81c2-6a4481af68c1",
+      "BendPoints": []
+    },
+    {
+      "Id": "9cd11d13-365f-4062-9fe0-06e659596030",
+      "SchemaNodeFromId": "2464e509-195b-400d-8636-f373221d4ba5",
+      "SchemaNodeToId": "6d31445f-8be7-4819-b8a4-aeb635177a32",
+      "LegFromId": "75498919-ba54-480d-b452-43af745890c5",
+      "LegToId": "d66e67b4-a35e-4c4f-a830-3ee1e8c1292b",
+      "BendPoints": [
+        {
+          "X": 1500.0,
+          "Y": 217.0
+        },
+        {
+          "X": 1500.0,
+          "Y": 321.0
+        }
+      ]
+    },
+    {
+      "Id": "42c92cae-a311-4e25-aa58-b1ebdef756e5",
+      "SchemaNodeFromId": "3f715344-778c-4581-9a6c-268d4a8a89d4",
+      "SchemaNodeToId": "6d31445f-8be7-4819-b8a4-aeb635177a32",
+      "LegFromId": "c5473fa1-456b-48c3-a72d-324f4549ee65",
+      "LegToId": "4d60e7c6-7538-4f4d-8ef6-5c1d9be28bd1",
+      "BendPoints": [
+        {
+          "X": 1500.0,
+          "Y": 633.0
+        },
+        {
+          "X": 1500.0,
+          "Y": 341.0
+        }
+      ]
+    },
+    {
+      "Id": "5cdc0357-b5fa-4ef6-ba2e-aa124ef3d370",
+      "SchemaNodeFromId": "6d31445f-8be7-4819-b8a4-aeb635177a32",
+      "SchemaNodeToId": "b20a82c9-409d-4d75-9dd2-a5f9687ab3e7",
+      "LegFromId": "7a8a0aec-1c24-4c21-9ca8-aa2a5462cd6c",
+      "LegToId": "081e836f-7566-44f5-9f42-a92539b58a65",
+      "BendPoints": []
+    },
+    {
+      "Id": "11931f5a-b6ca-4bd3-8be8-5781d9668db0",
+      "SchemaNodeFromId": "2464e509-195b-400d-8636-f373221d4ba5",
+      "SchemaNodeToId": "e9bb738d-3d79-4134-b12a-4fcf5c843c27",
+      "LegFromId": "75498919-ba54-480d-b452-43af745890c5",
+      "LegToId": "7312b59b-46aa-4665-9d4d-4195b3fa9c9e",
+      "BendPoints": []
+    },
+    {
+      "Id": "0a65d6b0-1530-4e02-bacd-0d2f70ee093c",
+      "SchemaNodeFromId": "b20a82c9-409d-4d75-9dd2-a5f9687ab3e7",
+      "SchemaNodeToId": "060fff25-e3ea-42f2-a7df-931d6e953e36",
+      "LegFromId": "18feef34-8148-4e39-91d5-babf0a4cb228",
+      "LegToId": "b5f6b7cf-99e0-48b4-871e-3f705de21635",
+      "BendPoints": []
+    },
+    {
+      "Id": "60107874-7484-4169-8d3e-a5e00b91ae4c",
+      "SchemaNodeFromId": "f643628a-1138-43f0-a1ec-7046109cc8f3",
+      "SchemaNodeToId": "b20a82c9-409d-4d75-9dd2-a5f9687ab3e7",
+      "LegFromId": "89ef0b86-7386-4041-9e7c-57dc890a8888",
+      "LegToId": "3feebd45-55fd-46d6-b10f-48636b4d96a3",
+      "BendPoints": [
+        {
+          "X": 1804.0,
+          "Y": 402.0
+        },
+        {
+          "X": 1804.0,
+          "Y": 341.0
+        }
+      ]
+    },
+    {
+      "Id": "f8e3e715-d739-4850-b3aa-59159fe7d21b",
+      "SchemaNodeFromId": "86058a0e-08fc-434b-9b86-d79e5de35bd5",
+      "SchemaNodeToId": "3782d646-bf9a-4876-894d-001751c2ab8d",
+      "LegFromId": "5dedf2ed-418e-450e-a464-b178936f2030",
+      "LegToId": "a3e6c132-26a5-497c-86ae-979d0d660f89",
+      "BendPoints": [
+        {
+          "X": 700.0,
+          "Y": 425.0
+        },
+        {
+          "X": 700.0,
+          "Y": 345.0
+        }
+      ]
+    },
+    {
+      "Id": "25c59348-4562-427c-bd95-d86316a08275",
+      "SchemaNodeFromId": "02f79bca-0337-481e-b841-a8be266e3e3a",
+      "SchemaNodeToId": "86058a0e-08fc-434b-9b86-d79e5de35bd5",
+      "LegFromId": "72bf58a5-87b9-4787-a499-b81855928800",
+      "LegToId": "3e94d17f-18b4-41b7-8d84-fadf06f9185a",
+      "BendPoints": [
+        {
+          "X": 1220.0,
+          "Y": 217.0
+        },
+        {
+          "X": 1220.0,
+          "Y": 450.0
+        },
+        {
+          "X": 433.0,
+          "Y": 450.0
+        },
+        {
+          "X": 433.0,
+          "Y": 425.0
+        }
+      ]
+    }
+  ],
+  "LegRelations": [
+    {
+      "LegName": "П.АМТЗ-НП",
+      "SchemaBlockName": "Выход[Boolean]_1"
+    },
+    {
+      "LegName": "3I0",
+      "SchemaBlockName": "Вход[Single]_1"
+    },
+    {
+      "LegName": "3I0ср АМТЗ-НП",
+      "SchemaBlockName": "Уставка[Single]_1"
+    },
+    {
+      "LegName": "Ср.АМТЗ-НП",
+      "SchemaBlockName": "Выход[Boolean]_2"
+    },
+    {
+      "LegName": "БК-I-м",
+      "SchemaBlockName": "Вход[Boolean]_1"
+    },
+    {
+      "LegName": "БК-I-м АМТЗ-НП",
+      "SchemaBlockName": "Уставка[UInt16]_1"
+    },
+    {
+      "LegName": "Тср АМТЗ-НП",
+      "SchemaBlockName": "Уставка[UInt32]_1"
+    },
+    {
+      "LegName": "Вывод АМТЗ",
+      "SchemaBlockName": "Вход[Boolean]_2"
+    },
+    {
+      "LegName": "Вывод терминала",
+      "SchemaBlockName": "Вход[Boolean]_3"
+    },
+    {
+      "LegName": "АМТЗ-НП",
+      "SchemaBlockName": "Уставка[UInt16]_2"
+    },
+    {
+      "LegName": "АМТЗ активна",
+      "SchemaBlockName": "Вход[Boolean]_4"
+    }
+  ]
+}

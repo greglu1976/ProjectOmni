@@ -1,0 +1,879 @@
+{
+  "Id": 0,
+  "Name": "ДЗ-ФФ N ступень (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Rab",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "Rbc",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "Rca",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 3,
+      "Name": "Xab",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 4,
+      "Name": "Xbc",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 5,
+      "Name": "Xca",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 6,
+      "Name": "Фab",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 7,
+      "Name": "Фbc",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 8,
+      "Name": "Фca",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 9,
+      "Name": "Вывод ДЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "БК-I-б",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "БК-I-м",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "БК-I-Z",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "БНН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "РС-ФФ-AB с охв.",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "РС-ФФ-BC с охв.",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "РС-ФФ-CA с охв.",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "РС-ФФ с охв.",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "РС-ФФ-AB",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "РС-ФФ-BC",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "РС-ФФ-CA",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "РС-ФФ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "П.ДЗ-ФФ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "Ср.ДЗ-ФФ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "782ae11a-2357-4c15-8a11-4e72629ddb9a",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_Rsr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 15.0,
+          "LogicValue": {
+            "Origin": 15.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "782ae11a-2357-4c15-8a11-4e72629ddb9a",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_Rsr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 15.0,
+          "LogicValue": {
+            "Origin": 15.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Rср",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "1a65c37d-742e-4ba0-9b5a-d2e93c12ce26",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_Xsr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "1a65c37d-742e-4ba0-9b5a-d2e93c12ce26",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_Xsr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "Xср",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "38694bd2-8780-49f0-a57f-a839127c19f3",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_F1",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 75.0,
+          "LogicValue": {
+            "Origin": 75.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "38694bd2-8780-49f0-a57f-a839127c19f3",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_F1",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 75.0,
+          "LogicValue": {
+            "Origin": 75.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "Ф1",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "a486159e-378c-4e30-9837-f60e941d3c48",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_F2",
+          "Description": {
+            "Description": ""
+          },
+          "Value": -20.0,
+          "LogicValue": {
+            "Origin": -20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": -80.0,
+          "Max": 0.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "a486159e-378c-4e30-9837-f60e941d3c48",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_F2",
+          "Description": {
+            "Description": ""
+          },
+          "Value": -20.0,
+          "LogicValue": {
+            "Origin": -20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": -80.0,
+          "Max": 0.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 3,
+      "Name": "Ф2",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "6dd27759-2d81-42f2-9811-e1b7e100ae8b",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_F3",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 110.0,
+          "LogicValue": {
+            "Origin": 110.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 180.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "6dd27759-2d81-42f2-9811-e1b7e100ae8b",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_F3",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 110.0,
+          "LogicValue": {
+            "Origin": 110.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 180.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 4,
+      "Name": "Ф3",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "2f99c342-3a77-4c0e-a299-29d097cbbd3b",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_Napravlennost_DZ_FF",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Направленность ДЗ-ФФ",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Прямо",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Обратно",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "2f99c342-3a77-4c0e-a299-29d097cbbd3b",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_Napravlennost_DZ_FF",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Направленность ДЗ-ФФ",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Прямо",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Обратно",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 5,
+      "Name": "Направленность ДЗ-ФФ",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "b65f80a0-48bc-4529-ba13-8e0c1513debd",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_Rng",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 8.0,
+          "LogicValue": {
+            "Origin": 8.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "b65f80a0-48bc-4529-ba13-8e0c1513debd",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_Rng",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 8.0,
+          "LogicValue": {
+            "Origin": 8.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 6,
+      "Name": "Rнг",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "727be043-a3a1-4f64-b6f8-4351d77a28d7",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_Fng",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 25.0,
+          "LogicValue": {
+            "Origin": 25.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 90.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "727be043-a3a1-4f64-b6f8-4351d77a28d7",
+          "Name": "Rele_soprotivleniya_dlya_DZ_FF_N_1_Fng",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 25.0,
+          "LogicValue": {
+            "Origin": 25.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 90.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 7,
+      "Name": "Фнг",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "ff4135b3-7d71-4ca9-bff2-c81c25d63626",
+          "Name": "ДЗ-ФФ",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "ff4135b3-7d71-4ca9-bff2-c81c25d63626",
+          "Name": "ДЗ-ФФ",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 8,
+      "Name": "ДЗ-ФФ",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "adb4496d-7d72-4a08-af50-a504e5f3741d",
+          "Name": "Тср ДЗ-ФФ",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "adb4496d-7d72-4a08-af50-a504e5f3741d",
+          "Name": "Тср ДЗ-ФФ",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 9,
+      "Name": "Тср ДЗ-ФФ",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "a13a6675-4672-4579-9e16-d28dab58cb5d",
+          "Name": "БК ДЗ-ФФ",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "NewEnum_UInt16_20260130_144935",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "БК-I-б",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "БК-I-м",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "БК-Z",
+                "SubstituteValue": 3
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "a13a6675-4672-4579-9e16-d28dab58cb5d",
+          "Name": "БК ДЗ-ФФ",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "NewEnum_UInt16_20260130_144935",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "БК-I-б",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "БК-I-м",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "БК-Z",
+                "SubstituteValue": 3
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 10,
+      "Name": "БК ДЗ-ФФ",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "a27ee39e-b043-4e17-966c-66d8b056f565",
+          "Name": "БНН ДЗ-ФФ",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "a27ee39e-b043-4e17-966c-66d8b056f565",
+          "Name": "БНН ДЗ-ФФ",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 11,
+      "Name": "БНН ДЗ-ФФ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

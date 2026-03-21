@@ -1,0 +1,221 @@
+{
+  "Id": 0,
+  "Name": "ЗНФ (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Пуск ЗНФ В",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Блок. ЗНФ В",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Вывод ЗНФ В",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср.ЗНФ В",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "27805ef4-f6fd-47af-bcca-27ef287339e0",
+          "Name": "Тср ЗНФ В",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "27805ef4-f6fd-47af-bcca-27ef287339e0",
+          "Name": "Тср ЗНФ В",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Тср ЗНФ В",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "815a1433-0995-4664-9863-27e9d0e06a22",
+          "Name": "Тдеблок ЗНФ В",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "815a1433-0995-4664-9863-27e9d0e06a22",
+          "Name": "Тдеблок ЗНФ В",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "Тдеблок ЗНФ В",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "c05e7116-8b46-409c-ae5b-8ed4a316591b",
+          "Name": "ЗНФ В1",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "c05e7116-8b46-409c-ae5b-8ed4a316591b",
+          "Name": "ЗНФ В1",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "ЗНФ В1",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

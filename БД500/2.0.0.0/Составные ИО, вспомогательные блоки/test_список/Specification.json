@@ -1,0 +1,481 @@
+{
+  "Id": 0,
+  "Name": "test_список",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 0,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ia",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "Ib",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "Ic",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 3,
+      "Name": "Ua",
+      "Usage": "Input",
+      "DataType": "Single"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср.I_1А",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Ср.U_10В",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Ср.U_20В",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "Ср.U_30В",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "a68378cd-6294-4bc9-949c-a92464e10c42",
+          "Name": "Pereklyuchatel_Vkh_3_float_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Выбор I",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Ia",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Ib",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "Ic",
+                "SubstituteValue": 2
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "a68378cd-6294-4bc9-949c-a92464e10c42",
+          "Name": "Pereklyuchatel_Vkh_3_float_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Выбор I",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Ia",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Ib",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "Ic",
+                "SubstituteValue": 2
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Выбор I",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "f96935f4-29da-4007-a6d1-daa48765ffc9",
+          "Name": "Pereklyuchatel_Vykh_3_float_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Выбор U",
+            "PredefinedValues": [
+              {
+                "DisplayText": "10В",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "20В",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "30В",
+                "SubstituteValue": 2
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "f96935f4-29da-4007-a6d1-daa48765ffc9",
+          "Name": "Pereklyuchatel_Vykh_3_float_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Выбор U",
+            "PredefinedValues": [
+              {
+                "DisplayText": "10В",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "20В",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "30В",
+                "SubstituteValue": 2
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "Выбор значения Uсрабатывания",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "b351b4e9-77fd-444d-b717-a9ae578114fc",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "b351b4e9-77fd-444d-b717-a9ae578114fc",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "Iср_1А",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "7fffedcc-9b97-442b-9f2d-2df66144b23d",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_2_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "7fffedcc-9b97-442b-9f2d-2df66144b23d",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_2_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 3,
+      "Name": "Uср_10В",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "639af512-f0c4-4fac-9ef5-d26b6c6c4d94",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_3_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "639af512-f0c4-4fac-9ef5-d26b6c6c4d94",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_3_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 4,
+      "Name": "Uср_20В",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "cabfb67c-6b25-4903-819f-9052d89bdcdf",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_4_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 30.0,
+          "LogicValue": {
+            "Origin": 30.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "cabfb67c-6b25-4903-819f-9052d89bdcdf",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_4_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 30.0,
+          "LogicValue": {
+            "Origin": 30.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 5,
+      "Name": "Uср_30В",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "521d273e-5cf0-4284-b358-0971b29f611c",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_k_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.95,
+          "LogicValue": {
+            "Origin": 0.95,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "521d273e-5cf0-4284-b358-0971b29f611c",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_k_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.95,
+          "LogicValue": {
+            "Origin": 0.95,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "OriginSettingId": null
+      },
+      "Index": 6,
+      "Name": "k возврата",
+      "Usage": "Setting",
+      "DataType": "Single"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

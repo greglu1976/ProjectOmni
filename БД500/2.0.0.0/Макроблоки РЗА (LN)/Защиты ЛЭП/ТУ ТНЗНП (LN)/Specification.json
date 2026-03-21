@@ -1,0 +1,875 @@
+{
+  "Id": 0,
+  "Name": "ТУ ТНЗНП (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Прием ТУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "ИО ТНЗНП-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "ИО ТНЗНП-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "ИО ТНЗНП-3",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "ИО ТНЗНП-4",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "ИО ТНЗНП-5",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "ИО ТНЗНП-6",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "ИО БНТ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "ОНМНП-Р",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "ОНМНП-Б",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "БНН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "Вывод ЛС",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "Пуск защит",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "Контр.Uлоск",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср.ТУ ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Реверс ТУ ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Выход ТУ ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "ЛОСК ТУ ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "96581508-3e5f-42c4-9402-d79669fe3caf",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_3_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "96581508-3e5f-42c4-9402-d79669fe3caf",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_3_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Тср ТУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "f082be7d-3fcc-43c8-9de9-cb2f9201778c",
+          "Name": "Pereklyuchatel_Vkh_7_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "ИО ТНЗНП",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "1 ступ.",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "2 ступ.",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "3 ступ.",
+                "SubstituteValue": 3
+              },
+              {
+                "DisplayText": "4 ступ.",
+                "SubstituteValue": 4
+              },
+              {
+                "DisplayText": "5 ступ.",
+                "SubstituteValue": 5
+              },
+              {
+                "DisplayText": "6 ступ.",
+                "SubstituteValue": 6
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "f082be7d-3fcc-43c8-9de9-cb2f9201778c",
+          "Name": "Pereklyuchatel_Vkh_7_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "ИО ТНЗНП",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "1 ступ.",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "2 ступ.",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "3 ступ.",
+                "SubstituteValue": 3
+              },
+              {
+                "DisplayText": "4 ступ.",
+                "SubstituteValue": 4
+              },
+              {
+                "DisplayText": "5 ступ.",
+                "SubstituteValue": 5
+              },
+              {
+                "DisplayText": "6 ступ.",
+                "SubstituteValue": 6
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "Ступень ИО ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "e086607b-88ed-4199-a542-0191ae53bcf4",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "e086607b-88ed-4199-a542-0191ae53bcf4",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "БНТ ТУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "5a69e690-1623-4f67-8c85-2ff7577ad241",
+          "Name": "Nezavisimoe_RV_na_vozvrat_2_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "5a69e690-1623-4f67-8c85-2ff7577ad241",
+          "Name": "Nezavisimoe_RV_na_vozvrat_2_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 3,
+      "Name": "Тв блок.ТУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "11113693-fc2c-4f0c-807f-2e31eb40ec51",
+          "Name": "Nezavisimoe_RV_na_vozvrat_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "11113693-fc2c-4f0c-807f-2e31eb40ec51",
+          "Name": "Nezavisimoe_RV_na_vozvrat_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 4,
+      "Name": "Тпрод ОНМНП-Б",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "10bcb690-a2e6-448e-ba35-fdb3cb230ac7",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "10bcb690-a2e6-448e-ba35-fdb3cb230ac7",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 5,
+      "Name": "Тфикс ОНМНП-Б",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "675a2d15-bddd-468a-ae20-e60a4bc1089e",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "675a2d15-bddd-468a-ae20-e60a4bc1089e",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 6,
+      "Name": "ТУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "6250e0fa-55da-45c0-933d-cfb28e4183eb",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_2_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "6250e0fa-55da-45c0-933d-cfb28e4183eb",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_2_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 7,
+      "Name": "Тср эхо ТУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "be26c459-8171-4d3c-9072-03f283a9bc3e",
+          "Name": "Formirovatel_imp_po_zadnemu_frontu_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "be26c459-8171-4d3c-9072-03f283a9bc3e",
+          "Name": "Formirovatel_imp_po_zadnemu_frontu_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 8,
+      "Name": "Тимп эхо ТУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "fec28cf7-c5fa-4028-9691-f42f16878890",
+          "Name": "Pereklyuchatel_Vykh_3_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "ЭХО ТУ ТНЗНП",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Эхо",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "Эхо+ЛОСК",
+                "SubstituteValue": 2
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "fec28cf7-c5fa-4028-9691-f42f16878890",
+          "Name": "Pereklyuchatel_Vykh_3_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "ЭХО ТУ ТНЗНП",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Эхо",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "Эхо+ЛОСК",
+                "SubstituteValue": 2
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 9,
+      "Name": "Режим эхо ТУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "36fba1b1-5758-45b5-b18e-587953d42f2f",
+          "Name": "Nezavisimoe_RV_na_vozvrat_3_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 200,
+          "LogicValue": {
+            "Origin": 200,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 200,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": true
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "36fba1b1-5758-45b5-b18e-587953d42f2f",
+          "Name": "Nezavisimoe_RV_na_vozvrat_3_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 200,
+          "LogicValue": {
+            "Origin": 200,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 200,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": true
+        },
+        "OriginSettingId": null
+      },
+      "Index": 10,
+      "Name": "Т(время)",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "7abc3afa-7b9d-4425-8b93-2757d9094202",
+          "Name": "Nezavisimoe_RV_na_vozvrat_4_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "7abc3afa-7b9d-4425-8b93-2757d9094202",
+          "Name": "Nezavisimoe_RV_na_vozvrat_4_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 11,
+      "Name": "Тбл эхо ТУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

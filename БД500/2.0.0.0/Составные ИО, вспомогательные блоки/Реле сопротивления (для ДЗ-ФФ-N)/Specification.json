@@ -1,0 +1,559 @@
+{
+  "Id": 0,
+  "Name": "Реле сопротивления (для ДЗ-ФФ-N)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Rab(a)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "Rbc(b)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "Rca(c)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 3,
+      "Name": "Xab(a)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 4,
+      "Name": "Xbc(b)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 5,
+      "Name": "Xca(c)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 6,
+      "Name": "Фab(a)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 7,
+      "Name": "Фbc(b)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 8,
+      "Name": "Фca(c)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 9,
+      "Name": "Вывод РС",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "РС-ФФ-AB с охв.",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "РС-ФФ-BC с охв.",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "РС-ФФ-CA с охв.",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "РС-ФФ с охв.",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "РС-ФФ-AB",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "РС-ФФ-BC",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "РС-ФФ-CA",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "РС-ФФ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "16f6ebbb-9116-48d6-9aa8-13049e7e2489",
+          "Name": "Z_rele_s_okhvatom_1_Rsr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 15.0,
+          "LogicValue": {
+            "Origin": 15.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "16f6ebbb-9116-48d6-9aa8-13049e7e2489",
+          "Name": "Z_rele_s_okhvatom_1_Rsr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 15.0,
+          "LogicValue": {
+            "Origin": 15.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Rср",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "4efc09c5-023a-44c3-9d6c-9bfae28466b8",
+          "Name": "Z_rele_s_okhvatom_1_Xsr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "4efc09c5-023a-44c3-9d6c-9bfae28466b8",
+          "Name": "Z_rele_s_okhvatom_1_Xsr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "Xср",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "36057a84-2e5b-4e77-8574-bf25b7dfedae",
+          "Name": "Z_rele_s_okhvatom_1_F1",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 75.0,
+          "LogicValue": {
+            "Origin": 75.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "36057a84-2e5b-4e77-8574-bf25b7dfedae",
+          "Name": "Z_rele_s_okhvatom_1_F1",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 75.0,
+          "LogicValue": {
+            "Origin": 75.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "Ф1",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "f298c49b-598f-48c1-97e9-147548519677",
+          "Name": "Napravlennoe_vpered_Z_rele_1_F2",
+          "Description": {
+            "Description": ""
+          },
+          "Value": -20.0,
+          "LogicValue": {
+            "Origin": -20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": -80.0,
+          "Max": 0.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "f298c49b-598f-48c1-97e9-147548519677",
+          "Name": "Napravlennoe_vpered_Z_rele_1_F2",
+          "Description": {
+            "Description": ""
+          },
+          "Value": -20.0,
+          "LogicValue": {
+            "Origin": -20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": -80.0,
+          "Max": 0.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 3,
+      "Name": "Ф2",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "b8a4ea19-c99a-4b1a-987a-b1675e511a95",
+          "Name": "Napravlennoe_vpered_Z_rele_1_F3",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 110.0,
+          "LogicValue": {
+            "Origin": 110.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 180.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "b8a4ea19-c99a-4b1a-987a-b1675e511a95",
+          "Name": "Napravlennoe_vpered_Z_rele_1_F3",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 110.0,
+          "LogicValue": {
+            "Origin": 110.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 180.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 4,
+      "Name": "Ф3",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "86c4b4c1-5181-4aad-a740-60da7ba44113",
+          "Name": "Направленность ДЗ-ФФ",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Направленность ДЗ-ФФ",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Прямо",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Обратно",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "86c4b4c1-5181-4aad-a740-60da7ba44113",
+          "Name": "Направленность ДЗ-ФФ",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Направленность ДЗ-ФФ",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Прямо",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Обратно",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 5,
+      "Name": "Направленность ДЗ-ФФ",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "5dda58e5-b6ce-4912-9fcb-2ac77a7a7498",
+          "Name": "Rele_Z_otstrojka_ot_nagruzki_1_Rng",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 8.0,
+          "LogicValue": {
+            "Origin": 8.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "5dda58e5-b6ce-4912-9fcb-2ac77a7a7498",
+          "Name": "Rele_Z_otstrojka_ot_nagruzki_1_Rng",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 8.0,
+          "LogicValue": {
+            "Origin": 8.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 6,
+      "Name": "Rнг",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "6e061c14-bd74-419e-9b18-eefe80ec1d73",
+          "Name": "Rele_Z_otstrojka_ot_nagruzki_1_Fng",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 25.0,
+          "LogicValue": {
+            "Origin": 25.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 90.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "6e061c14-bd74-419e-9b18-eefe80ec1d73",
+          "Name": "Rele_Z_otstrojka_ot_nagruzki_1_Fng",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 25.0,
+          "LogicValue": {
+            "Origin": 25.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 90.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 7,
+      "Name": "Фнг",
+      "Usage": "Setting",
+      "DataType": "Single"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

@@ -1,0 +1,215 @@
+{
+  "Id": 0,
+  "Name": "ОНМОП (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "I2",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "Ф(I2)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "U2",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 3,
+      "Name": "Ф(U2)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 4,
+      "Name": "Вывод ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "ОНМОП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "7fb19848-fb9c-4298-8754-95fbf482a5ae",
+          "Name": "Фмч ОНМОП",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 110.0,
+          "LogicValue": {
+            "Origin": 110.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 359.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "7fb19848-fb9c-4298-8754-95fbf482a5ae",
+          "Name": "Фмч ОНМОП",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 110.0,
+          "LogicValue": {
+            "Origin": 110.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 359.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Фмч ОНМОП",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "5095bc3f-bf31-4795-8a1b-533361a71b80",
+          "Name": "I2ср ОНМОП",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 40.0,
+          "LogicValue": {
+            "Origin": 40.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "5095bc3f-bf31-4795-8a1b-533361a71b80",
+          "Name": "I2ср ОНМОП",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 40.0,
+          "LogicValue": {
+            "Origin": 40.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "I2ср ОНМОП",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "4f05bf7c-fba4-4c82-80af-b8d93be01092",
+          "Name": "U2ср ОНМОП",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100.0,
+          "LogicValue": {
+            "Origin": 100.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "4f05bf7c-fba4-4c82-80af-b8d93be01092",
+          "Name": "U2ср ОНМОП",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100.0,
+          "LogicValue": {
+            "Origin": 100.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "U2ср ОНМОП",
+      "Usage": "Setting",
+      "DataType": "Single"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

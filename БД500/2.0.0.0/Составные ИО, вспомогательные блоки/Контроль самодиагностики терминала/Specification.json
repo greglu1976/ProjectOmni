@@ -1,0 +1,46 @@
+{
+  "Id": 0,
+  "Name": "Контроль самодиагностики терминала",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 0,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Неисправность терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Терминал готов",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Сброс",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Терминал неисправен",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Терминал неисправен (фикс-я)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

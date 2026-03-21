@@ -1,0 +1,256 @@
+{
+  "Id": 0,
+  "Name": "БНН (LD)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "FunctionalBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "dU1",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "dI1",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "U1",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 3,
+      "Name": "ЛЭП отключена",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "ИО УРОВ В1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "ИО УРОВ В2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Ua",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 7,
+      "Name": "Ub",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 8,
+      "Name": "Uc",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 9,
+      "Name": "I2",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 10,
+      "Name": "I1",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 11,
+      "Name": "U2",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 12,
+      "Name": "Вывод БНН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "3I0",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 15,
+      "Name": "3U0 звезда",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 16,
+      "Name": "Uбнн",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 17,
+      "Name": "Uни",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 18,
+      "Name": "Uиф",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 19,
+      "Name": "Uфк",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 20,
+      "Name": "Uбнн ф.A",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 21,
+      "Name": "Uбнн ф.B",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 22,
+      "Name": "Uбнн ф.C",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 23,
+      "Name": "Автомат ТН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 24,
+      "Name": "Фикс.неиспр.ЦН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср.dU1 БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Ср.dI1 БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Обрыв 3 фаз",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "Ср.UI1 мин БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "Ср.Uф мин",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Ср.I2/I1 max БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Ср.U2 max БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "Обрыв 1/2 фаз",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "Ср.U2/U1 max БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "Обрыв НП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "Ср.3U0 max БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "ИО БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "Вывод УКЕТ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "Неиспр.ЦН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

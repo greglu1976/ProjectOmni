@@ -1,0 +1,275 @@
+{
+  "Id": 0,
+  "Name": "Контроль ТТ В (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Низк.давл.SF6 ТТ В",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Низк.давл.SF6 ТТ В ф.A",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Низк.давл.SF6 ТТ В ф.B",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "Низк.давл.SF6 ТТ В ф.C",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "Авар.давл.SF6 ТТ В",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Авар.давл.SF6 ТТ В ф.A",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Авар.давл.SF6 ТТ В ф.B",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "Авар.давл.SF6 ТТ В ф.C",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "Неиспр.обогр.ТТ В",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср.Низк.давл. SF6 ТТ В",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Неиспр.ТТ В",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Ср.Авар.давл.SF6 ТТ В",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "Откл.от Авар.давл.SF6 ТТ В",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "Ср.Неиспр.обогр.ТТ В",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "98d2f1c2-e5cb-43b3-ac7a-b709ecb77c3d",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "98d2f1c2-e5cb-43b3-ac7a-b709ecb77c3d",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Откл.от Авар.давл. SF6 ТТ В",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "bbd6a328-9d76-452a-a89c-a0563b04afe6",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1,
+          "LogicValue": {
+            "Origin": 1,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 1,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": true
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "bbd6a328-9d76-452a-a89c-a0563b04afe6",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1,
+          "LogicValue": {
+            "Origin": 1,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 1,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": true
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "1с",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "6a890b97-5023-48e3-8864-3fcff5ad5a7e",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_3_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "6a890b97-5023-48e3-8864-3fcff5ad5a7e",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_3_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100000,
+          "LogicValue": {
+            "Origin": 100000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "Тср.Неиспр.обогр.ТТ В",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

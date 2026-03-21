@@ -1,0 +1,46 @@
+{
+  "Id": 0,
+  "Name": "Цепь отключения (тест)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 0,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср.МФТО",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Ср.АМТЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Сброс",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср.защит",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Ср.защит (фиксация)",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

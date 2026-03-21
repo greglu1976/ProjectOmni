@@ -1,0 +1,86 @@
+%\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Логика отключения В}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
+
+
+\item
+Логика отключения В1(ЛВ)ВН, В2(ОВ) аналогичны, будет рассмотрена только В1(ЛВ). 
+
+\item
+Логика отключения В1(ЛВ) выводится накладкой \textbf{«ЛО В1(ЛВ)»}.
+
+\item
+Цепь отключения В1(ЛВ) выводится накладкой \textbf{«ЦО В1(ЛВ)»}. Время возврата импульса на 
+отключение регулируется уставкой \textbf{«Tвозвр откл В1(ЛВ)»}. На отключение В1(ЛВ) формируется 
+следующими сигналами: 
+
+\begin{itemize}
+    \item от сигнала «ЛО осн. РЗ»;
+    \item от сигнала «ЛО рез. РЗ»;
+    \item от сигнала «Откл. рез. защ» 
+\end{itemize}
+
+\item
+Запрет АПВ В1(ЛВ) выводится накладкой \textbf{«ЗАПВ В1(ЛВ)»}. Длительной импульса времени запрета 
+ПАВ регулируется уставкой \textbf{«Тимп ЗАПВ В1(ЛВ)ВН»}. Запрет АПВ формируется следующими сигналами: 
+
+\begin{itemize}
+    \item от сигнала «ЛО осн. РЗ»;
+    \item от сигнала «ЛО рез. РЗ»; 
+    \item от сигнала «Откл. рез. защ» 
+\end{itemize}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/761.9901 ЛО В БСК/img/Logic_otklQ.pdf}
+\captionof{figure}{Функциональная схема логики отключения В1(ЛВ)ВН}\label{pict:Logic_otklQ}
+\end{figure}
+
+
+
+
+
+
+
+
+\small
+\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
+\begin{longtable}
+{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
+\caption{Перечень уставочных параметров функции логики отключения В1(ЛВ)ВН\hfill\vspace{-0.5\baselineskip}}\label{ksn:tbl2} \\ 
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
+\hhline{|-|-|-|-|}
+\endfirsthead
+
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ksn:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
+\hhline{|-|-|-|-|}
+\endhead
+\hhline{|-|-|-|-|}
+
+\endfoot
+\endlastfoot
+
+%%%%%%%%%%%%содержимое%%%%%%%%%%%%%%
+
+\end{longtable}
+\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
+\normalsize
+
+
+
+
+
+
+
+
+
+
+\end{enumerate} 

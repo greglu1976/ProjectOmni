@@ -1,0 +1,185 @@
+{
+  "Id": 0,
+  "Name": "test_импульс",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 0,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ia",
+      "Usage": "Input",
+      "DataType": "Single"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Меандр",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "9a83ad67-1fe6-4414-82a3-733670692b06",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 1.0,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "9a83ad67-1fe6-4414-82a3-733670692b06",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 1.0,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Iср_импульс_таймер",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "67604be7-88f9-4651-a4f1-342a927143d3",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_k_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.95,
+          "LogicValue": {
+            "Origin": 0.95,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "67604be7-88f9-4651-a4f1-342a927143d3",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_k_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.95,
+          "LogicValue": {
+            "Origin": 0.95,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "k возврата",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "c553e885-c2b2-42c6-a05e-6a485919aa5a",
+          "Name": "Meandr_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1000,
+          "LogicValue": {
+            "Origin": 1000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "c553e885-c2b2-42c6-a05e-6a485919aa5a",
+          "Name": "Meandr_1_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1000,
+          "LogicValue": {
+            "Origin": 1000,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 100000,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "Т(время)_меандр",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

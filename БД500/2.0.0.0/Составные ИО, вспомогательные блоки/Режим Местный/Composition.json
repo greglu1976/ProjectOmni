@@ -1,0 +1,617 @@
+{
+  "ConstantBlocks": [],
+  "EndConnectors": [],
+  "StartConnectors": [],
+  "InputBlocks": [
+    {
+      "Output": {
+        "Id": "b2ce1814-fb1b-4623-9525-ad0e04853559",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Boolean",
+        "LegUsage": "Output",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "df8adbee-6c57-441a-abe8-4648cd5df887",
+        "Name": "Isklyuchayuschee_ILI2_1_x2",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": false,
+        "DataType": "Boolean"
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Вход[Boolean]_1",
+      "DisplayName": "Режим Местный (ФК)",
+      "Version": 1,
+      "Type": "InputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "361f4ee1-0c61-41c9-b839-8560763177e9",
+          "LibraryId": "a57d0580-c7d0-4f53-8c69-a04a6ab187cc",
+          "SchemaNodeType": "InputBlock"
+        },
+        "Specification": {
+          "Id": 65000,
+          "Name": "Вход[Boolean]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "InputBlock",
+          "InputLegs": [],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M4.46,0C2.15,0,0,2.15,0,4.46L0,24.46C0,26.61,2.15,28,4.46,28L151.08,28.12C152.53,28.12,153.88,27.39,154.66,26.27L154.66,26.27 165,16.08A5.29,5.29,27.01,0,0,165,12.08L154.66,2.02C154.66,2.02 154.66,2.02 154.66,2.02 153.88,0.89 152.53,0.15 151.08,0.15L4.46,0z",
+            "M23,0L23,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": 150.0,
+        "Y": 281.0
+      },
+      "Id": "bc946786-51a1-4ed9-90f9-d1a38df0352f"
+    }
+  ],
+  "OutputBlocks": [
+    {
+      "Input": {
+        "Id": "851de1ce-157b-481d-b92f-59509417fe12",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Boolean",
+        "LegUsage": "Input",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "b6c8304b-2c8c-4791-a43f-738641afeed0",
+        "Name": "Trigger_energonez_RS_1_T",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": false,
+        "DataType": "Boolean"
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Выход[Boolean]_1",
+      "DisplayName": "Режим местный (ИЭУ)",
+      "Version": 1,
+      "Type": "OutputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "ff98532f-3051-47bc-8e2a-118f3b388793",
+          "LibraryId": "a57d0580-c7d0-4f53-8c69-a04a6ab187cc",
+          "SchemaNodeType": "OutputBlock"
+        },
+        "Specification": {
+          "Id": 65050,
+          "Name": "Выход[Boolean]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "OutputBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M160.54,0C162.85,0,165,2.15,165,4.46L165,24.46A4,4,0,0,1,160.54,28L13.92,28.12C12.47,28.12,11.12,27.39,10.34,26.27L0,16.08A5.29,5.29,0,0,1,0,12.08L10.34,2.02C11.12,0.89,12.47,0.15,13.92,0.15L160.54,0z",
+            "M142,0L142,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": 1360.0,
+        "Y": 261.0
+      },
+      "Id": "f9928a0e-c065-402b-9345-8d2b65a22ced"
+    }
+  ],
+  "SettingBlocks": [],
+  "RetainBlocks": [],
+  "PrimitiveBlocks": [
+    {
+      "Inputs": [
+        {
+          "Id": "a0208363-b4f7-41ba-8aa0-42f110c002d7",
+          "Index": 0,
+          "Name": "x1",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        },
+        {
+          "Id": "1535f017-588c-48a3-ad89-b5af95ebe2e5",
+          "Index": 1,
+          "Name": "x2",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0230f7b5-913b-41ae-a7e4-4285dab692e1",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Исключающее ИЛИ2_1",
+      "DisplayName": "Исключающее ИЛИ2_1",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "1c896cec-b9b3-4263-a273-6a337915302c",
+          "LibraryId": "a57d0580-c7d0-4f53-8c69-a04a6ab187cc",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 141,
+          "Name": "Исключающее ИЛИ2",
+          "Description": null,
+          "Directory": "Логические элементы",
+          "Scope": "Исключающее ИЛИ",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x1",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            },
+            {
+              "Index": 1,
+              "Name": "x2",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 570.0,
+        "Y": 240.0
+      },
+      "Id": "594c9eaf-b19f-435c-b21d-1f72da29c2e2"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "3482eb15-4df3-4015-8699-e06a7e98eb84",
+          "Index": 0,
+          "Name": "S",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        },
+        {
+          "Id": "fcad20d8-e12b-49cd-bdd8-f01f4bb9fcb8",
+          "Index": 1,
+          "Name": "R",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1958e12e-462a-44e4-b280-96db66a8eb8b",
+          "Index": 0,
+          "Name": "T",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [
+        {
+          "Id": "59fa1ebc-0a92-4052-8989-14e7b7782def",
+          "Index": 0,
+          "Name": "retain",
+          "DataType": "Boolean",
+          "LegUsage": "Retain",
+          "CanLink": false
+        }
+      ],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Триггер энергонез. RS_1",
+      "DisplayName": "Триггер энергонез. RS_1",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "fdcb7e98-958f-44d2-8454-0ef18a04d3c9",
+          "LibraryId": "a57d0580-c7d0-4f53-8c69-a04a6ab187cc",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 273,
+          "Name": "Триггер энергонез. RS",
+          "Description": null,
+          "Directory": "Триггеры",
+          "Scope": "Триггер",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "S",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            },
+            {
+              "Index": 1,
+              "Name": "R",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "T",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [
+            {
+              "Index": 0,
+              "Name": "retain",
+              "Usage": "Retain",
+              "DataType": "Boolean"
+            }
+          ],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 1090.0,
+        "Y": 240.0
+      },
+      "Id": "0381bac8-feb1-42b1-b53e-c8ee6fdc3db2"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "573c174a-6030-47bb-b358-b07526a2de0a",
+          "Index": 0,
+          "Name": "x",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "abaaca59-a988-4052-bfee-f921a2fabb35",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "НЕ_1",
+      "DisplayName": "НЕ_1",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "21c9ee90-ce82-4c32-be54-eb79d9a2cebf",
+          "LibraryId": "a57d0580-c7d0-4f53-8c69-a04a6ab187cc",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 258,
+          "Name": "НЕ",
+          "Description": null,
+          "Directory": "Логические элементы",
+          "Scope": "НЕ",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 830.0,
+        "Y": 300.0
+      },
+      "Id": "63b42ce9-79c7-4cbc-8277-63a0f0e4acc5"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "bb40d388-882b-476f-9089-a3ffa95e7d59",
+          "Index": 0,
+          "Name": "in0",
+          "DataType": "Boolean",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0e9ba90d-79b9-4512-9083-658716d38638",
+          "Index": 0,
+          "Name": "out0",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "FB_Feedback_bool_1",
+      "DisplayName": "FB_Feedback_bool_1",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "e8d826ae-1a88-4b8d-810d-a584bfea1cc2",
+          "LibraryId": "a57d0580-c7d0-4f53-8c69-a04a6ab187cc",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 65250,
+          "Name": "FB_Feedback_bool",
+          "Description": null,
+          "Directory": "Интерфейсные блоки",
+          "Scope": "Обратная связь",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "in0",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "out0",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 310.0,
+        "Y": 190.0
+      },
+      "Id": "1ca2e250-8a74-4fda-a941-586898d1c568"
+    }
+  ],
+  "MacroBlocks": [],
+  "FunctionalBlocks": [],
+  "Links": [
+    {
+      "Id": "5dbbffa7-054e-4b73-8a7e-bb433a7647a8",
+      "SchemaNodeFromId": "bc946786-51a1-4ed9-90f9-d1a38df0352f",
+      "SchemaNodeToId": "594c9eaf-b19f-435c-b21d-1f72da29c2e2",
+      "LegFromId": "b2ce1814-fb1b-4623-9525-ad0e04853559",
+      "LegToId": "1535f017-588c-48a3-ad89-b5af95ebe2e5",
+      "BendPoints": []
+    },
+    {
+      "Id": "fa89ac06-cae5-4a8a-8fce-959c079287d9",
+      "SchemaNodeFromId": "594c9eaf-b19f-435c-b21d-1f72da29c2e2",
+      "SchemaNodeToId": "0381bac8-feb1-42b1-b53e-c8ee6fdc3db2",
+      "LegFromId": "0230f7b5-913b-41ae-a7e4-4285dab692e1",
+      "LegToId": "3482eb15-4df3-4015-8699-e06a7e98eb84",
+      "BendPoints": []
+    },
+    {
+      "Id": "dd04a7ae-a3e0-4976-ae9d-94c61a196903",
+      "SchemaNodeFromId": "63b42ce9-79c7-4cbc-8277-63a0f0e4acc5",
+      "SchemaNodeToId": "0381bac8-feb1-42b1-b53e-c8ee6fdc3db2",
+      "LegFromId": "abaaca59-a988-4052-bfee-f921a2fabb35",
+      "LegToId": "fcad20d8-e12b-49cd-bdd8-f01f4bb9fcb8",
+      "BendPoints": [
+        {
+          "X": 1080.0,
+          "Y": 335.0
+        },
+        {
+          "X": 1080.0,
+          "Y": 295.0
+        }
+      ]
+    },
+    {
+      "Id": "6aaa68f6-e52f-47ed-a3fe-d96c70a41e9d",
+      "SchemaNodeFromId": "594c9eaf-b19f-435c-b21d-1f72da29c2e2",
+      "SchemaNodeToId": "63b42ce9-79c7-4cbc-8277-63a0f0e4acc5",
+      "LegFromId": "0230f7b5-913b-41ae-a7e4-4285dab692e1",
+      "LegToId": "573c174a-6030-47bb-b358-b07526a2de0a",
+      "BendPoints": [
+        {
+          "X": 820.0,
+          "Y": 275.0
+        },
+        {
+          "X": 820.0,
+          "Y": 335.0
+        }
+      ]
+    },
+    {
+      "Id": "025b6135-3d5d-4652-bfad-f28525b633d0",
+      "SchemaNodeFromId": "1ca2e250-8a74-4fda-a941-586898d1c568",
+      "SchemaNodeToId": "594c9eaf-b19f-435c-b21d-1f72da29c2e2",
+      "LegFromId": "0e9ba90d-79b9-4512-9083-658716d38638",
+      "LegToId": "a0208363-b4f7-41ba-8aa0-42f110c002d7",
+      "BendPoints": [
+        {
+          "X": 560.0,
+          "Y": 225.0
+        },
+        {
+          "X": 560.0,
+          "Y": 275.0
+        }
+      ]
+    },
+    {
+      "Id": "09018207-1392-4bcb-90a7-4e0523ed3f46",
+      "SchemaNodeFromId": "0381bac8-feb1-42b1-b53e-c8ee6fdc3db2",
+      "SchemaNodeToId": "1ca2e250-8a74-4fda-a941-586898d1c568",
+      "LegFromId": "1958e12e-462a-44e4-b280-96db66a8eb8b",
+      "LegToId": "bb40d388-882b-476f-9089-a3ffa95e7d59",
+      "BendPoints": [
+        {
+          "X": 1347.0,
+          "Y": 275.0
+        },
+        {
+          "X": 1347.0,
+          "Y": 150.0
+        },
+        {
+          "X": 293.0,
+          "Y": 150.0
+        },
+        {
+          "X": 293.0,
+          "Y": 225.0
+        }
+      ]
+    },
+    {
+      "Id": "ad387b6c-8e40-4936-a0f5-9047edc85cc6",
+      "SchemaNodeFromId": "0381bac8-feb1-42b1-b53e-c8ee6fdc3db2",
+      "SchemaNodeToId": "f9928a0e-c065-402b-9345-8d2b65a22ced",
+      "LegFromId": "1958e12e-462a-44e4-b280-96db66a8eb8b",
+      "LegToId": "851de1ce-157b-481d-b92f-59509417fe12",
+      "BendPoints": []
+    }
+  ],
+  "LegRelations": [
+    {
+      "LegName": "Режим местный (ИЭУ)",
+      "SchemaBlockName": "Выход[Boolean]_1"
+    },
+    {
+      "LegName": "Режим Местный (ФК)",
+      "SchemaBlockName": "Вход[Boolean]_1"
+    }
+  ]
+}

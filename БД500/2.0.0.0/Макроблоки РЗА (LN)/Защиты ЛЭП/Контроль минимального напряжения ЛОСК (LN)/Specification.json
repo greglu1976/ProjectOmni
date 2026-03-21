@@ -1,0 +1,117 @@
+{
+  "Id": 0,
+  "Name": "Контроль минимального напряжения ЛОСК (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ua",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "Ub",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "Uc",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 3,
+      "Name": "ЛЭП отключена",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "БНН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Вывод ЛС",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Контр.Uлоск",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "504f9e64-c8fb-4711-aa97-6bdd00ee416a",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100.0,
+          "LogicValue": {
+            "Origin": 100.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "504f9e64-c8fb-4711-aa97-6bdd00ee416a",
+          "Name": "Rele_s_k_tom_vozvrata_min_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100.0,
+          "LogicValue": {
+            "Origin": 100.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Uср ЛОСК",
+      "Usage": "Setting",
+      "DataType": "Single"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

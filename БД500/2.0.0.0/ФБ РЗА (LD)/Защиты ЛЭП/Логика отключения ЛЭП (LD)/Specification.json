@@ -1,0 +1,430 @@
+{
+  "Id": 0,
+  "Name": "Логика отключения ЛЭП (LD)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "FunctionalBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Вывод ЛО ЛЭП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Ср.осн.защиты",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "Ср.МФТО",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "Ср.ДЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Ср.АУ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Ср.ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "Ср.Тоткл",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "Ср.ТУ ОТФ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "Ср.АМТЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "Ср.ТУ ДЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "Ср.ТУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "ЛОСК ТУ ДЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "ЛОСК ТУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "Ср.УРОВ В1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 15,
+      "Name": "Ср.УРОВ В2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 16,
+      "Name": "Ср.ТЗО",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 17,
+      "Name": "Внеш.УРОВ от РЗА Э1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 18,
+      "Name": "Внеш.УРОВ от РЗА Э2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 19,
+      "Name": "Внеш.УРОВ от РЗА ЛЭП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 20,
+      "Name": "Внеш.УРОВ от РЗА ОВ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 21,
+      "Name": "Р4 В2 отключен",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 22,
+      "Name": "Р4 В2 включен",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 23,
+      "Name": "П.осн.защиты",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 24,
+      "Name": "П.МФТО",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 25,
+      "Name": "П.ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 26,
+      "Name": "П.ДЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 27,
+      "Name": "П.АМТЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 28,
+      "Name": "Ср.ДЗ-ФФ-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 29,
+      "Name": "Ср.ДЗ-ФФ-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 30,
+      "Name": "Ср.ДЗ-ФФ-3",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 31,
+      "Name": "Ср.ДЗ-ФФ-4",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 32,
+      "Name": "Ср.ДЗ-ФФ-5",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 33,
+      "Name": "Ср.ДЗ-ФФ-6",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 34,
+      "Name": "Ср.ДЗ-ФЗ-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 35,
+      "Name": "Ср.ДЗ-ФЗ-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 36,
+      "Name": "Ср.ДЗ-ФЗ-3",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 37,
+      "Name": "Ср.ТНЗНП-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 38,
+      "Name": "Ср.ТНЗНП-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 39,
+      "Name": "Ср.ТНЗНП-3",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 40,
+      "Name": "Ср.ТНЗНП-4",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 41,
+      "Name": "Ср.ТНЗНП-5",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 42,
+      "Name": "Ср.ТНЗНП-6",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 43,
+      "Name": "Ср.АМТЗ-Ф-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 44,
+      "Name": "Ср.АМТЗ-ОП-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 45,
+      "Name": "Ср.АМТЗ-НП-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 46,
+      "Name": "Ср.АМТЗ-Ф-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 47,
+      "Name": "Ср.АМТЗ-ОП-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 48,
+      "Name": "Ср.АМТЗ-НП-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 49,
+      "Name": "Ср.ОУ-бв ДЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 50,
+      "Name": "Ср.ОУ ДЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 51,
+      "Name": "Ср.ОУ-бв ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 52,
+      "Name": "Ср.ОУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 53,
+      "Name": "Ср.ПУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 54,
+      "Name": "Ср.ЗНР",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 55,
+      "Name": "Ср.ТЗО-Ф",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 56,
+      "Name": "Ср.ТЗО-НП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 57,
+      "Name": "Ср.Внеш.УРОВ от РЗА Э1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 58,
+      "Name": "Ср.Внеш.УРОВ от РЗА Э2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 59,
+      "Name": "Ср.Внеш.УРОВ от РЗА ЛЭП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 60,
+      "Name": "Ср.Внеш.УРОВ от РЗА ОВ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 61,
+      "Name": "Внешн.запрет АПВ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 62,
+      "Name": "Местное управление ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср.защит",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Останов ВЧ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Ср.защит на ТУ ОТФ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "Ср.Внеш.УРОВ от РЗА ОВ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "Пуск защит",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Общий запрет АПВ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

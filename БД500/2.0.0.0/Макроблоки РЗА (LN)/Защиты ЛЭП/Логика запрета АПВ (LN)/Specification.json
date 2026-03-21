@@ -1,0 +1,2901 @@
+{
+  "Id": 0,
+  "Name": "Логика запрета АПВ (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Вывод ЛО ЛЭП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Осн.защита сработала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "Ср.ДЗ-ФФ-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "Ср.ДЗ-ФФ-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Ср.ДЗ-ФФ-3",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Ср.ДЗ-ФФ-4",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "Ср.ДЗ-ФФ-5",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "Ср.ДЗ-ФФ-6",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "Ср.ДЗ-ФЗ-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "Ср.ДЗ-ФЗ-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "Ср.ДЗ-ФЗ-3",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "Ср.ТНЗНП-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "Ср.ТНЗНП-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "Ср.ТНЗНП-3",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 15,
+      "Name": "Ср.ТНЗНП-4",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 16,
+      "Name": "Ср.ТНЗНП-5",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 17,
+      "Name": "Ср.ТНЗНП-6",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 18,
+      "Name": "Ср.АМТЗ-Ф-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 19,
+      "Name": "Ср.АМТЗ-ОП-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 20,
+      "Name": "Ср.АМТЗ-НП-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 21,
+      "Name": "Ср.АМТЗ-Ф-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 22,
+      "Name": "Ср.АМТЗ-ОП-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 23,
+      "Name": "Ср.АМТЗ-НП-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 24,
+      "Name": "Ср.ОУ-бв ДЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 25,
+      "Name": "Ср.ОУ ДЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 26,
+      "Name": "Ср.ОУ-бв ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 27,
+      "Name": "Ср.ОУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 28,
+      "Name": "Ср.ПУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 29,
+      "Name": "Ср.АУ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 30,
+      "Name": "Ср.ЗНР",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 31,
+      "Name": "Ср.МФТО",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 32,
+      "Name": "Ср.ТЗО-Ф",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 33,
+      "Name": "Ср.ТЗО-НП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 34,
+      "Name": "Ср.Тоткл",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 35,
+      "Name": "Ср.ТУ ОТФ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 36,
+      "Name": "Ср.ТУ ДЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 37,
+      "Name": "Ср.ТУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 38,
+      "Name": "ЛОСК ТУ ДЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 39,
+      "Name": "ЛОСК ТУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 40,
+      "Name": "Ср.УРОВ В1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 41,
+      "Name": "Ср.УРОВ В2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 42,
+      "Name": "Ср.Внеш.УРОВ от РЗА Э1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 43,
+      "Name": "Ср.Внеш.УРОВ от РЗА Э2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 44,
+      "Name": "Ср.Внеш.УРОВ от РЗА ЛЭП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 45,
+      "Name": "Ср.Внеш.УРОВ от РЗА ОВ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 46,
+      "Name": "Внешн.запрет АПВ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 47,
+      "Name": "Местное управление ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Общий запрет АПВ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "7ab6dc88-369a-4e59-ab35-1fcd81d5f7af",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "7ab6dc88-369a-4e59-ab35-1fcd81d5f7af",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "ЛО ЛЭП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "75799a00-cf46-4b02-a1ea-58642e43c552",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "75799a00-cf46-4b02-a1ea-58642e43c552",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "Запрет АПВ от осн.защиты",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "150a56c9-cf54-4605-ac69-dc6c1856063e",
+          "Name": "Programmnyj_klyuch_2_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "150a56c9-cf54-4605-ac69-dc6c1856063e",
+          "Name": "Programmnyj_klyuch_2_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "Запрет АПВ от ДЗ-ФФ-1",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "027852c2-3401-4d7a-8ed9-74edc053137d",
+          "Name": "Programmnyj_klyuch_3_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "027852c2-3401-4d7a-8ed9-74edc053137d",
+          "Name": "Programmnyj_klyuch_3_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 3,
+      "Name": "Запрет АПВ от ДЗ-ФФ-2",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "6e1b7737-6ee8-482c-845c-af871529e611",
+          "Name": "Programmnyj_klyuch_4_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "6e1b7737-6ee8-482c-845c-af871529e611",
+          "Name": "Programmnyj_klyuch_4_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 4,
+      "Name": "Запрет АПВ от ДЗ-ФФ-3",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "ca9bd791-cb70-47b3-a82a-d6f3bd7a3951",
+          "Name": "Programmnyj_klyuch_5_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "ca9bd791-cb70-47b3-a82a-d6f3bd7a3951",
+          "Name": "Programmnyj_klyuch_5_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 5,
+      "Name": "Запрет АПВ от ДЗ-ФФ-4",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "16b6a17d-147a-4d83-af84-d7d1d43a8918",
+          "Name": "Programmnyj_klyuch_6_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "16b6a17d-147a-4d83-af84-d7d1d43a8918",
+          "Name": "Programmnyj_klyuch_6_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 6,
+      "Name": "Запрет АПВ от ДЗ-ФФ-5",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "e107e661-b88a-4e05-ba01-b11a5b2d06fe",
+          "Name": "Programmnyj_klyuch_7_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "e107e661-b88a-4e05-ba01-b11a5b2d06fe",
+          "Name": "Programmnyj_klyuch_7_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 7,
+      "Name": "Запрет АПВ от ДЗ-ФФ-6",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "64c91c61-bf44-4f6e-9c6d-8d2760e40ba6",
+          "Name": "Programmnyj_klyuch_8_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "64c91c61-bf44-4f6e-9c6d-8d2760e40ba6",
+          "Name": "Programmnyj_klyuch_8_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 8,
+      "Name": "Запрет АПВ от ДЗ-ФЗ-1",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "6223005f-c6d8-4b97-87d3-ac247bf0b877",
+          "Name": "Programmnyj_klyuch_9_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "6223005f-c6d8-4b97-87d3-ac247bf0b877",
+          "Name": "Programmnyj_klyuch_9_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 9,
+      "Name": "Запрет АПВ от ДЗ-ФЗ-2",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "810aa731-e7a9-4c1f-a2f3-f489c3352de8",
+          "Name": "Programmnyj_klyuch_10_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "810aa731-e7a9-4c1f-a2f3-f489c3352de8",
+          "Name": "Programmnyj_klyuch_10_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 10,
+      "Name": "Запрет АПВ от ДЗ-ФЗ-3",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "bbf5381e-c9d3-425c-b31d-66475974f769",
+          "Name": "Programmnyj_klyuch_11_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "bbf5381e-c9d3-425c-b31d-66475974f769",
+          "Name": "Programmnyj_klyuch_11_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 11,
+      "Name": "Запрет АПВ от ТНЗНП-1",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "d893ace0-83ce-42d9-b3ff-52256ae8f1b4",
+          "Name": "Programmnyj_klyuch_12_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "d893ace0-83ce-42d9-b3ff-52256ae8f1b4",
+          "Name": "Programmnyj_klyuch_12_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 12,
+      "Name": "Запрет АПВ от ТНЗНП-2",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "032393c3-ba64-4fb1-be87-1974865659df",
+          "Name": "Programmnyj_klyuch_13_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "032393c3-ba64-4fb1-be87-1974865659df",
+          "Name": "Programmnyj_klyuch_13_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 13,
+      "Name": "Запрет АПВ от ТНЗНП-3",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "78cf521f-a823-4091-b704-e17f2cac5861",
+          "Name": "Programmnyj_klyuch_14_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "78cf521f-a823-4091-b704-e17f2cac5861",
+          "Name": "Programmnyj_klyuch_14_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 14,
+      "Name": "Запрет АПВ от ТНЗНП-4",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "424aab91-20af-4d0a-bed8-5471308a1bc9",
+          "Name": "Programmnyj_klyuch_15_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "424aab91-20af-4d0a-bed8-5471308a1bc9",
+          "Name": "Programmnyj_klyuch_15_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 15,
+      "Name": "Запрет АПВ от ТНЗНП-5",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "38b0a864-1d31-4dd0-9f61-5c4fdc35a4c2",
+          "Name": "Programmnyj_klyuch_16_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "38b0a864-1d31-4dd0-9f61-5c4fdc35a4c2",
+          "Name": "Programmnyj_klyuch_16_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 16,
+      "Name": "Запрет АПВ от ТНЗНП-6",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "2ac4e4bd-41ff-415e-abbf-9f412f83f00c",
+          "Name": "Programmnyj_klyuch_17_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "2ac4e4bd-41ff-415e-abbf-9f412f83f00c",
+          "Name": "Programmnyj_klyuch_17_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 17,
+      "Name": "Запрет АПВ от 1 ст.АМТЗ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "38acb5e9-eabd-4212-8c55-23e2beaf4257",
+          "Name": "Programmnyj_klyuch_18_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "38acb5e9-eabd-4212-8c55-23e2beaf4257",
+          "Name": "Programmnyj_klyuch_18_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 18,
+      "Name": "Запрет АПВ от 2 ст.АМТЗ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "265dc0eb-cb15-4664-b7db-f974da4e5d8b",
+          "Name": "Programmnyj_klyuch_19_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "265dc0eb-cb15-4664-b7db-f974da4e5d8b",
+          "Name": "Programmnyj_klyuch_19_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 19,
+      "Name": "Запрет АПВ от ОУ-бв ДЗ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "532fc80c-fd94-4ad0-8a4d-5ae056e69b29",
+          "Name": "Programmnyj_klyuch_20_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "532fc80c-fd94-4ad0-8a4d-5ae056e69b29",
+          "Name": "Programmnyj_klyuch_20_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 20,
+      "Name": "Запрет АПВ от ОУ ДЗ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "0442a52f-0dfa-476b-968a-b0c3b04a412b",
+          "Name": "Programmnyj_klyuch_21_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "0442a52f-0dfa-476b-968a-b0c3b04a412b",
+          "Name": "Programmnyj_klyuch_21_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 21,
+      "Name": "Запрет АПВ от ОУ-бв ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "7cdae27b-1ef5-48f7-8d05-d7210c03c659",
+          "Name": "Programmnyj_klyuch_22_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "7cdae27b-1ef5-48f7-8d05-d7210c03c659",
+          "Name": "Programmnyj_klyuch_22_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 22,
+      "Name": "Запрет АПВ от ОУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "4d437389-8359-4f3e-af3a-a205e7256a44",
+          "Name": "Programmnyj_klyuch_23_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "4d437389-8359-4f3e-af3a-a205e7256a44",
+          "Name": "Programmnyj_klyuch_23_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 23,
+      "Name": "Запрет АПВ от ПУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "4894d9ae-5406-4e9c-ac5f-482a517cf2cc",
+          "Name": "Programmnyj_klyuch_24_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "4894d9ae-5406-4e9c-ac5f-482a517cf2cc",
+          "Name": "Programmnyj_klyuch_24_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 24,
+      "Name": "Запрет АПВ от АУ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "2922321d-85cb-4249-80c0-fad98e9daf42",
+          "Name": "Programmnyj_klyuch_25_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "2922321d-85cb-4249-80c0-fad98e9daf42",
+          "Name": "Programmnyj_klyuch_25_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 25,
+      "Name": "Запрет АПВ от ЗНР",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "fb5ddb4c-50b0-48e4-a790-7753173eb310",
+          "Name": "Programmnyj_klyuch_26_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "fb5ddb4c-50b0-48e4-a790-7753173eb310",
+          "Name": "Programmnyj_klyuch_26_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 26,
+      "Name": "Запрет АПВ от МФТО",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "2a02f974-c293-4b10-80f2-78abbe702a29",
+          "Name": "Programmnyj_klyuch_27_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "2a02f974-c293-4b10-80f2-78abbe702a29",
+          "Name": "Programmnyj_klyuch_27_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 27,
+      "Name": "Запрет АПВ от ТЗО-Ф",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "ea35dd5b-a159-4a1f-a711-04147401ec29",
+          "Name": "Programmnyj_klyuch_28_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "ea35dd5b-a159-4a1f-a711-04147401ec29",
+          "Name": "Programmnyj_klyuch_28_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 28,
+      "Name": "Запрет АПВ от ТЗО-НП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "c7a88de0-3033-48b3-8726-1df28678877d",
+          "Name": "Programmnyj_klyuch_29_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "c7a88de0-3033-48b3-8726-1df28678877d",
+          "Name": "Programmnyj_klyuch_29_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 29,
+      "Name": "Запрет АПВ от Тоткл",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "8ad67e14-0168-478f-9c66-f9bc474a675a",
+          "Name": "Programmnyj_klyuch_30_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "8ad67e14-0168-478f-9c66-f9bc474a675a",
+          "Name": "Programmnyj_klyuch_30_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 30,
+      "Name": "Запрет АПВ от ТУ ОТФ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "d5f1ec2e-480d-48e7-ac5d-e05013b89813",
+          "Name": "Programmnyj_klyuch_31_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "d5f1ec2e-480d-48e7-ac5d-e05013b89813",
+          "Name": "Programmnyj_klyuch_31_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 31,
+      "Name": "Запрет АПВ от ТУ ДЗ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "c9e679dc-66a8-42b7-bf09-900cd904c2cd",
+          "Name": "Programmnyj_klyuch_32_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "c9e679dc-66a8-42b7-bf09-900cd904c2cd",
+          "Name": "Programmnyj_klyuch_32_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 32,
+      "Name": "Запрет АПВ от ТУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "ea56db39-bdf8-438a-84c7-294bd56cae64",
+          "Name": "Programmnyj_klyuch_33_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "ea56db39-bdf8-438a-84c7-294bd56cae64",
+          "Name": "Programmnyj_klyuch_33_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 33,
+      "Name": "Запрет АПВ от ЛОСК ТУ ДЗ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "e37cb34b-b970-4a37-a9db-71f65db02dc4",
+          "Name": "Programmnyj_klyuch_34_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "e37cb34b-b970-4a37-a9db-71f65db02dc4",
+          "Name": "Programmnyj_klyuch_34_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 34,
+      "Name": "Запрет АПВ от ЛОСК ТУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "c2706218-cd72-440a-a7f8-08e26aaa341e",
+          "Name": "Programmnyj_klyuch_35_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "c2706218-cd72-440a-a7f8-08e26aaa341e",
+          "Name": "Programmnyj_klyuch_35_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 35,
+      "Name": "Запрет АПВ при УРОВ от РЗА ЛЭП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "171260f7-0bc0-47f5-a458-d0dd995c5c37",
+          "Name": "Programmnyj_klyuch_36_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "171260f7-0bc0-47f5-a458-d0dd995c5c37",
+          "Name": "Programmnyj_klyuch_36_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": true,
+          "LogicValue": {
+            "Origin": true,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 36,
+      "Name": "Запрет АПВ при УРОВ от РЗА ОВ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

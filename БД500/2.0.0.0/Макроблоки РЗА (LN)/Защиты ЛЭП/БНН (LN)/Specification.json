@@ -1,0 +1,1457 @@
+{
+  "Id": 0,
+  "Name": "БНН (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "dU1",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "dI1",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "U1",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 3,
+      "Name": "ЛЭП отключена",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "ИО УРОВ В1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "ИО УРОВ В2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Ua",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 7,
+      "Name": "Ub",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 8,
+      "Name": "Uc",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 9,
+      "Name": "I2",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 10,
+      "Name": "I1",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 11,
+      "Name": "U2",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 12,
+      "Name": "Вывод БНН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "3I0",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 15,
+      "Name": "3U0 звезда",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 16,
+      "Name": "Uбнн",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 17,
+      "Name": "Uни",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 18,
+      "Name": "Uиф",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 19,
+      "Name": "Uфк",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 20,
+      "Name": "Uбнн ф.A",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 21,
+      "Name": "Uбнн ф.B",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 22,
+      "Name": "Uбнн ф.C",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 23,
+      "Name": "Автомат ТН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 24,
+      "Name": "Фикс.неиспр.ЦН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср.dU1 БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Ср.dI1 БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Обрыв 3 фаз",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "Ср.UI1 мин БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "Ср.Uф мин",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Ср.I2/I1 max БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Ср.U2 max БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "Обрыв 1/2 фаз",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "Ср.U2/U1 max БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "Обрыв НП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "Ср.3U0 max БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "ИО БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "БНН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "Вывод УКЕТ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "Неиспр.ЦН",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "87d948dc-5598-4829-b662-c453f901629e",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "87d948dc-5598-4829-b662-c453f901629e",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "dU1ср",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "138931e5-2629-4ec6-ba62-0055d16404bd",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_2_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 10.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "138931e5-2629-4ec6-ba62-0055d16404bd",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_2_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 10.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "dI1 комб.БНН",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "8c6243c1-edcb-4647-8af0-e505d4ed9f4d",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_3_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "8c6243c1-edcb-4647-8af0-e505d4ed9f4d",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_3_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 20.0,
+          "LogicValue": {
+            "Origin": 20.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "U1 мин БНН",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "2eb70dfa-9e8c-4c85-baf6-2f9b1c102e98",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Место ТН",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Шины",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Линия",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "2eb70dfa-9e8c-4c85-baf6-2f9b1c102e98",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Место ТН",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Шины",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Линия",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 3,
+      "Name": "Место ТН",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "f1363fc3-3b09-4008-bc21-7cd19954ba3a",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_4_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100.0,
+          "LogicValue": {
+            "Origin": 100.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "f1363fc3-3b09-4008-bc21-7cd19954ba3a",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_4_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 100.0,
+          "LogicValue": {
+            "Origin": 100.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 4,
+      "Name": "Uф мин БНН",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "1518c599-1127-4b66-88e2-7dbae8fd4d82",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_5_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "1518c599-1127-4b66-88e2-7dbae8fd4d82",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_5_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 5,
+      "Name": "I2/I1 комб.БНН",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "03685976-719f-4394-bf0f-b59d168d878c",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_7_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "03685976-719f-4394-bf0f-b59d168d878c",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_7_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "OriginSettingId": null
+      },
+      "Index": 6,
+      "Name": "U2/U1 комб.БНН",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "557ad0ef-4ea6-4f39-a475-de61d6f72c8b",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_4_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "557ad0ef-4ea6-4f39-a475-de61d6f72c8b",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_4_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 7,
+      "Name": "БНН комб.",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "a5aa6b4f-fb8d-4d3d-82de-b2d49b753549",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_8_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "a5aa6b4f-fb8d-4d3d-82de-b2d49b753549",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_8_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 8,
+      "Name": "3I0/I1 БНН",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "c72cdc5b-5e7f-4b73-982f-dbf8397494f2",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_9_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "c72cdc5b-5e7f-4b73-982f-dbf8397494f2",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_9_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "OriginSettingId": null
+      },
+      "Index": 9,
+      "Name": "3U0ср звезда",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "bed2f111-bd0e-48e4-a5c7-c78f943bc865",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_5_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "bed2f111-bd0e-48e4-a5c7-c78f943bc865",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_5_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 10,
+      "Name": "Контр.обрыва НП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "1a28dcfc-dfc3-4edf-81b0-b7a246f716f4",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_10_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "1a28dcfc-dfc3-4edf-81b0-b7a246f716f4",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_10_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 11,
+      "Name": "Uср ИО БНН",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "45610311-8551-4211-ba1b-76248dc3e7c9",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_11_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 5.0,
+          "LogicValue": {
+            "Origin": 5.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "45610311-8551-4211-ba1b-76248dc3e7c9",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_11_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 5.0,
+          "LogicValue": {
+            "Origin": 5.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "OriginSettingId": null
+      },
+      "Index": 12,
+      "Name": "0.05Uном_1",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "e1f36c1b-8398-4208-b845-81406a570dc1",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_12_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 9.0,
+          "LogicValue": {
+            "Origin": 9.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "e1f36c1b-8398-4208-b845-81406a570dc1",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_12_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 9.0,
+          "LogicValue": {
+            "Origin": 9.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "OriginSettingId": null
+      },
+      "Index": 13,
+      "Name": "0.05Uном_2",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "5b0bc2ad-2b0a-4a1b-bc3c-3a7d92852fe9",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_6_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "5b0bc2ad-2b0a-4a1b-bc3c-3a7d92852fe9",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_6_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 14,
+      "Name": "ИО БНН",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "e06ee7a5-e1b0-4791-89cd-7eaf82ebf6e2",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_7_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "e06ee7a5-e1b0-4791-89cd-7eaf82ebf6e2",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_7_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 15,
+      "Name": "Контр.3I0 БНН-Ф",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "2c909f60-7ea3-4762-961b-5e1d67ad24b8",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_13_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "2c909f60-7ea3-4762-961b-5e1d67ad24b8",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_13_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10.0,
+          "LogicValue": {
+            "Origin": 10.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 100.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 16,
+      "Name": "Uср БНН-Ф",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "7d10a1e1-f6d2-47ad-8e66-23729baa417c",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_14_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "7d10a1e1-f6d2-47ad-8e66-23729baa417c",
+          "Name": "Rele_s_k_tom_vozvrata_max_float_14_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 1.0,
+          "LogicValue": {
+            "Origin": 1.0,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 40.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "OriginSettingId": null
+      },
+      "Index": 17,
+      "Name": "Iном",
+      "Usage": "Setting",
+      "DataType": "Single"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "9ec43111-4fad-47cf-802d-6ec1344cb2a1",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_8_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "9ec43111-4fad-47cf-802d-6ec1344cb2a1",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_8_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 18,
+      "Name": "БНН-Ф",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "30f968d6-31d2-4e42-85ca-20a6c8b31fd8",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_9_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Контакт АВ ТН",
+            "PredefinedValues": [
+              {
+                "DisplayText": "НЗ",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "НО",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "30f968d6-31d2-4e42-85ca-20a6c8b31fd8",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_9_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Контакт АВ ТН",
+            "PredefinedValues": [
+              {
+                "DisplayText": "НЗ",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "НО",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 19,
+      "Name": "Конт.Автомат ТН",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "5e5f20e7-9b74-4de2-adb7-d12518a893d4",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_5_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 120,
+          "LogicValue": {
+            "Origin": 120,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 120,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "5e5f20e7-9b74-4de2-adb7-d12518a893d4",
+          "Name": "Nezavisimoe_RV_na_srabatyvanie_5_T_vremya",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 120,
+          "LogicValue": {
+            "Origin": 120,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 120,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 20,
+      "Name": "Тсигн неиспр.ЦН",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

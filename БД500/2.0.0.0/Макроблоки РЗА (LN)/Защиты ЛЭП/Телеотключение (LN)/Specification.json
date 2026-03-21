@@ -1,0 +1,795 @@
+{
+  "Id": 0,
+  "Name": "Телеотключение (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Прием Тоткл",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "БК-I-м",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "ЛЭП отключена",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "П.ДЗ-ФФ-1(б)",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "П.ДЗ-ФФ-1(м)",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "П.ДЗ-ФФ-2(б)",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "П.ДЗ-ФФ-2(м)",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "П.ДЗ-ФФ-3",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "П.ДЗ-ФФ-4",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "П.ДЗ-ФФ-5",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "П.ДЗ-ФФ-6",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "П.ДЗ-ФЗ-1(б)",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "П.ДЗ-ФЗ-1(м)",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "П.ДЗ-ФЗ-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "П.ДЗ-ФЗ-3",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 15,
+      "Name": "ИО ТНЗНП-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 16,
+      "Name": "ИО ТНЗНП-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 17,
+      "Name": "ИО ТНЗНП-3",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 18,
+      "Name": "ИО ТНЗНП-4",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 19,
+      "Name": "ИО ТНЗНП-5",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 20,
+      "Name": "ИО ТНЗНП-6",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 21,
+      "Name": "Вывод ЛС",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 22,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 23,
+      "Name": "Ср.УРОВ В1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 24,
+      "Name": "Ср.УРОВ В2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 25,
+      "Name": "Ср.Внеш.УРОВ от РЗА Э1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 26,
+      "Name": "Ср.Внеш.УРОВ от РЗА Э2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 27,
+      "Name": "Ср.Внеш.УРОВ от РЗА ЛЭП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 28,
+      "Name": "Ср.Внеш.УРОВ от РЗА ОВ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 29,
+      "Name": "Ср.ЗНР",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Ср.Тоткл",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Выход Тоткл",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "e0cfe14e-61c4-4c6a-a690-0d607d08b31c",
+          "Name": "Programmnyj_klyuch_2_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "e0cfe14e-61c4-4c6a-a690-0d607d08b31c",
+          "Name": "Programmnyj_klyuch_2_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Контр.Тоткл от БК-I-м",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "ebede633-d4bd-4a48-9226-ba3a9f1b10a4",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "ebede633-d4bd-4a48-9226-ba3a9f1b10a4",
+          "Name": "Programmnyj_klyuch_1_s",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "Контр.Тоткл от РПО",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "dc002b53-0a02-48a9-b6bd-a40090864231",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "dc002b53-0a02-48a9-b6bd-a40090864231",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 2,
+      "Name": "Прием Тоткл с контр.",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "aac9ff49-949e-404c-af3d-14fe24694fd1",
+          "Name": "Pereklyuchatel_Vkh_7_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Тоткл от ДЗ-ФФ",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "1 ступ.",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "2 ступ.",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "3 ступ.",
+                "SubstituteValue": 3
+              },
+              {
+                "DisplayText": "4 ступ.",
+                "SubstituteValue": 4
+              },
+              {
+                "DisplayText": "5 ступ.",
+                "SubstituteValue": 5
+              },
+              {
+                "DisplayText": "6 ступ.",
+                "SubstituteValue": 6
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "aac9ff49-949e-404c-af3d-14fe24694fd1",
+          "Name": "Pereklyuchatel_Vkh_7_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Тоткл от ДЗ-ФФ",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "1 ступ.",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "2 ступ.",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "3 ступ.",
+                "SubstituteValue": 3
+              },
+              {
+                "DisplayText": "4 ступ.",
+                "SubstituteValue": 4
+              },
+              {
+                "DisplayText": "5 ступ.",
+                "SubstituteValue": 5
+              },
+              {
+                "DisplayText": "6 ступ.",
+                "SubstituteValue": 6
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 3,
+      "Name": "Контр.Тоткл от ДЗ-ФФ",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "596d1961-1bad-49dd-a1ad-8a8a88e1975c",
+          "Name": "Pereklyuchatel_Vkh_4_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Тоткл от ДЗ-ФЗ",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "1 ступ.",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "2 ступ.",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "3 ступ.",
+                "SubstituteValue": 3
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "596d1961-1bad-49dd-a1ad-8a8a88e1975c",
+          "Name": "Pereklyuchatel_Vkh_4_bool_const_1_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Тоткл от ДЗ-ФЗ",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "1 ступ.",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "2 ступ.",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "3 ступ.",
+                "SubstituteValue": 3
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 4,
+      "Name": "Контр.Тоткл от ДЗ-ФЗ",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "794ea2ed-7742-4655-a17c-62a0b39aa251",
+          "Name": "Pereklyuchatel_Vkh_7_bool_const_2_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Тоткл от ТНЗНП",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "1 ступ.",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "2 ступ.",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "3 ступ.",
+                "SubstituteValue": 3
+              },
+              {
+                "DisplayText": "4 ступ.",
+                "SubstituteValue": 4
+              },
+              {
+                "DisplayText": "5 ступ.",
+                "SubstituteValue": 5
+              },
+              {
+                "DisplayText": "6 ступ.",
+                "SubstituteValue": 6
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "794ea2ed-7742-4655-a17c-62a0b39aa251",
+          "Name": "Pereklyuchatel_Vkh_7_bool_const_2_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Тоткл от ТНЗНП",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "1 ступ.",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "2 ступ.",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "3 ступ.",
+                "SubstituteValue": 3
+              },
+              {
+                "DisplayText": "4 ступ.",
+                "SubstituteValue": 4
+              },
+              {
+                "DisplayText": "5 ступ.",
+                "SubstituteValue": 5
+              },
+              {
+                "DisplayText": "6 ступ.",
+                "SubstituteValue": 6
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 5,
+      "Name": "Контр.Тоткл от ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "09f3f4e8-be5c-4bb6-8f29-69fb8777169f",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_2_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "09f3f4e8-be5c-4bb6-8f29-69fb8777169f",
+          "Name": "Pereklyuchatel_Vkh_2_bool_const_2_S",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "Ввод функции",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": 1
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 6,
+      "Name": "Тоткл",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

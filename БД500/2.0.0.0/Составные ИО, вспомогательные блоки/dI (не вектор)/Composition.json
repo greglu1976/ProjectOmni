@@ -1,0 +1,487 @@
+{
+  "ConstantBlocks": [],
+  "EndConnectors": [],
+  "StartConnectors": [],
+  "InputBlocks": [
+    {
+      "Output": {
+        "Id": "899ef24a-f20f-4277-b81a-039011455a3f",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Single",
+        "LegUsage": "Output",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "43fa28d3-34ad-461e-a3a7-de3de93c5072",
+        "Name": "Zaderzhka_1_x",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": 0.0,
+        "DataType": "Single"
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Вход[Single]_1",
+      "DisplayName": "I",
+      "Version": 1,
+      "Type": "InputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "bdd7e56a-5b52-4ea0-ba6f-80ba125c8358",
+          "LibraryId": "46418df6-1c38-4011-baee-3c10d2ab8f2a",
+          "SchemaNodeType": "InputBlock"
+        },
+        "Specification": {
+          "Id": 65009,
+          "Name": "Вход[Single]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "InputBlock",
+          "InputLegs": [],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Output",
+              "DataType": "Single"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M4,0L156,0A5,5,0,0,1,160,4L160,24A5,5,0,0,1,156,28L4,28A5,5,0,0,1,0,24L0,4A5,5,0,0,1,4,0z",
+            "M137,0L137,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": 160.0,
+        "Y": 261.0
+      },
+      "Id": "9f179905-f807-4fd7-8ff1-d13544de5c4a"
+    }
+  ],
+  "OutputBlocks": [
+    {
+      "Input": {
+        "Id": "f662ffea-3518-46ee-b755-a37f640dc9fc",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Single",
+        "LegUsage": "Input",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "8a11fa54-6245-47e7-92c8-e492c6da0dcd",
+        "Name": "Vychitanie_1_y",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": 0.0,
+        "DataType": "Single"
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Выход[Single]_1",
+      "DisplayName": "dI",
+      "Version": 1,
+      "Type": "OutputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "439b0866-dacc-43fc-9a80-eb224a40a840",
+          "LibraryId": "46418df6-1c38-4011-baee-3c10d2ab8f2a",
+          "SchemaNodeType": "OutputBlock"
+        },
+        "Specification": {
+          "Id": 65059,
+          "Name": "Выход[Single]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "OutputBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Input",
+              "DataType": "Single"
+            }
+          ],
+          "OutputLegs": [],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M4,28L156,28A5,5,0,0,0,160,24L160,4A5,5,0,0,0,156,0L4,0A5,5,0,0,0,0,4L0,24A5,5,0,0,0,4,28z",
+            "M23,28L23,0"
+          ]
+        }
+      },
+      "Position": {
+        "X": 890.0,
+        "Y": 261.0
+      },
+      "Id": "6d7988f0-7f70-430e-8d36-2af636333426"
+    }
+  ],
+  "SettingBlocks": [],
+  "RetainBlocks": [],
+  "PrimitiveBlocks": [
+    {
+      "Inputs": [
+        {
+          "Id": "650b54eb-ba04-4069-bf7a-31248431f46b",
+          "Index": 0,
+          "Name": "x",
+          "DataType": "Single",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "536e0e61-0701-47cc-b1b0-a9b250e0ad50",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Single",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [
+        {
+          "Setting": {
+            "Data": {
+              "Id": "b05759ee-4fd7-4dd3-aa9d-38e32c133bd1",
+              "Name": "T(время)",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 22,
+              "LogicValue": {
+                "Origin": 22,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": 0,
+              "Max": 65535,
+              "Step": 1,
+              "DataType": "UInt16",
+              "IsConstant": true
+            },
+            "SettingId": null,
+            "OriginData": {
+              "Id": "26b1a0df-dfd7-40a3-9667-8620bf8e3610",
+              "Name": "T(время)",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 0,
+              "LogicValue": {
+                "Origin": 0,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": 0,
+              "Max": 65535,
+              "Step": 1,
+              "DataType": "UInt16",
+              "IsConstant": false
+            },
+            "OriginSettingId": null
+          },
+          "Id": "1f6f57af-9bfd-4ef5-8229-f17272a63389",
+          "Index": 0,
+          "Name": "T(время)",
+          "DataType": "UInt16",
+          "LegUsage": "Setting",
+          "CanLink": false
+        }
+      ],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Задержка_1",
+      "DisplayName": "Задержка_1",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "23a89ccf-aa76-492c-a42a-c2c8224f1316",
+          "LibraryId": "46418df6-1c38-4011-baee-3c10d2ab8f2a",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 257,
+          "Name": "Задержка",
+          "Description": null,
+          "Directory": "Специальные",
+          "Scope": null,
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x",
+              "Usage": "Input",
+              "DataType": "Single"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Single"
+            }
+          ],
+          "SettingLegs": [
+            {
+              "Setting": {
+                "Data": {
+                  "Id": "00fb3696-7443-4875-a763-fbb252dde963",
+                  "Name": "T(время)",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0,
+                  "LogicValue": {
+                    "Origin": 0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": 0,
+                  "Max": 65535,
+                  "Step": 1,
+                  "DataType": "UInt16",
+                  "IsConstant": false
+                },
+                "SettingId": null,
+                "OriginData": {
+                  "Id": "00fb3696-7443-4875-a763-fbb252dde963",
+                  "Name": "T(время)",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0,
+                  "LogicValue": {
+                    "Origin": 0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": 0,
+                  "Max": 65535,
+                  "Step": 1,
+                  "DataType": "UInt16",
+                  "IsConstant": false
+                },
+                "OriginSettingId": null
+              },
+              "Index": 0,
+              "Name": "T(время)",
+              "Usage": "Setting",
+              "DataType": "UInt16"
+            }
+          ],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 350.0,
+        "Y": 310.0
+      },
+      "Id": "58d8a1fa-3fea-4b2e-ad27-61ae1244a014"
+    },
+    {
+      "Inputs": [
+        {
+          "Id": "f3ee03e2-2d94-4b9b-9579-3b7ff13b9c3f",
+          "Index": 0,
+          "Name": "x1",
+          "DataType": "Single",
+          "LegUsage": "Input",
+          "CanLink": true
+        },
+        {
+          "Id": "e97902f6-d241-44e2-8d2c-1e2b2596894e",
+          "Index": 1,
+          "Name": "x2",
+          "DataType": "Single",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0f04faf1-b400-4311-87fe-b71fc73968a2",
+          "Index": 0,
+          "Name": "y",
+          "DataType": "Single",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Вычитание_1",
+      "DisplayName": "Вычитание_1",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "0c749e2f-a155-4efe-a817-92a5e462ea98",
+          "LibraryId": "46418df6-1c38-4011-baee-3c10d2ab8f2a",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 158,
+          "Name": "Вычитание",
+          "Description": null,
+          "Directory": "Математика",
+          "Scope": "Сложение/Вычитание",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x1",
+              "Usage": "Input",
+              "DataType": "Single"
+            },
+            {
+              "Index": 1,
+              "Name": "x2",
+              "Usage": "Input",
+              "DataType": "Single"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "y",
+              "Usage": "Output",
+              "DataType": "Single"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 610.0,
+        "Y": 240.0
+      },
+      "Id": "bd4b7b08-55cf-424f-8c1d-66bb2cf6b6c7"
+    }
+  ],
+  "MacroBlocks": [],
+  "FunctionalBlocks": [],
+  "Links": [
+    {
+      "Id": "6af1e8a3-48af-4af3-b8bd-e6d680f80ba8",
+      "SchemaNodeFromId": "9f179905-f807-4fd7-8ff1-d13544de5c4a",
+      "SchemaNodeToId": "58d8a1fa-3fea-4b2e-ad27-61ae1244a014",
+      "LegFromId": "899ef24a-f20f-4277-b81a-039011455a3f",
+      "LegToId": "650b54eb-ba04-4069-bf7a-31248431f46b",
+      "BendPoints": [
+        {
+          "X": 340.0,
+          "Y": 275.0
+        },
+        {
+          "X": 340.0,
+          "Y": 345.0
+        }
+      ]
+    },
+    {
+      "Id": "2d33390f-e684-48e9-a8ab-216e3c533b3b",
+      "SchemaNodeFromId": "9f179905-f807-4fd7-8ff1-d13544de5c4a",
+      "SchemaNodeToId": "bd4b7b08-55cf-424f-8c1d-66bb2cf6b6c7",
+      "LegFromId": "899ef24a-f20f-4277-b81a-039011455a3f",
+      "LegToId": "f3ee03e2-2d94-4b9b-9579-3b7ff13b9c3f",
+      "BendPoints": []
+    },
+    {
+      "Id": "dbce4e1b-37c8-431e-9c82-cd694064e109",
+      "SchemaNodeFromId": "58d8a1fa-3fea-4b2e-ad27-61ae1244a014",
+      "SchemaNodeToId": "bd4b7b08-55cf-424f-8c1d-66bb2cf6b6c7",
+      "LegFromId": "536e0e61-0701-47cc-b1b0-a9b250e0ad50",
+      "LegToId": "e97902f6-d241-44e2-8d2c-1e2b2596894e",
+      "BendPoints": [
+        {
+          "X": 600.0,
+          "Y": 345.0
+        },
+        {
+          "X": 600.0,
+          "Y": 295.0
+        }
+      ]
+    },
+    {
+      "Id": "b5a5ac50-a2ea-41b9-a825-7ba261d25abe",
+      "SchemaNodeFromId": "bd4b7b08-55cf-424f-8c1d-66bb2cf6b6c7",
+      "SchemaNodeToId": "6d7988f0-7f70-430e-8d36-2af636333426",
+      "LegFromId": "0f04faf1-b400-4311-87fe-b71fc73968a2",
+      "LegToId": "f662ffea-3518-46ee-b755-a37f640dc9fc",
+      "BendPoints": []
+    }
+  ],
+  "LegRelations": [
+    {
+      "LegName": "I",
+      "SchemaBlockName": "Вход[Single]_1"
+    },
+    {
+      "LegName": "dI",
+      "SchemaBlockName": "Выход[Single]_1"
+    }
+  ]
+}

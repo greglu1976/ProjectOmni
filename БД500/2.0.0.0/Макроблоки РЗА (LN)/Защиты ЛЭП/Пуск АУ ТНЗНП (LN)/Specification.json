@@ -1,0 +1,181 @@
+{
+  "Id": 0,
+  "Name": "Пуск АУ ТНЗНП (LN)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "П.ТНЗНП-1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "П.ТНЗНП-2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "П.ТНЗНП-3",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "П.ТНЗНП-4",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "П.ТНЗНП-5",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "П.ТНЗНП-6",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "Вывод ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Пуск АУ ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "16a91897-75c7-48b4-9f43-3213a445c4f6",
+          "Name": "Ступень АУ ТНЗНП",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "АУ ТНЗНП",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "1 ступ.",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "2 ступ.",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "3 ступ.",
+                "SubstituteValue": 3
+              },
+              {
+                "DisplayText": "4 ступ.",
+                "SubstituteValue": 4
+              },
+              {
+                "DisplayText": "5 ступ.",
+                "SubstituteValue": 5
+              },
+              {
+                "DisplayText": "6 ступ.",
+                "SubstituteValue": 6
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "16a91897-75c7-48b4-9f43-3213a445c4f6",
+          "Name": "Ступень АУ ТНЗНП",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0,
+          "LogicValue": {
+            "Origin": 0,
+            "Description": null,
+            "PredefinedEnumKey": "АУ ТНЗНП",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Откл.",
+                "SubstituteValue": 0
+              },
+              {
+                "DisplayText": "1 ступ.",
+                "SubstituteValue": 1
+              },
+              {
+                "DisplayText": "2 ступ.",
+                "SubstituteValue": 2
+              },
+              {
+                "DisplayText": "3 ступ.",
+                "SubstituteValue": 3
+              },
+              {
+                "DisplayText": "4 ступ.",
+                "SubstituteValue": 4
+              },
+              {
+                "DisplayText": "5 ступ.",
+                "SubstituteValue": 5
+              },
+              {
+                "DisplayText": "6 ступ.",
+                "SubstituteValue": 6
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt16",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Ступень АУ ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "UInt16"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

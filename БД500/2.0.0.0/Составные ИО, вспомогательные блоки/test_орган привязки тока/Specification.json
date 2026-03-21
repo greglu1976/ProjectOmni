@@ -1,0 +1,163 @@
+{
+  "Id": 0,
+  "Name": "test_орган привязки тока",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 0,
+  "SchemaNodeType": "MacroBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "Фикс. Bn к 1С",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "Фикс. Bn к 2С",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Bn-ШСВ1",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "Bn-ШСВ2",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "Bn-ШСВ21",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Bn-ШСВ12",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "Привязка",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "54428ef3-2742-4d66-ac33-6aff9b5c3571",
+          "Name": "Rele_s_k_tom_vozvrata_max_uint32_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10,
+          "LogicValue": {
+            "Origin": 10,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "54428ef3-2742-4d66-ac33-6aff9b5c3571",
+          "Name": "Rele_s_k_tom_vozvrata_max_uint32_1_x_sr",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 10,
+          "LogicValue": {
+            "Origin": 10,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0,
+          "Max": 65535,
+          "Step": 1,
+          "DataType": "UInt32",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "x ср привязка",
+      "Usage": "Setting",
+      "DataType": "UInt32"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "a3fd4914-d550-49aa-90c2-118127981b53",
+          "Name": "Rele_s_k_tom_vozvrata_max_uint32_1_k_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.98,
+          "LogicValue": {
+            "Origin": 0.98,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "a3fd4914-d550-49aa-90c2-118127981b53",
+          "Name": "Rele_s_k_tom_vozvrata_max_uint32_1_k_vozvrata",
+          "Description": {
+            "Description": ""
+          },
+          "Value": 0.98,
+          "LogicValue": {
+            "Origin": 0.98,
+            "Description": null,
+            "PredefinedEnumKey": null,
+            "PredefinedValues": []
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.001,
+          "DataType": "Single",
+          "IsConstant": true
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "k возврата",
+      "Usage": "Setting",
+      "DataType": "Single"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

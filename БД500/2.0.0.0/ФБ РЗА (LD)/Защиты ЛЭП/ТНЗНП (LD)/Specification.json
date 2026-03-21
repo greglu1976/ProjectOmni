@@ -1,0 +1,517 @@
+{
+  "Id": 0,
+  "Name": "ТНЗНП (LD)",
+  "Description": null,
+  "Directory": null,
+  "Scope": null,
+  "Version": 20,
+  "SchemaNodeType": "FunctionalBlock",
+  "InputLegs": [
+    {
+      "Index": 0,
+      "Name": "3I0",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 1,
+      "Name": "Ф(3I0)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 2,
+      "Name": "3U0 звезда",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 3,
+      "Name": "3U0 треуг.",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 4,
+      "Name": "Ф(3U0 звезда)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 5,
+      "Name": "Ф(3U0 треуг.)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 6,
+      "Name": "I2",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 7,
+      "Name": "Ф(I2)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 8,
+      "Name": "U2",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 9,
+      "Name": "Ф(U2)",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 10,
+      "Name": "Ввод АУ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "БНН",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "БСТО",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "Ввод ОУ при выводе ОЗ",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "Авт.введенное ОУ выведено",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 15,
+      "Name": "Вывод ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 16,
+      "Name": "Вывод терминала",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 17,
+      "Name": "3I0_2г/3I0_1г",
+      "Usage": "Input",
+      "DataType": "Single"
+    },
+    {
+      "Index": 18,
+      "Name": "Вывод ЧС ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 19,
+      "Name": "Ввод ОУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 20,
+      "Name": "Ввод ОУ-бв ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 21,
+      "Name": "ШСВ/СВ выведен",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 22,
+      "Name": "ШСВ/СВ включен",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 23,
+      "Name": "ПУ от пар.ЛЭП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 24,
+      "Name": "Вывод ПУ ТНЗНП",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 25,
+      "Name": "ЛЭП включена",
+      "Usage": "Input",
+      "DataType": "Boolean"
+    }
+  ],
+  "OutputLegs": [
+    {
+      "Index": 0,
+      "Name": "ИО ТНЗНП-1",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 1,
+      "Name": "П.ТНЗНП-1",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 2,
+      "Name": "Ср.ТНЗНП-1",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 3,
+      "Name": "ИО ТНЗНП-2",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 4,
+      "Name": "П.ТНЗНП-2",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 5,
+      "Name": "Ср.ТНЗНП-2",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 6,
+      "Name": "ИО ТНЗНП-3",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 7,
+      "Name": "П.ТНЗНП-3",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 8,
+      "Name": "Ср.ТНЗНП-3",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 9,
+      "Name": "ИО ТНЗНП-4",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 10,
+      "Name": "П.ТНЗНП-4",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 11,
+      "Name": "Ср.ТНЗНП-4",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 12,
+      "Name": "ИО ТНЗНП-5",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 13,
+      "Name": "П.ТНЗНП-5",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 14,
+      "Name": "Ср.ТНЗНП-5",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 15,
+      "Name": "ИО ТНЗНП-6",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 16,
+      "Name": "П.ТНЗНП-6",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 17,
+      "Name": "Ср.ТНЗНП-6",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 18,
+      "Name": "ОНМНП-Р",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 19,
+      "Name": "ОНМНП-Б",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 20,
+      "Name": "ОНМОП-Р",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 21,
+      "Name": "ОНМОП-Б",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 22,
+      "Name": "ИО БНТ",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 23,
+      "Name": "ЧС ТНЗНП выведены",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 24,
+      "Name": "Пуск АУ ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 25,
+      "Name": "П.ОУ ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 26,
+      "Name": "Ср.ОУ ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 27,
+      "Name": "П.ОУ-бв ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 28,
+      "Name": "Ср.ОУ-бв ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 29,
+      "Name": "П.ПУ ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 30,
+      "Name": "Ср.ПУ ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 31,
+      "Name": "Разр.ПУ пар.ЛЭП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 32,
+      "Name": "П.ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    },
+    {
+      "Index": 33,
+      "Name": "Ср.ТНЗНП",
+      "Usage": "Output",
+      "DataType": "Boolean"
+    }
+  ],
+  "SettingLegs": [
+    {
+      "Setting": {
+        "Data": {
+          "Id": "3db5850c-8b8d-4437-bc1c-58116b926319",
+          "Name": "TNZNP_stupen_LN_1_Vyvod_napr_pri_sr_TNZNP",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "3db5850c-8b8d-4437-bc1c-58116b926319",
+          "Name": "TNZNP_stupen_LN_1_Vyvod_napr_pri_sr_TNZNP",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 0,
+      "Name": "Вывод напр. при ср. ТНЗНП",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    },
+    {
+      "Setting": {
+        "Data": {
+          "Id": "dc3e2a13-4d6c-44ea-82ae-39de6663193e",
+          "Name": "TNZNP_stupen_LN_1_Vyvod_napr_pri_AU",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "SettingId": null,
+        "OriginData": {
+          "Id": "dc3e2a13-4d6c-44ea-82ae-39de6663193e",
+          "Name": "TNZNP_stupen_LN_1_Vyvod_napr_pri_AU",
+          "Description": {
+            "Description": ""
+          },
+          "Value": false,
+          "LogicValue": {
+            "Origin": false,
+            "Description": null,
+            "PredefinedEnumKey": "Введено/выведено",
+            "PredefinedValues": [
+              {
+                "DisplayText": "Введено",
+                "SubstituteValue": true
+              },
+              {
+                "DisplayText": "Выведено",
+                "SubstituteValue": false
+              }
+            ]
+          },
+          "Multiplier": "None",
+          "Unit": "",
+          "Min": false,
+          "Max": false,
+          "Step": false,
+          "DataType": "Boolean",
+          "IsConstant": false
+        },
+        "OriginSettingId": null
+      },
+      "Index": 1,
+      "Name": "Вывод напр. при АУ",
+      "Usage": "Setting",
+      "DataType": "Boolean"
+    }
+  ],
+  "RetainLegs": [],
+  "UndefinedLegs": []
+}

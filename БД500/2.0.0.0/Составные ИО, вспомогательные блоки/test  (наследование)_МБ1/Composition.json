@@ -1,0 +1,466 @@
+{
+  "ConstantBlocks": [],
+  "EndConnectors": [],
+  "StartConnectors": [],
+  "InputBlocks": [
+    {
+      "Output": {
+        "Id": "e2218845-b1f3-42c8-9d5d-bc8b9f76bac9",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Single",
+        "LegUsage": "Output",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "c86efbfe-8f81-44ea-8851-06fb12793212",
+        "Name": "Rele_s_k_tom_vozvrata_max_float_1_x",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": 0.0,
+        "DataType": "Single"
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Вход[Single]_1",
+      "DisplayName": "I",
+      "Version": 1,
+      "Type": "InputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "6d36e173-d1db-4d85-b7ac-f67df0826226",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "InputBlock"
+        },
+        "Specification": {
+          "Id": 65009,
+          "Name": "Вход[Single]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "InputBlock",
+          "InputLegs": [],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Output",
+              "DataType": "Single"
+            }
+          ],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M4,0L156,0A5,5,0,0,1,160,4L160,24A5,5,0,0,1,156,28L4,28A5,5,0,0,1,0,24L0,4A5,5,0,0,1,4,0z",
+            "M137,0L137,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": 110.0,
+        "Y": 256.0
+      },
+      "Id": "7bc7909a-3892-4b99-913f-13a7b4cb2c70"
+    }
+  ],
+  "OutputBlocks": [
+    {
+      "Input": {
+        "Id": "ba101d9b-2978-47c4-9640-d47a45934f5c",
+        "Index": 0,
+        "Name": "?",
+        "DataType": "Boolean",
+        "LegUsage": "Input",
+        "CanLink": true
+      },
+      "Variable": {
+        "Id": "9d387626-289f-4a11-9dc1-1ad929ad623b",
+        "Name": "Rele_s_k_tom_vozvrata_max_float_1_Sr",
+        "Description": {
+          "Description": ""
+        },
+        "DefaultValue": false,
+        "DataType": "Boolean"
+      },
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Выход[Boolean]_1",
+      "DisplayName": "Ср.реле макс",
+      "Version": 1,
+      "Type": "OutputBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "016f7cdf-d701-4405-aeec-976661cd1d4b",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "OutputBlock"
+        },
+        "Specification": {
+          "Id": 65050,
+          "Name": "Выход[Boolean]",
+          "Description": "",
+          "Directory": "Интерфейсные блоки",
+          "Scope": null,
+          "Version": 1,
+          "SchemaNodeType": "OutputBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "?",
+              "Usage": "Input",
+              "DataType": "Boolean"
+            }
+          ],
+          "OutputLegs": [],
+          "SettingLegs": [],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M160.54,0C162.85,0,165,2.15,165,4.46L165,24.46A4,4,0,0,1,160.54,28L13.92,28.12C12.47,28.12,11.12,27.39,10.34,26.27L0,16.08A5.29,5.29,0,0,1,0,12.08L10.34,2.02C11.12,0.89,12.47,0.15,13.92,0.15L160.54,0z",
+            "M142,0L142,28"
+          ]
+        }
+      },
+      "Position": {
+        "X": 740.0,
+        "Y": 256.0
+      },
+      "Id": "2dcc008d-a12b-4f91-840c-0533c69fd3a5"
+    }
+  ],
+  "SettingBlocks": [],
+  "RetainBlocks": [],
+  "PrimitiveBlocks": [
+    {
+      "Inputs": [
+        {
+          "Id": "98a40987-5284-44d4-b2ae-624f586a82bd",
+          "Index": 0,
+          "Name": "x",
+          "DataType": "Single",
+          "LegUsage": "Input",
+          "CanLink": true
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "eca4ee6d-d9a0-41f4-99c0-49759120b687",
+          "Index": 0,
+          "Name": "Ср.",
+          "DataType": "Boolean",
+          "LegUsage": "Output",
+          "CanLink": true
+        }
+      ],
+      "Settings": [
+        {
+          "Setting": {
+            "Data": {
+              "Id": "7742b52e-2987-468a-81af-359372462184",
+              "Name": "x ср",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 0.0,
+              "LogicValue": {
+                "Origin": 0.0,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": -3.4028235E+38,
+              "Max": 3.4028235E+38,
+              "Step": 0.001,
+              "DataType": "Single",
+              "IsConstant": false
+            },
+            "SettingId": null,
+            "OriginData": {
+              "Id": "f7bbd308-d284-4a99-af5d-3cbce1e38e50",
+              "Name": "x ср",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 0.0,
+              "LogicValue": {
+                "Origin": 0.0,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": -3.4028235E+38,
+              "Max": 3.4028235E+38,
+              "Step": 0.001,
+              "DataType": "Single",
+              "IsConstant": false
+            },
+            "OriginSettingId": null
+          },
+          "Id": "a427a0ee-267d-4dc1-b090-f0ed2730c974",
+          "Index": 0,
+          "Name": "x ср",
+          "DataType": "Single",
+          "LegUsage": "Setting",
+          "CanLink": false
+        },
+        {
+          "Setting": {
+            "Data": {
+              "Id": "19cfbae3-fc2a-47df-b718-52d9f28eed6b",
+              "Name": "k возврата",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 0.0,
+              "LogicValue": {
+                "Origin": 0.0,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": -3.4028235E+38,
+              "Max": 3.4028235E+38,
+              "Step": 0.001,
+              "DataType": "Single",
+              "IsConstant": false
+            },
+            "SettingId": null,
+            "OriginData": {
+              "Id": "4ae33f82-8317-4651-97b1-041933953c7b",
+              "Name": "k возврата",
+              "Description": {
+                "Description": ""
+              },
+              "Value": 0.0,
+              "LogicValue": {
+                "Origin": 0.0,
+                "Description": null,
+                "PredefinedEnumKey": null,
+                "PredefinedValues": []
+              },
+              "Multiplier": "None",
+              "Unit": "",
+              "Min": -3.4028235E+38,
+              "Max": 3.4028235E+38,
+              "Step": 0.001,
+              "DataType": "Single",
+              "IsConstant": false
+            },
+            "OriginSettingId": null
+          },
+          "Id": "8590c671-f536-42ad-bae5-fed7620a9ad6",
+          "Index": 1,
+          "Name": "k возврата",
+          "DataType": "Single",
+          "LegUsage": "Setting",
+          "CanLink": false
+        }
+      ],
+      "Retains": [],
+      "InstanceNumber": 0,
+      "ExecutionOrder": 0,
+      "Name": "Реле с к-том возврата max float_1",
+      "DisplayName": "Реле с к-том возврата max float_1",
+      "Version": 0,
+      "Type": "PrimitiveBlock",
+      "Info": {
+        "Manifest": {
+          "Id": "40f8f576-f867-497b-98d3-0f1e9af135a4",
+          "LibraryId": "00000000-0000-0000-0000-000000000000",
+          "SchemaNodeType": "PrimitiveBlock"
+        },
+        "Specification": {
+          "Id": 64,
+          "Name": "Реле с к-том возврата max float",
+          "Description": null,
+          "Directory": "Измерительные органы",
+          "Scope": "Реле макс",
+          "Version": 0,
+          "SchemaNodeType": "PrimitiveBlock",
+          "InputLegs": [
+            {
+              "Index": 0,
+              "Name": "x",
+              "Usage": "Input",
+              "DataType": "Single"
+            }
+          ],
+          "OutputLegs": [
+            {
+              "Index": 0,
+              "Name": "Ср.",
+              "Usage": "Output",
+              "DataType": "Boolean"
+            }
+          ],
+          "SettingLegs": [
+            {
+              "Setting": {
+                "Data": {
+                  "Id": "841e437b-1ee7-4ccc-aedb-2763c2af1ef2",
+                  "Name": "x ср",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0.0,
+                  "LogicValue": {
+                    "Origin": 0.0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": -3.4028235E+38,
+                  "Max": 3.4028235E+38,
+                  "Step": 0.001,
+                  "DataType": "Single",
+                  "IsConstant": false
+                },
+                "SettingId": null,
+                "OriginData": {
+                  "Id": "841e437b-1ee7-4ccc-aedb-2763c2af1ef2",
+                  "Name": "x ср",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0.0,
+                  "LogicValue": {
+                    "Origin": 0.0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": -3.4028235E+38,
+                  "Max": 3.4028235E+38,
+                  "Step": 0.001,
+                  "DataType": "Single",
+                  "IsConstant": false
+                },
+                "OriginSettingId": null
+              },
+              "Index": 0,
+              "Name": "x ср",
+              "Usage": "Setting",
+              "DataType": "Single"
+            },
+            {
+              "Setting": {
+                "Data": {
+                  "Id": "2ed005e8-10d4-4e92-8417-191e1d63707b",
+                  "Name": "k возврата",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0.0,
+                  "LogicValue": {
+                    "Origin": 0.0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": -3.4028235E+38,
+                  "Max": 3.4028235E+38,
+                  "Step": 0.001,
+                  "DataType": "Single",
+                  "IsConstant": false
+                },
+                "SettingId": null,
+                "OriginData": {
+                  "Id": "2ed005e8-10d4-4e92-8417-191e1d63707b",
+                  "Name": "k возврата",
+                  "Description": {
+                    "Description": ""
+                  },
+                  "Value": 0.0,
+                  "LogicValue": {
+                    "Origin": 0.0,
+                    "Description": null,
+                    "PredefinedEnumKey": null,
+                    "PredefinedValues": []
+                  },
+                  "Multiplier": "None",
+                  "Unit": "",
+                  "Min": -3.4028235E+38,
+                  "Max": 3.4028235E+38,
+                  "Step": 0.001,
+                  "DataType": "Single",
+                  "IsConstant": false
+                },
+                "OriginSettingId": null
+              },
+              "Index": 1,
+              "Name": "k возврата",
+              "Usage": "Setting",
+              "DataType": "Single"
+            }
+          ],
+          "RetainLegs": [],
+          "UndefinedLegs": []
+        },
+        "Composition": null,
+        "Geometry": {
+          "Value": [
+            "M0,13.75L15,13.75",
+            "M0,41.25L15,41.25",
+            "M15,0L70,0 70,55 15,55z",
+            "M70,27.5L85,27.5"
+          ]
+        }
+      },
+      "Position": {
+        "X": 390.0,
+        "Y": 235.0
+      },
+      "Id": "d714ecc5-f171-4d9c-a44a-ad575c62a719"
+    }
+  ],
+  "MacroBlocks": [],
+  "FunctionalBlocks": [],
+  "Links": [
+    {
+      "Id": "2b546843-2ba5-4403-aea1-1356a26b3f0e",
+      "SchemaNodeFromId": "d714ecc5-f171-4d9c-a44a-ad575c62a719",
+      "SchemaNodeToId": "2dcc008d-a12b-4f91-840c-0533c69fd3a5",
+      "LegFromId": "eca4ee6d-d9a0-41f4-99c0-49759120b687",
+      "LegToId": "ba101d9b-2978-47c4-9640-d47a45934f5c",
+      "BendPoints": []
+    },
+    {
+      "Id": "4b0ea2ef-032e-4b1e-9102-b3d022d131b9",
+      "SchemaNodeFromId": "7bc7909a-3892-4b99-913f-13a7b4cb2c70",
+      "SchemaNodeToId": "d714ecc5-f171-4d9c-a44a-ad575c62a719",
+      "LegFromId": "e2218845-b1f3-42c8-9d5d-bc8b9f76bac9",
+      "LegToId": "98a40987-5284-44d4-b2ae-624f586a82bd",
+      "BendPoints": []
+    }
+  ],
+  "LegRelations": [
+    {
+      "LegName": "I",
+      "SchemaBlockName": "Вход[Single]_1"
+    },
+    {
+      "LegName": "Ср.реле макс",
+      "SchemaBlockName": "Выход[Boolean]_1"
+    }
+  ]
+}

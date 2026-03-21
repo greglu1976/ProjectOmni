@@ -1,0 +1,88 @@
+%\needspace{4\baselineskip}
+\color{uniblue}{\subsection{Устройство резервирования при отказе выключателя}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
+
+
+\item
+В устройстве предусмотрена функция резервирования при отказе выключателя (УРОВ). Данная 
+функция предназначена для ликвидации повреждения в случае отказа выключателя поврежденного 
+присоединения.
+
+\item
+Логика работы УРОВ выполнена с контролем протекания тока через выключатель. Значение по 
+току срабатывания задается параметром \textbf{«Iср УРОВ В1(ЛВ)ВН»}. Функция УРОВ действует с 
+регулируемой задержкой по времени \textbf{«Tср повт. УРОВ»} на повторное отключение своего выключателя, 
+с задержкой \textbf{«Tср УРОВ»} на отключение смежных выключателей. 
+
+\item
+Предусмотрен подхват по току, включение которого производится программной накладкой 
+\textbf{«УРОВ подхв.»}. 
+
+\item
+Действие УРОВ на смежные выключатели может быть выполнено с контролем сигнала РПВ. 
+Ввод контроля сигнала РПВ в логику работы УРОВ осуществляется программной накладкой \textbf{«УРОВ 
+контр. выкл.»}. 
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3341 УРОВ/img/UROV.pdf}
+\captionof{figure}{Функциональный блок УРОВ}\label{pict:UROV}
+\end{figure}
+
+
+
+
+\small
+\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
+\begin{longtable}
+{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
+\caption{Перечень уставочных параметров УРОВ\hfill\vspace{-0.5\baselineskip}}\label{ksn:tbl2} \\ 
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
+\hhline{|-|-|-|-|}
+\endfirsthead
+
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ksn:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
+\hhline{|-|-|-|-|}
+\endhead
+\hhline{|-|-|-|-|}
+
+\endfoot
+\endlastfoot
+
+%%%%%%%%%%%%содержимое%%%%%%%%%%%%%%
+
+\end{longtable}
+\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
+\normalsize
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate} 
