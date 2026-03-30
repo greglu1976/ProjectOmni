@@ -20,12 +20,12 @@
 \end{itemize}
 
 \item
-Возможные режимы АПВ приведены в таблице \ref{desc_apv:apv1}.
+Возможные режимы АПВ приведены в таблице \ref{desc_apv:tbl1}.
 
 \small
 \setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
 \begin{longtable}{|>{\centering\arraybackslash}m{3.7cm}|>{\centering\arraybackslash}m{3.7cm}|>{\centering\arraybackslash}m{3.7cm}|>{\centering\arraybackslash}m{4.9cm}|}
-  \caption{Выбор режима АПВ\hfill\vspace{-0.5\baselineskip}}\label{desc_apv:apv1}\\
+  \caption{Выбор режима АПВ\hfill\vspace{-0.5\baselineskip}}\label{desc_apv:tbl1}\\
   \hhline{|-|-|-|-|}
   \rowcolor{gray!30}
   \multicolumn{3}{|c|}{Входные сигналы ФСУ} & \\
@@ -36,7 +36,7 @@
 
 \endfirsthead
 
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_apv:apv1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_apv:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
 \hhline{|-|-|-|-|}
 \rowcolor{gray!30}
   & \multicolumn{3}{c|}{Входные сигналы ФСУ} \\
@@ -58,7 +58,7 @@
 \normalsize
 
 \item
-Как видно из таблицы \ref{desc_apv:apv1}, режим АПВ с КС(УС) введен всегда и выводится посредством входного сигнала ФСУ \textit{«АПВ В1 без контролей»}. А режимы ОНЛ+ННЭ1 и ОНЭ1+ННЛ могут быть введены одновременно. Режим без контролей применяется только для АПВ линии. Условия включения в различных режимах более подробно описаны в пункте 14 настоящего руководства по эксплуатации.
+Как видно из таблицы \ref{desc_apv:tbl1}, режим АПВ с КС(УС) введен всегда и выводится посредством входного сигнала ФСУ \textit{«АПВ В1 без контролей»}. А режимы ОНЛ+ННЭ1 и ОНЭ1+ННЛ могут быть введены одновременно. Режим без контролей применяется только для АПВ линии. Условия включения в различных режимах более подробно описаны в пункте 14 настоящего руководства по эксплуатации.
 
 \item
 Пуск АПВ линии осуществляется по цепи несоответствия при аварийном отключении выключателя (по наличию входного сигнала ФСУ \textit{«Сигнал несоотв. В1»}). Срабатывание происходит при набранной выдержке времени готовности АПВ с контролем заданного режима и выполнения условий включения. Выдержка времени готовности АПВ после оперативного включения и первого цикла регулируется уставкой \textbf{«Тгот АПВ В1»}, после второго цикла -- \textbf{«Твосст гот. АПВ В1»}.
@@ -80,27 +80,105 @@
 Длительность импульса включения выключателя В1 от АПВ линии задается уставкой \textbf{«Тимп АПВл В1»}.
 
 \item
-Функциональная схема логики АПВ В1 ЛЭП приведена на рисунке \ref{pict:APV_LAP}. Функциональная схема логики АПВ В2 ЛЭП выполняется аналогично схеме логики АПВ В1 ЛЭП.
+Функциональная схема логики АПВ В1 ЛЭП приведена на рисунке \ref{pict_apv:APV_LAP}. Функциональная схема логики АПВ В2 ЛЭП выполняется аналогично схеме логики АПВ В1 ЛЭП.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3011 АПВ/img/APV_LAP.pdf}
-\captionof{figure}{Функциональная схема логики АПВ В1 ЛЭП}\label{pict:APV_LAP}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3011 АПВ/img/APV_LAP.pdf}
+\captionof{figure}{Функциональная схема логики АПВ В1 ЛЭП}\label{pict_apv:APV_LAP}
 \end{figure}
+
+\item
+Уставки АПВ В1 ЛЭП представлены в таблице \ref{desc_apv:tbl2}. Уставки АПВ В2 ЛЭП аналогичны уставкам АПВ В1 ЛЭП.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки АПВ В1 ЛЭП\hfill\vspace{-0.5\baselineskip}}\label{desc_apv:tbl2}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_apv:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>АПВ В1|АПВ ЛЭП
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_2_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_2_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Formirovatel_imp_po_perednemu_frontu_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_3_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_5_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_4_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_vozvrat_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \item
 Пуск АПВ шин осуществляется от внешнего сигнала о срабатывании ДЗШ (входной сигнал ФСУ \textit{«Пуск АПВ В1 от ДЗШ»}). При этом АПВ линии запрещается. АПВ шин выполнено однократным и осуществляется при выполнении условий включения с выдержкой времени \textbf{«Тср АПВш В1»}. Длительность импульса включения выключателя В1 от АПВ шин задается уставкой \textbf{«Тимп АПВш В1»}.
 
 \item
-Функциональная схема логики АПВ В1 СШ приведена на рисунке \ref{pict:APV_CSH}. Функциональная схема логики АПВ В2 СШ выполняется аналогично схеме логики АПВ В1 СШ.
+Функциональная схема логики АПВ В1 СШ приведена на рисунке \ref{pict_apv:APV_CSH}. Функциональная схема логики АПВ В2 СШ выполняется аналогично схеме логики АПВ В1 СШ.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3011 АПВ/img/APV_CSH.pdf}
-\captionof{figure}{Функциональная схема АПВ В1 СШ}\label{pict:APV_CSH}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3011 АПВ/img/APV_CSH.pdf}
+\captionof{figure}{Функциональная схема АПВ В1 СШ}\label{pict_apv:APV_CSH}
 \end{figure}
+
+\item
+Уставки АПВ В1 СШ представлены в таблице \ref{desc_apv:tbl3}. Уставки АПВ В2 СШ аналогичны уставкам АПВ В1 СШ.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки АПВ В1 СШ\hfill\vspace{-0.5\baselineskip}}\label{desc_apv:tbl3}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_apv:tbl3}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>АПВ В1|АПВ СШ
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_3_T_vremya & \centering 0 ... 120 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Formirovatel_imp_po_perednemu_frontu_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_2_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \item
 В устройстве предусмотрено ограничение ожидания условий включения, которое вводится программным ключом \textbf{«Огр. ожид. усл. вкл. В1»}. Если в течение выдержки времени \textbf{«Тожид усл. вкл. В1»} после аварийного отключения не возникают условия включения, то действие АПВ запрещается.
@@ -110,7 +188,8 @@
 
 \item
 Кроме того, выставлением соответствующих уставок может осуществляться запрет АПВ при срабатывании основной защиты, ступеней ДЗ-ФЗ и ДЗ-ФФ, ступеней ТНЗНП, ступеней АМТЗ, при 
-срабатывании оперативного ускорения (как с выдержкой, так и без выдержки времени) ДЗ и ТНЗНП, поперечного ускорения ТНЗНП, автоматического ускорения, ЗНР, МФТО, ТЗО, телеускорения и телеотключения, ЗНФ. На запрет АПВ также жёстко действуют срабатывание внутреннего или внешнего УРОВ, оперативное отключение, неуспешное АПВ смежного выключателя (если смежный выключатель «ведущий»), перевод режима управления выключателем в «Местное», отключение от аварийного снижения давления элегаза в ТТ. Также для запрета АПВ предусмотрены входные сигналы ФСУ \textit{«Внешний запрет АПВ»}.
+срабатывании оперативного ускорения (как с выдержкой, так и без выдержки времени) ДЗ и ТНЗНП, поперечного ускорения ТНЗНП, автоматического ускорения, ЗНР, МФТО, ТЗО, телеускорения и телеотключения, ЗНФ.
+
 
 \item
 Функциональная схема логики общего запрета АПВ приведена на рисунке \ref{pict:APV_logic}.
@@ -118,9 +197,12 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3011 АПВ/img/APV_logic.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3011 АПВ/img/APV_logic.pdf}
 \captionof{figure}{Функциональная схема общего запрета АПВ}\label{pict:APV_logic}
 \end{figure}
+
+\item
+На запрет АПВ также жёстко действуют срабатывание внутреннего или внешнего УРОВ, оперативное отключение, неуспешное АПВ смежного выключателя (если смежный выключатель «ведущий»), перевод режима управления выключателем в «Местное», отключение от аварийного снижения давления элегаза в ТТ. Также для запрета АПВ предусмотрены входные сигналы ФСУ \textit{«Внешний запрет АПВ»}.
 
 \item
 Функциональная схема логики запрета АПВ В1 приведена на рисунке \ref{pict:APV_logic_1}. Функциональная схема логики запрета АПВ В2 выполняется аналогично схеме логики запрета АПВ В1.
@@ -128,7 +210,7 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3011 АПВ/img/APV_logic_B1.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3011 АПВ/img/APV_logic_B1.pdf}
 \captionof{figure}{Функциональная схема запрета АПВ В1}\label{pict:APV_logic_1}
 \end{figure}
 

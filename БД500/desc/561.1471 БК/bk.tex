@@ -28,8 +28,8 @@
 БК-I принимает сигналы от чувствительного и грубого измерительных органов (ИО), контролирующих приращения токов прямой и обратной последовательностей. На выходе блокировки при качаниях формируется два сигнала:
 
 \begin{enumerate}[label=\arabic*)]
-\item БК-I-б -- вводит в работу быстродействующие ступени ДЗ;
-\item БК-I-м -- вводит в работу медленнодействующие ступени ДЗ.
+\item \textit{БК-I-б} -- вводит в работу быстродействующие ступени ДЗ;
+\item \textit{БК-I-м} -- вводит в работу медленнодействующие ступени ДЗ.
 \end{enumerate}
 
 \item 
@@ -55,6 +55,51 @@
 \captionof{figure}{Временная диаграмма работы БК-I}\label{pict_bk:BK_I_diagram}
 \end{figure}
 
+\item
+Уставки блокировки по приращению токов прямой и обратной последовательности (БК-I) представлены в таблице \ref{desc_bk:tbl1}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки БК-I\hfill\vspace{-0.5\baselineskip}}\label{desc_bk:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_bk:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>БК|-
+\multicolumn{5}{|c|}{ БК-I } \\ \hline 
+\raggedright {'Description': ''} & \centering IO_BK_1_dI1_chuv & \centering 0,000 ... 40,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering IO_BK_1_dI1_grub & \centering 0,000 ... 40,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering IO_BK_1_dI2_chuv & \centering 0,000 ... 40,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering IO_BK_1_dI2_grub & \centering 0,000 ... 40,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_3_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_4_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ БК-I %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -67,7 +112,7 @@
 БК-Z основан на измерении времени прохождения годографом полного сопротивления области между внешней и внутренней характеристик реле сопротивления. В качестве внутренней области характеристики можно выбрать реле сопротивления с ненаправленной характеристикой срабатывания второй или третьей ступени ДЗ -- выбор осуществляется программным переключателем \textbf{«Ступень ДЗ для БК-Z»}. Внешняя характеристика срабатывания реле сопротивления отстоит от внутренней характеристики по оси R на величину $\Delta$R и по оси $X$ на величину $\Delta$X.
 
 \item 
-Значения параметров $\Delta$R и $\Delta$X не регулируются и зависят от номинального тока устройства. При $I_{\textsl{ном}}$= 5 А  $\Delta R$ = $\Delta X$ = 1 Ом. При $I_{\textsl{ном}}$= 1 А $\Delta R$ = $\Delta X$ = 5 Ом.
+Значения параметров $\Delta$R и $\Delta$X не регулируются и зависят от номинального тока устройства. При $I_{\textsl{ном}}$= 5 А:  $\Delta R$ = $\Delta X$ = 1 Ом. При $I_{\textsl{ном}}$= 1 А: $\Delta R$ = $\Delta X$ = 5 Ом.
 
 \item
 Уставка по скорости изменения Z задается выдержкой времени \textbf{«Тзад БК-Z»} – если в течение этого времени годограф сопротивления не пересёк зону контроля скорости изменения сопротивления, то ступени ДЗ, вводимые от БК-Z, заблокируются. Принужденный возврат схемы БК-Z задается выдержкой времени \textbf{«Тв БК-Z»}.
@@ -91,3 +136,5 @@
 \end{enumerate}
 
 \end{enumerate}
+
+\newpage

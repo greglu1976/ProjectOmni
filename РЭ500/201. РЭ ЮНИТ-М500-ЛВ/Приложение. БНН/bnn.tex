@@ -1,0 +1,262 @@
+\KOMAoption{paper}{a4, portrait}
+\areaset{267mm}{180mm}
+\fancyheadoffset{0pt} % обновляем хедер и футер
+
+\newgeometry{
+  top=14mm,
+  bottom=11mm,
+  right=10mm,
+  left=22mm,
+}
+
+\begin{landscape}
+
+\setlength{\footskip}{15.5pt}
+
+\color{uniblue}{\section[(рекомендуемое) Схемы подключения цепей треугольника]{(рекомендуемое)\\Схемы подключения цепей треугольника}\label{app:bnn}}
+\color{black}
+
+
+\captionsetup[table]{margin=0.6cm} % временное изменение
+\small
+\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
+
+\begin{longtable}{
+  >{\centering\arraybackslash}m{0.5cm}
+  |>{\centering\arraybackslash}m{5.5cm}
+  |>{\centering\arraybackslash}m{1.0cm}
+  |>{\centering\arraybackslash}m{3.5cm}
+  |>{\centering\arraybackslash}m{5.5cm}
+  |>{\centering\arraybackslash}m{5.44cm}
+  |>{\centering\arraybackslash}m{3.0cm}
+  }
+
+\caption{Схемы подключения цепей треугольника дополнительной обмотки ТН: $«U_\textsl{НИ}/U_\textsl{ИК}»$\hfill\vspace{-0.5\baselineskip}}\label{desc_tznp:tbl}\\ 
+\hhline{|-|-|-|-|-|-|-|}
+\rowcolor{gray!30}
+№ & Схема соединения обмоток «разомкнутого треугольника» ТН  & Особая фаза  & Направление векторов напряжений «звезды» и «треугольника»  & Векторная диаграмма напряжений  & Выражение для расчета $U_{\textsl{БНН}}$ & Выражение для расчета ($3U_0$ треугольник)   \\ 
+\hhline{|-|-|-|-|-|-|-|}
+\endfirsthead
+
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_tznp:tbl}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hhline{|-|-|-|-|-|-|-|}
+\rowcolor{gray!30}
+№ & Схема соединения обмоток «разомкнутого треугольника» ТН  & Особая фаза  & Направление векторов напряжений «звезды» и «треугольника»  & Векторная диаграмма напряжений  & Выражение для расчета $U_{\textsl{БНН}}$ & Выражение для расчета ($3U_0$ треугольник)   \\ 
+\hhline{|-|-|-|-|-|-|-|}
+\endhead
+\hhline{|-|-|-|-|-|-|-|}
+
+\endfoot
+\endlastfoot
+
+1  & \includegraphics[width=0.25\textwidth,height=0.25\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/111.pdf}  &  $A$  &  Совпадает &  \vspace{2mm}\includegraphics[width=0.25\textwidth]{\apppath/Приложение. БНН/img/112.pdf} & \multirow{8}{*}{\footnotesize $ \vec U_{\textsl{БНН}} = -\vec U_A + \vec U_B + \vec U_C + \frac{\vec U_\textsl{НИ} - \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  \multirow{8}{*}{$U_\textsl{НИ}+U_\textsl{ИК}$} \\
+\cline{1-5}
+
+2  & \includegraphics[width=0.25\textwidth,height=0.25\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/121.pdf}  &  $A$  &  Совпадает & \vspace{2mm}\includegraphics[width=0.25\textwidth]{\apppath/Приложение. БНН/img/122.pdf}  &  &  \\
+\hline
+
+3  & \includegraphics[width=0.25\textwidth,height=0.25\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/131.pdf}  &  $A$  &  Не совпадает &  \vspace{2mm}\includegraphics[width=0.25\textwidth]{\apppath/Приложение. БНН/img/132.pdf} &  \multirow{6}{*}{\footnotesize $ \vec U_{\textsl{БНН}} = -\vec U_A + \vec U_B + \vec U_C - \frac{\vec U_\textsl{НИ} - \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  \multirow{6}{*}{$U_\textsl{НИ}+U_\textsl{ИК}$} \\
+\cline{1-5}
+
+4  & \includegraphics[width=0.25\textwidth,height=0.25\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/141.pdf}  &  $A$  &  Не совпадает & \vspace{1mm}\includegraphics[width=0.25\textwidth]{\apppath/Приложение. БНН/img/142.pdf}  &   &  \\
+\hline
+
+
+5  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/151.pdf}  &  $B$  &  Совпадает &  \vspace{1mm}\includegraphics[width=0.28\textwidth]{\apppath/Приложение. БНН/img/152.pdf} &  \multirow{8}{*}{\footnotesize $ \vec U_{\textsl{БНН}} = \vec U_A - \vec U_B + \vec U_C + \frac{\vec U_\textsl{НИ}- \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  \multirow{8}{*}{$U_\textsl{НИ}+U_\textsl{ИК}$} \\
+\cline{1-5}
+
+6  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/161.pdf}  &  $B$  &  Совпадает & \vspace{0mm}\includegraphics[width=0.28\textwidth]{\apppath/Приложение. БНН/img/162.pdf}  &   &  \\
+\hline
+
+7  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/171.pdf}  &  $B$  &  Не совпадает &  \vspace{0mm}\includegraphics[width=0.28\textwidth]{\apppath/Приложение. БНН/img/172.pdf} &  \multirow{8}{*}{$ \vec U_{\textsl{БНН}} = \vec U_A - \vec U_B + \vec U_C - \frac{\vec U_\textsl{НИ} - \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  \multirow{8}{*}{$U_\textsl{НИ}+U_\textsl{ИК}$} \\
+\cline{1-5}
+
+8  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/181.pdf}  &  $B$  &  Не совпадает & \vspace{0mm}\includegraphics[width=0.25\textwidth]{\apppath/Приложение. БНН/img/182.pdf}  &  &  \\
+\hline
+
+
+9  & \vspace{2mm}\includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/191.pdf}  &  $C$  &  Совпадает &  \vspace{0mm}\includegraphics[width=0.22\textwidth]{\apppath/Приложение. БНН/img/192.pdf} &  \multirow{7}{*}{$ \vec U_{\textsl{БНН}} = \vec U_A + \vec U_B- \vec U_C + \frac{\vec U_\textsl{НИ} - \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  \multirow{7}{*}{$U_\textsl{НИ}+U_\textsl{ИК}$} \\
+\cline{1-5}
+
+10  & \vspace{2mm}\includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/1101.pdf}  &  $C$  &  Совпадает & \vspace{0mm}\includegraphics[width=0.22\textwidth]{\apppath/Приложение. БНН/img/1102.pdf}  &   &  \\
+\hline
+
+11  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/1111.pdf}  &  $C$  &  Не совпадает &  \vspace{1mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/1112.pdf} &  \multirow{7}{*}{$ \vec U_{\textsl{БНН}} = \vec U_A + \vec U_B - \vec U_C - \frac{\vec U_\textsl{НИ} - \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  \multirow{7}{*}{$U_\textsl{НИ}+U_\textsl{ИК}$} \\
+\cline{1-5}
+
+12  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/1121.pdf}  &  $C$  &  Не совпадает & \vspace{1mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/1122.pdf}  &  &  \\
+\hline
+
+
+\end{longtable}
+\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
+\normalsize
+\captionsetup[table]{margin=0cm} % вернуть обратно если нужно
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ВТОРАЯ ТАБЛИЦА %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\captionsetup[table]{margin=0.6cm} % временное изменение
+\small
+\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
+
+\begin{longtable}{
+  >{\centering\arraybackslash}m{0.3cm}
+  |>{\centering\arraybackslash}m{4.8cm}
+  |>{\centering\arraybackslash}m{1.0cm}
+  |>{\centering\arraybackslash}m{3.4cm}
+  |>{\centering\arraybackslash}m{4cm}
+  |>{\centering\arraybackslash}m{2.8cm}
+  |>{\centering\arraybackslash}m{5.4cm}
+  |>{\centering\arraybackslash}m{2.3cm}
+  }
+
+\caption{Схемы подключения цепей треугольника дополнительной обмотки ТН: $«U_\textsl{НФ}/U_\textsl{ФК}»$\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl2}\\ 
+\hhline{|-|-|-|-|-|-|-|-|}
+\rowcolor{gray!30}
+№ & Схема соединения обмоток «разомкнутого треугольника» ТН  & Особая фаза  & Направление векторов напряжений «звезды» и «треугольника»  & Векторная диаграмма напряжений & Выражение для расчета $U_{\textsl{НК}}$ & Выражение для расчета $U_{\textsl{БНН}}$ & Выражение для расчета ($3U_0$ треугольник)   \\ 
+\hhline{|-|-|-|-|-|-|-|-|}
+\endfirsthead
+
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hhline{|-|-|-|-|-|-|-|-|}
+\rowcolor{gray!30}
+№ & Схема соединения обмоток «разомкнутого треугольника» ТН  & Особая фаза  & Направление векторов напряжений «звезды» и «треугольника»  & Векторная диаграмма напряжений & Выражение для расчета $U_{\textsl{НК}}$  & Выражение для расчета $U_{\textsl{БНН}}$ & Выражение для расчета ($3U_0$ треугольник)   \\ 
+\hhline{|-|-|-|-|-|-|-|-|}
+\endhead
+\hhline{|-|-|-|-|-|-|-|-|}
+
+\endfoot
+\endlastfoot
+
+1  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/211.pdf}  &  $B$  &  Совпадает &  \vspace{0mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/212.pdf} & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = \vec U_A + 2\vec U_B + \vec U_C - \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $  &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+2  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/221.pdf}  &  $C$  &  Совпадает & \vspace{0mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/222.pdf}  & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = \vec U_A + \vec U_B + 2\vec U_C - \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $ &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+3  & \vspace{1mm}\includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/231.pdf}  &  $C$  &  Не совпадает &  \vspace{0mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/232.pdf} & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = \vec U_A + \vec U_B + 2\vec U_C + \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $  &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+4  & \vspace{2mm}\includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/241.pdf}  &  $B$  & Не совпадает & \vspace{0mm}\includegraphics[width=0.16\textwidth]{\apppath/Приложение. БНН/img/242.pdf}  & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = \vec U_A + 2\vec U_B + \vec U_C + \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $ &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+
+5  & \vspace{2mm}\includegraphics[width=0.22\textwidth,height=0.22\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/251.pdf}  &  $A$  &  Совпадает &  \vspace{0mm}\includegraphics[width=0.17\textwidth]{\apppath/Приложение. БНН/img/252.pdf} & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = 2\vec U_A + \vec U_B + \vec U_C - \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $  &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+6  &\vspace{2mm}\includegraphics[width=0.22\textwidth,height=0.22\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/261.pdf}  &  $C$  &  Совпадает & \vspace{0mm}\includegraphics[width=0.18\textwidth]{\apppath/Приложение. БНН/img/262.pdf}  & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = \vec U_A + \vec U_B + 2\vec U_C - \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $ &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+7  & \includegraphics[width=0.22\textwidth,height=0.22\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/271.pdf}  &  $A$  &  Не совпадает &  \vspace{2mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/272.pdf} & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = 2\vec U_A + \vec U_B + \vec U_C + \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $  &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+8  & \vspace{2mm}\includegraphics[width=0.22\textwidth,height=0.22\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/281.pdf}  &  $C$  &  Не совпадает & \vspace{0mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/282.pdf}  & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = \vec U_A + \vec U_B + 2\vec U_C + \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $ &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+
+9  & \vspace{2mm}\includegraphics[width=0.22\textwidth,height=0.22\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/291.pdf}  &  $A$  &  Совпадает &  \vspace{0mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/292.pdf} & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = 2\vec U_A + \vec U_B + \vec U_C - \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $  &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+10  & \includegraphics[width=0.22\textwidth,height=0.22\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/2101.pdf}  &  $B$  &  Совпадает & \vspace{0mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/2102.pdf}  & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = \vec U_A + 2\vec U_B + 2\vec U_C - \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $ &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+11  & \vspace{2mm}\includegraphics[width=0.22\textwidth,height=0.22\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/2111.pdf}  &  $B$  &  Не совпадает &  \vspace{0mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/2112.pdf} & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = \vec U_A + 2\vec U_B + \vec U_C + \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $  &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+12  & \includegraphics[width=0.22\textwidth,height=0.22\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/2121.pdf}  &  $A$  &  Не совпадает & \vspace{0mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/2122.pdf}  & \footnotesize $U_\textsl{НФ}+U_\textsl{ФК}=U_\textsl{НК}$ & \footnotesize $ \vec U_{\textsl{БНН}} = 2\vec U_A + \vec U_B + \vec U_C + \frac{\vec U_\textsl{НК} + \vec U_\textsl{ФК}}{\sqrt{3}} $ &  $U_\textsl{НФ}+U_\textsl{ФК}$ \\
+\hline
+
+\end{longtable}
+\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
+\normalsize
+\captionsetup[table]{margin=0cm} % вернуть обратно если нужно
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ТРЕТЬЯ ТАБЛИЦА %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\captionsetup[table]{margin=0.6cm} % временное изменение
+\small
+\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
+
+\begin{longtable}{
+  >{\centering\arraybackslash}m{0.3cm}
+  |>{\centering\arraybackslash}m{4.8cm}
+  |>{\centering\arraybackslash}m{1.0cm}
+  |>{\centering\arraybackslash}m{3.4cm}
+  |>{\centering\arraybackslash}m{4.2cm}
+  |>{\centering\arraybackslash}m{2.4cm}
+  |>{\centering\arraybackslash}m{5.4cm}
+  |>{\centering\arraybackslash}m{2.5cm}
+  }
+
+\caption{Схемы подключения цепей треугольника дополнительной обмотки ТН: $«U_\textsl{НИ}/U_\textsl{ИФ}/U_\textsl{ФК}»$\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl3}\\ 
+\hhline{|-|-|-|-|-|-|-|-|}
+\rowcolor{gray!30}
+№ & Схема соединения обмоток «разомкнутого треугольника» ТН  & Особая фаза  & Направление векторов напряжений «звезды» и «треугольника»  & Векторная диаграмма напряжений & Выражение для расчета $U_{\textsl{НК}}$ & Выражение для расчета $U_{\textsl{БНН}}$ & Выражение для расчета ($3U_0$ треугольник)   \\ 
+\hhline{|-|-|-|-|-|-|-|-|}
+\endfirsthead
+
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl3}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hhline{|-|-|-|-|-|-|-|-|}
+\rowcolor{gray!30}
+№ & Схема соединения обмоток «разомкнутого треугольника» ТН  & Особая фаза  & Направление векторов напряжений «звезды» и «треугольника»  & Векторная диаграмма напряжений & Выражение для расчета $U_{\textsl{НК}}$  & Выражение для расчета $U_{\textsl{БНН}}$ & Выражение для расчета ($3U_0$ треугольник)   \\ 
+\hhline{|-|-|-|-|-|-|-|-|}
+\endhead
+\hhline{|-|-|-|-|-|-|-|-|}
+
+\endfoot
+\endlastfoot
+
+1  & \vspace{0mm}\includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/311.pdf}  &  $A$  &  Совпадает &  \vspace{1mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/312.pdf} & $U_\textsl{ИФ}+U_\textsl{ФК}$ & \multirow{8}{*}{\footnotesize$ \vec U_{\textsl{БНН}} = -\vec U_A + \vec U_B + \vec U_C + \frac{\vec U_\textsl{НИ} - \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\cline{1-6} \cline{8-8}
+
+2  & \includegraphics[width=0.21\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/321.pdf}  &  $A$  &  Совпадает & \vspace{1mm}\includegraphics[width=0.18\textwidth]{\apppath/Приложение. БНН/img/322.pdf}  & $U_\textsl{ИФ}+U_\textsl{ФК}$ &  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\hline
+
+3  & \vspace{2mm}\includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/331.pdf}  &  $A$  &  Не совпадает &  \vspace{0mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/332.pdf} & $U_\textsl{ИФ}+U_\textsl{ФК}$ & \multirow{7}{*}{\footnotesize$ \vec U_{\textsl{БНН}} = -\vec U_A + \vec U_B + \vec U_C - \frac{\vec U_\textsl{НИ} - \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\cline{1-6} \cline{8-8}
+
+4  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/341.pdf}  &  $A$  &  Не совпадает & \vspace{1mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/342.pdf}  & $U_\textsl{ИФ}+U_\textsl{ФК}$ &  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\hline
+
+
+5  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/351.pdf}  &  $B$  &  Совпадает &  \vspace{0mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/352.pdf} & $U_\textsl{ИФ}+U_\textsl{ФК}$ & \multirow{8}{*}{\footnotesize$ \vec U_{\textsl{БНН}} = \vec U_A - \vec U_B + \vec U_C + \frac{\vec U_\textsl{НИ} - \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\cline{1-6}
+
+6  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/361.pdf}  &  $B$  &  Совпадает & \vspace{0mm}\includegraphics[width=0.18\textwidth]{\apppath/Приложение. БНН/img/362.pdf}  & $U_\textsl{ИФ}+U_\textsl{ФК}$ &  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\hline
+
+7  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/371.pdf}  &  $B$  &  Не совпадает &  \vspace{1mm}\includegraphics[width=0.23\textwidth]{\apppath/Приложение. БНН/img/372.pdf} & $U_\textsl{ИФ}+U_\textsl{ФК}$ & \multirow{8}{*}{\footnotesize$ \vec U_{\textsl{БНН}} = \vec U_A - \vec U_B + \vec U_C - \frac{\vec U_\textsl{НИ} - \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\cline{1-6} \cline{8-8}
+
+8  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/381.pdf}  &  $B$  &  Не совпадает & \vspace{0mm}\includegraphics[width=0.23\textwidth]{\apppath/Приложение. БНН/img/382.pdf}  & $U_\textsl{ИФ}+U_\textsl{ФК}$ &  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\hline
+
+
+9  & \vspace{1mm}\includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/391.pdf}  &  $C$  &  Совпадает &  \vspace{0mm}\includegraphics[width=0.22\textwidth]{\apppath/Приложение. БНН/img/392.pdf} & $U_\textsl{ИФ}+U_\textsl{ФК}$ & \multirow{6}{*}{\footnotesize$ \vec U_{\textsl{БНН}} = \vec U_A + \vec U_B - \vec U_C + \frac{\vec U_\textsl{НИ} - \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\cline{1-6} \cline{8-8}
+
+10  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/3101.pdf}  &  $C$  &  Совпадает & \vspace{0mm}\includegraphics[width=0.22\textwidth]{\apppath/Приложение. БНН/img/3102.pdf}  & $U_\textsl{ИФ}+U_\textsl{ФК}$ &  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\hline
+
+11  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/3111.pdf}  &  $C$  &  Не совпадает &  \vspace{0mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/3112.pdf} & $U_\textsl{ИФ}+U_\textsl{ФК}$ & \multirow{7}{*}{\footnotesize$ \vec U_{\textsl{БНН}} = \vec U_A + \vec U_B - \vec U_C - \frac{\vec U_\textsl{НИ} - \vec U_\textsl{ИК}}{\sqrt{3}} $}  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\cline{1-6} \cline{8-8}
+
+12  & \includegraphics[width=0.2\textwidth,height=0.2\textheight,keepaspectratio]{\apppath/Приложение. БНН/img/3121.pdf}  &  $C$  &  Не совпадает & \vspace{2mm}\includegraphics[width=0.2\textwidth]{\apppath/Приложение. БНН/img/3122.pdf}  & $U_\textsl{ИФ}+U_\textsl{ФК}$ &  &  $U_\textsl{НИ}+U_\textsl{ИФ}+U_\textsl{ФК}$ \\
+\hline
+
+
+\end{longtable}
+\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
+\normalsize
+\captionsetup[table]{margin=0cm} % вернуть обратно если нужно
+
+\clearpage
+\end{landscape}
+\restoregeometry
+
+

@@ -1,0 +1,2517 @@
+{
+  "Constants": [
+    {
+      "Name": "MaxSignalsQuantityForOscillograms",
+      "Value": 255
+    },
+    {
+      "Name": "MaxParametersQuantityToDigitalInput",
+      "Value": 1
+    },
+    {
+      "Name": "MaxParametersQuantityToDigitalOutput",
+      "Value": 5
+    },
+    {
+      "Name": "MinUserNameLength",
+      "Value": 1
+    },
+    {
+      "Name": "MaxUserNameLength",
+      "Value": 14
+    },
+    {
+      "Name": "MinPasswordLength",
+      "Value": 1
+    },
+    {
+      "Name": "MaxPasswordLength",
+      "Value": 10
+    },
+    {
+      "Name": "MaxNumberExternalSignalsPerDigitalInput",
+      "Value": 1
+    },
+    {
+      "Name": "DigitalInputQuantity",
+      "Value": 32
+    }
+  ],
+  "RegistrationMatrixRecords": [
+    {
+      "ParameterName": "Supervision_M1_PowerSupply_Uoutput12V",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M1_PowerSupply_Uinput_Negative",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M1_PowerSupply_Uinput_Positive",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M1_PowerSupply_WordStatus",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M1_PowerSupply_ModuleVersion",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M1_PowerSupply_FirmwareVersion",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M1_PowerSupply_FactoryNumber",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M1_PowerSupply_UnbalanceVoltage",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M2_DI_ModuleVersion",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M2_DI_FirmwareVersion",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M2_DI_FactoryNumber",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M2_DI_WordStatus",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M3_DO_ModuleVersion",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M3_DO_FirmwareVersion",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M3_DO_FactoryNumber",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M3_DO_WordStatus",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M5_Measurement_WordStatus",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_ModuleVersion",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_FirmwareVersion",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_FactoryNumber",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth3Address",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth2Gateway",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth2Mask",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth2Address",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth1Gateway",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth1Mask",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth1Address",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth4Name",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth4MAC",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth3Name",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth3MAC",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth3Mask",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth2Name",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth1Name",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth1MAC",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_ModuleVersion",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_FSUversion",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_FirmwareVersion",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_FactoryNumber",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InputFilterTime",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_TimeOffsetInterference",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceHMIMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth4Mode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth3Mode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth2MAC",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth3Gateway",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth4Mask",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth4Address",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth4Gateway",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth2Mode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_InterfaceEth1Mode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_ConnectionTimeOut",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M7_CPU_MibusAddress",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_SGChange",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_RestartFirmwareError",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_RestartPowerLoss",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_NumSoftRestart",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_NumTurnOnDevice",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth4TransmittedMessageCnt",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth4ReceiveMessageCnt",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth4FrequencyConnectError",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth3TransmittedMessageCnt",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth3ReceiveMessageCnt",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth3FrequencyConnectError",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth2TransmittedMessageCnt",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth2FrequencyConnectError",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth1TransmittedMessageCnt",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth1ReceiveMessageCnt",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth1FrequencyConnectError",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Diagnostics_M7_CPU_Eth2ReceiveMessageCnt",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasHz1phs_1_Hz",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasHz1phs_2_Hz",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU1phs_1_U_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU1phs_2_U_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "BNN_LD_1_Ubnn",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "BNN_LD_1_Uni",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "BNN_LD_1_Uif",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "BNN_LD_1_Ufk",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "BNN_LD_1_Ubnn_f_A",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "BNN_LD_1_Ubnn_f_B",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "BNN_LD_1_Ubnn_f_C",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Calc3U0_1_3U0_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_3U0_treug_Fi",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU1phs_1_U_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU1phs_2_U_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU1phs_3_U_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcPSeqI_1_I1_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU3phs_1_Uc_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU3phs_1_Ub_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU3phs_1_Ua_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcPPZ3phs_1_Zca_Im",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Fab",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Fbc",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Fca",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Ra",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Rb",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Rc",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Xa",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Xb",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Xc",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Fa",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Fb",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_Fc",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_3_Ia_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_3_Ib_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_3_Ic_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Calc3I0_1_3I0_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Calc3U0_1_3U0_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "DZ_LD_1_3U0_treug",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcPPZ3phs_1_Zbc_Im",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcPPZ3phs_1_Zab_Im",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcPPZ3phs_1_Zca_Re",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcPPZ3phs_1_Zbc_Re",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcPPZ3phs_1_Zab_Re",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_1_Ia_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_2_Ia_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_1_Ia_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_2_Ia_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_1_Ib_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_2_Ib_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_1_Ib_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_2_Ib_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_1_Ic_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_2_Ic_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_1_Ic_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI3phs_2_Ic_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "BNN_LD_1_dU1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "BNN_LD_1_dI1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcPSeqUPh_1_U1_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "ZNR_LD_1_I2_I1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Calc3I0_1_3I0_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcNSeqI_1_I2_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcNSeqI_1_I2_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcNSeqUPh_1_U2_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "CalcNSeqUPh_1_U2_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "TNZNP_LD_1_3I0_2g_3I0_1g",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasHz1phs_3_Hz",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU1phs_3_U_1H_ang",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhI1phs_1_I_1H_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU3phs_2_Ua_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU3phs_2_Ub_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasPhU3phs_2_Uc_mag",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "MeasHz3phs_1_Hz",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B13_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B13_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B12_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B12_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B11_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B11_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B10_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B10_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B9_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B9_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B8_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B8_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B7_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B7_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B6_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B6_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B5_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B5_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B4_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B4_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B3_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B3_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B2_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B2_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B1_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B1_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B14_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B14_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B15_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B15_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B16_DelayOp",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M2_B101_B16_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K16_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K16_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K16_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K15_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K15_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K15_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K14_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K14_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K14_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K13_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K13_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K13_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K12_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K12_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K12_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K11_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K11_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K11_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K10_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K10_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K10_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K9_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K9_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K9_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K8_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K8_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K8_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K6_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K6_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K6_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K5_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K5_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K5_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K4_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K4_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K4_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K3_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K3_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K3_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K2_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K2_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K2_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K1_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K1_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K1_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K7_ParamMode",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K7_ParamOnTimer",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M3_K101_K7_ParamDescription",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInput_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputPrimaryNominal_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputSecondNominal_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputTransCoeff_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputDescription_16",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputDescription_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInput_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputPrimaryNominal_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputSecondNominal_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputTransCoeff_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_15",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputDescription_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputTransCoeff_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputSecondNominal_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputPrimaryNominal_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInput_14",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInput_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputPrimaryNominal_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputSecondNominal_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputTransCoeff_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputDescription_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_13",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputDescription_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInput_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputPrimaryNominal_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputTransCoeff_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputSecondNominal_12",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInput_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputPrimaryNominal_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputSecondNominal_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputTransCoeff_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputDescription_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_11",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputTransCoeff_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputDescription_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputSecondNominal_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInputPrimaryNominal_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_CTInput_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_10",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInput_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputPrimaryNominal_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputSecondNominal_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputTransCoeff_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputDescription_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_9",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInput_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputPrimaryNominal_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputSecondNominal_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputTransCoeff_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputDescription_8",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputDescription_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputTransCoeff_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInput_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputPrimaryNominal_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputSecondNominal_7",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInput_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputPrimaryNominal_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputSecondNominal_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputTransCoeff_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputDescription_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_6",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInput_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputPrimaryNominal_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputSecondNominal_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputTransCoeff_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputDescription_5",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputDescription_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInput_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputPrimaryNominal_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputSecondNominal_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputTransCoeff_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_4",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputDescription_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputTransCoeff_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputSecondNominal_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputPrimaryNominal_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInput_3",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInput_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputPrimaryNominal_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputSecondNominal_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputTransCoeff_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputDescription_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_2",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputDescription_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NameSignalSchemes_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MathematicalMethodCalculation_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_Quality_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TimeStamp_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInput_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputPrimaryNominal_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputTransCoeff_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_SubmittedValueKind_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeMeasSensor_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_MeasKind_PhaseLine_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TypeSubmittedValue_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Primary_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_NominalValueSignal_Secondary_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_TransformationCoefficient_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "M5_Measurement_BasicValueSignal_Primary_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    },
+    {
+      "ParameterName": "Supervision_M5_Measurement_VTInputSecondNominal_1",
+      "NeedWriteToOscillogram": false,
+      "StartOscillographyCondition": 0
+    }
+  ]
+}

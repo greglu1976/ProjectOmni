@@ -44,13 +44,51 @@
 УРОВ В1 может быть оперативно выведено из работы от внешнего сигнала \textit{«Вывод УРОВ В1»}, назначенного на соответствующий дискретный вход или функциональную клавишу.
 
 \item
-Функциональная схема логики  УРОВ В1 приведена на рисунке \ref{pict:UROV}. Функциональная схема логики УРОВ В2 выполняется аналогично схеме логики УРОВ В1.
+Функциональная схема логики  УРОВ В1 приведена на рисунке \ref{pict_urov:UROV}. Функциональная схема логики УРОВ В2 выполняется аналогично схеме логики УРОВ В1.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3311 УРОВ/img/UROV.pdf}
-\captionof{figure}{Функциональная схема логики УРОВ В1}\label{pict:UROV}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3311 УРОВ/img/UROV.pdf}
+\captionof{figure}{Функциональная схема логики УРОВ В1}\label{pict_urov:UROV}
 \end{figure}
 
+\item
+Уставки УРОВ В1 представлены в таблице \ref{desc_urov:tbl1}. Уставки УРОВ В2 аналогичны уставкам УРОВ В1.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки УРОВ В1\hfill\vspace{-0.5\baselineskip}}\label{desc_urov:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_urov:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>УРОВ В1|УРОВ
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_1_x_sr & \centering 0,000 ... 40,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_2_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_3_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_2_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_2_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}

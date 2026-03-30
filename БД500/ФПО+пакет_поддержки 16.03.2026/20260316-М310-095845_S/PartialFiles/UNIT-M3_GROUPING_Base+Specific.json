@@ -1,0 +1,1303 @@
+[
+  {
+    "Name": "SettingsTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "ConfigurationTree",
+    "Type": "Group",
+    "Nodes": [
+      {
+        "Name": "Синхронизация времени",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "Supervision_TimeSource",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_TimeCorrection",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_AddressServerTime1",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_AddressServerTime2",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_PTP_Interface_1",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_PTP_Interface_2",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_TimeOffset",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_FlagSummerTime",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_PulseDelayTime1PPS",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Параметры летнего времени",
+            "Type": "Group",
+            "Nodes": [
+              {
+                "Name": "Supervision_SummerMonth",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Supervision_SummerWeek",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Supervision_SummerWeekday",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Supervision_SummerHourStartAction",
+                "Type": "Parameter"
+              }
+            ]
+          },
+          {
+            "Name": "Параметры зимнего времени",
+            "Type": "Group",
+            "Nodes": [
+              {
+                "Name": "Supervision_WinterMonth",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Supervision_WinterWeek",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Supervision_WinterWeekday",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Supervision_WinterHourStartAction",
+                "Type": "Parameter"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Модуль ЦП",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "Резервирование",
+            "Type": "Group",
+            "Nodes": [
+              {
+                "Name": "Supervision_InterfaceRED12",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Supervision_InterfaceRED34",
+                "Type": "Parameter"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Настройка регистрации",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "DisturbanceRecorder_TrgMod",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_RcdMod",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_MemFull",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_ReTrgMod",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_PreTmms",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_PstTmms",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_LevMod",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_MaxTmms",
+            "Type": "Parameter"
+          }
+        ]
+      },
+      {
+        "Name": "Параметры отладки",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "ISSPSDE_Fi_tech",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "ISSPSDE_DEBUG_I0op",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "ISSPSDE_DEBUG_U0op",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "ISSPSDE_DEBUG_U0ret",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "ISSPSDE_DEBUG_P0>",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "ISSPSDE_DEBUG_P0<",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "ISSPSDE_DEBUG_P0",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "ISSPSDE_DEBUG_Utrg",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "ISSPSDE_DEBUG_And",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "ISSPSDE_DEBUG_Rst",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "ISSPSDE_DEBUG_Cnt",
+            "Type": "Parameter"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "MeasurementsTree",
+    "Type": "Group",
+    "Nodes": [
+      {
+        "Name": "Аналоговые",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "Вторичные",
+            "Type": "Group",
+            "Nodes": [
+              {
+                "Name": "Измеренные",
+                "Type": "Group",
+                "Nodes": [
+                  {
+                    "Name": "Ток",
+                    "Type": "Group",
+                    "Nodes": [
+                      {
+                        "Name": "MeasHalfRMS3phs_1_Ia_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasHalfRMS3phs_1_Ib_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasHalfRMS3phs_1_Ic_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasUI3phs_1_Ia_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasUI3phs_1_Ib_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasUI3phs_1_Ic_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasHI3phs_1_Ia2H_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasHI3phs_1_Ib2H_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasHI3phs_1_Ic2H_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasPhI1phs_1_I_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasHI1phs_1_I2H_mag",
+                        "Type": "Parameter"
+                      }
+                    ]
+                  },
+                  {
+                    "Name": "Напряжение",
+                    "Type": "Group",
+                    "Nodes": [
+                      {
+                        "Name": "MeasUI3phs_1_Ua_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasUI3phs_1_Ua_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasUI3phs_1_Ub_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasUI3phs_1_Ub_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasUI3phs_1_Uc_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasUI3phs_1_Uc_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasPPU1phs_1_U_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasPPU1phs_1_U_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasPPU1phs_2_U_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasPPU1phs_2_U_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasRecPPU1phs_1_U_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasRecPPU1phs_1_U_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasPhU1phs_1_U_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasHU1phs_1_U3H_mag",
+                        "Type": "Parameter"
+                      }
+                    ]
+                  },
+                  {
+                    "Name": "Частота",
+                    "Type": "Group",
+                    "Nodes": [
+                      {
+                        "Name": "MeasHz3phs_1_Hz",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasHz3phs_2_Hz",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasHz3phs_1_Hzs",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "MeasHz3phs_2_Hzs",
+                        "Type": "Parameter"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Name": "Расчетные",
+                "Type": "Group",
+                "Nodes": [
+                  {
+                    "Name": "Ток",
+                    "Type": "Group",
+                    "Nodes": [
+                      {
+                        "Name": "CalcPPI3phs_1_Iab_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPI3phs_1_Ibc_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPI3phs_1_Ica_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPSeqI_1_I1_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcNSeqI_1_I2_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcRCI_1_dIdt",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcRCI_2_dIdt",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "Calc3I0_1_3I0_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcSumHarm3I0_1_3I0HF_mag",
+                        "Type": "Parameter"
+                      }
+                    ]
+                  },
+                  {
+                    "Name": "Напряжение",
+                    "Type": "Group",
+                    "Nodes": [
+                      {
+                        "Name": "CalcPPU3phs_1_Uab_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPU3phs_1_Uab_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPU3phs_1_Ubc_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPU3phs_1_Ubc_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPU3phs_1_Uca_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPU3phs_1_Uca_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPhUPol3phs_1_Ua_pol_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPhUPol3phs_1_Ub_pol_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPhUPol3phs_1_Uc_pol_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPUPol3phs_1_Uab_pol_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPUPol3phs_1_Ubc_pol_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPUPol3phs_1_Uca_pol_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPSeqUPh_1_U1_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPSeqUPP_1_U1_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcNSeqUPh_1_U2_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcNSeqUPP_1_U2_mag",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "Calc3U0_1_3U0_mag",
+                        "Type": "Parameter"
+                      }
+                    ]
+                  },
+                  {
+                    "Name": "Сопротивление",
+                    "Type": "Group",
+                    "Nodes": [
+                      {
+                        "Name": "CalcPhZ3phs_1_Za_Re",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPhZ3phs_1_Za_Im",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPhZ3phs_1_Zb_Re",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPhZ3phs_1_Zb_Im",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPhZ3phs_1_Zc_Re",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPhZ3phs_1_Zc_Im",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPZ3phs_1_Zab_Re",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPZ3phs_1_Zab_Im",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPZ3phs_1_Zbc_Re",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPZ3phs_1_Zbc_Im",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPZ3phs_1_Zca_Re",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcPPZ3phs_1_Zca_Im",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPhZ3phs_1_Za_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPhZ3phs_1_Za_prev_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPhZ3phs_1_Zb_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPhZ3phs_1_Zb_prev_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPhZ3phs_1_Zc_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPhZ3phs_1_Zc_prev_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPPZ3phs_1_Zab_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPPZ3phs_1_Zab_prev_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPPZ3phs_1_Zbc_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPPZ3phs_1_Zbc_prev_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPPZ3phs_1_Zca_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcDirPPZ3phs_1_Zca_prev_ang",
+                        "Type": "Parameter"
+                      }
+                    ]
+                  },
+                  {
+                    "Name": "Угол мощности",
+                    "Type": "Group",
+                    "Nodes": [
+                      {
+                        "Name": "CalcAngUI_1_UI_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcAngUI_2_UI_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcAngUI_3_UI_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcAngUI_4_UI_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcAngUI_5_UI_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcAngUI_6_UI_ang",
+                        "Type": "Parameter"
+                      },
+                      {
+                        "Name": "CalcAngUI_7_UI_ang",
+                        "Type": "Parameter"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Самодиагностика",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "Supervision_PowerSupply_ExternalTotal",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Diagnostics_PowerSupply_cError_InputVoltageLost",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Diagnostics_PowerSupply_ncError_InputVoltageLost",
+            "Type": "Parameter"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "InformationTree",
+    "Type": "Group",
+    "Nodes": [
+      {
+        "Name": "Идентификация устройства",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "Supervision_OrderCode",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_FactoryNumber",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_DeviceManufacturer",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_InformationManufacturer",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_DateManufacturerDevice",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_DateCommissioning",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_FirmwareVersion",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_LatestDeviceSoftwareUpdate",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_LatestDeviceConfigurationUpdate",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_FunctionalPurposeDevice",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_MainFunctionsDevice",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_TypeInterfaces",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_EnergyFacility",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_BayName",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_NumberDeviceLocker",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Supervision_OrganizationID",
+            "Type": "Parameter"
+          }
+        ]
+      },
+      {
+        "Name": "Обобщенные сигналы самодиагностики устройства",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "cError",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "ncError",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Diagnostics_ReadyWork",
+            "Type": "Parameter"
+          }
+        ]
+      },
+      {
+        "Name": "Самодиагностика устройства",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "Источники синхронизации",
+            "Type": "Group",
+            "Nodes": [
+              {
+                "Name": "Diagnostics_TimeSyncFault",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_SNTP1ServerFault",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_SNTP2ServerFault",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_PTP1ServerFault",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_PTP2ServerFault",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_NoSignal1PPS",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_TimeACSFault",
+                "Type": "Parameter"
+              }
+            ]
+          },
+          {
+            "Name": "Диагностические статусы",
+            "Type": "Group",
+            "Nodes": [
+              {
+                "Name": "Diagnostics_ConnectDevice",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_DeviceTest",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_DeviceOutOperator",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_CPU_TEMPStandard",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_IndicationSummerTime",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_CurrentTimeSource",
+                "Type": "Parameter"
+              }
+            ]
+          },
+          {
+            "Name": "Периферийные устройства",
+            "Type": "Group",
+            "Nodes": [
+              {
+                "Name": "Diagnostics_PeripheralsModuleFailureTotal",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_PeripheralsModuleFailure",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_RelayOpError",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_DO_Failure",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_DO_NotDefined",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_DI_Failure",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_DI_NotDefined",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Supervision_PowerSupply_ExternalTotal",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_PowerSupply_cError_InputVoltageLost",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_PowerSupply_ncError_InputVoltageLost",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_PowerSupply_cError_AlarmError",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_PowerSupply_ncError_AlarmError",
+                "Type": "Parameter"
+              },
+              {
+                "Name": "Diagnostics_BlockHMIFailure",
+                "Type": "Parameter"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Регистрация событий",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "DisturbanceRecorder_MaxNumRcd",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_Beh",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_RcdMade",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_FltNum",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_GriFltNum",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_RcdStr",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DisturbanceRecorder_StartOscilloscope",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Command_StartOscilloscope_FSU",
+            "Type": "Parameter"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "CommandsTree",
+    "Type": "Group",
+    "Nodes": [
+      {
+        "Name": "Сервис",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "Mibus_Reset",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "APCSRst_Reset",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "DI_Reset",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Command_StartOscilloscope_Manual",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Command_StartOscilloscope_ACS",
+            "Type": "Parameter"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "TechMeasurementsTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "TechSettingsTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "DigitalSignalsTree",
+    "Type": "Group",
+    "Nodes": [
+      {
+        "Name": "Обобщенные сигналы",
+        "Type": "Group",
+        "Nodes": [
+          {
+            "Name": "Supervision_PowerSupply_ExternalTotal",
+            "Type": "Parameter"
+          },
+          {
+            "Name": "Diagnostics_PeripheralsModuleFailureTotal",
+            "Type": "Parameter"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "SecurityParametersTree",
+    "Type": "Group",
+    "Nodes": [
+      {
+        "Name": "Security_QuantityFailedAttempts",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_BlockingTime",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_InactivityTime",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_PasswordTime",
+        "Type": "Parameter"
+      }
+    ]
+  },
+  {
+    "Name": "ReservedParameters",
+    "Type": "Group",
+    "Nodes": [
+      {
+        "Name": "Security_AuthError",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_ExcessNumAuth",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_UserInactivityTimeout",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_ExpirationPassword",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_UserSettingChange",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_CurrentChangeDateTime",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_EnablDisablConnectPort",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_ConfigurationReset",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_ConnectDeviceServicePort",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_TransDeviceServiceMode",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_CheckFirmwareCRC",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_UsingAuthMechanism",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_RequestParallelAccess",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_AccessError",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_ViolationOfficialPrivilege",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_InactiveAssociation",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_QuantityFailedAttempts",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_BlockingTime",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_InactivityTime",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Security_PasswordTime",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_TimeSource",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_TimeCorrection",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_AddressServerTime1",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_AddressServerTime2",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_PTP_Interface_1",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_PTP_Interface_2",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_TimeOffset",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_FlagSummerTime",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_PulseDelayTime1PPS",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_SummerMonth",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_SummerWeek",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_SummerWeekday",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_SummerHourStartAction",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_WinterMonth",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_WinterWeek",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_WinterWeekday",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_WinterHourStartAction",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_InterfaceRED12",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "Supervision_InterfaceRED34",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "DisturbanceRecorder_TrgMod",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "DisturbanceRecorder_RcdMod",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "DisturbanceRecorder_MemFull",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "DisturbanceRecorder_ReTrgMod",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "DisturbanceRecorder_PreTmms",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "DisturbanceRecorder_PstTmms",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "DisturbanceRecorder_LevMod",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "DisturbanceRecorder_MaxTmms",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "ISSPSDE_Fi_tech",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "ISSPSDE_DEBUG_I0op",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "ISSPSDE_DEBUG_U0op",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "ISSPSDE_DEBUG_U0ret",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "ISSPSDE_DEBUG_P0>",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "ISSPSDE_DEBUG_P0<",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "ISSPSDE_DEBUG_P0",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "ISSPSDE_DEBUG_Utrg",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "ISSPSDE_DEBUG_And",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "ISSPSDE_DEBUG_Rst",
+        "Type": "Parameter"
+      },
+      {
+        "Name": "ISSPSDE_DEBUG_Cnt",
+        "Type": "Parameter"
+      }
+    ]
+  },
+  {
+    "Name": "SettingsGroups",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "RetainParameters",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "HardwareDigitalInputsTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "HardwareDigitalOutputsTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "ParametersToHardwareDigitalInputsTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "ParametersToHardwareDigitalOutputsTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "ParametersToHmiButtonsTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "ParametersToHmiSignalizationTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "TestModeMeasurementsTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "TestModeCommandsTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "TestModeOnlyAllowed",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "ElectricalArcZoneParametersTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "ElectricalArcDetectorParametersTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "ElectricArcSignalizationTree",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "Vectors",
+    "Type": "Group",
+    "Nodes": []
+  },
+  {
+    "Name": "ElectricalArcParametersTree",
+    "Type": "Group",
+    "Nodes": []
+  }
+]

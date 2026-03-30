@@ -12,22 +12,22 @@
 В случае присоединения линии к системе через два выключателя для каждого из них можно задействовать свою логику управления выключателем. Далее приведено описание логики управления выключателем В1, логика управления вторым выключателем аналогична.
 
 \item
+Функциональная схема логики управления В1 приведена на рисунке \ref{pict_uv:switch_control}. Функциональная схема логики управления В2 выполняется аналогично схеме логики управления В1.
+
+\vspace{2mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3391 УВ/img/switch_control.pdf}
+\captionof{figure}{Функциональная схема управления выключателем В1}\label{pict_uv:switch_control}
+\end{figure}
+
+\item
 Команда на включение выключателя «Включить В1» формируется:
 \begin{itemize}
     \item от команды оперативного включения выключателя (сигнал \textit{«РКВ В1»});
     \item от схемы полуавтоматического включения (сигнал \textit{«Ср. ПАВ В1»});
     \item при срабатывании АПВ шин или линии (сигналы \textit{«Ср. АПВш В1»} и \textit{«Ср. АПВл В1»}).
 \end{itemize}
-
-\item
-Функциональная схема логики управления В1 приведена на рисунке \ref{pict_logic_otkl:switch_control}. Функциональная схема логики управления В2 выполняется аналогично схеме логики управления В1.
-
-\vspace{2mm}
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3391 УВ/img/switch_control.pdf}
-\captionof{figure}{Функциональная схема управления выключателем В1}\label{pict_logic_otkl:switch_control}
-\end{figure}
 
 \item
 Оперативное включение выключателя осуществляется с контролем наличия разрешающего сигнала от функционального блока КСН (принцип работы которого описан в пункте 14 настоящего руководства по эксплуатации). Максимальное время, в течение которого продолжается ожидание условий оперативного включения, регулируется уставкой \textbf{«Tожид усл. опер. вкл. В1»}. По истечению данной выдержки времени команда оперативного включения сбрасывается. Выдержка времени на возврат \textbf{«Тпрод опер. вкл. В1»} задает время продления сигнала оперативного включения.
@@ -40,5 +40,38 @@
 
 \item
 При наличии сигнала \textit{«Блок. включения В1»}, формируемого функциональным блоком контроля силового выключателя, включение выключателя блокируется.
+
+\item
+Уставки схемы управления выключателем В1 представлены в таблице \ref{desc_uv:tbl1}. Уставки схемы управления выключателем В2 аналогичны уставкам схемы управления выключателем В1.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки схемы управления выключателем В1\hfill\vspace{-0.5\baselineskip}}\label{desc_uv:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_uv:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>Управление выключателем В1|Управление выключателем
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_vozvrat_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_2_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}

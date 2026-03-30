@@ -30,13 +30,50 @@
 ЗНР может быть оперативно выведена из работы от внешнего сигнала \textit{«Вывод ЗНР»}, назначенного на соответствующий дискретный вход или функциональную клавишу.
 
 \item
-Функциональная схема логики ЗНР приведена на рисунке \ref{pict_bk:ZNR}.
+Функциональная схема логики ЗНР приведена на рисунке \ref{pict_znr:ZNR}.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0221 ЗНР/img/ZNR.pdf}
-\captionof{figure}{Функциональная схема ЗНР}\label{pict_bk:ZNR}
+\captionof{figure}{Функциональная схема ЗНР}\label{pict_znr:ZNR}
 \end{figure}
 
+\item
+Уставки ЗНР представлены в таблице \ref{desc_znr:tbl1}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЗНР\hfill\vspace{-0.5\baselineskip}}\label{desc_znr:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_znr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>ЗНР|ЗНР
+\raggedright {'Description': ''} & \centering 3I0ср ЗНР & \centering 0,000 ... 40,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering ИО ЗНР & \centering 3I0 \\ I2/I1 & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering I2/I1 ЗНР & \centering 0,000 ... 1,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering ЗНР & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Тср ЗНР & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Кол-во выкл-ей & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
 \end{enumerate}
+
+\newpage

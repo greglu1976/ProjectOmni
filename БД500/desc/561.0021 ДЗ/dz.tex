@@ -72,6 +72,9 @@
 \vec K = \frac{1}{3} \cdot \frac{\vec Z_{0 \textsl{ уд}} - \vec Z_{1 \textsl{ уд}}}{\vec Z_{1 \textsl{ уд}}}\label{eq:groupK1}, \\[10pt]
 \vec K_{\textsl{пл}} = \frac{1}{3} \cdot \frac{\vec Z_{M \textsl{ уд}}}{\vec Z_{1 \textsl{ уд}}}\label{eq:groupK2}, 
 \end{align}
+
+\newpage
+
 \begin{eqexpl}[10mm]
 \item{$ \vec Z_{0 \textsl{ уд}} $}  комплексное удельное сопротивление нулевой последовательности;
 \item{$ \vec Z_{1 \textsl{ уд}} $}  комплексное удельное сопротивление прямой последовательности;
@@ -125,7 +128,7 @@
 \caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
 \hhline{|-|-|}
 \rowcolor{gray!30}
-ГНаименование параметра & Значение  \\ 
+Наименование параметра & Значение  \\ 
 \hhline{|-|-|}
 \endhead
 \hhline{|-|-|}
@@ -153,16 +156,16 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_on.pdf}
+\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_on.pdf}
 \captionof{figure}{Характеристики срабатывания органов направления}\label{pict_dz:on}
 \end{figure}
 
 \item
 Направленность для каждой ступени ДЗ задается с помощью программных переключателей \textbf{«Направл. ДЗ-ФФ(ФЗ)-N»}, имеющих три положения:
 \begin{enumerate}[label=\arabic*)]
-\item Ненапр. – ступень выполнена ненаправленной; 
-\item Прямо – ступень выполнена прямонаправленной; 
-\item Обратно – ступень выполнена обратнонаправленной. 
+\item \textit{Ненапр.} – ступень выполнена ненаправленной; 
+\item \textit{Прямо} – ступень выполнена прямонаправленной; 
+\item \textit{Обратно} – ступень выполнена обратнонаправленной. 
 \end{enumerate}
 
 \item
@@ -180,26 +183,60 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_r.pdf}
+\includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_r.pdf}
 \captionof{figure}{Характеристика срабатывания измерительного органа отстройки от нагрузки}\label{pict_dz:r}
 \end{figure}
+
+\item
+Уставки органов направленности и измерительных органов отстройки от нагрузки представлены в таблице \ref{desc_dz:tbl2}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Общие уставки ДЗ-ФФ(ФЗ)\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl2}\\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl2}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ДЗ|general
+\raggedright {'Description': ''} & \centering DZ_FF_pervaya_stupen_LN_1_F2 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering DZ_FF_pervaya_stupen_LN_1_F3 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering DZ_FF_pervaya_stupen_LN_1_Rng & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering DZ_FF_pervaya_stupen_LN_1_Fng & \centering 0,000 ... 45,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \item
 Суммарная характеристика направленного РС, используемого в логике работы ступеней ДЗ приведена на рисунке \ref{pict_dz:rs}.  
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_rs.pdf}
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_rs.pdf}
 \captionof{figure}{Характеристики срабатывания направленного РС}\label{pict_dz:rs}
 \end{figure}
 
 \item
-Дополнительно для каждой ступени ДЗ предусмотрены направленные РС с охватом начала координат, уставки  по  $R$,  $X$  и $φ_1$  которых  совпадают  с  уставками  ненаправленного  РС  соответствующей  ступени. Характеристика срабатывания (см. рис \ref{pict_dz:nachalo}) направленного РС с охватом начала координат имеет форму параллелограмма, смещенного вдоль направления металлического КЗ на линии в третий и четвертый квадранты на величину до $0,1\cdot X_{\textsl{ср}}$.  
+Дополнительно для каждой ступени ДЗ предусмотрены ненаправленные РС с охватом начала координат, уставки  по  $R$,  $X$  и $φ_1$  которых  совпадают  с  уставками  ненаправленного  РС  соответствующей  ступени. Характеристика срабатывания (см. рис \ref{pict_dz:nachalo}) ненаправленного РС с охватом начала координат имеет форму параллелограмма, смещенного вдоль направления металлического КЗ на линии в третий и четвертый квадранты на величину до $0,1\cdot X_{\textsl{ср}}$.  
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.4\textwidth,height=0.4\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_nachalo.pdf}
-\captionof{figure}{Характеристика срабатывания направленного РС с охватом начала координат}\label{pict_dz:nachalo}
+\includegraphics[width=0.35\textwidth,height=0.35\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_nachalo.pdf}
+\captionof{figure}{Характеристика срабатывания ненаправленного РС с охватом начала координат}\label{pict_dz:nachalo}
 \end{figure}
 
 \item
@@ -232,7 +269,7 @@
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
 \item
-Первая  ступень  ДЗ  от  междуфазных  КЗ  содержит  две  «подступени»:  быстродействующая ДЗ-ФФ-1(б)  и  медленнодействующая  ДЗ-ФФ-1(м),  которая  вводится программным  ключом  «ДЗ-ФФ-1(м)». Всю ступень можно ввести/вывести программным ключом \textbf{«ДЗ-ФЗ-1»}. Контроль от блокировки при качаниях (БК)  для  каждой  подступени  задается  отдельными  программными  переключателями  \textbf{«БК  ДЗ-ФФ-1(б)»}  и  \textbf{«БК  ДЗ-ФФ-1(м)»}.  Действие  подступеней  осуществляется  с  регулируемыми  независимыми  выдержками времени \textbf{«Тср ДЗ-ФФ-1(б)»} и \textbf{«Тср ДЗ-ФФ-1(м)»}.
+Первая  ступень  ДЗ  от  междуфазных  КЗ  содержит  две  «подступени»:  быстродействующая ДЗ-ФФ-1(б)  и  медленнодействующая  ДЗ-ФФ-1(м),  которая  вводится программным  ключом  «ДЗ-ФФ-1(м)». Всю ступень можно ввести/вывести программным ключом \textbf{«ДЗ-ФФ-1»}. Контроль от блокировки при качаниях (БК)  для  каждой  подступени  задается  отдельными  программными  переключателями  \textbf{«БК  ДЗ-ФФ-1(б)»}  и  \textbf{«БК  ДЗ-ФФ-1(м)»}.  Действие  подступеней  осуществляется  с  регулируемыми  независимыми  выдержками времени \textbf{«Тср ДЗ-ФФ-1(б)»} и \textbf{«Тср ДЗ-ФФ-1(м)»}.
 
 \item
 Предусмотрена возможность подхвата сработанного состояния РС-ФФ-1 от направленного РС-ФФ-2 с охватом начала координат (вводится программным ключом \textbf{«Подхват РС-ФФ-1»}). Тем самым гарантируется правильное действие защиты при близких  КЗ.  Возврат схемы подхвата в исходное состояние происходит только после возврата направленного РС-ФФ-2 с охватом начала координат. 
@@ -246,30 +283,34 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_ff1.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/DZ_FF_1.pdf}
 \captionof{figure}{Функциональная схема логики ДЗ-ФФ-1}\label{pict_dz:ff1}
 \end{figure}
 
+\item
+Уставки первой ступени ДЗ от междуфазных КЗ (ДЗ-ФФ-1) представлены в таблице \ref{desc_dz:tbl3}.
+
 \small
 \begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ступени ДЗ-ФФ-1\hfill\vspace{-0.5\baselineskip}}\label{dz:tbl2}\\ 
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ступени ДЗ-ФФ-1\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl3}\\
 \hline
 \rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
 \hline
 \endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dz:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl3}}\hfill\ }\vspace{-0.5\baselineskip} \\
 \hline
 \rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
 \endhead
-%\hline
-\endfoot
-%\hline
-\endlastfoot
 
-%===m>2.0.0.0|FB|ФБ РЗА (LD)/Защиты ЛЭП/ДЗ (LD)=ДЗ-ФФ первая ступень (LN)_1
+%===m>ДЗ|ДЗ-ФФ-1
+\raggedright {'Description': ''} & \centering ДЗ-ФФ-1 & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
 \raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_Rsr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
 \hline
 \raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_Xsr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
@@ -280,19 +321,17 @@
 \hline
 \raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_F2 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
 \hline
+\raggedright {'Description': ''} & \centering Тср ДЗ-ФФ (б) & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
 \raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_F3 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
 \hline
 \raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_Napravlennost_DZ_FF & \centering Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
 \hline
+\raggedright {'Description': ''} & \centering Подхват РС-ФФ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
 \raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_Rng & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
 \hline
 \raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_Fng & \centering 0,000 ... 45,000 & \centering  & \centering \arraybackslash 0,001 \\
-\hline
-\raggedright {'Description': ''} & \centering ДЗ-ФФ-1 & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright {'Description': ''} & \centering Тср ДЗ-ФФ (б) & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
-\hline
-\raggedright {'Description': ''} & \centering Подхват РС-ФФ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
 \hline
 \raggedright {'Description': ''} & \centering Тср ДЗ-ФФ (м) & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
 \hline
@@ -330,11 +369,69 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_ff2.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/DZ_FF_2.pdf}
 \captionof{figure}{Функциональная схема логики ДЗ-ФФ-2}\label{pict_dz:ff2}
 \end{figure}
 
+\item
+Уставки второй ступени ДЗ от междуфазных КЗ (ДЗ-ФФ-2) представлены в таблице \ref{desc_dz:tbl4}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ступени ДЗ-ФФ-2\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl4}\\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl4}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ДЗ|ДЗ-ФФ-2
+\raggedright {'Description': ''} & \centering Rср & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Xср & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Ф1 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Ф2 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Ф3 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Направленность ДЗ-ФФ & \centering Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Rнг & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Фнг & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering ДЗ-ФФ-2 & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering ДЗ-ФФ-2(б) & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering БК-ДЗ-ФФ-2 (б) & \centering Откл. \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_2_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering БК-ДЗ-ФФ-2 (м) & \centering Откл. \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering БНН ДЗ-ФФ-2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
 \end{enumerate}
+
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ВТОРАЯ СТУПЕНЬ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -351,9 +448,59 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_ff3.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/DZ_FF_3.pdf}
 \captionof{figure}{Функциональная схема логики ДЗ-ФФ-3}\label{pict_dz:ff3}
 \end{figure}
+
+\item
+Уставки ступеней ДЗ от междуфазных КЗ (ДЗ-ФФ-3, ДЗ-ФФ-4, ДЗ-ФФ-5, ДЗ-ФФ-6) представлены в таблице \ref{desc_dz:tbl5}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ступени ДЗ-ФФ-3(4,5,6)\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl5}\\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl5}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ДЗ|ДЗ-ФФ-3
+\raggedright {'Description': ''} & \centering Rср & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Xср & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Ф1 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Ф2 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Ф3 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Направленность ДЗ-ФФ & \centering Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Rнг & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Фнг & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering ДЗ-ФФ & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Тср ДЗ-ФФ & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering БК ДЗ-ФФ & \centering Откл. \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering БНН ДЗ-ФФ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ 3,4,5,6 СТУПЕНИ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -378,23 +525,85 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/DZ_FZ_1.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/DZ_FZ_1.pdf}
 \captionof{figure}{Функциональная схема логики ДЗ-ФЗ-1}\label{pict_dz:DZ_FZ_1}
 \end{figure}
+
+\item
+Уставки первой ступени ДЗ от однофазных КЗ (ДЗ-ФЗ-1) представлены в таблице \ref{desc_dz:tbl6}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ступени ДЗ-ФЗ-1\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl6}\\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl6}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ДЗ|ДЗ-ФЗ-1
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_Rsr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_Xsr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_F1 & \centering 0,000 ... 90,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_F4 & \centering 0,000 ... 20,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_F2 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_F3 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_Napravlennost_DZ_FF & \centering Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_Rng & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_1_1_Fng & \centering 0,000 ... 45,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_2_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_4_bool_const_1_S & \centering Откл. \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_4_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_4_bool_const_2_S & \centering Откл. \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_2_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_3_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ПЕРВАЯ СТУПЕНЬ ФАЗА-ЗЕМЛЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2,3 СТУПЕНИ ФАЗА-ЗЕМЛЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item\label{sec:secfz} Остальные ступени ДЗ от однофазных КЗ (ДЗ-ФЗ-2(3))
+\item\label{sec:secfz} Остальные ступени ДЗ от однофазных КЗ ДЗ-ФЗ-2, ДЗ-ФЗ-3
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
 \item
 Логика работы остальных ступеней ДЗ от однофазных КЗ выполнена одинаковой. Ввод в работу ступеней осуществляется программными ключами \textbf{«ДЗ-ФЗ-2(3)»}. Действие ступеней осуществляется с регулируемыми независимыми выдержками времени \textbf{«Тср ДЗ-ФЗ-2(3)»}. Контроль от БК задается отдельными программными переключателями \textbf{«БК ДЗ-ФЗ-2(3)»}.
 
 \item
-Разрешающий сигнал от БК для ступеней подхватывается от срабатывания РС соответствующей ступени и удерживается независимо от истечения времени ввода БК. Возврат разрешающего сигнала происходит только после возврата РС соответствующей ступени. На рисунке \ref{pict_dz:DZ_FZ_2} приведена функциональная схема логики ДЗ-З-2, выполнение функциональной схемы логики ступени ДЗ ДЗ-ФЗ-3 аналогичное.
+Разрешающий сигнал от БК для ступеней подхватывается от срабатывания РС соответствующей ступени и удерживается независимо от истечения времени ввода БК. Возврат разрешающего сигнала происходит только после возврата РС соответствующей ступени. На рисунке \ref{pict_dz:DZ_FZ_2} приведена функциональная схема логики ДЗ-ФЗ-2, выполнение функциональной схемы логики ступени ДЗ-ФЗ-3 аналогичное.
 
 \vspace{2mm}
 \begin{figure}[H]
@@ -402,6 +611,56 @@
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/DZ_FZ_2.pdf}
 \captionof{figure}{Функциональная схема логики ДЗ-ФЗ-2}\label{pict_dz:DZ_FZ_2}
 \end{figure}
+
+\item
+Уставки ступеней ДЗ от однофазных КЗ (ДЗ-ФЗ-2, ДЗ-ФЗ-3) представлены в таблице \ref{desc_dz:tbl7}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ступени ДЗ-ФЗ-2(3)\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl7}\\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl7}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ДЗ|ДЗ-ФЗ-2
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_N_1_Rsr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_N_1_Xsr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_N_1_F1 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_N_1_F2 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_N_1_F3 & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_N_1_Napravlennost_DZ_FF & \centering Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_N_1_Rng & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_soprotivleniya_dlya_DZ_FF_N_1_Fng & \centering 0,000 ... 359,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_4_bool_const_1_S & \centering Откл. \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ 2,3 СТУПЕНИ ФАЗА-ЗЕМЛЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -451,23 +710,61 @@
 \item
 В составе ДЗ предусмотрена логика формирования пуска автоматического ускорения ДЗ (АУ ДЗ), выходной сигнал которого действует в логику автоматического ускорения. 
 \item
-Формирование сигнала пуска АУ ДЗ можно задать от одной из ступеней ДЗ-ФФ и ДЗ-ФЗ программными переключателями \textbf{«Ступень АУ ДЗ-ФЗ»} и \textbf{«Ступень АУ ДЗ-ФФ»}. В зависимости от положения программного переключателя \textbf{«Вывод напр. ДЗ при АУ»} сигнал пуска АУ ДЗ формируется либо от направленного РС с охватом начала координат – положение \textit{«Вкл.»}, либо от направленного РС – положение \textit{«Откл.»}.
+Формирование сигнала пуска АУ ДЗ можно задать от одной из ступеней ДЗ-ФФ и ДЗ-ФЗ программными переключателями \textbf{«Ступень АУ ДЗ-ФЗ»} и \textbf{«Ступень АУ ДЗ-ФФ»}. В зависимости от положения программного переключателя \textbf{«Вывод напр. ДЗ при АУ»} сигнал пуска АУ ДЗ формируется либо от ненаправленного РС с охватом начала координат – положение \textit{«Вкл.»}, либо от направленного РС – положение \textit{«Откл.»}.
 
 \item
-При установке измерительных ТН на линии (определяется программным переключателем \textbf{«Место ТН»}) предусматривается автоматический перевод ускоряемой ступени ДЗ на направленное РС с охватом начала координат.
+При установке измерительных ТН на линии (определяется программным переключателем \textbf{«Место ТН»}) предусматривается автоматический перевод ускоряемой ступени ДЗ на ненаправленное РС с охватом начала координат.
 
 \item
 При необходимости для автоматически ускоряемой ступени ДЗ можно ввести контроль от БК и БНН программными переключателями \textbf{«БК АУ ДЗ»} и \textbf{«БНН АУ ДЗ»}.
 
 \item
-Функциональная схема логики АУ ДЗ приведена на рисунке \ref{pict_dz:AU_DZ_PUSK}.
+Функциональная схема логики АУ ДЗ приведена на рисунке \ref{pict_dz:AU_DZ}.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/AU_DZ_PUSK.pdf}
-\captionof{figure}{Функциональная схема  пуска АУ ДЗ}\label{pict_dz:AU_DZ_PUSK}
+\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/AU_DZ.pdf}
+\captionof{figure}{Функциональная схема  пуска АУ ДЗ}\label{pict_dz:AU_DZ}
 \end{figure}
+
+\item
+Уставки автоматического ускорения ДЗ (АУ ДЗ) представлены в таблице \ref{desc_dz:tbl8}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки АУ ДЗ\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl8}\\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl8}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ДЗ|Пуск АУ ДЗ
+\raggedright {'Description': ''} & \centering Ступень АУ ДЗ-ФФ & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. \\ 4 ступ. \\ 5 ступ. \\ 6 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Место ТН & \centering Шины \\ Линия & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Ступень АУ ДЗ-ФЗ & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Вывод напр. ДЗ при АУ & \centering Вкл. \\ Откл. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_4_bool_const_3_S & \centering Откл. \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering БНН АУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ АУ ДЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -484,7 +781,7 @@
 Ввод в работу ОУ-бв ДЗ осуществляется от внешнего сигнала \textit{«Ввод ОУ-бв ДЗ»}. Выбор оперативно ускоряемой ступени ДЗ без выдержки времени выполняется с помощью программных переключателей \textbf{«Ступень ОУ-бв ДЗ-ФФ»} и \textbf{«Ступень ОУ-бв ДЗ-ФЗ»}. При необходимости для ОУ-бв ДЗ также можно задать время срабатывания уставкой \textbf{«Тср ОУ-бв ДЗ»}.
 
 \item
-Кроме того, предусмотрена возможность автоматического ввода ОУ ДЗ и ОУ-бв ДЗ программными ключами \textbf{«Ввод ОУ ДЗ при выводе осн. защиты»} и \textbf{«Ввод ОУ-бв ДЗ при выводе осн. защиты»} при приеме внешнего сигнала о выводе основной защиты. Введенное ускорение может быть оперативно выведено от внешнего сигнала \textit{«Вывод авт. введенного ОУ»}.
+Кроме того, предусмотрена возможность автоматического ввода ОУ ДЗ и ОУ-бв ДЗ программными ключами \textbf{«Ввод ОУ ДЗ при выводе осн. защиты»} и \textbf{«Ввод ОУ-бв ДЗ при выводе осн. защиты»} при приеме внешнего сигнала о выводе основной защиты. Введенное ускорение может быть оперативно выведено от внешнего сигнала \textit{«Авт. введенное ОУ выведено»}.
 
 \item
 Необходимо обратить внимание, что как оперативное ускорение, так и оперативное ускорение без выдержки времени осуществляются от сигналов пуска ступени ДЗ, то есть контроль от БК и БНН для обоих режимов определяется соответствующими настройками самой ступени.
@@ -505,6 +802,42 @@
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/OU_bv_DZ.pdf}
 \captionof{figure}{Функциональная схема логики ОУ-бв ДЗ}\label{pict_dz:OU_bv_DZ}
 \end{figure}
+
+\item
+Уставки оперативного ускорения ДЗ (ОУ ДЗ) представлены в таблице \ref{desc_dz:tbl9}. Уставки оперативного ускорения ДЗ без выдержки времени (ОУ-бв ДЗ) аналогичны уставкам ОУ ДЗ.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ОУ ДЗ\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl9}\\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl9}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ДЗ|ОУ ДЗ
+\raggedright {'Description': ''} & \centering Ступень ОУ ДЗ-ФФ & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. \\ 4 ступ. \\ 5 ступ. \\ 6 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Тср ОУ ДЗ & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Ступень ОУ ДЗ-ФЗ & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering БСТО ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Ввод ОУ ДЗ при выводе осн.защиты & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ОУ ДЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

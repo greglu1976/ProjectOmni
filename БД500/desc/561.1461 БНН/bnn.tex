@@ -13,7 +13,7 @@
 Для алгоритмов РЗА, которые при неисправностях в цепях основного ТН могут излишне или ложно сработать и повлиять на режим работы первичной сети, используется специальная блокировка при неисправностях в цепях напряжения (БНН), которая вводится программным ключом \textbf{«Контр. ЦН»}.
 
 \item
-Функциональная схема логики БНН приведена на рисунке \ref{pict:BNN}.
+Функциональная схема логики БНН приведена на рисунке \ref{pict_bnn:BNN}.
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  КОНЕЦ ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,20 +61,20 @@ U_{\textsl{БНН ф.С}} = \left| \vec U_{C\textsl{(ВО-1)}} - \frac{\vec U_{c
 В устройстве предусмотрен алгоритм БНН, повторяющий принцип построения КРБ-12М, который реагирует на напряжение небаланса $U_{\textsl{БНН}}$, В, между основной и дополнительной вторичными обмотками. 
 
 \item 
-Расчет $U_{\textsl{БНН}}$, В, зависит от схемы подключения цепей «разомкнутого треугольника». В таблице \ref{bnn:tbl} приведены уставки для БНН по сравнению напряжений «звезды» и «разомкнутого треугольника».
+Расчет $U_{\textsl{БНН}}$, В, зависит от схемы подключения цепей «разомкнутого треугольника». В таблице \ref{desc_bnn:tbl} приведены уставки для БНН по сравнению напряжений «звезды» и «разомкнутого треугольника».
 
 %%%%%%%%%%%%%ТАБЛИЦА %%%%%%%%%%%%%%%%%%%
 \small
 \setlength{\extrarowheight}{0.05cm} 
 \begin{longtable}
 {|>{\centering\arraybackslash}m{6cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{4cm}|}
-\caption{Перечень уставок алгоритма БНН по принципу КРБ-12М\hfill\vspace{-0.5\baselineskip}}\label{bnn:tbl}\\ 
+\caption{Перечень уставок алгоритма БНН по принципу КРБ-12М\hfill\vspace{-0.5\baselineskip}}\label{desc_bnn:tbl}\\ 
 \hhline{|-|-|-|-|}
 \rowcolor{gray!30}
 Наименование уставки  & Диапазон   & Шаг & Значение по умолчанию  \\ 
 \hhline{|-|-|-|-|}
 \endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{bnn:tbl}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_bnn:tbl}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
 \hhline{|-|-|-|-|}
 \rowcolor{gray!30}
 Наименование уставки  & Диапазон   & Шаг & Значение по умолчанию  \\ 
@@ -159,12 +159,65 @@ U_{\textsl{БНН ф.С}} = \left| \vec U_{C\textsl{(ВО-1)}} - \frac{\vec U_{c
 \item
 Действие БНН осуществляется без выдержки времени на блокировку зависимых алгоритмов РЗА, а с выдержкой времени \textbf{«Тсигн неиспр. ЦН»} происходит действие на сигнализацию.
 
+\end{enumerate}
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.1461 БНН/img/BNN.pdf}
-\captionof{figure}{Функциональная схема БНН}\label{pict:BNN}
+\captionof{figure}{Функциональная схема БНН}\label{pict_bnn:BNN}
 \end{figure}
 
-\end{enumerate}
+\item
+Уставки БНН представлены в таблице \ref{desc_bnn:tbl2}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки БНН\hfill\vspace{-0.5\baselineskip}}\label{desc_bnn:tbl2}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_bnn:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>БНН|БНН
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_2_x_sr & \centering 0,000 ... 10,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_3_x_sr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Шины \\ Линия & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_4_x_sr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_5_x_sr & \centering 0,000 ... 1,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_4_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_8_x_sr & \centering 0,000 ... 1,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_5_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_10_x_sr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_6_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_7_S & \centering 0 ... 65535 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_13_x_sr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_8_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_9_S & \centering НЗ \\ НО & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_5_T_vremya & \centering 0 ... 120 & \centering  & \centering \arraybackslash 1 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}

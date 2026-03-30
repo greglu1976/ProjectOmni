@@ -21,13 +21,40 @@
 Также функция ФПВ пофазно контролирует состояние блок-контактов выключателя и в случае расхождения полюсов формирует сигнал \textit{«Внутр. пуск. ЗНФ В1»}.
 
 \item
-Функциональная схема логики ФПВ В1 приведена на рисунке \ref{pict:fpv}. Функциональная схема логики ФПВ В2 выполняется аналогично схеме логики ФПВ В1.
+Функциональная схема логики ФПВ В1 приведена на рисунке \ref{pict_fpv:fpv}. Функциональная схема логики ФПВ В2 выполняется аналогично схеме логики ФПВ В1.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3381 ФПВ/img/fpv.pdf}
-\captionof{figure}{Функциональная схема логики ФПВ В1}\label{pict:fpv}
+\captionof{figure}{Функциональная схема логики ФПВ В1}\label{pict_fpv:fpv}
 \end{figure}
+
+\item
+Уставки ФПВ В1 представлены в таблице \ref{desc_fpv:tbl1}. Уставки ФПВ В2 аналогичны уставкам ФПВ В1.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ФПВ В1\hfill\vspace{-0.5\baselineskip}}\label{desc_fpv:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_fpv:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>Фиксация положения выключателя В1|ФПВ В1
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering 0 ... 65535 & \centering  & \centering \arraybackslash 1 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}

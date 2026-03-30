@@ -1,6 +1,6 @@
 
 %\needspace{4\baselineskip}
-\color{uniblue}{\subsection{Аварийная масимальная токовая защита (АМТЗ)}}
+\color{uniblue}{\subsection{Аварийная максимальная токовая защита (АМТЗ)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
@@ -17,14 +17,45 @@
 \end{itemize}
 
 \item
-Функциональная схема логики АМТЗ приведена на рисунке \ref{pict_bk:AMTZ_F_1}.
+Функциональная схема логики АМТЗ-Ф-1(2) приведена на рисунке \ref{pict_amtz:AMTZ}.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0161 АМТЗ/img/AMTZ_F_1.pdf}
-\captionof{figure}{Функциональная схема ступеней АМТЗ-Ф}\label{pict_bk:AMTZ_F_1}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0161 АМТЗ/img/AMTZ.pdf}
+\captionof{figure}{Функциональная схема ступеней АМТЗ-Ф-1(2)}\label{pict_amtz:AMTZ}
 \end{figure}
+
+\item
+Уставки АМТЗ-Ф-1 представлены в таблице \ref{desc_amtz:tbl1}. Уставки АМТЗ-Ф-2, АМТЗ-ОП-1(2), АМТЗ-НП-1(2) аналогичны АМТЗ-Ф-1.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки АМТЗ-Ф-1\hfill\vspace{-0.5\baselineskip}}\label{desc_amtz:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_amtz:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>АМТЗ|АМТЗ-Ф-1
+\raggedright {'Description': ''} & \centering Iср АМТЗ-Ф & \centering 0,000 ... 40,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Тср АМТЗ-Ф & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering БК-I-м АМТЗ-Ф & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering АМТЗ-Ф & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \item
 АМТЗ-Ф вводятся в работу программными ключами \textbf{«АМТЗ-Ф-1»} и \textbf{«АМТЗ-Ф-2»}. Токи срабатывания задаются уставками \textbf{«Iср АМТЗ-Ф-1»} и \textbf{«Iср АМТЗ-Ф-2»}. Действие ступеней АМТЗ-Ф осуществляется с регулируемыми независимыми выдержками времени \textbf{«Тср АМТЗ-Ф-1»} и \textbf{«Тср АМТЗ-Ф-2»}.
@@ -39,13 +70,13 @@
 Автоматический ввод в работу АМТЗ при возникновении неисправности в цепях напряжения производится при отсутствии внешнего сигнала \textit{«Вывод АМТЗ»}. Пуски ступеней возможны даже при отсутствии неисправности в цепях напряжения, но выходная логика срабатывания находится в заблокированном состоянии. При появлении входного сигнала \textit{«БНН»} выходная логика ступеней на срабатывание деблокируется, при этом формируется логический сигнал \textit{«АМТЗ активна»}. Предусмотрена также возможность оперативного ввода АМТЗ (независимо от сигнала срабатывания БНН) от внешнего сигнала \textit{«Опер. ввод АМТЗ»}.
 
 \item
-Функциональная схема общей логики АМТЗ приведена на рисунке \ref{pict_bk:common_logic}.
+Функциональная схема общей логики АМТЗ приведена на рисунке \ref{pict_amtz:common_logic}.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0161 АМТЗ/img/common_logic.pdf}
-\captionof{figure}{Функциональная схема общей логики АМТЗ}\label{pict_bk:common_logic}
+\captionof{figure}{Функциональная схема общей логики АМТЗ}\label{pict_amtz:common_logic}
 \end{figure}
 
 \end{enumerate}

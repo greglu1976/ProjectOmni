@@ -10,16 +10,6 @@
 В устройстве реализована логика автоматического ускорения (АУ) ДЗ, ТНЗНП и АМТЗ при включении выключателя, которая вводится программным ключом \textbf{«АУ»}.
 
 \item
-Функциональная схема логики АУ приведена на рисунке \ref{pict:AU}.
-
-\vspace{2mm}
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.1311 АУ/img/AU.pdf}
-\captionof{figure}{Функциональная схема АУ}\label{pict:AU}
-\end{figure}
-
-\item
 Автоматическое ускорение вводится на время, задаваемое уставкой \textbf{«Тв АУ»}.
 
 \item
@@ -36,5 +26,68 @@
 
 \item
 Ввод АУ АМТЗ осуществляется без контроля напряжения (АМТЗ вводится в работу по факту срабатывания БНН).
+
+\item
+Функциональная схема логики АУ приведена на рисунке \ref{pict_au:AU}.
+
+\vspace{2mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/561.1311 АУ/img/AU.pdf}
+\captionof{figure}{Функциональная схема АУ}\label{pict_au:AU}
+\end{figure}
+
+\item
+Уставки АУ представлены в таблице \ref{desc_au:tbl1}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки АУ\hfill\vspace{-0.5\baselineskip}}\label{desc_au:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_au:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>Автоматическое ускорение|АУ
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_1_x_sr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_2_S & \centering Шины \\ Линия & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_3_S & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_2_x_sr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_3_x_sr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_4_x_sr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering От внеш.РН \\ От ШОН & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_5_x_sr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_max_float_6_x_sr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_vozvrat_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_4_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_2_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_3_T_vremya & \centering 0 ... 120 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_4_T_vremya & \centering 0 ... 120 & \centering  & \centering \arraybackslash 1 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}

@@ -31,6 +31,15 @@
 \item срабатывание ИО ТНЗНП выбранной ступени (выбор осуществляется программным переключателем \textbf{«Контр. Тоткл от ТНЗНП»});
 \end{itemize}
 
+\item
+Функциональная схема логики приема/выдачи сигнала отключения приведена на рисунке \ref{pict_lo:ls1}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_Totkl.pdf}
+\captionof{figure}{Функциональная схема логики телеотключения}\label{pict_lo:ls1}
+\end{figure}
+
 \item 
 Если программный ключ \textbf{«Прием Тоткл с контр.»} выведен, то сигнал на отключение выключателя при приеме сигнала телеотключения формируется без контролей.
 
@@ -38,13 +47,41 @@
 Выдача сигнала телеотключения \textit{«Выход Тоткл»} на противоположный конец линии осуществляется при срабатывании ЗНР, срабатывании внутреннего УРОВ или по сигналу срабатывания внешнего УРОВ.
 
 \item
-Функциональная схема логики приема/выдачи сигнала отключения приведена на рисунке \ref{pict:ls1}.
+Уставки телеотключения представлены в таблице \ref{desc_lo:tbl1}.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_Totkl.pdf}
-\captionof{figure}{Функциональная схема логики телеотключения}\label{pict:ls1}
-\end{figure}
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки телеотключения\hfill\vspace{-0.5\baselineskip}}\label{desc_lo:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_lo:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>Логика связи|Телеотключение
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_2_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_7_bool_const_1_S & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. \\ 4 ступ. \\ 5 ступ. \\ 6 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_4_bool_const_1_S & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_7_bool_const_2_S & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. \\ 4 ступ. \\ 5 ступ. \\ 6 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_2_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}
 
@@ -70,16 +107,57 @@
 Выдержка времени на срабатывание ТУ ОТФ регулируется уставкой \textbf{«Тср ТУ ОТФ»}.
 
 \item
-Функциональная схема логики ТУ ОТФ приведена на рисунке \ref{pict:ls2}.
+Функциональная схема логики ТУ ОТФ приведена на рисунке \ref{pict_lo:ls2}.
 
 \item
 Выдача разрешающего сигнала ТУ ОТФ \textit{«Выход ТУ ОТФ»} на противоположный конец линии осуществляется при срабатывании внутренних защит устройства, кроме ТЗО.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_TU_OTF.pdf}
-\captionof{figure}{Функциональная схема логики ТУ ОТФ}\label{pict:ls2}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_TU_OTF.pdf}
+\captionof{figure}{Функциональная схема логики ТУ ОТФ}\label{pict_lo:ls2}
 \end{figure}
+
+\item
+Уставки ТУ ОТФ представлены в таблице \ref{desc_lo:tbl2}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ТУ ОТФ\hfill\vspace{-0.5\baselineskip}}\label{desc_lo:tbl2}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_lo:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>Логика связи|ТУ ОТФ
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_2_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_3_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_4_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_4_bool_const_1_S & \centering Откл. \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_5_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_2_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}
 
@@ -109,13 +187,62 @@
 Разрешающий сигнал \textit{«Выход ТУ ДЗ»} на противоположный конец линии выдается с контролем пуска прямонаправленной ступени ДЗ и с контролем реверса мощности.
 
 \item
-Функциональная схема логики ТУ ДЗ приведена на рисунке \ref{pict:tu_dz}.
+Функциональная схема логики ТУ ДЗ приведена на рисунке \ref{pict_lo:tu_dz}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_TU_DZ.pdf}
-\captionof{figure}{Функциональная схема логики ТУ ДЗ}\label{pict:tu_dz}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_TU_DZ.pdf}
+\captionof{figure}{Функциональная схема логики ТУ ДЗ}\label{pict_lo:tu_dz}
 \end{figure}
+
+\item
+Уставки ТУ ДЗ представлены в таблице \ref{desc_lo:tbl3}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ТУ ДЗ\hfill\vspace{-0.5\baselineskip}}\label{desc_lo:tbl3}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_lo:tbl3}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>Логика связи|ТУ ДЗ
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_5_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_7_bool_const_1_S & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. \\ 4 ступ. \\ 5 ступ. \\ 6 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_vozvrat_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_2_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_7_bool_const_2_S & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. \\ 4 ступ. \\ 5 ступ. \\ 6 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_4_bool_const_1_S & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_4_bool_const_2_S & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_3_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Formirovatel_imp_po_perednemu_frontu_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vykh_3_bool_const_1_S & \centering Откл. \\ Эхо \\ Эхо+ЛОСК & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_vozvrat_2_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \item
 Для работы логики ТУ ДЗ необходимо, чтобы выбранные ступени ДЗ с обоих концов ЛЭП выявили повреждение. Однако в энергосистеме могут быть такие режимы, когда ток повреждения недостаточен для срабатывания защиты, например, короткое замыкание на конце защищаемой линии со слабым питанием. В таком случае не будет пуска ступени ДЗ как на срабатывание, так и на выдачу разрешающего сигнала, что приведёт к отказу логики ТУ ДЗ. Для устранения этого недостатка возможно применение логики отключения слабого конца (ЛОСК) с формированием эхо-сигнала.
@@ -130,22 +257,22 @@
 Эхо-сигнал действует на выдачу разрешающего сигнала \textit{«Выход ТУ ДЗ»}.
 
 \item
-Эхо-сигнал обеспечивает быстрое отключение линии со стороны «сильной» системы (S2), в некоторых случаях это может привести к увеличению тока со стороны «слабой» системы (S1) -- обеспечится каскадное отключение линии (см. рисунок \ref{pict_bk:logic_echo}). Если же после формирования эхо-сигнала не создаются условия каскадного отключения, то предусмотрена возможность отключения слабого конца по критерию минимального напряжения.
+Эхо-сигнал обеспечивает быстрое отключение линии со стороны «сильной» системы (S2), в некоторых случаях это может привести к увеличению тока со стороны «слабой» системы (S1) -- обеспечится каскадное отключение линии (см. рисунок \ref{pict_lo:logic_echo}). Если же после формирования эхо-сигнала не создаются условия каскадного отключения, то предусмотрена возможность отключения слабого конца по критерию минимального напряжения.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.60\textwidth,height=0.60\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_echo.pdf}
-\captionof{figure}{Пояснение к принципу действия эхо-логики}\label{pict_bk:logic_echo}
+\includegraphics[width=0.55\textwidth,height=0.55\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_echo.pdf}
+\captionof{figure}{Пояснение к принципу действия эхо-логики}\label{pict_lo:logic_echo}
 \end{figure}
 
 \item
-Если сформирован эхо-сигнал, то сигнал на отключение формируется при снижении одного из контролируемых фазных напряжений ниже значения уставки \textbf{«Uср ЛОСК»} с контролем включенного положения выключателя. При снижении напряжения во всех фазах действие на отключение разрешено первые 100 мс для ограничения длительности отключающего воздействия. Критерий минимального напряжения блокируется при срабатывании БНН. Функциональная схема логики контроля минимального напряжения приведена на рисунке \ref{pict_bk:logic_LOSK}.
+Если сформирован эхо-сигнал, то сигнал на отключение формируется при снижении одного из контролируемых фазных напряжений ниже значения уставки \textbf{«Uср ЛОСК»} с контролем включенного положения выключателя. При снижении напряжения во всех фазах действие на отключение разрешено первые 100 мс для ограничения длительности отключающего воздействия. Критерий минимального напряжения блокируется при срабатывании БНН. Функциональная схема логики контроля минимального напряжения приведена на рисунке \ref{pict_lo:logic_LOSK}.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_LOSK.pdf}
-\captionof{figure}{Функциональная схема логики контроля минимального напряжения ЛОСК}\label{pict_bk:logic_LOSK}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_LOSK.pdf}
+\captionof{figure}{Функциональная схема логики контроля минимального напряжения ЛОСК}\label{pict_lo:logic_LOSK}
 \end{figure}
 
 \item
@@ -155,6 +282,31 @@
     \item   \textit{Эхо} -- в работу введена только эхо-логика;
     \item   \textit{Эхо + ЛОСК} -- в работу введены и эхо-логика, и ЛОСК.
 \end{enumerate}
+
+\item
+Уставки контроля минимального напряжения ЛОСК представлены в таблице \ref{desc_lo:tbl4}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки контроля минимального напряжения ЛОСК\hfill\vspace{-0.5\baselineskip}}\label{desc_lo:tbl4}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_lo:tbl4}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>Логика связи|Контроль минимального напряжения ЛОСК
+\raggedright {'Description': ''} & \centering Rele_s_k_tom_vozvrata_min_float_1_x_sr & \centering 0,000 ... 100,000 & \centering  & \centering \arraybackslash 0,001 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}
 
@@ -191,13 +343,13 @@
 Эхо-сигнал действует на выдачу разрешающего сигнала \textit{«Выход ТУ ТНЗНП»}.
 
 \item
-Функциональная схема логики ТУ ТНЗНП приведена на рисунке \ref{pict:tu_tnznp}.
+Функциональная схема логики ТУ ТНЗНП приведена на рисунке \ref{pict_lo:tu_tnznp}.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_TU_TNZNP.pdf}
-\captionof{figure}{Функциональная схема ТУ ТНЗНП}\label{pict:tu_tnznp}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/561.1711 Логика связи/img/logic_TU_TNZNP.pdf}
+\captionof{figure}{Функциональная схема ТУ ТНЗНП}\label{pict_lo:tu_tnznp}
 \end{figure}
 
 \item
@@ -211,6 +363,51 @@
     \item   \textit{Эхо} -- в работу введена только эхо-логика;
     \item   \textit{Эхо + ЛОСК} -- в работу введены и эхо-логика, и ЛОСК.
 \end{enumerate}
+
+\item
+Уставки ТУ ТНЗНП представлены в таблице \ref{desc_lo:tbl5}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ТУ ТНЗНП\hfill\vspace{-0.5\baselineskip}}\label{desc_lo:tbl5}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_lo:tbl5}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>Логика связи|ТУ ТНЗНП
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_3_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_7_bool_const_1_S & \centering Откл. \\ 1 ступ. \\ 2 ступ. \\ 3 ступ. \\ 4 ступ. \\ 5 ступ. \\ 6 ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Programmnyj_klyuch_1_s & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_vozvrat_2_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_vozvrat_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vkh_2_bool_const_1_S & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_srabatyvanie_2_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Formirovatel_imp_po_zadnemu_frontu_1_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+\raggedright {'Description': ''} & \centering Pereklyuchatel_Vykh_3_bool_const_1_S & \centering Откл. \\ Эхо \\ Эхо+ЛОСК & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright {'Description': ''} & \centering Nezavisimoe_RV_na_vozvrat_4_T_vremya & \centering 0 ... 100000 & \centering  & \centering \arraybackslash 1 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
 
 \end{enumerate}
 
