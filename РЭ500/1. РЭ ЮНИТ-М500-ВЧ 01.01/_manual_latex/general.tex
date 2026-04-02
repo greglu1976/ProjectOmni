@@ -7,7 +7,7 @@
 \newcommand{\genpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/99. Общие разделы РЭ/}
 
 % ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX ПРИЛОЖЕНИЙ
-\newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/1. РЭ ЮНИТ-М500-ВЧ/}
+\newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/1. РЭ ЮНИТ-М500-ВЧ 01.01/}
 
 % ЗАДАЕМ ПЕРЕМЕННЫЕ ТЕКУЩЕЙ НОМЕР РЕДАКЦИИ И ДАТА РЕДАКЦИИ
 \def\rev{$pre-\alpha$}
@@ -22,59 +22,53 @@
     pdfkeywords={ЮНИТ-М500-ВЧ, Юнител, РЗА, Релейная защита и автоматика},
 }
 
-% ЗАДАЕМ ПЕРЕМЕННЫЕ УКАЗЫВАЮЩИЕ КАКИЕ ФУНКЦИИ СОБИРАТЬ
-% isT, isT2, isDZT2
-%\newbool{isT}
-%\boolfalse{isT} 
-%\newbool{isT2}
-%\boolfalse{isT2}
-%\newbool{isDZT2}
-%\booltrue{isDZT2} % выбираем устройство М300-ДЗТ2
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗДЕСЬ ДЛЯ ВЫВОД СОДЕРЖАНИЯ БОЛЬШИМИ БУКВАМИ ПОСЕРЕДИНЕ ЛИСТА см. ГОСТ-2.105-2019, п.6.2.5
-%%% почему то в преамбуле не работает
-%\makeatletter
-%\renewcommand{\tableofcontents}{\centering{\textbf{\large\MakeUppercase{\contentsname}}}\@starttoc{toc}}
-%\makeatother
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\newpage % НУЖНО!!!
-\input{title0.tex} % подключаем титульный лист
+% Титульный лист
+%\newpage
+\input{title0.tex}
 \clearpage
 
-%\newpage  % НУЖНО!!!
+% Выходные сведения (оборот титула)
+%\newpage
 \input{title1.tex}
 \clearpage
 
 %\newpage
-\input{section_format.tex}% Здесь только определение формата для страниц разделов
+\input{toc.tex}
 \clearpage
 
 %\newpage
-%\input{toc.tex}
-%\clearpage
-
-%\newpage
-%\input{toa_general.tex}
+\input{toa_general.tex}
+\clearpage
 
 %\newpage
 %\input{section0.tex}
 
 %\newpage
-%\input{section1.tex}
+\input{section1.tex}
 
 % input не вставляет возврат строки, а include вставляет
 %\newpage
 %\input{section2.tex}
 
 %===f
-%\input{\fbpath/561.0761 ДФЗ/dfz.tex}
+\input{\fbpath/561.0761 ДФЗ/dfz.tex}
+\clearpage
+
 %===f
 \input{\fbpath/561.0771 НВЧЗ/nvchz.tex}
+\clearpage
 
+%===f
+\input{\fbpath/561.0781 ВЧБ/vchb.tex}
+\clearpage
+
+%===f
+\input{\fbpath/561.1491 ОПТО/opto.tex}
+\clearpage
 
 %===f
 

@@ -1,4 +1,3 @@
-%\needspace{4\baselineskip}
 \color{unidarkgreen}{\subsection{Дифференциально-фазная защита}}
 \color{black}
 
@@ -209,8 +208,21 @@ i_{\textmd{ман}} = i_1 + k_{\textmd{ман}} \cdot i_2,
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/561.0761 ДФЗ/img/Action_DFZ.pdf}
-\captionof{figure}{Принцип действия ДФЗ}
+\begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth, trim=0 10mm 85mm 0, clip]{\fbpath/561.0761 ДФЗ/img/Action_DFZ.pdf}
+    \caption{а) внутреннее КЗ}
+    \label{pict_dfz:Action_DFZ_a}
+\end{subfigure}
+%\hfill
+\begin{subfigure}{0.44\textwidth}
+    \centering
+    \includegraphics[width=\textwidth, trim=87mm 10mm 0 0, clip]{\fbpath/561.0761 ДФЗ/img/Action_DFZ.pdf}
+    \caption{б) внешнее КЗ}
+    \label{pict_dfz:Action_DFZ_b}
+\end{subfigure}
+
+\caption{Принцип действия ДФЗ}
 \label{pict_dfz:Action_DFZ}
 \end{figure}
 

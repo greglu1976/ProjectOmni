@@ -1,0 +1,68 @@
+\color{unidarkgreen}{\subsection{Блок отстройки от повреждений за трансформаторами ответвлений}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБШИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Общие сведения
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Для предотвращения ложного срабатывания основной защиты при КЗ за трансформатором ответвления предусмотрен функциональный блок отстройки от повреждений за трансформаторами ответвлений (ОПТО).
+В качестве измерительных органов ОПТО применяются три междуфазных прямонаправленных реле сопротивления и РНМНП-Р, блокируемое при выявлении броска намагничивающего тока.
+При введенном программном ключе контроля защиты от ОПТО подготовка её цепи отключения разрешается только при срабатывании одного из реле сопротивления или РНМНП-Р, что свидетельствует о наличии КЗ на линии, а не за трансформатором ответвления.
+Характеристика срабатывания РС задается уставками \textbf{«Rср РС-ОПТО»}, \textbf{«Хср РС-ОПТО»} и \textbf{«Ф1 РС-ОПТО»}.
+Углы наклона характеристики срабатывания органа направленности, обеспечивающего направленность РС, задаются уставками \textbf{«Ф2 ОН-ОПТО»} и \textbf{«Ф3 ОН-ОПТО»}.
+Для РС в составе ОПТО также предусмотрена возможность выреза в характеристике срабатывания для отстройки от нагрузки.
+Характеристика срабатывания измерительного органа отстройки от нагрузки определяется уставками \textbf{«Rнг ОПТО»} и \textbf{«Фнг ОПТО»}.
+Работа ОПТО может быть заблокирована при выявлении неисправности в цепях напряжения при введенном программном ключе \textbf{«БНН ОПТО»}.
+
+\medskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\textwidth,height=0.4\textheight,keepaspectratio]{\fbpath/561.1491 ОПТО/img/RS_OPTO.pdf}
+\captionof{figure}{Характеристика срабатывания РС в составе ОПТО}\label{pict_opto:RS_OPTO}
+\end{figure}
+
+\medskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.1491 ОПТО/img/OPTO.pdf}
+\captionof{figure}{Функциональная схема отстройки от повреждений за трансформаторами ответвлений}
+\label{pict_opto:OPTO}
+\end{figure}
+
+\medskip
+
+\item
+Уставки ОПТО представлены в таблице \ref{desc_opto:tbl1}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Уставки ОПТО\hfill\vspace{-0.5\baselineskip}}\label{desc_opto:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_opto:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ОПТО|-
+%===m
+\end{longtable}
+\normalsize
+
+\end{enumerate}
+
+\end{enumerate}

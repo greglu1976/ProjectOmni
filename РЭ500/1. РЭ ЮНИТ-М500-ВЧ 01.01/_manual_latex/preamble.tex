@@ -186,7 +186,7 @@ footskip=7mm,
 % - дефис, -- тире, --- длинное тире
 \usepackage{enumitem}
 
-\setlist[itemize]{label=---}
+\setlist[itemize]{label=---, leftmargin=0cm, itemindent=1.1cm, labelsep=10pt}
 %\setlist[itemize]{label=$\circ$} % окружность
 %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -284,6 +284,11 @@ footskip=7mm,
 \usepackage{eso-pic}
 
 \usepackage{subcaption}
-\captionsetup[subfigure]{labelformat=simple, labelsep=none}
+\captionsetup[subfigure]{labelformat=empty}
 \renewcommand\thesubfigure{\alph{subfigure})}
 \renewcommand{\thesubfigure}{\asbuk{subfigure})}
+
+\makeatletter
+\renewcommand{\p@subfigure}{\thefigure,\ }   % добавляет "0.2, " перед буквой
+\renewcommand{\thesubfigure}{\asbuk{subfigure}}  % буква без скобки
+\makeatother
