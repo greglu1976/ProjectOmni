@@ -1,0 +1,61 @@
+\color{unidarkgreen}{\subsection{Логика отключения присоединений}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+
+\item
+Ввод и вывод логики отключения присоединений осуществляется либо посредством программного ключа \textbf{«ЛО Вn»}, либо с использованием внешнего сигнала \textit{«Вывод действия на Bn»}.
+
+\item
+Сигнал отключения присоединения (\textit{«Отключение Вn»}) формируется при отключении СШ с учетом текущей фиксации присоединения, а также при отключении в результате опробования присоединения.
+
+\item
+Сигнал аварийного отключения присоединения (\textit{«Откл. аварийно Вn»}) дополнительно формируется при действии УРОВ на себя.
+
+\item
+Для каждого присоединения предусмотрена возможность формирования как общего, так и избирательного запрета АПВ.
+
+\item
+Общий запрет АПВ присоединения формируется по факту наличия сигнала запрет АПВ СШ (\textit{«Запрет АПВ 1С»} или \textit{«Запрет АПВ 2С»}) с учетом текущей фиксации присоединений. 
+
+\item
+Избирательный запрет АПВ присоединения формируется по факту срабатывания ДЗШ с учетом текущей фиксации присоединения.
+
+\medskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/761.9901 Логика отключения (ДЗШ)/img/Log_otkl_Q1.pdf}
+\captionof{figure}{Функциональный блок логики отключения первого присоединения}\label{pict:Log_otkl_Q1}
+\end{figure}
+
+\medskip
+
+\item
+Уставки логики отключения присоединений представлены в таблице \ref{desc:tbl1}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставок логики отключения присоединений\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ДЗШ|-
+%===m
+\end{longtable}
+\normalsize	
+
+
+\end{enumerate}

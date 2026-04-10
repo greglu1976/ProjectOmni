@@ -3,9 +3,9 @@
 \fancypagestyle{plain}{
 \fancyhf{}
 \renewcommand{\headrulewidth}{1pt}
-\rhead{ШЭТ 251.01-0}
-\lhead{\color{black}{ЮТКБ.656122.609 РЭ6 Редакция \rev~от~\revdate}}
-\lfoot{Руководство по эксплуатации }
+\rhead{\color{unigreen}\colondevicetype}
+\lhead{\color{red}{ЮТКБ.656122.609 РЭ6 Редакция \rev~от~\revdate}}
+\lfoot{\color{unigreen}{Руководство по эксплуатации }}
 \rfoot{{\thepage}}
 \renewcommand{\footrulewidth}{1pt}
 }
@@ -23,8 +23,10 @@
 %\lfoot{\hyperref[https://uni-eng.ru]{https://uni-eng.ru}}
 %\rfoot {ООО «Юнител Инжиниринг»}
 
-%\tableofcontents
-
-\color{uniblue}{\tableofcontents}
-\color{black}
+{\centering
+\textcolor{unidarkgreen}{\Large\bfseries СОДЕРЖАНИЕ}\par
+\vspace{-1.5em}
+}
+\renewcommand{\contentsname}{}
+\tableofcontents
 

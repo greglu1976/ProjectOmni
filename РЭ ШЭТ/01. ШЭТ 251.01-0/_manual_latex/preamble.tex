@@ -170,7 +170,7 @@ footskip=7mm,
 \usepackage{amsmath} % для вывода формул
 \usepackage{eqexpl} % для вывода пояснений к формулам
 \eqexplSetDelim{--}
-\eqexplSetIntro{где}
+\eqexplSetIntro{где	}
 
 \usepackage{titlesec}
 \usepackage{appendix}
@@ -186,7 +186,7 @@ footskip=7mm,
 % - дефис, -- тире, --- длинное тире
 \usepackage{enumitem}
 
-\setlist[itemize]{label=---}
+\setlist[itemize]{label=---, leftmargin=0cm, itemindent=1cm, labelsep=10pt}
 %\setlist[itemize]{label=$\circ$} % окружность
 %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -273,7 +273,7 @@ footskip=7mm,
 
 \usepackage{hhline} % чтобы рисовать по одной линии в таблицах, соответственно тэг \hhline{} должен применяться
 
-%\setcounter{secnumdepth}{3} % Нумерация до разделов, подразделов и подподразделов
+\setcounter{secnumdepth}{3} % Нумерация до разделов, подразделов и подподразделов
 %\setcounter{tocdepth}{2}     % Запись в содержание только разделов и подразделов
 
 \usepackage{ulem} % 29.11.24 - чтобы подчеркивание в ссылках более менее нужно
@@ -282,3 +282,15 @@ footskip=7mm,
 \usepackage{placeins} % чтобы ограничивать float рисунков с тегом [!h]
 
 \usepackage{eso-pic}
+
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=empty}
+\renewcommand\thesubfigure{\alph{subfigure})}
+\renewcommand{\thesubfigure}{\asbuk{subfigure})}
+
+\makeatletter
+\renewcommand{\p@subfigure}{\thefigure,\ }   % добавляет "0.2, " перед буквой
+\renewcommand{\thesubfigure}{\asbuk{subfigure}}  % буква без скобки
+\makeatother
+
+\usepackage{ragged2e} % пакет для выравнивания по ширине в title1
