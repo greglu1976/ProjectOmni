@@ -1,0 +1,58 @@
+\color{unidarkgreen}{\subsection{Устройство резервирования при отказе выключателя}}
+\color{black}
+
+\subsubsection{Общие сведения}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Функциональный блок ПО УРОВ предназначен для формирования сигнала пуска УРОВ в
+аварийном режиме при действии защит на отключение в цепь управления выключателем низшей
+стороны трансформатора.  
+
+\item
+ПО УРОВ реагирует на превышение действующего значения основной гармоники фазного тока
+выбранной стороны трансформатора или тока цепи резистора заземления нейтрали уставки \textbf{«Iср ПО
+УРОВ НН1(НН)»} и на сигнал пуска от действия защит на отключение выключателя определенной
+стороны (рисунок \ref{pic:UROV}). По истечении времени \textbf{«Тср ПО УРОВ НН1(НН)»} выдается сигнал срабатывания.
+Предусмотрены ввод/вывод функционального блока программным переключателем \textbf{«ПО УРОВ
+НН1(НН)»} и вывод с помощью внешнего сигнала.
+
+\item
+УРОВ ВН предусматривает повторное действие на себя с регулируемой выдержкой \textbf{«Тср повт
+УРОВ ВН1»}, вводиться накладкой \textbf{«Действ на себя УРОВ В ВН1»}.
+
+\item
+На рисунке \ref{pic:UROV} УРОВ НН1(Н). УРОВ НН1(Н) аналогичен УРОВ НН2(СН).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/765.0334 УРОВ/img/UROV.pdf}
+\captionof{figure}{Функциональный блок УРОВ}\label{pic:UROV}
+\end{figure}
+
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров УРОВ\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ДТЗ|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}

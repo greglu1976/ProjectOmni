@@ -1,0 +1,49 @@
+\color{unidarkgreen}{\subsection{Защита от перегрузки по току}}
+\color{black}
+
+\subsubsection{Общие сведения}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Функциональный блок ЗП предназначен для контроля нагрузки трансформатора с целью
+предотвращения повреждения оборудования. Блок подключается к фазным токам и предусматривается
+для каждой стороны трансформатора. 
+
+\item
+Блок состоит из максиселектора фазных токов, максимального органа сравнения с уставкой \textbf{«Iср
+ЗП»} и выдержки времени \textbf{«Тср ЗП»}, по истечении которой выдается сигнал срабатывания.
+Предусмотрены ввод/вывод в работу программным переключателем \textbf{«ЗП»} для каждой стороны
+трансформатора, и вывод защиты внешним сигналом.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth,height=0.82\textheight,keepaspectratio]{\fbpath/011.0351 ЗПТ/img/ZPT.pdf}
+\captionof{figure}{Функциональный блок ЗПТ}\label{pic:ZPT}
+\end{figure}
+
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров функции блокировки ЗПТ\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ДТЗ|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}

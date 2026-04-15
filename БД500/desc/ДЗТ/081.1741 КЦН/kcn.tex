@@ -1,0 +1,65 @@
+\color{unidarkgreen}{\subsection{Контроль цепей напряжения}}
+\color{black}
+
+\subsubsection{Общие сведения}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Контроль цепей напряжения предназначен для выявления нарушений в цепях напряжения низкой
+и средней сторон трансформатора. На рисунке \ref{pic:KCN} представлен контроль цепей напряжения НН1(НН)
+СШ1, для НН1(НН) СШ2, НН2(СН) СШ1 и НН2(СН) СШ2 аналогично.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/081.1741 КЦН/img/KCN.pdf}
+\captionof{figure}{Функциональный блок КЦН}\label{pic:KCN}
+\end{figure}
+
+\item
+Цепи напряжения подключаются к ТН, установленным на шинах: КЦН НН1(НН) 1СШ, КЦН НН1(НН)
+2СШ, КЦН НН2(СН) 1СШ, КЦН НН2(СН) 2СШ.
+
+\item
+Контроль цепей напряжения низкой и средней стороны трансформатора основан на выявлении
+нарушения симметрии в цепях напряжения и просадки линейного напряжения соответствующей
+стороны.
+
+\item
+Ввод в работу КЦН осуществляется независимо для каждой стороны с помощью уставок \textbf{«КЦН
+НН1(НН) СШ1»}. Оперативный ввод/вывод КЦН производится с помощью БУ (блоков управления
+функциями) «Вывод КЦН НН1(НН) СШ1».
+
+\item
+Порог срабатывания минимального линейного напряжения задается уставками \textbf{Uл КЦН НН1(НН)
+СШ1»}. Порог срабатывания максимального напряжения обратной последовательности задается
+уставками  \textbf{«U2 КЦН НН1(НН) СШ1»}. Выдержка времени контроля неисправности цепей напряжения
+задается уставками \textbf{«Тср КЦН НН1(НН) СШ1»}.
+
+\item
+Уставки функции КЦН представлены в таблице \ref{desc:tbl1}.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставок функции КЦН\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ДТЗ|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}

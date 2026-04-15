@@ -87,7 +87,6 @@ i_{\textsl{диф.x}} = \sum_{N=1}^k i'_{\textsl{x,N}} \cdot K_{\textsl{ампл
 \eqexplSetItemAlign{r}  % выравнивание обозначений по левому краю(l)/правому краю(r)/центру(c)
 \item{x} наименование фазы (A, B, C);
 \item{k} количество контролируемых плеч
-
 \end{eqexpl}
 
 \item
@@ -213,7 +212,6 @@ I_{\textsl{торм}} = \max_{N=1..k} \left[RMS(i'_{\textsl{x,N}}) \cdot K_{\tex
     \item участок 3: $I_{\textsl{Д}} \geq I_{\textsl{ср.диф}} + K_{\textsl{Т1}} \cdot (I_{\textsl{Т2}} - I_{\textsl{Т1}}) + K_{\textsl{Т2}} \cdot (I_{\textsl{Т}} - I_{\textsl{Т2}}) $, при $I_{\textsl{Т}} > I_{\textsl{Т2}}$
 \end{itemize}
 
-
 \end{enumerate}
 
 
@@ -288,7 +286,7 @@ I_{\textsl{торм}} = \max_{N=1..k} \left[RMS(i'_{\textsl{x,N}}) \cdot K_{\tex
 \end{enumerate}
 
 
-\subsubsection{Контроль исправности цепей измерения}
+\subsubsection{Контроль цепей тока}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
 
@@ -304,62 +302,52 @@ I_{\textsl{торм}} = \max_{N=1..k} \left[RMS(i'_{\textsl{x,N}}) \cdot K_{\tex
 \captionof{figure}{Функциональный блок контроля цепей тока}\label{pict:KCT}
 \end{figure}
 
+
 \small
-\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
-\begin{longtable}
-{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
-\caption{Перечень параметров ТТ и ТН \hfill\vspace{-0.5\baselineskip}}\label{ksn:tbl1} \\ 
-\hhline{|-|-|-|-|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень параметров ТТ и ТН\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
 \rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
-\hhline{|-|-|-|-|}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
 \endfirsthead
 
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ksn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hhline{|-|-|-|-|}
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
 \rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
-\hhline{|-|-|-|-|}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
 \endhead
-\hhline{|-|-|-|-|}
 
-\endfoot
-\endlastfoot
-
-%%%%%%%%%%%%содержимое%%%%%%%%%%%%%%
-
+%===m>ДТЗ|-
+%===m
 \end{longtable}
-\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
-\normalsize
-
+\normalsize	
 
 
 \small
-\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
-\begin{longtable}
-{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
-\caption{Перечень уставочных параметров ДТЗ \hfill\vspace{-0.5\baselineskip}}\label{ksn:tbl2} \\ 
-\hhline{|-|-|-|-|}
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров ДТЗ\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
 \rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
-\hhline{|-|-|-|-|}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
 \endfirsthead
 
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ksn:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hhline{|-|-|-|-|}
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
 \rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
-\hhline{|-|-|-|-|}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
 \endhead
-\hhline{|-|-|-|-|}
 
-\endfoot
-\endlastfoot
-
-%%%%%%%%%%%%содержимое%%%%%%%%%%%%%%
-
+%===m>ДТЗ|-
+%===m
 \end{longtable}
-\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
 \normalsize
 
 \end{enumerate}

@@ -1,0 +1,53 @@
+\color{unidarkgreen}{\subsection{Логика деления стороны СН (ЛД СН)}}
+\color{black}
+
+\subsubsection{Общие сведения}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/022.1791 ЛД СН/img/LD_SN.pdf}
+\captionof{figure}{Функциональная схема ЛД стороны СН}\label{pic:LD_SN}
+\end{figure}
+
+\item
+Ввод в работу логики деления средней стороны трансформатора осуществляется с помощью
+уставок \textbf{«ЛД СН от МТЗ-1 СН»} и \textbf{«ЛД СН от МТЗ-2 СН»}. Оперативный ввод/вывод ЛД средней стороны
+производится с помощью БУ (блока управления функциями) «Вывод ЛД СН».   
+
+\item
+От направленных пусков МТЗ СН в сторону сети «П. МТЗ-1 СН в сеть» и «П. МТЗ-2 СН в сеть»
+через выдержки времени \textbf{«Тср МТЗ-1 откл СВ(ШСВ) СН»} и \textbf{«Тср МТЗ-2 откл СВ(ШСВ) СН»} логика
+деления формирует сигналы на отключение СВ (ШСВ) средней стороны трансформатора с
+возможностью контроля включенного положения выключателя средней стороны.
+
+\item
+От направленных пусков МТЗ СН в сторону сети «П. МТЗ-1 СН в сеть» и «П. МТЗ-2 СН в сеть»,
+через выдержки времени \textbf{«Тср МТЗ-1 откл В СН»} и \textbf{«Тср МТЗ-2 откл В СН»} логика деления формирует
+сигналы на отключение выключателей средней стороны трансформатора.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставок ЛД стороны СН\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ДТЗ|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}
