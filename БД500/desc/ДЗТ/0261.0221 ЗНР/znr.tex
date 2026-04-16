@@ -1,0 +1,53 @@
+\color{unidarkgreen}{\subsection{Защита от неполнофазного режима}}
+\color{black}
+
+\subsubsection{Общие сведения}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Защита предназначена для ликвидации неполнофазного режима работы выключателей с
+пофазным приводом, возникающего в результате возможного отказа переключения одной или двух фаз
+выключателя при коммутации. 
+
+\item
+Ввод в работу ЗНР осуществляется с помощью уставки \textbf{«Работа ЗНР»}. Оперативный
+ввод/вывод ЗНР ВН производится с помощью БУ (блока управления функциями) «Вывод ЗНР ВН». Пуск
+ЗНР формируется при условии появления конфигурируемых сигналов \textit{«ЗНФ В1»} или \textit{«ЗНФ В2»} и
+отключенном положении смежного выключателя (для схем с двумя выключателями), с контролем
+протекания тока нулевой или обратной последовательности. Выбор количества контролируемых
+выключателей задается уставкой \textbf{«ЗНР контр. В2»}, \textbf{«ЗНР контр. В3»}. Порог срабатывания ЗНР ВН по
+току нулевой последовательности задается уставкой \textbf{«Iср ЗНРВН»}. Выдержка времени срабатывания
+ЗНР задается уставкой \textbf{«Тср ЗНР »}. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/0261.0221 ЗНР/img/ZNR.pdf}
+\captionof{figure}{Функциональный блок ЗНР}\label{pic:ZNR}
+\end{figure}
+
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров функции ЗНР\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ДТЗ|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}

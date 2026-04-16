@@ -1,0 +1,44 @@
+\color{unidarkgreen}{\subsection{Реле тока блокировки РПН}}
+\color{black}
+
+\subsubsection{Общие сведения}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Предусмотрено реле, блокирующее автоматику РПН, когда ток перегрузки трансформатора
+превышает регламентируемое для обмотки значение. По умолчанию данное реле подключено к
+трансформаторам тока стороны ВН трансформатора. Порог по току срабатывания задается параметром
+\textbf{«Iбл РПН»}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/011.1181 РПН/img/RPN.pdf}
+\captionof{figure}{Функциональный блок РТ блокировки РПН Т}\label{pic:RPN}
+\end{figure}
+
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров функции блокировки РПН\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ДТЗ|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}
