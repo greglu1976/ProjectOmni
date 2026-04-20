@@ -175,9 +175,9 @@ footskip=7mm,
 \usepackage{titlesec}
 \usepackage{appendix}
 %\titlespacing{\chapter}{0pt}{-30pt}{12pt} как пример
-\titlespacing{\section}{30pt}{0pt}{7pt}
-\titlespacing{\subsection}{30pt}{6pt}{5pt}
-\titlespacing{\subsubsection}{30pt}{3pt}{3pt}
+\titlespacing{\section}{1cm}{0pt}{7pt}
+\titlespacing{\subsection}{1cm}{6pt}{5pt}
+\titlespacing{\subsubsection}{1cm}{3pt}{3pt}
 
 %\usepackage[bitstream-charter]{mathdesign} % проверить когда формулы будут в тексте
 \uchyph=0 % отключаем перенос в словах с заглавной буквы - чтобы ГЗоткл не переносил например
@@ -186,8 +186,10 @@ footskip=7mm,
 % - дефис, -- тире, --- длинное тире
 \usepackage{enumitem}
 
-\setlist[itemize]{label=---, leftmargin=0cm, itemindent=1cm, labelsep=10pt}
+%\setlist[itemize]{label=---, leftmargin=0cm, itemindent=1cm, labelsep=10pt}
 %\setlist[itemize]{label=$\circ$} % окружность
+% Сброс всех предыдущих настроек itemize
+\setlist[itemize]{label=-, leftmargin=37pt, labelsep=5pt, align=right, nosep}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{float}
@@ -294,3 +296,5 @@ footskip=7mm,
 \makeatother
 
 \usepackage{ragged2e} % пакет для выравнивания по ширине в title1
+
+% \usepackage{showframe} %отображение границ. полезно при вёрстке для таблиц

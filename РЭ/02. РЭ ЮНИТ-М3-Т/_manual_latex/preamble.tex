@@ -179,8 +179,26 @@ footskip=7mm,
 % - дефис, -- тире, --- длинное тире
 \usepackage{enumitem}
 
-\setlist[itemize]{label=---}
+%\setlist[itemize]{label=--}
 %\setlist[itemize]{label=$\circ$} % окружность
+
+% Сброс всех предыдущих настроек itemize
+\setlist[itemize]{nosep} % если нужно убрать вертикальные отступы, можно оставить
+
+\setlist[itemize]{
+    label={-},
+    leftmargin=44pt,      % Выравнивание по заголовкам section
+    labelindent=0pt,
+    itemindent=0pt,
+    listparindent=0pt,    % Отступ первой строки абзаца внутри пункта
+    labelsep=7pt,         % Расстояние от тире до текста
+    align=right,           % Тире прижато к левой границе (к 30pt)
+    topsep=0pt,           % Убрать лишние отступы сверху/снизу списка (опционально)
+    partopsep=0pt
+}
+%\usepackage{showframe}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{float}
