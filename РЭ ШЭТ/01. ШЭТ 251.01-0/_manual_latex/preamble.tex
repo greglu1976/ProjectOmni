@@ -189,7 +189,13 @@ footskip=7mm,
 %\setlist[itemize]{label=---, leftmargin=0cm, itemindent=1cm, labelsep=10pt}
 %\setlist[itemize]{label=$\circ$} % окружность
 % Сброс всех предыдущих настроек itemize
-\setlist[itemize]{label=-, leftmargin=37pt, labelsep=5pt, align=right, nosep}
+\setlist[itemize]{
+    label=-,			 % маркер
+    leftmargin=0pt,      % отступ для всех строк
+    itemindent=38pt,     % отступ для первой строки
+    labelsep=5pt,        % пробел между маркером и текстом
+    nosep                % убираем лишние вертикальные отступы
+}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{float}
@@ -298,3 +304,5 @@ footskip=7mm,
 \usepackage{ragged2e} % пакет для выравнивания по ширине в title1
 
 % \usepackage{showframe} %отображение границ. полезно при вёрстке для таблиц
+
+\usepackage{siunitx}
