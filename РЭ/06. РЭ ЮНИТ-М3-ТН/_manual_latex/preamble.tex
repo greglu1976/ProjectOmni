@@ -83,6 +83,11 @@ footskip=7mm,
 \usepackage{longtable,booktabs}
 \usepackage{calc} % for calculating minipage widths
 
+%------------------------------------- 25.04.26
+\setlength{\LTpre}{8pt}
+\setlength{\LTpost}{8pt}
+%-----------------------------------------------
+
 % Это для таблицы, чтобы жестко ширину столбцов выставлять НЕ ТРЕБУЕТСЯ???
 %\usepackage{array}
 %\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -168,9 +173,9 @@ footskip=7mm,
 \usepackage{titlesec}
 \usepackage{appendix}
 %\titlespacing{\chapter}{0pt}{-30pt}{12pt} как пример
-\titlespacing{\section}{30pt}{0pt}{7pt}
-\titlespacing{\subsection}{30pt}{6pt}{5pt}
-\titlespacing{\subsubsection}{30pt}{3pt}{3pt}
+\titlespacing{\section}{1cm}{0pt}{7pt} %------------------------------------- 25.04.26
+\titlespacing{\subsection}{1cm}{6pt}{5pt} %------------------------------------- 25.04.26
+\titlespacing{\subsubsection}{1cm}{3pt}{3pt} %------------------------------------- 25.04.26
 
 %\usepackage[bitstream-charter]{mathdesign} % проверить когда формулы будут в тексте
 \uchyph=0 % отключаем перенос в словах с заглавной буквы - чтобы ГЗоткл не переносил например
@@ -179,8 +184,17 @@ footskip=7mm,
 % - дефис, -- тире, --- длинное тире
 \usepackage{enumitem}
 
-\setlist[itemize]{label=---}
+%\setlist[itemize]{label=---}
 %\setlist[itemize]{label=$\circ$} % окружность
+%------------------------------------- 25.04.26
+\setlist[itemize]{
+    label=-,			 % маркер
+    leftmargin=0pt,      % отступ для всех строк
+    itemindent=38pt,     % отступ для первой строки
+    labelsep=5pt,        % пробел между маркером и текстом
+    nosep                % убираем лишние вертикальные отступы
+}
+%------------------------------------- 25.04.26
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{float}
@@ -221,7 +235,7 @@ footskip=7mm,
 %\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 %\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
 
-\usepackage{fontawesome} % Подключить пакет шрифтов fontawesome
+\usepackage{fontawesome7} % Подключить пакет шрифтов fontawesome %------------------------------------- 25.04.26
 
 \usepackage{microtype} % для разрежения текста
 
@@ -273,3 +287,22 @@ footskip=7mm,
 \normalem % 29.11.24 - чтобы от верхнего пакета не ломалось \emph
 
 \usepackage{placeins} % чтобы ограничивать float рисунков с тегом [!h]
+
+\usepackage{eso-pic}
+
+%-------------------------------25.04.26
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=empty}
+\renewcommand\thesubfigure{\alph{subfigure})}
+\renewcommand{\thesubfigure}{\asbuk{subfigure})}
+
+\makeatletter
+\renewcommand{\p@subfigure}{\thefigure,\ }   % добавляет "0.2, " перед буквой
+\renewcommand{\thesubfigure}{\asbuk{subfigure}}  % буква без скобки
+\makeatother
+
+\usepackage{ragged2e} % пакет для выравнивания по ширине в title1
+
+%\usepackage{showframe} %отображение границ. полезно при вёрстке для таблиц
+
+\usepackage{siunitx}

@@ -139,16 +139,16 @@
 Функция может быть выведена из работы оперативно путем активации сигнала «ОВ КС», что характеризуется активным состоянием сигнала «КС: Оперативный вывод» на выходе функции.
 
 % ПРЕДУПРЕЖДЕНИЕ !
-\needspace{4\baselineskip}
+%\needspace{4\baselineskip}
+\par
 \noindent
-\fboxrule=1.2pt % задаём толщину рамки (жирная линия)
-\noindent
-\fbox{%
-  \begin{minipage}{\dimexpr\linewidth-2\fboxrule-2\fboxsep}
-    {\hspace*{0.5em}\textcolor{unired}{\Large\faExclamationTriangle}}\hspace{0.5em}
-    \hyphenpenalty=10000  Оперативный вывод КС дает безусловное разрешение на оперативное включение выключателя без контроля синхронизма, что может привести к ошибочному несинхронному включению оборудования.
-  \end{minipage}%
-}\vspace{1mm}
+\begin{tabularx}{\linewidth}{p{2em} X}
+  \begin{minipage}[c][3\baselineskip][b]{2em}
+    \centering\textcolor{unired}{\Huge\faTriangleExclamation}
+  \end{minipage} &
+  \hyphenpenalty=0 \textbf{Оперативный вывод КС дает безусловное разрешение на оперативное включение выключателя без контроля синхронизма, что может привести к ошибочному несинхронному включению оборудования.}
+\end{tabularx}
+\vskip 2mm
 %%%%%%%%%%%%%%%%%%%
 
 \item

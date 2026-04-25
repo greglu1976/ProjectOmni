@@ -425,16 +425,15 @@
 %}
 
 % ИНФОРМАЦИЯ - 
+\par
 \noindent
-\fboxrule=1.2pt % задаём толщину рамки (жирная линия)
-\noindent
-\fbox{%
-    \begin{minipage}{\dimexpr\linewidth-2\fboxrule-2\fboxsep}
-    {\hspace*{0.5em}\textcolor{uniblue}{\Large\faInfoCircle}}\hspace{0.5em}
-    \hyphenpenalty=10000 При утере пароля учетной записи пользователя с ролью Администратор, восстановление административных прав возможно только путем перепрограммирования устройства специалистом предприятия-изготовителя, что повлечет за собой сброс настроечных параметров на заводские.
-    \end{minipage}%
-}\vskip 2mm
-
+\begin{tabularx}{\linewidth}{p{2em} X}
+  \begin{minipage}[c][3\baselineskip][b]{2em}
+    \centering\textcolor{uniblue}{\Huge\faCircleInfo}
+  \end{minipage} &
+  \hyphenpenalty=0 \textbf{При утере пароля учетной записи пользователя с ролью Администратор, восстановление административных прав возможно только путем перепрограммирования устройства специалистом предприятия-изготовителя, что повлечет за собой сброс настроечных параметров на заводские.}
+\end{tabularx}
+\vskip 2mm
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

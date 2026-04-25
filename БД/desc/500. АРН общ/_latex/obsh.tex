@@ -77,17 +77,28 @@
 \end{figure}
 
 % ПРЕДУПРЕЖДЕНИЕ !
-\needspace{4\baselineskip}
-\noindent
-\fboxrule=1.2pt % задаём толщину рамки (жирная линия)
-\noindent
-\fbox{%
-  \begin{minipage}{\dimexpr\linewidth-2\fboxrule-2\fboxsep}
-    {\hspace*{0.5em}\textcolor{unired}{\Large\faExclamationTriangle}}\hspace{0.5em}
-    \hyphenpenalty=10000  Для первичной схемы, приведенной на рисунке \ref{onsh:img1} (а), подключение вторичных цепей напряжения от ТН секции, питаемой смежным трансформатором к аналоговым входам устройства, предназначенных для подключения цепей напряжения ТН2 является ошибочным и приведет к неправильному функционированию алгоритмов устройства.
-  \end{minipage}%
-}\vspace{1mm}
+%\needspace{4\baselineskip}
+%\noindent
+%\fboxrule=1.2pt % задаём толщину рамки (жирная линия)
+%\noindent
+%\fbox{%
+  %\begin{minipage}{\dimexpr\linewidth-2\fboxrule-2\fboxsep}
+    %{\hspace*{0.5em}\textcolor{unired}{\Large\faExclamationTriangle}}\hspace{0.5em}
+    %\hyphenpenalty=10000  Для первичной схемы, приведенной на рисунке \ref{onsh:img1} (а), подключение вторичных цепей напряжения от ТН секции, питаемой смежным трансформатором к аналоговым входам устройства, предназначенных для подключения цепей напряжения ТН2 является ошибочным и приведет к неправильному функционированию алгоритмов устройства.
+  %%\end{minipage}%
+%}\vspace{1mm}
 %%%%%%%%%%%%%%%%%%%
+
+\par
+\noindent
+\begin{tabularx}{\linewidth}{p{2em} X}
+  \begin{minipage}[c][3\baselineskip][b]{2em}
+    \centering\textcolor{unired}{\Huge\faTriangleExclamation}
+  \end{minipage} &
+  \hyphenpenalty=0 \textbf{Для первичной схемы, приведенной на рисунке \ref{onsh:img1} (а), подключение вторичных цепей напряжения от ТН секции, питаемой смежным трансформатором к аналоговым входам устройства, предназначенных для подключения цепей напряжения ТН2 является ошибочным и приведет к неправильному функционированию алгоритмов устройства.}
+\end{tabularx}
+\vskip 2mm
+
 
 \item
 Устройство предполагает два вида режимов управления приводом РПН:
