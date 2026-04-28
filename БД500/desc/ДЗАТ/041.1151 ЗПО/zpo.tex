@@ -1,0 +1,69 @@
+\color{unidarkgreen}{\subsection{Защита при потере охлаждения}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Защита при потере охлаждения направлена на предотвращение перегрева и повреждения
+первичного оборудования (автотрансформатора, шунтирующего ректора) в результате частичного или
+полного отказа системы охлаждения.
+
+\item
+Функция защиты при потере охлаждения контролирует уровни тока на обмотках ВН, НН, а также
+на общей обмотке автотрансформатора. К каждой из обмоток подключено по 2 реле тока для контроля
+за уровнем нагрузки автотрансформатора. Каждое реле имеет индивидуально настраиваемый порог по
+току срабатывания, задаваемый пользователем.
+
+\item
+Защита содержит 4 ступени, каждая из которых может быть выполнена с контролем температуры
+масла и уровня тока. Ввод контроля перегрева масла, а также выбор соответствующего уровня тока
+осуществляется программными накладками \textbf{«ЗПО-N конт.ДТм»} и \textbf{«ЗПО-N конт.РТ»} соответственно
+(где N – номер ступени). Каждая из ступеней имеет индивидуальную регулируемую задержку на
+срабатывание.
+
+\item
+На рисунке \ref{pic:ZPO} представлена защита при потере охлаждения 1 ступень. Исполнение для последующих ступеней аналогично.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.55\textheight,keepaspectratio]{\fbpath/041.1151 ЗПО/img/ZPO_1.pdf}
+%\captionof{figure}{Функциональный блок ЗПО}\label{pic:ZPO}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.55\textheight,keepaspectratio]{\fbpath/041.1151 ЗПО/img/ZPO_2.pdf}
+%\captionof{figure}{Функциональный блок ЗПО}\label{pic:ZPO}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.55\textheight,keepaspectratio]{\fbpath/041.1151 ЗПО/img/ZPO_3.pdf}
+\captionof{figure}{Функциональный блок ЗПО}\label{pic:ZPO}
+\end{figure}
+
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров функции пуска охладителей\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ДЗАТ|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}

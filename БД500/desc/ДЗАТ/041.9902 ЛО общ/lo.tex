@@ -1,0 +1,78 @@
+\color{unidarkgreen}{\subsection{Логика отключения общие}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Срабатывание логики отключения основных защит формируются при включенной накладке \textbf{«ЛО
+осн»} следующими сигналами:
+\begin{itemize}
+\item Откл.ДТЗ;
+\item Отключение от ГЗ АТ сигн;
+\item Ср. ГЗ АТ откл;
+\item Ср. ГЗ РПН;
+\item Отключение от ГЗ ЛРТ сигн;
+\item Ср. ГЗ ЛРТ откл;
+\item Ср.отсеч.клап. АТ;
+\item Ср.предохр.клап. АТ;
+\item Ср.предохр.клап. ЛРТ;
+\item Откл. от ТЗ АТ;
+\item Откл. от ТЗ ЛРТ;
+\item Ср. ЗПО.
+\end{itemize}
+
+\item
+Действие основных защит на отсечной клапан вводится накладкой \textbf{«Действие на ОК»}, время
+импульса действия регулируется \textbf{«Tимп ОК»}.
+
+\item
+Срабатывание логики отключения резервных защит формируются при включенной накладке
+\textbf{«ЛО рез»} следующими сигналами:
+\begin{itemize}
+\item Ср. МТЗ-1 НН;
+\item Ср. МТЗ-2 НН.
+\end{itemize}
+
+
+\item
+Логика деления от МТЗ-1 НН1(НН) выводится накладкой \textbf{«ЛД НН от МТЗ-1 НН»}.
+Срабатывание логики деления формируются при возникновении пуска МТЗ-1 НН. Так же
+срабатывание контролируется выдержкой времени \textbf{«Тср МТЗ-1 на В НН»}.
+
+\item
+Логика деления от МТЗ-2 НН1 выводится накладкой \textbf{«ЛД НН2 от МТЗ-2 НН»}. Срабатывание
+логики деления формируются при возникновении пуска МТЗ-2 НН. Так же срабатывание
+контролируется выдержкой времени \textbf{«Тср МТЗ-2 на В НН»}.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/041.9902 ЛО общ/img/LO_gen.pdf}
+\captionof{figure}{Функциональная схема общей логики отключения}\label{pic:LO_gen}
+\end{figure}
+
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров функции общей логики отключения\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ДТЗ|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}

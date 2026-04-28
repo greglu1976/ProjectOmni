@@ -1,0 +1,60 @@
+\color{unidarkgreen}{\subsection{Фиксация положения выключателей (ФПВ)}}
+\color{black}
+
+\subsubsection{Общие сведения}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Схемы логики ФПВ В2(ОВ)ВН, ФПВ В3, ФПВ В1(ЛВ)СН, ФПВ В2(ОВ)СН аналогичны логике ФПВ В1(ЛВ)ВН.
+
+\item
+Схемы логики Р2, Р3 аналогичны логике Р1.
+
+\item
+Ввод в работу ФПВ В1(ЛВ)ВН осуществляется с помощью уставки \textbf{«ФПВ В1(ЛВ)ВН»}.
+Оперативный ввод/вывод ФПВ производится с помощью БУ (блоков управления функциями) «Вывод
+ФПВ В1(ЛВ)ВН». Предусматривается возможность формирования положения выключателей с
+контролем разъединителей, которая задается уставкой \textbf{«Контроль Р В1(ЛВ)ВН»}. С помощью уставки
+\textbf{«Схема Р В1(ЛВ) ВН»} имеется возможность выбрать схему выключателя, два или три разъединителя.
+С помощью уставки \textbf{«Тип В1(ЛВ) ВН»} имеется возможность выбрать тип выключателя, линейный или
+обходной. Так же от блок-контактов В1(ЛВ) ВН формируется внутренний пуск ЗНФ, который пофазно
+контролирует расхождение контактов полюсов выключателей, возникающее при трехфазном включении
+или отключении выключателя.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/761.3471 ФПВ/img/FPV_1.pdf}
+%\captionof{figure}{Функциональная схема ФПВ В1}\label{pic:FPV_1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/761.3471 ФПВ/img/FPV_2.pdf}
+\captionof{figure}{Функциональная схема ФПВ В1}\label{pic:FPV_2}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров ФПВ\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ДЗАТ|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}

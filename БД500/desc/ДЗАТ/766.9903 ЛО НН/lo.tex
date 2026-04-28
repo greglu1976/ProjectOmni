@@ -1,0 +1,84 @@
+\color{unidarkgreen}{\subsection{Логика отключения В НН}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Логика отключения В НН1 аналогична В НН2.
+
+\item
+Логика отключения В НН1 выводится накладкой \textbf{«ЛО НН1»}. 
+
+\item
+Цепь отключения В НН1 выводится накладкой \textbf{«ЦО В НН1»}. Время возврата импульса на
+отключение регулируется уставкой \textbf{«Tвозвр откл НН1»}. На отключение В1(ЛВ) формируется при
+возникновении одного из следующих событий:
+\begin{itemize}
+\item ЛО осн. РЗ;
+\item ЛО рез. РЗ;
+\item ЛО внеш АПТ;
+\item ТЗО СН (ТЗО-ф);
+\item ТЗО СН (ТЗО-н);
+\item ТЗО ВН (ТЗО-ф);
+\item ТЗО ВН (ТЗО-н);
+\item ДЗО НН;
+\item ЛО внеш РЗ ВН;
+\item ЛО внеш РЗ СН.
+\end{itemize}
+
+\item
+Запрет АПВ В НН1 выводится накладкой \textbf{«ЗАПВ В НН1»}. Длительной импульса времени запрета
+ПАВ регулируется уставкой \textbf{«Тимп ЗАПВ В НН1»}. Запрет АПВ формируются при
+возникновении одного из следующих событий:
+\begin{itemize}
+\item ЛО осн. РЗ;
+\item ЛО рез. РЗ;
+\item ЛО внеш АПТ;
+\item ТЗО СН (ТЗО-ф);
+\item ТЗО СН (ТЗО-н);
+\item ТЗО ВН (ТЗО-ф);
+\item ТЗО ВН (ТЗО-н);
+\item ДЗО НН;
+\item Сраб.УРОВ НН1 (Сраб.УРОВ НН2 для В НН2);
+\item Сраб.ЗДЗ НН1 (Сраб.ЗДЗ НН2 для В НН2);
+\item Ср. МТЗ-2 НН(ОбЩ ЛОГ);
+\item ЛО внеш РЗ ВН;
+\item ЛО внеш РЗ СН;
+\item ЗАПВ внеш РЗ ВН;
+\item ЗАПВ внеш РЗ СН.
+\end{itemize}
+
+\item
+Запрет АВР НН1 формируется при появлении сигнала \textbf{«Ср. МТЗ-2 НН»}.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\textwidth,height=0.55\textheight,keepaspectratio]{\fbpath/766.9903 ЛО НН/img/LO_Q1_NN.pdf}
+\captionof{figure}{Функциональная схема логики отключения В НН1}\label{pic:LO_Q1_NN}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров функции логики отключения В НН1\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ДЗАТ|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}

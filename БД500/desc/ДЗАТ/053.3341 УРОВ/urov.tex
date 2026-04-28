@@ -1,0 +1,65 @@
+\color{unidarkgreen}{\subsection{Устройство резервирования при отказе выключателя}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+В устройстве предусмотрена функция резервирования при отказе выключателя (УРОВ). Данная
+функция предназначена для ликвидации повреждения в случае отказа выключателя поврежденного
+присоединения.  
+
+\item
+Логика работы УРОВ выполнена с контролем протекания тока через выключатель. Значение по
+току срабатывания задается параметром \textbf{«Iср УРОВ В»}. Функция УРОВ действует с регулируемой
+задержкой по времени \textbf{«Тср повт. УРОВ»} на повторное отключение своего выключателя, с задержкой
+\textbf{«Тср УРОВ»} на отключение смежных выключателей.
+
+\item
+Действие УРОВ на смежные выключатели может быть выполнено с контролем сигнала РПВ.
+Ввод контроля сигнала РПВ в логику работы УРОВ осуществляется программной накладкой \textbf{«УРОВ
+контр. выкл.»}.
+
+\item
+Предусмотрен подхват по току, включение которого производится программной накладкой
+\textbf{«УРОВ подхв.»}.
+
+\item
+На рисунке \ref{pic:UROV} представлены схемы УРОВ НН, УРОВ ВН. УРОВ СН аналогичен УРОВ ВН.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/053.3341 УРОВ/img/UROV_NN.pdf}
+%\captionof{figure}{Функциональный блок УРОВ}\label{pic:UROV}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/053.3341 УРОВ/img/UROV_VN.pdf}
+\captionof{figure}{Функциональный блок УРОВ}\label{pic:UROV}
+\end{figure}
+
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров УРОВ\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ДЗАТ|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}
