@@ -1,0 +1,66 @@
+\color{unidarkgreen}{\subsection{Фиксация положения выключателей}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+В устройстве реализована функция фиксации положения выключателей В1 и В2 высокой стороны
+трансформатора.  
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3381 ФПВ/img/FPV.pdf}
+\captionof{figure}{Функциональная схема ФПВ В1 и В2 ВН}\label{pict:FPV}
+\end{figure}
+
+\item
+Функциональный блок фиксации положения выключателей (ФПВ) предназначен для определения
+состояния выключателей на основании технологической информации:
+\begin{itemize}
+\item состояния блок-контактов выключателя;
+\item положения разъединителей в цепи выключателя;
+\item информации о выводе в ремонт выключателя.
+\end{itemize}
+
+\item
+Контроль положения разъединителей при формировании сигналов включенного или отключенного
+положения выключателей вводится программным переключателями \textbf{«Контр Р В1 ВН»} и \textbf{«Контр Р В2 ВН»}.
+Также имеется возможность выбрать количество разъединителей, участвующих в формировании сигналов
+включенного или отключенного положения выключателей, задается программными переключателями \textbf{«Схема
+Р В1 ВН»} и \textbf{«Схема Р В2 ВН»}. А для выключателей В2 ВН имеется возможность выбрать тип выключателя
+линейный или обходной, задается программным переключателем \textbf{«Тип В2 ВН»}. 
+
+\item
+Также функция ФПВ пофазно контролирует состояние блок-контактов выключателя и в случае
+расхождения полюсов формирует сигналы \textit{«Внутр. пуск. ЗНФ В1 ВН»} и \textit{«Внутр. пуск. ЗНФ В2 ВН»}.
+
+
+\small
+\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
+\begin{longtable}
+{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
+\caption{Перечень уставочных параметров ФПВ ВН\hfill\vspace{-0.5\baselineskip}}\label{tzt:tbl1} \\ 
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
+\hhline{|-|-|-|-|}
+\endfirsthead
+
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tzt:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
+\hhline{|-|-|-|-|}
+\endhead
+\hhline{|-|-|-|-|}
+
+\endfoot
+\endlastfoot
+
+%%%%%%%%%%%%содержимое%%%%%%%%%%%%%%
+
+\end{longtable}
+\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
+\normalsize
+
+\end{enumerate} 
