@@ -1,0 +1,50 @@
+\color{unidarkgreen}{\subsection{Максимальная токовая защита}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Максимальная токовая защита (МТЗ) предназначена для резервирования действия основных
+быстродействующих защит при внутренних коротких замыканиях в ШР. Защита выполнена
+двухступенчатой. Измерительные цепи защиты включены на токи фаз А, В, С со стороны
+высоковольтных вводов ШР. При необходимости защита может быть включена на разность токов фаз
+(цифровая сборка токовых цепей в «треугольник»):
+\begin{equation}
+i'_{A} = \frac{i_{A}-i_{B}}{\sqrt3}; \; i'_{B} = \frac{i_{B}-i_{C}}{\sqrt3}; \; i'_{C} = \frac{i_{C}-i_{A}}{\sqrt3}
+\end{equation}
+
+\item
+Защита имеет регулируемые значения по току и времени срабатывания. Каждая из ступеней
+защиты может выполнена с блокировкой по второй гармонике (отношению уровня второй гармоники к
+первой). Данная блокировка реализована на базе модуля \textbf{«ОВ БНТ ВВ»}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/171.0281 МТЗ/img/MTZ.pdf}
+\captionof{figure}{Функциональный блок МТЗ}\label{pict_mtz:MTZ}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров МТЗ\hfill\vspace{-0.5\baselineskip}}\label{mtz:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{mtz:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>МТЗ|-
+%===m
+\end{longtable}
+\normalsize
+
+\end{enumerate}

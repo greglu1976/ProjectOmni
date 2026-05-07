@@ -1,0 +1,59 @@
+\color{unidarkgreen}{\subsection{Защита от непереключения фаз (ЗНФ)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\item
+Защита от непереключения фаз (ЗНФ) предназначена для обнаружения расхождения полюсов
+выключателя с пофазным приводом при его включении или отключении. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/661.3441 ЗНФ/img/ZNF.pdf}
+\captionof{figure}{Функциональная схема ЗНФ}\label{pict_znf:ZNF}
+\end{figure}
+
+\item
+Ввод в работу ЗНФ выключателя осуществляется с помощью программного ключа \textbf{«ЗНФ»}.
+Факт расхождения полюсов может устанавливаться одним из следующих способов:
+\begin{enumerate}[label=\arabic*)]
+\item на основании внешнего сигнала от сборки блок-контактов выключателя;
+\item функцией фиксации положения выключателя (ФПВ), которая пофазно контролирует состояние блок-контактов выключателя и в случае расхождения полюсов формирует сигнал \textit{«Внутр. пуск. ЗНФ»}.
+\end{enumerate}
+
+\item
+В зависимости от используемого способа соответствующий сигнал должен назначаться на
+конфигурируемый вход \textit{«Пуск ЗНФ»}.
+
+\item
+Действие на отключение выключателя с запретом АПВ осуществляется с независимой выдержкой
+времени \textbf{«Тср ЗНФ»}. Задаваемая выдержка времени предназначена для отстройки от разновременности
+переключения блок-контактов выключателя.
+
+\item
+Предусмотрена возможность блокировки ЗНФ от внешнего сигнала \textit{«Блок. ЗНФ»} на время, которое
+задается уставкой \textbf{«Тдеблок ЗНФ»}.
+
+\item
+Оперативный ввод/вывод ЗНФ производится с помощью БУ (блоков управления функциями) \textit{«Вывод ЗНФ»}. 
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Перечень уставочных параметров ЗНФ\hfill\vspace{-0.5\baselineskip}}\label{znf:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{znf:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>ЗНФ|-
+%===m
+\end{longtable}
+\normalsize
+
+\end{enumerate}
