@@ -1,0 +1,68 @@
+\color{unidarkgreen}{\subsection{Газовая защита}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Газовая защита предназначена для защиты маслонаполненного оборудования от всех видов
+внутренних повреждений, сопровождающихся выделением газа, интенсивным протеканием масла из
+бака в расширитель, а также от утечки масла.
+
+\item
+Логикой предусматривается прием сигналов от:
+\begin{itemize}
+\item сигнального газового реле бака ШР;
+\item отключающего газового реле бака ШР.
+\end{itemize}
+
+\item
+Для повышения надежности работы газовой защиты предусмотрена возможность резервирования
+сигналов срабатывания газовых защит и сигналов от устройств контроля изоляции (тока утечки) цепей
+газовых защит путем их приема от двух источников -- ПДС1 и ПДС2. Устройства контроля изоляции,
+установленные в цепях газовых защит, при снижении изоляции в течение времени, превышающем
+значение параметра \textbf{«Тбл ГЗ ШР откл.»} формируют сигнал о неисправности соответствующих цепей
+газовой защиты, который в свою очередь может действовать на блокировку сигналов срабатывания
+газовой защиты.
+
+\item
+Предусмотрена возможность перевода действия сигнальных ступеней газовой защиты на
+отключение, которая может быть использована в режиме опробования трансформатора. В случае
+обслуживания трансформатора (например, доливке масла) предусмотрен перевод действия
+отключающих ступеней газовой защиты на сигнал.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/161.1073 ГЗ/img/GZ_sign.pdf}
+\captionof{figure}{Функциональный блок ГЗ ШР сигнальная ступень}\label{pict_gz:GZ_sign}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/161.1073 ГЗ/img/GZ_otkl.pdf}
+\captionof{figure}{Функциональный блок ГЗ ШР отключающая ступень}\label{pict_gz:GZ_otkl}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров ГЗ\hfill\vspace{-0.5\baselineskip}}\label{gz:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{gz:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ГЗ|-
+%===m
+\end{longtable}
+\normalsize
+
+\end{enumerate}

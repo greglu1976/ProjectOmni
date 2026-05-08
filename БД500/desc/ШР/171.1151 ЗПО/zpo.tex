@@ -1,0 +1,62 @@
+\color{unidarkgreen}{\subsection{Защита при потере охлаждения}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Защита при потере охлаждения направлена на предотвращение перегрева и повреждения
+шунтирующего реактора в результате частичного или полного отказа системы охлаждения.
+
+\item
+Функция защиты при потере охлаждения контролирует уровни тока ВВ, токовый орган выводится
+программной накладкой \textbf{«РТ ВВ ЗПО»}. При необходимости можно выводить отдельные ступени
+программными накладками \textbf{«Работа ЗПО-1»}. Программная накладка \textbf{«Работа ЗПО»} выводит
+выходные сигналы. Присутствует возможность выводить отключающую цепочку программной накладкой
+\textbf{«Откл ЗПО»}.
+
+\item
+Защита содержит 4 ступени, каждая из которых может быть выполнена с контролем температуры
+масла, которая вводится программной накладкой  и уровня тока. Ввод контроля перегрева масла, а также
+выбор соответствующего уровня тока осуществляется программными накладками \textbf{«ЗПО-1 конт.ДТм»} и
+\textbf{«ЗПО-1 конт.РТ»} соответственно. Программная накладка \textbf{«ЗПО-1 конт.РТ»}  имеет 3 положения:
+\begin{itemize}
+\item \textit{«Откл»} -- выводит ступень; 
+\item \textit{«От РТ1»} -- от первого токового реле;
+\item \textit{«От РТ2»} -- от второго токовго реле. 
+\end{itemize}
+
+Каждая из ступеней имеет индивидуальную регулируемую задержку на срабатывание \textbf{«Тср ЗПО-1»}.
+
+\item
+На рисунке \ref{pict_zpo:ZPO} представлена защита при потере охлаждения 1 ступень, последующие аналогичны.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/171.1151 ЗПО/img/zpo.pdf}
+\captionof{figure}{Функциональный блок ЗПО}\label{pict_zpo:ZPO}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров ЗПО\hfill\vspace{-0.5\baselineskip}}\label{zpo:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{zpo:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ЗПО|-
+%===m
+\end{longtable}
+\normalsize
+
+\end{enumerate}

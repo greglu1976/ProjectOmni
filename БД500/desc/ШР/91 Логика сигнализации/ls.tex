@@ -1,0 +1,44 @@
+\color{unidarkgreen}{\subsection{Логика сигнализации}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Устройство формирует выходное воздействие на сигнализацию \textit{«Сигн. Сраб.(фикс)»} и \textit{«Откл. защ.
+(фикс)»} по схеме «ИЛИ» в следующих случаях:
+\begin{itemize}
+\item Отключении ШР;
+\item Срабатывании ГЗ ШР;
+\item Срабатывании ГЗ ШР сигн;
+\item Срабатывании отсечного клапана; 
+\item Срабатывании ЗПО;
+\item Срабатывании ЗНР;
+\item Срабатывании сигн. КИВ;
+\item Срабатывании КОН.
+\end{itemize}
+
+\item
+Устройство формирует выходное воздействие на сигнализацию \textit{«Сигн. неиспр.»} и \textit{«Сигн. неиспр.
+(фикс)»} по схеме «ИЛИ» в следующих случаях:
+\begin{itemize}
+\item Неисправности цепей тока ДТЗ;
+\item Неисправности цепей ГЗ ШР;
+\item Неисправность ТЗ ШР;
+\item Максимальный уровень масла;
+\item Минимальный уровень масла;
+\item Отказ сист. охл.;
+\item Неисправность охлаждения;
+\item Неисправность ОТ терминала;
+\item Неисправность КИВ.
+\end{itemize}
+
+\item
+Сброс фиксации производится с помощью \textit{«Сброс»}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/91 Логика сигнализации/img/ls.pdf}
+\captionof{figure}{Функциональный блок логики сигнализации}\label{pict_ls:LS}
+\end{figure}
+
+\end{enumerate}

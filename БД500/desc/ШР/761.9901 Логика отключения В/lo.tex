@@ -1,0 +1,61 @@
+\color{unidarkgreen}{\subsection{Логика отключения В}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Логика отключения В1(ЛВ), В2(ОВ) аналогичны, будет рассмотрена только В1(ЛВ). 
+
+\item
+Логика отключения В1(ЛВ) выводится накладкой \textbf{«ЛО В1(ЛВ)»}.
+
+\item
+Присутствует возможность вывода цепи отключения В1(ЛВ) программной накладкой \textbf{«ЦО В1(ЛВ)»}.
+Время возврата импульса на отключение регулируется уставкой \textbf{«Tвозвр откл В1(ЛВ)»}. Выходной
+сигнал на отключение В1(ЛВ) формируется при наличии следующих сигналов:
+\begin{itemize}
+\item от сигнала «ЛО осн. РЗ»;
+\item от сигнала «ЛО рез. РЗ»;
+\item от сигнала «Откл. рез. защ».
+\end{itemize}
+
+\item
+Присутствует возможность вывода запрета АПВ В1(ЛВ) программной накладкой \textbf{«ЗАПВ В1(ЛВ)»}.
+Длительной импульса времени запрета ПАВ регулируется уставкой \textbf{«Тимп ЗАПВ В1(ЛВ)»}. Выходной
+сигнал запрет АПВ формируется при наличии следующих сигналов:
+\begin{itemize}
+\item от сигнала «ЛО осн. РЗ»;
+\item от сигнала «ЛО рез. РЗ»;
+\item от сигнала «Откл. рез. защ».
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/761.9901 Логика отключения В/img/LO_Q.pdf}
+\captionof{figure}{Функциональная схема логики отключения В1(ЛВ)}\label{pic_loq:LO_Q}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров функции логики отключения В1(ЛВ) \hfill\vspace{-0.5\baselineskip}}\label{loq:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{loq:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>Логика отключения В1(ЛВ)|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}

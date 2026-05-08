@@ -1,0 +1,51 @@
+\color{unidarkgreen}{\subsection{Фиксация положения выключателей (ФПВ)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Логика ФПВ В1(ЛВ), ФПВ В2(ОВ), ФПВ В3 аналогичны, рассмотрим на примере ФПВ В1(ЛВ).
+
+\uchyph=1
+\item
+Ввод в работу ФПВ В1(ЛВ) и осуществляется с помощью уставок \textbf{«ФПВ В1(ЛВ)»}. Оперативный
+ввод/вывод ФПВ производится с помощью БУ (блоков управления функциями) \textit{«Вывод ФПВ В1(ЛВ)»}.
+Предусматривается возможность формирования положения выключателей с контролем
+разъединителей, которая задается уставками \textbf{«Контроль Р В1(ЛВ)»}. С помощью уставок \textbf{«Схема Р
+В1(ЛВ)»} имеется возможность выбрать схему выключателя, два или три разъединителя. С помощью
+уставки \textbf{«Тип В1(ЛВ)»} имеется возможность выбрать тип выключателя, линейный или обходной. Так
+же от блок-контактов В1(ЛВ) формируется  внутренний пуск ЗНФ, который пофазно контролирует
+расхождение контактов полюсов выключателей, возникающее при трехфазном включении или
+отключении выключателя.
+\uchyph=0
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth,height=0.65\textheight,keepaspectratio]{\fbpath/761.3471 ФПВ/img/fpv.pdf}
+\captionof{figure}{Функциональная схема ФПВ В1}\label{pict_fpv:FPV}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров ФПВ\hfill\vspace{-0.5\baselineskip}}\label{fpv:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{fpv:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ФПВ|-
+%===m
+\end{longtable}
+\normalsize
+
+\end{enumerate}
