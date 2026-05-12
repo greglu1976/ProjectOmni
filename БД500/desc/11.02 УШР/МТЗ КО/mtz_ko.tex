@@ -1,0 +1,51 @@
+\color{unidarkgreen}{\subsection{Максимальная токовая защита компенсационной обмотки УШР (МТЗ КО)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Функция выполнена двухступенчатой и позволяет реализовать защиту:
+\begin{itemize}
+\item от междуфазных КЗ в КОР и на ее выводах (включая отходящие присоединения ошиновки НН), чувствительную к межвитковым замыканиям в КОР, с подключением измерительных цепей защиты на вторичные фазные токи ТТ, установленных непосредственно в фазах КОР.
+\item от междуфазных КЗ в КОР и на ее выводах (включая отходящие присоединения ошиновки НН), с подключением измерительных цепей защиты на разность вторичных фазных токов ТТ, установленных непосредственно в фазах КОР:
+\end{itemize}
+\begin{equation}
+i'_{A} = \frac{i_{A}-i_{B}}{\sqrt3}; \; i'_{B} = \frac{i_{B}-i_{C}}{\sqrt3}; \; i'_{C} = \frac{i_{C}-i_{A}}{\sqrt3}
+\end{equation}
+
+\item
+Тип подключения защиты определяется программной накладкой \textbf{«ИО МТЗ КО»}. Защита имеет
+регулируемые значения по току и времени срабатывания. Каждая из ступеней защиты может выполнена
+с блокировкой по второй гармонике (отношению уровня второй гармоники к первой). Данная блокировка
+реализована на базе модуля \textbf{«ОВ БНТ»}. Предусмотрена блокировка по току 3I0 стороны ВН реактора.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/МТЗ КО/img/MTZ_KO.pdf}
+\captionof{figure}{Функциональный блок МТЗ КО}\label{pict_mtzko:MTZ_KO}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров МТЗ КО\hfill\vspace{-0.5\baselineskip}}\label{mtz_ko:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{mtz_ko:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>МТЗ КО|-
+%===m
+\end{longtable}
+\normalsize
+
+\end{enumerate}

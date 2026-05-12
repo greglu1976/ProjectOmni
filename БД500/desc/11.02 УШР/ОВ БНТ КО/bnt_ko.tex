@@ -1,0 +1,43 @@
+\color{unidarkgreen}{\subsection{Орган выявления броска тока намагничивания компенсационной обмотки (ОВ БНТ КО)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Для обеспечения несрабатывания «МТЗ КО», «ТЗНП КО», «ТЗОП КО» при броске тока
+намагничивания используется блокировка по содержанию 2 гармоники в токе. Блокировка основана на
+контроле отношения действующего значения второй гармонике к первой в токах фаз. Имеется
+возможность регулировать порог срабатывания блокировки, с помощью уставки \textbf{«I2г/I1г БНТ»}.
+Блокировка по 2 гармонике выводится из действия при величине тока ниже 0,04Iном или превышении
+током первой гармоники значения \textbf{«Iср БНТ»}.  
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/ОВ БНТ КО/img/BNT_KO.pdf}
+\captionof{figure}{Функциональный блок ОВ БНТ КО}\label{pict_bntko:BNT_KO}
+\end{figure}
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров ОВ БНТ КО\hfill\vspace{-0.5\baselineskip}}\label{bnt_ko:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{bnt_ko:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ОВ БНТ КО|-
+%===m
+\end{longtable}
+\normalsize
+
+\end{enumerate}

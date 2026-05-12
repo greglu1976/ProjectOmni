@@ -1,0 +1,55 @@
+\color{unidarkgreen}{\subsection{Защита от неполнофазного режима}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
+
+\item
+Защита предназначена для ликвидации неполнофазного режима работы выключателей с 
+пофазным приводом, возникающего в результате возможного отказа переключения одной или двух фаз 
+выключателя при коммутации. 
+
+\item
+Ввод в работу ЗНР осуществляется с помощью уставки \textbf{«Работа ЗНР»}. Оперативный 
+ввод/вывод ЗНР  производится с помощью БУ (блока управления функциями) \textbf{«Вывод ЗНР »}. Пуск ЗНР 
+формируется при условии появления конфигурируемых сигналов \textbf{«ЗНФ В1»} или \textbf{«ЗНФ В2»} и 
+отключенном положении смежного выключателя (для схем с двумя выключателями), с контролем 
+протекания тока нулевой или обратной последовательности. Выбор количества контролируемых 
+выключателей задается уставкой \textbf{«ЗНР контр. В2»}, \textbf{«ЗНР контр. В3»}. Порог срабатывания ЗНР по току 
+нулевой последовательности задается уставкой \textbf{«Iср ЗНР»}. Выдержка времени срабатывания ЗНР 
+задается уставкой \textbf{«Тср ЗНР »}. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/271.0221 ЗНР/img/ZNR.pdf}
+\captionof{figure}{Функциональный блок ЗНР}\label{pict:ZNR}
+\end{figure}
+
+\small
+\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
+\begin{longtable}
+{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
+\caption{Перечень уставочных параметров функции ЗНР\hfill\vspace{-0.5\baselineskip}}\label{znr:tbl1} \\ 
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
+\hhline{|-|-|-|-|}
+\endfirsthead
+
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{znr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
+\hhline{|-|-|-|-|}
+\endhead
+\hhline{|-|-|-|-|}
+
+\endfoot
+\endlastfoot
+
+%%%%%%%%%%%%содержимое%%%%%%%%%%%%%%
+
+\end{longtable}
+\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
+\normalsize
+
+\end{enumerate} 

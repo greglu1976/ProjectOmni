@@ -1,0 +1,69 @@
+\color{unidarkgreen}{\subsection{Фиксация положения выключателей (ФПВ) }}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
+
+
+\item
+Логика ФПВ В1(ЛВ), ФПВ В2(ОВ), ФПВ В3, ФПВ В1(ЛВ)СН, ФПВ В2(ОВ)СН аналогичны, 
+рассмотрим на примере ФПВ В1(ЛВ). 
+
+\item
+Ввод в работу ФПВ В1(ЛВ)  и  осуществляется с помощью уставок \textbf{«ФПВ В1(ЛВ)»} . Оперативный 
+ввод/вывод ФПВ производится с помощью БУ (блоков управления функциями) «Вывод ФПВ В1(ЛВ) ». 
+Предусматривается возможность формирования положения выключателей с контролем 
+разъединителей, которая задается уставками \textbf{«Контроль Р В1(ЛВ)»}. С помощью уставок \textbf{«Схема Р 
+В1(ЛВ)»} имеется возможность выбрать схему выключателя, два или три разъединителя. С помощью 
+уставки \textbf{«Тип В1(ЛВ)»} имеется возможность выбрать тип выключателя, линейный или обходной. Так 
+же от блок-контактов В1(ЛВ)   формируется  внутренний пуск ЗНФ, который пофазно контролирует 
+расхождение контактов полюсов выключателей, возникающее при трехфазном включении или 
+отключении выключателя. 
+
+\small
+\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
+\begin{longtable}
+{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
+\caption{Перечень уставочных параметров ФПВ\hfill\vspace{-0.5\baselineskip}}\label{fpv:tbl1} \\ 
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
+\hhline{|-|-|-|-|}
+\endfirsthead
+
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{fpv:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hhline{|-|-|-|-|}
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
+\hhline{|-|-|-|-|}
+\endhead
+\hhline{|-|-|-|-|}
+
+\endfoot
+\endlastfoot
+
+%%%%%%%%%%%%содержимое%%%%%%%%%%%%%%
+
+\end{longtable}
+\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
+\normalsize
+
+\newpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/761.3471 ФПВ/img/FPV_1.pdf}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/761.3471 ФПВ/img/FPV_2.pdf}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/761.3471 ФПВ/img/FPV_logic.pdf}
+\captionof{figure}{Функциональная схема ФПВ В1}\label{pict_fpv:FPV}
+\end{figure}
+
+\end{enumerate} 
