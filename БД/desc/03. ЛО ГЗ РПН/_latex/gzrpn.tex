@@ -45,19 +45,19 @@
 \hline
 \endlastfoot
 %==+t1*PTRC1|TLTCGASLGC
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ БУ } \\ \hline 
+\centering Выдержка времени срабатывания на блокировку (Тбл)  & \centering T1 & \centering 0...30000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Блокировка от низкой изоляции (Блок\_от\_НИ) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
+\multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-%==+t1*LLN0|TLTCGASLGC
-\centering Выдержка времени срабатывания на блокировку (Тбл) & \centering T1 & \centering 0,00 ... 30,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Блокировка от низкой изоляции (Блок\_от\_НИ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 %===t1
 \end{longtable}
 \normalsize
 
 \vspace{3mm}
-\begin{figure}[!h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/03. ЛО ГЗ РПН/_latex/img/1.pdf}
 \captionof{figure}{Функциональная схема логики отключения при срабатывании струйного реле РПН трансформатора}\label{logzrpn:img1}
