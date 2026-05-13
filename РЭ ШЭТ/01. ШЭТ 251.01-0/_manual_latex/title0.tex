@@ -2,7 +2,6 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 
-%\fancyhead[R]{\raisebox{-0.48\width}{\includegraphics[scale=1.2]{uni.pdf}}}
 \fancyhead[R]{\raisebox{-0.35\width}{\includegraphics[scale=0.25]{uni.pdf}}} % УТВЕРЖДЕНО 20.02.25!!! С Егоровым
 
 \renewcommand{\footrulewidth}{0pt}
@@ -11,13 +10,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% ПОДЛОЖКА %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \AddToShipoutPictureBG*{%
-  \AtPageLowerLeft{%
-%     Сначала рисуем серый прямоугольник
-%   \put(22mm,95mm){\color{unigray!25}\rule{0.85\paperwidth}{0.5\paperheight}}%
-%     Затем поверх размещаем изображение
-    \put(62mm,91mm){\includegraphics[width=0.65\paperwidth]{2.pdf}}%
-  }%
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[opacity=0.15, anchor=south west] at ([xshift=20.5mm, yshift=18mm] current page.south west) {%
+      \includegraphics[width=178mm, height=240mm, keepaspectratio=false]{test1.png}%
+    };
+  \end{tikzpicture}%
+  %\put(62mm,91mm){\includegraphics[width=0.65\paperwidth]{2.pdf}}%
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \textcolor{uniblack}{\vspace{15mm}\hrule height 0.05cm}
@@ -39,7 +39,5 @@
 \sloppy{\color{uniblack}\fontsize{18pt}{21.6pt}\selectfont\bfseries\MakeUppercase{Руководство по эксплуатации}}
 \vskip 2mm % УТВЕРЖДЕНО 20.02.25!!! С Егоровым
 \sloppy{\color{unigreen}\fontsize{18pt}{21.6pt}\selectfont\bfseries\MakeUppercase{ЮТКБ.656463.300-009 РЭ}}
-%\vskip 30mm
-%\centering\color{red}{\textbf{\LARGE{ВЕРСИЯ 0.4+++ от 28.05.25}}}
 \textcolor{uniblack}{\vspace{20mm}\hrule height 0.05cm}
 \end{flushleft}

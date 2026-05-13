@@ -1,38 +1,80 @@
 \color{unidarkgreen}{\subsection{Логика отключения присоединений}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
 
 \item
-Для формирования сигналов отключения и запрета АПВ присоединений предусмотрена возможность оперативного вывода действия защит на присоединение посредством внешнего сигнала \textit{«Вывод действия на Вn»}.
+Ввод/вывод функции осуществляется либо посредством программного ключа \textbf{«ЛО Вn»}, либо с
+использованием внешнего сигнала \textit{«Вывод действия на Вn»}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Логика запрета АПВ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Логика запрета АПВ}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
 
 \item
-Сигнал отключения присоединения (\textit{«Отключение Вn»}) формируется при отключении СШ, а также при отключении в результате опробования присоединения.
-
-\item
-Сигнал аварийного отключения присоединения (\textit{«Откл. аварийно Вn»}) дополнительно формируется при действии УРОВ на себя.
-
-\item
-Для каждого присоединения предусмотрена возможность формирования как общего, так и избирательного запрета АПВ.
-
-\item
-Общий запрет АПВ присоединения формируется по факту наличия сигнала запрет АПВ СШ. 
-
-\item
-Избирательный запрет АПВ присоединения формируется по факту срабатывания ДЗО.
+Сигналы запрета АПВ формируется в следующих условиях:
+\begin{itemize}
+\item от сигнала об аварийном снижении давления элегаза в ТТ;
+\item при отключении при опробовании;
+\item от общего сигнала запрета АПВ;
+\item от команды оперативного отключения выключателя;
+\item при срабатывании ЗНФ (при введенной уставку \textbf{«Запрет АПВ Вn от ЗНФ Вn»});
+\item если выключатель не включился за время \textbf{«Tожид. усл. пуска АПВ Вn»} (при введенном программном ключе \textbf{«Огр. ожид. пуска АПВ Вn»});
+\item если смежный выключатель (ведущий) включился на КЗ.
+\end{itemize}
 
 \medskip
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/761.9901 Логика отключения присоединений/img/Log_otkl_Q1.pdf}
-\captionof{figure}{Функциональный блок логики отключения первого присоединения}\label{pict_lo:Log_otkl_Q1}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/761.9901 Логика отключения присоединений/img/LZ_APV.pdf}
+\captionof{figure}{Функциональный блок логики запрета АПВ В1}\label{pict_lo:LZ_APV}
 \end{figure}
 
 \medskip
 
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Логика отключения %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Логика отключения}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
 \item
-Уставки логики отключения присоединений представлены в таблице \ref{lo:tbl1}.
+Функциональный блок логики отключения предназначен для подачи сигнала на отключение силового выключателя.
+
+\item
+Команда на отключение выключателя \textit{«Отключить Вn»} формируется:
+\begin{itemize}
+\item при отключении ошиновки (\textit{«Отключение СШ»});
+\item при отключении в результате опробования присоединения;
+\item от команды оперативного отключения выключателя (\textit{«РКО Вn»});
+\item при действии УРОВ на отключение «своего» выключателя (\textit{«УРОВ Вn на себя»}).
+\end{itemize}
+
+\item
+При необходимости может быть введен подхват команды на отключение от токовых реле,
+установленных в цепях ЭМО, в этом случае сигнал на отключение удерживается в сработанном состоянии до
+исчезновения тока через ЭМО (пока блок-контакты выключателя не разорвут цепи отключения). Ввод
+осуществляется программным ключом \textbf{«Подхват откл. Вn от РТ ЭМО»}. 
+
+\item
+При наличии сигнала \textit{«Блок. отключения Вn»}, формируемого функциональным блоком контроля
+силового выключателя отключение выключателя блокируется.
+
+\item
+Выдержка времени на возврат \textbf{«Тпрод откл. Вn»} задает время продления сигнала отключения.
+
+\medskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/761.9901 Логика отключения присоединений/img/LO_Q1.pdf}
+\captionof{figure}{Функциональный блок логики отключения В1}\label{pict_lo:LO_Q1}
+\end{figure}
+
+\medskip
 
 \small
 \begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
@@ -57,5 +99,7 @@
 \end{longtable}
 \normalsize	
 
+
+\end{enumerate}
 
 \end{enumerate}
