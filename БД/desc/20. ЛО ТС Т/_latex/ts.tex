@@ -23,6 +23,39 @@
 
 \item
 ЛО~ТС может быть выведена из работы оперативно путем активации сигнала «ОВ~ЛО~ТС».
+\item
+В таблице \ref{lotspk:tbl1} приведены параметры, необходимые для настройки функций в составе ЛО ТС.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЛО ПК\hfill\vspace{-0.5\baselineskip}}\label{lotspk:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lotspk:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+\hline
+\endlastfoot
+%==+t1*PRVLVPTRC1|ALMTECHLGC_UIRZ
+\multicolumn{5}{|c|}{ ЛО ПК } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ЛО ОК } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ЛО ДУм расширителя } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+%===t1
+\end{longtable}
+\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ПРЕДОХРАНИТЕЛЬНЫЙ КЛАПАН  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,31 +80,7 @@
 При активном состоянии входного сигнала «ПК~на~сигн» действие отключающей логики переводится на сигнал.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{lotspk:img1}. В таблице \ref{lotspk:tbl1} приведены параметры, необходимые для настройки функции.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЛО ПК\hfill\vspace{-0.5\baselineskip}}\label{lotspk:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lotspk:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*PRVLVPTRC1|ALMTECHLGC_UIRZ
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{lotspk:img1}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -104,31 +113,7 @@
 При активном состоянии входного сигнала «ОК~на~сигн» действие отключающей логики переводится на сигнал.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{lotsok:img1}. В таблице \ref{lotsok:tbl1} приведены параметры, необходимые для настройки функции.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЛО ОК\hfill\vspace{-0.5\baselineskip}}\label{lotsok:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lotsok:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*SHVLVPTRC1|ALMTECHLGC_UIRZ
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{lotsok:img1}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -161,7 +146,7 @@
 При активном состоянии входного сигнала «ДУм расшир~на~сигн» действие отключающей логики функции переводится на сигнал. 
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{lotsdut:img1}. В таблице \ref{lotsdut:tbl1} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{lotsdut:img1}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -169,30 +154,6 @@
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/20. ЛО ТС Т/_latex/img/lotsdut.pdf}
 \captionof{figure}{Функциональная схема ЛО~ДУм расширителя}\label{lotsdut:img1}
 \end{figure}
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЛО ДУм расширителя\hfill\vspace{-0.5\baselineskip}}\label{lotsdut:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lotsdut:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*LEVPTRC1|ALMTECHLGC_UIRZ
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 

@@ -42,6 +42,101 @@
 \item
 Функциональный блок «ТЗНП» может быть полностью выведен из работы оперативно путем активации сигнала «ОВ ТЗНП».
 
+\item
+В таблице \ref{tznp:tbl1} приведены параметры, необходимые для настройки ТЗНП.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ступеней ТЗНП\hfill\vspace{-0.5\baselineskip}}\label{tznp:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tznp:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+\hline
+\endlastfoot
+%==+t1*ZSPTOC1|LVZSTOC
+\multicolumn{5}{|c|}{ ТЗНП 1 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим оперативного блокирования ЧС (Реж\_БЧС)  & \centering SGF8 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БНТ (Реж\_БНТ)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания НП (3I0ср)  & \centering 3I0> & \centering 0,10...30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Вывод направленности при АУ (Ненапр\_АУ)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим направленности (Направленность)  & \centering SGF2 & \centering Ненаправленная \\ Прямонаправленная \\ Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим ОНМ НП при неисправности ЦН (Реж\_БНН\_ОНМ\_НП)  & \centering SGF3 & \centering Блокировка \\ Деблокировка & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим ПО 3U0 при неисправности ЦН (Реж\_БНН\_3U0)  & \centering SGF5 & \centering Блокировка \\ Деблокировка & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания НП (3U0ср)  & \centering 3U0> & \centering 2,0...100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим контроля от ПО 3U0 (Реж\_3U0)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Характеристика срабатывания (Характеристика)  & \centering -- & \centering Кривая F \\ Кривая E \\ Кривая D \\ Кривая B \\ Кривая A \\ Кривая C \\ Независимая \\ Кривая RXIDG & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Коэффициент регулировки времени срабатывания зависимой характеристики (К)  & \centering -- & \centering 0,05...15,00 & \centering -- & \centering \arraybackslash 0,01 \\
+\hline
+\centering Независимая выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ТЗНП 2 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим оперативного блокирования ЧС (Реж\_БЧС)  & \centering SGF8 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БНТ (Реж\_БНТ)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания НП (3I0ср)  & \centering 3I0> & \centering 0,10...30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Вывод направленности при АУ (Ненапр\_АУ)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим направленности (Направленность)  & \centering SGF2 & \centering Ненаправленная \\ Прямонаправленная \\ Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим ОНМ НП при неисправности ЦН (Реж\_БНН\_ОНМ\_НП)  & \centering SGF3 & \centering Блокировка \\ Деблокировка & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим ПО 3U0 при неисправности ЦН (Реж\_БНН\_3U0)  & \centering SGF5 & \centering Блокировка \\ Деблокировка & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания НП (3U0ср)  & \centering 3U0> & \centering 2,0...100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим контроля от ПО 3U0 (Реж\_3U0)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Характеристика срабатывания (Характеристика)  & \centering -- & \centering Кривая F \\ Кривая E \\ Кривая D \\ Кривая B \\ Кривая A \\ Кривая C \\ Независимая \\ Кривая RXIDG & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Коэффициент регулировки времени срабатывания зависимой характеристики (К)  & \centering -- & \centering 0,05...15,00 & \centering -- & \centering \arraybackslash 0,01 \\
+\hline
+\centering Независимая выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ АУ ТЗНП } \\ \hline 
+\centering Выбор ускоряемой ступени (Выбор\_ст)  & \centering SGF1 & \centering 1 ступень \\ 2 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОНМ НП } \\ \hline 
+\centering Угол максимальной чувствительности (Фмч)  & \centering φмч & \centering -179,0...180,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\multicolumn{5}{|c|}{ БНТ НП } \\ \hline 
+\centering Отношение тока второй гармоники к току основной гармоники (Ih2/Ih1)  & \centering I2г/I1г> & \centering 5...100 & \centering \% & \centering \arraybackslash 1 \\
+\hline
+\centering Ток блокировки НП (3I0ср)  & \centering 3I0> & \centering 0,1...15,0 & \centering о.е. & \centering \arraybackslash 0,1 \\
+\hline
+\multicolumn{5}{|c|}{ ОУ ТЗНП } \\ \hline 
+\centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ)  & \centering SGF1 & \centering 1 ступень \\ 2 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ)  & \centering T1 & \centering 0...3000 & \centering мс & \centering \arraybackslash 10 \\
+%===t1
+\end{longtable}
+\normalsize
+
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  СТУПЕНЬ ТЗНП %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -123,55 +218,7 @@
 чувствительных ступеней формируется при введенном ключе «Блок.чувств.ступ.» в работу. Ступень блокируется, если уставка SGF8 «Реж\_БЧС» разрешает блокировку и на вход поступает сигнал «Блок.чувств.ступ.».
 
 \item
-Алгоритм работы ступеней ТЗНП выполнен в соответствии с рисунком \ref{tznp:img1}. В таблице \ref{tznp:tbl1} приведены параметры, необходимые для настройки ступеней ТЗНП.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ступеней ТЗНП\hfill\vspace{-0.5\baselineskip}}\label{tznp:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tznp:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*ZSPTOC1|LVZSTOC
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим оперативного блокирования ЧС (Реж\_БЧС) & \centering SGF8 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от БНТ (Реж\_БНТ) & \centering SGF7 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Ток срабатывания НП (3I0ср) & \centering 3I0> & \centering 0,10 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим направленности (Направленность) & \centering SGF2 & \centering 1 = Ненаправленная\\2 = Прямонаправленная\\3 = Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим ОНМ НП при неисправности ЦН (Реж\_БНН\_ОНМ\_НП) & \centering SGF3 & \centering 0 = Блокировка\\1 = Деблокировка & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим ПО 3U0 при неисправности ЦН (Реж\_БНН\_3U0) & \centering SGF5 & \centering 0 = Блокировка\\1 = Деблокировка & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Напряжение срабатывания НП (3U0ср) & \centering 3U0> & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Режим контроля от ПО 3U0 (Реж\_3U0) & \centering SGF6 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Характеристика срабатывания (Характеристика) & \centering -- & \centering 1 = Кривая F\\2 = Кривая E\\4 = Кривая D\\10 = Кривая B\\11 = Кривая A\\12 = Кривая C\\16 = Независимая\\17 = Кривая RXIDG & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Коэффициент регулировки времени срабатывания зависимой характеристики (К) & \centering -- & \centering 0,05 ... 15,00 & \centering -- & \centering \arraybackslash 0,01 \\
-\hline
-\centering Независимая выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы ступеней ТЗНП выполнен в соответствии с рисунком \ref{tznp:img1}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -222,31 +269,7 @@
 \end{figure}
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{tznp:imgonm1}. В таблице \ref{tznp:tblonm} приведены параметры, необходимые для настройки функции.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ОНМ НП\hfill\vspace{-0.5\baselineskip}}\label{tznp:tblonm}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tznp:tblonm}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*RDIR1|LVZSTOC
-\centering Угол максимальной чувствительности (Фмч) & \centering φмч & \centering -179,0 ... 180,0 & \centering град. & \centering \arraybackslash 0,1 \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{tznp:imgonm1}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -278,7 +301,7 @@
 \end{itemize}
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{tznp:img3}. В таблице \ref{tznp:tbl3} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{tznp:img3}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -286,32 +309,6 @@
 \includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/106. ТЗНП ОЛ/_latex/img/bntnp.pdf}
 \captionof{figure}{Функциональная схема логики БНТ НП}\label{tznp:img3}
 \end{figure}
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки БНТ НП\hfill\vspace{-0.5\baselineskip}}\label{tznp:tbl3}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tznp:tbl3}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*PHAR1|LVZSTOC
-\centering Отношение тока второй гармоники к току основной гармоники (Ih2/Ih1) & \centering I2г/I1г> & \centering 5 ... 100 & \centering \% & \centering \arraybackslash 1 \\
-\hline
-\centering Ток блокировки НП (3I0ср) & \centering 3I0> & \centering 0,1 ... 15,0 & \centering о.е. & \centering \arraybackslash 0,1 \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 
@@ -328,7 +325,7 @@
 Предусмотрена возможность автоматического ускорения для любой ступени ТЗНП. Ускоряемая ступень выбирается уставкой SGF1. Автоматическое ускорение срабатывает без выдержки времени.
 
 \item 
-В функциональном блоке «ТЗНП» автоматическое ускорение представлено функцией «АУ ТЗНП». Алгоритм работы функции выполнен в соответствии с рисунком \ref{tznp:imgau}. В таблице \ref{tznp:tblau} приведены параметры, необходимые для настройки функции.
+В функциональном блоке «ТЗНП» автоматическое ускорение представлено функцией «АУ ТЗНП». Алгоритм работы функции выполнен в соответствии с рисунком \ref{tznp:imgau}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -337,29 +334,6 @@
 \captionof{figure}{Функциональная схема логики АУ ТЗНП}\label{tznp:imgau}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки АУ ТЗНП\hfill\vspace{-0.5\baselineskip}}\label{tznp:tblau}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tznp:tblau}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*AUAPSSU1|LVZSTOC
-\centering Выбор ускоряемой ступени (Выбор\_ст) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ОРГАН АУ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -382,7 +356,7 @@
 В данном алгоритме при введенном ключе «Ввод ОУ ТЗНП» предусмотрена возможность оперативного ускорения любой ступени ТЗНП. Выбор ускоряемой ступени осуществляется программным переключателем SGF1 «Выбор\_ст\_ОУ». При введенной функции и появлению сигнала пуска выбранной ступени по истечению выдержки времени, определяемой уставкой T1, формируется сигнал срабатывания.
 
 \item
-В функциональном блоке «ТЗНП» оперативное ускорение представлено функцией «ОУ ТЗНП». Алгоритм работы функции выполнен в соответствии с рисунком \ref{tznp:imgou}. В таблице \ref{tznp:tblou} приведены параметры, необходимые для настройки функции.
+В функциональном блоке «ТЗНП» оперативное ускорение представлено функцией «ОУ ТЗНП». Алгоритм работы функции выполнен в соответствии с рисунком \ref{tznp:imgou}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -390,32 +364,6 @@
 \includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/106. ТЗНП ОЛ/_latex/img/ou.pdf}
 \captionof{figure}{Функциональная схема логики ОУ ТЗНП}\label{tznp:imgou}
 \end{figure}
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки функции «ОУ ТЗНП»\hfill\vspace{-0.5\baselineskip}}\label{tznp:tblou}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tznp:tblou}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*OPAPSSU1|LVZSTOC
-\centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ) & \centering SGF1 & \centering 1 = 1 ступень\\2 = 2 ступень & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ) & \centering T1 & \centering 0,00 ... 3,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ОРГАН ОУ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

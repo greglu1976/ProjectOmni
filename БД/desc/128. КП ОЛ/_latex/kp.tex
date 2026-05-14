@@ -71,9 +71,56 @@
 \hline
 \endlastfoot
 %==+t1*LLN0|SWCTRL
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ УВ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Ввод ОБР КА в работу (ОБР\_КА) & \centering SG1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УЗН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
+\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
+\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
+\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ КП } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 %===t1
 \end{longtable}
 \normalsize
@@ -173,17 +220,56 @@
 \hline
 \endlastfoot
 %==+t1*CBCSWI1|SWCTRL
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ УВ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Включение с контролем синхронизма (Контроль\_синхр) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Допустимое время переключения выключателя (Tперекл) & \centering T1 & \centering 0,01 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Выдержка времени подавления выдачи положения «Не определено» (Tблк) & \centering T2 & \centering 0,01 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
 \hline
-\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС) & \centering T3 & \centering 1,00 ... 60,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УЗН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
+\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
+\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
+\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ КП } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 %===t1
 \end{longtable}
 \normalsize
@@ -266,11 +352,56 @@
 \hline
 \endlastfoot
 %==+t1*WECSWI1|SWCTRL
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ УВ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Допустимое время переключения (Tперекл) & \centering T1 & \centering 0,05 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени подавления выдачи положения «Не определено» (Тблк) & \centering T2 & \centering 0,05 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УЗН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
+\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
+\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
+\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ КП } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 %===t1
 \end{longtable}
 \normalsize
@@ -352,11 +483,56 @@
 \hline
 \endlastfoot
 %==+t1*ESCSWI1|SWCTRL
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ УВ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Допустимое время переключения (Tперекл) & \centering T1 & \centering 0,05 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени подавления выдачи положения «Не определено» (Тблк) & \centering T2 & \centering 0,05 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УЗН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
+\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
+\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
+\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ КП } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 %===t1
 \end{longtable}
 \normalsize
@@ -434,13 +610,56 @@
 \hline
 \endlastfoot
 %==+t1*CBCILO1|SWCTRL
-\centering Ввод ОБР В в работу (ОБР\_В) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ УВ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Контроль ЗН (Контр\_ЗН) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Контроль КА1 (Контр\_KA1) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Контроль КА2 (Контр\_KA2) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УЗН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
+\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
+\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
+\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ КП } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 %===t1
 \end{longtable}
 \normalsize
@@ -498,9 +717,56 @@
 \hline
 \endlastfoot
 %==+t1*WECILO1|SWCTRL
-\centering Контроль КА1 (Контр\_КА1) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ УВ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Контроль КА2 (Контр\_КА2) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УЗН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
+\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
+\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
+\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ КП } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 %===t1
 \end{longtable}
 \normalsize
@@ -558,9 +824,56 @@
 \hline
 \endlastfoot
 %==+t1*ESCILO1|SWCTRL
-\centering Контроль KA3 (Контр\_KA3) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ УВ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Контроль KA4 (Контр\_KA4) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УЗН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
+\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
+\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
+\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ КП } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 %===t1
 \end{longtable}
 \normalsize

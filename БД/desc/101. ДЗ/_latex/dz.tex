@@ -239,7 +239,7 @@
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
 \item
-Уставки  «Вырез  нагрузки»,  «Rнг»,  «Фнг»  являются  общими  для  всех  ступеней ДЗ, а уставка SGF10 общая только для ступеней ДЗ «фаза-земля». Общие параметры для настройки функционального блока «ДЗ» приведены в таблице \ref{dz:tbl0}.
+Уставки  «Вырез  нагрузки»,  «Rнг»,  «Фнг»  являются  общими  для  всех  ступеней ДЗ, а уставка SGF10 общая только для ступеней ДЗ «фаза-земля». Параметры для настройки ДЗ приведены в таблице \ref{dz:tbl0}.
 
 %================================================== Таблица =====================================
 \small
@@ -261,21 +261,182 @@
 \hline
 \endlastfoot
 %==+t1*LLN0|LVDIS
-\centering Учет нагрузочного режима в характеристике срабатывания (Вырез\_нагрузки) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ ДЗ-фф 1 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Активное сопротивление для отстройки от режима максимальной нагрузки (Rнг) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн)  & \centering -- & \centering -45,0...0,0 & \centering град. & \centering \arraybackslash 0,1 \\
 \hline
-\centering Угол наклона для отстройки от режима максимальной нагрузки (Фнг) & \centering -- & \centering 5,0 ... 60,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\centering Активное сопротивление срабатывания (Rср)  & \centering -- & \centering 0,01...500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
 \hline
-\centering Режим работы ДЗ по контуру «фаза В - земля» (Ввод\_B0) & \centering SGF10 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Реактивное сопротивление срабатывания (Xср)  & \centering -- & \centering 0,01...500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
 \hline
-\centering Удельное активное сопротивление прямой последовательности (R1уд) & \centering -- & \centering 0,001 ... 100,000 & \centering Ом/км & \centering \arraybackslash 0,001 \\
+\centering Угол наклона характеристики срабатывания (Фхс)  & \centering -- & \centering 30,0...89,9 & \centering град. & \centering \arraybackslash 0,1 \\
 \hline
-\centering Удельное реактивное сопротивление прямой последовательности (X1уд) & \centering -- & \centering 0,001 ... 100,000 & \centering Ом/км & \centering \arraybackslash 0,001 \\
+\centering Режим направленности (Направленность)  & \centering SGF3 & \centering Ненаправленная \\ Прямонаправленная \\ Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Удельное активное сопротивление нулевой последовательности (R0уд) & \centering -- & \centering 0,001 ... 100,000 & \centering Ом/км & \centering \arraybackslash 0,001 \\
+\centering Подхват от ненаправленного пуска или отдельной ступени (Подхват)  & \centering SGF9 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Удельное реактивное сопротивление нулевой последовательности (X0уд) & \centering -- & \centering 0,001 ... 100,000 & \centering Ом/км & \centering \arraybackslash 0,001 \\
+\centering Режим контроля от БК (Реж\_БК)  & \centering SGF7 & \centering С контролем от БК-б \\ С контролем от БК-м & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БНН (Реж\_БНН)  & \centering SGF8 & \centering Без контроля \\ С контролем & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от ОПО (Реж\_ОПО)  & \centering SGF6 & \centering По току \\ По току и напряжению \\ По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Тип ПО (Контр\_ПО)  & \centering SGF5 & \centering Без контроля \\ С контролем от БК \\ С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Вывод направленности при АУ (Ненапр\_АУ)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-фф 2 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн)  & \centering -- & \centering -45,0...0,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Активное сопротивление срабатывания (Rср)  & \centering -- & \centering 0,01...500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Реактивное сопротивление срабатывания (Xср)  & \centering -- & \centering 0,01...500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Угол наклона характеристики срабатывания (Фхс)  & \centering -- & \centering 30,0...89,9 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим направленности (Направленность)  & \centering SGF3 & \centering Ненаправленная \\ Прямонаправленная \\ Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БК (Реж\_БК)  & \centering SGF7 & \centering С контролем от БК-б \\ С контролем от БК-м & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БНН (Реж\_БНН)  & \centering SGF8 & \centering Без контроля \\ С контролем & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от ОПО (Реж\_ОПО)  & \centering SGF6 & \centering По току \\ По току и напряжению \\ По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Тип ПО (Контр\_ПО)  & \centering SGF5 & \centering Без контроля \\ С контролем от БК \\ С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Вывод направленности при АУ (Ненапр\_АУ)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-фф 3 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн)  & \centering -- & \centering -45,0...0,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Активное сопротивление срабатывания (Rср)  & \centering -- & \centering 0,01...500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Реактивное сопротивление срабатывания (Xср)  & \centering -- & \centering 0,01...500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Угол наклона характеристики срабатывания (Фхс)  & \centering -- & \centering 30,0...89,9 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим направленности (Направленность)  & \centering SGF3 & \centering Ненаправленная \\ Прямонаправленная \\ Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БК (Реж\_БК)  & \centering SGF7 & \centering С контролем от БК-б \\ С контролем от БК-м & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БНН (Реж\_БНН)  & \centering SGF8 & \centering Без контроля \\ С контролем & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от ОПО (Реж\_ОПО)  & \centering SGF6 & \centering По току \\ По току и напряжению \\ По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Тип ПО (Контр\_ПО)  & \centering SGF5 & \centering Без контроля \\ С контролем от БК \\ С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Вывод направленности при АУ (Ненапр\_АУ)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-фз 1 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн)  & \centering -- & \centering -45,0...0,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Активное сопротивление срабатывания (Rср)  & \centering -- & \centering 0,01...500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Реактивное сопротивление срабатывания (Xср)  & \centering -- & \centering 0,01...500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Угол наклона характеристики срабатывания (Фхс)  & \centering -- & \centering 30,0...89,9 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим направленности (Направленность)  & \centering SGF3 & \centering Ненаправленная \\ Прямонаправленная \\ Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Подхват от ненаправленного пуска или отдельной ступени (Подхват)  & \centering SGF9 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БК (Реж\_БК)  & \centering SGF7 & \centering С контролем от БК-б \\ С контролем от БК-м & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БНН (Реж\_БНН)  & \centering SGF8 & \centering Без контроля \\ С контролем & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от ОПО (Реж\_ОПО)  & \centering SGF6 & \centering По току \\ По току и напряжению \\ По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Тип ПО (Контр\_ПО)  & \centering SGF5 & \centering Без контроля \\ С контролем от БК \\ С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Вывод направленности при АУ (Ненапр\_АУ)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-фз 2 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн)  & \centering -- & \centering -45,0...0,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Активное сопротивление срабатывания (Rср)  & \centering -- & \centering 0,01...500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Реактивное сопротивление срабатывания (Xср)  & \centering -- & \centering 0,01...500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Угол наклона характеристики срабатывания (Фхс)  & \centering -- & \centering 30,0...89,9 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим направленности (Направленность)  & \centering SGF3 & \centering Ненаправленная \\ Прямонаправленная \\ Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БК (Реж\_БК)  & \centering SGF7 & \centering С контролем от БК-б \\ С контролем от БК-м & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от БНН (Реж\_БНН)  & \centering SGF8 & \centering Без контроля \\ С контролем & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля от ОПО (Реж\_ОПО)  & \centering SGF6 & \centering По току \\ По току и напряжению \\ По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Тип ПО (Контр\_ПО)  & \centering SGF5 & \centering Без контроля \\ С контролем от БК \\ С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Вывод направленности при АУ (Ненапр\_АУ)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...10000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ АУ ДЗ } \\ \hline 
+\centering Выбор ускоряемой ступени (Выбор\_ст)  & \centering SGF1 & \centering 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОПО } \\ \hline 
+\centering Ток срабатывания ПО ДЗ по току (Iср)  & \centering I>> & \centering 0,10...5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Ток срабатывания ПО ДЗ по току и напряжению (IсрU)  & \centering I> & \centering 0,10...5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Напряжение срабатывания ПО по току и напряжению (Uср)  & \centering U< & \centering 2,0...100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим контроля от БНН (Реж\_БНН)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОВП } \\ \hline 
+\centering Коэффициент отношения тока нулевой последовательности к току прямой последовательности (Kдел.)  & \centering 3I0/I1> & \centering 0,10...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Уставка по напряжению 3U0 (3U0ср)  & \centering 3U0> & \centering 2,0...100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания (Uср)  & \centering U< & \centering 2,0...100,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим контроля от БНН (Реж\_БНН)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ОН } \\ \hline 
+\centering Угол направленности во II квадранте (Фнапр\_II)  & \centering φ2 & \centering 90,0...130,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Угол направленности в IV квадранте (Фнапр\_IV)  & \centering φ1 & \centering -40,0...0,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\multicolumn{5}{|c|}{ ОУ ДЗ } \\ \hline 
+\centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ)  & \centering SGF1 & \centering 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ)  & \centering T1 & \centering 0...3000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ } \\ \hline 
+\centering Учет нагрузочного режима в характеристике срабатывания (Вырез\_нагрузки)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Активное сопротивление для отстройки от режима максимальной нагрузки (Rнг)  & \centering -- & \centering 0,01...500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
+\hline
+\centering Угол наклона для отстройки от режима максимальной нагрузки (Фнг)  & \centering -- & \centering 5,0...60,0 & \centering град. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Режим работы ДЗ по контуру "фаза В - земля" (Ввод\_B0)  & \centering SGF10 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Удельное активное сопротивление прямой последовательности ()  & \centering R1уд & \centering 0,001...100,000 & \centering Ом/км & \centering \arraybackslash 0,001 \\
+\hline
+\centering Удельное реактивное сопротивление прямой последовательности ()  & \centering X1уд & \centering 0,001...100,000 & \centering Ом/км & \centering \arraybackslash 0,001 \\
+\hline
+\centering Удельное активное сопротивление нулевой последовательности ()  & \centering R0уд & \centering 0,001...100,000 & \centering Ом/км & \centering \arraybackslash 0,001 \\
+\hline
+\centering Удельное реактивное сопротивление нулевой последовательности ()  & \centering X0уд & \centering 0,001...100,000 & \centering Ом/км & \centering \arraybackslash 0,001 \\
 %===t1
 \end{longtable}
 \normalsize
@@ -290,55 +451,7 @@
 При активном состоянии входного сигнала «ДЗ-фф(фз)(n)ст. на сигн» действие ступени переводится на сигнал.
 
 \item
-Алгоритм работы первой ступени ДЗ по контуру «фаза-фаза» выполнен в соответствии с рисунком \ref{dz:dz1ffimg1}. В таблице \ref{dz:dz1fftbl1} приведены параметры, необходимые для настройки первой ступени ДЗ по контуру «фаза-фаза».
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки первой ступени ДЗ по контуру «фаза-фаза»\hfill\vspace{-0.5\baselineskip}}\label{dz:dz1fftbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dz:dz1fftbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*PPPDIS1|LVDIS
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн) & \centering -- & \centering -45,0 ... 0,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Активное сопротивление срабатывания (Rср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Реактивное сопротивление срабатывания (Xср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Угол наклона характеристики срабатывания (Фхс) & \centering -- & \centering 30,0 ... 89,9 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Режим направленности (Направленность) & \centering SGF3 & \centering 1 = Ненаправленная\\2 = Прямонаправленная\\3 = Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Подхват от ненаправленного пуска или отдельной ступени  (Подхват) & \centering SGF9 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от БК (Реж\_БК) & \centering SGF7 & \centering 1 = С контролем от БК-б\\2 = С контролем от БК-м & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от БНН (Реж\_БНН) & \centering SGF8 & \centering 0 = Без контроля\\1 = С контролем & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от ОПО (Реж\_ОПО) & \centering SGF6 & \centering 1 = По току\\2 = По току и напряжению\\3 = По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Тип ПО (Контр\_ПО) & \centering SGF5 & \centering 1 = Без контроля\\2 = С контролем от БК\\3 = С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы первой ступени ДЗ по контуру «фаза-фаза» выполнен в соответствии с рисунком \ref{dz:dz1ffimg1}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -348,7 +461,7 @@
 \end{figure}
 
 \item
-Алгоритм работы второй ступени ДЗ по контуру «фаза-фаза» выполнен в соответствии с рисунком \ref{dz:dz2ffimg1}. В таблице \ref{dz:dz2fftbl1} приведены параметры, необходимые для настройки второй ступени ДЗ по контуру «фаза-фаза».
+Алгоритм работы второй ступени ДЗ по контуру «фаза-фаза» выполнен в соответствии с рисунком \ref{dz:dz2ffimg1}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -357,101 +470,8 @@
 \captionof{figure}{Функциональная схема логики второй ступени ДЗ по контуру «фаза-фаза»}\label{dz:dz2ffimg1}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки второй ступени ДЗ по контуру «фаза-фаза»\hfill\vspace{-0.5\baselineskip}}\label{dz:dz2fftbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dz:dz2fftbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*PPPDIS2|LVDIS
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн) & \centering -- & \centering -45,0 ... 0,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Активное сопротивление срабатывания (Rср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Реактивное сопротивление срабатывания (Xср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Угол наклона характеристики срабатывания (Фхс) & \centering -- & \centering 30,0 ... 89,9 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Режим направленности (Направленность) & \centering SGF3 & \centering 1 = Ненаправленная\\2 = Прямонаправленная\\3 = Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от БК (Реж\_БК) & \centering SGF7 & \centering 1 = С контролем от БК-б\\2 = С контролем от БК-м & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от БНН (Реж\_БНН) & \centering SGF8 & \centering 0 = Без контроля\\1 = С контролем & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от ОПО (Реж\_ОПО) & \centering SGF6 & \centering 1 = По току\\2 = По току и напряжению\\3 = По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Тип ПО (Контр\_ПО) & \centering SGF5 & \centering 1 = Без контроля\\2 = С контролем от БК\\3 = С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
-
 \item
-Алгоритм работы третьей ступени ДЗ по контуру «фаза-фаза» выполнен в соответствии с рисунком \ref{dz:dz3ffimg1}. В таблице \ref{dz:dz3fftbl1} приведены параметры, необходимые для настройки третьей ступени ДЗ по контуру «фаза-фаза».
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки третьей ступени ДЗ по контуру «фаза-фаза»\hfill\vspace{-0.5\baselineskip}}\label{dz:dz3fftbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dz:dz3fftbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*PPPDIS3|LVDIS
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн) & \centering -- & \centering -45,0 ... 0,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Активное сопротивление срабатывания (Rср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Реактивное сопротивление срабатывания (Xср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Угол наклона характеристики срабатывания (Фхс) & \centering -- & \centering 30,0 ... 89,9 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Режим направленности (Направленность) & \centering SGF3 & \centering 1 = Ненаправленная\\2 = Прямонаправленная\\3 = Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от БК (Реж\_БК) & \centering SGF7 & \centering 1 = С контролем от БК-б\\2 = С контролем от БК-м & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от БНН (Реж\_БНН) & \centering SGF8 & \centering 0 = Без контроля\\1 = С контролем & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от ОПО (Реж\_ОПО) & \centering SGF6 & \centering 1 = По току\\2 = По току и напряжению\\3 = По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Тип ПО (Контр\_ПО) & \centering SGF5 & \centering 1 = Без контроля\\2 = С контролем от БК\\3 = С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы третьей ступени ДЗ по контуру «фаза-фаза» выполнен в соответствии с рисунком \ref{dz:dz3ffimg1}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -461,55 +481,7 @@
 \end{figure}
 
 \item
-Алгоритм работы первой ступени ДЗ по контуру «фаза-земля» выполнен в соответствии с рисунком \ref{dz:dz1fzimg1}. В таблице \ref{dz:dz1fztbl1} приведены параметры, необходимые для настройки первой ступени ДЗ по контуру «фаза-земля».
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки первой ступени ДЗ по контуру «фаза-земля»\hfill\vspace{-0.5\baselineskip}}\label{dz:dz1fztbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dz:dz1fztbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*PEPDIS1|LVDIS
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн) & \centering -- & \centering -45,0 ... 0,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Активное сопротивление срабатывания (Rср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Реактивное сопротивление срабатывания (Xср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Угол наклона характеристики срабатывания (Фхс) & \centering -- & \centering 30,0 ... 89,9 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Режим направленности (Направленность) & \centering SGF3 & \centering 1 = Ненаправленная\\2 = Прямонаправленная\\3 = Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Подхват от ненаправленного пуска или отдельной ступени  (Подхват) & \centering SGF9 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от БК (Реж\_БК) & \centering SGF7 & \centering 1 = С контролем от БК-б\\2 = С контролем от БК-м & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от БНН (Реж\_БНН) & \centering SGF8 & \centering 0 = Без контроля\\1 = С контролем & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от ОПО (Реж\_ОПО) & \centering SGF6 & \centering 1 = По току\\2 = По току и напряжению\\3 = По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Тип ПО (Контр\_ПО) & \centering SGF5 & \centering 1 = Без контроля\\2 = С контролем от БК\\3 = С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы первой ступени ДЗ по контуру «фаза-земля» выполнен в соответствии с рисунком \ref{dz:dz1fzimg1}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -519,7 +491,7 @@
 \end{figure}
 
 \item
-Алгоритм работы второй ступени ДЗ по контуру «фаза-земля» выполнен в соответствии с рисунком \ref{dz:dz2fzimg1}. В таблице \ref{dz:dz2fztbl1} приведены параметры, необходимые для настройки второй ступени ДЗ по контуру «фаза-земля».
+Алгоритм работы второй ступени ДЗ по контуру «фаза-земля» выполнен в соответствии с рисунком \ref{dz:dz2fzimg1}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -527,52 +499,6 @@
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/101. ДЗ/_latex/img/dz2fz.pdf}
 \captionof{figure}{Функциональная схема логики второй ступени ДЗ по контуру «фаза-земля»}\label{dz:dz2fzimg1}
 \end{figure}
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки второй ступени ДЗ по контуру «фаза-земля»\hfill\vspace{-0.5\baselineskip}}\label{dz:dz2fztbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dz:dz2fztbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*PEPDIS2|LVDIS
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Угол наклона верхней стороны характеристики срабатывания для компенсации нагрузки (Фкн) & \centering -- & \centering -45,0 ... 0,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Активное сопротивление срабатывания (Rср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Реактивное сопротивление срабатывания (Xср) & \centering -- & \centering 0,01 ... 500,00 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Угол наклона характеристики срабатывания (Фхс) & \centering -- & \centering 30,0 ... 89,9 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Режим направленности (Направленность) & \centering SGF3 & \centering 1 = Ненаправленная\\2 = Прямонаправленная\\3 = Обратнонаправленная & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от БК (Реж\_БК) & \centering SGF7 & \centering 1 = С контролем от БК-б\\2 = С контролем от БК-м & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от БНН (Реж\_БНН) & \centering SGF8 & \centering 0 = Без контроля\\1 = С контролем & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим контроля от ОПО (Реж\_ОПО) & \centering SGF6 & \centering 1 = По току\\2 = По току и напряжению\\3 = По току или по току и напряжению & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Тип ПО (Контр\_ПО) & \centering SGF5 & \centering 1 = Без контроля\\2 = С контролем от БК\\3 = С контролем от ОПО & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Вывод направленности при АУ (Ненапр\_АУ) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,00 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 
@@ -635,7 +561,7 @@
 В случае снижения напряжения ниже 0,9 вольт орган направления в течение 100 мс продолжит работу по памяти, и по истечении данного времени произойдет подхват сигнала направления. 
 
 \item
-Алгоритм работы органа направления выполнен в соответствии с рисунком \ref{dz:onimg1}. Алгоритм работы логики определения направления, входящий в состав органа направления, выполнен в соответствии с рисунком \ref{dz:onimg2}. В таблице \ref{dz:ontbl1} приведены параметры, необходимые для настройки функции.
+Алгоритм работы органа направления выполнен в соответствии с рисунком \ref{dz:onimg1}. Алгоритм работы логики определения направления, входящий в состав органа направления, выполнен в соответствии с рисунком \ref{dz:onimg2}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -643,33 +569,6 @@
 \includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/101. ДЗ/_latex/img/on1.pdf}
 \captionof{figure}{Функциональная схема логики определения направления}\label{dz:onimg2}
 \end{figure}
-
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ОН\hfill\vspace{-0.5\baselineskip}}\label{dz:ontbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dz:ontbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*DISRDIR1|LVDIS
-\centering Угол направленности во II квадранте (Фнапр\_II) & \centering φ2 & \centering 90,0 ... 130,0 & \centering град. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Угол направленности в IV квадранте (Фнапр\_IV) & \centering φ1 & \centering -40,0 ... 0,0 & \centering град. & \centering \arraybackslash 0,1 \\
-%===t1
-\end{longtable}
-\normalsize
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -702,7 +601,7 @@
 Сигнал общего пуска, пуска от измерительного органа ОПО ДЗ по току и напряжению формируется при снижении одного из линейных напряжений ниже значения уставки и превышении одним из фазных токов значения выше уставки.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{dz:opoimg1}. В таблице \ref{dz:opotbl1} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{dz:opoimg1}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -711,35 +610,6 @@
 \captionof{figure}{Функциональная схема логики ОПО ДЗ}\label{dz:opoimg1}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ОПО ДЗ\hfill\vspace{-0.5\baselineskip}}\label{dz:opotbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dz:opotbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*DISPGSU1|LVDIS
-\centering Ток срабатывания ПО ДЗ по току (Iср) & \centering I\verb|>>| & \centering 0,10 ... 5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Ток срабатывания ПО ДЗ по току и напряжению (IсрU) & \centering I> & \centering 0,10 ... 5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Напряжение срабатывания ПО по току и напряжению (Uср) & \centering U< & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Режим контроля от БНН (Реж\_БНН) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Общие пусковые органы ДЗ (ОПО ДЗ) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -782,7 +652,7 @@
 Блокировка  пускового  сигнала  функции  осуществляется  при  наличии введенной  в  работу  уставке контроля от БНН и активного сигнала срабатывания БННш. 
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{dz:ovpimg1}. В таблице \ref{dz:ovptbl1} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{dz:ovpimg1}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -791,35 +661,6 @@
 \captionof{figure}{Функциональная схема логики ОВП}\label{dz:ovpimg1}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ОВП\hfill\vspace{-0.5\baselineskip}}\label{dz:ovptbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dz:ovptbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*FLOPGSU1|LVDIS
-\centering Коэффициент отношения тока нулевой последовательности к току прямой последовательности (Kдел.) & \centering 3I0/I1> & \centering 0,10 ... 2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Уставка по напряжению 3U0 (3U0ср) & \centering 3U0> & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Напряжение срабатывания (Uср) & \centering U< & \centering 2,0 ... 100,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Режим контроля от БНН (Реж\_БНН) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ  Определение вида повреждения (ОВП) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -840,7 +681,7 @@
 Если  уставка  SGF1  выставлена  в  положение  «3  ступень»,  то  предусмотрена  возможность автоматического ускорения третьей ступени ДЗ «фаза-фаза» при наличии сигнала от пусковых условий данной ступени. Пусковые условия функции формируются без выдержки времени. 
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{dz:audzimg1}. В таблице \ref{dz:audztbl1} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{dz:audzimg1}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -848,30 +689,6 @@
 \includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/101. ДЗ/_latex/img/audz.pdf}
 \captionof{figure}{Функциональная схема логики АУ ДЗ}\label{dz:audzimg1}
 \end{figure}
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки АУ ДЗ\hfill\vspace{-0.5\baselineskip}}\label{dz:audztbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dz:audztbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*AUAPSSU1|LVDIS
-\centering Выбор ускоряемой ступени (Выбор\_ст) & \centering SGF1 & \centering 1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ  Автоматическое ускорение ДЗ (АУ ДЗ) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -901,7 +718,7 @@
 Срабатывание оперативного ускорения от пуска ступеней ДЗ происходит по истечению выдержки времени таймера Т1. 
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{dz:oudzimg1}. В таблице \ref{dz:oudztbl1} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{dz:oudzimg1}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -910,31 +727,6 @@
 \captionof{figure}{Функциональная схема логики ОУ ДЗ}\label{dz:oudzimg1}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ОУ ДЗ\hfill\vspace{-0.5\baselineskip}}\label{dz:oudztbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dz:oudztbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*OPAPSSU1|LVDIS
-\centering Выбор оперативно ускоряемой ступени (Выбор\_ст\_ОУ) & \centering SGF1 & \centering 1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени срабатывания оперативного ускорения (T\_ОУ) & \centering T1 & \centering 0,00 ... 3,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ  Оперативное ускорение ДЗ (ОУ ДЗ) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
