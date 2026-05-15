@@ -112,17 +112,25 @@
 \hline
 \endlastfoot
 %==+t1*ABTS1|VV_LVBTS
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ ЗАВР } \\ \hline 
+\centering Режим запрета АВР от самопроизвольного отключения (ЗапАВР\_сам\_откл)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Тип ввода (Тип\_ввода) & \centering SGF2 & \centering 0 = Рабочий\\1 = Резервный & \centering -- & \centering \arraybackslash -- \\
+\centering Режим запрета АВР от неисправности выключателя (ЗапАВР\_неиспр\_В)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Режим контроля отсутствия напряжения на секции (Реж\_КОН) & \centering SGF3 & \centering 0 = Без контроля\\1 = С контролем & \centering -- & \centering \arraybackslash -- \\
+\centering Режим запрета от СЗЗ (ЗапАВР\_СЗЗ)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Контроль встречного напряжения (Контр\_встреч\_U) & \centering SGF4 & \centering 0 = Ввод\\1 = Секция & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ АВР } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени готовности (Тгот) & \centering T2 & \centering 0,10 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Тип ввода (Тип\_ввода)  & \centering SGF2 & \centering Рабочий \\ Резервный & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Выдержка времени срабатывания (Tср) & \centering T1 & \centering 0,10 ... 10,00 & \centering с & \centering \arraybackslash 0,01 \\
+\centering Режим контроля отсутствия напряжения на секции (Реж\_КОН)  & \centering SGF3 & \centering Без контроля \\ С контролем & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль встречного напряжения (Контр\_встреч\_U)  & \centering SGF4 & \centering Ввод \\ Секция & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени готовности (Тгот)  & \centering T2 & \centering 100...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 100...10000 & \centering мс & \centering \arraybackslash 10 \\
 %===t1
 \end{longtable}
 \normalsize
@@ -171,11 +179,25 @@
 \hline
 \endlastfoot
 %==+t1*BTSRBLC1|VV_LVBTS
-\centering Режим запрета АВР от самопроизвольного отключения (ЗапАВР\_сам\_откл) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ ЗАВР } \\ \hline 
+\centering Режим запрета АВР от самопроизвольного отключения (ЗапАВР\_сам\_откл)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Режим запрета АВР от неисправности выключателя (ЗапАВР\_неиспр\_В) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Режим запрета АВР от неисправности выключателя (ЗапАВР\_неиспр\_В)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Режим запрета от СЗЗ (ЗапАВР\_СЗЗ) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Режим запрета от СЗЗ (ЗапАВР\_СЗЗ)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ АВР } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Тип ввода (Тип\_ввода)  & \centering SGF2 & \centering Рабочий \\ Резервный & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля отсутствия напряжения на секции (Реж\_КОН)  & \centering SGF3 & \centering Без контроля \\ С контролем & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль встречного напряжения (Контр\_встреч\_U)  & \centering SGF4 & \centering Ввод \\ Секция & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени готовности (Тгот)  & \centering T2 & \centering 100...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 100...10000 & \centering мс & \centering \arraybackslash 10 \\
 %===t1
 \end{longtable}
 \normalsize

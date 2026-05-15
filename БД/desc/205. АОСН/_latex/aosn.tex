@@ -34,6 +34,416 @@
 \item
 Функциональный блок «АОСН» может быть полностью выведен из работы оперативно путем активации сигнала «ОВ АОСН/АПВН».
 
+\item
+В таблице \ref{aosn:tbl1} приведены параметры, необходимые для настройки АОСН.
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки очереди АОСН\hfill\vspace{-0.5\baselineskip}}\label{aosn:tbl1}\\ 
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{aosn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+\hline
+\endlastfoot
+%==+t1*ECARTUV1|RTUV
+\multicolumn{5}{|c|}{ АОСН 1 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания (Uср)  & \centering U< & \centering 5,0...50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП (U1ср)  & \centering U1< & \centering 50,0...150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП смежной секции (U1ср\_см)  & \centering U1см< & \centering 50,0...150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ОП (U2ср)  & \centering U2> & \centering 2,0...50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Частота срабатывания (Fср)  & \centering F< & \centering 45,00...51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Разность частот срабатывания и возврата (dFвозвр)  & \centering -- & \centering 0,04...1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Уставка по скорости снижения напряжения (dU/dt)  & \centering dU/dt> & \centering 1...20 & \centering В/с & \centering \arraybackslash 1 \\
+\hline
+\centering Контроль напряжения ОП (Контр\_U2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль скорости снижения напряжения (Контр\_dU/dt)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль частоты (Контр\_F)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль напряжения ПП смежной секции (Контр\_Uсм)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Коэффициент возврата по скорости снижения напряжения (Kвозвр)  & \centering -- & \centering 0,20...0,99 & \centering -- & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени возврата АОСН (Твозвр)  & \centering T2 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок)  & \centering T3 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр)  & \centering T4 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ АОСН 2 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания (Uср)  & \centering U< & \centering 5,0...50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП (U1ср)  & \centering U1< & \centering 50,0...150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП смежной секции (U1ср\_см)  & \centering U1см< & \centering 50,0...150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ОП (U2ср)  & \centering U2> & \centering 2,0...50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Частота срабатывания (Fср)  & \centering F< & \centering 45,00...51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Разность частот срабатывания и возврата (dFвозвр)  & \centering -- & \centering 0,04...1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Уставка по скорости снижения напряжения (dU/dt)  & \centering dU/dt> & \centering 1...20 & \centering В/с & \centering \arraybackslash 1 \\
+\hline
+\centering Контроль напряжения ОП (Контр\_U2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль скорости снижения напряжения (Контр\_dU/dt)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль частоты (Контр\_F)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль напряжения ПП смежной секции (Контр\_Uсм)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Коэффициент возврата по скорости снижения напряжения (Kвозвр)  & \centering -- & \centering 0,20...0,99 & \centering -- & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени возврата АОСН (Твозвр)  & \centering T2 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок)  & \centering T3 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр)  & \centering T4 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ АОСН 3 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания (Uср)  & \centering U< & \centering 5,0...50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП (U1ср)  & \centering U1< & \centering 50,0...150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ПП смежной секции (U1ср\_см)  & \centering U1см< & \centering 50,0...150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Напряжение срабатывания ОП (U2ср)  & \centering U2> & \centering 2,0...50,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Частота срабатывания (Fср)  & \centering F< & \centering 45,00...51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Разность частот срабатывания и возврата (dFвозвр)  & \centering -- & \centering 0,04...1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Уставка по скорости снижения напряжения (dU/dt)  & \centering dU/dt> & \centering 1...20 & \centering В/с & \centering \arraybackslash 1 \\
+\hline
+\centering Контроль напряжения ОП (Контр\_U2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль скорости снижения напряжения (Контр\_dU/dt)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль частоты (Контр\_F)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль напряжения ПП смежной секции (Контр\_Uсм)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Коэффициент возврата по скорости снижения напряжения (Kвозвр)  & \centering -- & \centering 0,20...0,99 & \centering -- & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени возврата АОСН (Твозвр)  & \centering T2 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок)  & \centering T3 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр)  & \centering T4 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ1 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ2 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ3 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ4 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ5 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ6 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ7 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ8 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ9 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ10 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ11 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ12 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ13 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ14 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ15 АОСН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АОСН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ АПВН 1 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания ПП (Uср)  & \centering U1< & \centering 50,0...150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Частота срабатывания (Fср)  & \centering F< & \centering 45,00...51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Контроль частоты (Контр\_F)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка АПВН от многократных включений (Блок\_повт\_АПВН)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Автоматический возврат схемы АПВН (Авт\_возвр\_АПВН)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Сброс сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Сброс\_АПВН)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Разность частот срабатывания и возврата (dFвозвр)  & \centering -- & \centering 0,04...1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени автоматического сброса блокировки после повторного действия АОСН (Тсброс\_блок)  & \centering T2 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени сброса сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Тсброс\_разреш)  & \centering T3 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ АПВН 2 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания ПП (Uср)  & \centering U1< & \centering 50,0...150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Частота срабатывания (Fср)  & \centering F< & \centering 45,00...51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Контроль частоты (Контр\_F)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка АПВН от многократных включений (Блок\_повт\_АПВН)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Автоматический возврат схемы АПВН (Авт\_возвр\_АПВН)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Сброс сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Сброс\_АПВН)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Разность частот срабатывания и возврата (dFвозвр)  & \centering -- & \centering 0,04...1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени автоматического сброса блокировки после повторного действия АОСН (Тсброс\_блок)  & \centering T2 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени сброса сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Тсброс\_разреш)  & \centering T3 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ АПВН 3 ст } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Напряжение срабатывания ПП (Uср)  & \centering U1< & \centering 50,0...150,0 & \centering В & \centering \arraybackslash 0,1 \\
+\hline
+\centering Частота срабатывания (Fср)  & \centering F< & \centering 45,00...51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Контроль частоты (Контр\_F)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка АПВН от многократных включений (Блок\_повт\_АПВН)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Автоматический возврат схемы АПВН (Авт\_возвр\_АПВН)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Сброс сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Сброс\_АПВН)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Разность частот срабатывания и возврата (dFвозвр)  & \centering -- & \centering 0,04...1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени автоматического сброса блокировки после повторного действия АОСН (Тсброс\_блок)  & \centering T2 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени сброса сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Тсброс\_разреш)  & \centering T3 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ1 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ2 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ3 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ4 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ5 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ6 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ7 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ8 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ9 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ10 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ11 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ12 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ13 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ14 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ УВ15 АПВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номер ступени, действующей на срабатывание УВ (Ступень)  & \centering SGF2 & \centering 1 ступень \\ 2 ступень \\ 3 ступень & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания УВ АПВН (Тср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
+%===t1
+\end{longtable}
+\normalsize
+
+
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ОЧЕРЕДЬ АОСН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,63 +497,7 @@
 Для исключения кратковременных пусков ступеней, в соответствии с ГОСТ Р 70411-2022, предусмотрена возможность продления сигнала пуска ИО частоты на время, задаваемое уставкой Т2.
 
 \item
-Алгоритм работы очереди АОСН выполнен в соответствии с рисунком \ref{aosn:img1}. В таблице \ref{aosn:tbl1} приведены параметры, необходимые для настройки очереди АОСН.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки очереди АОСН\hfill\vspace{-0.5\baselineskip}}\label{aosn:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{aosn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*ECARTUV1|RTUV
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Напряжение срабатывания (Uср) & \centering U< & \centering 5,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Напряжение срабатывания ПП (U1ср) & \centering U1< & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Напряжение срабатывания ПП смежной секции (U1ср\_см) & \centering U1см< & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Напряжение срабатывания ОП (U2ср) & \centering U2> & \centering 2,0 ... 50,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Частота срабатывания (Fср) & \centering F< & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
-\hline
-\centering Разность частот срабатывания и возврата (dFвозвр) & \centering -- & \centering 0,04 ... 1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
-\hline
-\centering Уставка по скорости снижения напряжения (dU/dt) & \centering dU/dt> & \centering 1 ... 20 & \centering В/с & \centering \arraybackslash 1 \\
-\hline
-\centering Контроль напряжения ОП (Контр\_U2) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль скорости снижения напряжения (Контр\_dU/dt) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль частоты (Контр\_F) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль напряжения ПП смежной секции (Контр\_Uсм) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Коэффициент возврата по скорости снижения напряжения (Kвозвр) & \centering -- & \centering 0,20 ... 0,99 & \centering -- & \centering \arraybackslash 0,01 \\
-\hline
-\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
-\centering Выдержка времени возврата АОСН (Твозвр) & \centering T2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
-\centering Выдержка времени срабатывания блокировки ступени по напряжению (Тблок) & \centering T3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
-\centering Выдержка времени возврата блокировки ступени по напряжению (Тблок\_возвр) & \centering T4 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы очереди АОСН выполнен в соответствии с рисунком \ref{aosn:img1}. 
 
 \vspace{3mm}
 \begin{figure}[H]
@@ -169,35 +523,7 @@
 При активном состоянии входного сигнала «УВ(m) АОСН на сигн» (ключ «УВ(m)АОСН на сигн» введен) действие УВ(m) АОСН переводится на сигнал.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{uvaosn:imgonm1}. В таблице \ref{uvaosn:tblonm} приведены параметры, необходимые для настройки функции.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки УВ АОСН\hfill\vspace{-0.5\baselineskip}}\label{uvaosn:tblonm}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{uvaosn:tblonm}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*ECARACT1|RTUV
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Номер ступени, действующей на срабатывание УВ (Ступень) & \centering SGF2 & \centering 0 = 1 ступень\\1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени срабатывания УВ АОСН (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{uvaosn:imgonm1}. 
 
 \vspace{2mm}
 \begin{figure}[H]
@@ -252,51 +578,7 @@
 Также, после окончания пусковых условий, сигнал пуска продлевается на 5 мс таймером Т6 и при наличии хотя бы одного из управляющих воздействий АПВН, таймером Т5 продлевается сигал УВ на 5 мс в результате чего осуществляется сброс схемы АПВН.
 
 \item
-Алгоритм работы очереди АПВН выполнен в соответствии с рисунком \ref{apvn:img1}. В таблице \ref{apvn:tbl1} приведены параметры, необходимые для настройки очереди АПВН.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки очереди АПВН\hfill\vspace{-0.5\baselineskip}}\label{apvn:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{apvn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*RECRTOV1|RTUV
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Напряжение срабатывания ПП (Uср) & \centering U1< & \centering 50,0 ... 150,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Частота срабатывания (Fср) & \centering F< & \centering 45,00 ... 51,00 & \centering Гц & \centering \arraybackslash 0,01 \\
-\hline
-\centering Контроль частоты (Контр\_F) & \centering SGF2 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Блокировка АПВН от многократных включений (Блок\_повт\_АПВН) & \centering SGF3 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Автоматический возврат схемы АПВН (Авт\_возвр\_АПВН) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Сброс сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Сброс\_АПВН) & \centering SGF5 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Разность частот срабатывания и возврата (dFвозвр) & \centering -- & \centering 0,04 ... 1,00 & \centering Гц & \centering \arraybackslash 0,01 \\
-\hline
-\centering Выдержка времени срабатывания (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
-\centering Выдержка времени автоматического сброса блокировки после повторного действия АОСН (Тсброс\_блок) & \centering T2 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
-\centering Выдержка времени сброса сигнала разрешения АПВН при длительном наличии сигнала срабатывания АОСН (Тсброс\_разреш) & \centering T3 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы очереди АПВН выполнен в соответствии с рисунком \ref{apvn:img1}. 
 
 \vspace{3mm}
 \begin{figure}[H]
@@ -323,35 +605,7 @@
 При активном состоянии входного сигнала «УВ(m) АПВН на сигн» (ключ «УВ(m)АПВН на сигн» введен) действие УВ(m) АПВН переводится на сигнал.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{uvapvn:imgonm1}. В таблице \ref{uvapvn:tblonm} приведены параметры, необходимые для настройки функции.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки УВ АПВН\hfill\vspace{-0.5\baselineskip}}\label{uvapvn:tblonm}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{uvapvn:tblonm}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*RECRACT1|RTUV
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Номер ступени, действующей на срабатывание УВ (Ступень) & \centering SGF2 & \centering 0 = 1 ступень\\1 = 2 ступень\\2 = 3 ступень & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени срабатывания УВ АПВН (Тср) & \centering T1 & \centering 0,00 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{uvapvn:imgonm1}.
 
 \vspace{2mm}
 \begin{figure}[H]

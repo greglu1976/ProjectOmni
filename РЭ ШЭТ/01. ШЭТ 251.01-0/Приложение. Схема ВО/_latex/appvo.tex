@@ -1,5 +1,36 @@
+\KOMAoption{paper}{a4, portrait}
+\areaset{267mm}{180mm}
+\fancyheadoffset{0pt} % обновляем хедер и футер
+
+\newgeometry{
+  top=14mm,
+  bottom=11mm,
+  right=10mm,
+  left=22mm,
+}
+
+\begin{landscape}
+\setlength{\footskip}{15.5pt}
+
 \color{unidarkgreen}{\section[(обязательное) Чертеж общего вида]{(обязательное)\\Чертеж общего вида}\label{app:vo}}
 \color{black}
 
+\setlength{\footskip}{15.5pt}
+\vskip 3mm
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.05\textwidth,height=1.05\textheight,keepaspectratio]{\apppath/Приложение. Схема ВО/_latex/img/gen_view_1.pdf}
+  \captionof{figure}{Чертеж общего вида}\label{appvo:gen_view_1}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.2\textwidth,height=1.2\textheight,keepaspectratio]{\apppath/Приложение. Схема ВО/_latex/img/gen_view_2.pdf}
+  \captionof{figure}{Чертеж общего вида}\label{appvo:gen_view_2}
+\end{figure}
 
 \clearpage
+
+\end{landscape}
+\restoregeometry

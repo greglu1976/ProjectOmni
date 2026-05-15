@@ -191,7 +191,7 @@
 Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 «Ввод\_функции». Информация о введенной функции отображается выходным сигналом «УВ: Ввод».
 
 \item
-Алгоритм работы выполнен в соответствии с рисунком \ref{kp:img_uv}. В таблице \ref{kp:tbl_uv} приведены параметры, необходимые для настройки функции.
+Алгоритм работы выполнен в соответствии с рисунком \ref{kp:img_uv}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -200,79 +200,6 @@
 \captionof{figure}{Функциональная схема логики УВ}
 \label{kp:img_uv}
 \end{figure}
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки УВ\hfill\vspace{-0.5\baselineskip}}\label{kp:tbl_uv}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{kp:tbl_uv}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*CBCSWI1|SWCTRL
-\multicolumn{5}{|c|}{ УВ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УЗН } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
-\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
-\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
-\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ КП } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ УПРАВЛЕНИЕ ВЫКЛЮЧАТЕЛЕМ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -324,7 +251,7 @@
 Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 «Ввод\_функции». Информация о введенной функции отображается выходным сигналом «УВЭ: Ввод».
 
 \item
-Алгоритм работы выполнен в соответствии с рисунком \ref{kp:img_uve}. В таблице \ref{kp:tbl_uve} приведены параметры, необходимые для настройки функции.
+Алгоритм работы выполнен в соответствии с рисунком \ref{kp:img_uve}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -333,78 +260,6 @@
 \captionof{figure}{Функциональная схема логики УВЭ}\label{kp:img_uve}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки УВЭ\hfill\vspace{-0.5\baselineskip}}\label{kp:tbl_uve}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{kp:tbl_uve}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*WECSWI1|SWCTRL
-\multicolumn{5}{|c|}{ УВ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УЗН } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
-\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
-\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
-\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ КП } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ УПРАВЛЕНИЕ ВЫКАТНЫМ ЭЛЕМЕНТОМ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -455,7 +310,7 @@
 Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 «Ввод\_функции». Информация о введенной функции отображается выходным сигналом «УЗН: Ввод».
 
 \item
-Алгоритм работы выполнен в соответствии с рисунком \ref{kp:img_uzn}. В таблице \ref{kp:tbl_uzn} приведены параметры, необходимые для настройки функции.
+Алгоритм работы выполнен в соответствии с рисунком \ref{kp:img_uzn}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -464,78 +319,6 @@
 \captionof{figure}{Функциональная схема логики УЗН}\label{kp:img_uzn}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки УЗН\hfill\vspace{-0.5\baselineskip}}\label{kp:tbl_uzn}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{kp:tbl_uzn}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*ESCSWI1|SWCTRL
-\multicolumn{5}{|c|}{ УВ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УЗН } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
-\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
-\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
-\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ КП } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 
@@ -582,7 +365,7 @@
 Внешние дискретные входы назначаются в проекте непосредственно под схему объекта. Блокировка включения выключателя выполняется при несоблюдении какого-либо из условий, предусмотренных алгоритмом функции.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{kp:img_obrv}. В таблице \ref{kp:tbl_obrv} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{kp:img_obrv}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -591,78 +374,6 @@
 \captionof{figure}{Функциональная схема логики ОБР В}\label{kp:img_obrv}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ОБР В\hfill\vspace{-0.5\baselineskip}}\label{kp:tbl_obrv}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{kp:tbl_obrv}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*CBCILO1|SWCTRL
-\multicolumn{5}{|c|}{ УВ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УЗН } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
-\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
-\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
-\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ КП } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Оперативная блокировка выключателя (ОБР В) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -689,7 +400,7 @@
 Внешние дискретные входы назначаются в проекте непосредственно под схему объекта. Блокировка управления ВЭ выполняется при несоблюдении какого-либо из условий, предусмотренных алгоритмом функции.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{kp:img_obrve}. В таблице \ref{kp:tbl_obrve} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{kp:img_obrve}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -697,79 +408,6 @@
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/128. КП ОЛ/_latex/img/obrve.pdf}
 \captionof{figure}{Функциональная схема логики ОБР ВЭ}\label{kp:img_obrve}
 \end{figure}
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ОБР ВЭ\hfill\vspace{-0.5\baselineskip}}\label{kp:tbl_obrve}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{kp:tbl_obrve}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*WECILO1|SWCTRL
-\multicolumn{5}{|c|}{ УВ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УЗН } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
-\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
-\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
-\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ КП } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Оперативная блокировка выкатного элемента (ОБР ВЭ) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -796,7 +434,7 @@
 Внешние дискретные входы назначаются в проекте непосредственно под схему объекта. Блокировка управления ЗН выполняется при несоблюдении какого-либо из условий, предусмотренных алгоритмом функции.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{kp:img_obrzn}. В таблице \ref{kp:tbl_obrzn} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{kp:img_obrzn}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -805,78 +443,6 @@
 \captionof{figure}{Функциональная схема логики ОБР ЗН}\label{kp:img_obrzn}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ОБР ЗН\hfill\vspace{-0.5\baselineskip}}\label{kp:tbl_obrzn}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{kp:tbl_obrzn}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*ESCILO1|SWCTRL
-\multicolumn{5}{|c|}{ УВ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Включение с контролем синхронизма (Контроль\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Блокировка включения от аварийного отключения В (Бл\_вкл\_от\_авар\_откл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения выключателя (Tперекл)  & \centering T1 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Tблк)  & \centering T2 & \centering 10...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Длительность задержки включения с контролем синхронизма (Тзад\_вкл\_с\_КС)  & \centering T3 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УВЭ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ УЗН } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Допустимое время переключения (Tперекл)  & \centering T1 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени подавления выдачи положения "Не определено" (Тблк)  & \centering T2 & \centering 50...100000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ОБР В } \\ \hline 
-\centering Ввод ОБР В в работу (ОБР\_В)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль ЗН (Контр\_ЗН)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА1 (Контр\_KA1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_KA2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ВЭ } \\ \hline 
-\centering Контроль КА1 (Контр\_КА1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль КА2 (Контр\_КА2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ОБР ЗН } \\ \hline 
-\centering Контроль KA3 (Контр\_KA3)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль KA4 (Контр\_KA4)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ КП } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Ввод ОБР КА в работу (ОБР\_КА)  & \centering SG1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Оперативная блокировка заземляющего ножа (ОБР ЗН) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -23,9 +23,8 @@
   \item Перечень сигналов самодиагностики, доступных для конфигурирования, приведен в документации ЮТКБ.656122.609 РЭ <<Устройство защиты и автоматики серии <<ЮНИТ-М300>>. Руководство по эксплуатации общее>>.
   \item Условные обозначения, применяемые в таблице перечня сигналов:
   \begin{itemize}
-    \item[$\text{(--)}$] { - сигнал не имеет возможности конфигурации;}
-    \item[$\text{(+)}$] { - сигнал имеет возможность конфигурации;}
-    \item[$\text{(*)}$] { - конфигурация сигнала предустановлена по умолчанию в сервисном ПО <<ЮНИТ-СЕРВИС>> и не может быть изменена.}
+    \item[$\text{(--)}$] { - сигнал не имеет возможности конфигурации на данный параметр;}
+    \item[$\text{(+)}$] { - сигнал имеет возможность конфигурации на данный параметр.}
   \end{itemize}
 \end{enumerate}
 
@@ -48,14 +47,14 @@
 \caption{Перечень сигналов ФСУ, предназначенных для конфигурирования устройства\hfill\vspace{-0.5\baselineskip}}\label{appA:tbl1}\\ 
 
 \hline
-\rowcolor{gray!30}
+\rowcolor{gray!20}
 Полное наименование сигнала & Наименование сигнала на ФСУ & Дискретные входы & Выходные реле & Светодиоды & Функционал. клавиши & Регистратор событий & Аварийный осциллограф & Пуск авар. осциллографа \\ 
 \hline
 \endfirsthead
 %\caption{\emph{Продолжение\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
 \caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{appA:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
 \hline
-\rowcolor{gray!30}
+\rowcolor{gray!20}
 Полное наименование сигнала & Наименование сигнала на ФСУ & Дискретные входы & Выходные реле & Светодиоды & Функционал. клавиши & Регистратор событий & Аварийный осциллограф & Пуск авар. осциллографа \\ 
 %\hline
 \endhead
@@ -67,268 +66,189 @@
 \endlastfoot
 
 %===t2
-\multicolumn{9}{c}{\textbf{Виртуальные кнопки}} \\
+\rowcolor{gray!10}
+\multicolumn{9}{c}{Общие сигналы ФС} \\
 \hline
-\raggedright Команда сброс & \centering Сброс & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Команда сброса счетчика на начальное значение & \centering Сброс Сч.Перекл. & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Оперативная команда «прибавить» & \centering Прибавить & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Оперативная команда «убавить» & \centering Убавить & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Команда сброса счетчика положений РПН на значение по умолчанию & \centering Сброс Сч.Полож. & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\multicolumn{9}{c}{\textbf{Виртуальные ключи}} \\
+\raggedright Внешнее реле контроля тока РПН & \centering Внешн. РТ РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Отключенное положение автомата питания двигателя в приводе РПН & \centering бк автомата ПМ & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Реле контроля низкой температуры масла РПН & \centering Реле низк. t РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Реле контроля низкого уровня масла РПН & \centering Реле низк .ур. масла & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ключ местное управление приводом РПН & \centering Ключ МУ РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Секция 1 включена & \centering Секция 1 включена & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Секция 2 включена & \centering Секция 2 включена & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Концевой выключатель сигнализации переключения привода РПН & \centering SQ переключение ПМ & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Концевой выключатель верхнего положения РПН & \centering SQ верхн. полож. & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Концевой выключатель нижнего положения РПН & \centering SQ нижн. полож. & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright АРНТ параллельного трансформатора в режиме авто & \centering Парал в режиме авто & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright АРНТ параллельного трансформатора принудительно ведущий & \centering Парал принуд ведущ & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright АРНТ параллельного трансформатора ведущий & \centering Парал. ведущий & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда прибавить от АРНТ параллельного трансформатора & \centering Пар.рег.Прибав. & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда убавить от АРНТ параллельного трансформатора & \centering Пар.рег.Убавить & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ненормальный режим на шинах параллельного трансформатора & \centering Парал ненорм режим & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright АРНТ параллельного трансформатора заблокирована & \centering Парал заблокирован & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright АРНТ параллельного трансформатора готов к режиму параллельного регулирования & \centering Парал. готовность & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright У параллельного трансформатора нет связи с регулируемыми шинами & \centering Парал. несоед. шины & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Идет переключение привода РПН параллельного трансформатора & \centering Парал РПН переключ. & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Внешний сигнал неисправности привода РПН & \centering Неисправность ПМ & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Внешний сигнал рассогласования приводов РПН & \centering Внешн сигн рассогл & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Положение блока испытательного №1 & \centering Вход SG1 & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Положение блока испытательного №2 & \centering Вход SG2 & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Положение блока испытательного №3 & \centering Вход SG3 & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Положение блока испытательного №4 & \centering Вход SG4 & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Положение блока испытательного №5 & \centering Вход SG5 & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Положение блока испытательного №6 & \centering Вход SG6 & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Положение блока испытательного №7 & \centering Вход SG7 & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Концевой выключатель положения двери шкафа АРНТ & \centering SQ Дверь & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Реле контроля оперативного тока технологической сигнализации РПН & \centering Опер. ток РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD1 датчика положения РПН & \centering BCD1\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD2 датчика положения РПН & \centering BCD2\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD3 датчика положения РПН & \centering BCD3\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD4 датчика положения РПН & \centering BCD4\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD5 датчика положения РПН & \centering BCD5\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD6 датчика положения РПН & \centering BCD6\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD1 датчика положения РПН параллельного трансформатора & \centering BCD1\_парал\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD2 датчика положения РПН параллельного трансформатора & \centering BCD2\_парал\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD3 датчика положения РПН параллельного трансформатора & \centering BCD3\_парал\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD4 датчика положения РПН параллельного трансформатора & \centering BCD4\_парал\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD5 датчика положения РПН параллельного трансформатора & \centering BCD5\_парал\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнал BCD6 датчика положения РПН параллельного трансформатора & \centering BCD6\_парал\_РПН & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Внутренняя неисправность & \centering IRF & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Test/blocked & \centering Test/blocked & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Поведение местного управления & \centering Повед. местн. упр. & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Положение ключа режима управления & \centering Ключ упр. & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Право на переключение на уровне станции & \centering Перекл. ур. станц. & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Критическая неисправность & \centering Неисправность & \centering + & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Некритическая ошибка & \centering Ошибка & \centering + & \centering -- & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Вывод терминала от ФК & \centering ФК: Вывод терминала & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Вывод терминала от ДВ & \centering ДВ: Вывод терминала & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ввод режима автоматического регулирования от ФК & \centering ФК: Ввод режима авто & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ввод режима автоматического регулирования от ДВ & \centering ДВ: Ввод режима авто & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ввод режима автоматического выбора регулируемой секции от ФК & \centering ФК: Ввод авт.выбор секц & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ввод режима автоматического выбора регулируемой секции от ДВ & \centering ДВ: Ввод авт.выбор секц & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ввод режима приоритета регулирования по 2 секции от ФК & \centering ФК: Ввод рег. по 2 секц & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ввод режима приоритета регулирования по 2 секции от ДВ & \centering ДВ: Ввод рег. по 2 секц & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ввод режима параллельного регулирования трансформаторов от ФК & \centering ФК: Ввод парал. рег. & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ввод режима параллельного регулирования трансформаторов от ДВ & \centering ДВ: Ввод парал. рег. & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда сброс от ФК & \centering ФК: Сброс & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда сброс от ДВ & \centering ДВ: Сброс & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ручная команда прибавить от ФК & \centering ФК: КУ Прибавить & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ручная команда прибавить от ДВ & \centering ДВ: КУ Прибавить & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ручная команда убавить от ФК & \centering ФК: КУ Убавить & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ручная команда убавить от ДВ & \centering ДВ: КУ Убавить & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда сброс счетчика на начальное значение от ФК & \centering ФК: Сброс счет. перекл. & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда сброс счетчика на начальное значение от ДВ & \centering ДВ: Сброс счет. перекл. & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда сброс счетчика положений РПН на значение по умолчанию от ФК & \centering ФК: Сброс Сч.Полож. & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда сброс счетчика положений РПН на значение по умолчанию от ДВ & \centering ДВ: Сброс Сч.Полож. & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!10}
+\multicolumn{9}{c}{Блок измерений} \\
 \hline
-\raggedright Вывод терминала & \centering Вывод терминала & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Режим работы «автоматическое регулирование» & \centering Режим Авто & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Ввод режима автоматического выбора регулируемой секции & \centering Ввод авто выбор & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Ввод режима приоритета регулирования по 2 секции & \centering Ввод регул по 2секц & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Ввод режима регулирования параллельно работающих трансформаторов & \centering Ввод режима пар.рег & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Ввод режима автоматического регулирования & \centering Режим Авто & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\multicolumn{9}{c}{\textbf{Общие сигналы функциональной логики}} \\
+\rowcolor{gray!5}
+\multicolumn{9}{c}{Блок измерений\_1} \\
 \hline
-\rowcolor{gray!15}
-\multicolumn{9}{c}{Автоматика регулирования напряжения трансформатора (АРНТ)} \\
+\rowcolor{gray!10}
+\multicolumn{9}{c}{АРНТ} \\
 \hline
-\multicolumn{9}{c}{Контроль привода РПН (Контроль РПН)} \\
+\rowcolor{gray!5}
+\multicolumn{9}{c}{АРНТ\_1} \\
 \hline
-\raggedright Переключение не началось & \centering ПМ не пошел & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Длительное переключение (привод остановился в промежуточном положении) & \centering ПМ застрял & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Самопроизвольное переключение & \centering ПМ побежал & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Отказ привода РПН & \centering ПМ отказал & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Сигнализация максимального количества переключений РПН & \centering Ресурс исчерпан & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\multicolumn{9}{c}{Автоматика регулирования напряжения (АРН)} \\
+\raggedright Автоматический выбор регулируемой секции & \centering АРНТ\_Авто выбор секц & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Приоритет регулирования по 2 секции & \centering АРНТ\_Приоритет 2 секц & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Нет связи с регулируемыми шинами & \centering АРНТ\_Нет связи с шинами & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Запрет автоматического повышения при перегрузке & \centering АРНТ\_Перегрузка & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Запрет автоматического повышения при перенапряжении & \centering АРНТ\_Высокое U секц & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Запрет авторегулирования при низком напряжении & \centering АРНТ\_Низкое U секц & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Запрет автоматического повышения при высоком напряжении НП & \centering АРНТ\_Высокое 3U0 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Запрет авторегулирования при высоком напряжении ОП & \centering АРНТ\_Высокое U2 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ненормальный режим на секции & \centering АРНТ\_Ненормальный режим & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блокировка РПН по току & \centering АРНТ\_Блокир. по току РПН & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Отключено питание привода РПН & \centering АРНТ\_Отключен автомат ПМ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блокировка РПН по низкой температуре & \centering АРНТ\_Блок.по температуре & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блокировка РПН по низкому уровню масла & \centering АРНТ\_Блок.по уров. масла & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Привод РПН в местном управлении & \centering АРНТ\_ПМ в местном упр & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Привод РПН заблокирован & \centering АРНТ\_ПМ заблокирован & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Напряжение ниже границы зоны нечувствительности & \centering АРНТ\_Напряжение ниже & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Напряжение выше границы зоны нечувствительности & \centering АРНТ\_Напряжение выше & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Напряжение значительно выше границы зоны нечувствительности & \centering АРНТ\_Знач.повыш.напряж. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ошибка определения положения РПН & \centering АРНТ\_Ошибка полож. РПН & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Привод РПН в крайнем верхнем положении & \centering АРНТ\_Крайн.верх.полож. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Привод РПН в крайнем нижнем положении & \centering АРНТ\_Крайн.нижн.полож. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Промежуточное положение привода РПН & \centering АРНТ\_Промежут полож & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блокировка автоматической команды прибавить по верхнему допустимому положению & \centering АРНТ\_Блок.Верх.Полож. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блокировка автоматической команды убавить по нижнему допустимому положению & \centering АРНТ\_Блок.Нижн.Полож. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Неисправность РПН & \centering АРНТ\_Неисправность РПН & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Привод РПН не начал переключение & \centering АРНТ\_ПМ не пошел & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Привод РПН не завершил переключение & \centering АРНТ\_ПМ застрял & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Привод РПН самопроизвольно переключился & \centering АРНТ\_ПМ побежал & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Привод РПН в процессе переключения & \centering АРНТ\_Переключение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Сигнализация максимального количества переключений РПН & \centering АРНТ\_Ресурс исчерпан & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда на отключение питания привода РПН & \centering АРНТ\_Отключение ПМ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Режим автоматического регулирования & \centering АРНТ\_Режим авто. регул. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Управление заблокировано & \centering АРНТ\_Управл. блок. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда прибавить в привод РПН & \centering АРНТ\_Прибавить & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Команда убавить в привод РПН & \centering АРНТ\_Убавить & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Режим параллельного регулирования & \centering АРНТ\_Режим парал. регул & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Готовность к режиму параллельного регулирования трансформаторов & \centering АРНТ\_Готов к парал. рег. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ведущий в режиме параллельного регулирования трансформаторов & \centering АРНТ\_Ведущий & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Принудительно ведущий в режиме параллельного регулирования трансформаторов & \centering АРНТ\_Принудит. ведущий & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ведомый в режиме параллельного регулирования трансформаторов & \centering АРНТ\_Ведомый & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Параллельное регулирование заблокировано & \centering АРНТ\_Парал. рег. заблок & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Ошибка параллельного регулирования трансформаторов & \centering АРНТ\_Ошибка парал. рег. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Прибавить в АРНТ параллельного трансформатора & \centering АРНТ\_Прибавить в парал. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Убавить в АРНТ параллельного трансформатора & \centering АРНТ\_Убавить в парал. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Рассогласование приводов РПН параллельных трансформаторов & \centering АРНТ\_Рассогласование РПН & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блок испытательный №1 в рабочем положении & \centering АРНТ\_БИ 1 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блок испытательный №2 в рабочем положении & \centering АРНТ\_БИ 2 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блок испытательный №3 в рабочем положении & \centering АРНТ\_БИ 3 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блок испытательный №4 в рабочем положении & \centering АРНТ\_БИ 4 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блок испытательный №5 в рабочем положении & \centering АРНТ\_БИ 5 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блок испытательный №6 в рабочем положении & \centering АРНТ\_БИ 6 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блок испытательный №7 в рабочем положении & \centering АРНТ\_БИ 7 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Блок испытательный не в рабочем положении & \centering АРНТ\_БИ выведены & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Дверь шкафа АРНТ закрыта & \centering АРНТ\_Дверь закрыта & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Дверь шкафа АРНТ открыта & \centering АРНТ\_Дверь открыта & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Неисправность оперативного тока цепей технологической сигнализации & \centering АРНТ\_Неиспр. опер. тока & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Предупредительная сигнализация & \centering АРНТ\_Предупр. сигнал. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Функция АРНТ в работе & \centering АРНТ\_АРНТ в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!10}
+\multicolumn{9}{c}{ВКл: Вывод терминала} \\
 \hline
-\raggedright Команда на отключение автомата питания привода РПН & \centering Отключить АВ ПМ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Режим автоматического регулирования & \centering Авто.регулирование & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блокировка автоматики регулирования & \centering Блокировка авт.рег. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Действие АРНТ на привод РПН & \centering Работа АРНТ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Команда «прибавить» в привод РПН & \centering Прибавить в привод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Команда «убавить» привод РПН & \centering Убавить в привод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Нет связи с регулируемыми шинами & \centering Нет связи с шинами & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Напряжение выше границы зоны нечувствительности & \centering Напряжение выше & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Напряжение ниже границы зоны нечувствительности & \centering Напряжение ниже & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Напряжение значительно выше границы зоны нечувствительности & \centering Знач.повыш.напряж. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Перегрузка секции 1 & \centering Перегрузка 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Высокое напряжение секции 1 & \centering Высок. напряж. 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Низкое напряжение секции 1 & \centering Низк. напряж. 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Высокое напряжение НП секции 1 & \centering Превышение 3U0 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Высокое напряжение ОП секции 1 & \centering Превышение U2 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Перегрузка секции 2 & \centering Перегрузка 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Перенапряжение секции 2 & \centering Высокое напряж.2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Низкое напряжение секции 2 & \centering Низкое напряж. 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Высокое напряжение НП секции 2 & \centering Превышение 3U0 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Высокое напряжение ОП секции 2 & \centering Превышение U2 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блокировка по перегрузке & \centering Блокир.по перегруз. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блокировка по перенапряжению & \centering Перенапряжение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блокировка по низкому напряжению & \centering Низк.напр.на шинах & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Ненормальный режим на секции & \centering Ненормальный режим & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блокировка РПН по току & \centering Блокир.по току ВН & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
-\raggedright Блокировка по низкому уровню масла & \centering Блок.по уров. масла & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Привод РПН заблокирован & \centering Привод заблокирован & \centering -- & \centering + & \centering + & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
-\raggedright Ошибка определения положения РПН & \centering Ошибка определения & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Мертвое положение & \centering Мертвое положение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блокировка автоматической команды прибавить по верхнему допустимому положению & \centering Блок.Верх.Полож. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блокировка автоматической команды убавить по нижнему допустимому положению & \centering Блок.Нижн.Полож. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Режим параллельного регулирования & \centering ПарРежим & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Готовность к режиму регулирования параллельно работающих трансформаторов & \centering Пар.рег.Готовность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Ведущий в режиме регулирования параллельно работающих трансформаторов & \centering Пар.рег.Ведущий & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Принудительно ведущий в режиме регулирования параллельно работающих трансформаторов & \centering Пар.рег.Принуд.Вед. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Ведомый в режиме регулирования параллельно работающих трансформаторов & \centering Ведомый & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Команда «Прибавить» от АРНТ параллельно работающего трансформатора & \centering Пар.рег.Прибавить & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Команда «Убавить» от АРНТ параллельно работающего трансформатора & \centering Пар.рег.Убавить & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блокировка автоматического регулирования в режиме регулирования параллельно работающих трансформаторов & \centering Пар.рег.Бл.авт.реж. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Ошибка регулирования параллельно работающих трансформаторов & \centering Пар.рег.Ошибка & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Рассогласование приводов РПН параллельно работающих трансформаторов & \centering Пар.рег.Рассогл. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Прибавить в АРНТ параллельного работающего трансформатора & \centering Прибавить в ПарРег & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Убавить в АРНТ параллельного работающего трансформатора & \centering Убавить в ПарРег & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\multicolumn{9}{c}{Привод РПН (Привод РПН)} \\
+\raggedright Оперативный вывод функции & \centering Виртуальный ключ-1\_Опер. вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!10}
+\multicolumn{9}{c}{ВКл: Ввод режима авто} \\
 \hline
-\raggedright Идет переключение & \centering Переключение & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Местное управление привода & \centering Местное упр.ПМ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Крайнее верхнее положение РПН & \centering Крайн.верх.полож. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Крайнее нижнее положение РПН & \centering Крайн.нижн.полож. & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\multicolumn{9}{c}{Выбор ТН (Выбор ТН)} \\
+\raggedright Оперативный вывод функции & \centering Виртуальный ключ-2\_Опер. вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!10}
+\multicolumn{9}{c}{ВКл: Ввод авт.выбор секц} \\
 \hline
-\raggedright Автоматический выбор регулируемой секции & \centering Авто выбор секц & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Приоритет регулирования по 2 секции & \centering Приоритет 2 секц & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Регулирование по 1 секции & \centering Регулируемая 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Контроль 1 секции & \centering Контролируемая 1сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Регулирование по 2 секции & \centering Регулируемая 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Контроль 2 секции & \centering Контролируемая 2сек & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\multicolumn{9}{c}{Защитный автомат питания привода РПН (АВ РПН)} \\
+\raggedright Оперативный вывод функции & \centering Виртуальный ключ-3\_Опер. вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!10}
+\multicolumn{9}{c}{ВКл: Ввод рег. по 2 секц} \\
 \hline
-\raggedright Отключено питание привода & \centering Отключен автомат ПМ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\multicolumn{9}{c}{Датчик температуры масла РПН (ДТм)} \\
+\raggedright Оперативный вывод функции & \centering Виртуальный ключ-4\_Опер. вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!10}
+\multicolumn{9}{c}{ВКл: Ввод парал. рег.} \\
 \hline
-\raggedright Блокировка по низкой температуре & \centering Блок.по температуре & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\multicolumn{9}{c}{Датчик уровня масла РПН (ДУм)} \\
+\raggedright Оперативный вывод функции & \centering Виртуальный ключ-5\_Опер. вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!10}
+\multicolumn{9}{c}{ВКн: Сброс} \\
 \hline
-\raggedright Высокий уровень масла & \centering Высок. уров. масла & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\rowcolor{gray!15}
-\multicolumn{9}{c}{Сигнализация (Сигнализация)} \\
+\raggedright Оперативный сброс функции & \centering Виртуальная кнопка-1\_Опер. сброс & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!10}
+\multicolumn{9}{c}{ВКн: КУ Прибавить} \\
 \hline
-\raggedright Блок испытательный №1 в рабочем положении & \centering SG1 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блок испытательный №2 в рабочем положении & \centering SG2 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блок испытательный №3 в рабочем положении & \centering SG3 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блок испытательный №4 в рабочем положении & \centering SG4 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блок испытательный №5 в рабочем положении & \centering SG5 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блок испытательный №6 в рабочем положении & \centering SG6 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блок испытательный №7 в рабочем положении & \centering SG7 в работе & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright SG не в рабочем положении & \centering SG (Крышка БИ) & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Сигнал закрытого положения двери & \centering Дверь закрыта & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Сигнал открытого положения двери & \centering Дверь открыта & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Сигнал неисправности оперативного тока цепей технологической сигнализации & \centering Неиспр.опертока & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность РПН & \centering Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\multicolumn{9}{c}{\textbf{Дискретные сигналы блоков в составе устройства}} \\
+\raggedright Оперативный сброс функции & \centering Виртуальная кнопка-2\_Опер. сброс & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!10}
+\multicolumn{9}{c}{ВКн: КУ Убавить} \\
 \hline
-\rowcolor{gray!15}
-\multicolumn{9}{c}{Слот М1. Блок питания (Р02с)} \\
+\raggedright Оперативный сброс функции & \centering Виртуальная кнопка-3\_Опер. сброс & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!10}
+\multicolumn{9}{c}{ВКн: Сброс счет. перекл.} \\
 \hline
-\raggedright Критическая неисправность 12 В & \centering Слот М1. Общие сигналы. Крит. неисправность 12 В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Некритическая неисправность 12 В & \centering Слот М1. Общие сигналы. Некрит. неисправность 12 В & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Критическая неисправность внешнего питания & \centering Слот М1. Общие сигналы. Крит. неисправность внешнего питания & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Некритическая неисправность внешнего питания & \centering Слот М1. Общие сигналы. Некрит. неисправность внешнего питания & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Критическая неисправность блока питания & \centering Слот М1. Общие сигналы. Крит. неисправность блока питания & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Некритическая неисправность блока питания & \centering Слот М1. Общие сигналы. Некрит. неисправность блока питания & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Несимметрия внешнего питания & \centering Слот М1. Общие сигналы. Несимметрия питания & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Перегрузка по питанию & \centering Слот М1. Общие сигналы. Перегрузка по питанию & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность АЦП & \centering Слот М1. Общие сигналы. Неисправность АЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус сигнального реле & \centering Слот М1. Общие сигналы. Статус сигнального реле & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус светодиода «Готовность» & \centering Слот М1. Общие сигналы. Статус светодиода «Готовность» & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус светодиода «Тест» & \centering Слот М1. Общие сигналы. Статус светодиода «Тест» & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус сигнализации «Неисправность» & \centering Слот М1. Общие сигналы. Статус сигнализации «Неисправность» & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус входа PPS & \centering Слот М1. Общие сигналы. Статус входа PPS & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Наличие внешнего питания & \centering Слот М1. Общие сигналы. Наличие внешнего питания & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Внутренняя неисправность & \centering Слот М1. Общие сигналы. Внутренняя неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Критическая ошибка & \centering Слот М1. Общие сигналы. Критическая ошибка & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\rowcolor{gray!15}
-\multicolumn{9}{c}{Слот М3. Блок выходных реле (К002)} \\
+\raggedright Оперативный сброс функции & \centering Виртуальная кнопка-4\_Опер. сброс & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\rowcolor{gray!10}
+\multicolumn{9}{c}{ВКн: Сброс Сч.Полож.} \\
 \hline
-\raggedright Отказ блока & \centering Слот М3. Общие сигналы. Отказ блока & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блок не определен & \centering Слот М3. Общие сигналы. Блок не определен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М3. Реле1. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М3. Реле2. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М3. Реле3. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М3. Реле4. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М3. Реле5. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М3. Реле6. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М3. Реле7. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М3. Реле8. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\rowcolor{gray!15}
-\multicolumn{9}{c}{Слот М4. Блок выходных реле (К001)} \\
-\hline
-\raggedright Отказ блока & \centering Слот М4. Общие сигналы. Отказ блока & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блок не определен & \centering Слот М4. Общие сигналы. Блок не определен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М4. Реле1. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М4. Реле2. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М4. Реле3. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М4. Реле4. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М4. Реле5. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М4. Реле6. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М4. Реле7. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М4. Реле8. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\rowcolor{gray!15}
-\multicolumn{9}{c}{Слот М5. Блок дискретных входов (В021)} \\
-\hline
-\raggedright Отказ блока & \centering Слот М5. Общие сигналы. Отказ блока & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блок не определен & \centering Слот М5. Общие сигналы. Блок не определен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ1. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ2. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ3. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ4. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ5. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ6. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ7. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ8. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ9. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ10. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ11. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ12. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ13. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М5. ДВ14. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\rowcolor{gray!15}
-\multicolumn{9}{c}{Слот М6. Блок дискретных входов (В021)} \\
-\hline
-\raggedright Отказ блока & \centering Слот М6. Общие сигналы. Отказ блока & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Блок не определен & \centering Слот М6. Общие сигналы. Блок не определен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ1. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ2. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ3. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ4. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ5. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ6. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ7. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ8. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ9. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ10. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ11. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ12. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ13. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Статус & \centering Слот М6. ДВ14. Статус & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\rowcolor{gray!15}
-\multicolumn{9}{c}{Слот М7. Блок сопряжения (А004)} \\
-\hline
-\raggedright Отказ блока & \centering Слот М7. Общие сигналы. Отказ блока & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Критическая ошибка & \centering Слот М7. Общие сигналы. Блок не определен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность АЦП & \centering Слот М7. Общие сигналы. Неисправность АЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Обрыв цепей напряжения ТН & \centering Слот М7. Общие сигналы. Обрыв цепей ТН & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Несимметрия измерений & \centering Слот М7. Общие сигналы. Несимметрия измерений & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Несоответствие заданного номинала ТТ & \centering Слот М7. Общие сигналы. Ошибка номинала ТТ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\rowcolor{gray!15}
-\multicolumn{9}{c}{Слот М8. Измерительный блок (М046)} \\
-\hline
-\raggedright Отказ блока & \centering Слот М8. Общие сигналы. Отказ блока & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Критическая ошибка & \centering Слот М8. Общие сигналы. Блок не определен & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность АЦП & \centering Слот М8. Общие сигналы. Неисправность АЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Обрыв цепей напряжения ТН & \centering Слот М8. Общие сигналы. Обрыв цепей ТН & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Несимметрия измерений & \centering Слот М8. Общие сигналы. Несимметрия измерений & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Несоответствие заданного номинала ТТ & \centering Слот М8. Общие сигналы. Ошибка номинала ТТ & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\rowcolor{gray!15}
-\multicolumn{9}{c}{Слот М10. Центральный процессор (С01)} \\
-\hline
-\raggedright Отказ блока & \centering Слот М10. Общие сигналы. Отказ блока ЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность ПЗУ & \centering Слот М10. Общие сигналы. Неисправность ПЗУ ЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность ПЗУ MPU & \centering Слот М10. Общие сигналы. Неисправность ПЗУ MPU & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность ПЗУ DSP1 & \centering Слот М10. Общие сигналы. Неисправность ПЗУ DSP2 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность flash & \centering Слот М10. Общие сигналы. Неисправность flash & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность ОЗУ & \centering Слот М10. Общие сигналы. Неисправность ОЗУ ЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность ОЗУ MPU & \centering Слот М10. Общие сигналы. Неисправность ОЗУ MPU & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность ОЗУ DSP1 & \centering Слот М10. Общие сигналы. Неисправность ОЗУ DSP2 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность ОЗУ IPU1 & \centering Слот М10. Общие сигналы. Неисправность ОЗУ IPU2 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность часов реального времени & \centering Слот М10. Общие сигналы. Неисправность часов ЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Критическая ошибка I2C & \centering Слот М10. Общие сигналы. Ошибка I2C ЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Ошибка контрольной суммы уставок/конфигурации & \centering Слот М10. Общие сигналы. Ошибка КС уставок & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность ПО & \centering Слот М10. Общие сигналы. Неисправность ПО ЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Несовместимая версия ПО & \centering Слот М10. Общие сигналы. Несовместимая версия ПО ЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Критическая ошибка SPI & \centering Слот М10. Общие сигналы. Неисправность SPI ЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Конфигурация не соответствует коду заказа & \centering Слот М10. Общие сигналы. Ошибка конфигурации ЦП & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неверно заданы уставки & \centering Слот М10. Общие сигналы. Неверные уставки & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность IPC & \centering Слот М10. Общие сигналы. Неисправность IPC & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность IPC для MPU-DSP1 & \centering Слот М10. Общие сигналы. Неисправность IPC для MPU-DSP1 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность IPC для DSP1-IPU1 & \centering Слот М10. Общие сигналы. Неисправность IPC для DSP1-IPU1 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность IPC для MPU-IPU1 & \centering Слот М10. Общие сигналы. Неисправность IPC для MPU-IPU1 & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Интерфейс RED12. Неисправность связи & \centering Слот М10. Общие сигналы. RED12.Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Интерфейс RED34. Неисправность связи & \centering Слот М10. Общие сигналы. RED34.Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность связи по интерфейсу Eth1 & \centering Слот М10. Общие сигналы. X1.Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Интерфейс Eth1. Переполнение буфера выходных данных & \centering Слот М10. Общие сигналы. X1.Переп.вых.буфер & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Интерфейс Eth1. Переполнение буфера входных данных & \centering Слот М10. Общие сигналы. X1.Переп.вх.буфер & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность связи по интерфейсу Eth2 & \centering Слот М10. Общие сигналы. X2.Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Интерфейс Eth2. Переполнение буфера выходных данных & \centering Слот М10. Общие сигналы. X2.Переп.вых.буфер & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Интерфейс Eth2. Переполнение буфера входных данных & \centering Слот М10. Общие сигналы. X2.Переп.вх.буфер & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность связи по интерфейсу Eth3 & \centering Слот М10. Общие сигналы. X3.Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Интерфейс Eth3. Переполнение буфера выходных данных & \centering Слот М10. Общие сигналы. X3.Переп.вых.буфер & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Интерфейс Eth3. Переполнение буфера входных данных & \centering Слот М10. Общие сигналы. X3.Переп.вх.буфер & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность связи по интерфейсу Eth4 & \centering Слот М10. Общие сигналы. X4.Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Интерфейс Eth4. Переполнение буфера выходных данных & \centering Слот М10. Общие сигналы. X4.Переп.вых.буфер & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Интерфейс Eth4. Переполнение буфера входных данных & \centering Слот М10. Общие сигналы. X4.Переп.вх.буфер & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Температура ЦП ниже допустимой & \centering Слот М10. Общие сигналы. Температура ЦП \verb|<<| & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Температура ЦП выше допустимой & \centering Слот М10. Общие сигналы. Температура ЦП \verb|>>| & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Температура ЦП выше нормы & \centering Слот М10. Общие сигналы. Температура ЦП > & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Температура ЦП ниже нормы & \centering Слот М10. Общие сигналы. Температура ЦП < & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Сброс встроенных часов или памяти вследствии перезагрузки & \centering Слот М10. Общие сигналы. Сброс часов & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Неисправность памяти архивов (flash-память) & \centering Слот М10. Общие сигналы. Неисправность архивов & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Программная перезагрузка & \centering Слот М10. Общие сигналы. Перезагрузка ПО & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Перезагрузка в результате потери питания & \centering Слот М10. Общие сигналы. Перезапуск по питанию & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Перезагрузка при ошибке ПО & \centering Слот М10. Общие сигналы. Перезапуск по ошибкам ПО & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Изменение уставок & \centering Слот М10. Общие сигналы. Изменение уставок & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Оперативный сброс функции & \centering Виртуальная кнопка-5\_Опер. сброс & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 %===t2
 \end{longtable} 
 

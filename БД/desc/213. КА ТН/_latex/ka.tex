@@ -56,7 +56,36 @@
 \hline
 \endlastfoot
 %==+t1*LLN0|VT_SwitchDevice
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ ЗН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим отключения ЗН (Режим\_откл)  & \centering SGF2 & \centering Длительный \\ Импульсный & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим включения ЗН (Режим\_вкл)  & \centering SGF3 & \centering Длительный \\ Импульсный & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Длительность формирования сигнала о неисправном положении ЗН (Tнеиспр\_ЗН)  & \centering T1 & \centering 10...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Длительность формирования команды "Отключить ЗН (реле)" (Тимп\_откл)  & \centering T2 & \centering 100...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Длительность формирования команды "Включить ЗН (реле)" (Тимп\_вкл)  & \centering T3 & \centering 100...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ВЭ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим работы (выкатить) ВЭ (Режим\_выкат)  & \centering SGF2 & \centering Длительный \\ Импульсный & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим работы (вкатить) ВЭ (Режим\_вкат)  & \centering SGF3 & \centering Длительный \\ Импульсный & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль ремонтного положения (Контр\_рем\_полож)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Длительность формирования сигнала о неисправном положении ВЭ (Tнеиспр\_ВЭ)  & \centering T1 & \centering 10...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Длительность формирования команды "Выкатить ВЭ (реле)" (Тимп\_выкат)  & \centering T2 & \centering 100...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Длительность формирования команды "Вкатить ВЭ (реле)" (Тимп\_вкат)  & \centering T3 & \centering 100...100000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ КА } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 %===t1
 \end{longtable}
 \normalsize
@@ -96,8 +125,7 @@
 Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 «Ввод\_функции». Введенное состояние функции соответствует активному состоянию сигнала «ЗН: Ввод».
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{ka:img_zn}. В таблице \ref{ka:tbl_zn} приведены параметры, необходимые для настройки функции.
-
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{ka:img_zn}. 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
@@ -105,39 +133,6 @@
 \captionof{figure}{Функциональная схема логики ЗН}\label{ka:img_zn}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЗН\hfill\vspace{-0.5\baselineskip}}\label{ka:tbl_zn}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ka:tbl_zn}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*ES1|VT_SwitchDevice
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим отключения ЗН (Режим\_откл) & \centering SGF2 & \centering 0 = Длительный\\1 = Импульсный & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим включения ЗН (Режим\_вкл) & \centering SGF3 & \centering 0 = Длительный\\1 = Импульсный & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность формирования сигнала о неисправном положении ЗН (Tнеиспр\_ЗН) & \centering T1 & \centering 0,01 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
-\centering Длительность формирования команды «Отключить ЗН (реле)» (Тимп\_откл) & \centering T2 & \centering 0,10 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
-\centering Длительность формирования команды «Включить ЗН (реле)» (Тимп\_вкл) & \centering T3 & \centering 0,10 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 
@@ -177,7 +172,7 @@
 Ввод функции в работу на этапе параметрирования устройства осуществляется программным переключателем SGF1 «Ввод\_функции». Введенное состояние функции соответствует активному состоянию сигнала «ВЭ: Ввод».
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{ka:img_ve}. В таблице \ref{ka:tbl_ve} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{ka:img_ve}. 
 
 \vspace{2mm}
 \begin{figure}[H]
@@ -186,41 +181,6 @@
 \captionof{figure}{Функциональная схема логики ВЭ}\label{ka:img_ve}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ВЭ\hfill\vspace{-0.5\baselineskip}}\label{ka:tbl_ve}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ka:tbl_ve}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*WE1|VT_SwitchDevice
-\centering Ввод функции в работу (Ввод\_функции) & \centering SGF1 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим работы (выкатить) ВЭ (Режим\_выкат) & \centering SGF2 & \centering 0 = Длительный\\1 = Импульсный & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим работы (вкатить) ВЭ (Режим\_вкат) & \centering SGF3 & \centering 0 = Длительный\\1 = Импульсный & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль ремонтного положения (Контр\_рем\_полож) & \centering SGF4 & \centering 0 = Не предусмотрено\\1 = Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность формирования сигнала о неисправном положении ВЭ (Tнеиспр\_ВЭ) & \centering T1 & \centering 0,01 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
-\centering Длительность формирования команды «Выкатить ВЭ (реле)» (Тимп\_выкат) & \centering T2 & \centering 0,10 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-\hline
-\centering Длительность формирования команды «Вкатить ВЭ (реле)» (Тимп\_вкат) & \centering T3 & \centering 0,10 ... 100,00 & \centering с & \centering \arraybackslash 0,01 \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 

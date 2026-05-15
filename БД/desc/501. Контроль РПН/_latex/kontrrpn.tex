@@ -40,28 +40,110 @@
 \endfoot
 \hline
 \endlastfoot
-%==+t1*ATCC1|_TTCC
-\centering Режим выдачи управляющих команд (РежимУпрПМ) & \centering РежимУпрПМ & \centering 0 = импульсный\\1 = непрерывный & \centering -- & \centering \arraybackslash -- \\
+%==+t1*ATCC1|ARNT_TTCC
+\centering Источник сигнала положения РПН (Датчик\_РПН)  & \centering Датчик\_РПН & \centering  & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Время задержки срабатывания на выдачу первой команды в автоматическом режиме (T1) & \centering T1 & \centering 1,000 ... 200,000 & \centering с & \centering \arraybackslash 0,001 \\
+\centering Первоначальное значение счетчика положений РПН (Нач\_полож\_РПН)  & \centering Нач\_полож\_РПН & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
 \hline
-\centering Время задержки срабатывания на выдачу второй и последующих команд в автоматическом режиме (T2) & \centering T2 & \centering 0,100 ... 200,000 & \centering с & \centering \arraybackslash 0,001 \\
+\centering Номер крайнего нижнего положения РПН (Мин\_положение\_РПН)  & \centering Мин\_положение\_РПН & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
 \hline
-\centering Время задержки выдачи ускоренной команды убавить при значительном повышении напряжения (T3) & \centering T3 & \centering 0,100 ... 10,000 & \centering с & \centering \arraybackslash 0,001 \\
-%===t1
+\centering Номер крайнего верхнего положения РПН (Макс\_положение\_РПН)  & \centering Макс\_положение\_РПН & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
 \hline
-%==+t1*SLTC1|_TTCC
-\centering Время реакции привода РПН на команду управления (Тпуск) & \centering t1 & \centering 0,100 ... 10,000 & \centering с & \centering \arraybackslash 0,001 \\
+\centering Направление счета положений (Направление\_счета)  & \centering Направление\_счета & \centering  & \centering -- & \centering \arraybackslash -- \\
 \hline
-\centering Максимальное время переключения привода РПН (Тперекл) & \centering t2 & \centering 0,100 ... 100,000 & \centering с & \centering \arraybackslash 0,001 \\
+\centering Сигнал токовой петли, соответствующий крайнему нижнему положению РПН (Iмин\_ТП\_РПН)  & \centering Iмин\_ТП\_РПН & \centering 0...4000 & \centering мкА & \centering \arraybackslash 1 \\
 \hline
-\centering Длительность команды отключения питания привода при несанкционированном переключении (ОтклПитПМ) & \centering SGF2 & \centering 0 = 1 секунда\\1 = не прерывно (до команды сброса) & \centering -- & \centering \arraybackslash -- \\
+\centering Сигнал токовой петли, соответствующий крайнему верхнему положению РПН (Iмакс\_ТП\_ РПН)  & \centering Iмакс\_ТП\_ РПН & \centering 5000...20000 & \centering мкА & \centering \arraybackslash 1 \\
 \hline
-\centering Время продления команды управления после прихода сигнала «Идет переключение» (Твозвр) & \centering t3 & \centering 0,000 ... 10,000 & \centering с & \centering \arraybackslash 0,001 \\
+\centering Положение привода, далее которого блокируются автоматические команды прибавить (Верхн\_разреш\_полож)  & \centering Верхн\_разреш\_полож & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
 \hline
-\centering Начальное значение счетчика переключений (НачЗнСчПерекл) & \centering N & \centering 1 ... 1000000 & \centering -- & \centering \arraybackslash 1 \\
+\centering Положение привода, далее которого блокируются автоматические команды убавить (Нижн\_разреш\_полож)  & \centering Нижн\_разреш\_полож & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
 \hline
-\centering Максимальное количество операций переключения (РесурсПерекл) & \centering Nmax & \centering 1 ... 1000000 & \centering -- & \centering \arraybackslash 1 \\
+\centering Промежуточное 1 положение РПН (Промежут\_1\_полож)  & \centering Промежут\_1\_полож & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\centering Промежуточное 2 положение РПН (Промежут\_2\_полож)  & \centering Промежут\_2\_полож & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\centering Промежуточное 3 положение РПН (Промежут\_3\_полож)  & \centering Промежут\_3\_полож & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\centering Промежуточное 4 положение РПН (Промежут\_4\_полож)  & \centering Промежут\_4\_полож & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\centering Промежуточное 5 положение РПН (Промежут\_5\_полож)  & \centering Промежут\_5\_полож & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\centering Центр зоны нечувствительности (Uпод)  & \centering Uпод & \centering 0,85...1,45 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Ширина зоны нечувствительности (dUпод)  & \centering dUпод & \centering 0,01...0,20 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Уровень напряжения, при превышении которого автоматические команды на снижение формируются с ускоренной выдержкой времени T3 (U>>сраб)  & \centering U>>сраб & \centering 1,00...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Величина тока перегрузки РПН (Iрпн>блк)  & \centering Iрпн>блк & \centering 1,00...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Блокировка от контролируемой секции (БлкКонтрСекц)  & \centering БлкКонтрСекц & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Величина тока перегрузки для запрета авторегулирования на повышение (I>блк)  & \centering I>блк & \centering 1,000...2,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\hline
+\centering Величина напряжения НП для запрета авторегулирования на повышение (3U0блк)  & \centering 3U0блк & \centering 0,00...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Величина напряжения ОП для запрета авторегулирования (U2блк)  & \centering U2блк & \centering 0,00...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Величина максимального напряжения для запрета авторегулирования на повышение (U>>блк)  & \centering U>>блк & \centering 1,00...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Величина минимального напряжения для запрета авторегулирования (U<<блк)  & \centering U<<блк & \centering 0,00...1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Время задержки срабатывания на выдачу первой команды в автоматическом режиме (T1)  & \centering T1 & \centering 1000...200000 & \centering мс & \centering \arraybackslash 1 \\
+\hline
+\centering Время задержки срабатывания на выдачу второй и последующих команд в автоматическом режиме (T2)  & \centering T2 & \centering 100...200000 & \centering мс & \centering \arraybackslash 1 \\
+\hline
+\centering Время задержки выдачи ускоренной команды убавить при значительном повышении напряжения в автоматическом режиме (T3)  & \centering T3 & \centering 100...10000 & \centering мс & \centering \arraybackslash 1 \\
+\hline
+\centering Выдержка времени снятия команды управления после появления сигнала переключения привода (Твозвр)  & \centering Твозвр & \centering 0...10000 & \centering мс & \centering \arraybackslash 1 \\
+\hline
+\centering Максимальное время реакции привода РПН на команду управления (Тпуск)  & \centering Тпуск & \centering 100...10000 & \centering мс & \centering \arraybackslash 1 \\
+\hline
+\centering Максимальное время одного переключения привода РПН (Тперекл)  & \centering Тперекл & \centering 100...100000 & \centering мс & \centering \arraybackslash 1 \\
+\hline
+\centering Режим команды на отключение питания ПМ при самопроизвольном переключении (Режим\_откл\_ПМ)  & \centering Режим\_откл\_ПМ & \centering  & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ресурс привода РПН по количеству операций переключения (Ресурс\_переключений)  & \centering Ресурс\_переключений & \centering 1...1000000 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\centering Начальное значение счетчика переключений привода РПН (Нач\_знач\_счетчика)  & \centering Нач\_знач\_счетчика & \centering 1...1000000 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\centering Метод параллельного регулирования (Метод\_парал\_рег)  & \centering Метод\_парал\_рег & \centering  & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль рассогласования приводов РПН трансформаторов в режиме параллельного регулирования (Контроль\_рассогл)  & \centering Контроль\_рассогл & \centering Внешний сигнал \\ Сигналы положений приводов РПН & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Источник данных о положении РПН параллельного трансформатора (Датчик\_парал\_РПН)  & \centering Датчик\_парал\_РПН & \centering Токовая петля 4(0)-20мА \\ GOOSE \\ BCD-код & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Максимально допустимый разбег приводов РПН при параллельном регулировании трансформаторов (Макс\_разбег\_РПН)  & \centering Макс\_разбег\_РПН & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\centering Время переключения РПН трансформаторов при параллельном регулировании (Тпарал\_перекл)  & \centering Тпарал\_перекл & \centering 100...100000 & \centering мс & \centering \arraybackslash 1 \\
+\hline
+\centering Номер крайнего нижнего положения РПН параллельного трансформатора (Мин\_полож\_пар\_РПН)  & \centering Мин\_полож\_пар\_РПН & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\centering Номер крайнего верхнего положения РПН параллельного трансформатора (Макс\_полож\_пар\_РПН)  & \centering Макс\_полож\_пар\_РПН & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\centering Сигнал токовой петли, соответствующий крайнему нижнему положению РПН параллельного трансформатора (Iмин\_ТП\_парал\_РПН)  & \centering Iмин\_ТП\_парал\_РПН & \centering 0...4000 & \centering мкА & \centering \arraybackslash 1 \\
+\hline
+\centering Сигнал токовой петли, соответствующий крайнему верхнему положению РПН параллельного трансформатора (Iмакс\_ТП\_парал\_РПН)  & \centering Iмакс\_ТП\_парал\_РПН & \centering 5000...20000 & \centering мкА & \centering \arraybackslash 1 \\
+\hline
+\centering Выдержка времени срабатывания сигнализации (Тсигн)  & \centering Тсигн & \centering 1...100000 & \centering мс & \centering \arraybackslash 1 \\
+\hline
+\centering Контроль положения блока испытательного №1 (Контроль\_БИ\_1)  & \centering Контроль\_БИ\_1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №2 (Контроль\_БИ\_2)  & \centering Контроль\_БИ\_2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №3 (Контроль\_БИ\_3)  & \centering Контроль\_БИ\_3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №4 (Контроль\_БИ\_4)  & \centering Контроль\_БИ\_4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №5 (Контроль\_БИ\_5)  & \centering Контроль\_БИ\_5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №6 (Контроль\_БИ\_6)  & \centering Контроль\_БИ\_6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения блока испытательного №7 (Контроль\_БИ\_7)  & \centering Контроль\_БИ\_7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения двери (Контроль\_двери)  & \centering Контроль\_двери & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль оперативного тока технологической сигнализации (Контроль\_опер\_тока)  & \centering Контроль\_опер\_тока & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
 %===t1
 \end{longtable}
 \normalsize
