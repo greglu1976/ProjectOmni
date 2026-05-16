@@ -13,59 +13,6 @@
 
 \item Диапазон возможных положений привода РПН – 1…40.
 
-\item В таблице \ref{polrpn:tbl1} приведены параметры, необходимые для настройки блока контроля положения РПН.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки блока контроля положения РПН\hfill\vspace{-0.5\baselineskip}}\label{polrpn:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{polrpn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*AVTR1|_TTCC4
-\centering Первоначальное значение счетчика положений РПН (Nнач) & \centering -- & \centering 1 ... 40 & \centering -- & \centering \arraybackslash 1 \\
-%===t1
-\hline
-%==+t1*ATCC1|_TTCC4
-\centering Направление счета положений (НапрСчN) & \centering SGF2 & \centering 0 = Прямо\\1 = Обратно & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Источник сигнала  положения РПН (ТипДатчика) & \centering SGF1 & \centering 0 = Внутренний счетчик\\1 = Токовая петля 4(0)-20 мА\\2 = GOOSE & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Сигнал токовой петли, соответствующий конечному положению РПН (IмаМакс) & \centering -- & \centering 5,00 ... 100,00 & \centering мА & \centering \arraybackslash 0,01 \\
-\hline
-\centering Сигнал токовой петли, соответствующий начальному положению РПН (IмаМин) & \centering -- & \centering 0,00 ... 4,00 & \centering мА & \centering \arraybackslash 0,01 \\
-\hline
-\centering Конечное положение РПН (МаксN) & \centering TapMax  & \centering 1 ... 40 & \centering -- & \centering \arraybackslash 1 \\
-\hline
-\centering Начальное положение РПН (МинN) & \centering TapMin  & \centering 1 ... 40 & \centering -- & \centering \arraybackslash 1 \\
-\hline
-\centering Номер пропускаемого положения 1 (Мертвое положение 1) & \centering TapDead1 & \centering 0 ... 40 & \centering -- & \centering \arraybackslash 1 \\
-\hline
-\centering Номер пропускаемого положения 2 (Мертвое положение 2) & \centering TapDead2 & \centering 0 ... 40 & \centering -- & \centering \arraybackslash 1 \\
-\hline
-\centering Номер пропускаемого положения 3 (Мертвое положение 3) & \centering TapDead3 & \centering 0 ... 40 & \centering -- & \centering \arraybackslash 1 \\
-\hline
-\centering Номер пропускаемого положения 4 (Мертвое положение 4) & \centering TapDead4 & \centering 0 ... 40 & \centering -- & \centering \arraybackslash 1 \\
-\hline
-\centering Номер пропускаемого положения 5 (Мертвое положение 5) & \centering TapDead5 & \centering 0 ... 40 & \centering -- & \centering \arraybackslash 1 \\
-\hline
-\centering Положение привода, далее которого блокируются автоматические команды прибавить (БлкВерхN) & \centering TapBlkR & \centering 1 ... 40 & \centering -- & \centering \arraybackslash 1 \\
-\hline
-\centering Положение привода, далее которого блокируются автоматические команды убавить (БлкНижнN) & \centering TapBlkL & \centering 1 ... 40 & \centering -- & \centering \arraybackslash 1 \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 
