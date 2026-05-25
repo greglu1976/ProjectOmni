@@ -58,28 +58,47 @@
 
 
 \small
-\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
-\begin{longtable}
-{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
-\caption{Перечень уставочных параметров ТЗНП ВН\hfill\vspace{-0.5\baselineskip}}\label{tznp_vn:tbl1} \\ 
-\hhline{|-|-|-|-|}
+\setlength{\extrarowheight}{0.06cm} % высота ячеек в таблице
+\begin{longtable}{|>{\centering\arraybackslash}m{5.5cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{1.5cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2.6cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров ТЗНП ВН\hfill\vspace{-0.5\baselineskip}}\label{tznp_vn:tbl1}\\
+\hline
 \rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
-\hhline{|-|-|-|-|}
+Наименование уставочного параметра & Диапазон & Единица измерения & Шаг & Значение по умолчанию \\
+\hline
 \endfirsthead
 
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tznp_vn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hhline{|-|-|-|-|}
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tznp_vn:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
 \rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
-\hhline{|-|-|-|-|}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
 \endhead
-\hhline{|-|-|-|-|}
 
 \endfoot
 \endlastfoot
 
-%%%%%%%%%%%%содержимое%%%%%%%%%%%%%%
+%===m>ТЗНП ВН|-
+\multicolumn{5}{|c|}{ ТЗНП } \\ \hline 
+\raggedright 3I0ср ТЗНП ВН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30.00 \\
+\hline
+\raggedright  ТЗНП ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash False \\
+\hline
+\raggedright Тср ТЗНП ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\raggedright Режим БНТ ТЗНП ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash False \\
+\hline
+\multicolumn{5}{|c|}{ БНТ } \\ \hline 
+\raggedright 3I02г/3I01г БНТ ТЗНП ВН & \centering 0,00 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0.20 \\
+\hline
+\raggedright 0.04Iном (Iразр БНТ ТЗНП ВН) & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0.04 \\
+\hline
+\raggedright 3I0блок БНТ ТЗНП ВН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30.00 \\
+\hline
+\raggedright  БНТ ТЗНП ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash False \\
+\hline
+%===m
 
 \end{longtable}
 \setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
