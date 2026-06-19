@@ -42,6 +42,10 @@
 Сигнализация о неисправности выключателя (сигнал \textit{«Неиспр. В1»}) срабатывает при наличии одного из сигналов: \textit{«Неиспр. ЦУ В1»}, \textit{«Ср. Пруж. не заведены В1»}, \textit{«Ср. Низк. давл. SF6 В1»}, \textit{«Ср. Авар. давл. SF6 В1»}, \textit{«Ср. Автомат ШП В1»}, \textit{«Ср. Неиспр. обогр. В1»}, а также от сигнала \textit{«Ср. ЗНФ В1»}.
 
 \item
+Контроль наличия питания цепей сигнализации выключателя и ТТ осуществляется по внешним сигналам \textit{«Контр. опертока ЭМВ/ЭМО1 В1»}, \textit{«Контр. опертока ЭМО2 В1»} и \textit{«Контр. опертока сигн. В1»}. При состоянии «0» одного из сигналов срабатывает сигнализация о неисправности цепей сигнализации выключателя и ТТ (сигнал \textit{«Неиспр. сигн. В1/ТТ В1»}) с выдержкой времени 1 с. 
+
+
+\item
 Уставки контроля В1 представлены в таблице \ref{app_set:ksv}. Уставки контроля В2 аналогичны уставкам контроля В1.
 
 
@@ -65,24 +69,6 @@
 Уставки контроля ТТ В1 представлены в таблице \ref{app_set:ksv}. Уставки контроля ТТ В2 аналогичны уставкам контроля ТТ В1.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Контроль опертока В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\item
-Контроль наличия питания цепей сигнализации выключателя и ТТ осуществляется по внешним сигналам \textit{«Контр. опертока ЭМВ/ЭМО1 В1»}, \textit{«Контр. опертока ЭМО2 В1»} и \textit{«Контр. опертока сигн. В1»}. При состоянии «0» одного из сигналов срабатывает сигнализация о неисправности цепей сигнализации выключателя и ТТ (сигнал \textit{«Неиспр. сигн. В1/ТТ В1»}) с выдержкой времени 1 с. 
-
-\item
-Функциональная схема логики контроля опертока В1 приведена на рисунке \ref{pict_ksv:KSV_control_opercurrent}. Функциональная схема логики контроля опертока В2 выполняется аналогично схеме логики контроля опертока В1.
-
-\vspace{2mm}
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3371 КСВ/img/KSV_control_opercurrent.pdf}
-\captionof{figure}{Функциональная схема контроля опертока В1}\label{pict_ksv:KSV_control_opercurrent}
-\end{figure}
-
-\item
-Уставки контроля опертока В1 представлены в таблице \ref{app_set:ksv}. Уставки контроля опертока В2 аналогичны уставкам контроля опертока В1.
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Защита ЭМУ В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -98,7 +84,7 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3371 КСВ/img/KSV_EMU_protection.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3371 КСВ/img/KSV_EMU_protection.pdf}
 \captionof{figure}{Функциональная схема защиты ЭМУ В1}\label{pict_ksv:KSV_EMU_protection}
 \end{figure}
 
@@ -122,7 +108,7 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3371 КСВ/img/KSV_control_block.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3371 КСВ/img/KSV_control_block.pdf}
 \captionof{figure}{Функциональная схема блокировки управления В1}\label{pict_ksv:KSV_control_block}
 \end{figure}
 
@@ -137,7 +123,7 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3371 КСВ/img/KSV_relay_fix_B1.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3371 КСВ/img/KSV_relay_fix_B1.pdf}
 \captionof{figure}{Функциональная схема логики реле фиксации В1}\label{pict_ksv:KSV_relay_fix_B1}
 \end{figure}
 
