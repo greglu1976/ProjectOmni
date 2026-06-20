@@ -75,10 +75,10 @@ footskip=7mm,
 %\definecolor{unigray}{RGB}{88, 89, 91}
 
 % Определяем новые цвета фирмы (unitel guide 23.10.24)
-\definecolor{unired}{RGB}{239, 134, 55} 
-\definecolor{uniblue}{RGB}{21, 73, 140}
-\definecolor{unigray}{RGB}{144, 143, 143}
-\definecolor{uniblack}{RGB}{20, 20, 20}
+%\definecolor{unired}{RGB}{239, 134, 55} 
+%\definecolor{uniblue}{RGB}{21, 73, 140}
+%\definecolor{unigray}{RGB}{144, 143, 143}
+%\definecolor{uniblack}{RGB}{20, 20, 20}
 
 % Определяем новые цвета фирмы (unitel guide 30.03.26)
 \definecolor{uniwhite}{RGB}{255, 255, 255} 
@@ -89,6 +89,9 @@ footskip=7mm,
 
 \usepackage{longtable,booktabs}
 \usepackage{calc} % for calculating minipage widths
+
+\setlength{\LTpre}{5pt}
+\setlength{\LTpost}{5pt}
 
 % Это для таблицы, чтобы жестко ширину столбцов выставлять НЕ ТРЕБУЕТСЯ???
 %\usepackage{array}
@@ -175,9 +178,9 @@ footskip=7mm,
 \usepackage{titlesec}
 \usepackage{appendix}
 %\titlespacing{\chapter}{0pt}{-30pt}{12pt} как пример
-\titlespacing{\section}{30pt}{0pt}{7pt}
-\titlespacing{\subsection}{30pt}{6pt}{5pt}
-\titlespacing{\subsubsection}{30pt}{3pt}{3pt}
+\titlespacing{\section}{1cm}{0pt}{0pt}
+\titlespacing{\subsection}{1cm}{5pt}{5pt}
+\titlespacing{\subsubsection}{1cm}{3pt}{3pt}
 
 %\usepackage[bitstream-charter]{mathdesign} % проверить когда формулы будут в тексте
 \uchyph=0 % отключаем перенос в словах с заглавной буквы - чтобы ГЗоткл не переносил например
@@ -186,8 +189,16 @@ footskip=7mm,
 % - дефис, -- тире, --- длинное тире
 \usepackage{enumitem}
 
-\setlist[itemize]{label=---}
+%\setlist[itemize]{label=---, leftmargin=0cm, itemindent=1cm, labelsep=10pt}
 %\setlist[itemize]{label=$\circ$} % окружность
+% Сброс всех предыдущих настроек itemize
+\setlist[itemize]{
+    label=-,			 % маркер
+    leftmargin=0pt,      % отступ для всех строк
+    itemindent=38pt,     % отступ для первой строки
+    labelsep=5pt,        % пробел между маркером и текстом
+    nosep                % убираем лишние вертикальные отступы
+}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{float}
@@ -282,3 +293,13 @@ footskip=7mm,
 \usepackage{placeins} % чтобы ограничивать float рисунков с тегом [!h]
 
 \usepackage{eso-pic}
+
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=empty}
+\renewcommand\thesubfigure{\alph{subfigure})}
+\renewcommand{\thesubfigure}{\asbuk{subfigure})}
+
+\makeatletter
+\renewcommand{\p@subfigure}{\thefigure,\ }   % добавляет "0.2, " перед буквой
+\renewcommand{\thesubfigure}{\asbuk{subfigure}}  % буква без скобки
+\makeatother
