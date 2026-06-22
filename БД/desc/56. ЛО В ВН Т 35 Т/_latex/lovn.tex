@@ -20,32 +20,6 @@
 \item
 При появлении синалов срабатывания от общей логики отключения трансформатора и внешних устройств РЗА сторон НН функция формирует сигналы «Отключение» и «Отключить аварийно», сигнал «Отключить аварийно» является импульсным, время импульса определяется выдержкой времени таймера T1 (уставка «Тимп»). Алгоритм работы выполнен в соответствии с рисунком \ref{lovn:img1}. В таблице \ref{lovn:tbl1} приведены параметры, необходимые для настройки функции.
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЛО ВН\hfill\vspace{-0.5\baselineskip}}\label{lovn:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lovn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*HVCBPTRC1|T_HVTCBOFF
-\multicolumn{5}{|c|}{ ЛО } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность импульса (Тимп)  & \centering T1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-%===t1
-\end{longtable}
-\normalsize
 
 \vspace{2mm}
 \begin{figure}[H]

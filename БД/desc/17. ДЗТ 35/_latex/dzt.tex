@@ -130,6 +130,8 @@ I_{\textsl{баз,n}}=\frac{S_{\textsl{баз}}}{\sqrt{3} \cdot U_{\textsl{ба�
 \item 
 Для компенсации фазового сдвига, обусловленного различными группами соединения обмоток трансформатора, для каждой из сторон предусмотрены задаваемые параметры («Nсх1», «Nсх2», «Nсх3»). Значения данных параметров (от 0 до 11) определяют коэффициенты матрицы $M_{11,n}\dots M_{33,n}$ в соответствие с таблицей \ref{dzt:tbl0}.
 
+\item 
+В таблице \ref{app_set:dzt} приведены параметры, необходимые для настройки ДЗТ.
 %\vspace{1mm}
 %\emph{\textls[50]{Компенсация утроенного тока нулевой последовательности}}
 %\par
@@ -314,7 +316,7 @@ I_{\textsl{торм.C}} = \frac{1}{2}(\left |\vec I_{C,1*}|+|\vec I_{C,2*}|+|\ve
 При выявлении неисправности в цепях ТТ, что определяется срабатыванием КЦТ по сторонам трансформатора (см. подраздел \ref{sec:kzt}) автоматически увеличивается уровень тока срабатывания горизонтального участка тормозной характеристики для снижения вероятности ложного срабатывания ДТЗт в режиме протекания токов нагрузки путем загрубления уставки ДТЗт до уровня «Iср\_загр» (см. рисунок \ref{dzt:char}).
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{dzt:img1}. В таблице \ref{dzt:tbl1} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{dzt:img1}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -322,142 +324,7 @@ I_{\textsl{торм.C}} = \frac{1}{2}(\left |\vec I_{C,1*}|+|\vec I_{C,2*}|+|\ve
 \captionof{figure}{Функциональная схема логики ДТЗт}
 \label{dzt:img1}
 \end{figure}
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ДТЗт\hfill\vspace{-0.5\baselineskip}}\label{dzt:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{dzt:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*PDIF1|TDIF
-\multicolumn{5}{|c|}{ Общие } \\ \hline 
-\centering Использование стороны 1 (Сторона1)  & \centering Сторона1 & \centering Не используется \\ Используется & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Использование стороны 2 (Сторона2)  & \centering Сторона2 & \centering Не используется \\ Используется & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Использование стороны 3 (Сторона3)  & \centering Сторона3 & \centering Не используется \\ Используется & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Базисная мощность (Sбаз)  & \centering Sбаз & \centering 1000...500000 & \centering кВА & \centering \arraybackslash 100 \\
-\hline
-\multicolumn{5}{|c|}{ Сторона 1 } \\ \hline 
-\centering Схема соединения трансформаторов тока стороны 1 (КсхемСт1)  & \centering КсхемСт1 & \centering Звезда \\ Треугольник & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Номинальное напряжение стороны 1 (Uном1)  & \centering Uном1 & \centering 6,00...250,00 & \centering кВ & \centering \arraybackslash 0,01 \\
-\hline
-\centering Номинальный первичный ток ТТ стороны 1 (IпервСт1)  & \centering IпервСт1 & \centering 1...40000 & \centering А & \centering \arraybackslash 1 \\
-\hline
-\centering Номинальный вторичный ток ТТ стороны 1 (IвторСт1)  & \centering IвторСт1 & \centering 0,2...5,0 & \centering А & \centering \arraybackslash 0,1 \\
-\hline
-\centering Коэффициент коррекции полярности ТТ стороны 1 (KпСт1)  & \centering KпСт1 & \centering Синфазное включение & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Компенсация токов 3I0 стороны 1 (Компенс3I0Ст1)  & \centering Компенс3I0Ст1 & \centering Без компенсации токов 3I0 \\ С компенсацией токов 3I0 & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Векторная группа стороны 1 (NсхСт1)  & \centering NсхСт1 & \centering 0...11 & \centering -- & \centering \arraybackslash 1 \\
-\hline
-\multicolumn{5}{|c|}{ Сторона 2 } \\ \hline 
-\centering Схема соединения трансформаторов тока стороны 2 (КсхемСт2)  & \centering КсхемСт2 & \centering Звезда \\ Треугольник & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Номинальное напряжение стороны 2 (Uном2)  & \centering Uном2 & \centering 6,00...250,00 & \centering кВ & \centering \arraybackslash 0,01 \\
-\hline
-\centering Номинальный первичный ток ТТ стороны 2 (IпервСт2)  & \centering IпервСт2 & \centering 1...40000 & \centering А & \centering \arraybackslash 1 \\
-\hline
-\centering Номинальный вторичный ток ТТ стороны 2 (IвторСт2)  & \centering IвторСт2 & \centering 0,2...5,0 & \centering А & \centering \arraybackslash 0,1 \\
-\hline
-\centering Коэффициент коррекции полярности ТТ стороны 2 (KпСт2)  & \centering KпСт2 & \centering Синфазное включение & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Компенсация токов 3I0 стороны 2 (Компенс3I0Ст2)  & \centering Компенс3I0Ст2 & \centering Без компенсации токов 3I0 \\ С компенсацией токов 3I0 & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Векторная группа стороны 2 (NсхСт2)  & \centering NсхСт2 & \centering 0...11 & \centering -- & \centering \arraybackslash 1 \\
-\hline
-\multicolumn{5}{|c|}{ Сторона 3 } \\ \hline 
-\centering Схема соединения трансформаторов тока стороны 3 (КсхемСт3)  & \centering КсхемСт3 & \centering Звезда \\ Треугольник & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Номинальное напряжение стороны 3 (Uном3)  & \centering Uном3 & \centering 6,00...250,00 & \centering кВ & \centering \arraybackslash 0,01 \\
-\hline
-\centering Номинальный первичный ток ТТ стороны 3 (IпервСт3)  & \centering IпервСт3 & \centering 1...40000 & \centering А & \centering \arraybackslash 1 \\
-\hline
-\centering Номинальный вторичный ток ТТ стороны 3 (IвторСт3)  & \centering IвторСт3 & \centering 0,2...5,0 & \centering А & \centering \arraybackslash 0,1 \\
-\hline
-\centering Коэффициент коррекции полярности ТТ стороны 3 (KпСт3)  & \centering KпСт3 & \centering Синфазное включение & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Компенсация токов 3I0 стороны 3 (Компенс3I0Ст3)  & \centering Компенс3I0Ст3 & \centering Без компенсации токов 3I0 \\ С компенсацией токов 3I0 & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Векторная группа стороны 3 (NсхСт3)  & \centering NсхСт3 & \centering 0...11 & \centering -- & \centering \arraybackslash 1 \\
-\hline
-\multicolumn{5}{|c|}{ ДТЗт } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль от БВКЗ (Контр\_БВКЗ)  & \centering SGF3 & \centering Без контроля БВКЗ \\ С контролем БВКЗ & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим блокировки (Реж\_блок)  & \centering SGF2 & \centering Без блокировки \\ Блокировка по 2 гармонике \\ Блокировка по 5 гармонике \\ Блокировка по 2 и 5 гармоникам & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Начальный дифференциальный ток срабатывания (Iср)  & \centering -- & \centering 0,20...0,60 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Начальный дифференциальный ток срабатывания в режиме загрубления (при неисправностях в токовых цепях) (Iср\_загр)  & \centering -- & \centering 0,20...10,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Коэффициент торможения первого наклонного участка (Kт1)  & \centering -- & \centering 0,20...1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Начальный тормозной ток первого наклонного участка (Iт1)  & \centering -- & \centering 0,60...3,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Коэффициент торможения второго наклонного участка (Kт2)  & \centering -- & \centering 0,20...1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Начальный тормозной ток второго наклонного участка (Iт2)  & \centering -- & \centering 1,20...10,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...3000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ДТО } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Дифференциальный ток срабатывания (Iср)  & \centering I> & \centering 3,0...20,0 & \centering о.е. & \centering \arraybackslash 0,1 \\
-\hline
-\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...3000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ Д2Г } \\ \hline 
-\centering Коэффициент отношения второй гармоники к первой гармонике для выполнения пусковых условий (Ih2/Ih1)  & \centering I2г/I1г> & \centering 0,10...0,50 & \centering -- & \centering \arraybackslash 0,01 \\
-\hline
-\centering Режим перекрестной блокировки (Перекр\_блок)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени ввода перекрестной блокировки (Tперек\_блок)  & \centering T2 & \centering 60...4000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени на возврат (Tвоз)  & \centering T1 & \centering 0...100 & \centering мс & \centering \arraybackslash 1 \\
-\hline
-\multicolumn{5}{|c|}{ Д5Г } \\ \hline 
-\centering Коэффициент отношения пятой гармоники к первой гармонике для выполнения пусковых условий (Ih5/Ih1)  & \centering I5г/I1г> & \centering 0,05...0,40 & \centering -- & \centering \arraybackslash 0,01 \\
-\hline
-\centering Режим перекрестной блокировки (Перекр\_блок)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени ввода перекрестной блокировки (Tперек\_блок)  & \centering T2 & \centering 60...4000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени на возврат (Tвоз)  & \centering T1 & \centering 0...100 & \centering мс & \centering \arraybackslash 1 \\
-\hline
-\multicolumn{5}{|c|}{ БВКЗ } \\ \hline 
-\centering Работа селектора по отрицательной/положительной полуволне (Знак\_полуволны)  & \centering -- & \centering Отрицательная полуволна \\ Положительная полуволна & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Зона нечувствительности (Зона\_нечувств)  & \centering -- & \centering 0,01...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Время, соответствующее углу блокировки (TуголБлок)  & \centering -- & \centering 0,0010...0,0090 & \centering с & \centering \arraybackslash 0,0001 \\
-\hline
-\multicolumn{5}{|c|}{ КЦТнеб } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Ток срабатывания (Iср)  & \centering Idiff> & \centering 0,04...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0,0...110,0 & \centering с & \centering \arraybackslash 0,1 \\
-%===t1
-\end{longtable}
-\normalsize
+
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ДИФОТСЕЧКА %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

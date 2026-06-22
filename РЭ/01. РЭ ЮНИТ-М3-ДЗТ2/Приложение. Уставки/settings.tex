@@ -1,0 +1,960 @@
+\color{unidarkgreen}{\section[(обязательное) Уставки функций РЗА]{(обязательное)\\Уставки функций РЗА}\label{app:set}}
+\color{black}
+
+
+\par
+Уставки ДЗТ представлены в таблице \ref{app_set:dzt}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ДЗТ\hfill\vspace{-0.5\baselineskip}}\label{app_set:dzt}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:dzt}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%==+t1*PDIF1|TDIF
+\multicolumn{5}{|c|}{ Общие } \\ \hline 
+\centering Использование стороны 1 (Сторона1)  & \centering Сторона1 & \centering Не используется \\ Используется & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Использование стороны 2 (Сторона2)  & \centering Сторона2 & \centering Не используется \\ Используется & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Использование стороны 3 (Сторона3)  & \centering Сторона3 & \centering Не используется \\ Используется & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Базисная мощность (Sбаз)  & \centering Sбаз & \centering 1000...500000 & \centering кВА & \centering \arraybackslash 100 \\
+\hline
+\multicolumn{5}{|c|}{ Сторона 1 } \\ \hline 
+\centering Схема соединения трансформаторов тока стороны 1 (КсхемСт1)  & \centering КсхемСт1 & \centering Звезда \\ Треугольник & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номинальное напряжение стороны 1 (Uном1)  & \centering Uном1 & \centering 6,00...250,00 & \centering кВ & \centering \arraybackslash 0,01 \\
+\hline
+\centering Номинальный первичный ток ТТ стороны 1 (IпервСт1)  & \centering IпервСт1 & \centering 1...40000 & \centering А & \centering \arraybackslash 1 \\
+\hline
+\centering Номинальный вторичный ток ТТ стороны 1 (IвторСт1)  & \centering IвторСт1 & \centering 0,2...5,0 & \centering А & \centering \arraybackslash 0,1 \\
+\hline
+\centering Коэффициент коррекции полярности ТТ стороны 1 (KпСт1)  & \centering KпСт1 & \centering Синфазное включение & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Компенсация токов 3I0 стороны 1 (Компенс3I0Ст1)  & \centering Компенс3I0Ст1 & \centering Без компенсации токов 3I0 \\ С компенсацией токов 3I0 & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Векторная группа стороны 1 (NсхСт1)  & \centering NсхСт1 & \centering 0...11 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\multicolumn{5}{|c|}{ Сторона 2 } \\ \hline 
+\centering Схема соединения трансформаторов тока стороны 2 (КсхемСт2)  & \centering КсхемСт2 & \centering Звезда \\ Треугольник & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номинальное напряжение стороны 2 (Uном2)  & \centering Uном2 & \centering 6,00...250,00 & \centering кВ & \centering \arraybackslash 0,01 \\
+\hline
+\centering Номинальный первичный ток ТТ стороны 2 (IпервСт2)  & \centering IпервСт2 & \centering 1...40000 & \centering А & \centering \arraybackslash 1 \\
+\hline
+\centering Номинальный вторичный ток ТТ стороны 2 (IвторСт2)  & \centering IвторСт2 & \centering 0,2...5,0 & \centering А & \centering \arraybackslash 0,1 \\
+\hline
+\centering Коэффициент коррекции полярности ТТ стороны 2 (KпСт2)  & \centering KпСт2 & \centering Синфазное включение & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Компенсация токов 3I0 стороны 2 (Компенс3I0Ст2)  & \centering Компенс3I0Ст2 & \centering Без компенсации токов 3I0 \\ С компенсацией токов 3I0 & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Векторная группа стороны 2 (NсхСт2)  & \centering NсхСт2 & \centering 0...11 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\multicolumn{5}{|c|}{ Сторона 3 } \\ \hline 
+\centering Схема соединения трансформаторов тока стороны 3 (КсхемСт3)  & \centering КсхемСт3 & \centering Звезда \\ Треугольник & \centering -- & \centering \arraybackslash -- \\
+\hlinepar
+\centering Номинальное напряжение стороны 3 (Uном3)  & \centering Uном3 & \centering 6,00...250,00 & \centering кВ & \centering \arraybackslash 0,01 \\
+\hline
+\centering Номинальный первичный ток ТТ стороны 3 (IпервСт3)  & \centering IпервСт3 & \centering 1...40000 & \centering А & \centering \arraybackslash 1 \\
+\hline
+\centering Номинальный вторичный ток ТТ стороны 3 (IвторСт3)  & \centering IвторСт3 & \centering 0,2...5,0 & \centering А & \centering \arraybackslash 0,1 \\
+\hline
+\centering Коэффициент коррекции полярности ТТ стороны 3 (KпСт3)  & \centering KпСт3 & \centering Синфазное включение & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Компенсация токов 3I0 стороны 3 (Компенс3I0Ст3)  & \centering Компенс3I0Ст3 & \centering Без компенсации токов 3I0 \\ С компенсацией токов 3I0 & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Векторная группа стороны 3 (NсхСт3)  & \centering NсхСт3 & \centering 0...11 & \centering -- & \centering \arraybackslash 1 \\
+\hline
+\multicolumn{5}{|c|}{ ДТЗт } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль от БВКЗ (Контр\_БВКЗ)  & \centering SGF3 & \centering Без контроля БВКЗ \\ С контролем БВКЗ & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим блокировки (Реж\_блок)  & \centering SGF2 & \centering Без блокировки \\ Блокировка по 2 гармонике \\ Блокировка по 5 гармонике \\ Блокировка по 2 и 5 гармоникам & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Начальный дифференциальный ток срабатывания (Iср)  & \centering -- & \centering 0,20...0,60 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Начальный дифференциальный ток срабатывания в режиме загрубления (при неисправностях в токовых цепях) (Iср\_загр)  & \centering -- & \centering 0,20...10,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Коэффициент торможения первого наклонного участка (Kт1)  & \centering -- & \centering 0,20...1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Начальный тормозной ток первого наклонного участка (Iт1)  & \centering -- & \centering 0,60...3,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Коэффициент торможения второго наклонного участка (Kт2)  & \centering -- & \centering 0,20...1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Начальный тормозной ток второго наклонного участка (Iт2)  & \centering -- & \centering 1,20...10,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...3000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ДТО } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Дифференциальный ток срабатывания (Iср)  & \centering I> & \centering 3,0...20,0 & \centering о.е. & \centering \arraybackslash 0,1 \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...3000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ Д2Г } \\ \hline 
+\centering Коэффициент отношения второй гармоники к первой гармонике для выполнения пусковых условий (Ih2/Ih1)  & \centering I2г/I1г> & \centering 0,10...0,50 & \centering -- & \centering \arraybackslash 0,01 \\
+\hline
+\centering Режим перекрестной блокировки (Перекр\_блок)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени ввода перекрестной блокировки (Tперек\_блок)  & \centering T2 & \centering 60...4000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени на возврат (Tвоз)  & \centering T1 & \centering 0...100 & \centering мс & \centering \arraybackslash 1 \\
+\hline
+\multicolumn{5}{|c|}{ Д5Г } \\ \hline 
+\centering Коэффициент отношения пятой гармоники к первой гармонике для выполнения пусковых условий (Ih5/Ih1)  & \centering I5г/I1г> & \centering 0,05...0,40 & \centering -- & \centering \arraybackslash 0,01 \\
+\hline
+\centering Режим перекрестной блокировки (Перекр\_блок)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени ввода перекрестной блокировки (Tперек\_блок)  & \centering T2 & \centering 60...4000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Выдержка времени на возврат (Tвоз)  & \centering T1 & \centering 0...100 & \centering мс & \centering \arraybackslash 1 \\
+\hline
+\multicolumn{5}{|c|}{ БВКЗ } \\ \hline 
+\centering Работа селектора по отрицательной/положительной полуволне (Знак\_полуволны)  & \centering -- & \centering Отрицательная полуволна \\ Положительная полуволна & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Зона нечувствительности (Зона\_нечувств)  & \centering -- & \centering 0,01...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Время, соответствующее углу блокировки (TуголБлок)  & \centering -- & \centering 0,0010...0,0090 & \centering с & \centering \arraybackslash 0,0001 \\
+\hline
+\multicolumn{5}{|c|}{ КЦТнеб } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering Idiff> & \centering 0,04...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0,0...110,0 & \centering с & \centering \arraybackslash 0,1 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КЦТ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\par
+Уставки КЦТ представлены в таблице \ref{app_set:kzt}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+
+\caption{Параметры для настройки КЦТ\hfill\vspace{-0.5\baselineskip}}\label{app_set:kzt}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:kzt}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%==+t1*RCTR1|CTR_UIRZ
+\multicolumn{5}{|c|}{ КЦТст1 } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля обрыва провода (Контр\_обр\_пров)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номинальный ток токового входа терминала (Iном)  & \centering -- & \centering 0,2...5,0 & \centering А & \centering \arraybackslash 0,1 \\
+\hline
+\centering Минимальное значение фазного тока (Iмин)  & \centering Iмин< & \centering 0,05...1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Коэффициент симметрии (Kсим)  & \centering Iмин/Iмакс< & \centering 0,10...0,95 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Минимальная величина максимального из фазных токов (LIсим)  & \centering Iмакс> & \centering 0,01...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени на срабатывание по критерию обрыва фазы (Tобрыв)  & \centering T1 & \centering 0,00...100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени на срабатывание по асимметрии токов (Tасим)  & \centering T2 & \centering 0,00...100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\multicolumn{5}{|c|}{ КЦТст2 } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля обрыва провода (Контр\_обр\_пров)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номинальный ток токового входа терминала (Iном)  & \centering -- & \centering 0,2...5,0 & \centering А & \centering \arraybackslash 0,1 \\
+\hline
+\centering Минимальное значение фазного тока (Iмин)  & \centering Iмин< & \centering 0,05...1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Коэффициент симметрии (Kсим)  & \centering Iмин/Iмакс< & \centering 0,10...0,95 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Минимальная величина максимального из фазных токов (LIсим)  & \centering Iмакс> & \centering 0,01...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени на срабатывание по критерию обрыва фазы (Tобрыв)  & \centering T1 & \centering 0,00...100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени на срабатывание по асимметрии токов (Tасим)  & \centering T2 & \centering 0,00...100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\multicolumn{5}{|c|}{ КЦТст3 } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля обрыва провода (Контр\_обр\_пров)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номинальный ток токового входа терминала (Iном)  & \centering -- & \centering 0,2...5,0 & \centering А & \centering \arraybackslash 0,1 \\
+\hline
+\centering Минимальное значение фазного тока (Iмин)  & \centering Iмин< & \centering 0,05...1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Коэффициент симметрии (Kсим)  & \centering Iмин/Iмакс< & \centering 0,10...0,95 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Минимальная величина максимального из фазных токов (LIсим)  & \centering Iмакс> & \centering 0,01...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени на срабатывание по критерию обрыва фазы (Tобрыв)  & \centering T1 & \centering 0,00...100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени на срабатывание по асимметрии токов (Tасим)  & \centering T2 & \centering 0,00...100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\multicolumn{5}{|c|}{ КЦТст4 } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля обрыва провода (Контр\_обр\_пров)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номинальный ток токового входа терминала (Iном)  & \centering -- & \centering 0,2...5,0 & \centering А & \centering \arraybackslash 0,1 \\
+\hline
+\centering Минимальное значение фазного тока (Iмин)  & \centering Iмин< & \centering 0,05...1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Коэффициент симметрии (Kсим)  & \centering Iмин/Iмакс< & \centering 0,10...0,95 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Минимальная величина максимального из фазных токов (LIсим)  & \centering Iмакс> & \centering 0,01...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени на срабатывание по критерию обрыва фазы (Tобрыв)  & \centering T1 & \centering 0,00...100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени на срабатывание по асимметрии токов (Tасим)  & \centering T2 & \centering 0,00...100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\multicolumn{5}{|c|}{ КЦТст5 } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Режим контроля обрыва провода (Контр\_обр\_пров)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Номинальный ток токового входа терминала (Iном)  & \centering -- & \centering 0,2...5,0 & \centering А & \centering \arraybackslash 0,1 \\
+\hline
+\centering Минимальное значение фазного тока (Iмин)  & \centering Iмин< & \centering 0,05...1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Коэффициент симметрии (Kсим)  & \centering Iмин/Iмакс< & \centering 0,10...0,95 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Минимальная величина максимального из фазных токов (LIсим)  & \centering Iмакс> & \centering 0,01...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени на срабатывание по критерию обрыва фазы (Tобрыв)  & \centering T1 & \centering 0,00...100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени на срабатывание по асимметрии токов (Tасим)  & \centering T2 & \centering 0,00...100,00 & \centering с & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗПО %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\par
+В таблице \ref{app_set:zpo} приведены параметры, необходимые для настройки функции.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЗПО\hfill\vspace{-0.5\baselineskip}}\label{app_set:zpo}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:zpo}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PALC1|EQPALC
+\centering Ввод ЗПО в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль тока (Контр\_тока)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль температуры масла (Контр\_темп\_масла)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...3600 & \centering с & \centering \arraybackslash 1 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ТО ЗПО %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\par
+В таблице \ref{app_set:tozpo} приведены параметры, необходимые для настройки ТО ЗПО.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функций в составе ТО ЗПО\hfill\vspace{-0.5\baselineskip}}\label{app_set:tozpo}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:tozpo}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*HVPTOC1|TPALC
+\multicolumn{5}{|c|}{ ТО ЗПО ВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,10...30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\multicolumn{5}{|c|}{ ТО ЗПО СН (НН1) } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,10...30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\multicolumn{5}{|c|}{ ТО ЗПО НН (НН2) } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,10...30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗП %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\par
+В таблице \ref{app_set:zp} приведены параметры, необходимые для настройки ЗП.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функций в составе ЗП\hfill\vspace{-0.5\baselineskip}}\label{app_set:zp}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:zp}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*HVPTOC1|TOVCTOC
+\multicolumn{5}{|c|}{ ЗП ВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,10...5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...3600000 & \centering мс & \centering \arraybackslash 100 \\
+\hline
+\multicolumn{5}{|c|}{ ЗП СН (НН1) } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,10...5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...3600000 & \centering мс & \centering \arraybackslash 100 \\
+\hline
+\multicolumn{5}{|c|}{ ЗП НН (НН2) } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,10...5,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...3600000 & \centering мс & \centering \arraybackslash 100 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% РТПО %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\par
+В таблице \ref{rtpo:tbl1} приведены параметры, необходимые для настройки РТПО.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функций в составе РТПО\hfill\vspace{-0.5\baselineskip}}\label{rtpo:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{rtpo:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*HVPTOC1|STRTPALC
+\multicolumn{5}{|c|}{ РТПО ВН } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,10...30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\multicolumn{5}{|c|}{ РТПО СН (НН1) } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,10...30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\multicolumn{5}{|c|}{ РТПО НН (НН2) } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,10...30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ТК ЗДЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+В таблице \ref{tkzdz:tbl1} приведены параметры, необходимые для настройки ТК ЗДЗ.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ТК ЗДЗ\hfill\vspace{-0.5\baselineskip}}\label{tkzdz:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tkzdz:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PTOC1|LVARCTOC
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,10...30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ТО РПН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+В таблице \ref{torpn:tbl1} приведены параметры, необходимые для настройки ТО РПН.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ТО РПН\hfill\vspace{-0.5\baselineskip}}\label{torpn:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{torpn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PTOC1|LTCBLKTOC
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,10...30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО ГЗоткл %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\par
+
+В таблице \ref{logzotkl:tbl1} приведены параметры, необходимые для настройки ЛО ГЗоткл.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки логики отключения при срабатывании отключающего контакта газового реле трансформатора\hfill\vspace{-0.5\baselineskip}}\label{logzotkl:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{logzotkl:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PTRC1|TTRGASLGC
+\multicolumn{5}{|c|}{ БУ } \\ \hline 
+\centering Выдержка времени срабатывания на блокировку (Тбл)  & \centering T1 & \centering 0...30000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка от низкой изоляции (Блок\_от\_НИ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО ГЗсигн %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\par
+
+В таблице \ref{logzsign:tbl1} приведены параметры, необходимые для настройки ЛО ГЗсигн.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки логики отключения при срабатывании сигнального контакта газового реле трансформатора\hfill\vspace{-0.5\baselineskip}}\label{logzsign:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{logzsign:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PTRC1|TALMGASLGC
+\multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания на блокировку (Тбл)  & \centering T1 & \centering 0...30000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Блокировка от низкой изоляции (Блок\_от\_НИ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО ГЗ РПН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\par
+
+В таблице \ref{logzrpn:tbl1} приведены параметры, необходимые для настройки ЛО ГЗ РПН.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки логики отключения при срабатывании струйного реле РПН трансформатора\hfill\vspace{-0.5\baselineskip}}\label{logzrpn:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{logzrpn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PTRC1|TLTCGASLGC
+\multicolumn{5}{|c|}{ БУ } \\ \hline 
+\centering Выдержка времени срабатывания на блокировку (Тбл)  & \centering T1 & \centering 0...30000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка от низкой изоляции (Блок\_от\_НИ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО ТЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\par
+
+В таблице \ref{lotz:tbl1} приведены параметры, необходимые для настройки ЛО ТЗ.
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Общие параметры для настройки ЛО ТЗ\hfill\vspace{-0.5\baselineskip}}\label{lotz:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lotz:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*LLN0|APTTECHLGC
+\multicolumn{5}{|c|}{ БУ } \\ \hline 
+\centering Выдержка времени срабатывания на блокировку (Тбл)  & \centering T1 & \centering 0...30000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ЛО ДТм } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка от низкой изоляции (Блок\_от\_НИ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ЛО ДТо } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка от низкой изоляции (Блок\_от\_НИ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ЛО РД } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Блокировка от низкой изоляции (Блок\_от\_НИ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО ТС %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\par
+
+В таблице \ref{lotspk:tbl1} приведены параметры, необходимые для настройки ЛО ТС.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЛО ПК\hfill\vspace{-0.5\baselineskip}}\label{lotspk:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lotspk:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PRVLVPTRC1|ALMTECHLGC_UIRZ
+\multicolumn{5}{|c|}{ ЛО ПК } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ЛО ОК } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ЛО ДУм расширителя } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО Т %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+В таблице \ref{loobsh:tbl1} приведены параметры, необходимые для настройки ЛО Т.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЛО Т\hfill\vspace{-0.5\baselineskip}}\label{loobsh:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{loobsh:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*PTRC1|TPRMOFFLVLGC
+\multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\multicolumn{5}{|c|}{ ЗАПВ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО ВН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+В таблице \ref{lovn:tbl1} приведены параметры, необходимые для настройки ЛО ВН.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЛО ВН\hfill\vspace{-0.5\baselineskip}}\label{lovn:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lovn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*HVCBPTRC1|HVTCBOFF
+\multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Длительность импульса (Тимп)  & \centering T1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО НН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+В таблице \ref{lonn:tbl1} приведены параметры, необходимые для настройки ЛО НН.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки логики отключения выключателя\hfill\vspace{-0.5\baselineskip}}\label{lonn:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lonn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*LVCBPTRC1|LVTPRMCBOFF1
+\multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Длительность импульса (Тимп)  & \centering T1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\multicolumn{5}{|c|}{ ЗАПВ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+В таблице \ref{urov35:tbl1} приведены параметры, необходимые для настройки УРОВ.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки УРОВ\hfill\vspace{-0.5\baselineskip}}\label{urov35:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*GENRBRF1|DZT2_TPBRF
+\multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Ток срабатывания (Iср)  & \centering I> & \centering 0,05...0,50 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\centering УРОВ с подхватом по току (Подхват\_по\_току)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль по току при действии "на себя" (Контр\_тока\_на\_себя)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...1000 & \centering мс & \centering \arraybackslash 10 \\
+\hline
+\centering Действие внешнего УРОВ на вышестоящий выключатель (Действ\_на\_выш\_выкл)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль ЭМО (Контроль\_ЭМО)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено по ЭМО1 \\ Предусмотрено по ЭМО1 и ЭМО2 & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ПС %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+В таблице \ref{ps:tbl1} приведены параметры, необходимые для настройки ПС. 
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки предупредительной сигнализации\hfill\vspace{-0.5\baselineskip}}\label{ps:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ps:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*CALH1|DZT2_LVALH
+\centering Контроль сигнала «ГЗ сигн» (Контр\_ГЗ\_сигн)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль сигнала «Низ. изол. ГЗ» (Контр\_Низ\_изол\_ГЗ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль сигнала «ГЗ заблокирована» (Контр\_ГЗ\_блок)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль сигнала «ТЗ сигн» (Контр\_ТЗ\_сигн)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль сигнала «Низ. изол. ТЗ» (Контр\_Низ\_изол\_ТЗ)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль сигнала «ТЗ заблокирована» (Контр\_ТЗ\_блок)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль сигнала «ТС сигн» (Контр\_ТС\_сигн)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль сигнала «ОТ сигн» (Контр\_ОТ\_сигн)  & \centering SGF8 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль сигнала «ОТ НН сигн» (Контр\_ОТ\_НН\_сигн)  & \centering SGF9 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль сигнала «Внеш. откл» (Контр\_Внеш\_откл)  & \centering SGF10 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль сигнала «Вых. цепи разобраны» (Контр\_Вых\_цеп\_разоб)  & \centering SGF11 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль сигнала «БИ выведены» (Контр\_БИ\_выведены)  & \centering SGF12 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль общего внешнего сигнала (Контр\_общ\_внеш\_сигн)  & \centering SGF13 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% СС %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+В таблице \ref{ss:tbl1} приведены параметры, необходимые для настройки СС.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки функции сборки сигналов\hfill\vspace{-0.5\baselineskip}}\label{ss:tbl1}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\hfill\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{ss:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+%\hline
+\endfoot
+%\hline
+\endlastfoot
+%==+t1*GAPC1|DZT2_SignAssembly
+\multicolumn{5}{|c|}{ CC } \\ \hline 
+\centering Контроль положения SA1 (Контр\_полож\_SA1)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения SA2 (Контр\_полож\_SA2)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения SA3 (Контр\_полож\_SA3)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения SA4 (Контр\_полож\_SA4)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения SG1 (Контр\_полож\_SG1)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения SG2 (Контр\_полож\_SG2)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль положения SG3 (Контр\_полож\_SG3)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль опер. тока цепей ГЗ (Контр\_ОТ\_ГЗ)  & \centering SGF8 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль опер. тока цепей ТЗ, ТС (Контр\_ОТ\_ТЗ\_ТС)  & \centering SGF9 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль опер. тока цепей ЗДЗ НН1 (Контр\_ОТ\_ЗДЗ1)  & \centering SGF10 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль опер. тока цепей ЗДЗ НН2 (Контр\_ОТ\_ЗДЗ2)  & \centering SGF11 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль опер. тока цепей УРОВ НН1 (Контр\_ОТ\_УРОВ1)  & \centering SGF12 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+\centering Контроль опер. тока цепей УРОВ НН2 (Контр\_ОТ\_УРОВ2)  & \centering SGF13 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\hline
+%===t1
+\end{longtable}
+\normalsize
