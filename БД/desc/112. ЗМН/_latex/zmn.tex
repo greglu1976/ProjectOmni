@@ -53,7 +53,7 @@
 При активном состоянии входного сигнала «ЗМН 1 на сигн», «ЗМН 2 на сигн» действие соответствующей функции переводится на сигнал.
 
 \item
-Алгоритм работы функции «ЗМН 1» выполнен в соответствии с рисунком \ref{zmn:img1}. Алгоритм работы функции «ЗМН 2» аналогичный. В таблице \ref{zmn:tbl1} приведены параметры, необходимые для настройки функций.
+Алгоритм работы функции «ЗМН 1» выполнен в соответствии с рисунком \ref{zmn:img1}. Алгоритм работы функции «ЗМН 2» аналогичный. В таблице \ref{zmn:tbl1} приведены параметры, необходимые для настройки функции ЗМН 1. В таблице \ref{zmn1:tbl1} приведены параметры, необходимые для настройки функции ЗМН 2.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -62,38 +62,5 @@
 \captionof{figure}{Функциональная схема логики ЗМН 1}\label{zmn:img1}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЗМН\hfill\vspace{-0.5\baselineskip}}\label{zmn:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{zmn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*PTUV1|LVTUV
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Напряжение срабатывания (Uср)  & \centering U< & \centering 2,0...100,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Напряжение срабатывания ОП (U2ср)  & \centering U2> & \centering 2,0...50,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Контроль напряжения ОП (Контроль\_U2)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выбор режима работы (Реж\_работы)  & \centering SGF2 & \centering По 1 линейному \\ По 2 линейным \\ По 3 линейным & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}

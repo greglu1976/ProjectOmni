@@ -44,7 +44,7 @@
 При активном состоянии входного сигнала «ЗИЧ 1 на сигн», «ЗИЧ 2 на сигн» действие соответствующей функции ЗИЧ переводится на сигнал.
 
 \item
-Алгоритм работы функции «ЗИЧ 1» выполнен в соответствии с рисунком \ref{zich:img1}. Алгоритм работы функции «ЗИЧ 2» аналогичный. В таблице \ref{zich:tbl1} приведены параметры, необходимые для настройки функций.
+Алгоритм работы ЗИЧ 1 выполнен в соответствии с рисунком \ref{zich:img1}. Алгоритм работы ЗИЧ 2 аналогичный. В таблице \ref{zich:tbl1} приведены параметры, необходимые для настройки ЗИЧ 1. В таблице \ref{zich1:tbl1} приведены параметры, необходимые для настройки ЗИЧ 2.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -52,41 +52,5 @@
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/118. ЗИЧ/_latex/img/zich.pdf}
 \captionof{figure}{Функциональная схема логики ЗИЧ 1}\label{zich:img1}
 \end{figure}
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЗИЧ\hfill\vspace{-0.5\baselineskip}}\label{zich:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{zich:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*BLKPFRC1|LVPFRC
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Величина срабатывания по скорости изменения частоты (dFdtСр)  & \centering dF/dt & \centering 0,1...15,0 & \centering Гц/с & \centering \arraybackslash 0,1 \\
-\hline
-\centering Коэффициент возврата по скорости изменения частоты (Kвоз)  & \centering -- & \centering 0,20...0,99 & \centering -- & \centering \arraybackslash 0,01 \\
-\hline
-\centering Напряжение срабатывания (Uср)  & \centering U< & \centering 2,0...100,0 & \centering В & \centering \arraybackslash 0,1 \\
-\hline
-\centering Режим работы ЗИЧ (Реж\_ЗИЧ)  & \centering SGF2 & \centering по dF>/dt \\ по dF</dt & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Выдержка времени на возврат (Tвоз)  & \centering T2 & \centering 0...10000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\centering Выдержка времени срабатывания (Tср)  & \centering T1 & \centering 0...100000 & \centering мс & \centering \arraybackslash 10 \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
