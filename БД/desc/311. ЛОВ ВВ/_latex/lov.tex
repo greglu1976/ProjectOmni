@@ -26,6 +26,9 @@
 \item
 Функциональный блок может быть полностью выведен из работы оперативно путем активации сигнала «ОВ ЛОВ».
 
+\item
+В таблице \ref{lorz:tbl1} приведены параметры, необходимые для настройки ЛОВ.
+
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Логика отключения от релейной защиты (ЛО РЗ) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -50,7 +53,7 @@
 Функция может быть выведена из работы оперативно путем активации сигнала «ОВ ЛО РЗ», что характеризуется активным состоянием сигнала «ЛО РЗ: Оперативный вывод» на выходе функции.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{lorz:img1}. В таблице \ref{lorz:tbl1} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{lorz:img1}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -59,106 +62,6 @@
 \captionof{figure}{Функциональная схема ЛО РЗ}\label{lorz:img1}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЛО РЗ\hfill\vspace{-0.5\baselineskip}}\label{lorz:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lorz:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*OFFPTRC1|VV_LVINCONOFFLGC
-\multicolumn{5}{|c|}{ ЛО РЗ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность импульса (Tимп)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЛО ВНР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность импульса (Tимп)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЛВ ВНР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль синхронизма (Контр\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность задержки включения с контролем синхронизма (Тср)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЗАПВ } \\ \hline 
-\centering Режим запрета АПВ при срабатывании ДЗфф 1 ступени (ЗапАПВ\_ДЗфф\_1ст)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ДЗфф 2 ступени (ЗапАПВ\_ДЗфф\_2ст)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ДЗфф 3 ступени (ЗапАПВ\_ДЗфф\_3ст)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ТЗНП 1 ступени (ЗапАПВ\_ТЗНП\_1ст)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ТЗНП 2 ступени (ЗапАПВ\_ТЗНП\_2ст)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЛЗШ (ЗапАПВ\_ЛЗШ)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 1 ступени (ЗапАПВ\_МТЗ\_1ст)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 2 ступени (ЗапАПВ\_МТЗ\_2ст)  & \centering SGF8 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 3 ступени (ЗапАПВ\_МТЗ\_3ст)  & \centering SGF9 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗОП (ЗапАПВ\_ЗОП)  & \centering SGF10 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании АУ (ЗапАПВ\_АУ)  & \centering SGF11 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗП (ЗапАПВ\_ЗП)  & \centering SGF12 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ ДЗ (ЗапАПВ\_ОУ\_ДЗ)  & \centering SGF13 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ ТЗНП (ЗапАПВ\_ОУ\_ТЗНП)  & \centering SGF14 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ МТЗ (ЗапАПВ\_ОУ\_МТЗ)  & \centering SGF15 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗДЗ (ЗапАПВ\_ЗДЗ)  & \centering SGF16 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗМН 1 ступени (ЗапАПВ\_ЗМН\_1ст)  & \centering SGF17 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗМН 2 ступени (ЗапАПВ\_ЗМН\_2ст)  & \centering SGF18 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании УРОВ «на себя» (ЗапАПВ\_УРОВ\_на\_себя)  & \centering SGF19 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 1 (ЗапАПВ\_Откл\_внеш\_1)  & \centering SGF20 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 2 (ЗапАПВ\_Откл\_внеш\_2)  & \centering SGF21 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 3 (ЗапАПВ\_Откл\_внеш\_3)  & \centering SGF22 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 4 (ЗапАПВ\_Откл\_внеш\_4)  & \centering SGF23 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ЗАВР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering По внешнему сигналу \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Запрет АВР от команды отключить (ЗапАВР\_от\_УВ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 1 (ЗапАВР\_Откл\_внеш\_1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 2 (ЗапАВР\_Откл\_внеш\_2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 3 (ЗапАВР\_Откл\_внеш\_3)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 4 (ЗапАВР\_Откл\_внеш\_4)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Запрет АВР от внешнего сигнала (ЗапАВР\_Внеш)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 
@@ -181,7 +84,7 @@
 Функция может быть выведена из работы оперативно путем активации сигнала «ОВ ВНР», что характеризуется активным состоянием сигнала «ЛО ВНР: Оперативный вывод» на выходе функции.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{lovnr:img1}. В таблице \ref{lovnr:tbl1} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{lovnr:img1}.
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -190,106 +93,6 @@
 \captionof{figure}{Функциональная схема ЛО ВНР}\label{lovnr:img1}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЛО ВНР\hfill\vspace{-0.5\baselineskip}}\label{lovnr:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lovnr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*ECAPTRC1|VV_LVINCONOFFLGC
-\multicolumn{5}{|c|}{ ЛО РЗ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность импульса (Tимп)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЛО ВНР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность импульса (Tимп)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЛВ ВНР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль синхронизма (Контр\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность задержки включения с контролем синхронизма (Тср)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЗАПВ } \\ \hline 
-\centering Режим запрета АПВ при срабатывании ДЗфф 1 ступени (ЗапАПВ\_ДЗфф\_1ст)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ДЗфф 2 ступени (ЗапАПВ\_ДЗфф\_2ст)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ДЗфф 3 ступени (ЗапАПВ\_ДЗфф\_3ст)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ТЗНП 1 ступени (ЗапАПВ\_ТЗНП\_1ст)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ТЗНП 2 ступени (ЗапАПВ\_ТЗНП\_2ст)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЛЗШ (ЗапАПВ\_ЛЗШ)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 1 ступени (ЗапАПВ\_МТЗ\_1ст)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 2 ступени (ЗапАПВ\_МТЗ\_2ст)  & \centering SGF8 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 3 ступени (ЗапАПВ\_МТЗ\_3ст)  & \centering SGF9 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗОП (ЗапАПВ\_ЗОП)  & \centering SGF10 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании АУ (ЗапАПВ\_АУ)  & \centering SGF11 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗП (ЗапАПВ\_ЗП)  & \centering SGF12 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ ДЗ (ЗапАПВ\_ОУ\_ДЗ)  & \centering SGF13 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ ТЗНП (ЗапАПВ\_ОУ\_ТЗНП)  & \centering SGF14 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ МТЗ (ЗапАПВ\_ОУ\_МТЗ)  & \centering SGF15 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗДЗ (ЗапАПВ\_ЗДЗ)  & \centering SGF16 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗМН 1 ступени (ЗапАПВ\_ЗМН\_1ст)  & \centering SGF17 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗМН 2 ступени (ЗапАПВ\_ЗМН\_2ст)  & \centering SGF18 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании УРОВ «на себя» (ЗапАПВ\_УРОВ\_на\_себя)  & \centering SGF19 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 1 (ЗапАПВ\_Откл\_внеш\_1)  & \centering SGF20 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 2 (ЗапАПВ\_Откл\_внеш\_2)  & \centering SGF21 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 3 (ЗапАПВ\_Откл\_внеш\_3)  & \centering SGF22 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 4 (ЗапАПВ\_Откл\_внеш\_4)  & \centering SGF23 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ЗАВР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering По внешнему сигналу \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Запрет АВР от команды отключить (ЗапАВР\_от\_УВ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 1 (ЗапАВР\_Откл\_внеш\_1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 2 (ЗапАВР\_Откл\_внеш\_2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 3 (ЗапАВР\_Откл\_внеш\_3)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 4 (ЗапАВР\_Откл\_внеш\_4)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Запрет АВР от внешнего сигнала (ЗапАВР\_Внеш)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ Логика отключения ВНР (ЛО ВНР) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -322,7 +125,7 @@
 Функция может быть выведена из работы оперативно путем активации сигнала «ОВ ЛВ ВНР», что характеризуется активным состоянием сигнала «ЛВ ВНР: Оперативный вывод» на выходе функции.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{lvvnr:img1}. В таблице \ref{lvvnr:tbl1} приведены параметры, необходимые для настройки функции.
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{lvvnr:img1}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -330,107 +133,6 @@
 \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/311. ЛОВ ВВ/_latex/img/lvvnr.pdf}
 \captionof{figure}{Функциональная схема ЛВ ВНР}\label{lvvnr:img1}
 \end{figure}
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЛВ ВНР\hfill\vspace{-0.5\baselineskip}}\label{lvvnr:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{lvvnr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*ONPTRC1|VV_LVINCONOFFLGC
-\multicolumn{5}{|c|}{ ЛО РЗ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность импульса (Tимп)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЛО ВНР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность импульса (Tимп)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЛВ ВНР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль синхронизма (Контр\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность задержки включения с контролем синхронизма (Тср)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЗАПВ } \\ \hline 
-\centering Режим запрета АПВ при срабатывании ДЗфф 1 ступени (ЗапАПВ\_ДЗфф\_1ст)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ДЗфф 2 ступени (ЗапАПВ\_ДЗфф\_2ст)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ДЗфф 3 ступени (ЗапАПВ\_ДЗфф\_3ст)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ТЗНП 1 ступени (ЗапАПВ\_ТЗНП\_1ст)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ТЗНП 2 ступени (ЗапАПВ\_ТЗНП\_2ст)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЛЗШ (ЗапАПВ\_ЛЗШ)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 1 ступени (ЗапАПВ\_МТЗ\_1ст)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 2 ступени (ЗапАПВ\_МТЗ\_2ст)  & \centering SGF8 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 3 ступени (ЗапАПВ\_МТЗ\_3ст)  & \centering SGF9 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗОП (ЗапАПВ\_ЗОП)  & \centering SGF10 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании АУ (ЗапАПВ\_АУ)  & \centering SGF11 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗП (ЗапАПВ\_ЗП)  & \centering SGF12 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ ДЗ (ЗапАПВ\_ОУ\_ДЗ)  & \centering SGF13 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ ТЗНП (ЗапАПВ\_ОУ\_ТЗНП)  & \centering SGF14 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ МТЗ (ЗапАПВ\_ОУ\_МТЗ)  & \centering SGF15 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗДЗ (ЗапАПВ\_ЗДЗ)  & \centering SGF16 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗМН 1 ступени (ЗапАПВ\_ЗМН\_1ст)  & \centering SGF17 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗМН 2 ступени (ЗапАПВ\_ЗМН\_2ст)  & \centering SGF18 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании УРОВ «на себя» (ЗапАПВ\_УРОВ\_на\_себя)  & \centering SGF19 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 1 (ЗапАПВ\_Откл\_внеш\_1)  & \centering SGF20 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 2 (ЗапАПВ\_Откл\_внеш\_2)  & \centering SGF21 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 3 (ЗапАПВ\_Откл\_внеш\_3)  & \centering SGF22 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 4 (ЗапАПВ\_Откл\_внеш\_4)  & \centering SGF23 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ЗАВР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering По внешнему сигналу \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Запрет АВР от команды отключить (ЗапАВР\_от\_УВ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 1 (ЗапАВР\_Откл\_внеш\_1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 2 (ЗапАВР\_Откл\_внеш\_2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 3 (ЗапАВР\_Откл\_внеш\_3)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 4 (ЗапАВР\_Откл\_внеш\_4)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Запрет АВР от внешнего сигнала (ЗапАВР\_Внеш)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ  Логика включения ВНР (ЛВ ВНР)  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -454,108 +156,7 @@
 Функция может быть выведена из работы оперативно путем активации сигнала «ОВ ЛОВ», что характеризуется активным состоянием сигнала «ЗАПВ: Оперативный вывод» на выходе функции.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{zapv:img1}. В таблице \ref{zapv:tbl1} приведены параметры, необходимые для настройки функции.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЗАПВ\hfill\vspace{-0.5\baselineskip}}\label{zapv:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{zapv:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*RECRBRE1|VV_LVINCONOFFLGC
-\multicolumn{5}{|c|}{ ЛО РЗ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность импульса (Tимп)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЛО ВНР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность импульса (Tимп)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЛВ ВНР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль синхронизма (Контр\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность задержки включения с контролем синхронизма (Тср)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЗАПВ } \\ \hline 
-\centering Режим запрета АПВ при срабатывании ДЗфф 1 ступени (ЗапАПВ\_ДЗфф\_1ст)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ДЗфф 2 ступени (ЗапАПВ\_ДЗфф\_2ст)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ДЗфф 3 ступени (ЗапАПВ\_ДЗфф\_3ст)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ТЗНП 1 ступени (ЗапАПВ\_ТЗНП\_1ст)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ТЗНП 2 ступени (ЗапАПВ\_ТЗНП\_2ст)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЛЗШ (ЗапАПВ\_ЛЗШ)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 1 ступени (ЗапАПВ\_МТЗ\_1ст)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 2 ступени (ЗапАПВ\_МТЗ\_2ст)  & \centering SGF8 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 3 ступени (ЗапАПВ\_МТЗ\_3ст)  & \centering SGF9 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗОП (ЗапАПВ\_ЗОП)  & \centering SGF10 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании АУ (ЗапАПВ\_АУ)  & \centering SGF11 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗП (ЗапАПВ\_ЗП)  & \centering SGF12 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ ДЗ (ЗапАПВ\_ОУ\_ДЗ)  & \centering SGF13 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ ТЗНП (ЗапАПВ\_ОУ\_ТЗНП)  & \centering SGF14 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ МТЗ (ЗапАПВ\_ОУ\_МТЗ)  & \centering SGF15 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗДЗ (ЗапАПВ\_ЗДЗ)  & \centering SGF16 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗМН 1 ступени (ЗапАПВ\_ЗМН\_1ст)  & \centering SGF17 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗМН 2 ступени (ЗапАПВ\_ЗМН\_2ст)  & \centering SGF18 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании УРОВ «на себя» (ЗапАПВ\_УРОВ\_на\_себя)  & \centering SGF19 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 1 (ЗапАПВ\_Откл\_внеш\_1)  & \centering SGF20 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 2 (ЗапАПВ\_Откл\_внеш\_2)  & \centering SGF21 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 3 (ЗапАПВ\_Откл\_внеш\_3)  & \centering SGF22 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 4 (ЗапАПВ\_Откл\_внеш\_4)  & \centering SGF23 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ЗАВР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering По внешнему сигналу \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Запрет АВР от команды отключить (ЗапАВР\_от\_УВ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 1 (ЗапАВР\_Откл\_внеш\_1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 2 (ЗапАВР\_Откл\_внеш\_2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 3 (ЗапАВР\_Откл\_внеш\_3)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 4 (ЗапАВР\_Откл\_внеш\_4)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Запрет АВР от внешнего сигнала (ЗапАВР\_Внеш)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{zapv:img1}. 
 
 \vspace{1mm}
 \begin{figure}[H]
@@ -586,108 +187,7 @@
 Функция может быть выведена из работы оперативно путем активации сигнала «ОВ ЛОВ», что характеризуется активным состоянием сигнала «ЛОВ / ЗАВР: Оперативный вывод» на выходе функции.
 
 \item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{zavr:img1}. В таблице \ref{zavr:tbl1} приведены параметры, необходимые для настройки функции.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЗАВР\hfill\vspace{-0.5\baselineskip}}\label{zavr:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{zavr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*BTSRBLC1|VV_LVINCONOFFLGC
-\multicolumn{5}{|c|}{ ЛО РЗ } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность импульса (Tимп)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЛО ВНР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность импульса (Tимп)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЛВ ВНР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Контроль синхронизма (Контр\_синхр)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Длительность задержки включения с контролем синхронизма (Тср)  & \centering Т1 & \centering 50...60000 & \centering мс & \centering \arraybackslash 10 \\
-\hline
-\multicolumn{5}{|c|}{ ЗАПВ } \\ \hline 
-\centering Режим запрета АПВ при срабатывании ДЗфф 1 ступени (ЗапАПВ\_ДЗфф\_1ст)  & \centering SGF1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ДЗфф 2 ступени (ЗапАПВ\_ДЗфф\_2ст)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ДЗфф 3 ступени (ЗапАПВ\_ДЗфф\_3ст)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ТЗНП 1 ступени (ЗапАПВ\_ТЗНП\_1ст)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ТЗНП 2 ступени (ЗапАПВ\_ТЗНП\_2ст)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЛЗШ (ЗапАПВ\_ЛЗШ)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 1 ступени (ЗапАПВ\_МТЗ\_1ст)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 2 ступени (ЗапАПВ\_МТЗ\_2ст)  & \centering SGF8 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании МТЗ 3 ступени (ЗапАПВ\_МТЗ\_3ст)  & \centering SGF9 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗОП (ЗапАПВ\_ЗОП)  & \centering SGF10 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании АУ (ЗапАПВ\_АУ)  & \centering SGF11 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗП (ЗапАПВ\_ЗП)  & \centering SGF12 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ ДЗ (ЗапАПВ\_ОУ\_ДЗ)  & \centering SGF13 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ ТЗНП (ЗапАПВ\_ОУ\_ТЗНП)  & \centering SGF14 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ОУ МТЗ (ЗапАПВ\_ОУ\_МТЗ)  & \centering SGF15 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗДЗ (ЗапАПВ\_ЗДЗ)  & \centering SGF16 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗМН 1 ступени (ЗапАПВ\_ЗМН\_1ст)  & \centering SGF17 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании ЗМН 2 ступени (ЗапАПВ\_ЗМН\_2ст)  & \centering SGF18 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при срабатывании УРОВ «на себя» (ЗапАПВ\_УРОВ\_на\_себя)  & \centering SGF19 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 1 (ЗапАПВ\_Откл\_внеш\_1)  & \centering SGF20 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 2 (ЗапАПВ\_Откл\_внеш\_2)  & \centering SGF21 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 3 (ЗапАПВ\_Откл\_внеш\_3)  & \centering SGF22 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АПВ при наличии отключения внешнего 4 (ЗапАПВ\_Откл\_внеш\_4)  & \centering SGF23 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\multicolumn{5}{|c|}{ ЗАВР } \\ \hline 
-\centering Ввод функции в работу (Ввод\_функции)  & \centering SGF1 & \centering По внешнему сигналу \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Запрет АВР от команды отключить (ЗапАВР\_от\_УВ)  & \centering SGF2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 1 (ЗапАВР\_Откл\_внеш\_1)  & \centering SGF3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 2 (ЗапАВР\_Откл\_внеш\_2)  & \centering SGF4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 3 (ЗапАВР\_Откл\_внеш\_3)  & \centering SGF5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Режим запрета АВР при наличии отключения внешнего 4 (ЗапАВР\_Откл\_внеш\_4)  & \centering SGF6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Запрет АВР от внешнего сигнала (ЗапАВР\_Внеш)  & \centering SGF7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
-%===t1
-\end{longtable}
-\normalsize
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{zavr:img1}.
 
 \vspace{3mm}
 \begin{figure}[H]
