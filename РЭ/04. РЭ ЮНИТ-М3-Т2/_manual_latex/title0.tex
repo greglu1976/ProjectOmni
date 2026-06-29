@@ -3,12 +3,36 @@
 \renewcommand{\headrulewidth}{0pt}
 
 
-\fancyhead[R]{\raisebox{-0.35\width}{\includegraphics[scale=0.25]{uni.pdf}}} % УТВЕРЖДЕНО 20.02.25!!! С Егоровым
+\fancyhead[L]{%
+  \raisebox{30pt}{%
+    \parbox{0.6\textwidth}{%
+      \noindent
+      Код ОКПД-2: 27.12.23.190 % УТОЧНЕНО Морозовым М. 30.03.26
+
+      \vskip 5mm
+      \noindent
+      Код ТН ВЭД: 8537 10 980 0 % УТОЧНЕНО Морозовым М. 30.03.26
+    }%
+  }%
+}
+
+
+\fancyhead[R]{\raisebox{0\width}{\includegraphics[scale=0.25]{uni.pdf}}}
 
 \renewcommand{\footrulewidth}{0pt}
-\lfoot{\color{uniblue}\href{https://uni-eng.ru}{https://uni-eng.ru}}
-
+\lfoot{\color{unigreen}\href{https://uni-eng.ru}{https://uni-eng.ru}}
 \rfoot {ООО «Юнител Инжиниринг»}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ПОДЛОЖКА %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+%     Сначала рисуем серый прямоугольник
+%   \put(22mm,95mm){\color{unigray!25}\rule{0.85\paperwidth}{0.5\paperheight}}%
+%     Затем поверх размещаем изображение
+    \put(62mm,91mm){\includegraphics[width=0.65\paperwidth]{2.pdf}}%
+  }%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \textcolor{uniblue}{\vspace{15mm}\hrule height 0.05cm}
 

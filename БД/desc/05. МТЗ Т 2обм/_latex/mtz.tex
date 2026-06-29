@@ -114,12 +114,40 @@
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/05. МТЗ Т 2обм/_latex/img/kpon.pdf}
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/05. МТЗ Т 2обм/_latex/img/kpon.pdf}
 \captionof{figure}{Функциональная схема логики КПОН}\label{mtzvn:img2}
 \end{figure}
 
 \end{enumerate}
 \FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОРГАН БЛЗШ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\color{uniblue}{\subsubsection{Блокировка логической защиты шин (БЛЗШ)}}
+%\color{black}
+\item Блокировка логической защиты шин (БЛЗШ)
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+
+\item
+Функция блокировки логической защиты шин (БЛЗШ) предусматривается для блокировки ЛЗШ на вводном и секционном выключателях секции, питающей силовой трансформатор. В качестве воздействующих величин используются сигналы пуска ступеней МТЗ. Состояние программного переключателя SGF1 «БлокЛЗШ\_выбор\_ст» определяет ступень МТЗ, от которой будет производиться блокировка ЛЗШ.
+
+\item
+В функциональном блоке «МТЗ» блокировка логической защиты шин представлена функцией «БЛЗШ».
+
+\item
+Алгоритм работы функции выполнен в соответствии с рисунком \ref{mtzvn:img4}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/05. МТЗ Т 2обм/_latex/img/blzsh.pdf}
+\captionof{figure}{Функциональная схема логики БЛЗШ}\label{mtzvn:img4}
+\vspace{3mm}
+\end{figure}
+
+\end{enumerate}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОРГАН БНТ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\color{uniblue}{\subsubsection{Блокировка при броске намагничивающего тока (БНТ)}}
@@ -156,31 +184,7 @@
 
 \end{enumerate}
 \FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОРГАН БЛЗШ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\color{uniblue}{\subsubsection{Блокировка логической защиты шин (БЛЗШ)}}
-%\color{black}
-\item Блокировка логической защиты шин (БЛЗШ)
-
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
-
-\item
-Функция блокировки логической защиты шин (БЛЗШ) предусматривается для блокировки ЛЗШ на вводном и секционном выключателях секции, питающей силовой трансформатор. В качестве воздействующих величин используются сигналы пуска ступеней МТЗ. Состояние программного переключателя SGF1 «БлокЛЗШ\_выбор\_ст» определяет ступень МТЗ, от которой будет производиться блокировка ЛЗШ.
-
-\item
-В функциональном блоке «МТЗ» блокировка логической защиты шин представлена функцией «БЛЗШ».
-
-\item
-Алгоритм работы функции выполнен в соответствии с рисунком \ref{mtzvn:img4}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/05. МТЗ Т 2обм/_latex/img/blzsh.pdf}
-\captionof{figure}{Функциональная схема логики БЛЗШ}\label{mtzvn:img4}
-\vspace{3mm}
-\end{figure}
-
-\end{enumerate}
 
 \end{enumerate}
 \FloatBarrier % Все float'ы ДО этой строки будут размещены здесь.

@@ -1,0 +1,33 @@
+\KOMAoption{paper}{a4, portrait}
+\areaset{267mm}{180mm}
+\fancyheadoffset{0pt} % обновляем хедер и футер
+
+\newgeometry{
+  top=14mm,
+  bottom=11mm,
+  right=10mm,
+  left=22mm,
+}
+
+\begin{landscape}
+
+%\setlength{\headsep}{7.5mm} 
+%\setlength{\topmargin}{-27mm}
+\setlength{\footskip}{15.5pt}
+
+\color{uniblue}{\section[(рекомендуемое) Подключение аналоговых цепей трансформаторов тока и напряжения к устройству]{(рекомендуемое)\\Подключение аналоговых цепей трансформаторов тока и напряжения к устройству}\label{app:analogs}}
+\color{black}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{\apppath/Приложение Б. Аналоги/_latex/img/1.pdf}
+  \caption{Вариант подключения аналоговых цепей ТТ и ТН к устройству}
+  \label{analogs:fig1} % Опционально: ссылка на рисунок
+\end{figure}
+
+
+\clearpage
+\end{landscape}
+\restoregeometry
+
+
