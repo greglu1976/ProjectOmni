@@ -1,5 +1,6 @@
 \newpage
 
+% Переключаем на A3 landscape
 \KOMAoptions{paper=A3,paper=landscape}
 \areaset{390mm}{270mm}
 \fancyheadoffset{0pt} % обновляем хедер и футер
@@ -10,6 +11,7 @@
 \footskip=-0.8cm
 \setlength{\headheight}{1cm}
 
+
 \color{unidarkgreen}{\section[(рекомендуемое) Структурно-функциональная схема устройства]{(рекомендуемое)\\Структурно-функциональная схема устройства}\label{app:fsu}}
 \color{black}
 
@@ -17,7 +19,7 @@
 \newcounter{filecounter}
 \setcounter{filecounter}{1}
 \loop
-    \edef\filename{\apppath/Приложение Д. ФСУ/_latex/img/\arabic{filecounter}.pdf}
+    \edef\filename{\apppath/Приложение. ФСУ/_latex/img/\arabic{filecounter}.pdf}
     \IfFileExists{\filename}{%
         \begin{figure}[H]
         \centering
@@ -38,3 +40,14 @@
 \repeat
 
 \clearpage
+
+\KOMAoption{paper}{a4, portrait}
+\areaset{267mm}{180mm}
+\fancyheadoffset{0pt} % обновляем хедер и футер
+
+\newgeometry{
+  top=14mm,
+  bottom=11mm,
+  right=10mm,
+  left=22mm,
+}
