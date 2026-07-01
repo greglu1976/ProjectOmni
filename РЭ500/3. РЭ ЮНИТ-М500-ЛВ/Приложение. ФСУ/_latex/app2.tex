@@ -1,0 +1,34 @@
+\newpage
+
+\KOMAoptions{paper=A3,paper=landscape}
+\areaset{390mm}{270mm}
+\fancyheadoffset{0pt} % обновляем хедер и футер
+
+\topmargin=-2.6cm % Команда \topmargin задаёт верхнее поле страницы. При этом поле отсчитывается не от левого края листа, а от линии, параллельной краю листа и отстоящей от него на 1 дюйм
+\oddsidemargin=0cm % отступ слева https://zns.susu.ru/IT/latex/Marking/marking.html
+\headsep=0cm
+\footskip=-0.8cm
+\setlength{\headheight}{1cm}
+
+\color{unidarkgreen}{\section[(рекомендуемое) Структурно-функциональная схема устройства]{(рекомендуемое)\\Структурно-функциональная схема устройства}\label{app:fsu}}
+\color{black}
+
+\newcounter{filecounter}
+\setcounter{filecounter}{0}
+\loop
+    \edef\filename{\apppath/Приложение. ФСУ/_latex/img/\arabic{filecounter}.pdf}
+    \IfFileExists{\filename}{
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\filename}
+        \end{figure}
+        \clearpage
+        \stepcounter{filecounter}
+    }{\setcounter{filecounter}{0}} % условие выхода из цикла
+    \ifnum\value{filecounter}>0
+\repeat
+
+\clearpage %!!!!!!!!!!БЕЗ ЭТОЙ СТРОЧКИ ХРЕНЬ
+
+
+
