@@ -4,39 +4,16 @@
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
 
 \item
-Предусмотрено реле, блокирующее автоматику РПН, когда ток перегрузки трансформатора
-превышает регламентируемое для обмотки значение. По умолчанию данное реле подключено к
-трансформаторам тока стороны ВН трансформатора. Порог по току срабатывания задается параметром
-\textbf{«Iбл РПН»}.
+В целях блокирования автоматики РПН при превышении током через РПН допустимого значения предусматривается реле блокировки. По умолчанию данное реле подключено к трансформаторам тока стороны СН автотрансформатора. Порог по току срабатывания реле задается параметром \textbf{«Iбл РПН»}.
 
+\item
+Алгоритм работы РТ РПН приведен на рисунке \ref{pic:rtrpn}. Уставки РТ РПН приведены в таблице \ref{app_set:rtrpn}.
+
+\vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/041.1181 РПН/img/RPN.pdf}
-\captionof{figure}{Функциональный блок РТ блокировки РПН АТ}\label{pic:RPN}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/041.1181 РПН/img/RPN.pdf}
+\captionof{figure}{Функциональная схема логики РТ блокировки РПН}\label{pic:rtrpn}
 \end{figure}
-
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставочных параметров функции блокировки РПН\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endhead
-
-%===m>ДЗАТ|-
-%===m
-\end{longtable}
-\normalsize	
 
 \end{enumerate}

@@ -153,7 +153,7 @@
 В местном режиме игнорируются все команды управления с верхнего уровня АСУ ТП. Более подробно режимы устройства описаны в документации \ManualUnitGeneral.
 
 \item
-Для управления режимами работы основных функций (оперативный ввод/вывод, перевод на сигнал и пр.), а также для генерации различных сигналов сброса функций (сброс триггеров фиксации неисправности цепей газовых и технологических защит, сброс счетчиков и пр.), применяются виртуальные ключи и кнопки.
+Для управления режимами работы основных функций (оперативный ввод/вывод, перевод на сигнал и пр.), а также для генерации различных сигналов сброса функций, применяются виртуальные ключи и кнопки.
 Подробное описание и сценарии работы виртуальных ключей и кнопок приведено в документации \ManualUnitGeneral. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Группы уставок %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -196,82 +196,7 @@
 Удаление записей аварийного осциллографа пользователем невозможно.
 
 \item
-Перечень дискретных сигналов, доступных для регистрации аварийным осциллографом, приведен в приложении \ref{app:signals}.
-Перечень аналоговых сигналов, доступных для регистрации аварийным осциллографом, приведен в таблице \ref{osz:tbl1}.
-
-\setlength{\extrarowheight}{0.05cm}
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{6.8cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{2cm}|}
-\caption{{\color{red}Перечень аналоговых сигналов, доступных для регистрации аварийным осциллографом}\hfill\vspace{-0.5\baselineskip}}\label{osz:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Описание аналогового сигнала & Канал & Наименование  & Пуск РАС \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{osz:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Описание аналогового сигнала & Канал & Наименование  & Пуск РАС \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-%\hline
-\endlastfoot
-
-\raggedright Фазные токи ВН & \centering 1 & \centering Ia\_{\text{ВН}}  & \centering\arraybackslash + \\
-\hline
-\raggedright »             & \centering 2 & \centering Ib\_{\text{ВН}}  & \centering\arraybackslash + \\
-\hline
-\raggedright »             & \centering 3 & \centering Ic\_{\text{ВН}}  & \centering\arraybackslash + \\
-\hline
-
-\raggedright Фазные токи НН1 & \centering 4 & \centering Ia\_{\text{НН1}}  & \centering\arraybackslash + \\
-\hline
-\raggedright »              & \centering 5 & \centering Ib\_{\text{НН1}}  & \centering\arraybackslash + \\
-\hline
-\raggedright »              & \centering 6 & \centering Ic\_{\text{НН1}}  & \centering\arraybackslash + \\
-\hline
-
-\raggedright Фазные токи НН2 & \centering 7 & \centering Ia\_{\text{НН2}}  & \centering\arraybackslash + \\
-\hline
-\raggedright »              & \centering 8 & \centering Ib\_{\text{НН2}}  & \centering\arraybackslash + \\
-\hline
-\raggedright »              & \centering 9 & \centering Ic\_{\text{НН2}}  & \centering\arraybackslash + \\
-\hline
-
-\raggedright Вычисленный ток ОП ВН & \centering 10 & \centering I2\_{\text{ВН}}  & \centering\arraybackslash + \\
-\hline
-\raggedright Вычисленный ток НП ВН & \centering 11 & \centering 3I0\_{\text{ВН}}  & \centering\arraybackslash + \\
-\hline
-
-\raggedright Вычисленный ток ОП НН1 & \centering 12 & \centering I2\_{\text{НН1}}  & \centering\arraybackslash + \\
-\hline
-\raggedright Вычисленный ток НП НН1 & \centering 13 & \centering 3I0\_{\text{НН1}}  & \centering\arraybackslash + \\
-\hline
-
-\raggedright Вычисленный ток ОП НН2 & \centering 14 & \centering I2\_{\text{НН2}}  & \centering\arraybackslash + \\
-\hline
-\raggedright Вычисленный ток НП НН2 & \centering 15 & \centering 3I0\_{\text{НН2}}  & \centering\arraybackslash + \\
-\hline
-
-\raggedright Дифференциальные токи & \centering 16 & \centering Ia\_{\text{дифф}}  & \centering\arraybackslash + \\
-\hline
-\raggedright »                    & \centering 17 & \centering Ib\_{\text{дифф}}  & \centering\arraybackslash + \\
-\hline
-\raggedright »                    & \centering 18 & \centering Ic\_{\text{дифф}}  & \centering\arraybackslash + \\
-\hline
-
-\raggedright Тормозные токи & \centering 19 & \centering Ia\_{\text{торм}}  & \centering\arraybackslash - \\
-\hline
-\raggedright »             & \centering 20 & \centering Ib\_{\text{торм}}  & \centering\arraybackslash - \\
-\hline
-\raggedright »              & \centering 21 & \centering Ic\_{\text{торм}}  & \centering\arraybackslash - \\
-\hline
-
-\end{longtable}
-\normalsize
-\setlength{\extrarowheight}{0.0cm}
+Перечень сигналов, доступных для регистрации аварийным осциллографом, приведен в приложении \ref{app:signals}.
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -533,7 +458,7 @@
 
 \item 
 В устройствах с поддержкой протокола передачи данных МЭК 61850 для связи со смежными устройствами может быть использован протокол GOOSE по МЭК 61850-8.1.
-Количество сигналов GOOSE-сообщений, передаваемых в смежные интеллектуальные устройства, зависит от типоисполнения ЮНИТ-М300, первичного оборудования и в общем случае составляет не менее 100 шт.
+Количество сигналов GOOSE-сообщений, передаваемых в смежные интеллектуальные устройства, зависит от типоисполнения ЮНИТ-М500, первичного оборудования и в общем случае составляет не менее 100 шт.
 Подробнее о публикации GOOSE-сообщений указано в RU.37182817.00001.02.34.01 – «Программное обеспечение мониторинга и параметрирования «ЮНИТ-СЕРВИС». Руководство пользователя».
 
 \end{enumerate}
