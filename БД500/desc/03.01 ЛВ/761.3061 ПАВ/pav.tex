@@ -1,6 +1,6 @@
 
 %\needspace{4\baselineskip}
-\color{uniblue}{\subsection{Полуавтоматическое включение (ПАВ)}}
+\color{unidarkgreen}{\subsection{Полуавтоматическое включение (ПАВ)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
@@ -9,44 +9,14 @@
 В устройстве предусмотрен режим полуавтоматического включения (ПАВ). Данная функция предполагает включение выключателя с контролем синхронизма или улавливанием синхронизма при условии оперативного включения выключателя на противоположном конце линии. Для ввода режима ПАВ В1 предусмотрен входной сигнал ФСУ \textit{«ПАВ В1»}. При оперативном включении линии с противоположного конца и выполнении условий синхронизма происходит включение выключателя. Если в течение времени \textbf{«Тожид ПАВ В1»} не будут выполнены условия синхронизма, то схема ПАВ В1 выведется из работы.
 
 \item
-Функциональная схема логики ПАВ В1 приведена на рисунке \ref{pict_pav:PAV}. Функциональная схема логики ПАВ В2 выполняется аналогично схеме логики ПАВ В1.
+Функциональная схема логики ПАВ В1 приведена на рисунке \ref{pict_pav:PAV}. Функциональная схема логики ПАВ В2 выполняется аналогично схеме логики ПАВ В1. Уставки ПАВ В1 представлены в таблице \ref{app_set:pav}. Уставки ПАВ В2 аналогичны уставкам ПАВ В1.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3061 ПАВ/img/PAV.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3061 ПАВ/img/PAV.pdf}
 \captionof{figure}{Функциональная схема логики ПАВ В1}\label{pict_pav:PAV}
 \end{figure}
 
-\item
-Уставки ПАВ В1 представлены в таблице \ref{desc_apv:tbl1}. Уставки ПАВ В2 аналогичны уставкам ПАВ В1.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ПАВ В1\hfill\vspace{-0.5\baselineskip}}\label{desc_apv:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_apv:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-
-%===m>ПАВ В1|ПАВ
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ПАВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид ПАВ & \centering 0 ... 1800000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тимп ПАВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}
-
-\newpage

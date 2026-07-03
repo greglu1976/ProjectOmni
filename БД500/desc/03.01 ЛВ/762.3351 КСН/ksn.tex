@@ -1,6 +1,6 @@
 
 %\needspace{4\baselineskip}
-\color{uniblue}{\subsection{Контроль синхронизма и напряжений}}
+\color{unidarkgreen}{\subsection{Контроль синхронизма и напряжений (КСН)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
@@ -105,71 +105,12 @@
 Сигнал разрешения полуавтоматического включения \textit{«Разр. ПАВ В1»} формируется при выполнении условий включения в режимах КС или УС.
 
 \item
-Функциональная схема логики КСН В1 приведена на рисунке \ref{pict_ksn:KSN}. Функциональная схема логики КСН В2 выполняется аналогично схеме логики КСН В1.
+Функциональная схема логики КСН В1 приведена на рисунке \ref{pict_ksn:KSN}. Функциональная схема логики КСН В2 выполняется аналогично схеме логики КСН В1. Уставки КСН В1 представлены в таблице \ref{app_set:ksn}, уставки КСН В2 аналогичны уставкам КСН В1.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/762.3351 КСН/img/KSN.pdf}
+\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/762.3351 КСН/img/KSN.pdf}
 \captionof{figure}{Функциональная схема логики КСН В1}\label{pict_ksn:KSN}
 \end{figure}
-
-\item
-Уставки КСН В1 представлены в таблице \ref{desc_ksn:tbl1}. Уставки КСН В2 аналогичны уставкам КСН В1.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки КСН В1\hfill\vspace{-0.5\baselineskip}}\label{desc_ksn:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_ksn:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-
-%===m>КСН В1|КСН
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering КСН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering U2 макс КСН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3U0 макс КСН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uнал ЛЭП & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uотс ЛЭП & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uнал Э1(Э2) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uотс Э1(Э2) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering dU макс КС(УС) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering dФ макс КС & \centering 1 ... 90 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering df макс КС & \centering 0,050 ... 3,000 & \centering Гц & \centering \arraybackslash 0,001 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering df пред. доп. & \centering 0,025 ... 3,000 & \centering Гц & \centering \arraybackslash 0,001 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering КС & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УС & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Опер. вкл. с КОН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Опер. вкл. без контролей & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. опер. вкл. & \centering Внутр. \\ Внеш. & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Место ТН & \centering Шины \\ Линия & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Т опер. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}

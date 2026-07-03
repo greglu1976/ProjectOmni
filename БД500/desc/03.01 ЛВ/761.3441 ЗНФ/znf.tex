@@ -1,6 +1,6 @@
 
 %\needspace{4\baselineskip}
-\color{uniblue}{\subsection{Защита от непереключения фаз (ЗНФ)}}
+\color{unidarkgreen}{\subsection{Защита от непереключения фаз (ЗНФ)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep 0 или 5
@@ -32,39 +32,12 @@
 В устройстве также предусмотрена возможность реализации функции ЗНФ выключателя В2 -- вводится программным ключом \textbf{«ЗНФ В2»}. Действие на отключение выключателя В2 осуществляется с выдержкой времени \textbf{«Тср ЗНФ В2»}. Функция ЗНФ В2 оперативно выводится от внешнего сигнала \textit{«Вывод ЗНФ В2»}.
 
 \item
-Функциональная схема логики ЗНФ В1 приведена на рисунке \ref{pict_bk:ZNF}, функциональная схема логики ЗНФ В2 выполняется аналогично.
+Функциональная схема логики ЗНФ В1 приведена на рисунке \ref{pict_bk:ZNF}, функциональная схема логики ЗНФ В2 выполняется аналогично. Уставки ЗНФ В1 представлены в таблице \ref{app_set:znf}, уставки ЗНФ В2 аналогичны уставкам ЗНФ В1.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/761.3441 ЗНФ/img/ZNF.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3441 ЗНФ/img/ZNF.pdf}
 \captionof{figure}{ Функциональная схема ЗНФ В1}\label{pict_bk:ZNF}
 \end{figure}
-
-\item
-Уставки ЗНФ представлены в таблице \ref{desc_znf:tbl1}.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЗНФ\hfill\vspace{-0.5\baselineskip}}\label{desc_znf:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_znf:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-
-%===m>ЗНФ В1|ЗНФ
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ЗНФ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ЗНФ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}

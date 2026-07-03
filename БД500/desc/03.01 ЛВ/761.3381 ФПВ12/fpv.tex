@@ -1,0 +1,46 @@
+
+%\needspace{4\baselineskip}
+\color{unidarkgreen}{\subsection{Фиксация положения выключателей (ФПВ)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
+
+\item
+Функциональный блок фиксации положения выключателей (ФПВ) предназначен для определения состояния выключателей на основании технологической информации:
+
+\begin{itemize}
+    \item состояния блок-контактов выключателя;
+    \item положения разъединителей в цепи выключателя;
+    \item информации о выводе в ремонт выключателя.
+\end{itemize}
+
+\item
+Контроль положения разъединителей при формировании сигналов включенного или отключенного положения выключателей (например, \textit{«В1 включен»} и \textit{«В2 отключен»} для выключателя В1) вводится программным ключом \textbf{«Контр. Р В1»}. Также имеется возможность выбрать количество разъединителей, участвующих в формировании сигналов включенного или отключенного положения выключателей, для выключателя В1 она задается программным переключателем \textbf{«Схема Р В1»}.
+
+\item
+Также функция ФПВ пофазно контролирует состояние блок-контактов выключателя и в случае расхождения полюсов формирует сигнал \textit{«Внутр. пуск. ЗНФ В1»}.
+
+\item
+Функциональная схема логики ФПВ В1 приведена на рисунке \ref{pict_fpv:fpv1}. Уставки ФПВ В1 представлены в таблице \ref{app_set:fpv1}.
+
+\vspace{2mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3381 ФПВ12/img/fpv1.pdf}
+\captionof{figure}{Функциональная схема логики ФПВ В1}\label{pict_fpv:fpv1}
+\end{figure}
+
+
+\item
+Функциональная схема логики ФПВ В2 приведена на рисунке \ref{pict_fpv:fpv2}. Уставки ФПВ В2 представлены в таблице \ref{app_set:fpv2}.
+
+\vspace{2mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3381 ФПВ12/img/fpv2.pdf}
+\captionof{figure}{Функциональная схема логики ФПВ В2}\label{pict_fpv:fpv2}
+\end{figure}
+
+
+
+\end{enumerate}

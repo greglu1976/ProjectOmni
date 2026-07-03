@@ -1,6 +1,6 @@
 
 %\needspace{4\baselineskip}
-\color{uniblue}{\subsection{Управление выключателем (УВ)}}
+\color{unidarkgreen}{\subsection{Управление выключателем (УВ)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
@@ -12,12 +12,12 @@
 В случае присоединения линии к системе через два выключателя для каждого из них можно задействовать свою логику управления выключателем. Далее приведено описание логики управления выключателем В1, логика управления вторым выключателем аналогична.
 
 \item
-Функциональная схема логики управления В1 приведена на рисунке \ref{pict_uv:switch_control}. Функциональная схема логики управления В2 выполняется аналогично схеме логики управления В1.
+Функциональная схема логики управления В1 приведена на рисунке \ref{pict_uv:switch_control}. Функциональная схема логики управления В2 выполняется аналогично схеме логики управления В1. Уставки схемы управления выключателем В1 представлены в таблице \ref{app_set:uv}. Уставки схемы управления выключателем В2 аналогичны уставкам схемы управления выключателем В1.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3391 УВ/img/switch_control.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3391 УВ/img/switch_control.pdf}
 \captionof{figure}{Функциональная схема управления выключателем В1}\label{pict_uv:switch_control}
 \end{figure}
 
@@ -41,37 +41,5 @@
 \item
 При наличии сигнала \textit{«Блок. включения В1»}, формируемого функциональным блоком контроля силового выключателя, включение выключателя блокируется.
 
-\item
-Уставки схемы управления выключателем В1 представлены в таблице \ref{desc_uv:tbl1}. Уставки схемы управления выключателем В2 аналогичны уставкам схемы управления выключателем В1.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки схемы управления выключателем В1\hfill\vspace{-0.5\baselineskip}}\label{desc_uv:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_uv:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-
-%===m>УВ В1|УВ
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок. от многокр. вкл. на КЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват вкл. от РТ ЭМВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл. опер. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тпрод опер. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}

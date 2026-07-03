@@ -1,6 +1,6 @@
 
 %\needspace{4\baselineskip}
-\color{uniblue}{\subsection{Блокировка при неисправностях в цепях напряжения (БНН)}}
+\color{unidarkgreen}{\subsection{Блокировка при неисправностях в цепях напряжения (БНН)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
@@ -13,7 +13,7 @@
 Для алгоритмов РЗА, которые при неисправностях в цепях основного ТН могут излишне или ложно сработать и повлиять на режим работы первичной сети, используется специальная блокировка при неисправностях в цепях напряжения (БНН), которая вводится программным ключом \textbf{«Контр. ЦН»}.
 
 \item
-Функциональная схема логики БНН приведена на рисунке \ref{pict_bnn:BNN}.
+Функциональная схема логики БНН приведена на рисунке \ref{pict_bnn:BNN}. Уставки БНН представлены в таблице \ref{app_set:bnn}.
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  КОНЕЦ ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -163,77 +163,10 @@ U_{\textsl{БНН ф.С}} = \left| \vec U_{C\textsl{(ВО-1)}} - \frac{\vec U_{c
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.1461 БНН/img/BNN.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.1461 БНН/img/BNN.pdf}
 \captionof{figure}{Функциональная схема БНН}\label{pict_bnn:BNN}
 \end{figure}
 
-\item
-Уставки БНН представлены в таблице \ref{desc_bnn:tbl2}.
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки БНН\hfill\vspace{-0.5\baselineskip}}\label{desc_bnn:tbl2}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_bnn:tbl2}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-
-%===m>БНН|БНН
-\raggedright Контр. ЦН & \centering Контр. ЦН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Место ТН & \centering Шины \\ Линия & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БНН комб. & \centering БНН комб. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright dU1 комб. БНН (0,2Uном) & \centering dU1 комб. БНН (0,2Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright dI1 комб. БНН & \centering dI1 комб. БНН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\raggedright U1 мин комб. БНН & \centering U1 мин комб. БНН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright Uф мин комб. БНН & \centering Uф мин комб. БНН & \centering 0,0050 ... 1,5000 & \centering о.е & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright I2/I1 комб. БНН & \centering I2/I1 комб. БНН & \centering 0,10 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\raggedright U2 макс комб. БНН (0,085Uном) & \centering U2 макс комб. БНН (0,085Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright U2/U1 комб. БНН & \centering U2/U1 комб. БНН & \centering 0,10 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\raggedright Контр. Обрыв НП & \centering Контр. Обрыв НП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright 3I0/I1 БНН & \centering 3I0/I1 БНН & \centering 0,10 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\raggedright 3U0 макс БНН (0,085Uном) & \centering 3U0 макс БНН (0,085Uном) & \centering 0,0050 ... 1,2000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright ИО БНН & \centering ИО БНН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Uср ИО БНН & \centering Uср ИО БНН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright U мин звезды (0,05Uном) & \centering U мин звезды (0,05Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright U мин треуг. (0,05Uном) & \centering U мин треуг. (0,05Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright БНН-ф & \centering БНН-ф & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Uср БНН-ф & \centering Uср БНН-ф & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright 3I0 БНН-ф (Iном) & \centering 3I0 БНН-ф (Iном) & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\raggedright Контр. 3I0 БНН-ф & \centering Контр. 3I0 БНН-ф & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Конт. Автомат ТН & \centering Конт. Автомат ТН & \centering НЗ \\ НО & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Тсигн Неиспр. ЦН & \centering Тсигн Неиспр. ЦН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}

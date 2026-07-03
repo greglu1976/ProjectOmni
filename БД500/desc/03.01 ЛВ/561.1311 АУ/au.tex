@@ -1,6 +1,6 @@
 
 %\needspace{4\baselineskip}
-\color{uniblue}{\subsection{Автоматическое ускорение при включении выключателя (АУ)}}
+\color{unidarkgreen}{\subsection{Автоматическое ускорение при включении выключателя (АУ)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep 0 или 5
@@ -28,70 +28,13 @@
 Ввод АУ АМТЗ осуществляется без контроля напряжения (АМТЗ вводится в работу по факту срабатывания БНН).
 
 \item
-Функциональная схема логики АУ приведена на рисунке \ref{pict_au:AU}.
+Функциональная схема логики АУ приведена на рисунке \ref{pict_au:AU}. Уставки АУ представлены в таблице \ref{app_set:au}.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/561.1311 АУ/img/AU.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.1311 АУ/img/AU.pdf}
 \captionof{figure}{Функциональная схема АУ}\label{pict_au:AU}
 \end{figure}
-
-\item
-Уставки АУ представлены в таблице \ref{desc_au:tbl1}.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки АУ\hfill\vspace{-0.5\baselineskip}}\label{desc_au:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_au:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-
-%===m>АУ|АУ
-\raggedright АУ & \centering АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Место ТН & \centering Шины \\ Линия & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кол-во выкл-ей & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Uнал шин Э1 & \centering Uнал шин Э1 & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright Uнал шин Э2 & \centering Uнал шин Э2 & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright U мин ЛЭП & \centering U мин ЛЭП & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright U1 макс АУ & \centering U1 макс АУ & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright U2 макс АУ & \centering U2 макс АУ & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright 3U0 макс АУ & \centering 3U0 макс АУ & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
-\hline
-\raggedright АУ АМТЗ & \centering АУ АМТЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Контр. нал. U на шинах & \centering Контр. нал. U на шинах & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Контр. отс. U на ЛЭП & \centering Контр. отс. U на ЛЭП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Контр. U ЛЭП для АУ & \centering Контр. U ЛЭП для АУ & \centering Внутр. \\ Внеш. & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Тв АУ & \centering Тв АУ & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
-\hline
-\raggedright Тср АУ АМТЗ & \centering Тср АУ АМТЗ & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
-\hline
-\raggedright Тср АУ ДЗ & \centering Тср АУ ДЗ & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
-\hline
-\raggedright Тср АУ ТЗНП & \centering Тср АУ ТЗНП & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}

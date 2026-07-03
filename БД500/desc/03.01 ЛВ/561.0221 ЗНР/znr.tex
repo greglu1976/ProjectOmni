@@ -1,6 +1,6 @@
 
 %\needspace{4\baselineskip}
-\color{uniblue}{\subsection{Защита от неполнофазного режима (ЗНР)}}
+\color{unidarkgreen}{\subsection{Защита от неполнофазного режима (ЗНР)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep 0 или 5
@@ -30,49 +30,14 @@
 ЗНР может быть оперативно выведена из работы от внешнего сигнала \textit{«Вывод ЗНР»}, назначенного на соответствующий дискретный вход или функциональную клавишу.
 
 \item
-Функциональная схема логики ЗНР приведена на рисунке \ref{pict_znr:ZNR}.
+Функциональная схема логики ЗНР приведена на рисунке \ref{pict_znr:ZNR}. Уставки ЗНР представлены в таблице \ref{app_set:znr}.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0221 ЗНР/img/ZNR.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0221 ЗНР/img/ZNR.pdf}
 \captionof{figure}{Функциональная схема ЗНР}\label{pict_znr:ZNR}
 \end{figure}
-
-\item
-Уставки ЗНР представлены в таблице \ref{desc_znr:tbl1}.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки ЗНР\hfill\vspace{-0.5\baselineskip}}\label{desc_znr:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_znr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-
-%===m>ЗНР|ЗНР
-\raggedright ЗНР & \centering ЗНР & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright 3I0ср ЗНР & \centering 3I0ср ЗНР & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\raggedright I2/I1 ЗНР & \centering I2/I1 ЗНР & \centering 0,05 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\raggedright ИО ЗНР & \centering ИО ЗНР & \centering 3I0 \\ I2/I1 & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кол-во выкл-ей & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Тср ЗНР & \centering Тср ЗНР & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 

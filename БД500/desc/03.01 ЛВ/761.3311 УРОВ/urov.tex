@@ -1,6 +1,6 @@
 
 %\needspace{4\baselineskip}
-\color{uniblue}{\subsection{ Устройство резервирования отказа выключателя (УРОВ)}}
+\color{unidarkgreen}{\subsection{ Устройство резервирования отказа выключателя (УРОВ)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep 0 или 5pt
@@ -43,54 +43,13 @@
 \item
 УРОВ В1 может быть оперативно выведено из работы от внешнего сигнала \textit{«Вывод УРОВ В1»}, назначенного на соответствующий дискретный вход или функциональную клавишу.
 
-\item
-Функциональная схема логики  УРОВ В1 приведена на рисунке \ref{pict_urov:UROV}. Функциональная схема логики УРОВ В2 выполняется аналогично схеме логики УРОВ В1.
+\item 
+Функциональная схема логики  УРОВ В1 приведена на рисунке \ref{pict_urov:UROV}. Функциональная схема логики УРОВ В2 выполняется аналогично схеме логики УРОВ В1. Уставки УРОВ В1 представлены в таблице \ref{app_set:urov}. Уставки УРОВ В2 аналогичны уставкам УРОВ В1.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/761.3311 УРОВ/img/UROV.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3311 УРОВ/img/UROV.pdf}
 \captionof{figure}{Функциональная схема логики УРОВ В1}\label{pict_urov:UROV}
 \end{figure}
-
-\item
-Уставки УРОВ В1 представлены в таблице \ref{desc_urov:tbl1}. Уставки УРОВ В2 аналогичны уставкам УРОВ В1.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки УРОВ В1\hfill\vspace{-0.5\baselineskip}}\label{desc_urov:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_urov:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-
-%===m>УРОВ В1|УРОВ
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УРОВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср УРОВ & \centering 0,04 ... 0,04 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Пуск УРОВ от ЗНР & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Фикс. УРОВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Режим УРОВ с дубл. пуском & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УРОВ на себя & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. по I УРОВ на себя & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср УРОВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср УРОВ на себя & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}

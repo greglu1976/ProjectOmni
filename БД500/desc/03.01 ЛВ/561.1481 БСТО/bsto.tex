@@ -1,6 +1,6 @@
 
 %\needspace{4\baselineskip}
-\color{uniblue}{\subsection{Блокировка при сквозных токах через ошиновку (БСТО)}}
+\color{unidarkgreen}{\subsection{Блокировка при сквозных токах через ошиновку (БСТО)}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep 0 или 5
@@ -25,59 +25,13 @@
 БСТО может быть оперативно выведена из работы от внешнего сигнала \textit{«Вывод БСТО»}, назначенного на соответствующий дискретный вход или функциональную клавишу.
 
 \item
-Функциональная схема логики БСТО приведена на рисунке \ref{pict_bk:BSTO}.
+Функциональная схема логики БСТО приведена на рисунке \ref{pict_bk:BSTO}. Уставки БСТО представлены в таблице \ref{app_set:bsto}.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/561.1481 БСТО/img/BSTO.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.1481 БСТО/img/BSTO.pdf}
 \captionof{figure}{ Функциональная схема БСТО}\label{pict_bk:BSTO}
 \end{figure}
-
-\item
-Уставки БСТО представлены в таблице \ref{desc_bsto:tbl1}.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки БСТО\hfill\vspace{-0.5\baselineskip}}\label{desc_bsto:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_bsto:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-
-%===m>БСТО|БСТО
-\raggedright БСТО & \centering БСТО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Iср БСТО & \centering Iср БСТО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
-\hline
-\raggedright Тфикс внеш. КЗ & \centering Тфикс внеш. КЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-\raggedright Тпрод БСТО & \centering Тпрод БСТО & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-\raggedright Тогр БСТО & \centering Тогр БСТО & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 \end{enumerate}

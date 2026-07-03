@@ -107,7 +107,7 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.4\textwidth,height=0.4\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_char1.pdf}
+\includegraphics[width=0.4\textwidth,height=0.4\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/_char1.pdf}
 \captionof{figure}{ Характеристика срабатывания ненаправленного РС}\label{pict_dz:char1}
 \end{figure}
 
@@ -151,12 +151,14 @@
 \setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
 \normalsize
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \item 
 Выполнение функций направленного РС обеспечивается совместным использованием ненаправленного РС и органов направленности (ОН). Орган направленности представляет собой два отрезка, исходящие из начала координат и расположенные во втором и четвёртом квадрантах. Вид характеристики  (см. рис. \ref{pict_dz:on}) определяется углами $φ_2$ и $φ_3$  наклона  этих  отрезков,  отсчитываемых  относительно  оси  $R$.  Углы  наклона  характеристики задаются уставками \textbf{«Ф2 ОН-ФФ(ФЗ)»} и\textbf{«Ф3 ОН-ФФ(ФЗ)»}. Уставки органов направленности являются общими для всех ступеней, задаются раздельно для контуров «фаза-фаза» и «фаза-земля». Углы наклона в устройстве задаются  для  прямонаправленного  ОН,  а  характеристика  обратнонаправленного  ОН  симметрична характеристике прямонаправленного ОН с поворотом на 180 градусов.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_on.pdf}
+\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/_on.pdf}
 \captionof{figure}{Характеристики срабатывания органов направления}\label{pict_dz:on}
 \end{figure}
 
@@ -172,6 +174,18 @@
 При  близких  трехфазных  КЗ,  когда  все  напряжения  на  входе  РС  близки  к  нулю,  для  определения направленности в течение времени не менее 40 мс используются напряжения предаварийного режима (работа по «памяти»). При работе РС «по памяти» при трехфазных КЗ в месте установки защиты обеспечивается длительность сигнала срабатывания на выходе РС не менее 40 мс в диапазоне токов от $0,2\cdot I_{\textsl{ном}}$ до $30\cdot I_{\textsl{ном}}$. При КЗ «за спиной» с токами до $30\cdot I_{\textsl{ном}}$  обеспечивается отсутствие ложных срабатываний РС, в том числе при снижении измеряемого напряжения до нуля. 
 
 \item
+Функциональная схема логики органа направления мощности приведена на рисунке \ref{pict_dz:on}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/on.pdf}
+\captionof{figure}{Функциональная схема логики отстройки от нагрузочного режима для контуров ФФ и ФЗ}\label{pict_dz:on}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ВЫРЕЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item
 Для отстройки от нагрузочного режима возможен вырез в характеристике срабатывания РС. Уставки измерительного органа отстройки от нагрузки являются общими для всех ступеней, задаются раздельно для контуров  «фаза-фаза»  и  «фаза-земля».  Его  характеристика  срабатывания  приведена  на  рисунке \ref{pict_dz:r}.  Эта характеристика срабатывания определяется уставками: 
 \begin{itemize}
     \item \textbf{«Rнг ДЗ-ФФ(ФЗ)»} - сопротивление выреза нагрузочного режима; 
@@ -183,44 +197,26 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_r.pdf}
+\includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/_r.pdf}
 \captionof{figure}{Характеристика срабатывания измерительного органа отстройки от нагрузки}\label{pict_dz:r}
 \end{figure}
 
 \item
-Уставки органов направленности и измерительных органов отстройки от нагрузки представлены в таблице \ref{desc_dz:tbl2}.
+Функциональная схема логики отстройки от нагрузочного режима приведена на рисунке \ref{pict_dz:vyrez}. Уставки органов направленности и измерительных органов отстройки от нагрузки представлены в таблице \ref{app_set:dz}.
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Общие уставки ДЗ-ФФ(ФЗ)\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl2}\\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/vyrez.pdf}
+\captionof{figure}{Функциональная схема логики отстройки от нагрузочного режима для контуров ФФ и ФЗ}\label{pict_dz:vyrez}
+\end{figure}
 
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl2}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
-
-%===m>ДЗ|general
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Выбор 3U0 & \centering Расчетн. \\ Измерен. & \centering --- & \centering \arraybackslash --- \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \item
 Суммарная характеристика направленного РС, используемого в логике работы ступеней ДЗ приведена на рисунке \ref{pict_dz:rs}.  
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_rs.pdf}
+\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/_rs.pdf}
 \captionof{figure}{Характеристики срабатывания направленного РС}\label{pict_dz:rs}
 \end{figure}
 
@@ -229,7 +225,7 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.35\textwidth,height=0.35\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_nachalo.pdf}
+\includegraphics[width=0.35\textwidth,height=0.35\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/_nachalo.pdf}
 \captionof{figure}{Характеристика срабатывания ненаправленного РС с охватом начала координат}\label{pict_dz:nachalo}
 \end{figure}
 
@@ -240,7 +236,7 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.65\textwidth,height=0.65\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/_torm.pdf}
+\includegraphics[width=0.65\textwidth,height=0.65\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/_torm.pdf}
 \captionof{figure}{Характеристика срабатывания ИО 3I0 ООВП}\label{pict_dz:torm}
 \end{figure}
 
@@ -277,63 +273,13 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/DZ_FF_1.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/DZ_FF_1.pdf}
 \captionof{figure}{Функциональная схема логики ДЗ-ФФ-1}\label{pict_dz:ff1}
 \end{figure}
 
 \item
-Уставки первой ступени ДЗ от междуфазных КЗ (ДЗ-ФФ-1) представлены в таблице \ref{desc_dz:tbl3}.
+Уставки первой ступени ДЗ от междуфазных КЗ (ДЗ-ФФ-1) представлены в таблице \ref{app_set:dz}.
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки ступени ДЗ-ФФ-1\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl3}\\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl3}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
-
-%===m>ДЗ|ДЗ-ФФ-1
-\raggedright ДЗ-ФФ-1 & \centering ДЗ-ФФ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rср ДЗ-ФФ(ФЗ)-1 & \centering 0,0100 ... 5,0000 & \centering о.е & \centering \arraybackslash 0,0005 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Хср ДЗ-ФФ(ФЗ)-1 & \centering 0,0100 ... 5,0000 & \centering о.е & \centering \arraybackslash 0,0005 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф1 ДЗ-ФФ(ФЗ)-1 & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф4 ДЗ-ФФ(ФЗ)-1 & \centering -45 ... 0 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
-\hline
-\raggedright Подхват РС-ФФ-1 & \centering Подхват РС-ФФ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright ДЗ-ФФ-1.2 & \centering ДЗ-ФФ-1.2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-1 & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БК ДЗ-ФФ-1.1 & \centering БК ДЗ-ФФ-1.1 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БК ДЗ-ФФ-1.2 & \centering БК ДЗ-ФФ-1.2 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БНН ДЗ-ФФ-1 & \centering БНН ДЗ-ФФ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БСТО ДЗ-ФФ-1 & \centering БСТО ДЗ-ФФ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Тср ДЗ-ФФ-1.1 & \centering Тср ДЗ-ФФ-1.1 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-\raggedright Тср ДЗ-ФФ-1.2 & \centering Тср ДЗ-ФФ-1.2 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ПЕРВАЯ СТУПЕНЬ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -355,61 +301,16 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/DZ_FF_2.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/DZ_FF_2.pdf}
 \captionof{figure}{Функциональная схема логики ДЗ-ФФ-2}\label{pict_dz:ff2}
 \end{figure}
 
 \item
-Уставки второй ступени ДЗ от междуфазных КЗ (ДЗ-ФФ-2) представлены в таблице \ref{desc_dz:tbl4}.
+Уставки второй ступени ДЗ от междуфазных КЗ (ДЗ-ФФ-2) представлены в таблице \ref{app_set:dz}.
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки ступени ДЗ-ФФ-2\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl4}\\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl4}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
-
-%===m>ДЗ|ДЗ-ФФ-2
-\raggedright ДЗ-ФФ-2 & \centering ДЗ-ФФ-2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering  & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering  & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering  & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
-\hline
-\raggedright ДЗ-ФФ-2.1 & \centering ДЗ-ФФ-2.1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-N & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БК ДЗ-ФФ-2.1 & \centering БК ДЗ-ФФ-2.1 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БК ДЗ-ФФ-2.2 & \centering БК ДЗ-ФФ-2.2 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БНН ДЗ-ФФ-2 & \centering БНН ДЗ-ФФ-2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Тср ДЗ-ФФ-2.1 & \centering Тср ДЗ-ФФ-2.1 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-\raggedright Тср ДЗ-ФФ-2.2 & \centering Тср ДЗ-ФФ-2.2 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 
-\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ВТОРАЯ СТУПЕНЬ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -426,51 +327,13 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/DZ_FF_3.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/DZ_FF_3.pdf}
 \captionof{figure}{Функциональная схема логики ДЗ-ФФ-3}\label{pict_dz:ff3}
 \end{figure}
 
 \item
-Уставки ступеней ДЗ от междуфазных КЗ (ДЗ-ФФ-3, ДЗ-ФФ-4, ДЗ-ФФ-5, ДЗ-ФФ-6) представлены в таблице \ref{desc_dz:tbl5}.
+Уставки ступеней ДЗ от междуфазных КЗ (ДЗ-ФФ-3, ДЗ-ФФ-4, ДЗ-ФФ-5, ДЗ-ФФ-6) представлены в таблице \ref{app_set:dz}.
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки ступени ДЗ-ФФ-3(4,5,6)\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl5}\\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl5}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
-
-%===m>ДЗ|ДЗ-ФФ-3
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ДЗ-ФФ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering  & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering  & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering  & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-N & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК ДЗ-ФФ-N & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ДЗ-ФФ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ДЗ-ФФ-N & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ 3,4,5,6 СТУПЕНИ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -495,129 +358,40 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/DZ_FZ_1.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/DZ_FZ_1.pdf}
 \captionof{figure}{Функциональная схема логики ДЗ-ФЗ-1}\label{pict_dz:DZ_FZ_1}
 \end{figure}
 
 \item
-Уставки первой ступени ДЗ от однофазных КЗ (ДЗ-ФЗ-1) представлены в таблице \ref{desc_dz:tbl6}.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки ступени ДЗ-ФЗ-1\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl6}\\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl6}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
-
-%===m>ДЗ|ДЗ-ФЗ-1
-\raggedright ДЗ-ФЗ-1 & \centering ДЗ-ФЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rср ДЗ-ФФ(ФЗ)-1 & \centering 0,0100 ... 5,0000 & \centering о.е & \centering \arraybackslash 0,0005 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Хср ДЗ-ФФ(ФЗ)-1 & \centering 0,0100 ... 5,0000 & \centering о.е & \centering \arraybackslash 0,0005 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф1 ДЗ-ФФ(ФЗ)-1 & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф4 ДЗ-ФФ(ФЗ)-1 & \centering -45 ... 0 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering  & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright ДЗ-ФЗ-1.2 & \centering ДЗ-ФЗ-1.2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-1 & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БК ДЗ-ФЗ-1.1 & \centering БК ДЗ-ФЗ-1.1 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БК ДЗ-ФЗ-1.2 & \centering БК ДЗ-ФЗ-1.2 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БНН ДЗ-ФЗ-1 & \centering БНН ДЗ-ФЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright БСТО ДЗ-ФЗ-1 & \centering БСТО ДЗ-ФЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Тср ДЗ-ФЗ-1.1 & \centering Тср ДЗ-ФЗ-1.1 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-\raggedright Тср ДЗ-ФЗ-1.2 & \centering Тср ДЗ-ФЗ-1.2 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
+Уставки первой ступени ДЗ от однофазных КЗ (ДЗ-ФЗ-1) представлены в таблице \ref{app_set:dz}.
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ПЕРВАЯ СТУПЕНЬ ФАЗА-ЗЕМЛЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2,3 СТУПЕНИ ФАЗА-ЗЕМЛЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item\label{sec:secfz} Остальные ступени ДЗ от однофазных КЗ ДЗ-ФЗ-2, ДЗ-ФЗ-3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 4,5 СТУПЕНИ ФАЗА-ЗЕМЛЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item\label{sec:secfz} Остальные ступени ДЗ от однофазных КЗ (ДЗ-ФЗ-4, ДЗ-ФЗ-5)
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
 
 \item
-Логика работы остальных ступеней ДЗ от однофазных КЗ выполнена одинаковой. Ввод в работу ступеней осуществляется программными ключами \textbf{«ДЗ-ФЗ-2(3)»}. Действие ступеней осуществляется с регулируемыми независимыми выдержками времени \textbf{«Тср ДЗ-ФЗ-2(3)»}. Контроль от БК задается отдельными программными переключателями \textbf{«БК ДЗ-ФЗ-2(3)»}.
+Логика работы остальных ступеней ДЗ от однофазных КЗ выполнена одинаковой. Ввод в работу ступеней осуществляется программными ключами \textbf{«ДЗ-ФЗ-4(5)»}. Действие ступеней осуществляется с регулируемыми независимыми выдержками времени \textbf{«Тср ДЗ-ФЗ-4(5)»}. Контроль от БК задается отдельными программными переключателями \textbf{«БК ДЗ-ФЗ-4(5)»}.
 
 \item
-Разрешающий сигнал от БК для ступеней подхватывается от срабатывания РС соответствующей ступени и удерживается независимо от истечения времени ввода БК. Возврат разрешающего сигнала происходит только после возврата РС соответствующей ступени. На рисунке \ref{pict_dz:DZ_FZ_2} приведена функциональная схема логики ДЗ-ФЗ-2, выполнение функциональной схемы логики ступени ДЗ-ФЗ-3 аналогичное.
+Разрешающий сигнал от БК для ступеней подхватывается от срабатывания РС соответствующей ступени и удерживается независимо от истечения времени ввода БК. Возврат разрешающего сигнала происходит только после возврата РС соответствующей ступени. На рисунке \ref{pict_dz:DZ_FZ_2} приведена функциональная схема логики ДЗ-ФЗ-4, выполнение функциональной схемы логики ступени ДЗ-ФЗ-5 аналогичное.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/DZ_FZ_2.pdf}
-\captionof{figure}{Функциональная схема логики ДЗ-ФЗ-2}\label{pict_dz:DZ_FZ_2}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/DZ_FZ_2.pdf}
+\captionof{figure}{Функциональная схема логики ДЗ-ФЗ-4}\label{pict_dz:DZ_FZ_2}
 \end{figure}
 
 \item
-Уставки ступеней ДЗ от однофазных КЗ (ДЗ-ФЗ-2, ДЗ-ФЗ-3) представлены в таблице \ref{desc_dz:tbl7}.
+Уставки ступеней ДЗ от однофазных КЗ (ДЗ-ФЗ-4, ДЗ-ФЗ-5) представлены в таблице \ref{app_set:dz}.
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки ступени ДЗ-ФЗ-2(3)\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl7}\\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl7}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
-
-%===m>ДЗ|ДЗ-ФЗ-4
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ДЗ-ФЗ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering  & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering  & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering  & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-N & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК ДЗ-ФЗ-N & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ДЗ-ФЗ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ДЗ-ФЗ-N & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ 2,3 СТУПЕНИ ФАЗА-ЗЕМЛЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ 4,5 СТУПЕНИ ФАЗА-ЗЕМЛЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БНН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -678,41 +452,13 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/AU_DZ.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/AU_DZ.pdf}
 \captionof{figure}{Функциональная схема  пуска АУ ДЗ}\label{pict_dz:AU_DZ}
 \end{figure}
 
 \item
-Уставки автоматического ускорения ДЗ (АУ ДЗ) представлены в таблице \ref{desc_dz:tbl8}.
+Уставки автоматического ускорения ДЗ (АУ ДЗ) представлены в таблице \ref{app_set:dz}.
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки АУ ДЗ\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl8}\\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl8}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
-
-%===m>ДЗ|АУ ДЗ
-\raggedright Ступень АУ ДЗ-ФФ & \centering Ступень АУ ДЗ-ФФ & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright Ступень АУ ДЗ-ФЗ & \centering Ступень АУ ДЗ-ФЗ & \centering Выведено \\ 1 ст. \\ 4 ст. \\ 5 ст. & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ДЗ-ФЗ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ АУ ДЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -735,67 +481,18 @@
 Необходимо обратить внимание, что как оперативное ускорение, так и оперативное ускорение без выдержки времени осуществляются от сигналов пуска ступени ДЗ, то есть контроль от БК и БНН для обоих режимов определяется соответствующими настройками самой ступени.
 
 \item
-Функциональные схемы логики ОУ ДЗ и ОУ-бв ДЗ приведены на рисунках \ref{pict_dz:OU_DZ} и \ref{pict_dz:OU_bv_DZ} соответственно.
+Функциональные схемы логики ОУ ДЗ приведена на рисунке \ref{pict_dz:OU_DZ}. Схема логики ОУ-бв ДЗ выполнена аналогично ОУ ДЗ.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/OU_DZ.pdf}
+\includegraphics[width=0.95\textwidth,height=0.95\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0021 ДЗ/img/OU_DZ.pdf}
 \captionof{figure}{Функциональная схема логики ОУ ДЗ}\label{pict_dz:OU_DZ}
 \end{figure}
 
-\vspace{2mm}
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/561.0021 ДЗ/img/OU_bv_DZ.pdf}
-\captionof{figure}{Функциональная схема логики ОУ-бв ДЗ}\label{pict_dz:OU_bv_DZ}
-\end{figure}
-
 \item
-Уставки оперативного ускорения ДЗ (ОУ ДЗ) представлены в таблице \ref{desc_dz:tbl9}. Уставки оперативного ускорения ДЗ без выдержки времени (ОУ-бв ДЗ) аналогичны уставкам ОУ ДЗ.
+Уставки оперативного ускорения ДЗ (ОУ ДЗ) и оперативного ускорения ДЗ без выдержки времени (ОУ-бв ДЗ) представлены в таблице \ref{app_set:dz}.
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки ОУ ДЗ\hfill\vspace{-0.5\baselineskip}}\label{desc_dz:tbl9}\\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc_dz:tbl9}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
-
-%===m>ДЗ|ОУ1 ДЗ
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ступень ОУ ДЗ-ФФ & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ступень ОУ ДЗ-ФЗ & \centering Выведено \\ 1 ст. \\ 4 ст. \\ 5 ст. & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК ОУ ДЗ & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ОУ ДЗ & \centering Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват РС-ФФ ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват РС-ФЗ ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ОУ ДЗ при выводе осн. защиты & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
-\hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ОУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ ОУ ДЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
