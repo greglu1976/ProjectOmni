@@ -33,9 +33,13 @@
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗДЕСЬ ДЛЯ ВЫВОД СОДЕРЖАНИЯ БОЛЬШИМИ БУКВАМИ ПОСЕРЕДИНЕ ЛИСТА см. ГОСТ-2.105-2019, п.6.2.5
-%%% почему то в преамбуле не работает
 \makeatletter
-\renewcommand{\tableofcontents}{\centering{\textbf{\large\MakeUppercase{\contentsname}}}\@starttoc{toc}}
+\renewcommand{\tableofcontents}{%
+  \centering{%
+    \textbf{\large\color{unidarkgreen}\MakeUppercase{\contentsname}}%
+  }%
+  \@starttoc{toc}%
+}
 \makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
