@@ -3,118 +3,102 @@
 
 \setlength{\extrarowheight}{0.06cm}
 
+
+
 \par
 Уставки ДТЗ представлены в таблице \ref{app_set:dzt}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки ДТЗ\hfill\vspace{-0.5\baselineskip}}\label{app_set:dzt}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:dzt}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки ДТЗ}{app_set:dzt}
 
 %===m>ДТЗ|general+-
 \multicolumn{5}{|c|}{ ДТЗ } \\ \hline 
-\raggedright ДТЗ фВ & \centering ДТЗ фВ & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТЗ фВ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright Iср диф & \centering Iср диф & \centering 0,100 ... 2,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\raggedright Iср диф & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кв(Iср диф) & \centering 0,00 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Кв(Iср диф) & \centering 0,00 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,80 \\
 \hline
 \multicolumn{5}{|c|}{ КЦТ } \\ \hline 
-\raggedright Iнеиспр ДТЗ & \centering Iнеиспр ДТЗ & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iнеиспр ДТЗ & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,10 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кв (Iнеиспр) & \centering 0,00 ... 1,00 & \centering  & \centering \arraybackslash 0,01 \\
+\raggedright Кв (Iнеиспр) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
 \hline
-\raggedright Тнеиспр ДТЗ & \centering Тнеиспр ДТЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тнеиспр ДТЗ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
 \hline
-\raggedright Контр изм цеп ДТЗ & \centering Контр изм цеп ДТЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Контр изм цеп ДТЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering фВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright фВ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ДТЗт } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср диф & \centering 0,100 ... 2,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\raggedright Iср диф & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
 \hline
-\raggedright Iт1 & \centering Iт1 & \centering 0,200 ... 1,500 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\raggedright Iт1 & \centering 0,200 ... 1,500 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 1,000 \\
 \hline
-\raggedright Кт1 & \centering Кт1 & \centering 0,100 ... 1,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\raggedright Кт1 & \centering 0,100 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,500 \\
 \hline
-\raggedright Iт2 & \centering Iт2 & \centering 1,000 ... 3,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\raggedright Iт2 & \centering 1,000 ... 3,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 2,000 \\
 \hline
-\raggedright Кт2 & \centering Кт2 & \centering 0,200 ... 1,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\raggedright Кт2 & \centering 0,200 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,750 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кв (Iср диф) & \centering 0,00 ... 1,00 & \centering  & \centering \arraybackslash 0,01 \\
+\raggedright Кв (Iср диф) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,80 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering фВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright фВ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТЗт & \centering ДТЗт & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТЗт & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ДТО } \\ \hline 
-\raggedright Iср ДТО & \centering Iср ДТО & \centering 1,000 ... 20,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\raggedright Iср ДТО & \centering 1,000 ... 20,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 20,000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кв (Iср) & \centering 0,00 ... 1,00 & \centering  & \centering \arraybackslash 0,01 \\
+\raggedright Кв (Iср) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering фВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright фВ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТО & \centering ДТО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ Д2г } \\ \hline 
-\raggedright I2г/I1г ДТЗт & \centering I2г/I1г ДТЗт & \centering 0,050 ... 1,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\raggedright I2г/I1г ДТЗт & \centering 0,050 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,500 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кв (I2(5)г/I1г) & \centering 0,00 ... 1,00 & \centering  & \centering \arraybackslash 0,01 \\
+\raggedright Кв (I2(5)г/I1г) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср диф & \centering 0,000 ... 2,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\raggedright Iср диф & \centering 0,000 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кв (Iср диф) & \centering 0,00 ... 1,00 & \centering  & \centering \arraybackslash 0,01 \\
+\raggedright Кв (Iср диф) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 0.01 с & \centering 0 ... 10 & \centering мc & \centering \arraybackslash 5 \\
+\raggedright 0.01 с & \centering 0 ... 10 & \centering мc & \centering 5 & \centering \arraybackslash 10 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 0.02 с & \centering 0 ... 20 & \centering мc & \centering \arraybackslash 5 \\
+\raggedright 0.02 с & \centering 0 ... 20 & \centering мc & \centering 5 & \centering \arraybackslash 20 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering фВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright фВ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Перекр блок 2г & \centering Перекр блок 2г & \centering Откл \\ 1 из 3 \\ 2 из 3 & \centering --- & \centering \arraybackslash --- \\
+\raggedright Перекр блок 2г & \centering Откл \\ 1 из 3 \\ 2 из 3 & \centering --- & \centering --- & \centering \arraybackslash Откл \\
 \hline
-\raggedright Тперекр блок 2г & \centering Тперекр блок 2г & \centering 100 ... 1000 & \centering мc & \centering \arraybackslash 5 \\
+\raggedright Тперекр блок 2г & \centering 100 ... 1000 & \centering мc & \centering 5 & \centering \arraybackslash 100 \\
 \hline
-\raggedright Блок 2г ДТЗт & \centering Блок 2г ДТЗт & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блок 2г ДТЗт & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ Д5г } \\ \hline 
-\raggedright I5г/I1г ДТЗт & \centering I5г/I1г ДТЗт & \centering 0,050 ... 1,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\raggedright I5г/I1г ДТЗт & \centering 0,050 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,500 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кв (I2(5)г/I1г) & \centering 0,00 ... 1,00 & \centering  & \centering \arraybackslash 0,01 \\
+\raggedright Кв (I2(5)г/I1г) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср диф & \centering 0,000 ... 2,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\raggedright Iср диф & \centering 0,000 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кв (Iср диф) & \centering 0,00 ... 1,00 & \centering  & \centering \arraybackslash 0,01 \\
+\raggedright Кв (Iср диф) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 0.01 с & \centering 0 ... 10 & \centering мc & \centering \arraybackslash 5 \\
+\raggedright 0.01 с & \centering 0 ... 10 & \centering мc & \centering 5 & \centering \arraybackslash 10 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 0.02 с & \centering 0 ... 20 & \centering мc & \centering \arraybackslash 5 \\
+\raggedright 0.02 с & \centering 0 ... 20 & \centering мc & \centering 5 & \centering \arraybackslash 20 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering фВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright фВ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Перекр блок 5г & \centering Перекр блок 5г & \centering Откл \\ 1 из 3 \\ 2 из 3 & \centering --- & \centering \arraybackslash --- \\
+\raggedright Перекр блок 5г & \centering Откл \\ 1 из 3 \\ 2 из 3 & \centering --- & \centering --- & \centering \arraybackslash Откл \\
 \hline
-\raggedright Тперекр блок 5г & \centering Тперекр блок 5г & \centering 100 ... 1000 & \centering мc & \centering \arraybackslash 5 \\
+\raggedright Тперекр блок 5г & \centering 100 ... 1000 & \centering мc & \centering 5 & \centering \arraybackslash 100 \\
 \hline
-\raggedright Блок 5г ДТЗт & \centering Блок 5г ДТЗт & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блок 5г ДТЗт & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
-\end{longtable}
-\normalsize
+\stopTable
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% МТЗ НН
@@ -122,69 +106,52 @@
 \par
 Уставки МТЗ НН представлены в таблице \ref{app_set:mtz}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки МТЗ НН\hfill\vspace{-0.5\baselineskip}}\label{app_set:mtz}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:mtz}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки МТЗ НН}{app_set:mtz}
 
 %===m>МТЗ НН|general+-
 \multicolumn{5}{|c|}{ МТЗ-1 } \\ \hline 
-\raggedright Iср МТЗ-1 НН & \centering Iср МТЗ-1 НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср МТЗ-1 НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright Тср МТЗ-1 НН & \centering Тср МТЗ-1 НН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср МТЗ-1 НН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright МТЗ-1 НН & \centering МТЗ-1 НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright МТЗ-1 НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Режим КПОН МТЗ-1 НН & \centering Режим КПОН МТЗ-1 НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Режим КПОН МТЗ-1 НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Режим БНТ МТЗ-1 НН & \centering Режим БНТ МТЗ-1 НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Режим БНТ МТЗ-1 НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ МТЗ-2 } \\ \hline 
-\raggedright Iср МТЗ-2 НН & \centering Iср МТЗ-2 НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср МТЗ-2 НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright Тср МТЗ-2 НН & \centering Тср МТЗ-2 НН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср МТЗ-2 НН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright МТЗ-2 НН & \centering МТЗ-2 НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright МТЗ-2 НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Режим КПОН МТЗ-2 НН & \centering Режим КПОН МТЗ-2 НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Режим КПОН МТЗ-2 НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Режим БНТ МТЗ-2 НН & \centering Режим БНТ МТЗ-2 НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Режим БНТ МТЗ-2 НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ТО } \\ \hline 
-\raggedright Iср ТО НН & \centering Iср ТО НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср ТО НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright Тср ТО НН & \centering Тср ТО НН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср ТО НН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright  ТО НН & \centering  ТО НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright  ТО НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Режим БНТ ТО НН & \centering Режим БНТ ТО НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Режим БНТ ТО НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ БНТ } \\ \hline 
-\raggedright I2г/I1г МТЗ НН & \centering I2г/I1г МТЗ НН & \centering 0,00 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright I2г/I1г МТЗ НН & \centering 0,00 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,20 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering kв=0.95 & \centering 0,00 ... 1,00 & \centering  & \centering \arraybackslash 0,01 \\
+\raggedright kв=0.95 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
 \hline
-\raggedright 0.04Iном (Iразр БНТ МТЗ НН) & \centering 0.04Iном (Iразр БНТ МТЗ НН) & \centering 0,04 ... 30,00 & \centering о.е & \centering \arraybackslash 0,01 \\
+\raggedright 0.04Iном (Iразр БНТ МТЗ НН) & \centering 0,04 ... 30,00 & \centering о.е & \centering 0,01 & \centering \arraybackslash 0,04 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering kв=1 & \centering 0,00 ... 1,00 & \centering  & \centering \arraybackslash 0,01 \\
+\raggedright kв=1 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
 \hline
-\raggedright БНТ МТЗ НН & \centering БНТ МТЗ НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright БНТ МТЗ НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Iблок БНТ МТЗ НН & \centering Iблок БНТ МТЗ НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iблок БНТ МТЗ НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
 %===m
 \end{longtable}
@@ -196,58 +163,41 @@
 \par
 Уставки КПОН представлены в таблице \ref{app_set:kpon}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки КПОН\hfill\vspace{-0.5\baselineskip}}\label{app_set:kpon}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:kpon}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки КПОН}{app_set:kpon}
 
 %===m>КПОН|general+-
 \multicolumn{5}{|c|}{ КПОН НН1 } \\ \hline 
-\raggedright U2 КПОН НН1 & \centering U2 КПОН НН1 & \centering 0,0050 ... 1,5000 & \centering о.е & \centering \arraybackslash 0,0001 \\
+\raggedright U2 КПОН НН1 & \centering 0,0050 ... 1,5000 & \centering о.е & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
 \hline
-\raggedright Uл КПОН НН1 & \centering Uл КПОН НН1 & \centering 0,0050 ... 1,5000 & \centering о.е & \centering \arraybackslash 0,0001 \\
+\raggedright Uл КПОН НН1 & \centering 0,0050 ... 1,5000 & \centering о.е & \centering 0,0001 & \centering \arraybackslash 0,0050 \\
 \hline
-\raggedright Тип КПОН НН1 & \centering Тип КПОН НН1 & \centering Umin, U2 \\ Umin \\ Внеш & \centering --- & \centering \arraybackslash --- \\
+\raggedright Тип КПОН НН1 & \centering Umin, U2 \\ Umin \\ Внеш & \centering --- & \centering --- & \centering \arraybackslash Umin, U2 \\
 \hline
-\raggedright  КПОН НН1 & \centering  КПОН НН1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright  КПОН НН1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Неиспр ТН КПОН НН1 & \centering Неиспр ТН КПОН НН1 & \centering Выведено \\ Пуск КПОН \\ Блок КПОН & \centering --- & \centering \arraybackslash --- \\
+\raggedright Неиспр ТН КПОН НН1 & \centering Выведено \\ Пуск КПОН \\ Блок КПОН & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
 \multicolumn{5}{|c|}{ КПОН НН2 } \\ \hline 
-\raggedright U2 КПОН НН2 & \centering U2 КПОН НН2 & \centering 0,0050 ... 1,5000 & \centering о.е & \centering \arraybackslash 0,0001 \\
+\raggedright U2 КПОН НН2 & \centering 0,0050 ... 1,5000 & \centering о.е & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
 \hline
-\raggedright Uл КПОН НН2 & \centering Uл КПОН НН2 & \centering 0,0050 ... 1,5000 & \centering о.е & \centering \arraybackslash 0,0001 \\
+\raggedright Uл КПОН НН2 & \centering 0,0050 ... 1,5000 & \centering о.е & \centering 0,0001 & \centering \arraybackslash 0,0050 \\
 \hline
-\raggedright Тип КПОН НН2 & \centering Тип КПОН НН2 & \centering Umin, U2 \\ Umin \\ Внеш & \centering --- & \centering \arraybackslash --- \\
+\raggedright Тип КПОН НН2 & \centering Umin, U2 \\ Umin \\ Внеш & \centering --- & \centering --- & \centering \arraybackslash Umin, U2 \\
 \hline
-\raggedright  КПОН НН2 & \centering  КПОН НН2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright  КПОН НН2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Неиспр ТН КПОН НН2 & \centering Неиспр ТН КПОН НН2 & \centering Выведено \\ Пуск КПОН \\ Блок КПОН & \centering --- & \centering \arraybackslash --- \\
+\raggedright Неиспр ТН КПОН НН2 & \centering Выведено \\ Пуск КПОН \\ Блок КПОН & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
 \multicolumn{5}{|c|}{ КПОН НН } \\ \hline 
-\raggedright U2 КПОН НН & \centering U2 КПОН НН & \centering 0,0050 ... 1,5000 & \centering о.е & \centering \arraybackslash 0,0001 \\
+\raggedright U2 КПОН НН & \centering 0,0050 ... 1,5000 & \centering о.е & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
 \hline
-\raggedright Uл КПОН НН & \centering Uл КПОН НН & \centering 0,0050 ... 1,5000 & \centering о.е & \centering \arraybackslash 0,0001 \\
+\raggedright Uл КПОН НН & \centering 0,0050 ... 1,5000 & \centering о.е & \centering 0,0001 & \centering \arraybackslash 0,0050 \\
 \hline
-\raggedright Тип КПОН НН & \centering Тип КПОН НН & \centering Umin, U2 \\ Umin \\ Внеш & \centering --- & \centering \arraybackslash --- \\
+\raggedright Тип КПОН НН & \centering Umin, U2 \\ Umin \\ Внеш & \centering --- & \centering --- & \centering \arraybackslash Umin, U2 \\
 \hline
-\raggedright КПОН НН & \centering КПОН НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright КПОН НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Неиспр ТН КПОН НН & \centering Неиспр ТН КПОН НН & \centering Выведено \\ Пуск КПОН \\ Блок КПОН & \centering --- & \centering \arraybackslash --- \\
+\raggedright Неиспр ТН КПОН НН & \centering Выведено \\ Пуск КПОН \\ Блок КПОН & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
 %===m
 \end{longtable}
@@ -260,48 +210,31 @@
 \par
 Уставки отключающей ступени ГЗ АТ представлены в таблице \ref{app_set:gzotkl}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки отключающей ступени ГЗ АТ\hfill\vspace{-0.5\baselineskip}}\label{app_set:gzotkl}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:gzotkl}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки отключающей ступени ГЗ АТ}{app_set:gzotkl}
 
 %===m>ГЗ АТ откл|general+-
 \multicolumn{5}{|c|}{ ГЗ АТ откл } \\ \hline 
-\raggedright ГЗ АТ откл 1 цепь & \centering ГЗ АТ откл 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ АТ откл 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ГЗ АТ откл 2 цепь & \centering ГЗ АТ откл 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ АТ откл 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Блокировка ГЗ АТ откл & \centering Блокировка ГЗ АТ откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка ГЗ АТ откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Тбл ГЗ АТ откл & \centering Тбл ГЗ АТ откл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл ГЗ АТ откл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ откл 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ откл 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 %===m
 \end{longtable}
@@ -313,43 +246,25 @@
 \par
 Уставки сигнальной ступени ГЗ АТ представлены в таблице \ref{app_set:gzsign}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки сигнальной ступени ГЗ АТ\hfill\vspace{-0.5\baselineskip}}\label{app_set:gzsign}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:gzsign}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки сигнальной ступени ГЗ АТ}{app_set:gzsign}
 
 %===m>ГЗ АТ сигн|general+-
 \multicolumn{5}{|c|}{ ГЗ АТ сигн } \\ \hline 
-\raggedright ГЗ АТ сигн 1 цепь & \centering ГЗ АТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ АТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ГЗ АТ сигн 2 цепь & \centering ГЗ АТ сигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ АТ сигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Откл от ГЗ АТ сигн & \centering Откл от ГЗ АТ сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от ГЗ АТ сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ сигн 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ сигн 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
 \normalsize
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ГЗ ЛРТ откл
@@ -357,48 +272,31 @@
 \par
 Уставки отключающей ступени ГЗ ЛРТ представлены в таблице \ref{app_set:gzlrtotkl}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки отключающей ступени ГЗ ЛРТ\hfill\vspace{-0.5\baselineskip}}\label{app_set:gzlrtotkl}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:gzlrtotkl}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки отключающей ступени ГЗ ЛРТ}{app_set:gzlrtotkl}
 
 %===m>ГЗ ЛРТ откл|general+-
 \multicolumn{5}{|c|}{ ГЗ ЛРТ откл } \\ \hline 
-\raggedright ГЗ ЛРТ откл 1 цепь & \centering ГЗ ЛРТ откл 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ ЛРТ откл 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ГЗ ЛРТ откл 2 цепь & \centering ГЗ ЛРТ откл 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ ЛРТ откл 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Блокировка ГЗ ЛРТ & \centering Блокировка ГЗ ЛРТ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка ГЗ ЛРТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Тбл ГЗ ЛРТ & \centering Тбл ГЗ ЛРТ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл ГЗ ЛРТ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ откл 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ откл 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 %===m
 \end{longtable}
@@ -410,43 +308,25 @@
 \par
 Уставки сигнальной ступени ГЗ ЛРТ представлены в таблице \ref{app_set:gzlrtsign}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки сигнальной ступени ГЗ ЛРТ\hfill\vspace{-0.5\baselineskip}}\label{app_set:gzlrtsign}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:gzlrtsign}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки сигнальной ступени ГЗ ЛРТ}{app_set:gzlrtsign}
 
 %===m>ГЗ ЛРТ сигн|general+-
 \multicolumn{5}{|c|}{ ГЗ ЛРТ сигн } \\ \hline 
-\raggedright ГЗ ЛРТ сигн 1 цепь & \centering ГЗ ЛРТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ ЛРТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ГЗ ЛРТ сигн 2 цепь & \centering ГЗ ЛРТ сигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ ЛРТ сигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Откл от ГЗ ЛРТ сигн & \centering Откл от ГЗ ЛРТ сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от ГЗ ЛРТ сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ сигн 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ сигн 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
 \normalsize
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ГЗ РПН
@@ -454,81 +334,63 @@
 \par
 Уставки ГЗ РПН представлены в таблице \ref{app_set:gzrpn}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки ГЗ РПН\hfill\vspace{-0.5\baselineskip}}\label{app_set:gzrpn}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:gzrpn}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки ГЗ РПН}{app_set:gzrpn}
 
 %===m>ГЗ РПН|general+-
 \multicolumn{5}{|c|}{ ГЗ РПН } \\ \hline 
-\raggedright ГЗ РПН 1 цепь & \centering ГЗ РПН 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ РПН 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ГЗ РПН 2 цепь & \centering ГЗ РПН 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ РПН 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Блок ГЗ РПН & \centering Блок ГЗ РПН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блок ГЗ РПН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Тбл ГЗ РПН & \centering Тбл ГЗ РПН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл ГЗ РПН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ откл.фА 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ откл.фА 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ откл.фВ 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ откл.фВ 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ откл.фС 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ГЗ откл.фС 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 %===m
 \end{longtable}
 \normalsize
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ТЗ АТ
@@ -536,94 +398,77 @@
 \par
 Уставки ТЗ АТ представлены в таблице \ref{app_set:tzat}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки ТЗ АТ \hfill\vspace{-0.5\baselineskip}}\label{app_set:tzat}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:tzat}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки ТЗ АТ}{app_set:tzat}
 
 %===m>ТЗ АТ|general+-
 \multicolumn{5}{|c|}{ ТЗ АТ } \\ \hline 
-\raggedright ДТм АТ сигн 1 цепь & \centering ДТм АТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТм АТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТм АТ сигн 2 цепь & \centering ДТм АТ сигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТм АТ сигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТм АТ авар 1 цепь & \centering ДТм АТ авар 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТм АТ авар 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТм АТ авар 2 цепь & \centering ДТм АТ авар 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТм АТ авар 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТо АТ сигн 1 цепь & \centering ДТо АТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТо АТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТо АТ сигн 2 цепь & \centering ДТо АТ сигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТо АТ сигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТо АТ авар 1 цепь & \centering ДТо АТ авар 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТо АТ авар 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТо АТ авар 2 цепь & \centering ДТо АТ авар 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТо АТ авар 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Блокировка ТЗ АТ & \centering Блокировка ТЗ АТ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка ТЗ АТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Тбл ТЗ АТ & \centering Тбл ТЗ АТ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл ТЗ АТ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright Откл от ДТм АТ авар & \centering Откл от ДТм АТ авар & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от ДТм АТ авар & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Откл от ДТо АТ авар & \centering Откл от ДТо АТ авар & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от ДТо АТ авар & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Откл от отсеч клап АТ & \centering Откл от отсеч клап АТ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от отсеч клап АТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Откл от предохр клап АТ & \centering Откл от предохр клап АТ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от предохр клап АТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ДТм сигн 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ДТм сигн 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ДТм авар 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ДТм авар 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ДТо сигн 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ДТо сигн 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ДТо авар 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ДТо авар 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 %===m
 \end{longtable}
@@ -635,112 +480,95 @@
 \par
 Уставки ТЗ ЛРТ представлены в таблице \ref{app_set:tzlrt}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки ТЗ ЛРТ\hfill\vspace{-0.5\baselineskip}}\label{app_set:tzlrt}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:tzlrt}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки ТЗ ЛРТ}{app_set:tzlrt}
 
 %===m>ТЗ ЛРТ|general+-
 \multicolumn{5}{|c|}{ ТЗ ЛРТ } \\ \hline 
-\raggedright ДТм ЛРТ сигн 1 цепь & \centering ДТм ЛРТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТм ЛРТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТм ЛРТ сигн 2 цепь & \centering ДТм ЛРТ сигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТм ЛРТ сигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТм ЛРТ авар 1 цепь & \centering ДТм ЛРТ авар 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТм ЛРТ авар 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТм ЛРТ авар 2 цепь & \centering ДТм ЛРТ авар 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТм ЛРТ авар 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТо ЛРТ сигн 1 цепь & \centering ДТо ЛРТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТо ЛРТ сигн 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТо ЛРТсигн 2 цепь & \centering ДТо ЛРТсигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТо ЛРТсигн 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТо ЛРТ авар 1 цепь & \centering ДТо ЛРТ авар 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТо ЛРТ авар 1 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright ДТо ЛРТ авар 2 цепь & \centering ДТо ЛРТ авар 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ДТо ЛРТ авар 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright РД ЛРТ 2 цепь & \centering РД ЛРТ 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РД ЛРТ 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright РД ЛРТ 2 цепь & \centering РД ЛРТ 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РД ЛРТ 2 цепь & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Блокировка ТЗ ЛРТ & \centering Блокировка ТЗ ЛРТ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка ТЗ ЛРТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Тбл ТЗ ЛРТ & \centering Тбл ТЗ ЛРТ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл ТЗ ЛРТ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright Откл от ДТм ЛРТ авар & \centering Откл от ДТм ЛРТ авар & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от ДТм ЛРТ авар & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Откл от ДТо  ЛРТ авар & \centering Откл от ДТо  ЛРТ авар & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от ДТо  ЛРТ авар & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Откл от РД ЛРТ & \centering Откл от РД ЛРТ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от РД ЛРТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Откл от предохр клап ЛРТ & \centering Откл от предохр клап ЛРТ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от предохр клап ЛРТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
 \multicolumn{5}{|c|}{ ДТм сигн 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ДТм сигн 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ДТо сигн 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ДТо сигн 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) сигн & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ДТм авар 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ДТм авар 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ДТо авар 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ ДТо авар 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ РД ЛРТ 1 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 \multicolumn{5}{|c|}{ РД ЛРТ 2 цепь } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блокировка & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блокировка & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ГЗ (ТЗ) откл & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тбл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тбл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
 %===m
 \end{longtable}
@@ -748,44 +576,26 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ТК ЗДЗ
-
 \par
 Уставки ТК ЗДЗ представлены в таблице \ref{app_set:tkzdz}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки ТЗ АТ \hfill\vspace{-0.5\baselineskip}}\label{app_set:tkzdz}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:tkzdz}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки ТК ЗДЗ}{app_set:tkzdz}
 
 %===m>ТК ЗДЗ|general+-
 \multicolumn{5}{|c|}{ ТК ЗДЗ НН } \\ \hline 
-\raggedright Iср ТК ЗДЗ НН & \centering Iср ТК ЗДЗ НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср ТК ЗДЗ НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright ТК ЗДЗ НН & \centering ТК ЗДЗ НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ТК ЗДЗ НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ТК ЗДЗ СН } \\ \hline 
-\raggedright Iср ТК ЗДЗ СН & \centering Iср ТК ЗДЗ СН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср ТК ЗДЗ СН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright ТК ЗДЗ СН & \centering ТК ЗДЗ СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ТК ЗДЗ СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ТК ЗДЗ ВН } \\ \hline 
-\raggedright Iср ТК ЗДЗ ВН & \centering Iср ТК ЗДЗ ВН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср ТК ЗДЗ ВН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright ТК ЗДЗ ВН & \centering ТК ЗДЗ ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ТК ЗДЗ ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -797,30 +607,13 @@
 \par
 Уставки логики пуска АПТ представлены в таблице \ref{app_set:apt}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки логики пуска АПТ \hfill\vspace{-0.5\baselineskip}}\label{app_set:apt}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:apt}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки логики пуска АПТ }{app_set:apt}
 
 %===m>ЛППТ АТ|general+-
 \multicolumn{5}{|c|}{ ЛППТ } \\ \hline 
-\raggedright Тимп ЛППТ АТ  & \centering Тимп ЛППТ АТ  & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тимп ЛППТ АТ  & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright ЛППТ АТ & \centering ЛППТ АТ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЛППТ АТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -832,48 +625,30 @@
 \par
 Уставки КОН представлены в таблице \ref{app_set:kon}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки КОН\hfill\vspace{-0.5\baselineskip}}\label{app_set:kon}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:kon}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
+\startTable{Параметры для настройки КОН}{app_set:kon}
 
 %===m>КОН|general+-
 \multicolumn{5}{|c|}{ КОН } \\ \hline 
-\raggedright КОН & \centering КОН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright КОН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ РН НН } \\ \hline 
-\raggedright Uср НН & \centering Uср НН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uср НН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,1000 \\
 \hline
-\raggedright РН НН & \centering РН НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РН НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ РТ ВН } \\ \hline 
-\raggedright Iср РТ ВН & \centering Iср РТ ВН & \centering 0,04 ... 40,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ ВН & \centering 0,04 ... 40,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,10 \\
 \hline
-\raggedright РТ ВН & \centering РТ ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РТ ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ РТ СН } \\ \hline 
-\raggedright Iср РТ СН & \centering Iср РТ СН & \centering 0,04 ... 40,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ СН & \centering 0,04 ... 40,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,10 \\
 \hline
-\raggedright РТ СН & \centering РТ СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РТ СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
 \normalsize
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОН
@@ -881,46 +656,30 @@
 \par
 Уставки РТПО представлены в таблице \ref{app_set:rtpo}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Параметры для настройки РТПО\hfill\vspace{-0.5\baselineskip}}\label{app_set:rtpo}\\
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
+\startTable{Параметры для настройки РТПО}{app_set:rtpo}
 
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:rtpo}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-
-\hline
-\rowcolor{gray!20}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
 
 %===m>РТПО АТ|general+-
 \multicolumn{5}{|c|}{ РТПО ВН } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср РТ1 ВН РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ1 ВН РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср РТ2 ВН РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ2 ВН РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering РТ ВН РТПО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РТ ВН РТПО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ РТПО ОО } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср РТ1 ОО РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ1 ОО РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср РТ2 ОО РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ2 ОО РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering РТ ОО РТПО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РТ ОО РТПО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ РТПО НН } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср РТ1 НН РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ1 НН РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср РТ2 НН РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ2 НН РТПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering РТ НН РТПО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РТ НН РТПО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -954,9 +713,9 @@
 
 %===m>РТ бл. РПН АТ|general+-
 \multicolumn{5}{|c|}{ РТ РПН } \\ \hline 
-\raggedright Iбл РПН & \centering Iбл РПН & \centering 0,04 ... 30,00 & \centering о.е & \centering \arraybackslash 0,01 \\
+\raggedright Iбл РПН & \centering 0,04 ... 30,00 & \centering о.е & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright РТ бл РПН & \centering РТ бл РПН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РТ бл РПН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
 %===m
 \end{longtable}
@@ -988,25 +747,25 @@
 
 %===m>ЗП|general+-
 \multicolumn{5}{|c|}{ ЗП ВН } \\ \hline 
-\raggedright Тср ЗП ВН & \centering Тср ЗП ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср ЗП ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright Iср ЗП ВН & \centering Iср ЗП ВН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср ЗП ВН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright ЗП ВН & \centering ЗП ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗП ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ЗП ОО } \\ \hline 
-\raggedright Тср ЗП ОО & \centering Тср ЗП ОО & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср ЗП ОО & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright Iср ЗП ОО & \centering Iср ЗП ОО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср ЗП ОО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright ЗП ОО & \centering ЗП ОО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗП ОО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ЗП НН } \\ \hline 
-\raggedright Тср ЗП НН & \centering Тср ЗП НН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср ЗП НН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright Iср ЗП НН & \centering Iср ЗП НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср ЗП НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright ЗП НН & \centering ЗП НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗП НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -1038,55 +797,55 @@
 
 %===m>ЗПО АТ|general+-
 \multicolumn{5}{|c|}{ ЗПО АТ } \\ \hline 
-\raggedright Откл от ЗПО & \centering Откл от ЗПО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от ЗПО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ЗПО-1 } \\ \hline 
-\raggedright ЗПО-1 конт ДТм & \centering ЗПО-1 конт ДТм & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗПО-1 конт ДТм & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Тср ЗПО-1 & \centering Тср ЗПО-1 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср ЗПО-1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright ЗПО-1 контр РТ & \centering ЗПО-1 контр РТ & \centering Выведено \\ От РТ1 \\ От РТ2 & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗПО-1 контр РТ & \centering Выведено \\ От РТ1 \\ От РТ2 & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright ЗПО-1 & \centering ЗПО-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗПО-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ЗПО-2 } \\ \hline 
-\raggedright ЗПО-2 конт ДТм & \centering ЗПО-2 конт ДТм & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗПО-2 конт ДТм & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Тср ЗПО-2 & \centering Тср ЗПО-2 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср ЗПО-2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright ЗПО-2 контр РТ & \centering ЗПО-2 контр РТ & \centering Выведено \\ От РТ1 \\ От РТ2 & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗПО-2 контр РТ & \centering Выведено \\ От РТ1 \\ От РТ2 & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright ЗПО-2 & \centering ЗПО-2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗПО-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ ЗПО-3 } \\ \hline 
-\raggedright ЗПО-3 конт ДТм & \centering ЗПО-3 конт ДТм & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗПО-3 конт ДТм & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Тср ЗПО-3 & \centering Тср ЗПО-3 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср ЗПО-3 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright ЗПО-3 контр РТ & \centering ЗПО-3 контр РТ & \centering Выведено \\ От РТ1 \\ От РТ2 & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗПО-3 контр РТ & \centering Выведено \\ От РТ1 \\ От РТ2 & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright ЗПО-3 & \centering ЗПО-3 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ЗПО-3 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ РТ ЗПО ВН } \\ \hline 
-\raggedright Iср РТ1 ВН ЗПО & \centering Iср РТ1 ВН ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ1 ВН ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright Iср РТ2 ВН ЗПО & \centering Iср РТ2 ВН ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ2 ВН ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright РТ ВН ЗПО & \centering РТ ВН ЗПО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РТ ВН ЗПО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ РТ ЗПО ОО } \\ \hline 
-\raggedright Iср РТ1 ОО ЗПО & \centering Iср РТ1 ОО ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ1 ОО ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright Iср РТ2 ОО ЗПО & \centering Iср РТ2 ОО ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ2 ОО ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright РТ ОО ЗПО & \centering РТ ОО ЗПО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РТ ОО ЗПО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ РТ ЗПО НН } \\ \hline 
-\raggedright Iср РТ1 НН ЗПО & \centering Iср РТ1 НН ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ1 НН ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright Iср РТ2 НН ЗПО & \centering Iср РТ2 НН ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср РТ2 НН ЗПО & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright РТ НН ЗПО & \centering РТ НН ЗПО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright РТ НН ЗПО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -1119,15 +878,15 @@
 
 %===m>КИ НН|general+-
 \multicolumn{5}{|c|}{ ИО КН } \\ \hline 
-\raggedright 3U0ср КИ НН & \centering 3U0ср КИ НН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright 3U0ср КИ НН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
 \hline
-\raggedright Тср КИ НН & \centering Тср КИ НН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср КИ НН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright U2бл КИ НН & \centering U2бл КИ НН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright U2бл КИ НН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
 \hline
-\raggedright Блок U2 КИ НН & \centering Блок U2 КИ НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блок U2 КИ НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright КИ НН & \centering КИ НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright КИ НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -1160,31 +919,31 @@
 
 %===m>КЦН|general+-
 \multicolumn{5}{|c|}{ КЦН НН } \\ \hline 
-\raggedright U2 КЦН НН & \centering U2 КЦН НН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright U2 КЦН НН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
 \hline
-\raggedright Uл КЦН НН & \centering Uл КЦН НН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uл КЦН НН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0050 \\
 \hline
-\raggedright Тср КЦН НН & \centering Тср КЦН НН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср КЦН НН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright КЦН НН & \centering КЦН НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright КЦН НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ КЦН НН1 } \\ \hline 
-\raggedright U2 КЦН НН1 & \centering U2 КЦН НН1 & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright U2 КЦН НН1 & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
 \hline
-\raggedright Uл КЦН НН1 & \centering Uл КЦН НН1 & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uл КЦН НН1 & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0050 \\
 \hline
-\raggedright Тср КЦН НН1 & \centering Тср КЦН НН1 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср КЦН НН1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright  КЦН НН1 & \centering  КЦН НН1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright  КЦН НН1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ КЦН НН2 } \\ \hline 
-\raggedright U2 КЦН НН2 & \centering U2 КЦН НН2 & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright U2 КЦН НН2 & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
 \hline
-\raggedright Uл КЦН НН2 & \centering Uл КЦН НН2 & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uл КЦН НН2 & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0050 \\
 \hline
-\raggedright Тср КЦН НН2 & \centering Тср КЦН НН2 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср КЦН НН2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright  КЦН НН2 & \centering  КЦН НН2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright  КЦН НН2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -1216,19 +975,19 @@
 
 %===m>УРОВ В1(ЛВ) ВН|general+-
 \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
-\raggedright Действ на себя УРОВ В1(ЛВ) ВН & \centering Действ на себя УРОВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Действ на себя УРОВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Тср повт УРОВ В1(ЛВ) ВН & \centering Тср повт УРОВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср повт УРОВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright Тср УРОВ В1(ЛВ) ВН & \centering Тср УРОВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср УРОВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright Iср УРОВ В1(ЛВ) ВН & \centering Iср УРОВ В1(ЛВ) ВН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср УРОВ В1(ЛВ) ВН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright УРОВ В1(ЛВ) ВН & \centering УРОВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright УРОВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Подхв УРОВ В1(ЛВ) ВН & \centering Подхв УРОВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Подхв УРОВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Контр выкл УРОВ В1(ЛВ) ВН & \centering Контр выкл УРОВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Контр выкл УРОВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -1260,19 +1019,19 @@
 
 %===m>УРОВ В1(ЛВ) СН|general+-
 \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Действ на себя УРОВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Действ на себя УРОВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср повт УРОВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср повт УРОВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср УРОВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср УРОВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср УРОВ В1(ЛВ) СН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср УРОВ В1(ЛВ) СН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УРОВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright УРОВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхв УРОВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Подхв УРОВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр выкл УРОВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Контр выкл УРОВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -1305,13 +1064,13 @@
 
 %===m>ПО УРОВ НН|general+-
 \multicolumn{5}{|c|}{ ПО УРОВ } \\ \hline 
-\raggedright Тср ПО УРОВ НН & \centering Тср ПО УРОВ НН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср ПО УРОВ НН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\raggedright Iср ПО УРОВ НН & \centering Iср ПО УРОВ НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\raggedright Iср ПО УРОВ НН & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
 \hline
-\raggedright ПО УРОВ В НН & \centering ПО УРОВ В НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright ПО УРОВ В НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright Подхв ПО УРОВ В НН & \centering Подхв ПО УРОВ В НН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Подхв ПО УРОВ В НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
 %===m
 \end{longtable}
@@ -1343,15 +1102,15 @@
 
 %===m>УВ В1(ЛВ) ВН|general+-
 \multicolumn{5}{|c|}{ УВ } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл опер вкл В1(ЛВ) ВН  & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тожид усл опер вкл В1(ЛВ) ВН  & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тпрод опер вкл В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тпрод опер вкл В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок от многокр вкл на КЗ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блок от многокр вкл на КЗ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват вкл от РТ ЭМВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Подхват вкл от РТ ЭМВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright УВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -1383,15 +1142,15 @@
 
 %===m>УВ В1(ЛВ) СН|general+-
 \multicolumn{5}{|c|}{ УВ } \\ \hline 
-\raggedright Тожид усл опер вкл В1(ЛВ) СН & \centering Тожид усл опер вкл В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тожид усл опер вкл В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
 \hline
-\raggedright Тпрод опер вкл В1(ЛВ) СН & \centering Тпрод опер вкл В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тпрод опер вкл В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright Блок от многокр вкл на КЗ В1(ЛВ) СН & \centering Блок от многокр вкл на КЗ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Блок от многокр вкл на КЗ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright Подхват вкл от РТ ЭМВ В1(ЛВ) СН & \centering Подхват вкл от РТ ЭМВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Подхват вкл от РТ ЭМВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright УВ В1(ЛВ) СН & \centering УВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright УВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -1423,35 +1182,35 @@
 
 %===m>КСН В1(ЛВ) ВН|general+-
 \multicolumn{5}{|c|}{ КСН } \\ \hline 
-\raggedright Uотс Т & \centering Uотс Т & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uотс Т & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,2000 \\
 \hline
-\raggedright Uнал СШ & \centering Uнал СШ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uнал СШ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,8000 \\
 \hline
-\raggedright Uотс СШ & \centering Uотс СШ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uотс СШ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,2000 \\
 \hline
-\raggedright Uнал Т & \centering Uнал Т & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uнал Т & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,8000 \\
 \hline
-\raggedright КС & \centering КС & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright КС & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright U<Uуст & \centering U<Uуст & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright U<Uуст & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,1000 \\
 \hline
-\raggedright df макс & \centering df макс & \centering 0,050 ... 3,000 & \centering Гц & \centering \arraybackslash 0,001 \\
+\raggedright df макс & \centering 0,050 ... 3,000 & \centering Гц & \centering 0,001 & \centering \arraybackslash 0,400 \\
 \hline
-\raggedright dФ макс & \centering dФ макс & \centering 1 ... 90 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\raggedright dФ макс & \centering 1 ... 90 & \centering Эл. градусы & \centering 1,0 & \centering \arraybackslash 10 \\
 \hline
-\raggedright УС & \centering УС & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright УС & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright df доп & \centering df доп & \centering 0,025 ... 3,000 & \centering Гц & \centering \arraybackslash 0,001 \\
+\raggedright df доп & \centering 0,025 ... 3,000 & \centering Гц & \centering 0,001 & \centering \arraybackslash 1,000 \\
 \hline
-\raggedright Т опер. вкл & \centering Т опер. вкл & \centering 0 ... 10000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Т опер. вкл & \centering 0 ... 10000 & \centering мс & \centering 5 & \centering \arraybackslash 100 \\
 \hline
-\raggedright Контр опер вкл & \centering Контр опер вкл & \centering Внутр \\ Внеш & \centering --- & \centering \arraybackslash --- \\
+\raggedright Контр опер вкл & \centering Внутр \\ Внеш & \centering --- & \centering --- & \centering \arraybackslash Внутр \\
 \hline
-\raggedright Опер вкл с КОН & \centering Опер вкл с КОН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Опер вкл с КОН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Опер вкл В без контролей & \centering Опер вкл В без контролей & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Опер вкл В без контролей & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright КСН & \centering КСН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright КСН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -1484,35 +1243,35 @@
 
 %===m>КСН В1(ЛВ) СН|general+-
 \multicolumn{5}{|c|}{ КСН } \\ \hline 
-\raggedright Uотс Т & \centering Uотс Т & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uотс Т & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,2000 \\
 \hline
-\raggedright Uнал СШ & \centering Uнал СШ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uнал СШ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,8000 \\
 \hline
-\raggedright Uотс СШ & \centering Uотс СШ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uотс СШ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,2000 \\
 \hline
-\raggedright Uнал Т & \centering Uнал Т & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright Uнал Т & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,8000 \\
 \hline
-\raggedright КС & \centering КС & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright КС & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright U<Uуст & \centering U<Uуст & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\raggedright U<Uуст & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,1000 \\
 \hline
-\raggedright df макс & \centering df макс & \centering 0,050 ... 3,000 & \centering Гц & \centering \arraybackslash 0,001 \\
+\raggedright df макс & \centering 0,050 ... 3,000 & \centering Гц & \centering 0,001 & \centering \arraybackslash 0,400 \\
 \hline
-\raggedright dФ макс & \centering dФ макс & \centering 1 ... 90 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\raggedright dФ макс & \centering 1 ... 90 & \centering Эл. градусы & \centering 1,0 & \centering \arraybackslash 10 \\
 \hline
-\raggedright УС & \centering УС & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright УС & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright df доп & \centering df доп & \centering 0,025 ... 3,000 & \centering Гц & \centering \arraybackslash 0,001 \\
+\raggedright df доп & \centering 0,025 ... 3,000 & \centering Гц & \centering 0,001 & \centering \arraybackslash 1,000 \\
 \hline
-\raggedright Т опер. вкл & \centering Т опер. вкл & \centering 0 ... 10000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Т опер. вкл & \centering 0 ... 10000 & \centering мс & \centering 5 & \centering \arraybackslash 100 \\
 \hline
-\raggedright Контр опер вкл & \centering Контр опер вкл & \centering Внутр \\ Внеш & \centering --- & \centering \arraybackslash --- \\
+\raggedright Контр опер вкл & \centering Внутр \\ Внеш & \centering --- & \centering --- & \centering \arraybackslash Внутр \\
 \hline
-\raggedright Опер вкл с КОН & \centering Опер вкл с КОН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Опер вкл с КОН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Опер вкл В без контролей & \centering Опер вкл В без контролей & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Опер вкл В без контролей & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright КСН & \centering КСН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright КСН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
@@ -1544,37 +1303,37 @@
 
 %===m>АПВ В1(ЛВ) ВН|general+-
 \multicolumn{5}{|c|}{ АПВ В1(ЛВ) ВН } \\ \hline 
-\raggedright Тгот АПВ В1(ЛВ) ВН & \centering Тгот АПВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тгот АПВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
 \hline
-\raggedright Тожид усл вкл В1(ЛВ) ВН & \centering Тожид усл вкл В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тожид усл вкл В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 20000 \\
 \hline
 \multicolumn{5}{|c|}{ АПВ СШ } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АПВ СШ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright АПВ СШ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 15000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тожид усл. вкл. & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 100 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АПВш В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср АПВш В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 2000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тимп АПВш В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тимп АПВш В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 20 \\
 \hline
 \multicolumn{5}{|c|}{ АПВ Т } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл вкл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тожид усл вкл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 20000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АПВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright АПВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АПВ-1 В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср АПВ-1 В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тимп АПВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тимп АПВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 2000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АПВ-2 В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср АПВ-2 В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 4000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Твосст гот АПВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Твосст гот АПВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 2-ой цикл АПВ В1(ЛВ) ВН  & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright 2-ой цикл АПВ В1(ЛВ) ВН  & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
 %===m
 \end{longtable}
@@ -1606,37 +1365,37 @@
 
 %===m>АПВ В1(ЛВ) СН|general+-
 \multicolumn{5}{|c|}{ АПВ В1(ЛВ) СН } \\ \hline 
-\raggedright Тгот АПВ В1(ЛВ) СН & \centering Тгот АПВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тгот АПВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
 \hline
-\raggedright Тожид усл вкл В1(ЛВ) СН & \centering Тожид усл вкл В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тожид усл вкл В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 20000 \\
 \hline
 \multicolumn{5}{|c|}{ АПВ СШ } \\ \hline 
-\raggedright АПВ СШ В1(ЛВ) СН & \centering АПВ СШ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright АПВ СШ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 15000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тожид усл. вкл. & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 100 \\
 \hline
-\raggedright Тср АПВш В1(ЛВ) СН & \centering Тср АПВш В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср АПВш В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 2000 \\
 \hline
-\raggedright Тимп АПВш В1(ЛВ) СН & \centering Тимп АПВш В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тимп АПВш В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 20 \\
 \hline
 \multicolumn{5}{|c|}{ АПВ Т } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл вкл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тожид усл вкл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 20000 \\
 \hline
-\raggedright АПВ В1(ЛВ) СН & \centering АПВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright АПВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright Тср АПВ-1 В1(ЛВ) СН & \centering Тср АПВ-1 В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср АПВ-1 В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright Тимп АПВ В1(ЛВ) СН & \centering Тимп АПВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тимп АПВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 2000 \\
 \hline
-\raggedright Тср АПВ-2 В1(ЛВ) СН & \centering Тср АПВ-2 В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср АПВ-2 В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 4000 \\
 \hline
-\raggedright Твосст гот АПВ В1(ЛВ) СН & \centering Твосст гот АПВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Твосст гот АПВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
 \hline
-\raggedright 2-ой цикл АПВ В1(ЛВ) СН & \centering 2-ой цикл АПВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright 2-ой цикл АПВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
 %===m
 \end{longtable}
@@ -1667,39 +1426,39 @@
 
 %===m>КСВ В1(ЛВ) ВН|general+-
 \multicolumn{5}{|c|}{ КСВ В1(ЛВ) ВН } \\ \hline 
-\raggedright Кол-во ЭМО В1(ЛВ) ВН & \centering Кол-во ЭМО В1(ЛВ) ВН & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\raggedright Кол-во ЭМО В1(ЛВ) ВН & \centering Один \\ Два & \centering --- & \centering --- & \centering \arraybackslash Два \\
 \hline
-\raggedright КСВ В1(ЛВ) ВН & \centering КСВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright КСВ В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ Контроль В } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр ЭМО в любом пол В1(ЛВ) ВН & \centering Выведено \\ ЭМО1 \\ ЭМО2 \\ ЭМО1 и ЭМО2 & \centering --- & \centering \arraybackslash --- \\
+\raggedright Контр ЭМО в любом пол В1(ЛВ) ВН & \centering Выведено \\ ЭМО1 \\ ЭМО2 \\ ЭМО1 и ЭМО2 & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кол-во ЭМО В & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\raggedright Кол-во ЭМО В & \centering Один \\ Два & \centering --- & \centering --- & \centering \arraybackslash Два \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр ОТ сигн В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Контр ОТ сигн В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Неиспр ЦУ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср Неиспр ЦУ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Пруж не заведены В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср Пруж не заведены В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Неиспр обогр В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср Неиспр обогр В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
 \multicolumn{5}{|c|}{ Контроль ТТ } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Откл от Авар. давл. SF6 ТТ В1(ЛВ) ВН & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от Авар. давл. SF6 ТТ В1(ЛВ) ВН & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Неиспр. обогр. ТТ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср Неиспр. обогр. ТТ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 15000 \\
 \hline
 \multicolumn{5}{|c|}{ РФ } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Реле фиксации В1(ЛВ) ВН & \centering РФК \\ РФП & \centering --- & \centering \arraybackslash --- \\
+\raggedright Реле фиксации В1(ЛВ) ВН & \centering РФК \\ РФП & \centering --- & \centering --- & \centering \arraybackslash РФК \\
 \hline
 \multicolumn{5}{|c|}{ Защита ЭМУ } \\ \hline 
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Обест. ЭМУ от Авар. давл. SF6 В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Обест. ЭМУ от Авар. давл. SF6 В1(ЛВ) ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср защиты ЭМВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср защиты ЭМВ В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср защиты ЭМО1 В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср защиты ЭМО1 В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср защиты ЭМО2 В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср защиты ЭМО2 В1(ЛВ) ВН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
 %===m
 \end{longtable}
@@ -1708,7 +1467,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КСВ2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \par
-Уставки Уставки КСВ В1(ЛВ) СН представлены в таблице \ref{app_set:ksv2}.
+Уставки КСВ В1(ЛВ) СН представлены в таблице \ref{app_set:ksv2}.
 
 \footnotesize
 \begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
@@ -1727,39 +1486,223 @@
 
 %===m>КСВ В1(ЛВ) СН|general+-
 \multicolumn{5}{|c|}{ КСВ В1(ЛВ) СН } \\ \hline 
-\raggedright Кол-во ЭМО В1(ЛВ) СН & \centering Кол-во ЭМО В1(ЛВ) СН & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\raggedright Кол-во ЭМО В1(ЛВ) СН & \centering Один \\ Два & \centering --- & \centering --- & \centering \arraybackslash Два \\
 \hline
-\raggedright КСВ В1(ЛВ) СН & \centering КСВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright КСВ В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \multicolumn{5}{|c|}{ Контроль В } \\ \hline 
-\raggedright Контр. ЭМО в любом пол. В1(ЛВ) СН & \centering Контр. ЭМО в любом пол. В1(ЛВ) СН & \centering Выведено \\ ЭМО1 \\ ЭМО2 \\ ЭМО1 и ЭМО2 & \centering --- & \centering \arraybackslash --- \\
+\raggedright Контр. ЭМО в любом пол. В1(ЛВ) СН & \centering Выведено \\ ЭМО1 \\ ЭМО2 \\ ЭМО1 и ЭМО2 & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кол-во ЭМО В & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\raggedright Кол-во ЭМО В & \centering Один \\ Два & \centering --- & \centering --- & \centering \arraybackslash Два \\
 \hline
-\raggedright Контр. ОТ сигн. В1(ЛВ) СН & \centering Контр. ОТ сигн. В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Контр. ОТ сигн. В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Тср Неиспр. ЦУ В1(ЛВ) СН & \centering Тср Неиспр. ЦУ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср Неиспр. ЦУ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright Тср Пруж. не заведены В1(ЛВ) СН & \centering Тср Пруж. не заведены В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср Пруж. не заведены В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright Тср Неиспр. обогр. В1(ЛВ) СН & \centering Тср Неиспр. обогр. В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср Неиспр. обогр. В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
 \multicolumn{5}{|c|}{ Контроль ТТ } \\ \hline 
-\raggedright Откл от Авар. давл. SF6 ТТ В1(ЛВ) СН & \centering Откл от Авар. давл. SF6 ТТ В1(ЛВ) СН & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Откл от Авар. давл. SF6 ТТ В1(ЛВ) СН & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
 \hline
-\raggedright Тср Неиспр. обогр. ТТ В1(ЛВ) СН & \centering Тср Неиспр. обогр. ТТ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср Неиспр. обогр. ТТ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 15000 \\
 \hline
 \multicolumn{5}{|c|}{ РФ } \\ \hline 
-\raggedright Реле фиксации В1(ЛВ) СН & \centering Реле фиксации В1(ЛВ) СН & \centering РФК \\ РФП & \centering --- & \centering \arraybackslash --- \\
+\raggedright Реле фиксации В1(ЛВ) СН & \centering РФК \\ РФП & \centering --- & \centering --- & \centering \arraybackslash РФК \\
 \hline
 \multicolumn{5}{|c|}{ Защита ЭМУ } \\ \hline 
-\raggedright Обест. ЭМУ от Авар. давл. SF6 В1(ЛВ) СН & \centering Обест. ЭМУ от Авар. давл. SF6 В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\raggedright Обест. ЭМУ от Авар. давл. SF6 В1(ЛВ) СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\raggedright Тср защиты ЭМВ В1(ЛВ) СН & \centering Тср защиты ЭМВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср защиты ЭМВ В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright Тср защиты ЭМО1 В1(ЛВ) СН & \centering Тср защиты ЭМО1 В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср защиты ЭМО1 В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\raggedright Тср защиты ЭМО2 В1(ЛВ) СН & \centering Тср защиты ЭМО2 В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\raggedright Тср защиты ЭМО2 В1(ЛВ) СН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО внеш РЗ ВН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ЛО внеш РЗ ВН представлены в таблице \ref{app_set:lovneshvn}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЛО внеш РЗ ВН\hfill\vspace{-0.5\baselineskip}}\label{app_set:lovneshvn}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:lovneshvn}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>ЛО внеш РЗ ВН|general+-
+\multicolumn{5}{|c|}{ ЛО внеш РЗ ВН(СН) } \\ \hline 
+\raggedright ЛО внеш РЗ ВН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО внеш РЗ СН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ЛО внеш РЗ СН представлены в таблице \ref{app_set:lovneshsn}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЛО внеш РЗ СН\hfill\vspace{-0.5\baselineskip}}\label{app_set:lovneshsn}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:lovneshsn}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>ЛО внеш РЗ СН|general+-
+\multicolumn{5}{|c|}{ ЛО внеш РЗ ВН(СН) } \\ \hline 
+\raggedright ЛО внеш РЗ СН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО внеш РЗ НН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% "ЛО внеш АПТ"
+
+\par
+Уставки ЛО внеш РЗ НН представлены в таблице \ref{app_set:lovneshnn}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЛО внеш РЗ НН\hfill\vspace{-0.5\baselineskip}}\label{app_set:lovneshnn}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:lovneshnn}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>ЛО внеш РЗ НН|general+-
+\multicolumn{5}{|c|}{ ЛО внеш РЗ НН } \\ \hline 
+\raggedright ЛО внеш РЗ НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО внеш АПТ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ЛО внеш АПТ представлены в таблице \ref{app_set:lovneshapt}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЛО внеш АПТ\hfill\vspace{-0.5\baselineskip}}\label{app_set:lovneshapt}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:lovneshapt}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>ЛО внеш АПТ|general+-
+\multicolumn{5}{|c|}{ ЛО внеш АПТ } \\ \hline 
+\raggedright ЛО внеш АПТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛД НН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ЛД НН представлены в таблице \ref{app_set:ldnn}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЛД НН\hfill\vspace{-0.5\baselineskip}}\label{app_set:ldnn}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:ldnn}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>ЛД НН|general+-
+\multicolumn{5}{|c|}{ ЛД НН от МТЗ-1 } \\ \hline 
+\raggedright Тср МТЗ-1 на В НН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\raggedright ЛД НН от МТЗ-1 НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\multicolumn{5}{|c|}{ ЛД НН от МТЗ-2 } \\ \hline 
+\raggedright Тср МТЗ-2 на В НН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\raggedright ЛД НН от МТЗ-2 НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО ОК %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ЛО ОК представлены в таблице \ref{app_set:look}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+\caption{Параметры для настройки ЛД НН\hfill\vspace{-0.5\baselineskip}}\label{app_set:look}\\ 
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:look}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+%\hline
+\endhead
+
+%===m>ЛД ОК|general+-
+\multicolumn{5}{|c|}{ ЛЗ ОК } \\ \hline 
+\raggedright Тимп ОК & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
+\hline
+\raggedright Действие на ОК & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 %===m
 \end{longtable}
