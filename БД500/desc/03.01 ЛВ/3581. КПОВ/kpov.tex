@@ -1,22 +1,29 @@
 
 %\needspace{4\baselineskip}
-\color{unidarkgreen}{\subsection{Контроль перевода на ОВ (КПОВ)}}
+\color{unidarkgreen}{\subsection{Контроль перевода на ОВ}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
-
+\begin{enumerate}
 \item
 Функциональный блок контроля перевода на обходной выключатель предназначен для формирования сигнала фиксации перевода на ОВ, а также сигнала несоответствия фактического состояния первиичной схемы и оперативного переключателя фиксации перевода на ОВ.
 
 \item
 Сигнал фиксации перевода на ОВ формируется по состоянию разъединителя обходной системы шин выключателя (Р4) с контролем состояния оперативного переключателя перевода на ОВ.
 
+\ifbool{isLV}{
 \item
 Функциональная схема логики контроля перевода на обходной выключатель приведена на рисунке \ref{pict_ksn:kpov}. Уставки КПОВ представлены в таблице \ref{app_set:kpov}.
+}
 
+\ifbool{isDZAT}{
+\item
+Функциональная схема логики контроля перевода на обходной выключатель приведена на рисунке \ref{pict_ksn:kpov}. Уставки КПОВ ВН представлены в таблице \ref{app_set:kpovvn}. Уставки КПОВ СН представлены в таблице \ref{app_set:kpovsn}.
+}
+
+\vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth,height=0.75\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/3581. КПОВ/img/kpov.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/3581. КПОВ/img/kpov.pdf}
 \captionof{figure}{Функциональная схема логики контроля перевода на ОВ}\label{pict_ksn:kpov}
 \end{figure}
 

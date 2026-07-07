@@ -1,39 +1,20 @@
+
 \color{unidarkgreen}{\subsection{Блок команд управления}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
 
 \item
-Функциональный блок команд управления выключателем предназначен для контроля формируемого сигнала на включение или отключение силового выключателя.
+Функциональный блок команд управления выключателем предназначен для контроля формируемого сигнала на включение или отключение силового выключателя при оперативном управлении.
+
+\item
+Алгоритм работы логики блока команд управления выключателя В1(ЛВ) ВН приведен на рисунке \ref{pic:LO_Q1_NN}. Алгоритм работы логики блока команд управления выключателя В1(ЛВ) СН выполнен аналогично. Уставки БКУ выключателей стороны ВН и СН приведены в таблицах \ref{app_set:bkuvn}, \ref{app_set:bkusn}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/761.3431 БКУ/img/BKU.pdf}
-\captionof{figure}{Функциональная схема команд управления}\label{pic:BKU}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/06.02 ДЗАТ/761.3431 БКУ/img/BKU.pdf}
+\captionof{figure}{Функциональная схема логики блока команд управления В1(ЛВ) ВН}\label{pic:BKU}
 \end{figure}
 
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставочных параметров команд управления\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endhead
-
-%===m>ДЗАТ|-
-%===m
-\end{longtable}
-\normalsize	
 
 \end{enumerate}

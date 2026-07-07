@@ -1,18 +1,13 @@
-\color{unidarkgreen}{\subsection{Логика отключения В ВН, СН}}
+\color{unidarkgreen}{\subsection{Логика отключения выключателей сторон ВН и СН}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
 
 \item
-Логика отключения В1(ЛВ)ВН аналогична В2(ОВ)ВН, В3 ВН, В1 ЛВ(СН), В2 ОВ(СН).
+Логика отключения В1(ЛВ)ВН выводится накладкой \textbf{«ЛО В1(ЛВ)ВН»}. 
 
 \item
-Логика отключения В1(ЛВ) выводится накладкой \textbf{«ЛО В1(ЛВ)ВН»}. 
-
-\item
-Цепь отключения В1(ЛВ) выводится накладкой \textbf{«ЦО В1(ЛВ)ВН»}. Время возврата импульса на
-отключение регулируется уставкой \textbf{«Tвозвр откл В1(ЛВ)ВН»}. На отключение В1(ЛВ) формируются при
-возникновении одного из следующих событий:
+На отключение В1(ЛВ)ВН формируются при возникновении одного из следующих событий:
 \begin{itemize}
 \item ЛО осн. РЗ;
 \item ЛО рез. РЗ;
@@ -20,21 +15,13 @@
 \item ЛО внеш АПТ;
 \item ТЗО СН (ТЗО-ф);
 \item ТЗО СН (ТЗО-н);
-\item ЛО внеш РЗ СН;
-\item ЛО внеш РЗ НН.
+\item ЛО внеш РЗ ВН;
+\item ЛО внеш РЗ СН.
 \end{itemize}
 
 \item
-Запрет АПВ В1(ЛВ) выводится накладкой \textbf{«ЗАПВ В1(ЛВ)ВН»}. Длительной импульса времени
-запрета ПАВ регулируется уставкой \textbf{«Тимп ЗАПВ В1(ЛВ)ВН»}. Запрет АПВ формируются при
-возникновении одного из следующих событий:
+Запрет АПВ формируются при возникновении одного из следующих событий:
 \begin{itemize}
-\item ЛО осн. РЗ;
-\item ЛО рез. РЗ;
-\item ЛО внеш РЗ ВН;
-\item ЛО внеш АПТ;
-\item ТЗО СН (ТЗО-ф);
-\item ТЗО СН (ТЗО-н);
 \item ЗАПВ внеш РЗ ВН;
 \item ЗАПВ внеш РЗ СН.
 \end{itemize}
@@ -42,34 +29,60 @@
 \item
 Пуск УРОВ НН формируется сигналом \textbf{«Ср. ПО УРОВ НН»}.
 
+\item
+Алгоритм работы логики отключения В1(ЛВ) ВН приведен на рисунке \ref{pic:LO_Q1_LV_VN}. Алгоритмы работы логики отключения В2(ОВ) ВН, В3 ВН, В4 ВН выполнены аналогично. Уставки ЛО выключателей стороны ВН приведены в таблицах \ref{app_set:lovvn1}-\ref{app_set:lovvn4}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.55\textwidth,height=0.55\textheight,keepaspectratio]{\fbpath/761.9901 ЛО В1(ЛВ)ВН/img/LO_Q1_LV_VN.pdf}
-\captionof{figure}{Функциональная схема логики отключения В1(ЛВ)ВН}\label{pic:LO_Q1_LV_VN}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/06.02 ДЗАТ/761.9901 ЛО В1(ЛВ)ВН/img/LO_Q1_LV_VN.pdf}
+\captionof{figure}{Функциональная схема логики отключения В1(ЛВ) ВН}\label{pic:LO_Q1_LV_VN}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставочных параметров функции логики отключения В1(ЛВ)ВН\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endfirsthead
+\item
+Логика отключения В1(ЛВ) СН выводится накладкой \textbf{«ЛО В1(ЛВ)СН»}. 
 
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endhead
+\item
+На отключение В1(ЛВ) СН формируются при возникновении одного из следующих событий:
+\begin{itemize}
+\item ЛО осн. РЗ;
+\item ЛО рез. РЗ;
+\item ЛО внеш РЗ ВН;
+\item ЛО внеш АПТ;
+\item ТЗО ВН (ТЗО-ф);
+\item ТЗО ВН (ТЗО-н);
+\item ЛО внеш РЗ ВН;
+\item ЛО внеш РЗ СН.
+\end{itemize}
 
-%===m>ДЗАТ|-
-%===m
-\end{longtable}
-\normalsize	
+\item
+Запрет АПВ формируются при возникновении одного из следующих событий:
+\begin{itemize}
+\item ЗАПВ внеш РЗ ВН;
+\item ЗАПВ внеш РЗ СН.
+\end{itemize}
+
+\item
+Пуск УРОВ НН формируется сигналом \textbf{«Ср. ПО УРОВ НН»}.
+
+\item
+Алгоритм работы логики отключения В1(ЛВ) СН приведен на рисунке \ref{pic:LO_Q1_LV_VN}. Алгоритм работы логики отключения В2(ОВ) СН выполнен аналогично. Уставки ЛО выключателей стороны СН приведены в таблицах \ref{app_set:lovsn1}, \ref{app_set:lovsn2}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/06.02 ДЗАТ/761.9901 ЛО В1(ЛВ)ВН/img/LO_Q1_LV_SN.pdf}
+\captionof{figure}{Функциональная схема логики отключения В1(ЛВ) СН}\label{pic:LO_Q1_LV_SN}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
 
 \end{enumerate}

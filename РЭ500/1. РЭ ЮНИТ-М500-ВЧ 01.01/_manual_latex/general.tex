@@ -2,7 +2,7 @@
 \input{//192.168.11.240/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/99. Общие разделы РЭ/preamble.tex}
 
 % ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX КАТАЛОГА ОПИСАНИЯ ФУНКЦИОНАЛЬНЫХ БЛОКОВ
-\newcommand{\fbpath}{//192.168.11.240/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/БД500/desc/01.01 ВЧ}
+\newcommand{\fbpath}{//192.168.11.240/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/БД500/desc/}
 
 % ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX КАТАЛОГА ОБЩЕЙ ЧАСТИ
 \newcommand{\genpath}{//192.168.11.240/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/99. Общие разделы РЭ/}
@@ -57,20 +57,27 @@
 \clearpage
 
 %===f
-\input{\fbpath/561.0761 ДФЗ/dfz.tex}
+\input{\fbpath/01.01 ВЧ/561.0761 ДФЗ/dfz.tex}
 \clearpage
 
 %===f
-\input{\fbpath/561.0771 НВЧЗ/nvchz.tex}
+\input{\fbpath/01.01 ВЧ/561.0771 НВЧЗ/nvchz.tex}
 \clearpage
 
 %===f
-\input{\fbpath/561.0781 ВЧБ/vchb.tex}
+\input{\fbpath/01.01 ВЧ/561.0781 ВЧБ/vchb.tex}
 \clearpage
 
 %===f
-%\input{\fbpath/561.1491 ОПТО/opto.tex}
-%\clearpage
+\input{\fbpath/01.01 ВЧ/561.1491 ОПТО/opto.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/561.0021 ДЗ/dz.tex}
+\clearpage
+%===f
+\input{\fbpath/03.01 ЛВ/561.0111 ТНЗНП/tnznp.tex}
+\clearpage
 
 %===f
 %\input{\fbpath/021.0141 ТЗНП ВН/tznp_vn.tex}
@@ -190,6 +197,7 @@
 
 %ПРИЛОЖЕНИЕ Г
 \newpage
+\input{\apppath/Приложение. Уставки/_latex/settings_macros.tex}
 \input{\apppath/Приложение. Уставки/_latex/appset.tex} 
 
 
