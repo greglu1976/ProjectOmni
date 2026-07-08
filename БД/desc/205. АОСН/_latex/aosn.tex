@@ -3,12 +3,12 @@
 \color{uniblue}{\subsection{Автоматика ограничения снижения напряжения (АОСН)}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+\begin{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \item Общие сведения
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Автоматическое ограничение снижения напряжения необходимо для предотвращения развития аварий, сопровождающихся глубоким снижением напряжения. АОСН применяется для предотвращения снижения напряжения в узлах энергосистемы, вызванного дефицитом реактивной мощности до значения, опасного по условиям устойчивости энергосистемы и возникновения лавины напряжения, путем отключения части нагрузки с последующим включением отключенной нагрузки при восстановлении напряжения. 
@@ -44,7 +44,7 @@
 
 \item Очереди АОСН (АОСН1, АОСН2, АОСН3)\label{punktaosn}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Ввод каждой очереди АОСН в работу на этапе параметрирования устройства осуществляется своим программным переключателем SGF1 «Ввод\_функции». Информация о введенной очереди отображается выходным сигналом для каждой очереди «АОСН(n): Ввод», здесь и далее в этом подразделе: (n) -- номер очереди, $n\in\{1,2,3\}$.
@@ -106,7 +106,7 @@
 
 \item Реализация управляющих воздействий от очередей АОСН (УВ АОСН) \label{punktstaosn}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Для реализации управляющих воздействий (например, на отключение нагрузки) при срабатывании очередей АОСН предусмотрено 15 индивидуально параметрируемых функций: УВ1 АОСН ... УВ15 АОСН (далее в этом подразделе «УВ(m)~АОСН», где (m) -- номер функции УВ, $\{m \in \mathbb{N} \mid 1 \leq m \leq 15\}$).  
@@ -132,7 +132,7 @@
 
 \item Очереди АПВН (АПВН1, АПВН2, АПВН3) \label{punktapvn}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 После срабатывания АОСН возникает необходимость автоматической сборки нормальной схемы при восстановлении рабочего уровня напряжения, для этого в устройстве предусмотрены функции (очереди) автоматического повторного включения по напряжению. 
@@ -187,7 +187,7 @@
 
 \item Реализация управляющих воздействий от очередей АПВН (УВ АПВН) \label{punktstapvn}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Для реализации управляющих воздействий при срабатывании очередей АПВН предусмотрено 15 индивидуально параметрируемых функций: УВ1 АПВН ... УВ15 АПВН («УВ(m)~АПВН»).  
@@ -214,7 +214,7 @@
 
 \item Сборка сигналов АОСН \label{punktssaosn}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Формирование сигнала «АОСНобщ: Срабатывание АОСН» возможно при срабатывании любой ступени АОСН, УВ АОСН, в том числе переведенной в работу только на сигнал.  

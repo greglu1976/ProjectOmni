@@ -1,320 +1,176 @@
-\documentclass[a4paper, 12pt,table, hidelinks, DIV=calc]{extarticle} % что то меняется , не понятно article or extarticle...
-%\usepackage[T2A]{fontenc}
-\usepackage{fontspec}
-\usepackage[english,russian]{babel}
-\usepackage{graphicx}
+\documentclass[a4paper, 12pt, table, hidelinks, DIV=calc]{extarticle}
 
-\setmainfont{Arial Narrow}
-\usepackage{unicode-math} % Задать шрифт для математических формул
-\setmathfont{Stix Two Math}
-%\setmathfont{ArialNarrow}
-%\setmathfont{Cambria Math}
-
-% для KOMA script чтобы в документе менять формат А3 А4 и ориентацию
-\usepackage{typearea}
-
-\usepackage[
-a4paper,
-includehead,
-includefoot,
-nomarginpar,
-top=6mm,
-bottom=6mm,
-left=22mm,
-right=10mm,
-headheight=14.5pt,
-headsep=3mm,        % Добавить headsep
-footskip=7mm,
-%textheight=276mm    % Должен удовлетворять формуле
-]{geometry}
-
-%\savegeometry{standard}
-%\setlength{\topmargin}{-27.5mm}
-%\setlength{\headsep}{3mm} % Устанавливаем отступ между колонтитулом и текстом 10pt !!! Сдвигает а4 landscape
-%\setlength{\topskip}{10pt} % Установка вертикального промежутка между верхним краем текста и колонтитулом на 0pt
-%\setlength{\textheight}{276mm}
-%\usepackage{fancyhdr}
-
-%\usepackage{lmodern}
-
-%\usepackage{longtable}
-%\usepackage{amsfonts}
-
-\usepackage{xcolor} % ПРИ КОМПИЛЯЦИИ В ЛИНУКС УБРАТЬ ЭТУ СТРОКУ, да вообще ее убрать? или нет???
-\usepackage{colortbl}
-
-%\usepackage{array}
-
-\usepackage{hyperref}
-
-\graphicspath{{./images/}}
-
+% ---------------------- Шрифты ----------------------
 \usepackage{fontspec}
 \setsansfont[
-        Ligatures=TeX,
-        BoldFont={Arial Narrow Bold},
-        ItalicFont={Arial Narrow Italic},
-        BoldItalicFont={Arial Narrow Bold Italic}
-    ]{Arial Narrow}
+    Ligatures=TeX,
+    BoldFont={Arial Narrow Bold},
+    ItalicFont={Arial Narrow Italic},
+    BoldItalicFont={Arial Narrow Bold Italic}
+]{Arial Narrow}
 \renewcommand\familydefault{\sfdefault}
-%\setmainfont{Arial Narrow}
-\usepackage{fancyhdr}
+% \setmainfont{Arial Narrow}
 
-\usepackage{parskip}% для абзацев и отступа
-\setlength{\parindent}{1cm}
-\setlength{\parskip}{1pt}
-\setlength{\intextsep}{0mm} % отступ между плавающими элементами
+\usepackage{unicode-math}
+\setmathfont{Stix Two Math}
 
+% ---------------------- Язык, графика, цвета ----------------------
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
 
-\usepackage{indentfirst}
-
-% Определяем цвета фирмы старые
-%\definecolor{unired}{RGB}{247, 148, 29} 
-%\definecolor{uniblue}{RGB}{30, 73, 115}
-%\definecolor{unigray}{RGB}{88, 89, 91}
-
-% Определяем новые цвета фирмы (unitel guide 23.10.24)
-%\definecolor{unired}{RGB}{239, 134, 55} 
-%\definecolor{uniblue}{RGB}{21, 73, 140}
-%\definecolor{unigray}{RGB}{144, 143, 143}
-%\definecolor{uniblack}{RGB}{20, 20, 20}
-
-% Определяем новые цвета фирмы (зонтичный бренд 14.05.2026)
+\usepackage{xcolor}
 \definecolor{unired}{RGB}{0, 203, 98}  
 \definecolor{uniblue}{RGB}{11, 100, 54}
 \definecolor{unigray}{RGB}{100, 100, 100}
 \definecolor{uniblack}{RGB}{20, 20, 20}
 
+
 \definecolor{uniwhite}{RGB}{255, 255, 255} 
-\definecolor{uniblack}{RGB}{20, 20, 20}
 \definecolor{unigreen}{RGB}{0, 203, 98}
 \definecolor{unidarkgreen}{RGB}{11, 100, 54}
-\definecolor{unigray}{RGB}{100, 100, 100}
 
-\usepackage{longtable,booktabs}
-\usepackage{calc} % for calculating minipage widths
+% ---------------------- Геометрия ----------------------
+\usepackage{typearea}
+\usepackage[
+    a4paper,
+    includehead,
+    includefoot,
+    nomarginpar,
+    top=6mm,
+    bottom=6mm,
+    left=22mm,
+    right=10mm,
+    headheight=14.5pt,
+    headsep=3mm,
+    footskip=7mm
+]{geometry}
+\savegeometry{standard}
 
-%------------------------------------- 25.04.26
-\setlength{\LTpre}{8pt}
-\setlength{\LTpost}{8pt}
-%-----------------------------------------------
+% ---------------------- Абзацы ----------------------
+\usepackage{parskip}
+\setlength{\parindent}{1cm}
+\setlength{\parskip}{1pt}
+\setlength{\intextsep}{0mm}
+\usepackage{indentfirst}
 
-% Это для таблицы, чтобы жестко ширину столбцов выставлять НЕ ТРЕБУЕТСЯ???
-%\usepackage{array}
-%\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-%\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-%\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% ---------------------- Колонтитулы ----------------------
+\usepackage{fancyhdr}
 
-%\usepackage{bigstrut}
+% ---------------------- Таблицы ----------------------
+\usepackage{longtable, booktabs}
+\usepackage{calc}
+\setlength{\LTpre}{5pt}
+\setlength{\LTpost}{5pt}
 
-\usepackage[labelsep=endash]{caption} % выравнить надписи к рисункам тире вместо двоеточия
-\DeclareCaptionLabelFormat{myformat}{\textls[75]{#1 #2}} % Здесь устанавливается разрежение текста для надписей Рисунок и Таблица
+\usepackage{colortbl}
+\usepackage{tabularx}          % только один раз
+\usepackage{multirow}
+\usepackage{tabularray}        % если используется
+\usepackage{hhline}
+\usepackage{makecell}
+
+% ---------------------- Подписи и нумерация ----------------------
+\usepackage[labelsep=endash]{caption}
+\DeclareCaptionLabelFormat{myformat}{\textls[75]{#1 #2}}
 \captionsetup[figure]{name=Рисунок, justification=centering, labelformat=myformat} 
-\captionsetup[table]{justification=justified, labelformat=myformat} % Убираем отступ при переносе строки в наименовании таблицы
-\setlength{\belowcaptionskip}{0mm} % отступ после подписи
-%\setlength{\abovecaptionskip}{0mm} % отступ до подписи
+\captionsetup[table]{justification=justified, labelformat=myformat}
+\setlength{\belowcaptionskip}{0mm}
 
-% нумерация таблиц и рисунков ИСПОЛЬЗУЕТСЯ!!!
-% * код для нумерации вида 1.1.1
-%\counterwithin*{figure}{subsection}
-%\counterwithin*{table}{subsection}
-%\renewcommand{\thefigure}{%
-  %\ifnum\value{subsection}>0
-    %\thesubsection.%
-  %\else
-    %\thesection.%
-  %\fi
-  %\arabic{figure}%
-%}
-%\renewcommand{\thetable}{%
-  %\ifnum\value{subsection}>0
-    %\thesubsection.%
-  %\else
-    %\thesection.%
-  %\fi
-  %\arabic{table}%
-%}
-% * код для нумерации вида 1.1
-%\counterwithin*{figure}{section}
-%\counterwithin*{table}{section}
-%\renewcommand{\thefigure}{%
-  %\ifnum\value{subsection}>0
-    %\thesection.% 
-  %\else
-    %\thesection.% 
-  %\fi
-  %\arabic{figure}%
-%}
-%\renewcommand{\thetable}{%
-  %\ifnum\value{subsection}>0
-    %\thesection.% 
-  %\else
-    %\thesection.%
-  %\fi
-  %\arabic{table}%  
-%}
-% Оптимизированная нумерация вида 1.1 с нормальным закрытием скобок ниже
+% Нумерация рисунков и таблиц вида 1.1
 \counterwithin*{figure}{section}
 \counterwithin*{table}{section}
-\renewcommand{\thefigure}{%
-  \thesection.%
-  \arabic{figure}%
-}
-\renewcommand{\thetable}{%
-  \thesection.%
-  \arabic{table}%
-}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
 
-%%%%%%%%%%%%%%% ЭТОТ КОД ДЕЛАЕТ ТОЖЕ САМОЕ? %%%%%%%%%%%%%%%%%%%
-%\usepackage{chngcntr}
-%\counterwithin{figure}{subsection}
-%\counterwithin{table}{subsection}
-%\renewcommand{\thefigure}{\thesubsection.\arabic{figure}}
-%\renewcommand{\thetable}{\thesubsection.\arabic{table}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{tabularx}
-%\usepackage[table]{xcolor}
-\usepackage{multirow} % Для центрирования содержимого ячейки по вертикали - ИСПОЛЬЗУЕТСЯ!!!
-\usepackage{amsmath} % для вывода формул
-\usepackage{eqexpl} % для вывода пояснений к формулам
+% ---------------------- Математика и формулы ----------------------
+\usepackage{amsmath}
+\usepackage{eqexpl}
 \eqexplSetDelim{--}
 \eqexplSetIntro{где}
 
+% ---------------------- Заголовки ----------------------
 \usepackage{titlesec}
 \usepackage{appendix}
-%\titlespacing{\chapter}{0pt}{-30pt}{12pt} как пример
-\titlespacing{\section}{1cm}{0pt}{7pt} %------------------------------------- 25.04.26
-\titlespacing{\subsection}{1cm}{6pt}{5pt} %------------------------------------- 25.04.26
-\titlespacing{\subsubsection}{1cm}{3pt}{3pt} %------------------------------------- 25.04.26
+\titlespacing{\section}{1cm}{0pt}{0pt}
+\titlespacing{\subsection}{1cm}{5pt}{5pt}
+\titlespacing{\subsubsection}{1cm}{3pt}{3pt}
 
-%\usepackage[bitstream-charter]{mathdesign} % проверить когда формулы будут в тексте
-\uchyph=0 % отключаем перенос в словах с заглавной буквы - чтобы ГЗоткл не переносил например
-
-% Заменяем точки на тире в перечислении (списке)
-% - дефис, -- тире, --- длинное тире
+% ---------------------- Списки (enumitem) ----------------------
 \usepackage{enumitem}
-
-%\setlist[itemize]{label=---}
-%\setlist[itemize]{label=$\circ$} % окружность
-%------------------------------------- 25.04.26
 \setlist[itemize]{
-    label=-,			 % маркер
-    leftmargin=0pt,      % отступ для всех строк
-    itemindent=38pt,     % отступ для первой строки
-    labelsep=5pt,        % пробел между маркером и текстом
-    nosep                % убираем лишние вертикальные отступы
+    label=-,
+    labelwidth=-0.5em,
+    labelsep=0.5em,
+    align=left,
+    leftmargin=0em,
+    itemindent=2.5em,
+    nosep
 }
-%------------------------------------- 25.04.26
 
+% Уровень 1
+\setlist[enumerate,1]{
+    label=\arabic{section}.\arabic{subsection}.\arabic*,
+    labelsep=7pt,
+    leftmargin=0pt,
+    itemindent=60pt,
+    align=left,
+    nosep      % убирает лишние вертикальные отступы между пунктами
+}
+
+% Уровень 2
+\setlist[enumerate,2]{
+    label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*,
+    labelsep=7pt,
+    leftmargin=0em,
+    itemindent=55.5pt,
+    parsep=0pt,   % отступ между абзацами внутри одного пункта
+    align=left,
+    nosep
+}
+
+
+% ---------------------- Плавающие объекты ----------------------
 \usepackage{float}
+\usepackage{needspace}
+\usepackage{placeins}
 
-% не допускает в конце странцы заголовок и одна или две строки , переносит на след страницу
-% необходимо указывать непосредственно в разделе
-\usepackage{needspace} %ИСПОЛЬЗУЕТСЯ!!!
-%%%%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{tabularray}
-\usepackage{tabularx}
-
-\usepackage{tocloft}  % точки для глав в оглавлении ИСПОЛЬЗУЕТСЯ!!!
-%\renewcommand{\cftsecfont}{\normalfont\scshape} 
-\usepackage{tocvsec2} % для подавления отображения подразделов в toc для приложений, не знаю, если подразделы появятся
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % точки для разделов в оглавлении ИСПОЛЬЗУЕТСЯ!!!
-\renewcommand{\cftsecpagefont}{\normalfont} % задаем не жирный формат номеров страниц в оглавлении, если строчку убрать - будет жирный
-
-\usepackage{pdflscape}
-%\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{} % 01.11.24 отключил
-%\titleformat{\section}{\normalfont\large\bfseries\MakeUppercase}{\thesection}{1em}{} % Заголовки разделов большими буквами
-
-%\usepackage{lscape} % УДАЛИТЬ???
-%\usepackage{lipsum}
-\usepackage[absolute]{textpos}
-%\usepackage{etoolbox}
-
-\usepackage{pdfpages} % попробуем вставить векторный рисунок
-
-%\titlespacing{\subsection}{0pt}{\parskip}{-\parskip} % отступ между сабсекцией и лонгтейбл?
-%\titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
-
-%\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-%\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-
-%\titlespacing{\section}{0pt}{\parskip}{-\parskip}
-%\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
-%\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
-
-\usepackage{fontawesome7} % Подключить пакет шрифтов fontawesome %------------------------------------- 25.04.26
-
-\usepackage{microtype} % для разрежения текста
-
-\usepackage{etoolbox} % для проверки логических условий
-
-% ВОТ ЭТА ХРЕНЬ НИЖЕ ВМЕСТЕ С ПАКЕТАМИ etoolbox и tocloft делает заголовки Разделов большими буквами
-% https://latex.org/forum/viewtopic.php?t=24404
+% ---------------------- Оглавление ----------------------
+\usepackage{tocloft}
+\usepackage{tocvsec2}   % оставлен, но используйте \setcounter{tocdepth} вместо \settocdepth
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecpagefont}{\normalfont}
+\usepackage{etoolbox}
 \makeatletter
-\patchcmd{\l@section}
-  {\cftsecfont #1}%   search pattern
-  {\cftsecfont {#1}}% replace by
-  {}%                  success
-  {}%                  failure
+\patchcmd{\l@section}{\cftsecfont #1}{\cftsecfont {#1}}{}{}
 \makeatother
 \renewcommand\cftsecfont{\MakeUppercase}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Делаем заголовки подразделов большими буквами ВЫГЛЯДИТ НЕ ОЧЕНЬ, ГОСТ 2.105-2019 ,п.6.2.5
-%\makeatletter
-%\patchcmd{\l@subsection}
-  %{\cftsubsecfont #1}%   search pattern
-  %{\cftsubsecfont {#1}}% replace by
-  %{}%                  success
-  %{}%                  failure
-%\makeatother
-%\renewcommand\cftsubsecfont{\MakeUppercase}
+% ---------------------- Гиперссылки ----------------------
+\usepackage{hyperref}
 
-%%%%%%%%% В ЭТОМ БЛОКЕ ПОДКЛЮЧЕНЫ БЛОКИ ДЛЯ ПРИЛОЖЕНИЯ КАРТА ЗАКАЗА %%%%%%%%%%%
-\usepackage{tikz}% для рисования если нет рисования то удалить
-\usepackage{makecell}
-%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ БЛОКА %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%% В ЭТОМ БЛОКЕ ДЕЛАЕМ ЧТОБЫ СНОСКА БЫЛА СО СКОБКОЙ, НАПРИМЕР 1) 2) БЕЗ НЕГО СНОСКА ОБЫЧНОЕ ЧИСЛО %%%%%
-\usepackage[perpage]{footmisc}
-\renewcommand{\thefootnote}{\arabic{footnote})}
-% Добавляем отступ между текстом и сносками
-\setlength{\footnotesep}{10pt} % измените 12pt на нужное вам значение
-%%%%%%%%%%%%%%%%%%%%%%%%%%% КОНЕЦ БЛОКА %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Устанавливаем толщину линий
-%\setlength{\arrayrulewidth}{0.5pt} % Толщина линий таблицы
-
-\usepackage{hhline} % чтобы рисовать по одной линии в таблицах, соответственно тэг \hhline{} должен применяться
-
-%\setcounter{secnumdepth}{3} % Нумерация до разделов, подразделов и подподразделов
-%\setcounter{tocdepth}{2}     % Запись в содержание только разделов и подразделов
-
-\usepackage{ulem} % 29.11.24 - чтобы подчеркивание в ссылках более менее нужно
-\normalem % 29.11.24 - чтобы от верхнего пакета не ломалось \emph
-
-\usepackage{placeins} % чтобы ограничивать float рисунков с тегом [!h]
-
-%-------------------------------25.04.26
+% ---------------------- Прочие пакеты ----------------------
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage[absolute]{textpos}
+\usepackage{fontawesome7}
+\usepackage{microtype}
+\usepackage{ulem}
+\normalem
 \usepackage{eso-pic}
-
 \usepackage{subcaption}
 \captionsetup[subfigure]{labelformat=empty}
-\renewcommand\thesubfigure{\alph{subfigure})}
 \renewcommand{\thesubfigure}{\asbuk{subfigure})}
-
 \makeatletter
-\renewcommand{\p@subfigure}{\thefigure,\ }   % добавляет "0.2, " перед буквой
-\renewcommand{\thesubfigure}{\asbuk{subfigure}}  % буква без скобки
+\renewcommand{\p@subfigure}{\thefigure,\ }
+\renewcommand{\thesubfigure}{\asbuk{subfigure}}
 \makeatother
 
-\usepackage{ragged2e} % пакет для выравнивания по ширине в title1
+% ---------------------- Сноски ----------------------
+\usepackage[perpage]{footmisc}
+\renewcommand{\thefootnote}{\arabic{footnote})}
+\setlength{\footnotesep}{10pt}
 
-%\usepackage{showframe} %отображение границ. полезно при вёрстке для таблиц
-
-\usepackage{siunitx}
-
-\usepackage{ltxtable}
+% ---------------------- Прочее ----------------------
+\usepackage{tikz}          % если используется
+\uchyph=0                  % отключаем перенос в словах с заглавной

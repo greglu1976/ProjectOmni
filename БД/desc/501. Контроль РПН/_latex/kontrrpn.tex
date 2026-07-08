@@ -3,13 +3,13 @@
 \color{uniblue}{\subsection{Контроль привода РПН}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+\begin{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \item Общие сведения
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item Данный блок логики отвечает за:
 \begin{itemize}
@@ -25,7 +25,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Формирование команд на привод %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item\label{form} Формирование команд на привод
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item В зависимости от выбранного режима работы устройство может формировать три вида команд управления на привод:
 \begin{itemize}
@@ -50,7 +50,7 @@
 
 \item\label{kntr} Контроль привода в процессе переключения
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item Функциональная схема логики контроля привода приведена на рисунке \ref{kntr:img2}.
 
@@ -85,7 +85,7 @@
 
 \item\label{avt} Формирование команд автоматического управления
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 В режиме автоматического регулирования устройство непрерывно отслеживает уровень напряжения на регулируемой секции (см. раздел \ref{avtreg}). При выходе напряжения за пределы <<Зоны нечувствительности>> устройство с определенными выдержками времени формирует сигналы управления приводом (см. рисунок \ref{kntr:img3}). 
@@ -110,7 +110,7 @@
 
 \item\label{resurs} Счетчик переключений и контроль выработанного ресурса
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 В устройстве предусмотрен контроль выработанного ресурса. При каждом переключении значение счетчика переключений сравнивается с уставкой <<Максимальное количество операций переключения>>. При превышении уставки формируется сигнал превышения максимального количества переключений. Имеется возможность сбросить значение счетчика переключений через виртуальный ключ. Также имеется возможность задать уставкой начальное значение счетчика.

@@ -10,8 +10,8 @@
 \newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/09. РЭ ЮНИТ-М3-АРНТ/}
 
 % ЗАДАЕМ ПЕРЕМЕННЫЕ ТЕКУЩЕЙ НОМЕР РЕДАКЦИИ И ДАТА РЕДАКЦИИ
-\def\rev{1.1}
-\def\revdate{24.06.2026}
+\def\rev{1.4}
+\def\revdate{08.07.2026}
 
 % ЗАДАЕМ ПЕРЕМЕННЫЕ УКАЗЫВАЮЩИЕ КАКИЕ ФУНКЦИИ СОБИРАТЬ
 % isOL, isVV, isSV
@@ -34,9 +34,13 @@
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗДЕСЬ ДЛЯ ВЫВОД СОДЕРЖАНИЯ БОЛЬШИМИ БУКВАМИ ПОСЕРЕДИНЕ ЛИСТА см. ГОСТ-2.105-2019, п.6.2.5
-%%% почему то в преамбуле не работает
 \makeatletter
-\renewcommand{\tableofcontents}{\centering{\textbf{\large\MakeUppercase{\contentsname}}}\@starttoc{toc}}
+\renewcommand{\tableofcontents}{%
+  \centering{%
+    \textbf{\large\color{unidarkgreen}\MakeUppercase{\contentsname}}%
+  }%
+  \@starttoc{toc}%
+}
 \makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -3,12 +3,12 @@
 \color{uniblue}{\subsection{Максимальная токовая защита (МТЗ)}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+\begin{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%«ЮЮрррррр%
 
 \item Общие сведения
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Максимальная токовая защита применяется для защиты от междуфазных КЗ на защищаемом объекте, а также в зоне дальнего резервирования. МТЗ имеет возможность работы с контролем напряжения. Защищаемыми объектами могут быть вводной выключатель, секционный выключатель и отходящая линия.
@@ -57,7 +57,7 @@
 
 \item Ступени максимальной токовой защиты (МТЗ 1 ст, МТЗ 2 ст, МТЗ 3 ст)
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 В функциональном блоке «МТЗ» ступени МТЗ представлены функциями «МТЗ 1 ст», «МТЗ 2 ст», «МТЗ 3 ст».
@@ -159,7 +159,7 @@
 
 \item Орган направления мощности (ОНМ)
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 В функциональном блоке «МТЗ» орган направления мощности представлен функцией «ОНМ». Функция автоматически вводится в работу, если введена в работу одна из ступеней МТЗ и в этой ступени настроен контроль направленности.
@@ -215,7 +215,7 @@
 
 \item Комбинированный пусковой орган напряжения (КПОН)
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 В функциональном блоке «МТЗ» комбинированный пусковой орган напряжения представлен функцией «КПОН». Функция «КПОН» автоматически вводится в работу, если введена в работу одна из ступеней МТЗ и в этой ступени введен режим контроля от КПОН.
@@ -246,7 +246,7 @@
 
 \item Блокировка при броске намагничивающего тока (БНТ)
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Функция блокировки при броске намагничивающего тока позволяет заблокировать защиту при броске тока намагничивания, возникающем при постановке силового трансформатора под напряжение. 
@@ -282,7 +282,7 @@
 \ifboolexpr{bool {isOL}}
 {
 \item Блокировка логической защиты шин (БЛЗШ)
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Функция блокировки логической защиты шин предусматривается для блокировки ЛЗШ на вводном и секционном выключателях секции. В качестве воздействующих величин используются сигналы пуска ступеней МТЗ. Состояние программного переключателя SGF1 «БлокЛЗ\_выбор\_ст» определяет ступень МТЗ, от которой будет производиться блокировка ЛЗШ.
@@ -304,7 +304,7 @@
 
 \ifboolexpr{bool {isVV} or bool {isSV}}{
 \item Блокировка логической защиты трансформатора (БЛЗТ)
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Функция блокировки логической защиты трансформатора предусматривается для блокировки ЛЗТ вышестоящего силового трансформатора. В качестве воздействующих величин используются сигналы пуска ступеней МТЗ. Состояние программного переключателя SGF1 «БлокЛЗ\_выбор\_ст» определяет ступень МТЗ, от которой будет производиться блокировка ЛЗТ.
@@ -331,7 +331,7 @@
 
 \item Автоматическое ускорение (АУ МТЗ)
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 В устройстве предусмотрен режим автоматического ускорения ступеней МТЗ. Выбор ускоряемых ступеней защиты осуществляется из соображений надежного охвата, защищаемого энергообъекта.
@@ -359,7 +359,7 @@
 
 \item Оперативное ускорение (ОУ МТЗ)
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 В функциональном блоке «МТЗ» модуль оперативного ускорения представлен функцией «ОУ МТЗ».
@@ -392,7 +392,7 @@
 
 \item Внешняя логика функции МТЗ
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Для функции предусмотрен общий выходной сигнал «Пуск МТЗ», который формируется при наличии пуска любой ступени МТЗ. Общий сигнал пуска МТЗ участвует в логике таких функций как: УРОВ, БНН, АУ.
