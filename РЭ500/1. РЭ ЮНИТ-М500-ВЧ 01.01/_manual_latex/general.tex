@@ -26,6 +26,10 @@
     pdfkeywords={ЮНИТ-М500-ВЧ, Юнител, РЗА, Релейная защита и автоматика},
 }
 
+% ЗАДАЕМ ПЕРЕМЕННЫЕ УКАЗЫВАЮЩИЕ КАКИЕ ФУНКЦИИ СОБИРАТЬ
+\newbool{isLV}\booltrue{isLV} 
+\newbool{isDZAT}\boolfalse{isDZAT}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -75,8 +79,57 @@
 %===f
 \input{\fbpath/03.01 ЛВ/561.0021 ДЗ/dz.tex}
 \clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/561.1471 БК/bk.tex}
+\clearpage
+
 %===f
 \input{\fbpath/03.01 ЛВ/561.0111 ТЗНП/tznp.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/561.0171 МФТО/mfto.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/561.0161 АМТЗ/amtz.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/561.0181 ТЗО/tzo.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/561.1481 БСТО/bsto.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/761.3441 ЗНФ/znf.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/561.0221 ЗНР/znr.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/561.1461 БНН/bnn.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/561.1311 АУ/au.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/561.1711 Логика связи/ls.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/22. НКН/nkn.tex}
+\clearpage
+
+%===f
+\input{\fbpath/03.01 ЛВ/761.3381 ФПВ12/fpv.tex}
 \clearpage
 
 %===f
@@ -203,8 +256,8 @@
 
 
 %ПРИЛОЖЕНИЕ
-%\newpage
-%\input{\apppath/Приложение. БНН/bnn.tex}
+\newpage
+\input{\apppath/Приложение. БНН/bnn.tex}
 
 
 
