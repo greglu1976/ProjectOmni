@@ -73,7 +73,9 @@
 \raggedright Аварийная температура масла & \centering Авар. t масла & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Срабатывание устройства контроля изоляции датчика температуры масла & \centering Сраб. КИ ДТм & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Повышенная температура обмотки & \centering Повыш. t обмотки & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Режим управления "Местное" & \centering Местное & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Аварийная температура обмотки & \centering Авар. t обмотки & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Режим управления "Дистанционное" & \centering Дистанционное & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Срабатывание устройства контроля изоляции датчика температуры обмотки & \centering Сраб. КИ ДТо & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Срабатывание датчика давления & \centering Сраб.датч.давл. & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Срабатывание устройства контроля изоляции датчика давления & \centering Сраб. КИ датч.давл. & \centering + & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
@@ -214,6 +216,7 @@
 \raggedright Оперативный вывод РТПО от ФК & \centering ФК: ОВ РТПО & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Оперативный вывод РТПО от ДВ & \centering ДВ: ОВ РТПО & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Оперативный вывод РТПО ВН от ФК & \centering ФК: ОВ РТПО ВН & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Оперативный вывод РТПО ВН от ДВ & \centering ДВ: ОВ РТПО ВН & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Оперативный вывод РТПО НН1 от ФК & \centering ФК: ОВ РТПО НН1 & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Оперативный вывод РТПО НН1 от ДВ & \centering ДВ: ОВ РТПО НН1 & \centering + & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Оперативный вывод РТПО НН2 от ФК & \centering ФК: ОВ РТПО НН2 & \centering -- & \centering -- & \centering -- & \centering + & \centering + & \centering + & \centering \arraybackslash + \\ \hline
@@ -323,9 +326,9 @@
 \raggedright Срабатывание & \centering ДЗТ / КЦТнеб: Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Неисправность & \centering ДЗТ / КЦТнеб: Неисправность & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \rowcolor{gray!5}
-\multicolumn{9}{c}{Общие} \\
+\multicolumn{9}{c}{ДЗТ} \\
 \hline
-\raggedright Срабатывание ДЗТ & \centering ДЗТ / Общие: Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Срабатывание ДЗТ & \centering ДЗТ / ДЗТ: Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \rowcolor{gray!10}
 \multicolumn{9}{c}{Контроль токовых цепей (КТЦ)} \\
 \hline
@@ -357,27 +360,9 @@
 \raggedright Пуск КЦТст при асимметрии & \centering КЦТ / КЦТст3: Пуск асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \raggedright Срабатывание КЦТст при асимметрии & \centering КЦТ / КЦТст3: Сраб. асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \rowcolor{gray!5}
-\multicolumn{9}{c}{КЦТст4} \\
+\multicolumn{9}{c}{КЦТ} \\
 \hline
-\raggedright Функция введена в работу & \centering КЦТ / КЦТст4: Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Функция оперативно выведена из работы & \centering КЦТ / КЦТст4: Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Пуск КЦТст при обрыве провода & \centering КЦТ / КЦТст4: Пуск обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Срабатывание КЦТст при обрыве провода & \centering КЦТ / КЦТст4: Срабатывание обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Пуск КЦТст при асимметрии & \centering КЦТ / КЦТст4: Пуск асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Срабатывание КЦТст при асимметрии & \centering КЦТ / КЦТст4: Сраб. асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\rowcolor{gray!5}
-\multicolumn{9}{c}{КЦТст5} \\
-\hline
-\raggedright Функция введена в работу & \centering КЦТ / КЦТст5: Ввод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Функция оперативно выведена из работы & \centering КЦТ / КЦТст5: Оперативный вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Пуск КЦТст при обрыве провода & \centering КЦТ / КЦТст5: Пуск обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Срабатывание КЦТст при обрыве провода & \centering КЦТ / КЦТст5: Срабатывание обрыв & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Пуск КЦТст при асимметрии & \centering КЦТ / КЦТст5: Пуск асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\raggedright Срабатывание КЦТст при асимметрии & \centering КЦТ / КЦТст5: Сраб. асимметрия & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
-\rowcolor{gray!5}
-\multicolumn{9}{c}{КЦТ общ} \\
-\hline
-\raggedright Срабатывание КЦТ & \centering КЦТ / КЦТ общ: Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
+\raggedright Срабатывание КЦТ & \centering КЦТ / КЦТ: Срабатывание & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \rowcolor{gray!10}
 \multicolumn{9}{c}{Токовый контроль ЗДЗ (ТК ЗДЗ)} \\
 \hline
@@ -861,7 +846,7 @@
 \hline
 \raggedright Оперативный вывод функции & \centering Виртуальный ключ-12\_Опер. вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \rowcolor{gray!10}
-\multicolumn{9}{c}{ЛО ГЗсигн на откл} \\
+\multicolumn{9}{c}{ВКл: ЛО ГЗсигн на откл} \\
 \hline
 \raggedright Оперативный вывод функции & \centering Виртуальный ключ-13\_Опер. вывод & \centering -- & \centering + & \centering + & \centering -- & \centering + & \centering + & \centering \arraybackslash + \\ \hline
 \rowcolor{gray!10}

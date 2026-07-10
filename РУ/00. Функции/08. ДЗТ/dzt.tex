@@ -139,9 +139,10 @@
 Для обеспечения селективности ДТЗ полная погрешность измерительных трансформаторов тока в установившемся режиме максимального сквозного тока не должна превышать 10\%. Выбор ТТ базируется на параметре приведенной предельной кратности $k'_{10}$. 
 
 \item
+\needspace{3\baselineskip}
 Приведенная предельная кратность вычисляется по выражению:
 \begin{equation}
-    \label{eq:dzt7}
+    \label{eq:dzt71}
     k'_{10} = \frac {I_{\textsl{перв}}}{I_{\textsl{ном}}}\cdot k_{10},
 \end{equation}
 \begin{eqexpl}[15mm]
@@ -194,14 +195,16 @@
 \begin{enumerate}[label=\arabic*.]
 
 \item Вычислить ординату точки пересечения расчетной прямой с тормозной характеристикой:
-    \begin{equation*}
+    \begin{equation}
+        \label{eq:ch1}
         I_{\textsl{дифф}} = \frac {I_{\textsl{КЗ,мин}}}{k_{\textsl{ч}}},
-    \end{equation*}
+    \end{equation}
 
 \item Проверить математическое неравенство:
-    \begin{equation*}
+    \begin{equation}
+        \label{eq:ch2}
         I_{\textsl{дифф}} \leq  I_{\textsl{ср}} + k_{\textsl{т1}} \cdot (I_{\textsl{т2}} -  I_{\textsl{т1}}),
-    \end{equation*}
+    \end{equation}
     \begin{eqexpl}[15mm]
     \item  {$I_{\textsl{т2}}$} ток начала участка глубокого торможения (второго наклонного участка), о.е.
     \end{eqexpl}

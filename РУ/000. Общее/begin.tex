@@ -1,23 +1,22 @@
 \color{uniblue}\section[Пример расчета уставок защит трансформатора]{\sloppy Пример расчета уставок защит трансформатора} 
 \color{black}
 
-
 \color{uniblue}\subsection[Исходные данные]{Исходные данные} 
 \color{black}
-
 
 \begin{enumerate}
 
 \item
-В  настоящем  примере  дан  расчет уставок защит и автоматики понижающего двухобмоточного трансформатора типа ТДНС-16000/35 с параметрами, приведенными в таблице \ref{sett:tbl1}. Поясняющая схема приведена на рисунке \ref{sett:img1}.
+В  настоящем  примере  дан  расчет уставок защит и автоматики понижающего двухобмоточного трансформатора типа ТДНС-16000/35 с параметрами, приведенными в таблице \ref{sett:tbl1}. Поясняющая схема и схема замещения сети приведена на рисунке \ref{sett:img1}.
 
 \vspace{3mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1.1\textwidth,height=1.1\textheight,keepaspectratio]{\genpath/000. Общее/schemas.pdf}
-\captionof{figure}{Поясняющая схема и схема замещения защищаемого трансформатора}\label{sett:img1}
+\includegraphics[width=1.0\textwidth,height=1.0\textheight,keepaspectratio]{\genpath/000. Общее/schemas.pdf}
+\captionof{figure}{Схемы для расчета уставок двухобмоточного трансформатора:\\ \textsl{а} -- поясняющая схема; \textsl{б} -- схема замещения защищаемого трансформатора}\label{sett:img1}
 \end{figure}
 
+\vspace{2mm}
 \small
 \begin{longtable}{|>{\centering\arraybackslash}m{7.2cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
 \caption{Параметры защищаемого трансформатора\hfill\vspace{-0.5\baselineskip}}\label{sett:tbl1}\\ 
@@ -54,32 +53,13 @@
 \item Сопротивление системы в минимальном режиме: $X_{\textsl{с,max}}=16,18$ Ом. 
 \end{itemize}
 
-
 \item
 На трансформаторе установлены трансформаторы тока на стороне ВН с коэффициентом трансформации 400/5, на стороне НН с коэффициентом трансформации 1500/5. Трансформаторы тока по сторонам ВН и НН собраны в <<звезду>>, полярными выводами к трансформатору.
 
-\item Номинальный ток трансформатора со стороны ВН:
-\begin{equation*}
-    I_{\textsl{ном,в}} = \frac{S_{\textsl{ном}}}{\sqrt{3} \cdot U_{\textsl{ном,в}}}  = \frac{16 \cdot 10^6}{\sqrt{3} \cdot 37 \cdot 10^3} = 250\; (\textsl{А}),
-\end{equation*}
-\item Номинальный ток трансформатора со стороны НН:
-\begin{equation*}
-    I_{\textsl{ном,н}} = \frac{S_{\textsl{ном}}}{\sqrt{3} \cdot U_{\textsl{ном,н}}}  = \frac{16 \cdot 10^6}{\sqrt{3} \cdot 6,3 \cdot 10^3} = 1466\; (\textsl{А}),
-\end{equation*}
-
-
-\item 
-Схема замещения и расчетные значения токов короткого замыкания приведены на рисунке \ref{sett:img2}.
-
-\vspace{3mm}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\genpath/000. Общее/schemas2.pdf}
-\captionof{figure}{Схема замещения защищаемого трансформатора и результаты расчета токов КЗ}\label{sett:img2}
-\end{figure}
 
 \end{enumerate}
 
+\needspace{3\baselineskip}
 \color{uniblue}\subsection[Расчет сопротивлений силового трансформатора с учетом РПН]{Расчет сопротивлений силового трансформатора с учетом РПН} 
 \color{black}
 
@@ -147,8 +127,51 @@ X_{\textsl{Т,ср}} = \frac {U_k}{100} \cdot \frac {U^2_{\textsl{Т,ср}}}{S_{
     \end{equation*}
 \end{enumerate}
 
+\item Результаты расчета токов КЗ приведены в таблице \ref{sett:tblkz}.
 
+\setlength{\extrarowheight}{0.06cm}
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
+\caption{Расчетные токи КЗ\hfill\vspace{-0.5\baselineskip}}\label{sett:tblkz}\\ 
+\hline
+\rowcolor{gray!30}
+Режим сети & Точка КЗ & Вид КЗ & Ток, приведенный к 37 кВ (А)  & Фактический ток (А)\\ 
+\hline
+\endfirsthead
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{sett:tblkz}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{gray!30}
+Режим сети & Точка КЗ & Вид КЗ & Ток, приведенный к 37 кВ (А)  & Фактический ток (А)\\ 
+\endhead
+\endfoot
+\endlastfoot
+\raggedright Максимальный & \centering К1 (37 кВ) & \centering Трехфазное & \centering \textbf{3146,3} & \centering\arraybackslash 3146,3 \\
+\hline
+\raggedright Минимальный & \centering К1 (37 кВ) & \centering Двухфазное & \centering \textbf{1143,4} & \centering\arraybackslash 1143,4 \\
+\hline
+\raggedright Максимальный & \centering К2 (6,3 кВ) & \centering Трехфазное & \centering \textbf{1592,3} & \centering\arraybackslash 9351,6 \\
+\hline
+\raggedright Минимальный & \centering К2 (6,3 кВ) & \centering Двухфазное & \centering \textbf{769,9} & \centering\arraybackslash 4521,6 \\
+\hline
+\end{longtable}
+\normalsize
 
 \end{enumerate}
+
+\color{uniblue}\subsection[Расчет номинальных токов сторон трансформатора]{Расчет номинальных токов сторон трансформатора} 
+\color{black}
+
+\begin{enumerate}
+\item Номинальный ток трансформатора со стороны ВН:
+\begin{equation*}
+    I_{\textsl{баз,ВН}} = \frac{S_{\textsl{баз}}}{\sqrt{3} \cdot U_{\textsl{ном,ВН}}}  = \frac{16000}{\sqrt{3} \cdot 37} = 249,68\; (\textsl{А}),
+\end{equation*}
+\item Номинальный ток трансформатора со стороны НН:
+\begin{equation*}
+    I_{\textsl{баз,НН}} = \frac{S_{\textsl{баз}}}{\sqrt{3} \cdot U_{\textsl{ном,НН}}}  = \frac{16000}{\sqrt{3} \cdot 6,3} = 1466,28\; (\textsl{А}),
+\end{equation*}
+
+\end{enumerate}
+
 
 % КОНЕЦ ОБЩЕЙ ЧАСТИ
