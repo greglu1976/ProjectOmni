@@ -1,9 +1,7 @@
-
-%\needspace{4\baselineskip}
 \color{unidarkgreen}{\subsection{Логика отключения (ЛО)}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=0pt] % если что можно крутить itemsep
+\begin{enumerate}
 
 \item
 Функциональный блок логики отключения предназначен для формирования общего сигнала отключения при срабатывании функций РЗА и общего сигнала запрета АПВ.  
@@ -14,14 +12,14 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.4011 ЛО/img/logic_otkl.pdf}
+\includegraphics[width=0.78\textwidth,height=0.78\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.4011 ЛО/img/logic_otkl.pdf}
 \captionof{figure}{Функциональная схема общей логики отключения}\label{pict_lo:logic_otkl_obsh}
 \end{figure}
 
 \item
 Команда на отключение выключателей \textit{«Срабатывание защит»} формируется:
 \begin{itemize}
-    \item при срабатывании внутренних защит устройства (сигнал \textit{«Ср. защит»});
+    \item при срабатывании внутренних защит устройства (сигналы \textit{«Срабатывание»});
     \item при срабатывании ЗНФ (сигнал \textit{«Ср. ЗНФ В1»});
     \item при действии УРОВ на отключение «своего» выключателя (сигнал \textit{«Ср. УРОВ В1 на себя»});
     \item от сигнала об аварийном давлении элегаза в ТТ, если введен программный ключ \textbf{«Откл. от Авар. давл. SF6 ТТ В1»};
@@ -43,7 +41,7 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.4011 ЛО/img/zapv.pdf}
+\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.4011 ЛО/img/zapv.pdf}
 \captionof{figure}{Функциональная схема общей логики запрета АПВ}\label{pict_lo:logic_zapv}
 \end{figure}
 
