@@ -17,7 +17,7 @@
 
 % ЗАДАЕМ ПЕРЕМЕННЫЕ ТЕКУЩЕЙ НОМЕР РЕДАКЦИИ И ДАТА РЕДАКЦИИ
 \def\rev{1.2}
-\def\revdate{10.07.2026}
+\def\revdate{13.07.2026}
 
 
 % МЕТАДАННЫЕ
@@ -31,9 +31,13 @@
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗДЕСЬ ДЛЯ ВЫВОД СОДЕРЖАНИЯ БОЛЬШИМИ БУКВАМИ ПОСЕРЕДИНЕ ЛИСТА см. ГОСТ-2.105-2019, п.6.2.5
-%%% почему то в преамбуле не работает
 \makeatletter
-\renewcommand{\tableofcontents}{\centering{\textbf{\large\MakeUppercase{\contentsname}}}\@starttoc{toc}}
+\renewcommand{\tableofcontents}{%
+  \centering{%
+    \textbf{\large\color{unidarkgreen}\MakeUppercase{\contentsname}}%
+  }%
+  \@starttoc{toc}%
+}
 \makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
