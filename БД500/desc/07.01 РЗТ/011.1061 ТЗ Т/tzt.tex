@@ -1,17 +1,19 @@
-\color{unidarkgreen}{\subsection{Газовая защита РПН (ГЗ РПН)}}
+
+\color{unidarkgreen}{\subsection{Технологические защиты}}
 \color{black}
 
 \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
 
 \item
-Технологические защиты от повышения давления, температуры масла и обмоток предназначены для
-предотвращения повреждения оборудования вследствие нарушения режима его работы, обеспечивая
-надёжную и безопасную работу трансформатора.   
+Технологические защиты от повышения давления, температуры масла и обмоток предназначены для предотвращения повреждения оборудования вследствие нарушения режима его работы, обеспечивая надёжную и безопасную работу трансформатора.   
+
+\item
+Алгоритм работы логики технологических защит трансформатора приведен на рисунке \ref{pict:TZT}, уставки функции приведены в таблице \ref{app_set:tz}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/011.1061 ТЗ Т/img/TZT.pdf}
-\captionof{figure}{Функциональная схема ТЗ Т}\label{pict:TZT}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/07.01 РЗТ/011.1061 ТЗ Т/img/TZT.pdf}
+\captionof{figure}{Функциональная схема логики ТЗ Т}\label{pict:TZT}
 \end{figure}
 
 \item
@@ -45,75 +47,6 @@
 переключателя \textbf{«Тбл ТЗ Т»}. Ввод блокировки ДТм (ДТо) от РКИ осуществляется с помощью программного
 переключателя \textbf{«Блок ТЗ Т»}. Для сброса блокировки от РКИ, используется команда управления \textit{«Возврат ТЗ
 Т»}.
-
-
-\small
-\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
-\begin{longtable}
-{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
-\caption{Перечень уставочных параметров ТЗ Т\hfill\vspace{-0.5\baselineskip}}\label{tzt:tbl1} \\ 
-\hhline{|-|-|-|-|}
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
-\hhline{|-|-|-|-|}
-\endfirsthead
-
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tzt:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hhline{|-|-|-|-|}
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
-\hhline{|-|-|-|-|}
-\endhead
-\hhline{|-|-|-|-|}
-
-\endfoot
-\endlastfoot
-
-%%%%%%%%%%%%содержимое%%%%%%%%%%%%%%
-
-\end{longtable}
-\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
-\normalsize
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 \end{enumerate} 

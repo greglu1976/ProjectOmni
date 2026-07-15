@@ -1,0 +1,2778 @@
+
+\par
+Уставки ДФЗ представлены в таблице \ref{app_set:dfz}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ДФЗ\hfill\vspace{-0.5\baselineskip}}\label{app_set:dfz}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:dz}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ДФЗ|general+-
+\multicolumn{5}{|c|}{ ДФЗ } \\ \hline 
+\raggedright ДФЗ & \centering ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БСТО ДФЗ & \centering БСТО ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ Контроль КС } \\ \hline 
+\raggedright Блок. от АПК & \centering Блок. от АПК & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Блок. от Неиспр. ПП & \centering Блок. от Неиспр. ПП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ИО ДФЗ } \\ \hline 
+\raggedright Контр. ИО Iл ДФЗ & \centering Контр. ИО Iл ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Iл блок ДФЗ & \centering Iл блок ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Iл откл ДФЗ & \centering Iл откл ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Контр. ИО dI1 ДФЗ & \centering Контр. ИО dI1 ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright dI1 блок ДФЗ & \centering dI1 блок ДФЗ & \centering 0,04 ... 4,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright dI1 откл ДФЗ & \centering dI1 откл ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Контр. ИО dI2 ДФЗ & \centering Контр. ИО dI2 ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright dI2 блок ДФЗ & \centering dI2 блок ДФЗ & \centering 0,04 ... 4,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright dI2 откл ДФЗ & \centering dI2 откл ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Контр. ИО I2 ДФЗ & \centering Контр. ИО I2 ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright I2 блок ДФЗ & \centering I2 блок ДФЗ & \centering 0,04 ... 4,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright I2 откл ДФЗ & \centering I2 откл ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Контр. ИО 3I0 ДФЗ & \centering Контр. ИО 3I0 ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright 3I0 блок ДФЗ & \centering 3I0 блок ДФЗ & \centering 0,04 ... 4,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright 3I0 откл ДФЗ & \centering 3I0 откл ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Rср РС откл ДФЗ & \centering Rср РС откл ДФЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Xср РС откл ДФЗ & \centering Xср РС откл ДФЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Ф1 РС откл ДФЗ & \centering Ф1 РС откл ДФЗ & \centering 30 ... 85 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Rнг РС откл ДФЗ & \centering Rнг РС откл ДФЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Фнг РС откл ДФЗ & \centering Фнг РС откл ДФЗ & \centering 5 ... 70 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright БНН РС откл ДФЗ & \centering БНН РС откл ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ДФЗ } \\ \hline 
+\raggedright Совм. раб. с ДФЗ-201 & \centering Совм. раб. с ДФЗ-201 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. ДФЗ от ОПТО & \centering Контр. ДФЗ от ОПТО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тср блок. ДФЗ & \centering Тср блок. ДФЗ & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тпрод блок. ДФЗ & \centering Тпрод блок. ДФЗ & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср ДФЗ & \centering Тср ДФЗ & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ Управл. ВЧПП } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Пуск ВЧ при неиспр. терм. & \centering Пуск ВЧ при неиспр. терм. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Пуск ВЧ при выводе & \centering Пуск ВЧ при выводе & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Модуль управл. ВЧПП %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки модуля управления ВЧПП представлены в таблице \ref{app_set:vchpp}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки модуля управления ВЧПП\hfill\vspace{-0.5\baselineskip}}\label{app_set:vchpp}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:vchpp}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>Модуль управл. ВЧПП|general+-
+\multicolumn{5}{|c|}{ Модуль управл. ВЧПП } \\ \hline 
+\raggedright Кман. & \centering Кман. & \centering 1,00 ... 10,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Угол блок. ОСФ-1 & \centering Угол блок. ОСФ-1 & \centering 0 ... 180 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Угол блок. ОСФ-2 & \centering Угол блок. ОСФ-2 & \centering 0 ... 180 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Угол блок. ОСФ-3 & \centering Угол блок. ОСФ-3 & \centering 0 ... 180 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Удлинение ВЧ & \centering Удлинение ВЧ & \centering 0 ... 3000 & \centering мкс & \centering \arraybackslash 1 \\
+\hline
+\raggedright Доворот ОМ & \centering Доворот ОМ & \centering -90 ... 90 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Сдвиг ман. & \centering Сдвиг ман. & \centering -0,50 ... 0,50 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Инверс. ОМ & \centering Инверс. ОМ & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Совм. раб. ДФЗ-201 & \centering Совм. раб. ДФЗ-201 & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright ВЧ канал & \centering ВЧ канал & \centering A \\ B \\ C & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Инв. ВЧ ПРМ & \centering Инв. ВЧ ПРМ & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% НВЧЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки НВЧЗ представлены в таблице \ref{app_set:nvchz}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки НВЧЗ\hfill\vspace{-0.5\baselineskip}}\label{app_set:nvchz}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:nvchz}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>НВЧЗ|general+-
+\multicolumn{5}{|c|}{ НВЧЗ } \\ \hline 
+\raggedright НВЧЗ & \centering НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БСТО НВЧЗ & \centering БСТО НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ Управл. ВЧПП } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Пуск ВЧ при БНН & \centering Пуск ВЧ при БНН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Пуск ВЧ при неиспр. терм. & \centering Пуск ВЧ при неиспр. терм. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Пуск ВЧ при выводе & \centering Пуск ВЧ при выводе & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тср блок.  & \centering Тср блок.  & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тпрод блок. НВЧЗ & \centering Тпрод блок. НВЧЗ & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ Контроль КС } \\ \hline 
+\raggedright Блок. от АПК & \centering Блок. от АПК & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Блок. от Неиспр. ПП & \centering Блок. от Неиспр. ПП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ИО НВЧЗ } \\ \hline 
+\raggedright Контр. ИО dI1 НВЧЗ & \centering Контр. ИО dI1 НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright dI1 блок НВЧЗ & \centering dI1 блок НВЧЗ & \centering 0,04 ... 4,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright dI1 откл НВЧЗ & \centering dI1 откл НВЧЗ & \centering 0,04 ... 8,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Контр. ИО dI2 НВЧЗ & \centering Контр. ИО dI2 НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright dI2 блок НВЧЗ & \centering dI2 блок НВЧЗ & \centering 0,04 ... 4,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright dI2 откл НВЧЗ & \centering dI2 откл НВЧЗ & \centering 0,04 ... 8,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright U2 блок НВЧЗ & \centering U2 блок НВЧЗ & \centering 0,0050 ... 0,0500 & \centering  & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright U2 откл НВЧЗ & \centering U2 откл НВЧЗ & \centering 0,0050 ... 0,1000 & \centering  & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright Контр. ИО I2 НВЧЗ & \centering Контр. ИО I2 НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright I2 блок НВЧЗ & \centering I2 блок НВЧЗ & \centering 0,04 ... 4,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright I2 откл НВЧЗ & \centering I2 откл НВЧЗ & \centering 0,04 ... 8,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Контр. ИО I2т пуск НВЧЗ & \centering Контр. ИО I2т пуск НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Iср I2т пуск НВЧЗ & \centering Iср I2т пуск НВЧЗ & \centering 0,04 ... 1,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Контр. ИО I2т откл НВЧЗ & \centering Контр. ИО I2т откл НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Iср I2т откл НВЧЗ & \centering Iср I2т откл НВЧЗ & \centering 0,04 ... 2,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Кт I2т НВЧЗ & \centering Кт I2т НВЧЗ & \centering 0,00 ... 0,15 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright I1ном I2т НВЧЗ & \centering I1ном I2т НВЧЗ & \centering 0,04 ... 30,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Rср РС блок НВЧЗ & \centering Rср РС блок НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Xср РС блок НВЧЗ & \centering Xср РС блок НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Ф1 РС блок НВЧЗ & \centering Ф1 РС блок НВЧЗ & \centering 30 ... 85 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Rнг РС блок НВЧЗ & \centering Rнг РС блок НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Фнг РС блок НВЧЗ & \centering Фнг РС блок НВЧЗ & \centering 5 ... 70 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright БНН РС блок НВЧЗ & \centering БНН РС блок НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Rср РС откл НВЧЗ & \centering Rср РС откл НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Xср РС откл НВЧЗ & \centering Xср РС откл НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Ф1 РС откл НВЧЗ & \centering Ф1 РС откл НВЧЗ & \centering 30 ... 85 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Ф2 РС откл НВЧЗ & \centering Ф2 РС откл НВЧЗ & \centering -80 ... 0 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Ф3 РС откл НВЧЗ & \centering Ф3 РС откл НВЧЗ & \centering 90 ... 180 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Rнг РС откл НВЧЗ & \centering Rнг РС откл НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Фнг РС откл НВЧЗ & \centering Фнг РС откл НВЧЗ & \centering 5 ... 70 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright БНН РС откл НВЧЗ & \centering БНН РС откл НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ НВЧЗ } \\ \hline 
+\raggedright Сброс БК НВЧЗ от РПО & \centering Сброс БК НВЧЗ от РПО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тбл повт. ввода РС откл & \centering Тбл повт. ввода РС откл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Контр. НВЧЗ от ОПТО & \centering Контр. НВЧЗ от ОПТО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Уск. НВЧЗ при вкл. В & \centering Уск. НВЧЗ при вкл. В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тввода РС откл & \centering Тввода РС откл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тсогл НВЧЗ & \centering Тсогл НВЧЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср НВЧЗ & \centering Тср НВЧЗ & \centering 0 ... 4294967295 & \centering  & \centering \arraybackslash 1 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ВЧБ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ВЧБ представлены в таблице \ref{app_set:vchb}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ВЧБ\hfill\vspace{-0.5\baselineskip}}\label{app_set:vchb}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:vchb}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ВЧБ|general+-
+\multicolumn{5}{|c|}{ ВЧБ } \\ \hline 
+\raggedright ВЧБ & \centering ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БСТО ВЧБ & \centering БСТО ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ Контроль КС } \\ \hline 
+\raggedright Блок. от АПК & \centering Блок. от АПК & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Блок. от Неиспр. ПП & \centering Блок. от Неиспр. ПП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ИО ВЧБ } \\ \hline 
+\raggedright Контр. ИО dI1 ВЧБ & \centering Контр. ИО dI1 ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright dI1 блок ВЧБ & \centering dI1 блок ВЧБ & \centering 0,04 ... 4,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright 3U0 откл ВЧБ & \centering 3U0 откл ВЧБ & \centering 0,0050 ... 0,0500 & \centering  & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright Контр. ИО 3I0 ВЧБ & \centering Контр. ИО 3I0 ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright 3I0 блок ВЧБ & \centering 3I0 блок ВЧБ & \centering 0,04 ... 4,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright 3I0 откл ВЧБ & \centering 3I0 откл ВЧБ & \centering 0,04 ... 8,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Контр. ИО I2т ВЧБ & \centering Контр. ИО I2т ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Iср I2т пуск ВЧБ & \centering Iср I2т пуск ВЧБ & \centering 0,04 ... 1,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Kт I2т ВЧБ & \centering Kт I2т ВЧБ & \centering 0,00 ... 0,15 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Rср РС откл ВЧБ & \centering Rср РС откл ВЧБ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Xср РС откл ВЧБ & \centering Xср РС откл ВЧБ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Ф1 РС откл ВЧБ & \centering Ф1 РС откл ВЧБ & \centering 30 ... 85 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Ф2 РС откл ВЧБ & \centering Ф2 РС откл ВЧБ & \centering -80 ... 0 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Ф3 РС откл ВЧБ & \centering Ф3 РС откл ВЧБ & \centering 90 ... 180 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Rнг РС откл ВЧБ & \centering Rнг РС откл ВЧБ & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Фнг РС откл ВЧБ & \centering Фнг РС откл ВЧБ & \centering 5 ... 70 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright БНН РС откл ВЧБ & \centering БНН РС откл ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ Управл. ВЧПП } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Пуск ВЧ при БНН & \centering Пуск ВЧ при БНН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Пуск ВЧ при неиспр. терм. & \centering Пуск ВЧ при неиспр. терм. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Пуск ВЧ при выводе & \centering Пуск ВЧ при выводе & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тв ИО 3I0 блок ВЧБ & \centering Тв ИО 3I0 блок ВЧБ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ВЧБ } \\ \hline 
+\raggedright Сброс БК ВЧБ от РПО & \centering Сброс БК ВЧБ от РПО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Блок. РС откл от ИО & \centering Блок. РС откл от ИО & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тввода РС откл & \centering Тввода РС откл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Т вывода ОНМНП при включении & \centering Т вывода ОНМНП при включении & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Блок. ИО 3I0 откл при БНТ & \centering Блок. ИО 3I0 откл при БНТ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Вывод ОНМНП при включении & \centering Вывод ОНМНП при включении & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Блок. РС откл от ИО & \centering Блок. РС откл от ИО & \centering 3I0 \\ 3U0 \\ 3I0 или 3U0 \\ 3I0 и 3U0 & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тсогл ВЧБ & \centering Тсогл ВЧБ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тср ВЧБ & \centering Тср ВЧБ & \centering 0 ... 4294967295 & \centering  & \centering \arraybackslash 1 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОПТО %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ОПТО представлены в таблице \ref{app_set:opto}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ОПТО\hfill\vspace{-0.5\baselineskip}}\label{app_set:opto}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:opto}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ОПТО|general+-
+\multicolumn{5}{|c|}{ ОПТО } \\ \hline 
+\raggedright ОПТО & \centering ОПТО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Rср РС ОПТО & \centering Rср РС ОПТО & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Xср РС ОПТО & \centering Xср РС ОПТО & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Ф1 РС ОПТО & \centering Ф1 РС ОПТО & \centering 30 ... 85 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Ф2 РС ОПТО & \centering Ф2 РС ОПТО & \centering -80 ... 0 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Ф3 РС ОПТО & \centering Ф3 РС ОПТО & \centering 90 ... 180 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Rнг РС ОПТО & \centering Rнг РС ОПТО & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Фнг РС ОПТО & \centering Фнг РС ОПТО & \centering 5 ... 70 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright БНН ОПТО & \centering БНН ОПТО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ДЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ДЗ представлены в таблице \ref{app_set:dz}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ДЗ\hfill\vspace{-0.5\baselineskip}}\label{app_set:dz}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:dz}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ДЗ|general+-
+\multicolumn{5}{|c|}{ Zнг-ФФ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rнг & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Фнг & \centering 5 ... 70 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\multicolumn{5}{|c|}{ Zнг-ФЗ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rнг & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Фнг & \centering 5 ... 70 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\multicolumn{5}{|c|}{ ОН-ФФ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф2 & \centering -80 ... 0 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф3 & \centering 90 ... 180 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\multicolumn{5}{|c|}{ ОН-ФЗ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф2 & \centering -80 ... 0 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф3 & \centering 90 ... 180 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-ФФ-1 } \\ \hline 
+\raggedright ДЗ-ФФ-1 & \centering ДЗ-ФФ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rср ДЗ-ФФ(ФЗ)-1 & \centering 0,0100 ... 5,0000 & \centering о.е & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Хср ДЗ-ФФ(ФЗ)-1 & \centering 0,0100 ... 5,0000 & \centering о.е & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф1 ДЗ-ФФ(ФЗ)-1 & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф4 ДЗ-ФФ(ФЗ)-1 & \centering -45 ... 0 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Подхват РС-ФФ-1 & \centering Подхват РС-ФФ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright ДЗ-ФФ-1.2 & \centering ДЗ-ФФ-1.2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-1 & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БК ДЗ-ФФ-1.1 & \centering БК ДЗ-ФФ-1.1 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БК ДЗ-ФФ-1.2 & \centering БК ДЗ-ФФ-1.2 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БНН ДЗ-ФФ-1 & \centering БНН ДЗ-ФФ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БСТО ДЗ-ФФ-1 & \centering БСТО ДЗ-ФФ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тср ДЗ-ФФ-1.1 & \centering Тср ДЗ-ФФ-1.1 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср ДЗ-ФФ-1.2 & \centering Тср ДЗ-ФФ-1.2 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-ФФ-2 } \\ \hline 
+\raggedright ДЗ-ФФ-2 & \centering ДЗ-ФФ-2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Rср ДЗ-ФФ-2 & \centering Rср ДЗ-ФФ-2 & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Хср ДЗ-ФФ-2 & \centering Хср ДЗ-ФФ-2 & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Ф1 ДЗ-ФФ-2 & \centering Ф1 ДЗ-ФФ-2 & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright ДЗ-ФФ-2.1 & \centering ДЗ-ФФ-2.1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-N & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БК ДЗ-ФФ-2.1 & \centering БК ДЗ-ФФ-2.1 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БК ДЗ-ФФ-2.2 & \centering БК ДЗ-ФФ-2.2 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БНН ДЗ-ФФ-2 & \centering БНН ДЗ-ФФ-2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тср ДЗ-ФФ-2.1 & \centering Тср ДЗ-ФФ-2.1 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср ДЗ-ФФ-2.2 & \centering Тср ДЗ-ФФ-2.2 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-ФФ-3 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ДЗ-ФФ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rср ДЗ-ФФ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Хср ДЗ-ФФ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф1 ДЗ-ФФ-N & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-N & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК ДЗ-ФФ-N & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ДЗ-ФФ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ДЗ-ФФ-N & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-ФФ-4 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ДЗ-ФФ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rср ДЗ-ФФ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Хср ДЗ-ФФ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф1 ДЗ-ФФ-N & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-N & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК ДЗ-ФФ-N & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ДЗ-ФФ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ДЗ-ФФ-N & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-ФФ-5 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ДЗ-ФФ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rср ДЗ-ФФ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Хср ДЗ-ФФ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф1 ДЗ-ФФ-N & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-N & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК ДЗ-ФФ-N & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ДЗ-ФФ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ДЗ-ФФ-N & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-ФФ-6 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ДЗ-ФФ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rср ДЗ-ФФ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Хср ДЗ-ФФ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф1 ДЗ-ФФ-N & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-N & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК ДЗ-ФФ-N & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ДЗ-ФФ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ДЗ-ФФ-N & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-ФЗ-4 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ДЗ-ФЗ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rср ДЗ-ФЗ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Хср ДЗ-ФЗ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф1 ДЗ-ФЗ-N & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-N & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК ДЗ-ФЗ-N & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ДЗ-ФЗ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ДЗ-ФЗ-N & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-ФЗ-5 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ДЗ-ФЗ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rср ДЗ-ФЗ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Хср ДЗ-ФЗ-N & \centering 0,0100 ... 5,0000 & \centering о.е. & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф1 ДЗ-ФЗ-N & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-N & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК ДЗ-ФЗ-N & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ДЗ-ФЗ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ДЗ-ФЗ-N & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ДЗ-ФЗ-1 } \\ \hline 
+\raggedright ДЗ-ФЗ-1 & \centering ДЗ-ФЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Rср ДЗ-ФФ(ФЗ)-1 & \centering 0,0100 ... 5,0000 & \centering о.е & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Хср ДЗ-ФФ(ФЗ)-1 & \centering 0,0100 ... 5,0000 & \centering о.е & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф1 ДЗ-ФФ(ФЗ)-1 & \centering 30 ... 85 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ф4 ДЗ-ФФ(ФЗ)-1 & \centering -45 ... 0 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright Подхват РС-ФЗ-1 & \centering Подхват РС-ФЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright ДЗ-ФЗ-1.2 & \centering ДЗ-ФЗ-1.2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ДЗ-ФФ(ФЗ)-1 & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БК ДЗ-ФЗ-1.1 & \centering БК ДЗ-ФЗ-1.1 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БК ДЗ-ФЗ-1.2 & \centering БК ДЗ-ФЗ-1.2 & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БНН ДЗ-ФЗ-1 & \centering БНН ДЗ-ФЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БСТО ДЗ-ФЗ-1 & \centering БСТО ДЗ-ФЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тср ДЗ-ФЗ-1.1 & \centering Тср ДЗ-ФЗ-1.1 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср ДЗ-ФЗ-1.2 & \centering Тср ДЗ-ФЗ-1.2 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ООВП } \\ \hline 
+\raggedright 3I0ср ООВП & \centering 3I0ср ООВП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Кт ООВП & \centering Кт ООВП & \centering 0,00 ... 0,15 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Iср блок. торм. & \centering Iср блок. торм. & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright 3U0ср ООВП & \centering 3U0ср ООВП & \centering 0,0100 ... 0,2000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright Iт нач. ООВП & \centering Iт нач. ООВП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Выбор 3U0 & \centering Расчетн. \\ Измерен. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. 3U0 & \centering Контр. 3U0 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ АУ ДЗ } \\ \hline 
+\raggedright Ступень АУ ДЗ-ФФ & \centering Ступень АУ ДЗ-ФФ & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Ступень АУ ДЗ-ФЗ & \centering Ступень АУ ДЗ-ФЗ & \centering Выведено \\ 1 ст. \\ 4 ст. \\ 5 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ДЗ-ФЗ-N & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ОУ1 ДЗ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ступень ОУ ДЗ-ФФ & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ступень ОУ ДЗ-ФЗ & \centering Выведено \\ 1 ст. \\ 4 ст. \\ 5 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК ОУ ДЗ & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ОУ ДЗ & \centering Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват РС-ФФ ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват РС-ФЗ ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ОУ ДЗ при выводе осн. защиты & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ОУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ОУ2 ДЗ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ступень ОУ ДЗ-ФФ & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ступень ОУ ДЗ-ФЗ & \centering Выведено \\ 1 ст. \\ 4 ст. \\ 5 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК ОУ ДЗ & \centering Выведено \\ БК-I-б \\ БК-I-м \\ БК-Z & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ОУ ДЗ & \centering Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват РС-ФФ ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват РС-ФЗ ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ОУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ОУ ДЗ при выводе осн. защиты & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ОУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ТЗНП %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ТЗНП представлены в таблице \ref{app_set:tznp}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ТЗНП\hfill\vspace{-0.5\baselineskip}}\label{app_set:tznp}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:tznp}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ТЗНП|general+-
+\multicolumn{5}{|c|}{ ТЗНП } \\ \hline 
+\raggedright Вывод напр. при ср. ТЗНП & \centering Вывод напр. при ср. ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Вывод напр. при АУ & \centering Вывод напр. при АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ОНМНП-Р } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Выбор 3U0 & \centering Расчетн. \\ Измерен. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Фмч ОНМНП & \centering -179 ... 180 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3I0ср & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3U0ср & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\multicolumn{5}{|c|}{ ОНМНП-Б } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Выбор 3U0 & \centering Расчетн. \\ Измерен. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Фмч ОНМНП & \centering -179 ... 180 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3I0ср & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3U0ср & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\multicolumn{5}{|c|}{ ОНМОП-Р } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Фмч ОНМОП & \centering -179 ... 180 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering I2ср & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering U2ср & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\multicolumn{5}{|c|}{ ОНМОП-Б } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Фмч ОНМОП & \centering -179 ... 180 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering I2ср & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering U2ср & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\multicolumn{5}{|c|}{ ТЗНП-1 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3I0ср ТЗНП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. направл. ТЗНП & \centering Разр. \\ Блок. \\ Разр. или блок. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ТЗНП & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тип ОНМ ТЗНП & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при ср. ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ТЗНП & \centering Выведено \\ Вывод напр. \\ Вывод ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок. ТЗНП по чувств. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНТ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ТЗНП-2 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3I0ср ТЗНП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. направл. ТЗНП & \centering Разр. \\ Блок. \\ Разр. или блок. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ТЗНП & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тип ОНМ ТЗНП & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при ср. ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ТЗНП & \centering Выведено \\ Вывод напр. \\ Вывод ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок. ТЗНП по чувств. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНТ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ТЗНП-3 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3I0ср ТЗНП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. направл. ТЗНП & \centering Разр. \\ Блок. \\ Разр. или блок. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ТЗНП & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тип ОНМ ТЗНП & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при ср. ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ТЗНП & \centering Выведено \\ Вывод напр. \\ Вывод ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок. ТЗНП по чувств. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНТ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ТЗНП-4 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3I0ср ТЗНП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. направл. ТЗНП & \centering Разр. \\ Блок. \\ Разр. или блок. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ТЗНП & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тип ОНМ ТЗНП & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при ср. ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ТЗНП & \centering Выведено \\ Вывод напр. \\ Вывод ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок. ТЗНП по чувств. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНТ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ТЗНП-5 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3I0ср ТЗНП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. направл. ТЗНП & \centering Разр. \\ Блок. \\ Разр. или блок. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ТЗНП & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тип ОНМ ТЗНП & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при ср. ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ТЗНП & \centering Выведено \\ Вывод напр. \\ Вывод ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок. ТЗНП по чувств. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНТ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ТЗНП-6 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3I0ср ТЗНП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. направл. ТЗНП & \centering Разр. \\ Блок. \\ Разр. или блок. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ТЗНП & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тип ОНМ ТЗНП & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при ср. ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ТЗНП & \centering Выведено \\ Вывод напр. \\ Вывод ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок. ТЗНП по чувств. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНТ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ОВ БНТ } \\ \hline 
+\raggedright Kблок 2 гарм & \centering Kблок 2 гарм & \centering 0,05 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright 3I0разр БНТ (0.04Iном) & \centering 3I0разр БНТ (0.04Iном) & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright 3I0блок ОВ БНТ & \centering 3I0блок ОВ БНТ & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\multicolumn{5}{|c|}{ АУ ТЗНП } \\ \hline 
+\raggedright Ступень АУ ТЗНП & \centering Ступень АУ ТЗНП & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ПУ ТЗНП } \\ \hline 
+\raggedright Ступень ПУ ТЗНП & \centering Ступень ПУ ТЗНП & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тср ПУ ТЗНП & \centering Тср ПУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ОУ1 ТЗНП } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ступень ОУ ТЗНП & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. направл. ОУ ТЗНП & \centering Разр. \\ Блок. \\ Разр. или блок. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ОУ ТЗНП & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тип ОНМ ОУ ТЗНП & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при ср. ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ОУ ТЗНП & \centering Выведено \\ Вывод напр. \\ Вывод ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок. ОУ ТЗНП по чувств. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНТ ОУ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ОУ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ОУ ТЗНП при выводе осн. защиты & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ОУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ОУ2 ТЗНП } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ступень ОУ ТЗНП & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. направл. ОУ ТЗНП & \centering Разр. \\ Блок. \\ Разр. или блок. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Направл. ОУ ТЗНП & \centering Ненапр. \\ Прямо \\ Обратно & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тип ОНМ ОУ ТЗНП & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при ср. ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Вывод напр. при АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНН ОУ ТЗНП & \centering Выведено \\ Вывод напр. \\ Вывод ступ. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок. ОУ ТЗНП по чувств. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БНТ ОУ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БСТО ОУ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ОУ ТЗНП при выводе осн. защиты & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ОУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% АМТЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки АМТЗ представлены в таблице \ref{app_set:amtz}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки АМТЗ\hfill\vspace{-0.5\baselineskip}}\label{app_set:amtz}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:amtz}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>АМТЗ|general+-
+\multicolumn{5}{|c|}{ АМТЗ } \\ \hline 
+\raggedright Контр. испр. осн. защиты & \centering Контр. испр. осн. защиты & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ АМТЗ-Ф-1 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АМТЗ-Ф & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср АМТЗ-Ф & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК-I-м АМТЗ-Ф & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АМТЗ-Ф & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ АМТЗ-Ф-2 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АМТЗ-Ф & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср АМТЗ-Ф & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК-I-м АМТЗ-Ф & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АМТЗ-Ф & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ АМТЗ-ОП-1 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АМТЗ-ОП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср АМТЗ-ОП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК-I-м АМТЗ-ОП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АМТЗ-ОП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ АМТЗ-ОП-2 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АМТЗ-ОП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср АМТЗ-ОП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК-I-м АМТЗ-ОП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АМТЗ-ОП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ АМТЗ-НП-1 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АМТЗ-НП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3I0ср АМТЗ-НП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК-I-м АМТЗ-НП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АМТЗ-НП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ АМТЗ-НП-2 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АМТЗ-НП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3I0ср АМТЗ-НП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering БК-I-м АМТЗ-НП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АМТЗ-НП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% МФТО %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки МФТО представлены в таблице \ref{app_set:mfto}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки МФТО\hfill\vspace{-0.5\baselineskip}}\label{app_set:mfto}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:mfto}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>МФТО|general+-
+\multicolumn{5}{|c|}{ МФТО } \\ \hline 
+\raggedright МФТО & \centering МФТО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Iср МФТО & \centering Iср МФТО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright БСТО МФТО & \centering БСТО МФТО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тср МФТО & \centering Тср МФТО & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% АУ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки АУ представлены в таблице \ref{app_set:au}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки АУ\hfill\vspace{-0.5\baselineskip}}\label{app_set:au}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:au}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>АУ|general+-
+\multicolumn{5}{|c|}{ АУ } \\ \hline 
+\raggedright АУ & \centering АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Место ТН & \centering Шины \\ Линия & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кол-во выкл-ей & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Uнал шин Э1 & \centering Uнал шин Э1 & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright Uнал шин Э2 & \centering Uнал шин Э2 & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright U мин ЛЭП & \centering U мин ЛЭП & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright U1 макс АУ & \centering U1 макс АУ & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright U2 макс АУ & \centering U2 макс АУ & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright 3U0 макс АУ & \centering 3U0 макс АУ & \centering 0,0050 ... 1,5000 & \centering  & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright АУ АМТЗ & \centering АУ АМТЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. нал. U на шинах & \centering Контр. нал. U на шинах & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. отс. U на ЛЭП & \centering Контр. отс. U на ЛЭП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. U ЛЭП для АУ & \centering Контр. U ЛЭП для АУ & \centering Внутр. \\ Внеш. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тв АУ & \centering Тв АУ & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср АУ АМТЗ & \centering Тср АУ АМТЗ & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср АУ ДЗ & \centering Тср АУ ДЗ & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср АУ ТЗНП & \centering Тср АУ ТЗНП & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗНР %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ЗНР представлены в таблице \ref{app_set:znr}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ЗНР\hfill\vspace{-0.5\baselineskip}}\label{app_set:znr}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:znr}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ЗНР|general+-
+\multicolumn{5}{|c|}{ ЗНР } \\ \hline 
+\raggedright ЗНР & \centering ЗНР & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright 3I0ср ЗНР & \centering 3I0ср ЗНР & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright I2/I1 ЗНР & \centering I2/I1 ЗНР & \centering 0,05 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright ИО ЗНР & \centering ИО ЗНР & \centering 3I0 \\ I2/I1 & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кол-во выкл-ей & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тср ЗНР & \centering Тср ЗНР & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗНФ В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ЗНФ В1 представлены в таблице \ref{app_set:znf_q1}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ЗНФ В1\hfill\vspace{-0.5\baselineskip}}\label{app_set:znf_q1}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:znf_q1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ЗНФ В1|general+-
+\multicolumn{5}{|c|}{ ЗНФ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ЗНФ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ЗНФ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗНФ В2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ЗНФ В2 представлены в таблице \ref{app_set:znf_q2}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ЗНФ В2\hfill\vspace{-0.5\baselineskip}}\label{app_set:znf_q2}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:znf_q2}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ЗНФ В2|general+-
+\multicolumn{5}{|c|}{ ЗНФ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ЗНФ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср ЗНФ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БК %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки БК представлены в таблице \ref{app_set:bk}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки БК\hfill\vspace{-0.5\baselineskip}}\label{app_set:bk}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:bk}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>БК|general+-
+\multicolumn{5}{|c|}{ БК-I } \\ \hline 
+\raggedright БК-I & \centering БК-I & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Сброс БК-I от РПО & \centering Сброс БК-I от РПО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тв БК-I-б чув & \centering Тв БК-I-б чув & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тв БК-I-б груб & \centering Тв БК-I-б груб & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тв БК-I-м & \centering Тв БК-I-м & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright dI1 чув & \centering dI1 чув & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright dI1 груб & \centering dI1 груб & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright dI2 чув & \centering dI2 чув & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright dI2 груб & \centering dI2 груб & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\multicolumn{5}{|c|}{ БК-Z } \\ \hline 
+\raggedright БК-Z & \centering БК-Z & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Rср внутр. хар. & \centering Rср внутр. хар. & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Xср внутр. хар. & \centering Xср внутр. хар. & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright Фхс & \centering Фхс & \centering 30 ... 85 & \centering  & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright dR & \centering dR & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright dX & \centering dX & \centering 0,0100 ... 5,0000 & \centering  & \centering \arraybackslash 0,0005 \\
+\hline
+\raggedright I2 БК-Z & \centering I2 БК-Z & \centering 0,04 ... 30,00 & \centering  & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Сброс БК-Z от РПО & \centering Сброс БК-Z от РПО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тзад БК-Z & \centering Тзад БК-Z & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тв БК-Z & \centering Тв БК-Z & \centering 0 ... 300000 & \centering  & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БНН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки БНН представлены в таблице \ref{app_set:bnn}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки БНН\hfill\vspace{-0.5\baselineskip}}\label{app_set:bnn}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:bnn}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>БНН|general+-
+\multicolumn{5}{|c|}{ БНН } \\ \hline 
+\raggedright Контр. ЦН & \centering Контр. ЦН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Место ТН & \centering Шины \\ Линия & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БНН комб. & \centering БНН комб. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright dU1 комб. БНН (0,2Uном) & \centering dU1 комб. БНН (0,2Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright dI1 комб. БНН & \centering dI1 комб. БНН & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright U1 мин комб. БНН & \centering U1 мин комб. БНН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright Uф мин комб. БНН & \centering Uф мин комб. БНН & \centering 0,0050 ... 1,5000 & \centering о.е & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright I2/I1 комб. БНН & \centering I2/I1 комб. БНН & \centering 0,10 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright U2 макс комб. БНН (0,085Uном) & \centering U2 макс комб. БНН (0,085Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright U2/U1 комб. БНН & \centering U2/U1 комб. БНН & \centering 0,10 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Контр. Обрыв НП & \centering Контр. Обрыв НП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright 3I0/I1 БНН & \centering 3I0/I1 БНН & \centering 0,10 ... 1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright 3U0 макс БНН (0,085Uном) & \centering 3U0 макс БНН (0,085Uном) & \centering 0,0050 ... 1,2000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright ИО БНН & \centering ИО БНН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Uср ИО БНН & \centering Uср ИО БНН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright U мин звезды (0,05Uном) & \centering U мин звезды (0,05Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright U мин треуг. (0,05Uном) & \centering U мин треуг. (0,05Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright БНН-ф & \centering БНН-ф & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Uср БНН-ф & \centering Uср БНН-ф & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright 3I0 БНН-ф (Iном) & \centering 3I0 БНН-ф (Iном) & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Контр. 3I0 БНН-ф & \centering Контр. 3I0 БНН-ф & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Конт. Автомат ТН & \centering Конт. Автомат ТН & \centering НЗ \\ НО & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тсигн Неиспр. ЦН & \centering Тсигн Неиспр. ЦН & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БСТО %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки БСТО представлены в таблице \ref{app_set:bsto}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки БСТО\hfill\vspace{-0.5\baselineskip}}\label{app_set:bsto}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:bsto}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>БСТО|general+-
+\multicolumn{5}{|c|}{ БСТО } \\ \hline 
+\raggedright БСТО & \centering БСТО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Iср БСТО & \centering Iср БСТО & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Тфикс внеш. КЗ & \centering Тфикс внеш. КЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тпрод БСТО & \centering Тпрод БСТО & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тогр БСТО & \centering Тогр БСТО & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки УРОВ В1 представлены в таблице \ref{app_set:urov_q1}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки УРОВ В1\hfill\vspace{-0.5\baselineskip}}\label{app_set:urov_q1}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:urov_q1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>УРОВ В1|general+-
+\multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УРОВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср УРОВ & \centering 0,04 ... 0,04 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Пуск УРОВ от ЗНР & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Фикс. УРОВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Режим УРОВ с дубл. пуском & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УРОВ на себя & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. по I УРОВ на себя & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср УРОВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср УРОВ на себя & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки УРОВ В2 представлены в таблице \ref{app_set:urov_q2}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки УРОВ В2\hfill\vspace{-0.5\baselineskip}}\label{app_set:urov_q2}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:urov_q2}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>УРОВ В2|general+-
+\multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УРОВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Iср УРОВ & \centering 0,04 ... 0,04 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Пуск УРОВ от ЗНР & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Фикс. УРОВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Режим УРОВ с дубл. пуском & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УРОВ на себя & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. по I УРОВ на себя & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср УРОВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср УРОВ на себя & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ПАВ В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ПАВ В1 представлены в таблице \ref{app_set:pav_q1}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ПАВ В1\hfill\vspace{-0.5\baselineskip}}\label{app_set:pav_q1}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:pav_q1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ПАВ В1|general+-
+\multicolumn{5}{|c|}{ ПАВ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ПАВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид ПАВ & \centering 0 ... 1800000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тимп ПАВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ПАВ В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ПАВ В2 представлены в таблице \ref{app_set:pav_q2}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ПАВ В2\hfill\vspace{-0.5\baselineskip}}\label{app_set:pav_q2}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:pav_q2}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ПАВ В2|general+-
+\multicolumn{5}{|c|}{ ПАВ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ПАВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид ПАВ & \centering 0 ... 1800000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тимп ПАВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КСВ В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки КСВ В1 представлены в таблице \ref{app_set:ksv_q1}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки КСВ В1\hfill\vspace{-0.5\baselineskip}}\label{app_set:ksv_q1}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:ksv_q1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>КСВ В1|general+-
+\multicolumn{5}{|c|}{ КСВ В1 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering КСВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ Контроль В } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. ЭМО в любом пол. В & \centering Выведено \\ ЭМО1 \\ ЭМО2 \\ ЭМО1 и ЭМО2 & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кол-во ЭМО В & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. ОТ сигн. В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Неиспр. ЦУ В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Пруж. не заведены В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Неиспр. обогр. В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ Контроль ТТ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Откл от Авар. давл. SF6 ТТ В & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Неиспр. обогр. ТТ В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ РФ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Реле фиксации В & \centering РФК \\ РФП & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ Защита ЭМУ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Обест. ЭМУ от Авар. давл. SF6 В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср защиты ЭМВ В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср защиты ЭМО1 В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср защиты ЭМО2 В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КСВ В2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки КСВ В2 представлены в таблице \ref{app_set:ksv_q2}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки КСВ В2\hfill\vspace{-0.5\baselineskip}}\label{app_set:ksv_q2}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:ksv_q2}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>КСВ В2|general+-
+\multicolumn{5}{|c|}{ КСВ В2 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering КСВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ Контроль В } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. ЭМО в любом пол. В & \centering Выведено \\ ЭМО1 \\ ЭМО2 \\ ЭМО1 и ЭМО2 & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кол-во ЭМО В & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. ОТ сигн. В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Неиспр. ЦУ В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Пруж. не заведены В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Неиспр. обогр. В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ Контроль ТТ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Откл от Авар. давл. SF6 ТТ В & \centering Выведено \\ Введено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср Неиспр. обогр. ТТ В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ РФ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Реле фиксации В & \centering РФК \\ РФП & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ Защита ЭМУ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Обест. ЭМУ от Авар. давл. SF6 В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср защиты ЭМВ В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср защиты ЭМО1 В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср защиты ЭМО2 В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БКУ В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки БКУ В1 представлены в таблице \ref{app_set:bku_q1}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки БКУ В1\hfill\vspace{-0.5\baselineskip}}\label{app_set:bku_q1}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:bku_q1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>БКУ В1|general+-
+\multicolumn{5}{|c|}{ БКУ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Обязательное квитирование & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БКУ В2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки БКУ В2 представлены в таблице \ref{app_set:bku_q2}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки БКУ В2\hfill\vspace{-0.5\baselineskip}}\label{app_set:bku_q2}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:bku_q2}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>БКУ В2|general+-
+\multicolumn{5}{|c|}{ БКУ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Обязательное квитирование & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УВ В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки УВ В1 представлены в таблице \ref{app_set:uv_q1}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки УВ В1\hfill\vspace{-0.5\baselineskip}}\label{app_set:uv_q1}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:uv_q1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>УВ В1|general+-
+\multicolumn{5}{|c|}{ УВ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок. от многокр. вкл. на КЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват вкл. от РТ ЭМВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл. опер. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тпрод опер. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УВ В2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки УВ В2 представлены в таблице \ref{app_set:uv_q2}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки УВ В2\hfill\vspace{-0.5\baselineskip}}\label{app_set:uv_q2}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:uv_q2}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>УВ В2|general+-
+\multicolumn{5}{|c|}{ УВ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Блок. от многокр. вкл. на КЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват вкл. от РТ ЭМВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл. опер. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тпрод опер. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ФСЛ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ФСЛ представлены в таблице \ref{app_set:fsl}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ФСЛ\hfill\vspace{-0.5\baselineskip}}\label{app_set:fsl}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:fsl}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ФСЛ|general+-
+\multicolumn{5}{|c|}{ ФСЛ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кол-во выкл-ей & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КПОВ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки КПОВ представлены в таблице \ref{app_set:kpov}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки КПОВ\hfill\vspace{-0.5\baselineskip}}\label{app_set:kpov}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:kpov}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>КПОВ|general+-
+\multicolumn{5}{|c|}{ КПОВ } \\ \hline 
+\raggedright КПОВ & \centering КПОВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ТЗО %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ТЗО представлены в таблице \ref{app_set:tzo}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ТЗО\hfill\vspace{-0.5\baselineskip}}\label{app_set:tzo}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:tzo}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ТЗО|general+-
+\multicolumn{5}{|c|}{ ТЗО } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Ав. ввод ТЗО & \centering ЛР \\ В \\ ЛР или В & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ТЗО-Ф } \\ \hline 
+\raggedright Iср ТЗО-Ф & \centering Iср ТЗО-Ф & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Тср ТЗО-Ф & \centering Тср ТЗО-Ф & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright БСТО ТЗО-Ф & \centering БСТО ТЗО-Ф & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright ТЗО-Ф & \centering ТЗО-Ф & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ТЗО-НП } \\ \hline 
+\raggedright Iср ТЗО-НП & \centering Iср ТЗО-НП & \centering 0,04 ... 30,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\hline
+\raggedright Тср ТЗО-НП & \centering Тср ТЗО-НП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright БСТО ТЗО-НП & \centering БСТО ТЗО-НП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright ТЗО-НП & \centering ТЗО-НП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КСН В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки КСН В1 представлены в таблице \ref{app_set:ksn_q1}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки КСН В1\hfill\vspace{-0.5\baselineskip}}\label{app_set:ksn_q1}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:ksn_q1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>КСН В1|general+-
+\multicolumn{5}{|c|}{ КСН } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering КСН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering U2 макс КСН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3U0 макс КСН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uнал ЛЭП & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uотс ЛЭП & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uнал Э1(Э2) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uотс Э1(Э2) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering dU макс КС(УС) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering dФ макс КС & \centering 1 ... 90 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering df макс КС & \centering 0,050 ... 3,000 & \centering Гц & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering df пред. доп. & \centering 0,025 ... 3,000 & \centering Гц & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering КС & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УС & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Опер. вкл. с КОН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Опер. вкл. без контролей & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. опер. вкл. & \centering Внутр. \\ Внеш. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Место ТН & \centering Шины \\ Линия & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Т опер. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КСН В2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки КСН В2 представлены в таблице \ref{app_set:ksn_q2}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки КСН В2\hfill\vspace{-0.5\baselineskip}}\label{app_set:ksn_q2}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:ksn_q2}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>КСН В2|general+-
+\multicolumn{5}{|c|}{ КСН } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering КСН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering U2 макс КСН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 3U0 макс КСН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uнал ЛЭП & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uотс ЛЭП & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uнал Э1(Э2) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Uотс Э1(Э2) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering dU макс КС(УС) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering dФ макс КС & \centering 1 ... 90 & \centering Эл. градусы & \centering \arraybackslash 1,0 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering df макс КС & \centering 0,050 ... 3,000 & \centering Гц & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering df пред. доп. & \centering 0,025 ... 3,000 & \centering Гц & \centering \arraybackslash 0,001 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering КС & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering УС & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Опер. вкл. с КОН & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Опер. вкл. без контролей & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. опер. вкл. & \centering Внутр. \\ Внеш. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Место ТН & \centering Шины \\ Линия & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Т опер. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ЛО В1 представлены в таблице \ref{app_set:lo_q1}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ЛО В1\hfill\vspace{-0.5\baselineskip}}\label{app_set:lo_q1}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:lo_q1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ЛО В1|general+-
+\multicolumn{5}{|c|}{ ЛО В1 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ЛО В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ЛО В } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кол-во ЭМО & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ЗНФ на откл. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват откл. от РТ ЭМО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тпрод откл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ Запрет АПВ В } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Запрет АПВ В от ЗНФ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Огр. ожид. пуска АПВ В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл. пуска АПВ В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ЛО В2 представлены в таблице \ref{app_set:lo_q2}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ЛО В2\hfill\vspace{-0.5\baselineskip}}\label{app_set:lo_q2}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:lo_q2}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ЛО В2|general+-
+\multicolumn{5}{|c|}{ ЛО В2 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ЛО В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тип В2 & \centering Тип В2 & \centering ЛВ \\ ОВ & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ЛО В } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Кол-во ЭМО & \centering Один \\ Два & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ЗНФ на откл. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Подхват откл. от РТ ЭМО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тпрод откл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ Запрет АПВ В } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Запрет АПВ В от ЗНФ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Огр. ожид. пуска АПВ В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл. пуска АПВ В & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% АПВ В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки АПВ В1 представлены в таблице \ref{app_set:apv_q1}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки АПВ В1\hfill\vspace{-0.5\baselineskip}}\label{app_set:apv_q1}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:apv_q1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>АПВ В1|general+-
+\multicolumn{5}{|c|}{ АПВ ЛЭП } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АПВ ЛЭП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 2-ой цикл АПВл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Твосст гот. АПВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АПВл-1 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АПВл-2 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АПВл доп. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тимп АПВл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ АПВ СШ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АПВ СШ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АПВш & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тимп АПВш & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% АПВ В2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки АПВ В2 представлены в таблице \ref{app_set:apv_q2}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки АПВ В2\hfill\vspace{-0.5\baselineskip}}\label{app_set:apv_q2}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:apv_q2}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>АПВ В2|general+-
+\multicolumn{5}{|c|}{ АПВ ЛЭП } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АПВ ЛЭП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering 2-ой цикл АПВл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Твосст гот. АПВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АПВл-1 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АПВл-2 & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АПВл доп. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тимп АПВл & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ АПВ СШ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering АПВ СШ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тгот АПВ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тожид усл. вкл. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тср АПВш & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Тимп АПВш & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ФПВ В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ФПВ В1 представлены в таблице \ref{app_set:fpv_q1}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ФПВ В1\hfill\vspace{-0.5\baselineskip}}\label{app_set:fpv_q1}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:fpv_q1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ФПВ В1|general+-
+\multicolumn{5}{|c|}{ ФПВ В1 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Схема Р В & \centering Р1, Р2 \\ Р1, Р2, Р3 & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ФПВ В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ФПВ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Контр. Р В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ФПВ В2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ФПВ В2 представлены в таблице \ref{app_set:fpv_q2}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ФПВ В2\hfill\vspace{-0.5\baselineskip}}\label{app_set:fpv_q2}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:fpv_q2}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ФПВ В2|general+-
+\multicolumn{5}{|c|}{ ФПВ В2 } \\ \hline 
+\raggedright Тип В2 & \centering Тип В2 & \centering ЛВ \\ ОВ & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering Схема Р В & \centering Р1, Р2 \\ Р1, Р2, Р3 & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ФПВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ФПВ } \\ \hline 
+\raggedright Контр. Р В & \centering Контр. Р В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ФПВ В3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ФПВ В3 представлены в таблице \ref{app_set:fpv_q3}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ФПВ В3\hfill\vspace{-0.5\baselineskip}}\label{app_set:fpv_q3}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:fpv_q3}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ФПВ В3|general+-
+\multicolumn{5}{|c|}{ ФПВ В3 } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ФПВ В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ФПВ } \\ \hline 
+\raggedright Контр. Р В & \centering Контр. Р В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ФПВ ШСВ/СВ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки ФПВ ШСВ/СВ представлены в таблице \ref{app_set:fpv_shsv}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки ФПВ ШСВ/СВ\hfill\vspace{-0.5\baselineskip}}\label{app_set:fpv_shsv}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:fpv_shsv}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ФПВ ШСВ/СВ|general+-
+\multicolumn{5}{|c|}{ ФПВ ШСВ/СВ } \\ \hline 
+\raggedright \textcolor{red}{FullDescription НЕ НАЙДЕН!} & \centering ФПВ В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ФПВ } \\ \hline 
+\raggedright Контр. Р В & \centering Контр. Р В & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки логики отключения представлены в таблице \ref{app_set:lo}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки логики отключения\hfill\vspace{-0.5\baselineskip}}\label{app_set:lo}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:lo}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ЛО|general+-
+\multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\raggedright ЛО & \centering ЛО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ Запрет АПВ } \\ \hline 
+\raggedright Запрет АПВ от осн. защиты & \centering Запрет АПВ от осн. защиты & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ДЗ-ФФ-1 & \centering Запрет АПВ от ДЗ-ФФ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ДЗ-ФФ-2 & \centering Запрет АПВ от ДЗ-ФФ-2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ДЗ-ФФ-3 & \centering Запрет АПВ от ДЗ-ФФ-3 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ДЗ-ФФ-4 & \centering Запрет АПВ от ДЗ-ФФ-4 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ДЗ-ФФ-5 & \centering Запрет АПВ от ДЗ-ФФ-5 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ДЗ-ФФ-6 & \centering Запрет АПВ от ДЗ-ФФ-6 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ДЗ-ФЗ-1 & \centering Запрет АПВ от ДЗ-ФЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ДЗ-ФЗ-4 & \centering Запрет АПВ от ДЗ-ФЗ-4 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ДЗ-ФЗ-5 & \centering Запрет АПВ от ДЗ-ФЗ-5 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ТЗНП-1 & \centering Запрет АПВ от ТЗНП-1 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ТЗНП-2 & \centering Запрет АПВ от ТЗНП-2 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ТЗНП-3 & \centering Запрет АПВ от ТЗНП-3 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ТЗНП-4 & \centering Запрет АПВ от ТЗНП-4 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ТЗНП-5 & \centering Запрет АПВ от ТЗНП-5 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ТЗНП-6 & \centering Запрет АПВ от ТЗНП-6 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от 1 ст. АМТЗ & \centering Запрет АПВ от 1 ст. АМТЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от 2 ст. АМТЗ & \centering Запрет АПВ от 2 ст. АМТЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ОУ1 ДЗ & \centering Запрет АПВ от ОУ1 ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ОУ2 ДЗ & \centering Запрет АПВ от ОУ2 ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ОУ1 ТЗНП & \centering Запрет АПВ от ОУ1 ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ОУ2 ТЗНП & \centering Запрет АПВ от ОУ2 ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ПУ ТЗНП & \centering Запрет АПВ от ПУ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от АУ & \centering Запрет АПВ от АУ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ЗНР & \centering Запрет АПВ от ЗНР & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от МФТО & \centering Запрет АПВ от МФТО & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ТЗО-Ф & \centering Запрет АПВ от ТЗО-Ф & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ТЗО-НП & \centering Запрет АПВ от ТЗО-НП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от Тоткл & \centering Запрет АПВ от Тоткл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ТУ ОТФ & \centering Запрет АПВ от ТУ ОТФ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ТУ ДЗ & \centering Запрет АПВ от ТУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ТУ ТЗНП & \centering Запрет АПВ от ТУ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ЛОСК ТУ ДЗ & \centering Запрет АПВ от ЛОСК ТУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ от ЛОСК ТУ ТЗНП & \centering Запрет АПВ от ЛОСК ТУ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ при УРОВ от РЗА ЛЭП & \centering Запрет АПВ при УРОВ от РЗА ЛЭП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Запрет АПВ при УРОВ от РЗА ОВ & \centering Запрет АПВ при УРОВ от РЗА ОВ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+%===m
+\end{longtable}
+\normalsize
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛС %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\par
+Уставки логики связи представлены в таблице \ref{app_set:ls}.
+
+\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
+% Первая страница: полный заголовок
+\caption{Параметры для настройки логики связи\hfill\vspace{-0.5\baselineskip}}\label{app_set:ls}\\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{app_set:ls}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!20}
+Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
+\hline
+\endhead
+
+%===m>ЛС|general+-
+\multicolumn{5}{|c|}{ ТУ ОТФ } \\ \hline 
+\raggedright ТУ ОТФ & \centering ТУ ОТФ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Прием ТУ ОТФ & \centering Прием ТУ ОТФ & \centering По ИЛИ \\ По И & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БНН ИО ТЗНП-4 & \centering БНН ИО ТЗНП-4 & \centering Вывод напр. \\ Вывод ИО ТЗНП & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. РС-ФФ-2 с охв & \centering Контр. РС-ФФ-2 с охв & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. РС-ФФ-3 & \centering Контр. РС-ФФ-3 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. РС-ФФ-4 & \centering Контр. РС-ФФ-4 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. РС-ФЗ-4 & \centering Контр. РС-ФЗ-4 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БНН РС & \centering БНН РС & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. ИО ТЗНП-4 & \centering Контр. ИО ТЗНП-4 & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. ОНМНП-Р & \centering Контр. ОНМНП-Р & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тср ТУ ОТФ & \centering Тср ТУ ОТФ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ Орган Uмин } \\ \hline 
+\raggedright Uср ЛОСК & \centering Uср ЛОСК & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering \arraybackslash 0,0001 \\
+\hline
+\multicolumn{5}{|c|}{ Тоткл } \\ \hline 
+\raggedright Тоткл & \centering Тоткл & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Прием Тоткл с контр. & \centering Прием Тоткл с контр. & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. Тоткл от БК-I-м & \centering Контр. Тоткл от БК-I-м & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. Тоткл от ДЗ-ФФ & \centering Контр. Тоткл от ДЗ-ФФ & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. Тоткл от ДЗ-ФЗ & \centering Контр. Тоткл от ДЗ-ФЗ & \centering Выведено \\ 1 ст. \\ 4 ст. \\ 5 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Контр. Тоткл от ТЗНП & \centering Контр. Тоткл от ТЗНП & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\multicolumn{5}{|c|}{ ТУ ДЗ } \\ \hline 
+\raggedright ТУ ДЗ & \centering ТУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Прием ТУ ДЗ & \centering Прием ТУ ДЗ & \centering По ИЛИ \\ По И & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Режим ТУ ДЗ & \centering Режим ТУ ДЗ & \centering Разр. \\ Блок. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Режим эхо ТУ ДЗ & \centering Режим эхо ТУ ДЗ & \centering Выведено \\ ЛОСК \\ Эхо \\ Эхо + ЛОСК & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Прямонапр. ступень ДЗ-ФФ & \centering Прямонапр. ступень ДЗ-ФФ & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Обратнонапр. ступень ДЗ-ФФ & \centering Обратнонапр. ступень ДЗ-ФФ & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Прямонапр. ступень ДЗ-ФЗ & \centering Прямонапр. ступень ДЗ-ФЗ & \centering Выведено \\ 1 ст. \\ 4 ст. \\ 5 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Обратнонапр. ступень ДЗ-ФЗ & \centering Обратнонапр. ступень ДЗ-ФЗ & \centering Выведено \\ 1 ст. \\ 4 ст. \\ 5 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БСТО ТУ ДЗ & \centering БСТО ТУ ДЗ & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тфикс обр. ступ. & \centering Тфикс обр. ступ. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тпрод обр. ступ. & \centering Тпрод обр. ступ. & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тв блок. ТУ ДЗ & \centering Тв блок. ТУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср ТУ ДЗ & \centering Тср ТУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тпрод передачи ТУ ДЗ & \centering Тпрод передачи ТУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср эхо ТУ ДЗ & \centering Тср эхо ТУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тимп эхо ТУ ДЗ & \centering Тимп эхо ТУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тблок эхо ТУ ДЗ & \centering Тблок эхо ТУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\multicolumn{5}{|c|}{ ТУ ТЗНП } \\ \hline 
+\raggedright ТУ ТЗНП & \centering ТУ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Прием ТУ ТЗНП & \centering Прием ТУ ТЗНП & \centering По ИЛИ \\ По И & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Режим ТУ ТЗНП & \centering Режим ТУ ТЗНП & \centering Разр. \\ Блок. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Режим эхо ТУ ТЗНП & \centering Режим эхо ТУ ТЗНП & \centering Выведено \\ ЛОСК \\ Эхо \\ Эхо + ЛОСК & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Ступень ИО ТЗНП & \centering Ступень ИО ТЗНП & \centering Выведено \\ 1 ст. \\ 2 ст. \\ 3 ст. \\ 4 ст. \\ 5 ст. \\ 6 ст. & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БСТО ТУ ТЗНП & \centering БСТО ТУ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright БНТ ТУ ТЗНП & \centering БНТ ТУ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering \arraybackslash --- \\
+\hline
+\raggedright Тфикс ОНМНП-Б & \centering Тфикс ОНМНП-Б & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тпрод ОНМНП-Б & \centering Тпрод ОНМНП-Б & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тв блок. ТУ ТЗНП & \centering Тв блок. ТУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср ТУ ТЗНП & \centering Тср ТУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тпрод передачи ТУ ТЗНП & \centering Тпрод передачи ТУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тср эхо ТУ ТЗНП & \centering Тср эхо ТУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тимп эхо ТУ ТЗНП & \centering Тимп эхо ТУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+\raggedright Тблок эхо ТУ ТЗНП & \centering Тблок эхо ТУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering \arraybackslash 5 \\
+\hline
+%===m
+\end{longtable}
+\normalsize
