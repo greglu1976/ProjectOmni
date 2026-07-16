@@ -1,0 +1,56 @@
+\color{unidarkgreen}{\subsection{Внешнее отключение (ВО)}}
+\color{black}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+
+\item
+Внешнее отключение предназначено для приема внешних сигналов и формирования требуемого
+действия на отключение выключателей всех сторон автотрансформатора. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/041.1761 ВО/img/VO.pdf}
+\captionof{figure}{Функциональная схема ВО-1}\label{pic_vo:VO}
+\end{figure}
+
+\item
+В составе логики внешнего отключения предусмотрен прием трех сигналов внешнего отключения \textbf{«Внеш.
+откл1(2,3)»} с возможность контроля по току. ВО-1(2,3) вводится в работу программным переключателем \textbf{«ВО-
+1(2,3)»}. Контроль по току определяется программным переключателем \textbf{«Конт I ВО-1(2,3)»}, а порог
+срабатывания тока задается уставкой \textbf{«Iср ВО-1(2,3)»}. Действие внешнего отключения осуществляется с
+регулируемыми независимыми выдержками времени \textbf{«Тср ВО-1(2,3)»}.
+
+\item
+Режим действия внешнего отключения задается с помощью программного переключателя \textbf{«Режим ВО-1(2,3)»}:
+\begin{itemize}
+\item \textit{«Без АПВ»} -- Внешнее отключение с запретом АПВ;
+\item \textit{«С АПВ»} -- Внешнее отключение без запрета АПВ.
+\end{itemize} 
+
+\item
+Оперативный ввод/вывод внешнего отключения производится с помощью БУ (блоков управления функциями) \textit{«Вывод ВО»}. 
+
+\small
+\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
+% Первая страница: полный заголовок
+\caption{Перечень уставочных параметров ВО\hfill\vspace{-0.5\baselineskip}}\label{vo:tbl1}\\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endfirsthead
+
+% Промежуточные страницы: «Продолжение таблицы»
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{vo:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
+\hline
+\rowcolor{gray!30}
+Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
+\hline
+\endhead
+
+%===m>ВО|-
+%===m
+\end{longtable}
+\normalsize	
+
+\end{enumerate}
