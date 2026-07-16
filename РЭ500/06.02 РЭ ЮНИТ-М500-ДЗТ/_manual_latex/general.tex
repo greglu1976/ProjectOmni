@@ -15,9 +15,10 @@
 
 % ЗАДАЕМ ПЕРЕМЕННЫЕ ТЕКУЩЕЙ НОМЕР РЕДАКЦИИ И ДАТА РЕДАКЦИИ
 \def\rev{$\beta$}
-\def\revdate{07.07.2026}
-\def\colondevicetype{ЮНИТ-М500-ДЗТ}
-
+\def\revdate{16.07.2026}
+\def\devicetype{ЮНИТ-М500-ДЗАТ}
+\def\devicecode{ЮТКБ.656122.611-06.02 РЭ}
+\def\devicename{Основная защита автотрансформатора напряжением 220 кВ с функциями УРОВ и АУВ.}
 
 % МЕТАДАННЫЕ
 \hypersetup{
@@ -27,9 +28,6 @@
     pdfkeywords={ЮНИТ-М500-ДЗТ, Юнител, РЗА, Релейная защита и автоматика},
 }
 
-% ЗАДАЕМ ПЕРЕМЕННЫЕ УКАЗЫВАЮЩИЕ КАКИЕ ФУНКЦИИ СОБИРАТЬ
-\newbool{isLV}\boolfalse{isLV} 
-\newbool{isDZAT}\booltrue{isDZAT}
 
 \begin{document}
 
@@ -40,34 +38,30 @@
 %\makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newpage % НУЖНО!!!
-\input{title0.tex} % подключаем титульный лист
+% Титульный лист
+\input{\genpath/title0.tex}
 \clearpage
 
-\newpage  % НУЖНО!!!
-\input{title1.tex}
+% Выходные сведения (оборот титула)
+\input{\genpath/title1.tex}
 \clearpage
 
-\newpage
-\input{section_format.tex}% Здесь только определение формата для страниц разделов
+% Содержание
+\input{\genpath/toc.tex}
 \clearpage
 
-\newpage
-\input{toc.tex}
-\clearpage
 
-\newpage
+% Перечень сокращений
 \input{toa_general.tex}
+\clearpage
+
+% Описание и работа
+\input{\genpath/section1.tex}
+\clearpage
 
 %\newpage
-%\input{section0.tex}
-
-\newpage
-\input{section1.tex}
-
-% input не вставляет возврат строки, а include вставляет
-\newpage
-\input{section2.tex}
+\input{\genpath/section2.tex}
+\clearpage
 
 %===f
 
@@ -135,34 +129,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩАЯ ЧАСТЬ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% СЕРВИСНЫЕ ФУНКЦИИ
-%\newpage
-%\input{\genpath/Раздел 3. Сервис функ/service_func.tex}
-
 
 % ИСПОЛЬЗОВАНИЕ ПО НАЗНАЧЕНИЮ
 \newpage
-\input{section3.tex}
-
-% ТЕХОБСЛУЖИВАНИЕ И РЕМОНТ
-\newpage
-\input{\genpath/Тех обсл и ремонт/_latex/repair.tex}
-
-% ТРАНСПОРТИРОВАНИЕ
-%\newpage
-\input{\genpath/Трансп и хранение/_latex/trans.tex}
-
-%УТИЛИЗАЦИЯ
-%\newpage
-\input{\genpath/Утилизация/_latex/util.tex}
-
-%ГАРАНТИЯ
-%\newpage
-\input{\genpath/Гарантия/_latex/garant.tex}
-
-%ТЕХПОДДЕРЖКА
-%\newpage
-\input{\genpath/Тех поддержка/_latex/support.tex}
+\input{\genpath/section3.tex}
 
 % ПРИЛОЖЕНИЯ
 
@@ -226,6 +196,6 @@
 
 %ЛИСТ РЕГИСТРАЦИИ ИЗМЕНЕНИЙ
 \newpage
-\input{\genpath/Лист рег изм/_latex/izm.tex}
+\input{\genpath/revsheet.tex}
 
 \end{document}

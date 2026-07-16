@@ -1,4 +1,3 @@
-%\input{preamble.tex}
 
 %Подключение преамбулы
 \input{//192.168.11.240/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/99. Общие разделы РЭ/preamble.tex}
@@ -16,20 +15,17 @@
 % ЗАДАЕМ ПЕРЕМЕННЫЕ ТЕКУЩЕЙ НОМЕР РЕДАКЦИИ И ДАТА РЕДАКЦИИ
 \def\rev{$\alpha$}
 \def\revdate{14.07.2026}
-\def\colondevicetype{ЮНИТ-М500-РЗТ}
+\def\devicetype{ЮНИТ-М500-РЗТ}
+\def\devicecode{ЮТКБ.656122.611-07.01 РЭ}
+\def\devicename{Резервные защиты трансформатора напряжением от 110 до 220 кВ.}
 
 % МЕТАДАННЫЕ
 \hypersetup{
-    pdftitle={Основная защита трансформатора напряжением 220 кВ с функциями УРОВ и АУВ. Устройство типа ЮНИТ-М500-РЗТ. Руководство по эксплуатации},
+    pdftitle={Резервные защиты трансформатора напряжением от 110 до 220 кВ. Устройство типа ЮНИТ-М500-РЗТ. Руководство по эксплуатации},
     pdfauthor={ООО "Юнител Инжиниринг"},
     pdfsubject={Описание функций РЗА в составе устройства ЮНИТ-М500-РЗТ},
     pdfkeywords={ЮНИТ-М500-РЗТ, Юнител, РЗА, Релейная защита и автоматика},
 }
-
-% ЗАДАЕМ ПЕРЕМЕННЫЕ УКАЗЫВАЮЩИЕ КАКИЕ ФУНКЦИИ СОБИРАТЬ
-\newbool{isLV}\boolfalse{isLV} 
-\newbool{isDZAT}\boolfalse{isDZAT}
-\newbool{isRZT}\booltrue{isRZT}
 
 \begin{document}
 
@@ -40,34 +36,29 @@
 %\makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newpage % НУЖНО!!!
-\input{title0.tex} % подключаем титульный лист
+% Титульный лист
+\input{\genpath/title0.tex}
 \clearpage
 
-\newpage  % НУЖНО!!!
-\input{title1.tex}
+% Выходные сведения (оборот титула)
+\input{\genpath/title1.tex}
 \clearpage
 
-\newpage
-\input{section_format.tex}% Здесь только определение формата для страниц разделов
+% Содержание
+\input{\genpath/toc.tex}
 \clearpage
 
-\newpage
-\input{toc.tex}
-\clearpage
-
-\newpage
+% Перечень сокращений
 \input{toa_general.tex}
+\clearpage
+
+% Описание и работа
+\input{\genpath/section1.tex}
+\clearpage
 
 %\newpage
-%\input{section0.tex}
-
-\newpage
-\input{section1.tex}
-
-% input не вставляет возврат строки, а include вставляет
-\newpage
-\input{section2.tex}
+\input{\genpath/section2.tex}
+\clearpage
 
 %===f
 
@@ -107,34 +98,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩАЯ ЧАСТЬ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% СЕРВИСНЫЕ ФУНКЦИИ
-%\newpage
-%\input{\genpath/Раздел 3. Сервис функ/service_func.tex}
-
-
 % ИСПОЛЬЗОВАНИЕ ПО НАЗНАЧЕНИЮ
 \newpage
-\input{section3.tex}
+\input{\genpath/section3.tex}
 
-% ТЕХОБСЛУЖИВАНИЕ И РЕМОНТ
-\newpage
-\input{\genpath/Тех обсл и ремонт/_latex/repair.tex}
-
-% ТРАНСПОРТИРОВАНИЕ
-%\newpage
-\input{\genpath/Трансп и хранение/_latex/trans.tex}
-
-%УТИЛИЗАЦИЯ
-%\newpage
-\input{\genpath/Утилизация/_latex/util.tex}
-
-%ГАРАНТИЯ
-%\newpage
-\input{\genpath/Гарантия/_latex/garant.tex}
-
-%ТЕХПОДДЕРЖКА
-%\newpage
-\input{\genpath/Тех поддержка/_latex/support.tex}
 
 % ПРИЛОЖЕНИЯ
 
@@ -198,6 +165,6 @@
 
 %ЛИСТ РЕГИСТРАЦИИ ИЗМЕНЕНИЙ
 \newpage
-\input{\genpath/Лист рег изм/_latex/izm.tex}
+\input{\genpath/revsheet.tex}
 
 \end{document}
