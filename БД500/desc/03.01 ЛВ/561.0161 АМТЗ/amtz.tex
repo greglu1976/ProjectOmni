@@ -1,3 +1,16 @@
+%%% ВЫБОР УСТРОЙСТВА %%%
+
+\IfStrEqCase{\devicetype}{%
+{ЮНИТ-М500-РЗАТ}{%
+% код для этого типа
+\def\fileExt{at}
+}%
+}
+[
+\def\fileExt{lv}
+]
+
+
 \color{unidarkgreen}{\subsection{Аварийная максимальная токовая защита}}
 \color{black}
 
@@ -43,7 +56,7 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0161 АМТЗ/img/common_logic.pdf}
+\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.0161 АМТЗ/img/common_logic_\fileExt.pdf}
 \captionof{figure}{Функциональная схема общей логики АМТЗ}\label{pict_amtz:common_logic}
 \end{figure}
 

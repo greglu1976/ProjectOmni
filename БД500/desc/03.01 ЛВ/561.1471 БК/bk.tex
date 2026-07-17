@@ -1,3 +1,29 @@
+%%% ВЫБОР УСТРОЙСТВА %%%
+
+\IfStrEqCase{\devicetype}{%
+{ЮНИТ-М500-ЛВ}{%
+% код для этого типа
+\def\fileExt{lv}
+}%
+{ЮНИТ-М500-ДЗЛ}{%
+% код для этого типа
+\def\fileExt{lv}
+}%
+{ЮНИТ-М500-ВЧ}{%
+% код для этого типа
+\def\fileExt{lv}
+}%
+{ЮНИТ-М500-РЗАТ}{%
+% код для этого типа
+\def\fileExt{at}
+}%
+}
+[
+\def\fileExt{??}
+]
+
+
+
 \color{unidarkgreen}{\subsection{Блокировка при качаниях}}
 \color{black}
 
@@ -39,7 +65,7 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.1471 БК/img/BK_I.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.1471 БК/img/BK_I_\fileExt.pdf}
 \captionof{figure}{Функциональная схема  пуска БК-I}\label{pict_bk:BK_I}
 \end{figure}
 
@@ -83,7 +109,7 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.1471 БК/img/BK_Z.pdf}
+\includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/561.1471 БК/img/BK_Z_\fileExt.pdf}
 \captionof{figure}{Функциональная схема БК-Z}\label{pict_bk:BK_Z}
 \end{figure}
 

@@ -1,0 +1,42 @@
+% ============================================================
+% ПРИЛОЖЕНИЕ «КОД ЗАКАЗА УСТРОЙСТВА»
+% ============================================================
+
+% Извлекаем суффикс (тип защиты) из \devicetype
+\StrCount{\devicetype}{-}[\numdash]
+\StrBehind[\numdash]{\devicetype}{-}[\suffix]
+
+% Заголовок приложения
+{\color{unidarkgreen}\section[(обязательное) Код заказа устройства «\devicetype»]{(обязательное)\\Код заказа устройства «\devicetype»}\label{app:order}}
+
+% Макрос для вставки рисунка с двухстрочной подписью
+\newcommand{\orderfig}[5][]{%
+  \begin{figure}[H]
+    \centering
+    \vspace*{1cm}% отступ сверху
+    \includegraphics[#1]{#2}
+    \caption[#3]{#3\\#4}\label{#5}
+  \end{figure}%
+  \medskip
+}
+
+% Общее примечание для всех рисунков (одинаковый шрифт)
+\newcommand{\note}{Примечание: типоисполнение «А» -- \suffix}
+
+% Рисунки с кодами заказа
+\orderfig[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]%
+  {\genpath/Приложение. Код заказа/Unit-M510.pdf}%
+  {Код заказа устройства «ЮНИТ-М510-\suffix»}%
+  {\note}{appcard:img1}
+
+\orderfig[width=1\textwidth,height=1\textheight,keepaspectratio]%
+  {\genpath/Приложение. Код заказа/Unit-M514.pdf}%
+  {Код заказа устройства «ЮНИТ-М514-\suffix»}%
+  {\note}{appcard:img2}
+
+\orderfig[width=1\textwidth,height=1\textheight,keepaspectratio]%
+  {\genpath/Приложение. Код заказа/Unit-M519.pdf}%
+  {Код заказа устройства «ЮНИТ-М519-\suffix»}%
+  {\note}{appcard:img3}
+
+\clearpage

@@ -6,329 +6,69 @@
 
 
 \par
-Уставки ДФЗ представлены в таблице \ref{app_set:dfz}.
+Уставки ДЗЛ представлены в таблице \ref{app_set:dzl}.
 
-\startTable{Параметры для настройки ДФЗ}{app_set:dfz}
+\startTable{Параметры для настройки ДФЗ}{app_set:dzl}
 
-%===m>ДФЗ|general+-
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ ДФЗ } \\ \hline 
-\centering ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+%===m>ДЗЛ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ДЗЛ } \\ \hline 
+\centering ДЗЛ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\centering БСТО ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\centering БСТО ДЗЛ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ Контроль КС } \\ \hline 
-\centering Блок. от АПК & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\centering Блок. ДЗЛ УТ при переводе на сигнал & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\centering Блок. от Неиспр. ПП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\centering Блок. ДЗЛ УТ при выводе & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ ИО ДФЗ } \\ \hline 
-\centering Контр. ИО Iл ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ИО ДЗЛ } \\ \hline 
+\centering ДТО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\centering Iл блок ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering 0,01 & \centering \arraybackslash 2,00 \\
+\centering ДТЗт & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\centering Iл откл ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering 0,01 & \centering \arraybackslash 4,00 \\
+\centering Iср ДТО & \centering 2,00 ... 20,00 & \centering  & \centering 0,01 & \centering \arraybackslash 10,00 \\
 \hline
-\centering Контр. ИО dI1 ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\centering Iд нач. & \centering 0,20 ... 2,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,50 \\
 \hline
-\centering dI1 блок ДФЗ & \centering 0,04 ... 4,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,20 \\
+\centering Iд нач. груб. & \centering 0,20 ... 2,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
 \hline
-\centering dI1 откл ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,40 \\
+\centering Iт1 & \centering 0,20 ... 2,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,40 \\
 \hline
-\centering Контр. ИО dI2 ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\centering Кт1 & \centering 0,20 ... 1,50 & \centering  & \centering 0,01 & \centering \arraybackslash 0,50 \\
 \hline
-\centering dI2 блок ДФЗ & \centering 0,04 ... 4,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,20 \\
+\centering Iт2 & \centering 0,40 ... 3,00 & \centering  & \centering 0,01 & \centering \arraybackslash 2,00 \\
 \hline
-\centering dI2 откл ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,40 \\
+\centering Кт2 & \centering 0,30 ... 3,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,50 \\
 \hline
-\centering Контр. ИО I2 ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КЦТ } \\ \hline 
+\centering Iср КЦТ & \centering 0,10 ... 3,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,20 \\
 \hline
-\centering I2 блок ДФЗ & \centering 0,04 ... 4,00 & \centering  & \centering 0,01 & \centering \arraybackslash 2,00 \\
+\centering Тср КЦТ & \centering 0 ... 300000 & \centering  & \centering 1 & \centering \arraybackslash 5000 \\
 \hline
-\centering I2 откл ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering 0,01 & \centering \arraybackslash 4,00 \\
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УКЕТ } \\ \hline 
+\centering УКЕТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\centering Контр. ИО 3I0 ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\centering Место ТН & \centering Шины \\ Линия & \centering --- & \centering --- & \centering \arraybackslash Шины \\
 \hline
-\centering 3I0 блок ДФЗ & \centering 0,04 ... 4,00 & \centering  & \centering 0,01 & \centering \arraybackslash 2,00 \\
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ Контроль ЦКС } \\ \hline 
+\centering Топология ЛЭП & \centering Двухконц. \\ Трехконц. & \centering --- & \centering --- & \centering \arraybackslash Двухконц. \\
 \hline
-\centering 3I0 откл ДФЗ & \centering 0,04 ... 8,00 & \centering  & \centering 0,01 & \centering \arraybackslash 4,00 \\
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ДТО } \\ \hline 
+\centering БСТО ДЗЛ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\centering Rср РС откл ДФЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 3,0000 \\
+\centering Контр. ДТО от ЦКС & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\centering Xср РС откл ДФЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 3,0000 \\
+\centering Тср ДТО & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 10 \\
 \hline
-\centering Ф1 РС откл ДФЗ & \centering 30 ... 85 & \centering  & \centering 1,0 & \centering \arraybackslash 80 \\
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ДТЗт } \\ \hline 
+\centering Контр. ДТЗт от ОПТО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\centering Rнг РС откл ДФЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 0,0500 \\
+\centering БСТО ДЗЛ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\centering Фнг РС откл ДФЗ & \centering 5 ... 70 & \centering  & \centering 1,0 & \centering \arraybackslash 20 \\
+\centering Контр. ДТЗт от КЦТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\centering БНН РС откл ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\centering Контр. ДТЗт от ЦКС & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ ДФЗ } \\ \hline 
-\centering Совм. раб. с ДФЗ-201 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Контр. ДФЗ от ОПТО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering БСТО ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Тср блок. ДФЗ & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 40 \\
-\hline
-\centering Тпрод блок. ДФЗ & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 50 \\
-\hline
-\centering Тср ДФЗ & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 0 \\
-\hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ Управл. ВЧПП } \\ \hline 
-\centering БСТО ДФЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Пуск ВЧ при неиспр. терм. & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Пуск ВЧ при выводе & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-%===m
-\end{longtable}
-\normalsize
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Модуль управл. ВЧПП %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\par
-Уставки модуля управления ВЧПП представлены в таблице \ref{app_set:vchpp}.
-
-\startTable{Параметры для настройки модуля управления ВЧПП}{app_set:vchpp}
-
-%===m>Модуль управл. ВЧПП|general+-
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ Модуль управл. ВЧПП } \\ \hline 
-\centering Кман. & \centering 1,00 ... 10,00 & \centering  & \centering 0,01 & \centering \arraybackslash 4,00 \\
-\hline
-\centering Угол блок. ОСФ-1 & \centering 0 ... 180 & \centering  & \centering 1,0 & \centering \arraybackslash 90 \\
-\hline
-\centering Угол блок. ОСФ-2 & \centering 0 ... 180 & \centering  & \centering 1,0 & \centering \arraybackslash 65 \\
-\hline
-\centering Угол блок. ОСФ-3 & \centering 0 ... 180 & \centering  & \centering 1,0 & \centering \arraybackslash 40 \\
-\hline
-\centering Удлинение ВЧ & \centering 0 ... 3000 & \centering мкс & \centering 1 & \centering \arraybackslash 0 \\
-\hline
-\centering Доворот ОМ & \centering -90 ... 90 & \centering  & \centering 1,0 & \centering \arraybackslash 0 \\
-\hline
-\centering Сдвиг ман. & \centering -0,50 ... 0,50 & \centering  & \centering 0,01 & \centering \arraybackslash 0,00 \\
-\hline
-\centering Инверс. ОМ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
-\hline
-\centering Совм. раб. ДФЗ-201 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
-\hline
-\centering ВЧ канал & \centering A \\ B \\ C & \centering --- & \centering --- & \centering \arraybackslash A \\
-\hline
-\centering Инв. ВЧ ПРМ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
-\hline
-%===m
-\end{longtable}
-\normalsize
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% НВЧЗ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\par
-Уставки НВЧЗ представлены в таблице \ref{app_set:nvchz}.
-
-\startTable{Параметры для настройки НВЧЗ}{app_set:nvchz}
-
-%===m>НВЧЗ|general+-
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ НВЧЗ } \\ \hline 
-\centering НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
-\hline
-\centering БСТО НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ Управл. ВЧПП } \\ \hline 
-\centering БСТО НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Пуск ВЧ при БНН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Пуск ВЧ при неиспр. терм. & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Пуск ВЧ при выводе & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Тср блок.  & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 80 \\
-\hline
-\centering Тпрод блок. НВЧЗ & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 100 \\
-\hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ Контроль КС } \\ \hline 
-\centering Блок. от АПК & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Блок. от Неиспр. ПП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ ИО НВЧЗ } \\ \hline 
-\centering Контр. ИО dI1 НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering dI1 блок НВЧЗ & \centering 0,04 ... 4,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,20 \\
-\hline
-\centering dI1 откл НВЧЗ & \centering 0,04 ... 8,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,40 \\
-\hline
-\centering Контр. ИО dI2 НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering dI2 блок НВЧЗ & \centering 0,04 ... 4,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,20 \\
-\hline
-\centering dI2 откл НВЧЗ & \centering 0,04 ... 8,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,40 \\
-\hline
-\centering U2 блок НВЧЗ & \centering 0,0050 ... 0,0500 & \centering  & \centering 0,0001 & \centering \arraybackslash 0,0100 \\
-\hline
-\centering U2 откл НВЧЗ & \centering 0,0050 ... 0,1000 & \centering  & \centering 0,0001 & \centering \arraybackslash 0,0200 \\
-\hline
-\centering Контр. ИО I2 НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering I2 блок НВЧЗ & \centering 0,04 ... 4,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,20 \\
-\hline
-\centering I2 откл НВЧЗ & \centering 0,04 ... 8,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,40 \\
-\hline
-\centering Контр. ИО I2т пуск НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Iср I2т пуск НВЧЗ & \centering 0,04 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,10 \\
-\hline
-\centering Контр. ИО I2т откл НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Iср I2т откл НВЧЗ & \centering 0,04 ... 2,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,20 \\
-\hline
-\centering Кт I2т НВЧЗ & \centering 0,00 ... 0,15 & \centering  & \centering 0,01 & \centering \arraybackslash 0,10 \\
-\hline
-\centering I1ном I2т НВЧЗ & \centering 0,04 ... 30,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
-\hline
-\centering Rср РС блок НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 3,0000 \\
-\hline
-\centering Xср РС блок НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 3,0000 \\
-\hline
-\centering Ф1 РС блок НВЧЗ & \centering 30 ... 85 & \centering  & \centering 1,0 & \centering \arraybackslash 80 \\
-\hline
-\centering Rнг РС блок НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 0,0500 \\
-\hline
-\centering Фнг РС блок НВЧЗ & \centering 5 ... 70 & \centering  & \centering 1,0 & \centering \arraybackslash 20 \\
-\hline
-\centering БНН РС блок НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Rср РС откл НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 3,0000 \\
-\hline
-\centering Xср РС откл НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 3,0000 \\
-\hline
-\centering Ф1 РС откл НВЧЗ & \centering 30 ... 85 & \centering  & \centering 1,0 & \centering \arraybackslash 80 \\
-\hline
-\centering Ф2 РС откл НВЧЗ & \centering -80 ... 0 & \centering  & \centering 1,0 & \centering \arraybackslash -30 \\
-\hline
-\centering Ф3 РС откл НВЧЗ & \centering 90 ... 180 & \centering  & \centering 1,0 & \centering \arraybackslash 110 \\
-\hline
-\centering Rнг РС откл НВЧЗ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 0,0500 \\
-\hline
-\centering Фнг РС откл НВЧЗ & \centering 5 ... 70 & \centering  & \centering 1,0 & \centering \arraybackslash 20 \\
-\hline
-\centering БНН РС откл НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ НВЧЗ } \\ \hline 
-\centering Сброс БК НВЧЗ от РПО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Тбл повт. ввода РС откл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 8000 \\
-\hline
-\centering Контр. НВЧЗ от ОПТО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Уск. НВЧЗ при вкл. В & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering БСТО НВЧЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Тввода РС откл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 400 \\
-\hline
-\centering Тсогл НВЧЗ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 15 \\
-\hline
-\centering Тср НВЧЗ & \centering 0 ... 4294967295 & \centering  & \centering 1 & \centering \arraybackslash 0 \\
-\hline
-%===m
-\end{longtable}
-\normalsize
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ВЧБ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\par
-Уставки ВЧБ представлены в таблице \ref{app_set:vchb}.
-
-\startTable{Параметры для настройки ВЧБ}{app_set:vchb}
-
-%===m>ВЧБ|general+-
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ ВЧБ } \\ \hline 
-\centering ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
-\hline
-\centering БСТО ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ Контроль КС } \\ \hline 
-\centering Блок. от АПК & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Блок. от Неиспр. ПП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ ИО ВЧБ } \\ \hline 
-\centering Контр. ИО dI1 ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering dI1 блок ВЧБ & \centering 0,04 ... 4,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,20 \\
-\hline
-\centering Контр. ИО dI2 ВЧБ & \centering \textcolor{red}{Параметр не найден} & \centering --- & \centering --- & \centering \arraybackslash \textcolor{red}{Параметр не найден} \\
-\hline
-\centering dI2 блок ВЧБ & \centering \textcolor{red}{Параметр не найден} & \centering --- & \centering --- & \centering \arraybackslash \textcolor{red}{Параметр не найден} \\
-\hline
-\centering 3U0 откл ВЧБ & \centering 0,0050 ... 0,0500 & \centering  & \centering 0,0001 & \centering \arraybackslash 0,0100 \\
-\hline
-\centering Контр. ИО 3I0 ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering 3I0 блок ВЧБ & \centering 0,04 ... 4,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,20 \\
-\hline
-\centering 3I0 откл ВЧБ & \centering 0,04 ... 8,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,40 \\
-\hline
-\centering Контр. ИО I2т ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Iср I2т пуск ВЧБ & \centering 0,04 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,10 \\
-\hline
-\centering Kт I2т ВЧБ & \centering 0,00 ... 0,15 & \centering  & \centering 0,01 & \centering \arraybackslash 0,10 \\
-\hline
-\centering I1ном I2т ВЧБ & \centering \textcolor{red}{Параметр не найден} & \centering --- & \centering --- & \centering \arraybackslash \textcolor{red}{Параметр не найден} \\
-\hline
-\centering Rср РС откл ВЧБ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 3,0000 \\
-\hline
-\centering Xср РС откл ВЧБ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 3,0000 \\
-\hline
-\centering Ф1 РС откл ВЧБ & \centering 30 ... 85 & \centering  & \centering 1,0 & \centering \arraybackslash 80 \\
-\hline
-\centering Ф2 РС откл ВЧБ & \centering -80 ... 0 & \centering  & \centering 1,0 & \centering \arraybackslash -30 \\
-\hline
-\centering Ф3 РС откл ВЧБ & \centering 90 ... 180 & \centering  & \centering 1,0 & \centering \arraybackslash 110 \\
-\hline
-\centering Rнг РС откл ВЧБ & \centering 0,0100 ... 5,0000 & \centering  & \centering 0,0005 & \centering \arraybackslash 0,0500 \\
-\hline
-\centering Фнг РС откл ВЧБ & \centering 5 ... 70 & \centering  & \centering 1,0 & \centering \arraybackslash 20 \\
-\hline
-\centering БНН РС откл ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ Управл. ВЧПП } \\ \hline 
-\centering БСТО ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Пуск ВЧ при БНН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Пуск ВЧ при неиспр. терм. & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Пуск ВЧ при выводе & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Тв ИО 3I0 блок ВЧБ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 40 \\
-\hline
-\rowcolor{gray!20} \multicolumn{5}{|c|}{ ВЧБ } \\ \hline 
-\centering Сброс БК ВЧБ от РПО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Блок. РС откл от ИО & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 8000 \\
-\hline
-\centering Тввода РС откл & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 400 \\
-\hline
-\centering Т вывода ОНМНП при включении & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
-\hline
-\centering Блок. ИО 3I0 откл при БНТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Вывод ОНМНП при включении & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Блок. РС откл от ИО & \centering 3I0 \\ 3U0 \\ 3I0 или 3U0 \\ 3I0 и 3U0 & \centering --- & \centering --- & \centering \arraybackslash 3I0 \\
-\hline
-\centering Тсогл ВЧБ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
-\hline
-\centering БСТО ВЧБ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
-\hline
-\centering Тср ВЧБ & \centering 0 ... 4294967295 & \centering  & \centering 1 & \centering \arraybackslash 0 \\
+\centering Тср ДТЗт & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 10 \\
 \hline
 %===m
 \end{longtable}
@@ -1363,7 +1103,7 @@
 \normalsize
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ПАВ В1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ПАВ В2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \par
 Уставки ПАВ В2 представлены в таблице \ref{app_set:pav_q2}.

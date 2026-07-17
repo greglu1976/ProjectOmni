@@ -3,11 +3,11 @@
 
 \setlength{\extrarowheight}{0.06cm}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ТЗНП ВН 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ДЗ 
 \par
-Уставки ТЗНП ВН представлены в таблице \ref{app_set:tznp}.
+Уставки ДЗ представлены в таблице \ref{app_set:dz}.
 
-\startTable{Параметры для настройки ТЗНП ВН}{app_set:tznp}
+\startTable{Параметры для настройки ДЗ}{app_set:dz}
 
 %===m>ДЗ|general+-
 \rowcolor{gray!20} \multicolumn{5}{|c|}{ ДЗ } \\ \hline 
@@ -291,6 +291,751 @@
 \centering Уск ДЗ от РПО смеж ст & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
 \hline
 \centering Тср уск ДЗ смеж ст & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+%===m
+\stopTable
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БК
+\par
+Уставки БК представлены в таблице \ref{app_set:bk}.
+
+\startTable{Параметры для настройки БК}{app_set:bk}
+
+%===m>БК|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ БК-I } \\ \hline 
+\centering БК-I & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Сброс БК-I от РПО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тв БК-I-б чув & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 600 \\
+\hline
+\centering Тв БК-I-б груб & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 800 \\
+\hline
+\centering Тв БК-I-м & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 8000 \\
+\hline
+\centering dI1 чув & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering dI1 груб & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering dI2 чув & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering dI2 груб & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ БК-Z } \\ \hline 
+\centering БК-Z & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Rср внутр. хар. & \centering 0,0100 ... 5,0000 & \centering Ом & \centering 0,0005 & \centering \arraybackslash 3,0000 \\
+\hline
+\centering Xср внутр. хар. & \centering 0,0100 ... 5,0000 & \centering Ом & \centering 0,0005 & \centering \arraybackslash 3,0000 \\
+\hline
+\centering Фхс & \centering 30 ... 85 & \centering Эл. градусы & \centering 1,0 & \centering \arraybackslash 80 \\
+\hline
+\centering dR & \centering 0,0100 ... 5,0000 & \centering Ом & \centering 0,0005 & \centering \arraybackslash 0,0500 \\
+\hline
+\centering dX & \centering 0,0100 ... 5,0000 & \centering Ом & \centering 0,0005 & \centering \arraybackslash 0,0500 \\
+\hline
+\centering I2 БК-Z & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 3,00 \\
+\hline
+\centering Сброс БК-Z от РПО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тзад БК-Z & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 50 \\
+\hline
+\centering Тв БК-Z & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 20 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ТЗНП
+\par
+Уставки ТЗНП представлены в таблице \ref{app_set:tznp}.
+
+\startTable{Параметры для настройки ТЗНП}{app_set:tznp}
+
+%===m>ТЗНП|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ТЗНП } \\ \hline 
+\centering Вывод напр при ср ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ТЗНП-1 } \\ \hline 
+\centering ТЗНП-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering 3I0ср ТЗНП-1 & \centering 0,00 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering Направл ТЗНП-1 & \centering Ненапр \\ В АТ \\ В сеть & \centering --- & \centering --- & \centering \arraybackslash Ненапр \\
+\hline
+\centering Контр направл ТЗНП-1 & \centering Разр \\ Блок \\ Разр или блок & \centering --- & \centering --- & \centering \arraybackslash Разр \\
+\hline
+\centering Тип ОНМ ТЗНП-1 & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering --- & \centering \arraybackslash НП \\
+\hline
+\centering Вывод ТЗНП-1 по чувств & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Вывод напр при ср ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering БНН ТЗНП-1 & \centering Выведено \\ Вывод напр \\ Вывод ступени & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering БНТ ТЗНП-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср ТЗНП-1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ТЗНП-2 } \\ \hline 
+\centering ТЗНП-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering 3I0ср ТЗНП-2 & \centering 0,00 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering Направл ТЗНП-2 & \centering Ненапр \\ В АТ \\ В сеть & \centering --- & \centering --- & \centering \arraybackslash Ненапр \\
+\hline
+\centering Контр направл ТЗНП-2 & \centering Разр \\ Блок \\ Разр или блок & \centering --- & \centering --- & \centering \arraybackslash Разр \\
+\hline
+\centering Тип ОНМ ТЗНП-2 & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering --- & \centering \arraybackslash НП \\
+\hline
+\centering Вывод ТЗНП-2 по чувств & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Вывод напр при ср ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering БНН ТЗНП-2 & \centering Выведено \\ Вывод напр \\ Вывод ступени & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering БНТ ТЗНП-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср ТЗНП-2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ТЗНП-3 } \\ \hline 
+\centering ТЗНП-3 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering 3I0ср ТЗНП-3 & \centering 0,00 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering Направл ТЗНП-3 & \centering Ненапр \\ В АТ \\ В сеть & \centering --- & \centering --- & \centering \arraybackslash Ненапр \\
+\hline
+\centering Контр направл ТЗНП-3 & \centering Разр \\ Блок \\ Разр или блок & \centering --- & \centering --- & \centering \arraybackslash Разр \\
+\hline
+\centering Тип ОНМ ТЗНП-3 & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering --- & \centering \arraybackslash НП \\
+\hline
+\centering Вывод ТЗНП-3 по чувств & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Вывод напр при ср ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering БНН ТЗНП-3 & \centering Выведено \\ Вывод напр \\ Вывод ступени & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering БНТ ТЗНП-3 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср ТЗНП-3 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ТЗНП-4 } \\ \hline 
+\centering ТЗНП-4 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering 3I0ср ТЗНП-4 & \centering 0,00 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering Направл ТЗНП-4 & \centering Ненапр \\ В АТ \\ В сеть & \centering --- & \centering --- & \centering \arraybackslash Ненапр \\
+\hline
+\centering Контр направл ТЗНП-4 & \centering Разр \\ Блок \\ Разр или блок & \centering --- & \centering --- & \centering \arraybackslash Разр \\
+\hline
+\centering Тип ОНМ ТЗНП-4 & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering --- & \centering \arraybackslash НП \\
+\hline
+\centering Вывод ТЗНП-4 по чувств & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Вывод напр при ср ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering БНН ТЗНП-4 & \centering Выведено \\ Вывод напр \\ Вывод ступени & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering БНТ ТЗНП-4 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср ТЗНП-4 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ТЗНП-5 } \\ \hline 
+\centering ТЗНП-5 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering 3I0ср ТЗНП-5 & \centering 0,00 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering Направл ТЗНП-5 & \centering Ненапр \\ В АТ \\ В сеть & \centering --- & \centering --- & \centering \arraybackslash Ненапр \\
+\hline
+\centering Контр направл ТЗНП-5 & \centering Разр \\ Блок \\ Разр или блок & \centering --- & \centering --- & \centering \arraybackslash Разр \\
+\hline
+\centering Тип ОНМ ТЗНП-5 & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering --- & \centering \arraybackslash НП \\
+\hline
+\centering Вывод ТЗНП-5 по чувств & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Вывод напр при ср ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering БНН ТЗНП-5 & \centering Выведено \\ Вывод напр \\ Вывод ступени & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering БНТ ТЗНП-5 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср ТЗНП-5 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ТЗНП-6 } \\ \hline 
+\centering ТЗНП-6 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering 3I0ср ТЗНП-6 & \centering 0,00 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering Направл ТЗНП-6 & \centering Ненапр \\ В АТ \\ В сеть & \centering --- & \centering --- & \centering \arraybackslash Ненапр \\
+\hline
+\centering Контр направл ТЗНП-6 & \centering Разр \\ Блок \\ Разр или блок & \centering --- & \centering --- & \centering \arraybackslash Разр \\
+\hline
+\centering Тип ОНМ ТЗНП-6 & \centering НП \\ ОП \\ НП или ОП \\ НП и ОП & \centering --- & \centering --- & \centering \arraybackslash НП \\
+\hline
+\centering Вывод ТЗНП-6 по чувств & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Вывод напр при ср ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering БНН ТЗНП-6 & \centering Выведено \\ Вывод напр \\ Вывод ступени & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering БНТ ТЗНП-6 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср ТЗНП-6 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОНМНП в АТ } \\ \hline 
+\centering Выбор 3U0 ОНМНП в АТ & \centering Расчетн. \\ Измерен. & \centering --- & \centering --- & \centering \arraybackslash Расчетн. \\
+\hline
+\centering Фмч  ОНМНП в АТ & \centering -179 ... 180 & \centering Эл. градусы & \centering 1,0 & \centering \arraybackslash 110 \\
+\hline
+\centering 3I0ср ОНМНП в АТ & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering 3U0ср ОНМНП в АТ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0100 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОНМНП в сеть } \\ \hline 
+\centering Выбор 3U0 ОНМНП в сеть & \centering Расчетн. \\ Измерен. & \centering --- & \centering --- & \centering \arraybackslash Расчетн. \\
+\hline
+\centering Фмч ОНМНП в сеть & \centering -179 ... 180 & \centering Эл. градусы & \centering 1,0 & \centering \arraybackslash -70 \\
+\hline
+\centering 3I0ср ОНМНП в сеть & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering 3U0ср ОНМНП в сеть & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0100 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОНМОП в АТ } \\ \hline 
+\centering Фмч ОНМОП в АТ & \centering -179 ... 180 & \centering Эл. градусы & \centering 1,0 & \centering \arraybackslash 110 \\
+\hline
+\centering I2ср ОНМОП в АТ & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering U2ср ОНМОП в АТ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0100 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОНМОП в сеть } \\ \hline 
+\centering Фмч ОНМОП в сеть & \centering -179 ... 180 & \centering Эл. градусы & \centering 1,0 & \centering \arraybackslash -70 \\
+\hline
+\centering I2ср ОНМОП в сеть & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering U2ср ОНМОП в сеть & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0100 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОУ1 ТЗНП } \\ \hline 
+\centering ОУ1 ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Ступень ОУ1 ТЗНП & \centering 1 ст \\ 2 ст \\ 3 ст \\ 4 ст \\ 5 ст \\ 6 ст & \centering --- & \centering --- & \centering \arraybackslash 1 ст \\
+\hline
+\centering Тср ОУ1 ТЗНП & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОУ2 ТЗНП } \\ \hline 
+\centering ОУ2 ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Ступень ОУ2 ТЗНП & \centering 1 ст \\ 2 ст \\ 3 ст \\ 4 ст \\ 5 ст \\ 6 ст & \centering --- & \centering --- & \centering \arraybackslash 1 ст \\
+\hline
+\centering Тср ОУ2 ТЗНП & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОУ3 ТЗНП } \\ \hline 
+\centering ОУ3 ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Ступень ОУ3 ТЗНП & \centering 1 ст \\ 2 ст \\ 3 ст \\ 4 ст \\ 5 ст \\ 6 ст & \centering --- & \centering --- & \centering \arraybackslash 1 ст \\
+\hline
+\centering Тср ОУ3 ТЗНП & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОУ ТЗНП в АТ } \\ \hline 
+\centering ОУ ТЗНП в АТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Ступень ОУ ТЗНП в АТ & \centering 1 ст \\ 2 ст \\ 3 ст \\ 4 ст \\ 5 ст \\ 6 ст & \centering --- & \centering --- & \centering \arraybackslash 1 ст \\
+\hline
+\centering Тср ОУ ТЗНП в АТ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ АУ ТЗНП } \\ \hline 
+\centering Ступень АУ ТЗНП в АТ & \centering Выведено \\ 1 ст \\ 2 ст \\ 3 ст \\ 4 ст \\ 5 ст \\ 6 ст & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Ступень АУ ТЗНП в сеть & \centering Выведено \\ 1 ст \\ 2 ст \\ 3 ст \\ 4 ст \\ 5 ст \\ 6 ст & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Ступень АУ ТЗНП ненапр & \centering Выведено \\ 1 ст \\ 2 ст \\ 3 ст \\ 4 ст \\ 5 ст \\ 6 ст & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering БНТ АУ ТЗНП ненапр & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ Уск смеж ст } \\ \hline 
+\centering Уск ТЗНП смеж ст & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Ступень уск ТЗНП смеж ст & \centering 1 ст \\ 2 ст \\ 3 ст \\ 4 ст \\ 5 ст \\ 6 ст & \centering --- & \centering --- & \centering \arraybackslash 1 ст \\
+\hline
+\centering Уск ТЗНП от РПО смеж ст & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср уск ТЗНП смеж ст & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ БНТ } \\ \hline 
+\centering БНТ ТЗНП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering 3I02г/3I01г  ТЗНП & \centering 0,00 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,20 \\
+\hline
+\centering 3I0блок БНТ ТЗНП & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering 0.04 (Iразр БНТ ТЗНП) & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% МТЗ
+\par
+Уставки МТЗ представлены в таблице \ref{app_set:mtz}.
+
+\startTable{Параметры для настройки МТЗ}{app_set:mtz}
+
+%===m>МТЗ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ МТЗ } \\ \hline 
+\centering ИО МТЗ & \centering фазный \\ линейный & \centering --- & \centering --- & \centering \arraybackslash фазный \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ МТЗ-1 } \\ \hline 
+\centering МТЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Iср МТЗ-1 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering ИО МТЗ & \centering фазный \\ линейный & \centering --- & \centering --- & \centering \arraybackslash фазный \\
+\hline
+\centering Направл МТЗ-1 & \centering Ненапр \\ В АТ \\ В сеть & \centering --- & \centering --- & \centering \arraybackslash Ненапр \\
+\hline
+\centering Режим КПОН СШ МТЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Режим КПОН НН МТЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Режим БНН МТЗ-1 & \centering Выведено \\ Вывод напр \\ Вывод ступени & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим БНТ МТЗ-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср МТЗ-1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ МТЗ-2 } \\ \hline 
+\centering МТЗ-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Iср МТЗ-2 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering ИО МТЗ & \centering фазный \\ линейный & \centering --- & \centering --- & \centering \arraybackslash фазный \\
+\hline
+\centering Направл МТЗ-2 & \centering Ненапр \\ В АТ \\ В сеть & \centering --- & \centering --- & \centering \arraybackslash Ненапр \\
+\hline
+\centering Режим КПОН СШ МТЗ-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Режим КПОН НН МТЗ-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Режим КПОН НН МТЗ-2 & \centering Выведено \\ Вывод напр \\ Вывод ступени & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим БНТ МТЗ-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср МТЗ-2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОНМ в АТ } \\ \hline 
+\centering Фмч ОНМ в АТ & \centering -179 ... 180 & \centering Эл. градусы & \centering 1,0 & \centering \arraybackslash 45 \\
+\hline
+\centering Iср ОНМ в АТ & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering Uср ОНМ в АТ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0050 \\
+\hline
+\centering буферU ОНМ в АТ & \centering 0 ... 20 & \centering такт & \centering 1 & \centering \arraybackslash 10 \\
+\hline
+\centering буферФ ОНМ в АТ & \centering 0 ... 20 & \centering такт & \centering 1 & \centering \arraybackslash 20 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОНМ в сеть } \\ \hline 
+\centering Фмч ОНМ в сеть & \centering -179 ... 180 & \centering Эл. градусы & \centering 1,0 & \centering \arraybackslash -135 \\
+\hline
+\centering Iср ОНМ в сеть & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering Uср ОНМ в сеть & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0050 \\
+\hline
+\centering буферU ОНМ в сеть & \centering 0 ... 20 & \centering такт & \centering 1 & \centering \arraybackslash 10 \\
+\hline
+\centering буферФ ОНМ в сеть & \centering 0 ... 20 & \centering такт & \centering 1 & \centering \arraybackslash 20 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОУ МТЗ } \\ \hline 
+\centering ОУ МТЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Ступень ОУ МТЗ в АТ & \centering Выведено \\ 1 ст \\ 2 ст & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Ступень ОУ МТЗ в сеть & \centering Выведено \\ 1 ст \\ 2 ст & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Ступень ОУ МТЗ ненапр & \centering Выведено \\ 1 ст \\ 2 ст & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим БНТ ОУ МТЗ ненапр & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср ОУ МТЗ в АТ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\centering Тср ОУ МТЗ в сеть & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\centering Тср ОУ МТЗ ненапр & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ АУ МТЗ } \\ \hline 
+\centering Ступень АУ МТЗ в АТ & \centering Выведено \\ 1 ст \\ 2 ст & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Ступень АУ МТЗ в сеть & \centering Выведено \\ 1 ст \\ 2 ст & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Ступень АУ МТЗ ненапр & \centering Выведено \\ 1 ст \\ 2 ст & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим БНТ АУ МТЗ ненапр & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ БНТ } \\ \hline 
+\centering БНТ МТЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ИО БНТ & \centering фазный \\ линейный & \centering --- & \centering --- & \centering \arraybackslash фазный \\
+\hline
+\centering I2г/I1г МТЗ & \centering 0,10 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,20 \\
+\hline
+\centering Кв (I2г/I1г) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering 0.04Iном (Iразр БНТ МТЗ) & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Кв (Iразр) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Iблок БНТ МТЗ & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% АМТЗ
+\par
+Уставки АМТЗ представлены в таблице \ref{app_set:amtz}.
+
+\startTable{Параметры для настройки АМТЗ}{app_set:amtz}
+
+%===m>АМТЗ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ АМТЗ-Ф-1 } \\ \hline 
+\centering АМТЗ-Ф-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Iср АМТЗ-Ф-1 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering БК-I-м АМТЗ-Ф-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср АМТЗ-Ф-1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ АМТЗ-Ф-2 } \\ \hline 
+\centering АМТЗ-Ф-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Iср АМТЗ-Ф-2 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering БК-I-м АМТЗ-Ф-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср АМТЗ-Ф-2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ АМТЗ-ОП-1 } \\ \hline 
+\centering АМТЗ-ОП-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering I2ср АМТЗ-ОП-1 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering БК-I-м АМТЗ-ОП-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср АМТЗ-ОП-1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ АМТЗ-ОП-2 } \\ \hline 
+\centering АМТЗ-ОП-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering I2ср АМТЗ-ОП-2 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering БК-I-м АМТЗ-ОП-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср АМТЗ-ОП-2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ АМТЗ-НП-1 } \\ \hline 
+\centering АМТЗ-НП-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering 3I0ср АМТЗ-НП-1 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering БК-I-м АМТЗ-НП-1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср АМТЗ-НП-1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ АМТЗ-НП-2 } \\ \hline 
+\centering АМТЗ-НП-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering 3I0ср АМТЗ-НП-2 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering БК-I-м АМТЗ-НП-2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср АМТЗ-НП-2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ТЗО
+\par
+Уставки ТЗО представлены в таблице \ref{app_set:tzo}.
+
+\startTable{Параметры для настройки ТЗО}{app_set:tzo}
+
+%===m>ТЗО|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ТЗО } \\ \hline 
+\centering Авт ввод ТЗО & \centering Р \\ В \\ Р или В & \centering --- & \centering --- & \centering \arraybackslash Р \\
+\hline
+\centering Контроль ОТР ТЗО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Контроль В2 ТЗО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ТЗО-Ф } \\ \hline 
+\centering ТЗО-Ф & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Iср ТЗО-Ф & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering Тср ТЗО-Ф & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ТЗО-НП } \\ \hline 
+\centering ТЗО-НП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Iср ТЗО-НП & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering Тср ТЗО-НП & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+%===m
+\stopTable
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗНФ В1
+\par
+Уставки ЗНФ В1 представлены в таблице \ref{app_set:znf1}.
+
+\startTable{Параметры для настройки ЗНФ В1}{app_set:znf1}
+
+%===m>ЗНФ В1|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЗНФ } \\ \hline 
+\centering ЗНФ В1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср ЗНФ В1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\centering Тдеблок ЗНФ В1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗНФ В2
+\par
+Уставки ЗНФ В2 представлены в таблице \ref{app_set:znf2}.
+
+\startTable{Параметры для настройки ЗНФ В2}{app_set:znf2}
+
+%===m>ЗНФ В2|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЗНФ } \\ \hline 
+\centering ЗНФ В2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср ЗНФ В2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\centering Тдеблок ЗНФ В2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗНР
+\par
+Уставки ЗНР представлены в таблице \ref{app_set:znr}.
+
+\startTable{Параметры для настройки ЗНР}{app_set:znr}
+
+%===m>ЗНР|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЗНР } \\ \hline 
+\centering ЗНР & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering 3I0ср ЗНР & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering I2/I1ср ЗНР & \centering 0,00 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering ИО ЗНР & \centering 3I0 \\ I2/I1 & \centering --- & \centering --- & \centering \arraybackslash 3I0 \\
+\hline
+\centering Кол-во В ЗНР & \centering Один \\ Два & \centering --- & \centering --- & \centering \arraybackslash Один \\
+\hline
+\centering Тср ЗНР & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БНН
+\par
+Уставки БНН представлены в таблице \ref{app_set:bnn}.
+
+\startTable{Параметры для настройки БНН}{app_set:bnn}
+
+%===m>БНН СШ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ БНН  } \\ \hline 
+\centering Контроль ЦН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering dU1 комб. БНН(0,2Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,5000 \\
+\hline
+\centering dU1 комб. БНН(0,2Uном) & \centering 0,000 ... 1,500 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering dI1 БНН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,5000 \\
+\hline
+\centering k возврата dI1 БНН & \centering 0,5000 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,9500 \\
+\hline
+\centering U1 мин БНН & \centering 0,005 ... 1,500 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 1,500 \\
+\hline
+\centering k возврата U1 мин БНН & \centering 0,000 ... 1,500 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 1,050 \\
+\hline
+\centering Iпуск БНН (0,05Iном) & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,05 \\
+\hline
+\centering k возврата Iпуск БНН (0,05Iном) & \centering 0,000 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering k возврата I2/I1 БНН & \centering 0,000 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering U2/U1 БНН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
+\hline
+\centering k возврата U2/U1 БНН & \centering 0,000 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering U2 макс комб. БНН (0,85 Uном) & \centering 0,005 ... 1,500 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,850 \\
+\hline
+\centering k возврата U2 макс комб. БНН (0,85 Uном) & \centering 0,000 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering 3I0/I1 БНН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,0000 \\
+\hline
+\centering k возврата 3I0/I1 БНН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,9500 \\
+\hline
+\centering 3U0 макс звезда (0,085Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0850 \\
+\hline
+\centering k возврата 3U0 макс звезда (0,085Uном) & \centering 0,000 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering Uср ИО БНН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
+\hline
+\centering k возврата Uср ИО БНН & \centering 0,950 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering 3I0 БНН-ф (Iном) & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering k возврата 3I0 БНН-ф (Iном) & \centering 0,000 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering U мин треугольник (0,05Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0500 \\
+\hline
+\centering k возврата U мин треугольник (0,05Uном) & \centering 0,500 ... 1,500 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 1,050 \\
+\hline
+\centering Uф мин БНН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
+\hline
+\centering k возврата Uф мин БНН & \centering 0,000 ... 1,500 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 1,050 \\
+\hline
+\centering Uср БНН-ф & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
+\hline
+\centering k возврата Uср БНН-ф & \centering 0,0005 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,9500 \\
+\hline
+\centering I2/I1 БНН & \centering 0,050 ... 1,000 & \centering о.е. & \centering 0,005 & \centering \arraybackslash 1,000 \\
+\hline
+\centering k возврата U мин звезды (0,05Uном) & \centering 0,950 ... 1,500 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 1,050 \\
+\hline
+\centering U мин звезды (0,05Uном) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0500 \\
+\hline
+\centering БНН комб & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Контр. обрыва НП & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ИО БНН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering БНН-ф & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Конт автомата ТН & \centering НЗ \\ НО & \centering --- & \centering --- & \centering \arraybackslash НЗ \\
+\hline
+\centering Контр. 3I0 БНН-ф & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тсигн неиспр ЦН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% АУ
+\par
+Уставки АУ представлены в таблице \ref{app_set:au}.
+
+\startTable{Параметры для настройки АУ}{app_set:au}
+
+%===m>АУ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ АУ } \\ \hline 
+\centering АУ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering КОН АУ в АТ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Режим КОН АУ в АТ & \centering  ТН НН \\ РПО смеж \\  ТН НН, РПО смеж & \centering --- & \centering --- & \centering \arraybackslash ТН НН \\
+\hline
+\centering КОН АУ в сеть & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering КОН АУ ненапр & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тввод АУ & \centering 0 ... 10000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ АУ в АТ } \\ \hline 
+\centering АУ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср АУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\centering Тср АУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\centering Тср АУ МТЗ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ АУ в сеть } \\ \hline 
+\centering АУ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср АУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\centering Тср АУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\centering Тср АУ МТЗ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ Ненапр АУ } \\ \hline 
+\centering АУ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тср АУ ДЗ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\centering Тср АУ ТЗНП & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\centering Тср АУ МТЗ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КПОН
+\par
+Уставки КПОН представлены в таблице \ref{app_set:kpon}.
+
+\startTable{Параметры для настройки КПОН}{app_set:kpon}
+
+%===m>КПОН|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КПОН СШ } \\ \hline 
+\centering U2 КПОН СШ & \centering 0,0050 ... 1,5000 & \centering  & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
+\hline
+\centering Тип КПОН СШ & \centering Umin, U2 \\ Umin & \centering --- & \centering --- & \centering \arraybackslash Umin, U2 \\
+\hline
+\centering Uл КПОН СШ & \centering 0,0050 ... 1,5000 & \centering  & \centering 0,0001 & \centering \arraybackslash 0,0500 \\
+\hline
+\centering КПОН СШ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Неиспр ТН СШ & \centering Выведено \\ Пуск КПОН \\ Блок КПОН & \centering --- & \centering --- & \centering \arraybackslash Блок КПОН \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КПОН НН } \\ \hline 
+\centering КПОН НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Uл КПОН НН & \centering 0,0050 ... 1,5000 & \centering о.е & \centering 0,0001 & \centering \arraybackslash 0,0050 \\
+\hline
+\centering U2 КПОН НН & \centering 0,0050 ... 1,5000 & \centering о.е & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
+\hline
+\centering Тип КПОН НН & \centering Umin, U2 \\ Umin \\ Внеш & \centering --- & \centering --- & \centering \arraybackslash Umin, U2 \\
+\hline
+\centering Неиспр ТН НН & \centering Выведено \\ Пуск КПОН \\ Блок КПОН & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КОН
+\par
+Уставки КОН представлены в таблице \ref{app_set:kon}.
+
+\startTable{Параметры для настройки КОН}{app_set:kon}
+
+%===m>КОН|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КОН СШ } \\ \hline 
+\centering КОН СШ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Uср КОН СШ & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0050 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КОН НН } \\ \hline 
+\centering КОН НН & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Uср КОН НН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0050 \\
 \hline
 %===m
 \stopTable
