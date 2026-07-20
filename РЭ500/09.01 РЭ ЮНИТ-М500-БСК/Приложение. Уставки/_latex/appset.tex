@@ -1,0 +1,254 @@
+\color{unidarkgreen}{\section[(обязательное) Уставки функций РЗА]{(обязательное)\\Уставки функций РЗА}\label{app:set}}
+\color{black}
+
+\setlength{\extrarowheight}{0.06cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ДТЗ
+\par
+Уставки ДТЗ представлены в таблице \ref{app_set:dzt}.
+
+\startTable{Параметры для настройки ДТЗ}{app_set:dzt}
+
+%===m>ДТЗ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ДТЗ } \\ \hline 
+\centering ДТЗ фB & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Iср диф & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
+\hline
+\centering Кв & \centering 0,00 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,80 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КЦТ } \\ \hline 
+\centering Iнеиспр ДТЗ & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,10 \\
+\hline
+\centering Кв (Iнеиспр) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Тнеиспр ДТЗ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
+\hline
+\centering Контр.изм.цеп.ДТЗ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering фВ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ДТЗт } \\ \hline 
+\centering Iср диф & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
+\hline
+\centering Iт 1. & \centering 0,200 ... 1,500 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 1,000 \\
+\hline
+\centering Кт 1. & \centering 0,100 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,500 \\
+\hline
+\centering Iт 2. & \centering 1,000 ... 3,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 2,000 \\
+\hline
+\centering Кт 2. & \centering 0,200 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,750 \\
+\hline
+\centering Кв (Iср диф) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,80 \\
+\hline
+\centering фВ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ДТЗт & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ДТО } \\ \hline 
+\centering Iср ДТО & \centering 1,000 ... 20,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 20,000 \\
+\hline
+\centering Кв (Iср) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering фВ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ДТО & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ Д2г } \\ \hline 
+\centering I2г/I1г ДТЗт & \centering 0,050 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,500 \\
+\hline
+\centering Кв (I2(5)г/I1г) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iср диф & \centering 0,000 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
+\hline
+\centering Кв (Iср диф) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering 0.01 с & \centering 0 ... 10 & \centering мc & \centering 5 & \centering \arraybackslash 10 \\
+\hline
+\centering 0.02 с & \centering 0 ... 20 & \centering мc & \centering 5 & \centering \arraybackslash 20 \\
+\hline
+\centering фВ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Перекр.блок.2г & \centering Откл \\ 1 из 3 \\ 2 из 3 & \centering --- & \centering --- & \centering \arraybackslash Откл \\
+\hline
+\centering Тперекр.блок.2г & \centering 100 ... 1000 & \centering мc & \centering 5 & \centering \arraybackslash 100 \\
+\hline
+\centering Блок.2г.ДТЗт & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ Д5г } \\ \hline 
+\centering I5г/I1г ДТЗт & \centering 0,050 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,500 \\
+\hline
+\centering Кв (I2(5)г/I1г) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iср диф & \centering 0,000 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
+\hline
+\centering Кв (Iср диф) & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering 0.01 с & \centering 0 ... 10 & \centering мc & \centering 5 & \centering \arraybackslash 10 \\
+\hline
+\centering 0.02 с & \centering 0 ... 20 & \centering мc & \centering 5 & \centering \arraybackslash 20 \\
+\hline
+\centering фВ & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Перекр.блок.5г & \centering Откл \\ 1 из 3 \\ 2 из 3 & \centering --- & \centering --- & \centering \arraybackslash Откл \\
+\hline
+\centering Тперекр.блок.5г & \centering 100 ... 1000 & \centering мc & \centering 5 & \centering \arraybackslash 100 \\
+\hline
+\centering Блок.5г.ДТЗт & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+%===m
+\stopTable
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ДТЗ НП
+\par
+Уставки ДТЗ НП представлены в таблице \ref{app_set:dtznp}.
+
+\startTable{Параметры для настройки ДТЗ НП}{app_set:dtznp}
+
+%===m>ДТЗ НП|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ДТЗ НП } \\ \hline 
+\centering ДТЗ НП & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Iмин.нейтр.ДТЗ НП & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering 0.5с & \centering 0 ... 300000 & \centering мс & \centering 1 & \centering \arraybackslash 300000 \\
+\hline
+\centering Тнеисп ДТЗ НП & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 5 \\
+\hline
+\centering Тср ДТЗ НП & \centering 0 ... 300000 & \centering мс & \centering 1 & \centering \arraybackslash 300000 \\
+\hline
+\centering k возврата Iмин.нейтр.ДТЗ НП & \centering 0,000 ... 1,000 & \centering о.е & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+%===m
+\stopTable
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗВП
+\par
+Уставки ЗВП представлены в таблице \ref{app_set:zvp}.
+
+\startTable{Параметры для настройки ЗВП}{app_set:zvp}
+
+%===m>ЗВП|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЗВП сигн.ст } \\ \hline 
+\centering Сигн.ЗВП & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Iсигн ЗВП & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering k возврата I ЗВП & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering Тсигн ЗВП & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 5 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЗВП откл.ст  } \\ \hline 
+\centering Откл.ЗВП & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Iоткл ЗВП & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering k возврата I ЗВП & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering Тоткл ЗВП & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 5 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗН БСК
+\par
+Уставки ЗН БСК представлены в таблице \ref{app_set:zn}.
+
+\startTable{Параметры для настройки ЗН БСК}{app_set:zn}
+
+%===m>ЗН БСК|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЗН БСК } \\ \hline 
+\centering ЗПН измер. & \centering Фазн. \\ Линейн. & \centering --- & \centering --- & \centering \arraybackslash Фазн. \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЗМН  } \\ \hline 
+\centering Работа ЗМН & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Uср ЗМН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,0500 \\
+\hline
+\centering ЗМН конт. выкл. & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗМН измер. & \centering Фазн. \\ Линейн. & \centering --- & \centering --- & \centering \arraybackslash Фазн. \\
+\hline
+\centering k возврата Uср ЗМН & \centering 0,50 ... 1,50 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,05 \\
+\hline
+\centering Тср ЗМН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 5 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЗПН сигн.ст } \\ \hline 
+\centering Сигн. ЗПН & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Uсигн ЗПН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
+\hline
+\centering Режим ЗПН & \centering И \\ ИЛИ & \centering --- & \centering --- & \centering \arraybackslash ИЛИ \\
+\hline
+\centering ЗПН конт. выкл. & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering ЗПН измер. & \centering Фазн. \\ Линейн. & \centering --- & \centering --- & \centering \arraybackslash Фазн. \\
+\hline
+\centering k возврата Uсигн зпн & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Тсигн ЗПН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 5 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЗПН откл.ст } \\ \hline 
+\centering Сигн. ЗПН & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Uоткл ЗПН & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
+\hline
+\centering Режим ЗПН & \centering И \\ ИЛИ & \centering --- & \centering --- & \centering \arraybackslash ИЛИ \\
+\hline
+\centering ЗПН конт. выкл. & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering ЗПН измер. & \centering Фазн. \\ Линейн. & \centering --- & \centering --- & \centering \arraybackslash Фазн. \\
+\hline
+\centering k возврата Uоткл зпн & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Тоткл ЗПН & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 5 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% МТЗ ВВ
+\par
+Уставки МТЗ ВВ представлены в таблице \ref{app_set:mtzvv}.
+
+\startTable{Параметры для настройки МТЗ ВВ}{app_set:mtzvv}
+
+%===m>МТЗ ВВ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ МТЗ ВВ } \\ \hline 
+\centering ИО МТЗ ВВ & \centering фазный \\ линейный & \centering --- & \centering --- & \centering \arraybackslash фазный \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ МТЗ-1 } \\ \hline 
+\centering МТЗ-1 ВВ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Iср МТЗ-1 ВВ & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering ИО МТЗ ВВ & \centering фазный \\ линейный & \centering --- & \centering --- & \centering \arraybackslash фазный \\
+\hline
+\centering Режим БНТ МТЗ-1 ВВ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering k возврата МТЗ & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Тср МТЗ-1 ВВ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ МТЗ-2 } \\ \hline 
+\centering МТЗ-2 ВВ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Iср МТЗ-2 ВВ & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 30,00 \\
+\hline
+\centering ИО МТЗ ВВ & \centering фазный \\ линейный & \centering --- & \centering --- & \centering \arraybackslash фазный \\
+\hline
+\centering Режим БНТ МТЗ-2 ВВ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering k возврата МТЗ & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Тср МТЗ-2 ВВ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
+\hline
+%===m
+\stopTable
+

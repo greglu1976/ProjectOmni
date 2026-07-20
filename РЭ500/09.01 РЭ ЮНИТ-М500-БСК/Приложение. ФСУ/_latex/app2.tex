@@ -10,13 +10,23 @@
 \footskip=-0.8cm
 \setlength{\headheight}{1cm}
 
-\color{uniblue}{\section[(рекомендуемое) Структурно-функциональная схема устройства]{(рекомендуемое)\\Структурно-функциональная схема устройства}\label{app:fsu}}
+\color{unidarkgreen}{\section[(рекомендуемое) Структурно-функциональная схема устройства]{(рекомендуемое)\\Структурно-функциональная схема устройства}\label{app:fsu}}
 \color{black}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\apppath/Приложение. ФСУ/_latex/img/1.pdf}
-\end{figure}
+\newcounter{filecounter}
+\setcounter{filecounter}{0} % Начинаем с 0 , считаем что 0.pdf - лист с легендой и условными обозначениями
+\loop
+    \edef\filename{\apppath/Приложение. ФСУ/_latex/img/\arabic{filecounter}.pdf}
+    \IfFileExists{\filename}{
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\filename}
+        \end{figure}
+        \clearpage
+        \stepcounter{filecounter}
+    }{\setcounter{filecounter}{0}} % условие выхода из цикла
+    \ifnum\value{filecounter}>0
+\repeat
 
 \clearpage %!!!!!!!!!!БЕЗ ЭТОЙ СТРОЧКИ ХРЕНЬ
 
