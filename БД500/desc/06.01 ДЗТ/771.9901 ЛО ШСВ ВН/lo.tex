@@ -1,43 +1,20 @@
 \color{unidarkgreen}{\subsection{Логика отключения ШСВ ВН}}
 \color{black}
 
-\subsubsection{Общие сведения}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\begin{enumerate}
+
+\item
+Ввод в работу логики отключения СВ ВН трансформатора осуществляется с помощью уставки \textbf{«ЛО ШСВ ВН»}. Оперативный ввод/вывод ЛД высокой стороны трансформатора производится с помощью БУ (блока управления функциями) «Вывод действия на ШСВ ВН». 
+
+\item
+Алгоритм работы ЛО ШСВ ВН приведен на рисунке \ref{pic:LO_ShSV_VN}. Уставки ЛО ШСВ ВН приведены в таблице \ref{app_set:loshsvvn}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/771.9901 ЛО ШСВ ВН/img/LO_ShSV_VN.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/06.01 ДЗТ/771.9901 ЛО ШСВ ВН/img/LO_ShSV_VN.pdf}
 \captionof{figure}{Функциональная схема логики отключения ШСВ ВН}\label{pic:LO_ShSV_VN}
 \end{figure}
 
-\item
-Ввод в работу логики отключения СВ ВН трансформатора осуществляется с помощью уставки \textbf{«ЛО
-ШСВ ВН»}. Оперативный ввод/вывод ЛД высокой стороны трансформатора производится с помощью БУ
-(блока управления функциями) «Вывод действия на ШСВ ВН». 
-
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставок ЛО стороны ШСВ ВН\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endhead
-
-%===m>ДТЗ|-
-%===m
-\end{longtable}
-\normalsize	
 
 \end{enumerate}

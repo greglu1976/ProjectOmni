@@ -1,4 +1,33 @@
 
+%%% ВЫБОР УСТРОЙСТВА %%%
+
+\IfStrEqCase{\devicecode}{%
+{ЮТКБ.656122.611-06.01 РЭ}{%ДЗТ
+% код для этого типа
+\def\TypeTr{НН1(НН)} 
+\def\fileExtUr{t}
+\def\AbzazOne{
+\item
+Алгоритм работы ПО УРОВ НН1(НН) приведен на рисунке \ref{pic:UROVNN}. Алгоритм работы ПО УРОВ НН2(СН) выполнен аналогично. Уставки ПО УРОВ приведены в таблице \ref{app_set:urovnn}.
+}
+}%
+{ЮТКБ.656122.611-06.02 РЭ}{%ДЗАТ
+% код для этого типа
+\def\TypeTr{НН} 
+\def\fileExtUr{at}
+\def\AbzazOne{
+\item
+Алгоритм работы ПО УРОВ НН приведен на рисунке \ref{pic:UROVNN}. Уставки ПО УРОВ НН приведены в таблице \ref{app_set:urovnn}.
+}
+}%
+}
+[
+\def\TypeTr{??}
+\def\fileExtUr{??}
+\def\AbzazOne{??}
+]
+
+
 \color{unidarkgreen}{\subsection{Пусковой орган устройства резервирования при отказе выключателя при повреждениях на стороне НН}}
 \color{black}
 
@@ -13,13 +42,14 @@
 \item
 Предусмотрен подхват по току, включение которого производится программной накладкой \textbf{«ПО УРОВ подхв.»}.
 
-\item
-Алгоритм работы ПО УРОВ НН приведен на рисунке \ref{pic:UROVNN}. Уставки ПО УРОВ НН приведены в таблице \ref{app_set:urovnn}.
 
+\AbzazOne
+
+\medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/06.02 ДЗАТ/ПО УРОВ НН/img/UROV_NN.pdf}
-\captionof{figure}{Функциональная схема логики ПО УРОВ НН}\label{pic:UROVNN}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/06.02 ДЗАТ/ПО УРОВ НН/img/UROV_NN_\fileExtUr.pdf}
+\captionof{figure}{Функциональная схема логики ПО УРОВ \TypeTr}\label{pic:UROVNN}
 \end{figure}
 
 
