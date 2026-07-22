@@ -1,211 +1,68 @@
-\color{unidarkgreen}{\subsection{Логика внешних отключений}}
+\color{unidarkgreen}{\subsection{Логика приема сигналов внешнего отключения}}
 \color{black}
 
-\subsubsection{Общие сведения}
-
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\begin{enumerate}
 
 \item
-Логика внешний отключений РЗ ВН выводится накладками \textbf{«ЛО внеш РЗ ВН»}.
+Логика приема сигналов внешнего отключения от РЗ ВН выводится накладкой \textbf{«ЛО внеш РЗ ВН»}.
 
 \item
-Команда на срабатывание \textit{«СР. ЛО внеш РЗ ВН»} формируются при возникновении одного из
-следующих событий:
+Команда на срабатывание \textit{«ЛО внеш РЗ: Срабатывание»} формируется при возникновении любого из следующих событий:
 \begin{itemize}
-\item от сигнала \textit{«Откл. от УРОВ ВН»} при отключенном положении \textit{«ОР ОВ ВН»} или при включённом положении \textit{«ОР ОВ ВН»} от \textit{«Откл. от УРОВ ОВ ВН»};
-\item Откл. ДЗШ ВН;
-\item Откл. от УРОВ РЗ ЛЭП ВН;
-\item Откл. от УРОВ РЗ ЛЭП ВН ОВ;
-\item Откл от ЗНР смеж СКРМ ВН.
+\item прием сигналов отключения от внешних устройств РЗ;
+\item прием сигналов отключения от внешних УРОВ;
+\item прием сигнала отключения от ТЗНП смежного трансформатора.
 \end{itemize}
 
 \item
-Запрет АПВ ВН внешними РЗ \textit{«З. АПВ ВН внеш РЗ»} формируются при возникновении одного из
-следующих событий:
+Запрет АПВ от внешних устройств РЗ \textit{«ЛО внеш РЗ: Запрет АПВ»} формируются при возникновении любого из следующих событий:
 \begin{itemize}
-\item от \textit{«Откл. от УРОВ ВН»} при отключенном положении \textit{«ОР ОВ ВН»} или при включённом положении \textit{«ОР ОВ»} от \textit{«Откл. от УРОВ ОВ ВН»};
-\item от \textit{«Откл. от УРОВ РЗ ЛЭП ВН»}, при включенной накладке \textbf{«ЗАПВ УРОВ ЛЭП ВН»};
-\item Откл. от УРОВ РЗ ЛЭП ВН ОВ;
-\item Откл от ЗНР смеж СКРМ ВН;
-\item Запрет АПВ от ДЗШ ВН.
+\item прием сигналов отключения от внешних устройств РЗ;
+\item прием сигналов отключения от внешних УРОВ;
+\item прием сигнала отключения от ТЗНП смежного трансформатора при включенной накладке \textbf{«ЗАПВ от ТЗНП смеж. Т»}.
 \end{itemize}
 
+\item
+Алгоритм работы ЛО внеш РЗ ВН приведен на рисунке \ref{pic:LO_VN}. Уставки ЛО внеш РЗ ВН приведены в таблице \ref{app_set:lovneshvn}.
+
+\medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/021.9901 ЛО внеш/img/LO_VN.pdf}
-\captionof{figure}{Функциональная схема логики внешних отключений ВН}\label{pic:LO_VN}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/06.01 ДЗТ/021.9901 ЛО внеш/img/LO_VN.pdf}
+\captionof{figure}{Функциональная схема логики приема сигналов внешнего отключения стороны ВН}\label{pic:LO_VN}
 \end{figure}
 
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставочных параметров функции логики отключения внешними защитами ВН\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endhead
-
-%===m>ДТЗ|-
-%===m
-\end{longtable}
-\normalsize	
-
+\item
+Логика приема сигналов внешнего отключения от РЗ НН1(НН) и РЗ НН2(СН) выводится накладкой \textbf{«ЛО внеш РЗ НН1»} и \textbf{«ЛО внеш РЗ НН2»} соответственно.
+ 
+\item
+Команды на срабатывание \textit{«ЛО внеш РЗ НН1(НН): Срабатывание»} и \textit{«ЛО внеш РЗ НН2(СН): Срабатывание»} формируются при прием сигналов отключения от внешних устройств РЗ (ДЗО, ЗДЗ, УРОВ).
 
 \item
-Логика внешний отключений РЗ СН выводится накладками \textbf{«ЛО внеш РЗ СН}.
+Алгоритм работы ЛО внеш РЗ НН приведен на рисунке \ref{pic:LO_SN}. Уставки ЛО внеш РЗ НН приведены в таблице \ref{app_set:lovneshnn}.
 
-\item
-Команда на срабатывание \textit{«СР. ЛО внеш РЗ CН»} формируются при возникновении одного из
-следующих событий:
-\begin{itemize}
-\item от сигнала \textit{«Откл. от УРОВ СН»} при отключенном положении \textit{«ОР ОВ СН»} или при включённом положении \textit{«ОР ОВ СН»} от \textit{«Откл. от УРОВ ОВ СН»};
-\item Откл. ДЗШ СН;
-\item Откл. от УРОВ РЗ ЛЭП СН;
-\item Откл. от УРОВ РЗ ЛЭП СН ОВ;
-\item Откл от ЗНР смеж СКРМ СН.
-\end{itemize}
-
-\item
-Запрет АПВ ВН внешними РЗ \textit{«З. АПВ СН внеш РЗ»} формируются при возникновении одного из
-следующих событий:
-\begin{itemize}
-\item от \textit{«Откл. от УРОВ СН»} при отключенном положении \textit{«ОР ОВ СН»} или при включённом положении \textit{«ОР ОВ СН»} от \textit{«Откл. от УРОВ ОВ СН»};
-\item от \textit{«Откл. от УРОВ РЗ ЛЭП СН»}, при включенной накладке \textbf{«ЗАПВ УРОВ ЛЭП СН»};
-\item Откл. от УРОВ РЗ ЛЭП СН ОВ;
-\item Откл от ЗНР смеж СКРМ СН;
-\item Запрет АПВ от ДЗШ СН.
-\end{itemize}
-
+\medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/021.9901 ЛО внеш/img/LO_SN.pdf}
-\captionof{figure}{Функциональная схема логики внешних отключений СН}\label{pic:LO_SN}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/06.01 ДЗТ/021.9901 ЛО внеш/img/LO_NN.pdf}
+\captionof{figure}{Функциональная схема логики приема сигналов внешнего отключения сторон СН и НН}\label{pic:LO_SN}
 \end{figure}
 
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставочных параметров функции логики отключения внешними защитами СН\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endhead
-
-%===m>ДТЗ|-
-%===m
-\end{longtable}
-\normalsize	
+\item
+Логика приема сигналов внешнего отключения от АПТ и АОТ выводится накладкой \textbf{«ЛО внеш~АПТ»}.
 
 \item
-Логика внешний отключений РЗ НН выводится накладками \textbf{«ЛО внеш РЗ НН}.
+Команда на срабатывание \textit{«СР. ЛО внеш АПТ»} формируется при приеме сигналов отключения от внешних устройств АПТ или АОТ.
 
 \item
-Команда на срабатывание \textit{«СР. ЛО внеш РЗ НН»} формируются при возникновении одного из
-следующих событий:
-\begin{itemize}
-\item Откл. ДЗО НН1;
-\item Откл. ДЗО НН2;
-\item Откл от УРОВ В1 НН1(НН);
-\item Откл от УРОВ В2 НН1(НН);
-\item Откл от УРОВ В1 НН2(НН);
-\item Откл от УРОВ В2 НН2(НН);
-\item Откл от УРОВ НН2(СН);
-\item Откл от ЗДЗ В1 НН1(НН);
-\item Откл от ЗДЗ В2 НН1(НН);
-\item Откл от ЗДЗ В1 НН2(НН);
-\item Откл от ЗДЗ В2 НН2(НН);
-\end{itemize}
+Алгоритм работы ЛО внеш АПТ приведен на рисунке \ref{pic:LO_APT}. Уставки ЛО внеш АПТ приведены в таблице \ref{app_set:lovneshapt}.
 
-
+\medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/021.9901 ЛО внеш/img/LO_NN.pdf}
-\captionof{figure}{Функциональная схема логики внешних отключений НН}\label{pic:LO_NN}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/06.01 ДЗТ/021.9901 ЛО внеш/img/LO_APT.pdf}
+\captionof{figure}{Функциональная схема логики приема сигналов внешнего отключения от АПТ и АОТ}\label{pic:LO_APT}
 \end{figure}
 
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставочных параметров функции логики отключения внешними защитами НН\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endhead
-
-%===m>ДТЗ|-
-%===m
-\end{longtable}
-\normalsize	
-
-\item
-Логика внешний отключений РЗ АПТ выводится накладками \textbf{«ЛО внеш АПТ»}.
-
-\item
-Команда на срабатывание \textit{«СР. ЛО внеш АПТ»} формируются при возникновении одного из
-следующих событий:
-\begin{itemize}
-\item Откл. от АПТ;
-\item Откл. от ШАОТ.
-\end{itemize}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/021.9901 ЛО внеш/img/LO_APT.pdf}
-\captionof{figure}{Функциональная схема логики внешних отключений АПТ}\label{pic:LO_APT}
-\end{figure}
-
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставочных параметров функции логики отключения внешними защитами АПТ\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endhead
-
-%===m>ДТЗ|-
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}

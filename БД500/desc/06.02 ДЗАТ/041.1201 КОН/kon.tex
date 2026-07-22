@@ -1,10 +1,23 @@
+%%% ВЫБОР УСТРОЙСТВА %%%
 
-\needspace{2\baselineskip}
-\color{unidarkgreen}{\subsection{Контроль отсутствия напряжения}}
-\color{black}
-
-\begin{enumerate}
-
+\IfStrEqCase{\devicecode}{%
+{ЮТКБ.656122.611-06.01 РЭ}{%ДЗТ
+% код для этого типа
+\def\fileExt{t}
+\def\AbzazOne{
+\item
+Для исключения пуска пожаротушения не отключенного от сети трансформатора обеспечиваются следующие виды контроля:
+\begin{itemize}
+\item отсутствие тока на стороне ВН;
+\item отсутствие тока на сторонах СН и НН;
+\item отсутствие напряжения на сторонах СН и НН.
+\end{itemize}
+}
+}%
+{ЮТКБ.656122.611-06.02 РЭ}{%ДЗАТ
+% код для этого типа
+\def\fileExt{at}
+\def\AbzazOne{
 \item
 Для исключения пуска пожаротушения не отключенного от сети трансформатора обеспечиваются следующие виды контроля:
 \begin{itemize}
@@ -12,6 +25,21 @@
 \item отсутствие тока на стороне СН;
 \item отсутствие напряжения на стороне НН.
 \end{itemize}
+}
+}%
+}
+[
+\def\fileExt{??}
+\def\AbzazOne{??}
+]
+
+\needspace{2\baselineskip}
+\color{unidarkgreen}{\subsection{Контроль отсутствия напряжения}}
+\color{black}
+
+\begin{enumerate}
+
+\AbzazOne
 
 \item
 Алгоритм работы КОН приведен на рисунке \ref{pic:KON}. Уставки КОН приведены в таблице \ref{app_set:kon}.
@@ -19,7 +47,7 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/06.02 ДЗАТ/041.1201 КОН/img/KON.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/06.02 ДЗАТ/041.1201 КОН/img/KON_\fileExt.pdf}
 \captionof{figure}{Функциональная схема логики КОН}\label{pic:KON}
 \end{figure}
 

@@ -1,41 +1,55 @@
 %%% ВЫБОР УСТРОЙСТВА %%%
 
-\IfStrEqCase{\devicetype}{%
-{ЮНИТ-М500-ЛВ}{%
+\IfStrEqCase{\devicecode}{%
+{ЮТКБ.656122.611-03.01 РЭ}{%
 % код для этого типа
+\def\fileExt{lv}
 \def\AbzazOne{
 \item
 Функциональная схема логики контроля перевода на обходной выключатель приведена на рисунке \ref{pict_ksn:kpov}. Уставки КПОВ представлены в таблице \ref{app_set:kpov}.	
 }
 }%
-{ЮНИТ-М500-ДЗЛ}{%
+{ЮТКБ.656122.611-02.01 РЭ}{%
 % код для этого типа
+\def\fileExt{lv}
 \def\AbzazOne{
 \item
 Функциональная схема логики контроля перевода на обходной выключатель приведена на рисунке \ref{pict_ksn:kpov}. Уставки КПОВ представлены в таблице \ref{app_set:kpov}.	
 }
 }%
-{ЮНИТ-М500-ВЧ}{%
+{ЮТКБ.656122.611-01.01 РЭ}{%
 % код для этого типа
+\def\fileExt{lv}
 \def\AbzazOne{
 \item
 Функциональная схема логики контроля перевода на обходной выключатель приведена на рисунке \ref{pict_ksn:kpov}. Уставки КПОВ представлены в таблице \ref{app_set:kpov}.
 }
 }%
-{ЮНИТ-М500-ДЗАТ}{%
+{ЮТКБ.656122.611-06.02 РЭ}{%
 % код для этого типа
+\def\fileExt{lv}
 \def\AbzazOne{
 \item
 Функциональная схема логики контроля перевода на обходной выключатель приведена на рисунке \ref{pict_ksn:kpov}. Уставки КПОВ ВН представлены в таблице \ref{app_set:kpovvn}. Уставки КПОВ СН представлены в таблице \ref{app_set:kpovsn}.
 }
 }%
-{ЮНИТ-М500-РЗАТ}{%
+{ЮТКБ.656122.611-07.02 РЭ}{%РЗАТ
 % код для этого типа
+\def\fileExt{lv}
 \def\AbzazOne{
 \item
 Функциональная схема логики контроля перевода на обходной выключатель приведена на рисунке \ref{pict_ksn:kpov}. Уставки КПОВ В2 представлены в таблице \ref{app_set:kpovvn}.
 }
 }%
+{ЮТКБ.656122.611-06.01 РЭ}{%ДЗТ
+% код для этого типа
+\def\fileExt{t}
+\def\AbzazOne{
+\item
+Функциональная схема логики контроля перевода на обходной выключатель приведена на рисунке \ref{pict_ksn:kpov}. Уставки КПОВ ВН представлены в таблице \ref{app_set:kpov}.
+}
+}%
+
 }
 [
 \def\AbzazOne{??}
@@ -54,9 +68,10 @@
 
 \AbzazOne
 
+\medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.65\textwidth,height=0.65\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/3581. КПОВ/img/kpov.pdf}
+\includegraphics[width=0.65\textwidth,height=0.65\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/3581. КПОВ/img/kpov_\fileExt.pdf}
 \vspace{-0.8\baselineskip}
 \captionof{figure}{Функциональная схема логики контроля перевода на ОВ}\label{pict_ksn:kpov}
 \end{figure}

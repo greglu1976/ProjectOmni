@@ -16,6 +16,7 @@
 \def\devicetype{ШЭТ 210.01-0-ЮИРЗ}
 \def\devicecode{ЮТКБ.656463.300-020 РЭ}
 \def\devicename{Комплект защит трансформатора 110-220 кВ и ошиновки 6-35 кВ}
+%\def\ManualUnitDefinite{} % Использовать только в случае одного ИЭУ
 \def\ManualUnitDefiniteOne{ЮТКБ.656122.611-06.01 РЭ «Основная защита трансформатора напряжением от 110 до 220 кВ с функциями УРОВ и АУВ. Устройство типа ЮНИТ-М500-ДЗТ» }
 \def\ManualUnitDefiniteTwo{ЮТКБ.656122.611-05.01 РЭ «Дифференциальная защита ошиновки от 6 до 750 кВ. Устройство типа ЮНИТ-М500-ДЗО»}
 
@@ -60,20 +61,20 @@
 \input{\genpath/section2.tex}
 
 % ТЕХОБСЛУЖИВАНИЕ И РЕМОНТ
-\newpage
+%\newpage
 \input{\genpath/section3.tex}
 
 % ТРАНСПОРТИРОВАНИЕ
-\newpage
+%\newpage
 \input{\genpath/section4.tex}
 
 %УТИЛИЗАЦИЯ
-\newpage
-\input{section5.tex}
+%\newpage
+\input{\genpath/section5.tex}
 
 %ГАРАНТИЯ
 %\newpage
-\input{section6.tex}
+\input{\genpath/section6.tex}
 
 
 % ============================================================
@@ -87,16 +88,13 @@
 
 %ПРИЛОЖЕНИЕ
 %\newpage
-%\input{\apppath/Приложение. Нормативные документы/_latex/appdocs.tex} % Не требуется, т.к. все года ГОСТов, СТО и ТУ указываем по тексту
-
-\newpage
-\input{\apppath/Приложение. Код заказа/_latex/apporder.tex}
+%\input{\genpath/Приложение. Нормативные документы/_latex/appdocs.tex} % Не требуется, т.к. все года ГОСТов, СТО и ТУ указываем по тексту
 
 \newpage
 \input{\apppath/Приложение. Карта заказа/_latex/appcard.tex}
 
 \newpage
-\input{\apppath/Приложение. Размеры/_latex/appsize.tex}
+\input{\genpath/Приложение. Размеры/_latex/appsize.tex}
 
 \newpage
 \input{\apppath/Приложение. Схема ВО/_latex/appvo.tex}
@@ -111,10 +109,10 @@
 \input{\apppath/Приложение. Спецификация/_latex/appspec.tex}
 
 \newpage
-\input{\apppath/Приложение. ПОиСИ/_latex/appunit.tex}
+\input{\genpath/Приложение. ПОиСИ/_latex/appunit.tex}
 
 \newpage
-\input{\apppath/Приложение. ПТО/_latex/apppto.tex}
+\input{\genpath/Приложение. ПТО/_latex/apppto.tex}
 
 
 %===a

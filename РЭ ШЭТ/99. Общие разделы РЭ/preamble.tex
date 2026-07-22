@@ -94,6 +94,25 @@
 \titlespacing{\subsection}{1cm}{5pt}{5pt}
 \titlespacing{\subsubsection}{1cm}{3pt}{3pt}
 
+% Настройка расстояния между номером и текстом для section, subsection, subsubsection
+\titleformat{\section}
+  {\normalfont\Large\bfseries}   % стиль шрифта
+  {\thesection}                  % как выводится номер
+  {0.2cm}                          % ← расстояние между номером и текстом
+  {}                             % код перед текстом (не используется)
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}
+  {\thesubsection}
+  {0.2cm}
+  {}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}
+  {\thesubsubsection}
+  {0.2cm}
+  {}
+
 % ---------------------- Списки (enumitem) ----------------------
 \usepackage{enumitem}
 \setlist[itemize]{
@@ -109,28 +128,29 @@
 \newlist{enumsec}{enumerate}{1}
 \setlist[enumsec,1]{
     label=\arabic{section}.\arabic*,
-    labelsep=7pt,
+    labelsep=-5pt,
     leftmargin=0pt,
-    itemindent=60pt,
+    itemindent=47.5pt,
     align=left,
     nosep
 }
 
-% Уровень 1
-\setlist[enumerate,1]{
+\newlist{enumsub}{enumerate}{1}
+\setlist[enumsub,1]{
     label=\arabic{section}.\arabic{subsection}.\arabic*,
-    labelsep=7pt,
+    labelsep=4pt,
     leftmargin=0pt,
-    itemindent=60pt,
+    itemindent=56.5pt,
     align=left,
     nosep      % убирает лишние вертикальные отступы между пунктами
 }
-% Уровень 2
-\setlist[enumerate,2]{
+
+\newlist{enumsubsub}{enumerate}{1}
+\setlist[enumsubsub,1]{
     label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*,
-    labelsep=7pt,
-    leftmargin=0em,
-    itemindent=55.5pt,
+    labelsep=5.5pt,
+    leftmargin=0pt,
+    itemindent=58pt,
     parsep=0pt,   % отступ между абзацами внутри одного пункта
     align=left,
     nosep
@@ -185,10 +205,10 @@
 % ---------------------- Общее для РЭ ----------------------
 \def\OKPD{Код ОКПД-2: 27.12.31.000} % ТУ 27.12.31-304-61775353-2025
 \def\TNVED{Код ТН ВЭД: 8537 10 980 0 } % ТУ 27.12.31-304-61775353-2025
-\def\ManualUnitGeneral{«УСТРОЙСТВО ЗАЩИТЫ И АВТОМАТИКИ СЕРИИ «ЮНИТ-М500» РУКОВОДСТВО ПО ЭКСПЛУАТАЦИИ ОБЩЕЕ»}
-%\def\ManualUnitDefinite{«Микропроцессорное устройство. Автоматика управления выключателем 110-220 кВ, УРОВ. Руководство по эксплуатации»}
-\def\ManualTechSpec{ТУ 27.12.31-304-61775353-2025 «Низковольтные комплектные устройства систем защиты и автоматики серии ШЭТ»}
 \def\ManualUnitGeneral{ЮТКБ.656122.611 РЭ «Устройства защиты и автоматики серии ЮНИТ-М500»}
+%\def\ManualUnitDefinite{«Микропроцессорное устройство. Автоматика управления выключателем 110-220 кВ, УРОВ. Руководство по эксплуатации»}
+\def\ManualTechSpec{ТУ 27.12.31-304-61775353-2025 «Низ\-ко\-вольт\-ные комплектные устройства систем защиты и автоматики серии ШЭТ»}
+
 %\def\ManualUnitHMI{ЮТКБ.656132.701 РЭ «Блок интерфейсный ЮНИТ-ИЧМ»}
 %\def\ManualUnitSRZA{RU.37182817.00001.02.34.01 «Программное обеспечение мониторинга и параметрирования ЮНИТ-СЕРВИС-РЗА»}
 %\def\ManualUnitMU{ЮТКБ.656122.611 ИС – «Устройства защиты и автоматики серии ЮНИТ-М500. Инструкция эксплуатационная специальная. Методические указания по выполнению технического обслуживания»}

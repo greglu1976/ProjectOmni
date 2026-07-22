@@ -1,0 +1,76 @@
+{\color{unidarkgreen}\section[(справочное) Габаритные и установочные размеры шкафа]{(справочное)\\Габаритные и установочные размеры шкафа}\label{app:size}}
+\color{black}
+
+
+
+% Макрос для рисунков с двустворчатой дверью
+\newcommand{\twoDoorFigures}{%
+  \vspace{1cm}
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.51\textwidth}
+      \centering
+      \includegraphics[width=\textwidth, trim=0 3mm 0mm 0, clip]{\genpath/Приложение. Размеры/_latex/img/Fig2.1.pdf}
+      \caption{а).}\label{pict:appsize_1}
+    \end{subfigure}\hspace{2cm}%
+    \begin{subfigure}{0.22\textwidth}
+      \centering
+      \includegraphics[width=\textwidth, trim=0mm 3mm 0 0, clip]{\genpath/Приложение. Размеры/_latex/img/Fig1.2.pdf}
+      \caption{б).}\label{pict:appsize_2}
+    \end{subfigure}
+    \par\vspace{4pt}
+    \hspace*{0.04\textwidth}%
+    \begin{subfigure}{0.54\textwidth}
+      \centering
+      \includegraphics[width=\textwidth, trim=0 5mm 0 0mm, clip]{\genpath/Приложение. Размеры/_latex/img/Fig2.3.pdf}
+      \caption{в).}\label{pict:appsize_3}
+    \end{subfigure}\hspace{0.3cm}%
+    \begin{subfigure}{0.39\textwidth}
+      \centering
+      \includegraphics[width=\textwidth, trim=0 55mm 0 0mm, clip]{\genpath/Приложение. Размеры/_latex/img/Text.pdf}
+      \label{pict:appsize_4}
+    \end{subfigure}
+    \caption{Габаритные и установочные размеры шкафа с двустворчатой дверью}
+    \label{pict:appsize}
+  \end{figure}
+}
+
+% Макрос для рисунков с одностворчатой дверью
+\newcommand{\oneDoorFigures}{%
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth, trim=0 3mm 0mm 0, clip]{\genpath/Приложение. Размеры/_latex/img/Fig1.1.pdf}
+      \caption{а).}\label{pict:appsize_1}
+    \end{subfigure}\hspace{2cm}%
+    \begin{subfigure}{0.263\textwidth}
+      \centering
+      \includegraphics[width=\textwidth, trim=0mm 3mm 0 0, clip]{\genpath/Приложение. Размеры/_latex/img/Fig1.2.pdf}
+      \caption{б).}\label{pict:appsize_2}
+    \end{subfigure}
+    \par\vspace{4pt}
+    \hspace*{0.04\textwidth}%
+    \begin{subfigure}{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth, trim=0 5mm 0 0mm, clip]{\genpath/Приложение. Размеры/_latex/img/Fig1.3.pdf}
+      \caption{в).}\label{pict:appsize_3}
+    \end{subfigure}\hspace{0.3cm}%
+    \begin{subfigure}{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth, trim=0 50mm 0 0mm, clip]{\genpath/Приложение. Размеры/_latex/img/Text.pdf}
+      \label{pict:appsize_4}
+    \end{subfigure}
+    \caption{Габаритные и установочные размеры шкафа с одностворчатой дверью}
+    \label{pict:appsize}
+  \end{figure}
+}
+
+\newcommand{\twodoorcab}{ЮТКБ.656463.300-001 РЭ, ЮТКБ.656463.300-002 РЭ, ЮТКБ.656463.300-003 РЭ, ЮТКБ.656463.300-004 РЭ}
+
+\IfSubStr{\twodoorcab}{\devicecode}{%
+  \twoDoorFigures
+}{\oneDoorFigures}%
+
+\medskip
+\clearpage
