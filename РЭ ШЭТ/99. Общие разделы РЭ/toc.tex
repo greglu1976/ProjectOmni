@@ -1,16 +1,4 @@
-% Переопределение стиля plain для страницы содержания (добавляем колонтитулы)
-\fancypagestyle{plain}{%
-  \fancyhf{}%
-  \renewcommand{\headrulewidth}{1pt}%
-  \renewcommand{\footrulewidth}{1pt}%
-  \lhead{\color{black}\devicecode}%
-  \chead{\color{black}Редакция \rev~от~\revdate}%
-  \rhead{\color{unigreen}\devicetype}%
-  \lfoot{\color{unigreen}Руководство по эксплуатации}%
-  \rfoot{\thepage}%
-}
-
-\thispagestyle{plain} % применяем стиль к текущей странице
+\pagestyle{plain}
 
 % Заголовок «СОДЕРЖАНИЕ»
 {\centering\textcolor{unidarkgreen}{\Large\bfseries СОДЕРЖАНИЕ}\par\vspace{-1.5em}}

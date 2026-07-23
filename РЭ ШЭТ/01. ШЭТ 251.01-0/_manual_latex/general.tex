@@ -12,10 +12,11 @@
 
 % Основные параметры РЭ
 \def\rev{$\alpha$}
-\def\revdate{22.05.2026}
+\def\revdate{24.07.2026}
 \def\devicetype{ШЭТ 251.01-0-ЮИРЗ}
 \def\devicecode{ЮТКБ.656463.300-009 РЭ}
-\def\devicename{Автоматики управления выключателем 110-220 кВ, УРОВ}
+\def\devicename{Автоматика управления выключателем 110-220 кВ, УРОВ.}
+\def\ManualUnitDefinite{ЮТКБ.656122.611-10.01 РЭ «Устройство резервирования при отказе выключателя и автоматика управления выключателем напряжением от 110 до 220 кВ. Устройство типа ЮНИТ-М500-АУВ»}
 
 
 % ============================================================
@@ -24,8 +25,10 @@
 % Содержание
 % Перечень сокращений
 % Описание и работа
-% Основные функции -> Общие сведения
-% Функции РЗА в составе устройства
+% Техническое обслуживание
+% Транспортирование и хранение
+% Утилизация
+% Гарантии производителя
 % ============================================================
 
 \begin{document}
@@ -47,32 +50,28 @@
 \clearpage
 
 % Описание и работа
-\input{section1.tex}
+\input{\genpath/section1.tex}
 \clearpage
 
-%===f
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩАЯ ЧАСТЬ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% ИСПОЛЬЗОВАНИЕ ПО НАЗНАЧЕНИЮ
+% Использование по назначению
 \newpage
-\input{section2.tex}
+\input{\genpath/section2.tex}
 
-% ТЕХОБСЛУЖИВАНИЕ И РЕМОНТ
-\newpage
-\input{section3.tex}
-
-% ТРАНСПОРТИРОВАНИЕ
-\newpage
-\input{section4.tex}
-
-%УТИЛИЗАЦИЯ
-\newpage
-\input{section5.tex}
-
-%ГАРАНТИЯ
+% Техническое обслуживание
 %\newpage
-\input{section6.tex}
+\input{\genpath/section3.tex}
+
+% Транспортирование и хранение
+%\newpage
+\input{\genpath/section4.tex}
+
+% Утилизация
+%\newpage
+\input{\genpath/section5.tex}
+
+% Гарантии производителя
+%\newpage
+\input{\genpath/section6.tex}
 
 
 % ============================================================
@@ -89,13 +88,10 @@
 %\input{\apppath/Приложение. Нормативные документы/_latex/appdocs.tex} % Не требуется, т.к. все года ГОСТов, СТО и ТУ указываем по тексту
 
 \newpage
-\input{\apppath/Приложение. Код заказа/_latex/apporder.tex}
-
-\newpage
 \input{\apppath/Приложение. Карта заказа/_latex/appcard.tex}
 
 \newpage
-\input{\apppath/Приложение. Размеры/_latex/appsize.tex}
+\input{\genpath/Приложение. Размеры/_latex/appsize.tex}
 
 \newpage
 \input{\apppath/Приложение. Схема ВО/_latex/appvo.tex}
@@ -110,10 +106,10 @@
 \input{\apppath/Приложение. Спецификация/_latex/appspec.tex}
 
 \newpage
-\input{\apppath/Приложение. ПОиСИ/_latex/appunit.tex}
+\input{\genpath/Приложение. ПОиСИ/_latex/appunit.tex}
 
 \newpage
-\input{\apppath/Приложение. ПТО/_latex/apppto.tex}
+\input{\genpath/Приложение. ПТО/_latex/apppto.tex}
 
 
 %===a

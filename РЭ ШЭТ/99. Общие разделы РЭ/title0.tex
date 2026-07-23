@@ -14,13 +14,13 @@
 % ============================================================
 % 2. ПОДЛОЖКА (фоновое изображение)
 % ============================================================
-\AddToShipoutPictureBG*{%
-  \begin{tikzpicture}[remember picture, overlay]
-    \node[opacity=0.15, anchor=south west] at ([xshift=20.5mm, yshift=18mm] current page.south west) {%
-      \includegraphics[width=178mm, height=240mm, keepaspectratio=false]{test2.png}%
-    };
-  \end{tikzpicture}%
-}
+%\AddToShipoutPictureBG*{%
+%  \begin{tikzpicture}[remember picture, overlay]
+%    \node[opacity=0.15, anchor=south west] at ([xshift=20.5mm, yshift=18mm] current page.south west) {%
+%      \includegraphics[width=178mm, height=240mm, keepaspectratio=false]{test2.png}%
+%    };
+%  \end{tikzpicture}%
+%}
 
 % ============================================================
 % 3. ТЕЛО СТРАНИЦЫ (заголовки и линии)
@@ -30,9 +30,9 @@
 
 \begin{flushleft}\sloppy
 \fontsize{18pt}{21.6pt}\selectfont\bfseries
-\textcolor{uniblack}{Шкаф электротехнический типовой}
+\textcolor{uniblack}\devicename
 \vskip 2mm
-\textcolor{uniblack}\devicename\par\vskip 2mm
+\textcolor{uniblack}{Шкаф электротехнический типовой}\par\vskip 2mm
 \textcolor{unigreen}\devicetype\par\vskip 10mm
 \textcolor{uniblack}{Руководство по эксплуатации}
 \vskip 2mm

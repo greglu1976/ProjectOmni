@@ -10,12 +10,12 @@
 \newcommand{\genpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/99. Общие разделы РЭ/}
 
 % ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX ПРИЛОЖЕНИЙ
-\newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/06.02 РЭ ЮНИТ-М500-ДЗТ/}
+\newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/05.01 РЭ ЮНИТ-М500-ДЗО/}
 
 
 % ЗАДАЕМ ПЕРЕМЕННЫЕ ТЕКУЩЕЙ НОМЕР РЕДАКЦИИ И ДАТА РЕДАКЦИИ
-\def\rev{$\beta$}
-\def\revdate{16.07.2026}
+\def\rev{$\gamma$}
+\def\revdate{23.07.2026}
 \def\devicetype{ЮНИТ-М500-ДЗО}
 \def\devicecode{ЮТКБ.656122.611-05.01 РЭ}
 \def\devicename{Дифференциальная защита ошиновки от 6 до 750 кВ.}
@@ -29,15 +29,8 @@
 }
 
 
-
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗДЕСЬ ДЛЯ ВЫВОД СОДЕРЖАНИЯ БОЛЬШИМИ БУКВАМИ ПОСЕРЕДИНЕ ЛИСТА см. ГОСТ-2.105-2019, п.6.2.5
-%%% почему то в преамбуле не работает
-%\makeatletter
-%\renewcommand{\tableofcontents}{\centering{\textbf{\large\MakeUppercase{\contentsname}}}\@starttoc{toc}}
-%\makeatother
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Титульный лист
 \input{\genpath/title0.tex}
@@ -66,65 +59,19 @@
 
 %===f
 
-\input{\fbpath/06.02 ДЗАТ/041.0611 ДТЗ/dtz.tex}
+\input{\fbpath/05.01 ДЗО/661.0641 ДЗО/dzo.tex}
 
-\input{\fbpath/06.02 ДЗАТ/053.0331 МТЗ НН/mtz_nn.tex}
+\input{\fbpath/05.01 ДЗО/661.1741 КЦН/kcn.tex}
 
-\input{\fbpath/06.02 ДЗАТ/081.0371 КПОН/kpon.tex}
+\input{\fbpath/05.01 ДЗО/661.1341 Логика опробования/log_oprob.tex}
 
-\input{\fbpath/06.02 ДЗАТ/041.1071 ГЗ АТ/gzat.tex}
+\input{\fbpath/05.01 ДЗО/661.1771 Логика очувствления/log_ochuv.tex}
 
-\input{\fbpath/06.02 ДЗАТ/041.1071 ГЗ РПН/gzrpn.tex}
+\input{\fbpath/05.01 ДЗО/661.3331 УРОВ/urov.tex}
 
-\input{\fbpath/06.02 ДЗАТ/041.1061 ТЗ АТ/tzat.tex}
+\input{\fbpath/05.01 ДЗО/661.9901 Логика отключения/lo.tex}
 
-\input{\fbpath/06.02 ДЗАТ/041.1191 ТК ЗДЗ/zdz.tex}
-
-\input{\fbpath/06.02 ДЗАТ/041.1141 АПТ/apt.tex}
-
-\input{\fbpath/06.02 ДЗАТ/041.1201 КОН/kon.tex}
-
-\input{\fbpath/06.02 ДЗАТ/041.1151 РТПО/rtpo.tex}
-
-\input{\fbpath/06.02 ДЗАТ/041.1181 РПН/rpn.tex}
-
-\input{\fbpath/06.02 ДЗАТ/041.0341 ЗПТ/zpt.tex}
-
-\input{\fbpath/06.02 ДЗАТ/041.1151 ЗПО/zpo.tex}
-
-\input{\fbpath/06.02 ДЗАТ/053.0961 КИ НН/kinn.tex}
-
-\input{\fbpath/06.02 ДЗАТ/081.1741 КЦН/kcn.tex}
-
-\input{\fbpath/06.02 ДЗАТ/053.3341 УРОВ/urov.tex}
-
-\input{\fbpath/06.02 ДЗАТ/ПО УРОВ НН/urov.tex}
-
-\input{\fbpath/06.02 ДЗАТ/761.3391 Управление В/op_Q.tex}
-
-\input{\fbpath/06.02 ДЗАТ/761.3431 БКУ/bku.tex}
-
-\input{\fbpath/06.02 ДЗАТ/761.3351 КСН/ksn.tex}
-
-\input{\fbpath/06.02 ДЗАТ/761.3011 АПВ/apv.tex}
-
-\input{\fbpath/03.01 ЛВ/761.3371 КСВ/ksv.tex} % Функция из ЛВ
-
-\input{\fbpath/06.02 ДЗАТ/021.9901 ЛО внеш/lo.tex}
-
-\input{\fbpath/06.02 ДЗАТ/041.9902 ЛО общ/lo.tex}
-
-\input{\fbpath/06.02 ДЗАТ/761.9901 ЛО В1(ЛВ)ВН/lo.tex}
-
-\input{\fbpath/06.02 ДЗАТ/766.9903 ЛО НН/lo.tex}
-
-\input{\fbpath/03.01 ЛВ/761.3381 ФПВ12/fpv.tex} % Функция из ЛВ
-
-\input{\fbpath/03.01 ЛВ/3581. КПОВ/kpov.tex}
-
-\input{\fbpath/06.02 ДЗАТ/91 Сигнализация/sign.tex}
-
-\input{\fbpath/06.02 ДЗАТ/90 Общая логика/gl.tex}
+\input{\fbpath/05.01 ДЗО/761.9901 Логика отключения присоединений/lo.tex}
 
 %===f
 
