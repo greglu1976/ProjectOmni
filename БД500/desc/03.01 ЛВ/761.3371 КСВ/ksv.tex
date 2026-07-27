@@ -42,7 +42,7 @@
 % код для этого типа
 \def\Qone{В1(ЛВ) ВН}
 \def\Qtwo{В2(ОВ) ВН}
-\def\fileExt{dzat}
+\def\fileExt{lv}
 \def\AbzazOne{
 \item
 В случае присоединения автортансформатора к РУ через один выключатель ВН и один выключатель СН для каждого из них можно задействовать свою логику КСВ. Далее приведено обобщенное описание КСВ для силового выключателя.
@@ -54,7 +54,7 @@
 % код для этого типа
 \def\Qone{В1(ЛВ) ВН}
 \def\Qtwo{В2(ОВ) ВН}
-\def\fileExt{dzat}
+\def\fileExt{lv}
 \def\AbzazOne{
 \item
 В случае присоединения трансформатора к РУ через один выключатель ВН можно задействовать логику КСВ. Далее приведено обобщенное описание КСВ для силового выключателя.
@@ -62,10 +62,24 @@
 Уставки КСВ \Qone~представлены в таблице \ref{app_set:ksv}.
 }
 }%
+{ЮТКБ.656122.611-09.01 РЭ}{%БСК
+% код для этого типа
+\def\Qone{В1(ЛВ) ВН}
+\def\Qtwo{В2(ОВ) ВН}
+\def\fileExt{bsk}
+\def\AbzazOne{
+\item
+В случае присоединения БСК к системе через два выключателя для каждого из них можно задействовать свою логику КСВ. Далее приведено обобщенное описание КСВ для силового выключателя.
+\item
+Уставки КСВ \Qone~представлены в таблице \ref{app_set:ksv1}. Уставки КСВ \Qtwo~представлены в таблице \ref{app_set:ksv2}.
+}
+}%
 }
 [
 \def\Qone{??}
 \def\Qtwo{??}
+\def\fileExt{??}
+\def\AbzazOne{??}
 ]
 
 
@@ -81,15 +95,13 @@
 
 \AbzazOne
 
-
-
 \item
 Обобщенная функциональная схема логики контроля выключателя приведена на рисунке \ref{pict_ksv:KSV_control}.
 
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.86\textwidth,height=0.86\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3371 КСВ/img/KSV_control.pdf}
+\includegraphics[width=0.86\textwidth,height=0.86\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3371 КСВ/img/KSV_control_\fileExt.pdf}
 \captionof{figure}{Функциональная схема логики контроля выключателя}\label{pict_ksv:KSV_control}
 \end{figure}
 
@@ -183,7 +195,7 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3371 КСВ/img/KSV_control_block.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3371 КСВ/img/KSV_control_block_\fileExt.pdf}
 \captionof{figure}{Функциональная схема логики блокировки управления выключателя}\label{pict_ksv:KSV_control_block}
 \end{figure}
 
@@ -198,7 +210,7 @@
 \vspace{2mm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3371 КСВ/img/KSV_relay_fix_B1.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/03.01 ЛВ/761.3371 КСВ/img/KSV_relay_fix_B1_\fileExt.pdf}
 \captionof{figure}{Функциональная схема логики реле фиксации выключателя}\label{pict_ksv:KSV_relay_fix_B1}
 \end{figure}
 
