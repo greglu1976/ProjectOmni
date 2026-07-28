@@ -1,42 +1,21 @@
-\color{unidarkgreen}{\subsection{Токовый контроль защиты от дуговых замыканий (ТК ЗДЗ)}}
+\color{unidarkgreen}{\subsection{Токовый контроль защиты от дуговых замыканий}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\begin{enumerate}
 
 \item
-Для исключения ложного срабатывания устройства дуговой защиты, которое может возникнуть
-при неисправности ее датчиков, предусмотрен контроль по току. Обеспечивается контроль токов трех
-фаз ТТ, установленных непосредственно в фазах КОР, а также линейных выводов КОР (на ошиновке
-НН). Пороги по току срабатывания индивидуальны для каждой из контролируемых цепей.
+Для исключения ложного срабатывания устройства дуговой защиты, которое может возникнуть при неисправности ее датчиков, предусмотрен контроль по току. Обеспечивается контроль токов трех фаз ТТ, установленных непосредственно в фазах КОР, а также линейных выводов КОР (на ошиновке НН). Пороги по току срабатывания индивидуальны для каждой из контролируемых цепей.
 
 
+\item
+Алгоритм работы ТК ЗДЗ приведен на рисунке \ref{pict_tkzdz:TK_ZDZ}. Уставки ТК ЗДЗ приведены в таблице \ref{app_set:tkzdz}.
+
+\medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/ТК ЗДЗ/img/TK_ZDZ.pdf}
-\captionof{figure}{Функциональный блок ТК ЗДЗ}\label{pict_tkzdz:TK_ZDZ}
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/11.02 УШР/ТК ЗДЗ/img/TK_ZDZ.pdf}
+\captionof{figure}{Функциональная схема логики ТК ЗДЗ}\label{pict_tkzdz:TK_ZDZ}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставочных параметров ТК ЗДЗ\hfill\vspace{-0.5\baselineskip}}\label{tkzdz:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{tkzdz:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endhead
-
-%===m>ТК ЗДЗ|-
-%===m
-\end{longtable}
-\normalsize
 
 \end{enumerate}

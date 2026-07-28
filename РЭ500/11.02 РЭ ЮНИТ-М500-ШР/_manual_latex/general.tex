@@ -1,0 +1,140 @@
+%Подключение преамбулы
+\input{//192.168.11.240/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/99. Общие разделы РЭ/preamble.tex}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX КАТАЛОГА ОПИСАНИЯ ФУНКЦИОНАЛЬНЫХ БЛОКОВ
+\newcommand{\fbpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/БД500/desc/}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX КАТАЛОГА ОБЩЕЙ ЧАСТИ
+\newcommand{\genpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/99. Общие разделы РЭ/}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX ПРИЛОЖЕНИЙ
+\newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/11.02 РЭ ЮНИТ-М500-ШР/}
+
+% ЗАДАЕМ ПЕРЕМЕННЫЕ ТЕКУЩЕЙ НОМЕР РЕДАКЦИИ И ДАТА РЕДАКЦИИ
+\def\rev{$\gamma$}
+\def\revdate{28.07.2026}
+\def\devicetype{ЮНИТ-М500-ШР}
+\def\devicecode{ЮТКБ.656122.611-11.02 РЭ}
+\def\devicename{Защиты обмотки управления, компенсационной обмотки\\ и ошиновки низкой стороны УШРП.}
+
+% МЕТАДАННЫЕ
+\hypersetup{
+    pdftitle={Микропроцессорное устройство защиты обмотки управления, компенсационной обмотки и ошиновки низкой стороны УШРП. Устройство типа ЮНИТ-М500-ШР. Руководство по эксплуатации},
+    pdfauthor={ООО «Юнител Инжиниринг»},
+    pdfsubject={Описание функций РЗА в составе устройства ЮНИТ-М500-ШР},
+    pdfkeywords={ЮНИТ-М500-ШР, Юнител, РЗА, Релейная защита и автоматика},
+}
+
+
+
+\begin{document}
+
+
+% Титульный лист
+\input{\genpath/title0.tex}
+\clearpage
+
+% Выходные сведения (оборот титула)
+\input{\genpath/title1.tex}
+\clearpage
+
+% Содержание
+\input{\genpath/toc.tex}
+\clearpage
+
+
+% Перечень сокращений
+\input{toa_general.tex}
+\clearpage
+
+% Описание и работа
+\input{\genpath/section1.tex}
+\clearpage
+
+%\newpage
+\input{\genpath/section2.tex}
+\clearpage
+
+%===f
+
+\input{\fbpath/06.02 ДЗАТ/041.0611 ДТЗ/dtz.tex} % из ДЗАТ
+
+\input{\fbpath/11.02 УШР/МТЗ КО/mtz_ko.tex}
+
+\input{\fbpath/11.02 УШР/ТЗНП КО/tznp_ko.tex}
+
+\input{\fbpath/11.02 УШР/ТЗОП КО/tzop_ko.tex}
+
+\input{\fbpath/11.02 УШР/ОВ БНТ КО/bnt_ko.tex}
+
+\input{\fbpath/11.02 УШР/МТЗ НН/mtz_nn.tex}
+
+\input{\fbpath/11.02 УШР/МТЗ ОУ/mtz_ou.tex}
+
+\input{\fbpath/11.02 УШР/КИ НН/ki_nn.tex}
+
+\input{\fbpath/11.02 УШР/ТК ЗДЗ/tk_zdz.tex}
+
+% Общая логика отключения
+
+\input{\fbpath/11.02 УШР/Логика отключения В/lo.tex}
+
+\input{\fbpath/11.02 УШР/Сигнализация/ls.tex}
+
+\input{\fbpath/11.02 УШР/90 Общая логика/gl.tex}
+
+% Общая логика 
+
+%===f
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩАЯ ЧАСТЬ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ИСПОЛЬЗОВАНИЕ ПО НАЗНАЧЕНИЮ
+\newpage
+\input{\genpath/section3.tex}
+
+% ПРИЛОЖЕНИЯ
+
+% УСТАНОВКИ ДЛЯ ПРИЛОЖЕНИЙ
+\input{startapp.tex}
+
+%===a
+
+%ПРИЛОЖЕНИЕ УСТАВКИ
+\newpage
+\input{\apppath/Приложение. Уставки/_latex/settings_macros.tex}
+\input{\apppath/Приложение. Уставки/_latex/appset.tex}
+
+
+%ПРИЛОЖЕНИЕ
+\newpage
+\input{\genpath/Приложение. Код заказа/_latex/apporder.tex}
+
+%ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. ФСУ/_latex/app2.tex}
+
+
+%ПРИЛОЖЕНИЕ
+%\newpage
+%\input{\apppath/Приложение. БНН/bnn.tex}
+
+
+
+%ПРИЛОЖЕНИЕ 
+%===a1
+\newpage
+\input{\apppath/Приложение. Сигналы/_latex/app1.tex}
+%===a1
+
+
+%===a
+
+% УСТАНОВКИ ДЛЯ ПРИЛОЖЕНИЙ
+\input{endapp.tex}
+
+%ЛИСТ РЕГИСТРАЦИИ ИЗМЕНЕНИЙ
+\newpage
+\input{\genpath/revsheet.tex}
+
+\end{document}

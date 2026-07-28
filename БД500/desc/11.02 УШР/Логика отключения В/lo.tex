@@ -1,0 +1,39 @@
+\color{unidarkgreen}{\subsection{Логика отключения}}
+\color{black}
+
+\begin{enumerate}
+
+\item
+Устройство формирует выходное воздействие на отключение В1 ВН, В2 ВН и ТМПд по схеме «ИЛИ» в следующих случаях:
+\begin{itemize}
+\item Срабатывание ДТЗ;
+\item Срабатывание вторых ступеней МТЗ, ТЗНП, ТЗОП КО;
+\item Срабатывание МТЗ-2 НН;
+\item Срабатывание МТЗ ОУ;
+\item Срабатывание КИ НН;
+\item Отключение от внешних защит НН (ЗДЗ, УРОВ ТМП).
+\end{itemize}
+
+\item
+Устройство формирует выходное воздействие на отключение ТМПо, ТМПр при срабатывании первых ступеней токовых защит КО и первой ступени МТЗ НН.
+
+\item
+Алгоритм работы логики отключения В1 ВН приведен на рисунке \ref{pict_lo:LO}. Алгоритмы работы логики отключения В2 ВН и ТМПд выполнены аналогично.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/11.02 УШР/Логика отключения В/img/LO.pdf}
+\captionof{figure}{Функциональная схема логики отключения В1 ВН}\label{pict_lo:LO}
+\end{figure}
+
+\item
+Алгоритм работы логики отключения ТМПо приведен на рисунке \ref{pict_lo:lo_tmpd}. Алгоритм работы логики отключения ТМПр выполнен аналогично.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/11.02 УШР/Логика отключения В/img/lo_tmpd.pdf}
+\captionof{figure}{Функциональная схема логики отключения ТМПо}\label{pict_lo:lo_tmpd}
+\end{figure}
+
+
+\end{enumerate}
