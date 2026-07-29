@@ -1,0 +1,153 @@
+%\input{preamble.tex}
+
+%Подключение преамбулы
+\input{//192.168.11.240/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/99. Общие разделы РЭ/preamble.tex}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX КАТАЛОГА ОПИСАНИЯ ФУНКЦИОНАЛЬНЫХ БЛОКОВ
+\newcommand{\fbpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/БД500/desc/}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX КАТАЛОГА ОБЩЕЙ ЧАСТИ
+\newcommand{\genpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/99. Общие разделы РЭ/}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX ПРИЛОЖЕНИЙ
+\newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ500/05.01 РЭ ЮНИТ-М500-ДЗО/}
+
+
+% ЗАДАЕМ ПЕРЕМЕННЫЕ ТЕКУЩЕЙ НОМЕР РЕДАКЦИИ И ДАТА РЕДАКЦИИ
+\def\rev{$\gamma$}
+\def\revdate{24.07.2026}
+\def\devicetype{ЮНИТ-М500-ДЗО}
+\def\devicecode{ЮТКБ.656122.611-05.01 РЭ}
+\def\devicename{Дифференциальная защита ошиновки от 6 до 750 кВ.}
+
+% МЕТАДАННЫЕ
+\hypersetup{
+    pdftitle={Дифференциальная защита ошиновки от 6 до 750 кВ. Устройство типа ЮНИТ-М500-ДЗО. Руководство по эксплуатации},
+    pdfauthor={ООО "Юнител Инжиниринг"},
+    pdfsubject={Описание функций РЗА в составе устройства ЮНИТ-М500-ДЗО},
+    pdfkeywords={ЮНИТ-М500-ДЗО, Юнител, РЗА, Релейная защита и автоматика},
+}
+
+
+\begin{document}
+
+
+% Титульный лист
+\input{\genpath/title0.tex}
+\clearpage
+
+% Выходные сведения (оборот титула)
+\input{\genpath/title1.tex}
+\clearpage
+
+% Содержание
+\input{\genpath/toc.tex}
+\clearpage
+
+
+% Перечень сокращений
+\input{toa_general.tex}
+\clearpage
+
+% Описание и работа
+\input{\genpath/section1.tex}
+\clearpage
+
+%\newpage
+\input{\genpath/section2.tex}
+\clearpage
+
+%===f
+
+\input{\fbpath/05.01 ДЗО/661.0641 ДЗО/dzo.tex}
+
+\input{\fbpath/05.01 ДЗО/661.1741 КЦН/kcn.tex}
+
+\input{\fbpath/05.01 ДЗО/661.1341 Логика опробования/log_oprob.tex}
+
+\input{\fbpath/05.01 ДЗО/661.1771 Логика очувствления/log_ochuv.tex}
+
+\input{\fbpath/05.01 ДЗО/661.3331 УРОВ/urov.tex}
+
+\input{\fbpath/05.01 ДЗО/661.9901 Логика отключения/lo.tex}
+
+\input{\fbpath/05.01 ДЗО/761.9901 Логика отключения присоединений/lo.tex}
+
+\input{\fbpath/05.01 ДЗО/91 Сигнализация/sign.tex}
+
+\input{\fbpath/05.01 ДЗО/90 Общая логика/gl.tex}
+
+%===f
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩАЯ ЧАСТЬ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% ИСПОЛЬЗОВАНИЕ ПО НАЗНАЧЕНИЮ
+\newpage
+\input{\genpath/section3.tex}
+
+% ПРИЛОЖЕНИЯ
+
+% УСТАНОВКИ ДЛЯ ПРИЛОЖЕНИЙ
+\input{startapp.tex}
+
+%===a
+
+\newpage
+\input{\apppath/Приложение. Уставки/_latex/settings_macros.tex}
+\input{\apppath/Приложение. Уставки/_latex/appset.tex}
+
+
+%ПРИЛОЖЕНИЕ
+\newpage
+\input{\genpath/Приложение. Код заказа/_latex/apporder.tex}
+
+%ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. ФСУ/_latex/app2.tex}
+
+%ПРИЛОЖЕНИЕ
+\newpage
+%\input{\apppath/Приложение. Аналоги/_latex/appanalog.tex}
+
+%ПРИЛОЖЕНИЕ для ДЗТ не надо?
+%\newpage
+%\input{\apppath/Приложение. БНН/bnn.tex}
+
+
+%ПРИЛОЖЕНИЕ
+\newpage
+%\input{\apppath/Приложение. Подкл вх и вых/_latex/appins.tex}
+
+%ПРИЛОЖЕНИЕ
+\newpage
+%\input{\apppath/Приложение. Подкл вх и вых2/_latex/appins.tex}
+
+%ПРИЛОЖЕНИЕ Б
+\newpage
+%\input{\apppath/Приложение. Размеры/_latex/app1.tex}
+
+%ПРИЛОЖЕНИЕ
+%\newpage
+%\input{\genpath/Элементы ФС/_latex/appElmtFSU.tex}
+
+%ПРИЛОЖЕНИЕ 
+%===a1
+\newpage
+\input{\apppath/Приложение. Сигналы/_latex/app1.tex}
+%===a1
+
+%ПРИЛОЖЕНИЕ ПС
+\newpage
+%\input{\apppath/Приложение. ПС/_latex/app.tex}
+
+%===a
+
+% УСТАНОВКИ ДЛЯ ПРИЛОЖЕНИЙ
+\input{endapp.tex}
+
+%ЛИСТ РЕГИСТРАЦИИ ИЗМЕНЕНИЙ
+\newpage
+\input{\genpath/revsheet.tex}
+
+\end{document}

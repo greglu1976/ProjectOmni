@@ -1,4 +1,4 @@
-\color{unidarkgreen}{\subsection{Логика отключения}}
+\color{unidarkgreen}{\subsection{Логика отключения выключателей ВН и ТМП}}
 \color{black}
 
 \begin{enumerate}
@@ -8,7 +8,7 @@
 \begin{itemize}
 \item Срабатывание ДТЗ;
 \item Срабатывание вторых ступеней МТЗ, ТЗНП, ТЗОП КО;
-\item Срабатывание МТЗ-2 НН;
+\item Срабатывание второй ступени МТЗ НН;
 \item Срабатывание МТЗ ОУ;
 \item Срабатывание КИ НН;
 \item Отключение от внешних защит НН (ЗДЗ, УРОВ ТМП).
@@ -18,20 +18,22 @@
 Устройство формирует выходное воздействие на отключение ТМПо, ТМПр при срабатывании первых ступеней токовых защит КО и первой ступени МТЗ НН.
 
 \item
-Алгоритм работы логики отключения В1 ВН приведен на рисунке \ref{pict_lo:LO}. Алгоритмы работы логики отключения В2 ВН и ТМПд выполнены аналогично.
+Алгоритм работы логики отключения В1 ВН приведен на рисунке \ref{pict_lo:LO}. Алгоритмы работы логики отключения В2 ВН и ТМПд выполнены аналогично. Уставки ЛО В1 ВН, В2 ВН и ЛО ТМПд приведены в таблице \ref{app_set:lov1}-\ref{app_set:lotmpd}.
 
+\medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/11.02 УШР/Логика отключения В/img/LO.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/11.02 УШР/Логика отключения В/img/LO.pdf}
 \captionof{figure}{Функциональная схема логики отключения В1 ВН}\label{pict_lo:LO}
 \end{figure}
 
 \item
-Алгоритм работы логики отключения ТМПо приведен на рисунке \ref{pict_lo:lo_tmpd}. Алгоритм работы логики отключения ТМПр выполнен аналогично.
+Алгоритм работы логики отключения ТМПо приведен на рисунке \ref{pict_lo:lo_tmpd}. Алгоритм работы логики отключения ТМПр выполнен аналогично. Уставки ЛО ТМПо, ЛО ТМПр приведены в таблице \ref{app_set:lotmpo}, \ref{app_set:lotmpr}.
 
+\medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/11.02 УШР/Логика отключения В/img/lo_tmpd.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/11.02 УШР/Логика отключения В/img/lo_tmpd.pdf}
 \captionof{figure}{Функциональная схема логики отключения ТМПо}\label{pict_lo:lo_tmpd}
 \end{figure}
 
