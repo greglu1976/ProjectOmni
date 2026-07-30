@@ -1,3 +1,30 @@
+%%% ВЫБОР УСТРОЙСТВА %%%
+
+\IfStrEqCase{\devicecode}{%
+{ЮТКБ.656122.611-05.01 РЭ}{%
+% код для этого типа
+\def\fileExt{dzo1}
+\def\AbzazOne{
+\item
+Алгоритм работы УРОВ выключателя В1 приведен на рисунке \ref{pict_urov:UROV_Q1}. Алгоритмы работы УРОВ выключателей В2, В3, В4 выполнены аналогично. Уставки УРОВ В1..УРОВ В4 приведены в таблицах \ref{app_set:urov1} - \ref{app_set:urov4}.
+}
+}%
+{ЮТКБ.656122.611-05.02 РЭ}{%
+% код для этого типа
+\def\fileExt{dzo2}
+\def\AbzazOne{
+\item
+Алгоритм работы УРОВ выключателя В1 приведен на рисунке \ref{pict_urov:UROV_Q1}. Алгоритм работы УРОВ выключател В2 выполнен аналогично. Уставки УРОВ В1, УРОВ В2 приведены в таблицах \ref{app_set:urov1}, \ref{app_set:urov2}.
+}
+}%
+}
+[
+\def\fileExt{??}
+\def\AbzazOne{??}
+]
+
+
+
 \color{unidarkgreen}{\subsection{ Устройство резервирования отказа выключателя}}
 \color{black}
 
@@ -77,13 +104,13 @@
 \item
 Ввод и вывод функции УРОВ осуществляется либо программным переключателем \textbf{«Режим УРОВ Вn»}, либо посредством сигналов \textit{«УРОВ Вn/ УРОВ: Ремонт»} или \textit{«УРОВ Вn: Вывод»}.
 
-\item
-Алгоритм работы УРОВ выключателя В1 приведен на рисунке \ref{pict_urov:UROV_Q1}. Алгоритмы работы УРОВ выключателей В2, В3, В4 выполнены аналогично. Уставки УРОВ В1..УРОВ В4 приведены в таблицах \ref{app_set:urov1} - \ref{app_set:urov4}.
+\AbzazOne
+
 
 \medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/05.01 ДЗО/661.3331 УРОВ/img/UROV_Q1.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/05.01 ДЗО/661.3331 УРОВ/img/UROV_Q1_\fileExt.pdf}
 \captionof{figure}{Функциональная схема логики УРОВ В1}\label{pict_urov:UROV_Q1}
 \end{figure}
 \medskip
@@ -95,12 +122,12 @@
 При длительном наличии сигналов пуска и срабатывания УРОВ более выдержки времени \textbf{«Тнеиспр УРОВ»} формируется сигнал неисправности цепи УРОВ.
 
 \item
-Алгоритм работы УРОВ выключателя В1 приведен на рисунке \ref{pict_urov:UROV_SSH}. Уставки УРОВ СШ приведены в таблице \ref{app_set:urovsh}.
+Алгоритм работы УРОВ СШ приведен на рисунке \ref{pict_urov:UROV_SSH}. Уставки УРОВ СШ приведены в таблице \ref{app_set:urovsh}.
 
 \medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/05.01 ДЗО/661.3331 УРОВ/img/UROV_SSH.pdf}
+\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/05.01 ДЗО/661.3331 УРОВ/img/UROV_SSH_\fileExt.pdf}
 \captionof{figure}{Функциональная схема логики УРОВ СШ}\label{pict_urov:UROV_SSH}
 \end{figure}
 \medskip

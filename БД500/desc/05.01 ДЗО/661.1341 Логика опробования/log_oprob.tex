@@ -1,3 +1,19 @@
+%%% ВЫБОР УСТРОЙСТВА %%%
+
+\IfStrEqCase{\devicecode}{%
+{ЮТКБ.656122.611-05.01 РЭ}{%
+% код для этого типа
+\def\fileExt{dzo1}
+}%
+{ЮТКБ.656122.611-05.02 РЭ}{%
+% код для этого типа
+\def\fileExt{dzo2}
+}%
+}
+[
+\def\fileExt{??}
+]
+
 \color{unidarkgreen}{\subsection{Логика опробования}}
 \color{black}
 
@@ -12,7 +28,7 @@
 \medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.83\textwidth,height=0.83\textheight,keepaspectratio]{\fbpath/05.01 ДЗО/661.1341 Логика опробования/img/Log_oprob.pdf}
+\includegraphics[width=0.83\textwidth,height=0.83\textheight,keepaspectratio]{\fbpath/05.01 ДЗО/661.1341 Логика опробования/img/Log_oprob_\fileExt.pdf}
 \captionof{figure}{Функциональная схема ЛОП}\label{pic_log_oprob:Log_oprob}
 \end{figure}
 \medskip
