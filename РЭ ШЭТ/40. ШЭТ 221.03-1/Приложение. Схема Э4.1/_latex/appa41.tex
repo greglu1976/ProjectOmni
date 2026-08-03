@@ -1,16 +1,30 @@
-% ============================================================
-% СХЕМА ЭЛЕКТРИЧЕСКАЯ СОЕДИНЕНИЙ РЯДОВ ЗАЖИМОВ
-% ============================================================
-
 {\color{unidarkgreen}\section[(обязательное) Схема электрическая соединений рядов зажимов]{(обязательное)\\Схема электрическая соединений рядов зажимов}\label{app:a41}}
 \color{black}
 
-% Часть 1 – размер 0.9 (если нужно, можете изменить на 0.95)
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth, height=0.9\textheight, keepaspectratio, trim=5pt 5pt 5pt 5pt, clip]{\apppath/Приложение. Схема Э4.1/_latex/img/Fig_1.pdf}
-  \caption{Схема электрическая соединений рядов зажимов (часть 1)}
-  \label{appvo:fig_1}
-\end{figure}
+\newcount\figcounter
+\figcounter=1
+\loop
+  \IfFileExists{\apppath/Приложение. Схема Э4.1/_latex/img/СЭС_\the\figcounter.pdf}{%
+    \begin{figure}[H]
+      \centering
+      \ifnum\figcounter=1
+        \def\scalefactor{0.9}%
+      \else
+        \def\scalefactor{0.95}%
+      \fi
+      \includegraphics[width=\scalefactor\textwidth,
+                       height=\scalefactor\textheight,
+                       keepaspectratio,
+                       trim=5pt 5pt 5pt 5pt,
+                       clip]{%
+        \apppath/Приложение. Схема Э4.1/_latex/img/СЭС_\the\figcounter.pdf}%
+      \caption{Схема электрическая соединений рядов зажимов (часть \the\figcounter)}%
+      \label{appvo:fig_\the\figcounter}%
+    \end{figure}%
+    \advance\figcounter by 1
+  }{%
+    \figcounter=0 % файл не найден — завершаем цикл
+  }%
+\ifnum\figcounter>0 \repeat
 
 \clearpage

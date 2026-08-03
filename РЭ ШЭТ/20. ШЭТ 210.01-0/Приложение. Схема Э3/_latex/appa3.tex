@@ -1,6 +1,6 @@
 \KOMAoption{paper}{a4, portrait}
 \areaset{267mm}{180mm}
-\fancyheadoffset{0pt} % обновляем хедер и футер
+\fancyheadoffset{0pt}
 
 \newgeometry{
   top=14mm,
@@ -11,79 +11,34 @@
 
 \begin{landscape}
 \setlength{\footskip}{15.5pt}
-
 \color{unidarkgreen}{\section[(обязательное) Схема электрическая принципиальная]{(обязательное)\\Схема электрическая принципиальная}\label{app:a3}}
-\color{black}
+\color{black}\vskip 3mm
 
-\setlength{\footskip}{15.5pt}
-\vskip 3mm
+\newcount\figcounter
+\figcounter=1
+\loop
+  \IfFileExists{\apppath/Приложение. Схема Э3/_latex/img/СЭП_\the\figcounter.pdf}{%
+    \begin{figure}[H]
+      \centering
+      % Размеры: для первого чуть меньше, для остальных больше
+      \ifnum\figcounter=1
+        \def\figwidth{1.1\textwidth}%
+        \def\figheight{1.1\textheight}%
+      \else
+        \def\figwidth{1.3\textwidth}%
+        \def\figheight{1.3\textheight}%
+      \fi
+      \includegraphics[width=\figwidth,height=\figheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip,angle=0]{%
+        \apppath/Приложение. Схема Э3/_latex/img/СЭП_\the\figcounter.pdf}%
+      \captionof{figure}{Схема электрическая принципиальная (часть \the\figcounter)}%
+      \label{appvo:fig_\the\figcounter}%
+    \end{figure}%
+    \advance\figcounter by 1
+  }{%
+    \figcounter=0 % файл не найден — завершаем цикл
+  }%
+\ifnum\figcounter>0 \repeat
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.1\textwidth,height=1.1\textheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip]{\apppath/Приложение. Схема Э3/_latex/img/Fig_1.pdf}
-  \captionof{figure}{Схема электрическая принципиальная (часть 1)}\label{appvo:fig_1}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.3\textwidth,height=1.3\textheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip]{\apppath/Приложение. Схема Э3/_latex/img/Fig_2.pdf}
-  \captionof{figure}{Схема электрическая принципиальная (часть 2)}\label{appvo:fig_2}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.3\textwidth,height=1.3\textheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip]{\apppath/Приложение. Схема Э3/_latex/img/Fig_3.pdf}
-  \captionof{figure}{Схема электрическая принципиальная (часть 3)}\label{appvo:fig_3}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.3\textwidth,height=1.3\textheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip]{\apppath/Приложение. Схема Э3/_latex/img/Fig_4.pdf}
-  \captionof{figure}{Схема электрическая принципиальная (часть 4)}\label{appvo:fig_4}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.3\textwidth,height=1.3\textheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip]{\apppath/Приложение. Схема Э3/_latex/img/Fig_5.pdf}
-  \captionof{figure}{Схема электрическая принципиальная (часть 5)}\label{appvo:fig_5}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.3\textwidth,height=1.3\textheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip]{\apppath/Приложение. Схема Э3/_latex/img/Fig_6.pdf}
-  \captionof{figure}{Схема электрическая принципиальная (часть 6)}\label{appvo:fig_6}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.3\textwidth,height=1.3\textheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip]{\apppath/Приложение. Схема Э3/_latex/img/Fig_7.pdf}
-  \captionof{figure}{Схема электрическая принципиальная (часть 7)}\label{appvo:fig_7}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.3\textwidth,height=1.3\textheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip]{\apppath/Приложение. Схема Э3/_latex/img/Fig_8.pdf}
-  \captionof{figure}{Схема электрическая принципиальная (часть 8)}\label{appvo:fig_8}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.3\textwidth,height=1.3\textheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip]{\apppath/Приложение. Схема Э3/_latex/img/Fig_9.pdf}
-  \captionof{figure}{Схема электрическая принципиальная (часть 9)}\label{appvo:fig_9}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.3\textwidth,height=1.3\textheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip]{\apppath/Приложение. Схема Э3/_latex/img/Fig_10.pdf}
-  \captionof{figure}{Схема электрическая принципиальная (часть 10)}\label{appvo:fig_10}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.3\textwidth,height=1.3\textheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip]{\apppath/Приложение. Схема Э3/_latex/img/Fig_11.pdf}
-  \captionof{figure}{Схема электрическая принципиальная (часть 11)}\label{appvo:fig_11}
-\end{figure}
 \clearpage
-
 \end{landscape}
 \restoregeometry

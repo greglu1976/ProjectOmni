@@ -14,23 +14,33 @@
 
 \color{unidarkgreen}{\section[(обязательное) Чертеж общего вида]{(обязательное)\\Чертеж общего вида}\label{app:vo}}
 \color{black}
-
-\setlength{\footskip}{15.5pt}
 \vskip 3mm
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.1\textwidth,height=1.1\textheight,keepaspectratio]{\apppath/Приложение. Схема ВО/_latex/img/gen_view_1.pdf}
-  \captionof{figure}{Чертеж общего вида (часть 1)}\label{appvo:gen_view_1}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=1.2\textwidth,height=1.2\textheight,keepaspectratio]{\apppath/Приложение. Схема ВО/_latex/img/gen_view_2.pdf}
-  \captionof{figure}{Чертеж общего вида (часть 2)}\label{appvo:gen_view_2}
-\end{figure}
+\newcount\figcounter
+\figcounter=1
+\loop
+  \IfFileExists{\apppath/Приложение. Схема ВО/_latex/img/Fig_\the\figcounter.pdf}{%
+    \begin{figure}[H]
+      \centering
+      % Коэффициент масштаба: для первого чуть меньше, для остальных больше
+      \ifnum\figcounter=1
+        \def\scalefactor{1.1}%
+      \else
+        \def\scalefactor{1.2}%
+      \fi
+      \includegraphics[width=\scalefactor\textwidth,
+                       height=\scalefactor\textheight,
+                       keepaspectratio]{%
+        \apppath/Приложение. Схема ВО/_latex/img/Fig_\the\figcounter.pdf}%
+      \caption{Чертеж общего вида (часть \the\figcounter)}%
+      \label{appvo:gen_view_\the\figcounter}%
+    \end{figure}%
+    \advance\figcounter by 1
+  }{%
+    \figcounter=0 % файл не найден — завершаем цикл
+  }%
+\ifnum\figcounter>0 \repeat
 
 \clearpage
-
 \end{landscape}
 \restoregeometry

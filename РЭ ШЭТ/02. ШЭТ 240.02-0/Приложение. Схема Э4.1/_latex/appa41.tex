@@ -1,15 +1,10 @@
-% ============================================================
-% СХЕМА ЭЛЕКТРИЧЕСКАЯ СОЕДИНЕНИЙ РЯДОВ ЗАЖИМОВ
-% ============================================================
-
 {\color{unidarkgreen}\section[(обязательное) Схема электрическая соединений рядов зажимов]{(обязательное)\\Схема электрическая соединений рядов зажимов}\label{app:a41}}
 \color{black}
 
-% Цикл вывода файлов Fig_1.pdf, Fig_2.pdf, ... пока они существуют
 \newcount\figcounter
 \figcounter=1
 \loop
-  \IfFileExists{\apppath/Приложение. Схема Э4.1/_latex/img/Fig_\the\figcounter.pdf}{%
+  \IfFileExists{\apppath/Приложение. Схема Э4.1/_latex/img/СЭС_\the\figcounter.pdf}{%
     \begin{figure}[H]
       \centering
       \ifnum\figcounter=1
@@ -22,7 +17,7 @@
                        keepaspectratio,
                        trim=5pt 5pt 5pt 5pt,
                        clip]{%
-        \apppath/Приложение. Схема Э4.1/_latex/img/Fig_\the\figcounter.pdf}%
+        \apppath/Приложение. Схема Э4.1/_latex/img/СЭС_\the\figcounter.pdf}%
       \caption{Схема электрическая соединений рядов зажимов (часть \the\figcounter)}%
       \label{appvo:fig_\the\figcounter}%
     \end{figure}%
