@@ -1,13 +1,13 @@
 \color{unidarkgreen}{\subsection{Логика отключения}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}, labelsep=4pt, leftmargin=0pt, itemindent=57pt, itemsep=0pt, parsep=5pt] % если что можно крутить itemsep
+\begin{enumerate}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Логика запрета АПВ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Логика запрета АПВ
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Логика запрета АПВ предназначена для формирования запрета АПВ всех присоединений СШ, чтобы минимизировать вероятность повторного возникновения аварийной ситуации. 
@@ -58,7 +58,7 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/661.9901 Логика отключения/img/Log_ZAPV.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/04.01 ДЗШ/661.9901 Логика отключения/img/Log_ZAPV.pdf}
 \captionof{figure}{Функциональный блок логики запрета АПВ}\label{pic:Log_ZAPV}
 \end{figure}
 
@@ -70,7 +70,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Логика отключения %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Логика отключения
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 
 \item
 Логика отключения предназначена для формирования сигналов отключения 1 и 2 СШ, а также сигналов отключения и запрета АПВ присоединений с учетом текущей фиксации присоединений.
@@ -96,37 +96,10 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/661.9901 Логика отключения/img/Log_otkl_ssh.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/04.01 ДЗШ/661.9901 Логика отключения/img/Log_otkl_ssh.pdf}
 \captionof{figure}{Функциональный блок логики отключения СШ}\label{pic:Log_otkl_ssh}
 \end{figure}
 
-\medskip
-
-\item
-Уставки логики отключения СШ представлены в таблице \ref{desc:tbl1}.
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставок логики отключения СШ\hfill\vspace{-0.5\baselineskip}}\label{desc:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{desc:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
-
-%===m>ДЗШ|-
-%===m
-\end{longtable}
-\normalsize	
 
 \end{enumerate}
 
