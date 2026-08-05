@@ -1,0 +1,176 @@
+\documentclass[a4paper, 12pt, table, hidelinks, DIV=calc]{extarticle}
+
+% ---------------------- Шрифты ----------------------
+\usepackage{fontspec}
+\setsansfont[
+    Ligatures=TeX,
+    BoldFont={Arial Narrow Bold},
+    ItalicFont={Arial Narrow Italic},
+    BoldItalicFont={Arial Narrow Bold Italic}
+]{Arial Narrow}
+\renewcommand\familydefault{\sfdefault}
+% \setmainfont{Arial Narrow}
+
+\usepackage{unicode-math}
+\setmathfont{Stix Two Math}
+
+% ---------------------- Язык, графика, цвета ----------------------
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+
+\usepackage{xcolor}
+\definecolor{unired}{RGB}{0, 203, 98}  
+\definecolor{uniblue}{RGB}{11, 100, 54}
+\definecolor{unigray}{RGB}{100, 100, 100}
+\definecolor{uniblack}{RGB}{20, 20, 20}
+
+
+\definecolor{uniwhite}{RGB}{255, 255, 255} 
+\definecolor{unigreen}{RGB}{0, 203, 98}
+\definecolor{unidarkgreen}{RGB}{11, 100, 54}
+
+% ---------------------- Геометрия ----------------------
+\usepackage{typearea}
+\usepackage[
+    a4paper,
+    includehead,
+    includefoot,
+    nomarginpar,
+    top=6mm,
+    bottom=6mm,
+    left=22mm,
+    right=10mm,
+    headheight=14.5pt,
+    headsep=3mm,
+    footskip=7mm
+]{geometry}
+\savegeometry{standard}
+
+% ---------------------- Абзацы ----------------------
+\usepackage{parskip}
+\setlength{\parindent}{1cm}
+\setlength{\parskip}{1pt}
+\setlength{\intextsep}{0mm}
+\usepackage{indentfirst}
+
+% ---------------------- Колонтитулы ----------------------
+\usepackage{fancyhdr}
+
+% ---------------------- Таблицы ----------------------
+\usepackage{longtable, booktabs}
+\usepackage{calc}
+\setlength{\LTpre}{5pt}
+\setlength{\LTpost}{5pt}
+
+\usepackage{colortbl}
+\usepackage{tabularx}          % только один раз
+\usepackage{multirow}
+\usepackage{tabularray}        % если используется
+\usepackage{hhline}
+\usepackage{makecell}
+
+% ---------------------- Подписи и нумерация ----------------------
+\usepackage[labelsep=endash]{caption}
+\DeclareCaptionLabelFormat{myformat}{\textls[75]{#1 #2}}
+\captionsetup[figure]{name=Рисунок, justification=centering, labelformat=myformat} 
+\captionsetup[table]{justification=justified, labelformat=myformat}
+\setlength{\belowcaptionskip}{0mm}
+
+% Нумерация рисунков и таблиц вида 1.1
+\counterwithin*{figure}{section}
+\counterwithin*{table}{section}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+
+% ---------------------- Математика и формулы ----------------------
+\usepackage{amsmath}
+\usepackage{eqexpl}
+\eqexplSetDelim{--}
+\eqexplSetIntro{где}
+
+% ---------------------- Заголовки ----------------------
+\usepackage{titlesec}
+\usepackage{appendix}
+\titlespacing{\section}{1cm}{0pt}{0pt}
+\titlespacing{\subsection}{1cm}{5pt}{5pt}
+\titlespacing{\subsubsection}{1cm}{3pt}{3pt}
+
+% ---------------------- Списки (enumitem) ----------------------
+\usepackage{enumitem}
+\setlist[itemize]{
+    label=-,
+    labelwidth=-0.5em,
+    labelsep=0.5em,
+    align=left,
+    leftmargin=0em,
+    itemindent=2.5em,
+    nosep
+}
+
+% Уровень 1
+\setlist[enumerate,1]{
+    label=\arabic{section}.\arabic{subsection}.\arabic*,
+    labelsep=7pt,
+    leftmargin=0pt,
+    itemindent=60pt,
+    align=left,
+    nosep      % убирает лишние вертикальные отступы между пунктами
+}
+
+% Уровень 2
+\setlist[enumerate,2]{
+    label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*,
+    labelsep=7pt,
+    leftmargin=0em,
+    itemindent=55.5pt,
+    parsep=0pt,   % отступ между абзацами внутри одного пункта
+    align=left,
+    nosep
+}
+
+
+% ---------------------- Плавающие объекты ----------------------
+\usepackage{float}
+\usepackage{needspace}
+\usepackage{placeins}
+
+% ---------------------- Оглавление ----------------------
+\usepackage{tocloft}
+\usepackage{tocvsec2}   % оставлен, но используйте \setcounter{tocdepth} вместо \settocdepth
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecpagefont}{\normalfont}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\l@section}{\cftsecfont #1}{\cftsecfont {#1}}{}{}
+\makeatother
+\renewcommand\cftsecfont{\MakeUppercase}
+
+% ---------------------- Гиперссылки ----------------------
+\usepackage{hyperref}
+
+% ---------------------- Прочие пакеты ----------------------
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage[absolute]{textpos}
+\usepackage{fontawesome7}
+\usepackage{microtype}
+\usepackage{ulem}
+\normalem
+\usepackage{eso-pic}
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=empty}
+\renewcommand{\thesubfigure}{\asbuk{subfigure})}
+\makeatletter
+\renewcommand{\p@subfigure}{\thefigure,\ }
+\renewcommand{\thesubfigure}{\asbuk{subfigure}}
+\makeatother
+
+% ---------------------- Сноски ----------------------
+\usepackage[perpage]{footmisc}
+\renewcommand{\thefootnote}{\arabic{footnote})}
+\setlength{\footnotesep}{10pt}
+
+% ---------------------- Прочее ----------------------
+\usepackage{tikz}          % если используется
+\uchyph=0                  % отключаем перенос в словах с заглавной

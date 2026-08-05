@@ -1,0 +1,180 @@
+\input{preamble.tex}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX КАТАЛОГА ОПИСАНИЯ ФУНКЦИОНАЛЬНЫХ БЛОКОВ
+\newcommand{\fbpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/БД/desc/}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX КАТАЛОГА ОБЩЕЙ ЧАСТИ
+\newcommand{\genpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/103. Общие разделы РЭ/}
+
+% ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX ПРИЛОЖЕНИЙ
+\newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/09. РЭ ЮНИТ-М3-АРНТ/}
+
+% ЗАДАЕМ ПЕРЕМЕННЫЕ ТЕКУЩЕЙ НОМЕР РЕДАКЦИИ И ДАТА РЕДАКЦИИ
+\def\rev{1.4}
+\def\revdate{08.07.2026}
+
+% ЗАДАЕМ ПЕРЕМЕННЫЕ УКАЗЫВАЮЩИЕ КАКИЕ ФУНКЦИИ СОБИРАТЬ
+% isOL, isVV, isSV
+\newbool{isOL}
+\boolfalse{isOL}
+\newbool{isVV}
+\boolfalse{isVV}  % выбираем устройство М300-ВВ
+\newbool{isSV}
+\booltrue{isSV} 
+
+% МЕТАДАННЫЕ
+\hypersetup{
+    pdftitle={Микропроцессорное устройство автоматического регулирования напряжения трансформатора ЮНИТ-М300-АРНТ. Руководство по эксплуатации},
+    pdfauthor={ООО "Юнител Инжиниринг"},
+    pdfsubject={Описание функций РЗА в составе устройства ЮНИТ-М300-АРНТ},
+    pdfkeywords={ЮНИТ-М300-АРНТ, Юнител, РЗА, Релейная защита и автоматика, Режимная автоматика},
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЗДЕСЬ ДЛЯ ВЫВОД СОДЕРЖАНИЯ БОЛЬШИМИ БУКВАМИ ПОСЕРЕДИНЕ ЛИСТА см. ГОСТ-2.105-2019, п.6.2.5
+\makeatletter
+\renewcommand{\tableofcontents}{%
+  \centering{%
+    \textbf{\large\color{unidarkgreen}\MakeUppercase{\contentsname}}%
+  }%
+  \@starttoc{toc}%
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage % НУЖНО!!!
+\input{title0.tex} % подключаем титульный лист
+\clearpage
+
+\newpage  % НУЖНО!!!
+\input{title1.tex}
+\clearpage
+
+\newpage
+\input{section_format.tex}% Здесь только определение формата для страниц разделов
+\clearpage
+
+\newpage
+\input{toc.tex}
+\clearpage
+
+\newpage
+\input{toa_general.tex}
+
+\newpage
+\input{section0.tex}
+
+\newpage
+\input{section1.tex}
+
+% input не вставляет возврат строки, а include вставляет
+\newpage
+\input{section2.tex}
+
+%===f
+\input{\fbpath/500. АРН общ/_latex/obsh.tex}
+
+\input{\fbpath/501. Контроль РПН/_latex/kontrrpn.tex}
+
+\input{\fbpath/502. Авт рег/_latex/avtreg.tex}
+
+\input{\fbpath/503. Привод РПН/_latex/privod.tex}
+
+\input{\fbpath/504. Положение РПН/_latex/polrpn.tex}
+
+\input{\fbpath/505. Паралл/_latex/regU.tex}
+
+\input{\fbpath/506. Сигнализация/_latex/sign.tex}
+
+%===f
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩАЯ ЧАСТЬ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% СЕРВИСНЫЕ ФУНКЦИИ
+%\newpage
+%\input{\genpath/Раздел 3. Сервис функ/service_func.tex}
+
+
+% ИСПОЛЬЗОВАНИЕ ПО НАЗНАЧЕНИЮ
+\newpage
+\input{section3.tex}
+
+% ТЕХОБСЛУЖИВАНИЕ И РЕМОНТ
+\newpage
+\input{\genpath/Тех обсл и ремонт/_latex/repair.tex}
+
+% ТРАНСПОРТИРОВАНИЕ
+%\newpage
+\input{\genpath/Трансп и хранение/_latex/trans.tex}
+
+%УТИЛИЗАЦИЯ
+%\newpage
+\input{\genpath/Утилизация/_latex/util.tex}
+
+%ГАРАНТИЯ
+%\newpage
+\input{\genpath/Гарантия/_latex/garant.tex}
+
+%ТЕХПОДДЕРЖКА
+%\newpage
+\input{\genpath/Тех поддержка/_latex/support.tex}
+
+% ПРИЛОЖЕНИЯ
+
+% УСТАНОВКИ ДЛЯ ПРИЛОЖЕНИЙ
+\input{startapp.tex}
+
+%===a
+
+\newpage
+\input{\apppath/Приложение. Уставки/settings.tex}
+
+%ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Карта/_latex/apporder.tex}
+
+%ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. ФСУ/_latex/app2.tex}
+
+%ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Аналоги/_latex/appanalog.tex}
+
+
+%ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Подкл вх и вых/_latex/appins.tex}
+
+
+%ПРИЛОЖЕНИЕ Б
+\newpage
+\input{\apppath/Приложение. Размеры/_latex/app1.tex}
+
+%ПРИЛОЖЕНИЕ
+\newpage
+\input{\genpath/Элементы ФС/_latex/appElmtFSU.tex}
+
+
+
+%ПРИЛОЖЕНИЕ
+%===a1
+\newpage
+\input{\apppath/Приложение А. Сигналы/_latex/app1.tex}
+%===a1
+
+\newpage
+\input{\apppath/Приложение. Паралл/_latex/app1.tex}
+
+%===a
+
+% УСТАНОВКИ ДЛЯ ПРИЛОЖЕНИЙ
+\input{endapp.tex}
+
+%ЛИСТ РЕГИСТРАЦИИ ИЗМЕНЕНИЙ
+\newpage
+\input{\genpath/Лист рег изм/_latex/izm.tex}
+
+\end{document}

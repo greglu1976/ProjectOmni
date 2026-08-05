@@ -1,8 +1,6 @@
 \phantomsection
 \color{unidarkgreen}\section*{\centering{\large{ПЕРЕЧЕНЬ СОКРАЩЕНИЙ}}}
 \addcontentsline{toc}{section}{Перечень сокращений}
-{\color{white}\fontsize{0.1pt}{0.1pt}\selectfont<begABBRS>}
-\color{black}
 
 % ===== НАСТРОЙКИ =====
 \newlength{\abbrgap}
@@ -10,9 +8,12 @@
 
 % Автоматическая ширина метки: самое длинное сокращение + тире + пробел + запас
 \newlength{\abbrwidth}
-\settowidth{\abbrwidth}{AAAAA}   % самое длинное сокращение
-\addtolength{\abbrwidth}{2.5em}% запас под "-- " и отступ
+\settowidth{\abbrwidth}{ТЗНП}   % самое длинное сокращение
+\addtolength{\abbrwidth}{3.5em}% запас под "-- " и отступ
 % ======================
+
+{\color{white}\fontsize{0.1pt}{0.1pt}\selectfont<begABBRS>}
+\color{black}
 
 \begin{list}{}%
 {%
@@ -21,10 +22,10 @@
   \setlength{\leftmargin}{\dimexpr\labelwidth+\labelsep\relax}%
   \setlength{\itemindent}{0pt}%
   \setlength{\parsep}{0pt}%
-  \setlength{\itemsep}{2pt plus 1pt}%
+  \setlength{\itemsep}{0pt}
   \renewcommand{\makelabel}[1]{#1 --\hspace{\abbrgap}}%   <-- метка = сокращение + "--" + пробел
 }
-\item[IEC] International Electrotechnical Commission;
+\item[IEC]  International Electrotechnical Commission;
 \item[PPS] Pulse Per Second;
 \item[АВР] автоматическое включение резерва;
 \item[АПВ] автоматическое повторное включение;
@@ -74,6 +75,5 @@
 \item[ШСВ] шиносоединительный выключатель;
 \item[ШЭТ] шкаф электротехнический типовой;
 \item[ЭМО] электромагнит отключения.
-\end{list}
-
 {\color{white}\fontsize{0.1pt}{0.1pt}\selectfont<endABBRS>}
+\end{list}
