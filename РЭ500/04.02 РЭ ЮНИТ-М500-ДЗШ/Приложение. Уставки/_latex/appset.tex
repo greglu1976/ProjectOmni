@@ -1,0 +1,1996 @@
+\color{unidarkgreen}{\section[(обязательное) Уставки функций РЗА]{(обязательное)\\Уставки функций РЗА}\label{app:set}}
+\color{black}
+
+\setlength{\extrarowheight}{0.06cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ДЗШ
+\par
+Уставки ДЗШ представлены в таблице \ref{app_set:dzsh}.
+
+\startTable{Параметры для настройки ДЗШ}{app_set:dzsh}
+
+%===m>ДЗШ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ДЗШ } \\ \hline 
+\centering ДЗШ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering ДТО & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering БВКЗ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Базисный ток & \centering 1 ... 20000 & \centering A & \centering 1,0 & \centering \arraybackslash 1000 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering k возврата Iчто & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering k возврата Iдто & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering k возврата ДОТХ & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering k возврата Iкцт & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering Iпуск бл2г & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,050 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Твозвр бл2г & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 15 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КЦТ ИО1 } \\ \hline 
+\centering КЦТ ИО1 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Iкцт ИО1 & \centering 0,010 ... 3,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
+\hline
+\centering k возврата Iкцт & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering Ткцт ИО1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 8000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КЦТ ИО2 } \\ \hline 
+\centering КЦТ ИО2 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Iкцт ИО2 & \centering 0,010 ... 3,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
+\hline
+\centering k возврата Iкцт & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering Ткцт ИО2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 8000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КЦТ ПО } \\ \hline 
+\centering КЦТ ПО & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Iкцт ПО & \centering 0,010 ... 3,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
+\hline
+\centering k возврата Iкцт & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,950 \\
+\hline
+\centering Ткцт ПО & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 8000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ИО1 } \\ \hline 
+\centering ДТО & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering БВКЗ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Iдто ИО1 & \centering 1,00 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 6,00 \\
+\hline
+\centering k возврата Iдто & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iд нач ИО1 & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Iд нач очув ИО1 & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Iт нач ИО1 & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Iт нач очув ИО1 & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Кт ИО1 & \centering 0,200 ... 2,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,500 \\
+\hline
+\centering Кт очув ИО1 & \centering 0,200 ... 2,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,500 \\
+\hline
+\centering k возврата ДОТХ & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iчто ИО1 & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
+\hline
+\centering k возврата Iчто & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г ИО1 & \centering 0,001 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,100 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,050 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Твозвр бл2г & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 15 \\
+\hline
+\centering Реж КЦТ ИО1 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering I БВКЗ & \centering 1,00 ... 10,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Tср ДЗШ ИО1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ИО2 } \\ \hline 
+\centering ДТО & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering БВКЗ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Iдто ИО2 & \centering 1,00 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 6,00 \\
+\hline
+\centering k возврата Iдто & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iд нач ИО2 & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Iд нач очув ИО2 & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Iт нач ИО2 & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Iт нач очув ИО2 & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Кт ИО2 & \centering 0,200 ... 2,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,500 \\
+\hline
+\centering Кт очув ИО2 & \centering 0,200 ... 2,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,500 \\
+\hline
+\centering k возврата ДОТХ & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iчто ИО2 & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
+\hline
+\centering k возврата Iчто & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г ИО2 & \centering 0,001 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,100 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,050 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Твозвр бл2г & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 15 \\
+\hline
+\centering Реж КЦТ ИО2 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering I БВКЗ & \centering 1,00 ... 10,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Tср ДЗШ ИО2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ПО } \\ \hline 
+\centering ДТО & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering БВКЗ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Iдто ПО & \centering 1,00 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 6,00 \\
+\hline
+\centering k возврата Iдто & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iд нач ПО & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Iд нач очув ПО & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Iт нач ПО & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Iт нач очув ПО & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,400 \\
+\hline
+\centering Кт ПО & \centering 0,200 ... 2,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,500 \\
+\hline
+\centering Кт очув ПО & \centering 0,200 ... 2,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,500 \\
+\hline
+\centering k возврата ДОТХ & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iчто ПО & \centering 0,100 ... 2,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,200 \\
+\hline
+\centering k возврата Iчто & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г ПО & \centering 0,001 ... 1,000 & \centering о.е. & \centering 0,001 & \centering \arraybackslash 0,100 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,050 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Твозвр бл2г & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 15 \\
+\hline
+\centering Реж КЦТ ПО & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering I БВКЗ & \centering 1,00 ... 10,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Tср ДЗШ ПО & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛУТ
+\par
+Уставки ЛУТ представлены в таблице \ref{app_set:lut}.
+
+\startTable{Параметры для настройки ЛУТ}{app_set:lut}
+
+%===m>ЛУТ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В1 } \\ \hline 
+\centering Фиксация В1 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В2 } \\ \hline 
+\centering Фиксация В2 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В3 } \\ \hline 
+\centering Фиксация В3 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В4 } \\ \hline 
+\centering Фиксация В4 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В5 } \\ \hline 
+\centering Фиксация В5 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В6 } \\ \hline 
+\centering Фиксация В6 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В7 } \\ \hline 
+\centering Фиксация В7 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В8 } \\ \hline 
+\centering Фиксация В8 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В9 } \\ \hline 
+\centering Фиксация В9 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В10 } \\ \hline 
+\centering Фиксация В10 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В11 } \\ \hline 
+\centering Фиксация В11 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В12 } \\ \hline 
+\centering Фиксация В12 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В13 } \\ \hline 
+\centering Фиксация В13 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В14 } \\ \hline 
+\centering Фиксация В14 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В15 } \\ \hline 
+\centering Фиксация В15 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В16 } \\ \hline 
+\centering Фиксация В16 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В17 } \\ \hline 
+\centering Фиксация В17 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В18 } \\ \hline 
+\centering Фиксация В18 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В19 } \\ \hline 
+\centering Фиксация В19 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В20 } \\ \hline 
+\centering Фиксация В20 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В21 } \\ \hline 
+\centering Фиксация В21 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В22 } \\ \hline 
+\centering Фиксация В22 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В23 } \\ \hline 
+\centering Фиксация В23 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОФ В24 } \\ \hline 
+\centering Фиксация В24 & \centering Внеш \\ Вывод \\ 1С \\ 2С \\ ШСВ1 \\ ШСВ2 \\ ШСВ12 \\ ШСВ21 & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОКТ } \\ \hline 
+\centering 200 & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КЦН
+\par
+Уставки КЦН представлены в таблице \ref{app_set:kcn}.
+
+\startTable{Параметры для настройки КЦН}{app_set:kcn}
+
+%===m>КЦН|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КЦН } \\ \hline 
+\centering k возврата max & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering k возврата min & \centering 1,00 ... 1,50 & \centering  & \centering 0,01 & \centering \arraybackslash 1,05 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КЦН 1С } \\ \hline 
+\centering КЦН 1С & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering ИО отсутствия U 1С (Uл 1С<) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,6000 \\
+\hline
+\centering k возврата min & \centering 1,00 ... 1,50 & \centering  & \centering 0,01 & \centering \arraybackslash 1,05 \\
+\hline
+\centering ИО наличия U 1С (Uл 1С>) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,8000 \\
+\hline
+\centering k возврата max & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering ИО наличия U ОП 1С (U2 1С>) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,1000 \\
+\hline
+\centering Ткцн 1С & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 6000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ КЦН 2С } \\ \hline 
+\centering КЦН 2С & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering ИО отсутствия U 2С (Uл 2С<) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,6000 \\
+\hline
+\centering k возврата min & \centering 1,00 ... 1,50 & \centering  & \centering 0,01 & \centering \arraybackslash 1,05 \\
+\hline
+\centering ИО наличия U 2С (Uл 2С>) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,8000 \\
+\hline
+\centering k возврата max & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering ИО наличия U ОП 2С (U2 2С>) & \centering 0,0050 ... 1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,1000 \\
+\hline
+\centering Ткцн 2С & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 6000 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛОП
+\par
+Уставки ЛОП представлены в таблице \ref{app_set:lop}.
+
+\startTable{Параметры для настройки ЛОП}{app_set:lop}
+
+%===m>ЛОП|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛОП } \\ \hline 
+\centering k возврата I опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Топроб & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В1 } \\ \hline 
+\centering Опроб В1 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В1 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В1 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В1 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В2 } \\ \hline 
+\centering Опроб В2 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В2 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В2 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В2 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В2 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В3 } \\ \hline 
+\centering Опроб В3 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В3 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В3 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В3 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В3 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В3 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В4 } \\ \hline 
+\centering Опроб В4 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В4 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В4 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В4 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В4 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В4 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В5 } \\ \hline 
+\centering Опроб В5 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В5 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В5 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В5 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В5 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В5 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В6 } \\ \hline 
+\centering Опроб В6 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В6 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В6 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В6 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В6 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В6 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В7 } \\ \hline 
+\centering Опроб В7 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В7 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В7 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В7 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В7 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В7 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В8 } \\ \hline 
+\centering Опроб В8 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В8 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В8 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В8 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В8 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В8 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В9 } \\ \hline 
+\centering Опроб В9 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В9 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В9 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В9 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В9 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В9 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В10 } \\ \hline 
+\centering Опроб В10 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В10 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В10 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В10 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В10 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В10 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В11 } \\ \hline 
+\centering Опроб В11 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В11 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В11 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В11 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В11 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В12 } \\ \hline 
+\centering Опроб В12 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В12 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В12 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В12 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В12 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В12 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В13 } \\ \hline 
+\centering Опроб В13 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В13 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В13 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В13 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В13 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В14 } \\ \hline 
+\centering Опроб В14 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В14 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В14 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В14 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В14 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В14 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В15 } \\ \hline 
+\centering Опроб В15 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В15 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В15 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В15 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В15 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В15 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В16 } \\ \hline 
+\centering Опроб В16 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В16 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В16 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В16 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В16 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В16 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В17 } \\ \hline 
+\centering Опроб В17 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В17 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В17 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В17 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В17 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В17 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В18 } \\ \hline 
+\centering Опроб В18 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В18 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В18 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В18 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В18 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В18 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В19 } \\ \hline 
+\centering Опроб В19 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В19 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В19 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В19 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В19 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В19 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В20 } \\ \hline 
+\centering Опроб В20 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В20 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В20 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В20 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В20 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В20 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В21 } \\ \hline 
+\centering Опроб В21 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В21 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В21 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В21 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В21 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В21 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В22 } \\ \hline 
+\centering Опроб В22 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В22 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В22 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В22 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В22 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В22 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В23 } \\ \hline 
+\centering Опроб В23 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В23 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В23 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В23 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В23 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В23 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ОО В24 } \\ \hline 
+\centering Опроб В24 & \centering ДЗШ ПО \\ ЧТО ПО \\ ИО опроб & \centering --- & \centering --- & \centering \arraybackslash ДЗШ ПО \\
+\hline
+\centering Iср опроб В24 & \centering 0,04 ... 30,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering k возврата Iср опроб & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering I2г/I1г В24 & \centering 0,05 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,15 \\
+\hline
+\centering k возврата I2г/I1г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Iпуск бл2г В24 & \centering 0,000 ... 1,000 & \centering  & \centering 0,001 & \centering \arraybackslash 0,040 \\
+\hline
+\centering k возврата Iпуск бл2г & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 1,00 \\
+\hline
+\centering Реж БНТ В24 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср опроб В24 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛОЧ 
+\par
+Уставки ЛОЧ представлены в таблице \ref{app_set:loch}.
+
+\startTable{Параметры для настройки ЛОЧ}{app_set:loch}
+
+%===m>ЛОЧ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ООЧ } \\ \hline 
+\centering Вывод очув при успеш АПВ 1С & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Точув АПВ 1С & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 50 \\
+\hline
+\centering Вывод очув при успеш АПВ 2С & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Точув АПВ 2С & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 50 \\
+\hline
+%===m
+\stopTable
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В1
+\par
+Уставки УРОВ В1 представлены в таблице \ref{app_set:urov1}.
+
+\startTable{Параметры для настройки УРОВ В1}{app_set:urov1}
+
+%===m>УРОВ В1|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В1 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В1 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В1 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В1 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В1 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В1 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В1 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В1 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В1 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В2
+\par
+Уставки УРОВ В2 представлены в таблице \ref{app_set:urov2}.
+
+\startTable{Параметры для настройки УРОВ В2}{app_set:urov2}
+
+%===m>УРОВ В2|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В2 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В2 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В2 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В2 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В2 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В2 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В2 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В2 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В2 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В3
+\par
+Уставки УРОВ В3 представлены в таблице \ref{app_set:urov3}.
+
+\startTable{Параметры для настройки УРОВ В2}{app_set:urov3}
+
+%===m>УРОВ В3|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В3 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В3 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В3 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В3 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В3 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В3 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В3 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В3 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В3 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В4
+\par
+Уставки УРОВ В4 представлены в таблице \ref{app_set:urov4}.
+
+\startTable{Параметры для настройки УРОВ В4}{app_set:urov4}
+%===m>УРОВ В4|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В4 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В4 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В4 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В4 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В4 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В4 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В4 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В4 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В4 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В5
+\par
+Уставки УРОВ В5 представлены в таблице \ref{app_set:urov5}.
+
+\startTable{Параметры для настройки УРОВ В5}{app_set:urov5}
+%===m>УРОВ В5|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В5 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В5 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В5 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В5 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В5 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В5 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В5 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В5 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В5 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В6
+\par
+Уставки УРОВ В6 представлены в таблице \ref{app_set:urov6}.
+
+\startTable{Параметры для настройки УРОВ В6}{app_set:urov6}
+%===m>УРОВ В6|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В6 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В6 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В6 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В6 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В6 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В6 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В6 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В6 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В6 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В7
+\par
+Уставки УРОВ В7 представлены в таблице \ref{app_set:urov7}.
+
+\startTable{Параметры для настройки УРОВ В7}{app_set:urov7}
+%===m>УРОВ В7|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В7 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В7 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В7 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В7 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В7 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В7 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В7 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В7 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В7 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В8
+\par
+Уставки УРОВ В8 представлены в таблице \ref{app_set:urov8}.
+
+\startTable{Параметры для настройки УРОВ В8}{app_set:urov8}
+%===m>УРОВ В8|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В8 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В8 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В8 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В8 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В8 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В8 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В8 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В8 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В8 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В9
+\par
+Уставки УРОВ В9 представлены в таблице \ref{app_set:urov9}.
+
+\startTable{Параметры для настройки УРОВ В9}{app_set:urov9}
+%===m>УРОВ В9|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В9 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В9 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В9 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В9 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В9 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В9 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В9 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В9 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В9 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В10
+\par
+Уставки УРОВ В10 представлены в таблице \ref{app_set:urov10}.
+
+\startTable{Параметры для настройки УРОВ В10}{app_set:urov10}
+%===m>УРОВ В10|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В10 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В10 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В10 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В10 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В10 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В10 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В10 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В10 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В10 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В11
+\par
+Уставки УРОВ В11 представлены в таблице \ref{app_set:urov11}.
+
+\startTable{Параметры для настройки УРОВ В11}{app_set:urov11}
+%===m>УРОВ В11|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В11 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В11 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В11 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В11 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В11 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В11 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В11 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В11 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В11 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В12
+\par
+Уставки УРОВ В12 представлены в таблице \ref{app_set:urov12}.
+
+\startTable{Параметры для настройки УРОВ В12}{app_set:urov12}
+%===m>УРОВ В12|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В12 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В12 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В12 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В12 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В12 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В12 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В12 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В12 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В12 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В13
+\par
+Уставки УРОВ В13 представлены в таблице \ref{app_set:urov13}.
+
+\startTable{Параметры для настройки УРОВ В13}{app_set:urov13}
+%===m>УРОВ В13|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В13 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В13 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В13 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В13 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В13 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В13 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В13 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В13 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В13 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В14
+\par
+Уставки УРОВ В14 представлены в таблице \ref{app_set:urov14}.
+
+\startTable{Параметры для настройки УРОВ В14}{app_set:urov14}
+%===m>УРОВ В14|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В14 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В14 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В14 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В14 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В14 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В14 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В14 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В14 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В14 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В15
+\par
+Уставки УРОВ В15 представлены в таблице \ref{app_set:urov15}.
+
+\startTable{Параметры для настройки УРОВ В15}{app_set:urov15}
+%===m>УРОВ В15|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В15 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В15 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В15 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В15 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В15 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В15 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В15 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В15 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В15 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В16
+\par
+Уставки УРОВ В16 представлены в таблице \ref{app_set:urov16}.
+
+\startTable{Параметры для настройки УРОВ В16}{app_set:urov16}
+%===m>УРОВ В16|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В16 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В16 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В16 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В16 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В16 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В16 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В16 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В16 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В16 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В17
+\par
+Уставки УРОВ В17 представлены в таблице \ref{app_set:urov17}.
+
+\startTable{Параметры для настройки УРОВ В17}{app_set:urov17}
+%===m>УРОВ В17|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В17 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В17 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В17 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В17 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В17 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В17 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В17 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В17 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В17 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В18
+\par
+Уставки УРОВ В18 представлены в таблице \ref{app_set:urov18}.
+
+\startTable{Параметры для настройки УРОВ В18}{app_set:urov18}
+%===m>УРОВ В18|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В18 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В18 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В18 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В18 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В18 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В18 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В18 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В18 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В18 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В19
+\par
+Уставки УРОВ В19 представлены в таблице \ref{app_set:urov19}.
+
+\startTable{Параметры для настройки УРОВ В19}{app_set:urov19}
+%===m>УРОВ В19|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В19 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В19 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В19 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В19 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В19 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В19 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В19 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В19 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ  В19 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В20
+\par
+Уставки УРОВ В20 представлены в таблице \ref{app_set:urov20}.
+
+\startTable{Параметры для настройки УРОВ В20}{app_set:urov20}
+%===m>УРОВ В20|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В20 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В20 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В20 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В20 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В20 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В20 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В20 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В20 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В20 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В21
+\par
+Уставки УРОВ В21 представлены в таблице \ref{app_set:urov21}.
+
+\startTable{Параметры для настройки УРОВ В21}{app_set:urov21}
+%===m>УРОВ В21|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В21 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В21 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В21 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В21 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В21 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В21 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В21 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В21 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В21 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В22
+\par
+Уставки УРОВ В22 представлены в таблице \ref{app_set:urov22}.
+
+\startTable{Параметры для настройки УРОВ В22}{app_set:urov22}
+%===m>УРОВ В22|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В22 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В22 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В22 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В22 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В22 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В22 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В22 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В22 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В22 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В23
+\par
+Уставки УРОВ В23 представлены в таблице \ref{app_set:urov23}.
+
+\startTable{Параметры для настройки УРОВ В23}{app_set:urov23}
+%===m>УРОВ В23|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В23 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В23 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В23 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В23 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В23 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В23 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В23 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В23 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В23 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ В24
+\par
+Уставки УРОВ В24 представлены в таблице \ref{app_set:urov24}.
+
+\startTable{Параметры для настройки УРОВ В24}{app_set:urov24}
+%===m>УРОВ В24|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Режим УРОВ В24 & \centering Внеш \\ Внут \\ Вывод & \centering --- & \centering --- & \centering \arraybackslash Внеш \\
+\hline
+\centering Iср УРОВ В24 & \centering 0,01 ... 1,00 & \centering о.е. & \centering 0,01 & \centering \arraybackslash 0,04 \\
+\hline
+\centering k возврата Iср УРОВ В24 & \centering 0,00 ... 1,00 & \centering  & \centering 0,01 & \centering \arraybackslash 0,95 \\
+\hline
+\centering Фикс УРОВ В24 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Режим УРОВ В24 с дубл пуском & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering УРОВ В24 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр по I УРОВ В24 на себя & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering Тср УРОВ В24 на себя & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 0 \\
+\hline
+\centering Тср УРОВ В24 & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+%===m
+\stopTable
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ СШ
+\par
+Уставки УРОВ СШ представлены в таблице \ref{app_set:urovsh}.
+
+\startTable{Параметры для настройки УРОВ СШ}{app_set:urovsh}
+%===m>УРОВ СШ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering Тнеиспр УРОВ & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
+\hline
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО СШ
+\par
+Уставки ЛО СШ представлены в таблице \ref{app_set:losh}.
+
+\startTable{Параметры для настройки ЛО СШ}{app_set:losh}
+%===m>ЛО СШ|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО СШ } \\ \hline 
+\centering ЛО СШ & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЗАПВ внеш В1 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В2 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В3 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В4 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В5 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В6 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В7 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В8 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В9 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В10 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В11 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В12 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В13 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В14 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В15 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В16 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В17 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В18 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В19 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В20 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В21 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В22 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В23 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ внеш В24 & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Тфикс откл 1C & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
+\hline
+\centering Тфикс откл 2C & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 10000 \\
+\hline
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЗАПВ } \\ \hline 
+\centering ЗАПВ от УРОВ 1С & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ при опроб 1С & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Т АПВ 1пр 1С & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
+\hline
+\centering Тзапр АПВ 1С & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 50 \\
+\hline
+\centering ЗАПВ от УРОВ 2С & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering ЗАПВ при опроб 2С & \centering Введено \\ Выведено & \centering --- & \centering --- & \centering \arraybackslash Введено \\
+\hline
+\centering Т АПВ 1пр 2С & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
+\hline
+\centering Тзапр АПВ 2С & \centering 0 ... 300000 & \centering мс & \centering 5 & \centering \arraybackslash 50 \\
+\hline
+\centering 25 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 25 \\
+\hline
+\centering 20 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 20 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В1
+\par
+Уставки ЛО В1 представлены в таблице \ref{app_set:lov1}.
+
+\startTable{Параметры для настройки ЛО В1}{app_set:lov1}
+%===m>ЛО В1|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В1 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В2
+\par
+Уставки ЛО В2 представлены в таблице \ref{app_set:lov2}.
+
+\startTable{Параметры для настройки ЛО В2}{app_set:lov2}
+%===m>ЛО В2|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В2 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В3
+\par
+Уставки ЛО В3 представлены в таблице \ref{app_set:lov3}.
+
+\startTable{Параметры для настройки ЛО В3}{app_set:lov3}
+%===m>ЛО В3|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В3 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В4
+\par
+Уставки ЛО В4 представлены в таблице \ref{app_set:lov4}.
+
+\startTable{Параметры для настройки ЛО В4}{app_set:lov4}
+%===m>ЛО В4|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В4 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В5
+\par
+Уставки ЛО В5 представлены в таблице \ref{app_set:lov5}.
+
+\startTable{Параметры для настройки ЛО В5}{app_set:lov5}
+%===m>ЛО В5|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В5 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В6
+\par
+Уставки ЛО В6 представлены в таблице \ref{app_set:lov6}.
+
+\startTable{Параметры для настройки ЛО В6}{app_set:lov6}
+%===m>ЛО В6|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В6 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В7
+\par
+Уставки ЛО В7 представлены в таблице \ref{app_set:lov7}.
+
+\startTable{Параметры для настройки ЛО В7}{app_set:lov7}
+%===m>ЛО В7|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В7 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В8
+\par
+Уставки ЛО В8 представлены в таблице \ref{app_set:lov8}.
+
+\startTable{Параметры для настройки ЛО В8}{app_set:lov8}
+%===m>ЛО В8|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В8 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В9
+\par
+Уставки ЛО В9 представлены в таблице \ref{app_set:lov9}.
+
+\startTable{Параметры для настройки ЛО В9}{app_set:lov9}
+%===m>ЛО В9|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В9 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В10
+\par
+Уставки ЛО В10 представлены в таблице \ref{app_set:lov10}.
+
+\startTable{Параметры для настройки ЛО В10}{app_set:lov10}
+%===m>ЛО В10|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В10 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В11
+\par
+Уставки ЛО В11 представлены в таблице \ref{app_set:lov11}.
+
+\startTable{Параметры для настройки ЛО В11}{app_set:lov11}
+%===m>ЛО В11|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В11 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В12
+\par
+Уставки ЛО В12 представлены в таблице \ref{app_set:lov12}.
+
+\startTable{Параметры для настройки ЛО В12}{app_set:lov12}
+%===m>ЛО В12|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В12 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В13
+\par
+Уставки ЛО В13 представлены в таблице \ref{app_set:lov13}.
+
+\startTable{Параметры для настройки ЛО В13}{app_set:lov13}
+%===m>ЛО В13|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В13 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В14
+\par
+Уставки ЛО В14 представлены в таблице \ref{app_set:lov14}.
+
+\startTable{Параметры для настройки ЛО В14}{app_set:lov14}
+%===m>ЛО В14|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В14 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В15
+\par
+Уставки ЛО В15 представлены в таблице \ref{app_set:lov15}.
+
+\startTable{Параметры для настройки ЛО В15}{app_set:lov15}
+%===m>ЛО В15|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В15 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В16
+\par
+Уставки ЛО В16 представлены в таблице \ref{app_set:lov16}.
+
+\startTable{Параметры для настройки ЛО В16}{app_set:lov16}
+%===m>ЛО В16|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В16 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В17
+\par
+Уставки ЛО В17 представлены в таблице \ref{app_set:lov17}.
+
+\startTable{Параметры для настройки ЛО В17}{app_set:lov17}
+%===m>ЛО В17|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В17 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В18
+\par
+Уставки ЛО В18 представлены в таблице \ref{app_set:lov18}.
+
+\startTable{Параметры для настройки ЛО В18}{app_set:lov18}
+%===m>ЛО В18|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В18 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В19
+\par
+Уставки ЛО В19 представлены в таблице \ref{app_set:lov19}.
+
+\startTable{Параметры для настройки ЛО В19}{app_set:lov19}
+%===m>ЛО В19|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В19 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В20
+\par
+Уставки ЛО В20 представлены в таблице \ref{app_set:lov20}.
+
+\startTable{Параметры для настройки ЛО В20}{app_set:lov20}
+%===m>ЛО В20|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В20 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В21
+\par
+Уставки ЛО В21 представлены в таблице \ref{app_set:lov21}.
+
+\startTable{Параметры для настройки ЛО В21}{app_set:lov21}
+%===m>ЛО В21|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В21 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В22
+\par
+Уставки ЛО В22 представлены в таблице \ref{app_set:lov22}.
+
+\startTable{Параметры для настройки ЛО В22}{app_set:lov22}
+%===m>ЛО В22|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В22 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В23
+\par
+Уставки ЛО В23 представлены в таблице \ref{app_set:lov23}.
+
+\startTable{Параметры для настройки ЛО В23}{app_set:lov23}
+%===m>ЛО В23|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В23 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛО В24
+\par
+Уставки ЛО В24 представлены в таблице \ref{app_set:lov24}.
+
+\startTable{Параметры для настройки ЛО В24}{app_set:lov24}
+%===m>ЛО В24|general+-
+\rowcolor{gray!20} \multicolumn{5}{|c|}{ ЛО } \\ \hline 
+\centering ЛО В24 & \centering Выведено \\ Введено & \centering --- & \centering --- & \centering \arraybackslash Выведено \\
+\hline
+\centering 300 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 300 \\
+\hline
+\centering 200 мс & \centering 0 ... 300000 & \centering  & \centering 5 & \centering \arraybackslash 200 \\
+\hline
+%===m
+\stopTable
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Общая логика 
+\par
+Уставки общей логики представлены в таблице ?? \ref{app_set:obshlog1}.
+
+\startTable{Параметры для настройки общей логики}{app_set:obshlog1}
+%===m>Общая логика|general+-
+
+%===m
+\stopTable

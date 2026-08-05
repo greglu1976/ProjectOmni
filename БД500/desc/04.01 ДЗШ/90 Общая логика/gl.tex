@@ -1,3 +1,19 @@
+%%% ВЫБОР УСТРОЙСТВА %%%
+
+\IfStrEqCase{\devicecode}{%
+{ЮТКБ.656122.611-04.01 РЭ}{%
+% код для этого типа
+\def\Num{12}
+}%
+{ЮТКБ.656122.611-04.02 РЭ}{%
+\def\Num{24}
+}%
+}
+[
+\def\Num{??}
+]
+
+
 \color{unidarkgreen}{\subsection{Общая логика}}
 \color{black}
 
@@ -22,7 +38,7 @@
 \medskip
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/04.01 ДЗШ/90 Общая логика/img/GL.pdf}
+\includegraphics[width=0.9\textwidth,height=0.9\textheight,keepaspectratio]{\fbpath/04.01 ДЗШ/90 Общая логика/img/GL_\Num.pdf}
 \captionof{figure}{Функциональная схема общей логики}\label{pic:GL}
 \end{figure}
 

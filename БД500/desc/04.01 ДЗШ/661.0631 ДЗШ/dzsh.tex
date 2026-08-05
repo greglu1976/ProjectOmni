@@ -1,3 +1,19 @@
+%%% ВЫБОР УСТРОЙСТВА %%%
+
+\IfStrEqCase{\devicecode}{%
+{ЮТКБ.656122.611-04.01 РЭ}{%
+% код для этого типа
+\def\Num{12}
+}%
+{ЮТКБ.656122.611-04.02 РЭ}{%
+\def\Num{24}
+}%
+}
+[
+\def\Num{??}
+]
+
+
 \color{unidarkgreen}{\subsection{Дифференциальная защита шин}}
 \color{black}
 
@@ -56,11 +72,11 @@
 \hline
 \centering\arraybackslash …  & \centering\arraybackslash … & \centering\arraybackslash … & \centering\arraybackslash … \\
 \hline
-\centering\arraybackslash Номинальный первичный ток ТТ В12, А  & \centering\arraybackslash 1…12000 & \centering\arraybackslash 1 & \centering\arraybackslash 1000 \\
+\centering\arraybackslash Номинальный первичный ток ТТ В\Num, А  & \centering\arraybackslash 1…12000 & \centering\arraybackslash 1 & \centering\arraybackslash 1000 \\
 \hline
-\centering\arraybackslash Номинальный вторичный ток ТТ В12, А  & \centering\arraybackslash 1…12000 & \centering\arraybackslash 1 & \centering\arraybackslash 1000 \\
+\centering\arraybackslash Номинальный вторичный ток ТТ В\Num, А  & \centering\arraybackslash 1…12000 & \centering\arraybackslash 1 & \centering\arraybackslash 1000 \\
 \hline
-\centering\arraybackslash Инверсия В12  & \centering Введено \\ Выведено & \centering --- & \centering\arraybackslash Выведено \\
+\centering\arraybackslash Инверсия В\Num  & \centering Введено \\ Выведено & \centering --- & \centering\arraybackslash Выведено \\
 \hline
 \centering\arraybackslash Номинальное первичное линейное напряжение ТН 1С, кВ  & \centering\arraybackslash 0,22…1150,00 & \centering\arraybackslash 0,01 & \centering\arraybackslash 110 \\
 \hline
