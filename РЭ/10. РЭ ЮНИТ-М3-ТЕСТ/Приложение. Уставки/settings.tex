@@ -3,191 +3,220 @@
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% База %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Общая логика
 \par
-В таблице \ref{obsh:tbl1} приведены номинальные параметры сети и основные настройки АРН.
+Уставки общей логики представлены в таблице \ref{app_set:fpv4}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Основные настройки и номинальные параметры сети\hfill\vspace{-0.5\baselineskip}}\label{obsh:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{obsh:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
-\hline
-\endlastfoot
-%==+t1*КСВ|Общая логика
-\centering Схема подключения вторичных обмоток ТН 1 секции (Подкл. ЦН ТН1)  & \centering Подкл. ЦН ТН1 & \centering Ua / Ub / Uc \\ Uab / Ubc / 3U0 & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Схема подключения вторичных обмоток ТН 2 секции (Подкл. ЦН ТН2)  & \centering Подкл. ЦН ТН2 & \centering Ua / Ub / Uc \\ Uab / Ubc / 3U0 & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Измеряемая фаза тока вводного выключателя 1 секции (Фаза тока Iвв1)  & \centering Фаза тока Iвв1 & \centering А \\ В \\ С & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Измеряемая фаза тока секционного выключателя 1 секции (Фаза тока Iсв1)  & \centering Фаза тока Iсв1 & \centering А \\ В \\ С & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Измеряемая фаза тока вводного выключателя 2 секции (Фаза тока Iвв2)  & \centering Фаза тока Iвв2 & \centering А \\ В \\ С & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Измеряемая фаза тока секционного выключателя 2 секции (Фаза тока Iсв2)  & \centering Фаза тока Iсв2 & \centering А \\ В \\ С & \centering -- & \centering \arraybackslash -- \\
-\hline
-\centering Номинальное напряжение 1 секции (Uном 1с)  & \centering Uном 1с & \centering 100,00...999999,99 & \centering В & \centering \arraybackslash 0,01 \\
-\hline
-\centering Номинальное напряжение 2 секции (Uном 2с)  & \centering Uном 2с & \centering 100,00...999999,99 & \centering В & \centering \arraybackslash 0,01 \\
-\hline
-\centering Номинальный ток ввода 1 секции (Iном вв1)  & \centering Iном вв1 & \centering 1,00...99999,99 & \centering А & \centering \arraybackslash 0,01 \\
-\hline
-\centering Номинальный ток ввода 2 секции (Iном вв2)  & \centering Iном вв2 & \centering 1,00...99999,99 & \centering А & \centering \arraybackslash 0,01 \\
-\hline
-\centering Номинальный ток обмотки трансформатора с РПН (Iном РПН)  & \centering Iном РПН & \centering 1,00...99999,99 & \centering А & \centering \arraybackslash 0,01 \\
-\hline
-\centering Активное сопротивление сети 1 секции для линейной компенсации (Rлинии 1секции)  & \centering Rлинии 1секции & \centering 0,00...99999,99 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Реактивное сопротивление сети 1 секции для линейной компенсации (Xлинии 1секции)  & \centering Xлинии 1секции & \centering 0,00...99999,99 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Активное сопротивление сети 2 секции для линейной компенсации (Rлинии 2секции)  & \centering Rлинии 2секции & \centering 0,00...99999,99 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-\centering Реактивное сопротивление сети 2 секции для линейной компенсации (Xлинии 2секции)  & \centering Xлинии 2секции & \centering 0,00...99999,99 & \centering Ом & \centering \arraybackslash 0,01 \\
-\hline
-%===t1
-\hline
-\end{longtable}
-\normalsize
+\startTable{Параметры для настройки общей логики}{app_set:fpv4}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% АРН %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%===m>Общая логика|general+-
+\centering Схема подкл цепей треуг & \centering Uни/Uнк / Uнф/Uфк / Uни/Uиф/Uфк / Uнк & \centering -- & \centering -- & \centering \arraybackslash Uни/Uиф/Uфк \\
+\hline
+\centering Особая фаза ТН & \centering A / B / C & \centering -- & \centering -- & \centering \arraybackslash A \\
+\hline
+\centering Направл векторов звезды и треуг & \centering Совпадает / Не совпадает & \centering -- & \centering -- & \centering \arraybackslash Совпадает \\
+\hline
+\centering Контр ОТ терминала & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр SG I & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр SG U звезда 1СШ & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр SG U треуг 1СШ & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр SG U звезда 2СШ & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр SA цепей управления & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр SA цепей откл от УРОВ & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр SA цепей откл от ЗНР & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
+\hline
+\centering Контр SA цепей включения в ДЗШ & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
+\hline
+%===m
+\stopTable
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Общая логика
 \par
-В таблице \ref{kntr:tbl1} приведены параметры, необходимые для настройки автоматики регулирования напряжения.
+Уставки общей логики представлены в таблице \ref{app_set:fpv4}.
 
-\footnotesize
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Параметры для настройки АРН\hfill\vspace{-0.5\baselineskip}}\label{kntr:tbl1}\\ 
+\startTable{Параметры для настройки общей логики}{app_set:fpv4}
+
+%===m>АОДС СВ|general+-
+\multicolumn{5}{|c|}{ АОДС } \\ \hline 
+\centering АОДС & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
+\centering Iср АОДС & \centering 40,000...30000,000 & \centering А (первич.) & \centering 0,001 & \centering \arraybackslash 30000,000 \\
 \hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{kntr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+%===m
+\stopTable
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Общая логика
+\par
+Уставки КСВ СВ представлены в таблице \ref{app_set:fpv4}.
+
+\startTable{Параметры для настройки КСВ СВ}{app_set:fpv4}
+
+%===m>КСВ СВ|general+-
+\centering КСВ D & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\rowcolor{gray!30}
-Параметр (Параметр на ИЧМ) & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-%\hline
-\endfoot
+\centering Контр. ЭМО в любом пол. В & \centering Выведено / ЭМО1 / ЭМО2 / ЭМО1 и ЭМО2 & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\endlastfoot
-%==+t1*ATCC1|ARNT_TTCC
-\centering Источник сигнала положения РПН (Датчик\_РПН)  & \centering Датчик\_РПН & \centering Внутренний счетчик \\ Токовая петля 4(0)-20мА \\ GOOSE \\ BCD-код & \centering -- & \centering \arraybackslash -- \\
+\centering Контр. ОТ сигн. В & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Первоначальное значение счетчика положений РПН (Нач\_полож\_РПН)  & \centering Нач\_полож\_РПН & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
+\centering Тср Неиспр. ЦУ В & \centering 0...300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\centering Номер крайнего нижнего положения РПН (Мин\_положение\_РПН)  & \centering Мин\_положение\_РПН & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
+\centering Тср Пруж. не заведены В & \centering 0...300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\centering Номер крайнего верхнего положения РПН (Макс\_положение\_РПН)  & \centering Макс\_положение\_РПН & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
+\centering Тср Неиспр. обогр. В & \centering 0...300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\centering Направление счета положений (Направление\_счета)  & \centering Направление\_счета & \centering Прямо \\ Обратно & \centering -- & \centering \arraybackslash -- \\
+\centering Откл от Авар. давл. SF6 ТТ В & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Сигнал токовой петли, соответствующий крайнему нижнему положению РПН (Iмин\_ТП\_РПН)  & \centering Iмин\_ТП\_РПН & \centering 0...4000 & \centering мкА & \centering \arraybackslash 1 \\
+\centering Тср Неиспр. обогр. ТТ В & \centering 0...300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\centering Сигнал токовой петли, соответствующий крайнему верхнему положению РПН (Iмакс\_ТП\_ РПН)  & \centering Iмакс\_ТП\_ РПН & \centering 5000...20000 & \centering мкА & \centering \arraybackslash 1 \\
+\centering Обест. ЭМУ от Авар. давл. SF6 В & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Положение привода, далее которого блокируются автоматические команды прибавить (Верхн\_разреш\_полож)  & \centering Верхн\_разреш\_полож & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
+\centering Тср защиты ЭМВ В & \centering 0...300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\centering Положение привода, далее которого блокируются автоматические команды убавить (Нижн\_разреш\_полож)  & \centering Нижн\_разреш\_полож & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
+\centering Тср защиты ЭМО1 В & \centering 0...300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\centering Промежуточное 1 положение РПН (Промежут\_1\_полож)  & \centering Промежут\_1\_полож & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+\centering Тср защиты ЭМО2 В & \centering 0...300000 & \centering мс & \centering 5 & \centering \arraybackslash 1000 \\
 \hline
-\centering Промежуточное 2 положение РПН (Промежут\_2\_полож)  & \centering Промежут\_2\_полож & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+\centering Реле фиксации В & \centering РФК / РФП & \centering -- & \centering -- & \centering \arraybackslash РФК \\
 \hline
-\centering Промежуточное 3 положение РПН (Промежут\_3\_полож)  & \centering Промежут\_3\_полож & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+\centering Кол-во ЭМО В & \centering Один / Два & \centering -- & \centering -- & \centering \arraybackslash Два \\
 \hline
-\centering Промежуточное 4 положение РПН (Промежут\_4\_полож)  & \centering Промежут\_4\_полож & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БНН 1СШ
+\par
+Уставки КСВ СВ представлены в таблице \ref{app_set:fpv4}.
+
+\startTable{Параметры для настройки КСВ СВ}{app_set:fpv4}
+
+%===m>БНН 1СШ|general+-
+\multicolumn{5}{|c|}{ БНН } \\ \hline 
+\centering Контроль ЦН & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Промежуточное 5 положение РПН (Промежут\_5\_полож)  & \centering Промежут\_5\_полож & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+\centering 0,2Uном & \centering 1100,000...330000,000 & \centering кВ (первич.) & \centering 0,001 & \centering \arraybackslash 110000,000 \\
 \hline
-\centering Центр зоны нечувствительности (Uпод)  & \centering Uпод & \centering 0,85...1,45 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering dI1 БНН & \centering 40,000...30000,000 & \centering А (первич.) & \centering 0,001 & \centering \arraybackslash 500,000 \\
 \hline
-\centering Ширина зоны нечувствительности (dUпод)  & \centering dUпод & \centering 0,01...0,20 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering U1 мин БНН & \centering 1100,000...330000,000 & \centering кВ (первич.) & \centering 0,001 & \centering \arraybackslash 330000,000 \\
 \hline
-\centering Уровень напряжения, при превышении которого автоматические команды на снижение формируются с ускоренной выдержкой времени T3 (U\verb|>>|сраб)  & \centering U\verb|>>|сраб & \centering 1,00...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering 0,05Iном & \centering 40,000...30000,000 & \centering А (первич.) & \centering 0,001 & \centering \arraybackslash 50,000 \\
 \hline
-\centering Величина тока перегрузки РПН (Iрпн>блк)  & \centering Iрпн>блк & \centering 1,00...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering U2/U1 БНН & \centering 0,0050...1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
 \hline
-\centering Блокировка от контролируемой секции (БлкКонтрСекц)  & \centering БлкКонтрСекц & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering 0,85 Uном & \centering 1100,000...330000,000 & \centering кВ (первич.) & \centering 0,001 & \centering \arraybackslash 18700,000 \\
 \hline
-\centering Величина тока перегрузки для запрета авторегулирования на повышение (I>блк)  & \centering I>блк & \centering 1,000...2,000 & \centering о.е. & \centering \arraybackslash 0,001 \\
+\centering 3I0/I1 БНН & \centering 0,0050...1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,0000 \\
 \hline
-\centering Величина напряжения НП для запрета авторегулирования на повышение (3U0блк)  & \centering 3U0блк & \centering 0,00...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering 0,085Uном & \centering 1100,000...330000,000 & \centering кВ (первич.) & \centering 0,001 & \centering \arraybackslash 18700,000 \\
 \hline
-\centering Величина напряжения ОП для запрета авторегулирования (U2блк)  & \centering U2блк & \centering 0,00...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering Uср ИО БНН & \centering 1100,000...330000,000 & \centering кВ (первич.) & \centering 0,001 & \centering \arraybackslash 330000,000 \\
 \hline
-\centering Величина максимального напряжения для запрета авторегулирования на повышение (U\verb|>>|блк)  & \centering U\verb|>>|блк & \centering 1,00...2,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering Iном & \centering 40,000...30000,000 & \centering А (первич.) & \centering 0,001 & \centering \arraybackslash 30000,000 \\
 \hline
-\centering Величина минимального напряжения для запрета авторегулирования (U\verb|<<|блк)  & \centering U\verb|<<|блк & \centering 0,00...1,00 & \centering о.е. & \centering \arraybackslash 0,01 \\
+\centering 0,05Uном & \centering 1100,000...330000,000 & \centering кВ (первич.) & \centering 0,001 & \centering \arraybackslash 11000,000 \\
 \hline
-\centering Время задержки срабатывания на выдачу первой команды в автоматическом режиме (T1)  & \centering T1 & \centering 1000...200000 & \centering мс & \centering \arraybackslash 1 \\
+\centering Uф мин БНН & \centering 1100,000...330000,000 & \centering кВ (первич.) & \centering 0,001 & \centering \arraybackslash 330000,000 \\
 \hline
-\centering Время задержки срабатывания на выдачу второй и последующих команд в автоматическом режиме (T2)  & \centering T2 & \centering 100...200000 & \centering мс & \centering \arraybackslash 1 \\
+\centering Uср БНН-ф & \centering 1100,000...330000,000 & \centering кВ (первич.) & \centering 0,001 & \centering \arraybackslash 330000,000 \\
 \hline
-\centering Время задержки выдачи ускоренной команды убавить при значительном повышении напряжения в автоматическом режиме (T3)  & \centering T3 & \centering 100...10000 & \centering мс & \centering \arraybackslash 1 \\
+\centering I2/I1 БНН & \centering 0,005...1,500 & \centering о.е. & \centering 0,005 & \centering \arraybackslash 1,500 \\
 \hline
-\centering Выдержка времени снятия команды управления после появления сигнала переключения привода (Твозвр)  & \centering Твозвр & \centering 0...10000 & \centering мс & \centering \arraybackslash 1 \\
+\centering 0,05Uном & \centering 1100,000...330000,000 & \centering кВ (первич.) & \centering 0,001 & \centering \arraybackslash 11000,000 \\
 \hline
-\centering Максимальное время реакции привода РПН на команду управления (Тпуск)  & \centering Тпуск & \centering 100...10000 & \centering мс & \centering \arraybackslash 1 \\
+\centering БНН комб & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Максимальное время одного переключения привода РПН (Тперекл)  & \centering Тперекл & \centering 100...100000 & \centering мс & \centering \arraybackslash 1 \\
+\centering Контр. обрыва НП & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Режим команды на отключение питания ПМ при самопроизвольном переключении (Режим\_откл\_ПМ)  & \centering Режим\_откл\_ПМ & \centering 1 секунда \\ Непрерывно (до сброса) & \centering -- & \centering \arraybackslash -- \\
+\centering ИО БНН & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Ресурс привода РПН по количеству операций переключения (Ресурс\_переключений)  & \centering Ресурс\_переключений & \centering 1...1000000 & \centering -- & \centering \arraybackslash 1 \\
+\centering БНН-ф & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Начальное значение счетчика переключений привода РПН (Нач\_знач\_счетчика)  & \centering Нач\_знач\_счетчика & \centering 1...1000000 & \centering -- & \centering \arraybackslash 1 \\
+\centering Конт автомата ТН & \centering НЗ / НО & \centering -- & \centering -- & \centering \arraybackslash НЗ \\
 \hline
-\centering Метод параллельного регулирования (Метод\_парал\_рег)  & \centering Метод\_парал\_рег & \centering Не используется \\ Ведущий \\ Ведомый & \centering -- & \centering \arraybackslash -- \\
+\centering Контр. 3I0 БНН-ф & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Контроль рассогласования приводов РПН трансформаторов в режиме параллельного регулирования (Контроль\_рассогл)  & \centering Контроль\_рассогл & \centering Внешний сигнал \\ Сигналы положений приводов РПН & \centering -- & \centering \arraybackslash -- \\
+\centering Тсигн неиспр ЦН & \centering 0...300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\centering Источник данных о положении РПН параллельного трансформатора (Датчик\_парал\_РПН)  & \centering Датчик\_парал\_РПН & \centering Токовая петля 4(0)-20мА \\ GOOSE \\ BCD-код & \centering -- & \centering \arraybackslash -- \\
+\centering Ua ВО-2 & \centering Uни / -Uни / Uиф / -Uиф / Uфк / -Uфк & \centering -- & \centering -- & \centering \arraybackslash Uни \\
 \hline
-\centering Максимально допустимый разбег приводов РПН при параллельном регулировании трансформаторов (Макс\_разбег\_РПН)  & \centering Макс\_разбег\_РПН & \centering 0...40 & \centering -- & \centering \arraybackslash 1 \\
+\centering Ub ВО-2 & \centering Uни / -Uни / Uиф / -Uиф / Uфк / -Uфк & \centering -- & \centering -- & \centering \arraybackslash Uни \\
 \hline
-\centering Время переключения РПН трансформаторов при параллельном регулировании (Тпарал\_перекл)  & \centering Тпарал\_перекл & \centering 100...100000 & \centering мс & \centering \arraybackslash 1 \\
+\centering Uc ВО-2 & \centering Uни / -Uни / Uиф / -Uиф / Uфк / -Uфк & \centering -- & \centering -- & \centering \arraybackslash Uни \\
 \hline
-\centering Номер крайнего нижнего положения РПН параллельного трансформатора (Мин\_полож\_пар\_РПН)  & \centering Мин\_полож\_пар\_РПН & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% УРОВ СВ
+\par
+Уставки КСВ СВ представлены в таблице \ref{app_set:fpv4}.
+
+\startTable{Параметры для настройки КСВ СВ}{app_set:fpv4}
+
+%===m>УРОВ СВ|general+-
+\multicolumn{5}{|c|}{ УРОВ } \\ \hline 
+\centering УРОВ & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Номер крайнего верхнего положения РПН параллельного трансформатора (Макс\_полож\_пар\_РПН)  & \centering Макс\_полож\_пар\_РПН & \centering 1...40 & \centering -- & \centering \arraybackslash 1 \\
+\centering Iср УРОВ & \centering 40,000...30000,000 & \centering А (первич.) & \centering 0,001 & \centering \arraybackslash 30000,000 \\
 \hline
-\centering Сигнал токовой петли, соответствующий крайнему нижнему положению РПН параллельного трансформатора (Iмин\_ТП\_парал\_РПН)  & \centering Iмин\_ТП\_парал\_РПН & \centering 0...4000 & \centering мкА & \centering \arraybackslash 1 \\
+\centering УРОВ на себя & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Сигнал токовой петли, соответствующий крайнему верхнему положению РПН параллельного трансформатора (Iмакс\_ТП\_парал\_РПН)  & \centering Iмакс\_ТП\_парал\_РПН & \centering 5000...20000 & \centering мкА & \centering \arraybackslash 1 \\
+\centering Контр по I УРОВ на себя & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Выдержка времени срабатывания сигнализации (Тсигн)  & \centering Тсигн & \centering 1...100000 & \centering мс & \centering \arraybackslash 1 \\
+\centering Фикс УРОВ & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Контроль положения блока испытательного №1 (Контроль\_БИ\_1)  & \centering Контроль\_БИ\_1 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Режим УРОВ с дубл пуском & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Контроль положения блока испытательного №2 (Контроль\_БИ\_2)  & \centering Контроль\_БИ\_2 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Тср УРОВ & \centering 0...300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\centering Контроль положения блока испытательного №3 (Контроль\_БИ\_3)  & \centering Контроль\_БИ\_3 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Тср УРОВ на себя & \centering 0...300000 & \centering мс & \centering 5 & \centering \arraybackslash 300000 \\
 \hline
-\centering Контроль положения блока испытательного №4 (Контроль\_БИ\_4)  & \centering Контроль\_БИ\_4 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+%===m
+\stopTable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% КПОН
+\par
+Уставки КПОН представлены в таблице \ref{app_set:fpv4}.
+
+\startTable{Параметры для настройки КПОН}{app_set:fpv4}
+
+%===m>КПОН|general+-
+\multicolumn{5}{|c|}{ КПОН 1СШ } \\ \hline 
+\centering КПОН 1СШ & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-\centering Контроль положения блока испытательного №5 (Контроль\_БИ\_5)  & \centering Контроль\_БИ\_5 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering U2 КПОН 1СШ & \centering 0,0050...1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
 \hline
-\centering Контроль положения блока испытательного №6 (Контроль\_БИ\_6)  & \centering Контроль\_БИ\_6 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Uл КПОН 1СШ & \centering 0,0050...1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0500 \\
 \hline
-\centering Контроль положения блока испытательного №7 (Контроль\_БИ\_7)  & \centering Контроль\_БИ\_7 & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Тип КПОН 1СШ & \centering Umin, U2 / Umin & \centering -- & \centering -- & \centering \arraybackslash Umin, U2 \\
 \hline
-\centering Контроль положения двери (Контроль\_двери)  & \centering Контроль\_двери & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\centering Неиспр ТН 1СШ & \centering Выведено / Пуск КПОН / Блок КПОН & \centering -- & \centering -- & \centering \arraybackslash Блок КПОН \\
 \hline
-\centering Контроль оперативного тока технологической сигнализации (Контроль\_опер\_тока)  & \centering Контроль\_опер\_тока & \centering Не предусмотрено \\ Предусмотрено & \centering -- & \centering \arraybackslash -- \\
+\multicolumn{5}{|c|}{ КПОН 2СШ } \\ \hline 
+\centering КПОН 2СШ & \centering Выведено / Введено & \centering -- & \centering -- & \centering \arraybackslash Выведено \\
 \hline
-%===t1
-\end{longtable}
-\normalsize
+\centering U2 КПОН 2СШ & \centering 0,0050...1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 1,5000 \\
+\hline
+\centering Uл КПОН 2СШ & \centering 0,0050...1,5000 & \centering о.е. & \centering 0,0001 & \centering \arraybackslash 0,0500 \\
+\hline
+\centering Тип КПОН 2СШ & \centering Umin, U2 / Umin & \centering -- & \centering -- & \centering \arraybackslash Umin, U2 \\
+\hline
+\centering Неиспр ТН 2СШ & \centering Выведено / Пуск КПОН / Блок КПОН & \centering -- & \centering -- & \centering \arraybackslash Блок КПОН \\
+\hline
+%===m
+\stopTable

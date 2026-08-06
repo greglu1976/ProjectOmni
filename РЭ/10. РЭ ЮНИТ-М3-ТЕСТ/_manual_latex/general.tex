@@ -7,7 +7,7 @@
 \newcommand{\genpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/103. Общие разделы РЭ/}
 
 % ПОДКЛЮЧАЕМ ПУТИ К ФАЙЛАМ TEX ПРИЛОЖЕНИЙ
-\newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/09. РЭ ЮНИТ-М3-АРНТ/}
+\newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/10. РЭ ЮНИТ-М3-ТЕСТ/}
 
 % ЗАДАЕМ ПЕРЕМЕННЫЕ ТЕКУЩЕЙ НОМЕР РЕДАКЦИИ И ДАТА РЕДАКЦИИ
 \def\rev{1.4}
@@ -74,19 +74,19 @@
 \input{section2.tex}
 
 %===f
-\input{\fbpath/500. АРН общ/_latex/obsh.tex}
+%\input{\fbpath/500. АРН общ/_latex/obsh.tex}
 
-\input{\fbpath/501. Контроль РПН/_latex/kontrrpn.tex}
+%\input{\fbpath/501. Контроль РПН/_latex/kontrrpn.tex}
 
-\input{\fbpath/502. Авт рег/_latex/avtreg.tex}
+%\input{\fbpath/502. Авт рег/_latex/avtreg.tex}
 
-\input{\fbpath/503. Привод РПН/_latex/privod.tex}
+%\input{\fbpath/503. Привод РПН/_latex/privod.tex}
 
-\input{\fbpath/504. Положение РПН/_latex/polrpn.tex}
+%\input{\fbpath/504. Положение РПН/_latex/polrpn.tex}
 
-\input{\fbpath/505. Паралл/_latex/regU.tex}
+%\input{\fbpath/505. Паралл/_latex/regU.tex}
 
-\input{\fbpath/506. Сигнализация/_latex/sign.tex}
+%\input{\fbpath/506. Сигнализация/_latex/sign.tex}
 
 %===f
 
@@ -99,27 +99,27 @@
 
 % ИСПОЛЬЗОВАНИЕ ПО НАЗНАЧЕНИЮ
 \newpage
-\input{section3.tex}
+%\input{section3.tex}
 
 % ТЕХОБСЛУЖИВАНИЕ И РЕМОНТ
 \newpage
-\input{\genpath/Тех обсл и ремонт/_latex/repair.tex}
+%\input{\genpath/Тех обсл и ремонт/_latex/repair.tex}
 
 % ТРАНСПОРТИРОВАНИЕ
 %\newpage
-\input{\genpath/Трансп и хранение/_latex/trans.tex}
+%\input{\genpath/Трансп и хранение/_latex/trans.tex}
 
 %УТИЛИЗАЦИЯ
 %\newpage
-\input{\genpath/Утилизация/_latex/util.tex}
+%\input{\genpath/Утилизация/_latex/util.tex}
 
 %ГАРАНТИЯ
 %\newpage
-\input{\genpath/Гарантия/_latex/garant.tex}
+%\input{\genpath/Гарантия/_latex/garant.tex}
 
 %ТЕХПОДДЕРЖКА
 %\newpage
-\input{\genpath/Тех поддержка/_latex/support.tex}
+%\input{\genpath/Тех поддержка/_latex/support.tex}
 
 % ПРИЛОЖЕНИЯ
 
@@ -129,44 +129,45 @@
 %===a
 
 \newpage
+\input{\apppath/Приложение. Уставки/settings_macros.tex}
 \input{\apppath/Приложение. Уставки/settings.tex}
 
 %ПРИЛОЖЕНИЕ
 \newpage
-\input{\apppath/Приложение. Карта/_latex/apporder.tex}
+%\input{\apppath/Приложение. Карта/_latex/apporder.tex}
 
 %ПРИЛОЖЕНИЕ
 \newpage
-\input{\apppath/Приложение. ФСУ/_latex/app2.tex}
+%\input{\apppath/Приложение. ФСУ/_latex/app2.tex}
 
 %ПРИЛОЖЕНИЕ
 \newpage
-\input{\apppath/Приложение. Аналоги/_latex/appanalog.tex}
+%\input{\apppath/Приложение. Аналоги/_latex/appanalog.tex}
 
 
 %ПРИЛОЖЕНИЕ
 \newpage
-\input{\apppath/Приложение. Подкл вх и вых/_latex/appins.tex}
+%\input{\apppath/Приложение. Подкл вх и вых/_latex/appins.tex}
 
 
 %ПРИЛОЖЕНИЕ Б
 \newpage
-\input{\apppath/Приложение. Размеры/_latex/app1.tex}
+%\input{\apppath/Приложение. Размеры/_latex/app1.tex}
 
 %ПРИЛОЖЕНИЕ
 \newpage
-\input{\genpath/Элементы ФС/_latex/appElmtFSU.tex}
+%\input{\genpath/Элементы ФС/_latex/appElmtFSU.tex}
 
 
 
 %ПРИЛОЖЕНИЕ
 %===a1
 \newpage
-\input{\apppath/Приложение А. Сигналы/_latex/app1.tex}
+%\input{\apppath/Приложение А. Сигналы/_latex/app1.tex}
 %===a1
 
-\newpage
-\input{\apppath/Приложение. Паралл/_latex/app1.tex}
+\newpage%
+%\input{\apppath/Приложение. Паралл/_latex/app1.tex}%
 
 %===a
 
@@ -175,6 +176,6 @@
 
 %ЛИСТ РЕГИСТРАЦИИ ИЗМЕНЕНИЙ
 \newpage
-\input{\genpath/Лист рег изм/_latex/izm.tex}
+%\input{\genpath/Лист рег изм/_latex/izm.tex}
 
 \end{document}
