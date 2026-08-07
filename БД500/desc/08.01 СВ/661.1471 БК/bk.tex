@@ -1,7 +1,11 @@
-\color{unidarkgreen}{\subsection{Блокировка при качаниях (БК)}}
+\color{unidarkgreen}{\subsection{Блокировка при качаниях}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\begin{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ОБЩИЕ СВЕДЕНИЯ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Общие сведения
+
+\begin{enumerate}
 
 \item
 Блокировка при качаниях (БК) предназначена для исключения ложных срабатываний ДЗ при
@@ -10,23 +14,36 @@
 \item 
 В устройстве реализовано два способа блокировки:
 
-\begin{enumerate}[label=\arabic*)]
+\begin{itemize}
 \item по приращению токов прямой и обратной последовательности -- БК-I;
 \item по скорости изменения величины сопротивления $dZ/dt$ -- БК-Z.
+\end{itemize}
+
 \end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БК-I %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item  Блокировка по приращению токов прямой и обратной последовательности (БК-I)
+
+\begin{enumerate}
 
 \item 
 БК-I принимает сигналы от чувствительного и грубого измерительных органов (ИО), контролирующих
 приращения токов прямой и обратной последовательностей. На выходе блокировки при качаниях формируется
 два сигнала:
-\begin{enumerate}[label=\arabic*)]
+\begin{itemize}
 \item \textit{БК-I-б} -- вводит в работу быстродействующие ступени ДЗ;
 \item \textit{БК-I-м} -- вводит в работу медленнодействующие ступени ДЗ.
-\end{enumerate}
+\end{itemize}
+
+\item
+Функциональная схема логики БК по приращению токов прямой и обратной последовательности (БК-I) приведена на рисунке \ref{pict_bk:BK_I}.
+
+\medskip
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/661.1471 БК/img/BK_I.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/08.01 СВ/661.1471 БК/img/BK_I.pdf}
 \captionof{figure}{Функциональная схема БК-I}\label{pict_bk:BK_I}
 \end{figure}
 
@@ -46,19 +63,40 @@
 \item
 Оперативный ввод/вывод БК-I производится с помощью БУ (блоков управления функциями) \textit{«Вывод БК»}.
 
+\item
+Уставки БК по приращению токов прямой и обратной последовательности (БК-I) представлены в таблице~\ref{app_set:bk}.
+
+\item
+Временная диаграмма работы БК по приращению токов прямой и обратной последовательности (БК-I) приведена на рисунке \ref{pict_bk:BK_I_diagram}.
+
+\medskip
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/661.1471 БК/img/BK_I_diagram.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/08.01 СВ/661.1471 БК/img/BK_I_diagram.pdf}
 \captionof{figure}{Временная диаграмма работы БК-I}\label{pict_bk:BK_I_diagram}
 \end{figure}
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% БК-Z %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item  Блокировка по скорости изменения величины сопротивления dZ/dt (БК-Z)
+
+\begin{enumerate}
 
 \item
 БК-Z основан на измерении времени прохождения годографом полного сопротивления области между
 внешней и внутренней характеристик реле сопротивления.
 
+\item
+Функциональная схема логики БК по скорости изменения величины сопротивления dZ/dt (БК-Z) приведена на рисунке \ref{pict_bk:BK_Z}.
+
+\medskip
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/661.1471 БК/img/BK_Z.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/08.01 СВ/661.1471 БК/img/BK_Z.pdf}
 \captionof{figure}{Функциональная схема БК-Z}\label{pict_bk:BK_Z}
 \end{figure}
 
@@ -67,6 +105,15 @@
 характеристикой срабатывания второй или третьей ступени ДЗ -- выбор осуществляется программным
 переключателем \textbf{«ИО БК-Z»}. Внешняя характеристика срабатывания реле сопротивления отстоит от
 внутренней характеристики по оси R на величину $\Delta$R и по оси $X$ на величину $\Delta$X.
+
+\item
+Характеристики реле сопротивления БК по скорости изменения величины сопротивления dZ/dt (БК-Z) приведена на рисунке \ref{pict_bk:char_relay_res}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.45\textwidth,height=0.45\textheight,keepaspectratio]{\fbpath/08.01 СВ/661.1471 БК/img/char_relay_res.pdf}
+\captionof{figure}{Характеристики реле сопротивления, используемые для блокировки при качаниях по скорости изменения сопротивления}\label{pict_bk:char_relay_res}
+\end{figure}
 
 \item 
 Значения параметров $\Delta$R и $\Delta$X не регулируются и зависят от номинального тока устройства.
@@ -91,34 +138,9 @@
 \item
 Оперативный ввод/вывод БК-Z производится с помощью БУ (блоков управления функциями) \textit{«Вывод БК»}.
 
+\item
+Уставки БК по скорости изменения величины сопротивления dZ/dt (БК-Z) представлены в таблице~\ref{app_set:bk}.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.45\textwidth,height=0.45\textheight,keepaspectratio]{\fbpath/661.1471 БК/img/char_relay_res.pdf}
-\captionof{figure}{Характеристики реле сопротивления, используемые для блокировки при качаниях по скорости изменения сопротивления}\label{pict_bk:char_relay_res}
-\end{figure}
-
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставочных параметров БК\hfill\vspace{-0.5\baselineskip}}\label{bk:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{bk:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\
-\hline
-\endhead
-
-%===m>БК|-
-%===m
-\end{longtable}
-\normalsize
+\end{enumerate}
 
 \end{enumerate}
