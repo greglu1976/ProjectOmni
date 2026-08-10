@@ -1,23 +1,26 @@
-\color{unidarkgreen}{\subsection{Защита от непереключения фаз (ЗНФ)}}
+\color{unidarkgreen}{\subsection{Защита от неполнофазного режима}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\begin{enumerate}
 \item
 Для контроля отключения всех фаз выключателя и ликвидации неполнофазного режима предусмотрена
-функция защиты от неполнофазного режима (ЗНР) 
+функция защиты от неполнофазного режима (ЗНР).
+
+\item
+Функциональная схема ЗНР представлена на рисунке \ref{pict_znr:ZNR}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/661.0221 ЗНР/img/ZNR.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/08.01 СВ/661.0221 ЗНР/img/ZNR.pdf}
 \captionof{figure}{Функциональная схема ЗНР}\label{pict_znr:ZNR}
 \end{figure}
 
 \item
 Пуск ЗНР происходит при выполнении следующих условий:
-\begin{enumerate}[label=\arabic*)]
-\item наличие сигнала срабатывания \textit{«Ср. ЗНФ в ЗНР»};
-\item срабатывание измерительного органа, действующего по расчетному току нулевой последовательности или по отношению токов обратной и прямой последовательностей -- выбор осуществляется программным переключателем \textbf{«ИО ЗНР»}.
-\end{enumerate}
+\begin{itemize}
+	\item наличие сигнала срабатывания \textit{«ЗНР СВ/ЗНР: Ср. ЗНФ В в ЗНР»};
+	\item срабатывание измерительного органа, действующего по расчетному току нулевой последовательности или по отношению токов обратной и прямой последовательностей -- выбор осуществляется программным переключателем \textbf{«ИО ЗНР»}.
+\end{itemize}
 
 \item
 Порог тока срабатывания измерительного органа, реагирующего на ток нулевой последовательности,
@@ -27,26 +30,9 @@
 осуществляется с помощью программного ключа \textbf{«ЗНР»}.
 
 \item
-Оперативный ввод/вывод ЗНР производится с помощью БУ (блоков управления функциями) \textit{«Вывод ЗНР»}.
+Оперативный ввод/вывод ЗНР производится с помощью БУ (блоков управления функциями) \textit{«ЗНР СВ/ЗНР: Вывод»}.
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Перечень уставочных параметров ЗНР\hfill\vspace{-0.5\baselineskip}}\label{znr:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{znr:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-
-%===m>ЗНР|-
-%===m
-\end{longtable}
-\normalsize
+\item
+Уставочные параметры функции ЗНР представлены в таблице \ref{app_set:znr}.
 
 \end{enumerate}

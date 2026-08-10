@@ -1,7 +1,7 @@
 \color{unidarkgreen}{\subsection{Аварийная максимальная токовая защита}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\begin{enumerate}
 
 \item
 Аварийная максимальная токовая защита (АМТЗ) применяется в качестве аварийной защиты при
@@ -15,9 +15,12 @@
 \item 2 ступени, реагирующие на величину тока нулевой последовательности (АМТЗ-НП).
 \end{itemize}
 
+\item
+На рисунке \ref{pict_amtz:AMTZ} приведена функциональная схема ступеней АМТЗ-Ф. Выполнение функциональной схемы ступеней АМТЗ-ОП и АМТЗ-НП аналогичное.
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/661.0161 АМТЗ/img/AMTZ.pdf}
+\includegraphics[width=0.78\textwidth,height=0.78\textheight,keepaspectratio]{\fbpath/08.01 СВ/661.0161 АМТЗ/img/AMTZ.pdf}
 \captionof{figure}{Функциональная схема ступеней АМТЗ-Ф}\label{pict_amtz:AMTZ}
 \end{figure}
 
@@ -37,110 +40,27 @@
 аналогично.
 
 \item
-Автоматический ввод в работу АМТЗ при возникновении неисправности в цепях напряжения от ТН 1СШ
-производится при отсутствии внешнего сигнала \textit{«Вывод АМТЗ»}. Пуски ступеней возможны даже при отсутствии
-неисправности в цепях напряжения, но выходная логика срабатывания находится в заблокированном
-состоянии. При появлении входного сигнала \textit{«БНН»} выходная логика ступеней на срабатывание
-деблокируется, при этом формируется логический сигнал \textit{«АМТЗ активна»}. Предусмотрена также
-возможность оперативного ввода АМТЗ (независимо от сигнала срабатывания БНН) от команды управления 
-\textit{«Опер. ввод АМТЗ»}.
-
-\item
-Оперативный ввод/вывод АМТЗ производится с помощью БУ (блоков управления функциями) \textit{«Вывод АМТЗ»}. 
+Функциональная схема общей логики АМТЗ представлена на рисунке \ref{pict_amtz:GL_AMTZ}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\fbpath/661.0161 АМТЗ/img/GL_AMTZ.pdf}
+\includegraphics[width=0.78\textwidth,height=0.78\textheight,keepaspectratio]{\fbpath/08.01 СВ/661.0161 АМТЗ/img/GL_AMTZ.pdf}
 \captionof{figure}{Функциональная схема общей логики АМТЗ}\label{pict_amtz:GL_AMTZ}
 \end{figure}
 
-\small
-\setlength{\extrarowheight}{0.05cm} % высота ячеек в таблице
-\begin{longtable}
-{|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{4.5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3.5cm}|}
-\caption{Перечень уставочных параметров АМТЗ\hfill\vspace{-0.5\baselineskip}}\label{amtz:tbl1} \\ 
-\hhline{|-|-|-|-|}
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\ 
-\hhline{|-|-|-|-|}
-\endfirsthead
-
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{amtz:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
-\hhline{|-|-|-|-|}
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг &  Значение по умолчанию \\  
-\hhline{|-|-|-|-|}
-\endhead
-\hhline{|-|-|-|-|}
-
-\endfoot
-\endlastfoot
-
-%===m>АМТЗ|-
-%===m
-
-\end{longtable}
-\setlength{\extrarowheight}{0.0cm} % возврат параметра высота ячеек в таблице
-\normalsize
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\item
+Автоматический ввод в работу АМТЗ при возникновении неисправности в цепях напряжения от ТН 1СШ
+производится при отсутствии внешнего сигнала \textit{«АМТЗ: Вывод»}. Пуски ступеней возможны даже при отсутствии
+неисправности в цепях напряжения, но выходная логика срабатывания находится в заблокированном
+состоянии. При появлении входного сигнала \textit{«БНН: Срабатывание»} выходная логика ступеней на срабатывание
+деблокируется, при этом формируется логический сигнал \textit{«АМТЗ: Разрешение»}. Предусмотрена также
+возможность оперативного ввода АМТЗ (независимо от сигнала срабатывания БНН) от команды управления 
+\textit{«АМТЗ: Опер. ввод»}.
+
+\item
+Оперативный ввод/вывод АМТЗ производится с помощью БУ (блоков управления функциями) \textit{«АМТЗ: Вывод»}. 
+
+\item
+Уставочные параметры функции АМТЗ представлены в таблице \ref{app_set:amtz}.
 
 \end{enumerate} 

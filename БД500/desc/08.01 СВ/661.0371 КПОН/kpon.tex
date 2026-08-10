@@ -1,15 +1,18 @@
-\color{unidarkgreen}{\subsection{Комбинированный пусковой орган напряжения (КПОН)}}
+\color{unidarkgreen}{\subsection{Комбинированный пусковой орган напряжения}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\begin{enumerate}
 
 \item
 Комбинированный пусковой орган по напряжению первой системы шин (КПОН 1СШ) и второй системы шин
 (КПОН 2СШ) используется для повышения чувствительности ступеней МТЗ.  
 
+\item
+Функциональная схема КПОН представлена на рисунке \ref{pic_kpon:KPON}.
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/661.0371 КПОН/img/KPON.pdf}
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/08.01 СВ/661.0371 КПОН/img/KPON.pdf}
 \captionof{figure}{Функциональная схема КПОН}\label{pic_kpon:KPON}
 \end{figure}
 
@@ -39,29 +42,9 @@
 \end{itemize}
 
 \item
-Оперативный ввод/вывод КПОН 1(2)СШ производится с помощью БУ (блоков управления функциями) \textit{«Вывод КПОН 1(2)СШ»}. 
+Оперативный ввод/вывод КПОН 1(2)СШ производится с помощью БУ (блоков управления функциями) \textit{«КПОН/КПОН 1(2)СШ: Вывод»}. 
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{1.8cm}|}
-% Первая страница: полный заголовок
-\caption{Перечень уставочных параметров КПОН\hfill\vspace{-0.5\baselineskip}}\label{kpon:tbl1}\\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endfirsthead
-
-% Промежуточные страницы: «Продолжение таблицы»
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{kpon:tbl1}}\hfill\ }\vspace{-0.5\baselineskip} \\
-\hline
-\rowcolor{gray!30}
-Наименование уставки & Диапазон & Шаг & Значение по умолчанию & Единица измерения \\
-\hline
-\endhead
-
-%===m>КПОН|-
-%===m
-\end{longtable}
-\normalsize	
+\item
+Уставочные параметры функции КПОН представлены в таблице \ref{app_set:kpon}.
 
 \end{enumerate}
