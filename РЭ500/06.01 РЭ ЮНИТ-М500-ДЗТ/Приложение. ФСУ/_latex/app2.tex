@@ -1,34 +1,56 @@
-\newpage
+\color{unidarkgreen}{\section[(рекомендуемое) Структурно-функциональная схема устройства]{(рекомендуемое)\\Структурно-функциональная схема устройства}\label{app:fsu}}
+\color{black}
 
+\IfFileExists{\apppath/Приложение. ФСУ/_latex/img/0.pdf}{%
+    \begin{figure}[H]
+    \centering
+    \resizebox{!}{0.9\textheight}{\includegraphics{\apppath/Приложение. ФСУ/_latex/img/0.pdf}}
+    \end{figure}
+    \clearpage
+}{}
+
+% Переключаем на A3 landscape
 \KOMAoptions{paper=A3,paper=landscape}
 \areaset{390mm}{270mm}
 \fancyheadoffset{0pt} % обновляем хедер и футер
 
-\topmargin=-2.6cm % Команда \topmargin задаёт верхнее поле страницы. При этом поле отсчитывается не от левого края листа, а от линии, параллельной краю листа и отстоящей от него на 1 дюйм
-\oddsidemargin=0cm % отступ слева https://zns.susu.ru/IT/latex/Marking/marking.html
+\topmargin=-2.6cm
+\oddsidemargin=0cm
 \headsep=0cm
 \footskip=-0.8cm
 \setlength{\headheight}{1cm}
 
-\color{unidarkgreen}{\section[(рекомендуемое) Структурно-функциональная схема устройства]{(рекомендуемое)\\Структурно-функциональная схема устройства}\label{app:fsu}}
-\color{black}
 
 \newcounter{filecounter}
-\setcounter{filecounter}{0} % Начинаем с 0 , считаем что 0.pdf - лист с легендой и условными обозначениями
+\setcounter{filecounter}{1}
 \loop
     \edef\filename{\apppath/Приложение. ФСУ/_latex/img/\arabic{filecounter}.pdf}
-    \IfFileExists{\filename}{
+    \IfFileExists{\filename}{%
         \begin{figure}[H]
         \centering
-        \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\filename}
+        \resizebox{!}{\textheight}{\includegraphics{\filename}}
         \end{figure}
         \clearpage
         \stepcounter{filecounter}
-    }{\setcounter{filecounter}{0}} % условие выхода из цикла
+    }{%
+        \setcounter{filecounter}{0}
+    }
     \ifnum\value{filecounter}>0
 \repeat
 
-\clearpage %!!!!!!!!!!БЕЗ ЭТОЙ СТРОЧКИ ХРЕНЬ
+\clearpage
+
+% Восстановление A4
+\KOMAoption{paper}{a4, portrait}
+\areaset{267mm}{180mm}
+\fancyheadoffset{0pt}
+
+\newgeometry{
+  top=14mm,
+  bottom=11mm,
+  right=10mm,
+  left=22mm,
+}
 
 
 

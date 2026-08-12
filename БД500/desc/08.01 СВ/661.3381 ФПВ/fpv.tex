@@ -1,7 +1,7 @@
 \color{unidarkgreen}{\subsection{Фиксация положения выключатея}}
 \color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*,  align=left, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
+\begin{enumerate}
 
 \item
 Функциональный блок фиксации положения выключателя (ФПВ) предназначен для определения
@@ -19,33 +19,18 @@
 
 \item
 Также функция ФПВ пофазно контролирует состояние блок-контактов выключателя и в случае
-расхождения полюсов формирует сигнал \textit{«Внутр. пуск. ЗНФ В»}.
+расхождения полюсов формирует сигнал \textit{«ФПВ СВ/ ФПВ: Внутр. пуск. ЗНФ»}.
 
-\vspace{2mm}
+\item
+Функциональная схема логики ФПВ представлена на рисунке \ref{pict_fpv:FPV}.
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth,height=0.6\textheight,keepaspectratio]{\fbpath/661.3381 ФПВ/img/FPV.pdf}
+\includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{\fbpath/08.01 СВ/661.3381 ФПВ/img/FPV.pdf}
 \captionof{figure}{Функциональная схема логики ФПВ}\label{pict_fpv:FPV}
 \end{figure}
 
-\small
-\begin{longtable}{|>{\centering\arraybackslash}m{5.3cm}|>{\centering\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{4.2cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1cm}|}
-\caption{Перечень уставочных параметров ФПВ\hfill\vspace{-0.5\baselineskip}}\label{fpv:tbl1}\\ 
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-\hline
-\endfirsthead
-\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{fpv:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\
-\hline
-\rowcolor{gray!30}
-Параметр & Условное обозначение на схеме & Значение/ Диапазон & Единица измерения & Шаг \\ 
-%\hline
-\endhead
-
-%===m>ФПВ|-
-%===m
-\end{longtable}
-\normalsize
+\item
+Параметры для настройки функции КСВ представлены в таблице \ref{app_set:fpv}.
 
 \end{enumerate}

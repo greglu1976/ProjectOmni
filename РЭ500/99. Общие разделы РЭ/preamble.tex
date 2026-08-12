@@ -55,6 +55,17 @@
 % ---------------------- Колонтитулы ----------------------
 \usepackage{fancyhdr}
 
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{1pt}%
+  \renewcommand{\footrulewidth}{1pt}%
+  \lhead{\color{black}\devicecode}%
+  \chead{\color{unigray}Редакция \rev~от~\revdate}%
+  \rhead{\color{unigreen}\devicetype}%
+  \lfoot{\color{unigreen}Руководство по эксплуатации}%
+  \rfoot{\thepage}%
+}
+
 % ---------------------- Таблицы ----------------------
 \usepackage{longtable, booktabs}
 \usepackage{calc}
