@@ -57,12 +57,14 @@
 
 \fancypagestyle{plain}{%
   \fancyhf{}%
-  \renewcommand{\headrulewidth}{1pt}%
-  \renewcommand{\footrulewidth}{1pt}%
+  \renewcommand{\headrulewidth}{1.5pt}%
+  \renewcommand{\footrulewidth}{1.5pt}%
+  \renewcommand{\headrule}{{\color{unidarkgreen}\hrule height \headrulewidth}}%
+  \renewcommand{\footrule}{{\color{unidarkgreen}\hrule height \footrulewidth}}%
   \lhead{\color{black}\devicecode}%
   \chead{\color{unigray}Редакция \rev~от~\revdate}%
-  \rhead{\color{unigreen}\devicetype}%
-  \lfoot{\color{unigreen}Руководство по эксплуатации}%
+  \rhead{\color{black}\devicetype}%
+  \lfoot{\color{black}Руководство по эксплуатации}%
   \rfoot{\thepage}%
 }
 

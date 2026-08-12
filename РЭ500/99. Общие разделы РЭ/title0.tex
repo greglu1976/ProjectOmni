@@ -1,15 +1,18 @@
 % ============================================================
 % 1. НАСТРОЙКА КОЛОНТИТУЛОВ (верх и низ)
 % ============================================================
-\thispagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
 
-\fancyhead[L]{\raisebox{30pt}{\parbox{0.6\textwidth}{\OKPD\vskip5mm\TNVED}}}
-\fancyhead[R]{\raisebox{0\width}{\includegraphics[scale=0.25]{uni.pdf}}}
-\lfoot{\color{unigreen}\href{https://uni-eng.ru}{https://uni-eng.ru}}
-\rfoot{ООО «Юнител Инжиниринг»}
+\fancypagestyle{fancy}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+
+  \fancyhead[L]{\raisebox{30pt}{\parbox{0.6\textwidth}{\OKPD\vskip5mm\TNVED}}}%
+  \fancyhead[R]{\raisebox{0\width}{\includegraphics[scale=0.25]{uni.pdf}}}%
+  \lfoot{\color{uniblack}\href{https://uni-eng.ru}{https://uni-eng.ru}}%
+  \rfoot{ООО «Юнител Инжиниринг»}%
+}
+\thispagestyle{fancy}  % применяем к текущей странице
 
 % ============================================================
 % 2. ПОДЛОЖКА (фоновое изображение)
@@ -21,17 +24,18 @@
 % ============================================================
 % 3. ТЕЛО СТРАНИЦЫ (заголовки и линии)
 % ============================================================
-\textcolor{uniblack}{\vspace{15mm}\hrule height 0.05cm}
-\vskip 175mm
 
+\textcolor{unidarkgreen}{\vspace{14mm}\hrule height 1.5pt}
+\vfill
 \begin{flushleft}\sloppy
 \fontsize{18pt}{21.6pt}\selectfont\bfseries
-\color{uniblack}\devicename
-\vskip2mm
-Устройство типа \textcolor{unigreen}{\devicetype}
-\vskip10mm
-Руководство по эксплуатации
-\vskip2mm
-\textcolor{unigreen}{\devicecode}
-\vspace{20mm}\hrule height0.04cm
+\textcolor{uniblack}\devicename
+\vskip 2mm
+Устройство типа \textcolor{unidarkgreen}{\devicetype}
+\vskip 10mm
+\textcolor{uniblack}{Руководство по эксплуатации}
+\vskip 2mm
+\textcolor{unidarkgreen}{\devicecode}
+\textcolor{unidarkgreen}{\vspace{20mm}\hrule height 1.5pt}
+\vspace{-2mm}
 \end{flushleft}
