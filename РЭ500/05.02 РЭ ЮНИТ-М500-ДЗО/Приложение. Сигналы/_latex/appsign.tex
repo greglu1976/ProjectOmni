@@ -11,12 +11,9 @@
 
 \begin{landscape}
 
-%\setlength{\headsep}{5.6mm} 
-%\setlength{\topmargin}{-27mm}
 \setlength{\footskip}{15.5pt}
-%\setlength{\textwidth}{305mm}
 
-\color{unidarkgreen}{\section[(справочное) Перечень сигналов ФСУ, предназначенных для \newline конфигурирования устройства]{(справочное)\\Перечень сигналов ФСУ, предназначенных для конфигурирования устройства}\label{app:signals}}
+\color{unidarkgreen}{\section[(справочное) Перечень сигналов ФСУ, предназначенных для \newline конфигурирования устройства «\devicetype»]{(справочное)\\Перечень сигналов ФСУ, предназначенных для конфигурирования устройства «\devicetype»}\label{app:signals}}
 \color{black}
 
 \begin{enumerate}[label=\ref{app:signals}.\arabic*] % Без глобального влияния
@@ -29,9 +26,7 @@
   \end{itemize}
 \end{enumerate}
 
-\small % сделаем шрифт в таблице поменьше
-% В таблице ниже убрал правую и левую горизонтальные линии чтобы не сливались и жирно видно - также в настройках geometry прищлось поле right =8mm а не 5 mm 
-% так как строки ниже колонтитулов спускались
+\small
 \begin{longtable}{
 >{\centering\arraybackslash}m{6.0cm}
 |>{\centering\arraybackslash}m{3.45cm}
@@ -41,29 +36,26 @@
 |>{\centering\arraybackslash}m{2cm}
 |>{\centering\arraybackslash}m{2cm}
 |>{\centering\arraybackslash}m{2cm}
-|>{\centering\arraybackslash}m{2.107cm}
+|>{\centering\arraybackslash}m{2.09cm}
 }
 
-%\caption{Перечень сигналов ФСУ, предназначенных для конфигурирования устройств ЮНИТ-М300\vspace{-0.5\baselineskip}}\label{appA:tbl1}\\ % выравнивает надпись посередине таблицы
 \caption{Перечень сигналов ФСУ, предназначенных для конфигурирования устройства\hfill\vspace{-0.5\baselineskip}}\label{appA:tbl1}\\ 
 
 \hline
-\rowcolor{gray!30}
+\rowcolor{unidarkgreen!40}
 Полное наименование сигнала & Наименование сигнала на ФСУ & Дискретные входы & Выходные реле & Светодиоды & Функционал. клавиши & Регистратор событий & Аварийный осциллограф & Пуск авар. осциллографа \\ 
 \hline
 \endfirsthead
 %\caption{\emph{Продолжение\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
 \caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{appA:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
 \hline
-\rowcolor{gray!30}
+\rowcolor{unidarkgreen!40}
 Полное наименование сигнала & Наименование сигнала на ФСУ & Дискретные входы & Выходные реле & Светодиоды & Функционал. клавиши & Регистратор событий & Аварийный осциллограф & Пуск авар. осциллографа \\ 
-%\hline
+
 \endhead
 
-%\hline
 \endfoot
 
-%\hline
 \endlastfoot
 
 %===t2
@@ -509,12 +501,6 @@
 
 \clearpage
 \normalsize
-%\includepdf[pages={1},width=0.5\textwidth, angle=90]{1.pdf} вставляем и поворачиваем pdf
-%\begin{center}
-%\includegraphics[width=1.4\textwidth]{1.pdf}
-%\end{center}
 
 \end{landscape}
 \restoregeometry
-
-
