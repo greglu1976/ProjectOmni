@@ -58,9 +58,9 @@
 % ФОРМУЛА №1
 \begin{equation*}
     \begin{bmatrix}
-        \vec I_{A,n*} \\ 
-        \vec I_{B,n*} \\ 
-        \vec I_{C,n*}
+        \dot I_{A,n*} \\ 
+        \dot I_{B,n*} \\ 
+        \dot I_{C,n*}
     \end{bmatrix} 
     = 
     k_{\textsl{П},n} \cdot k_{AM,n} \cdot 
@@ -71,9 +71,9 @@
     \end{bmatrix} 
     \cdot 
     \begin{bmatrix}
-        \vec I'_{A,n} \\ 
-        \vec I'_{B,n} \\ 
-        \vec I'_{C,n}
+        \dot I'_{A,n} \\ 
+        \dot I'_{B,n} \\ 
+        \dot I'_{C,n}
     \end{bmatrix},
 \end{equation*}
 
@@ -82,13 +82,13 @@
     \item{$k_{\textsl{П},n}$} коэффициент коррекции полярности;
     \item{$k_{AM,n}$} коэффициент амплитудного выравнивания;
     \item{$M_{11,n}\dots M_{33,n}$} коэффициенты матрицы компенсации фазового сдвига в соответствии с группой соединения обмоток трансформатора;
-    \item{$\vec I'_{A,n},\vec I'_{B,n},\vec I'_{C,n}$} фазные токи, приведённые к номиналу токового входа терминала, в о.е. Вычисляются по формулам:
+    \item{$\dot I'_{A,n},\dot I'_{B,n},\dot I'_{C,n}$} фазные токи, приведённые к номиналу токового входа терминала, в о.е. Вычисляются по формулам:
     \begin{align*}
-        \vec I'_{A,n} &= \frac{\vec I_{A,n}}{I_{\textsl{ном.терм.n}}}, &
-        \vec I'_{B,n} &= \frac{\vec I_{B,n}}{I_{\textsl{ном.терм.n}}}, &
-        \vec I'_{C,n} &= \frac{\vec I_{C,n}}{I_{\textsl{ном.терм.n}}},
+        \dot I'_{A,n} &= \frac{\dot I_{A,n}}{I_{\textsl{ном.терм.n}}}, &
+        \dot I'_{B,n} &= \frac{\dot I_{B,n}}{I_{\textsl{ном.терм.n}}}, &
+        \dot I'_{C,n} &= \frac{\dot I_{C,n}}{I_{\textsl{ном.терм.n}}},
     \end{align*}
-    где {$\vec I_{A,n},\vec I_{B,n},\vec I_{C,n}$} -- измеренные фазные токи стороны n (комплексные, без учета коэффициента полярности), А.\\
+    где {$\dot I_{A,n},\dot I_{B,n},\dot I_{C,n}$} -- измеренные фазные токи стороны n (комплексные, без учета коэффициента полярности), А.\\
     {$I_{\textsl{ном.терм.n}}$} --  номинальный ток токового входа терминала выбранного ответвления, подключенного к трансформатору току стороны n, А.
 
 \end{eqexpl}
@@ -252,11 +252,11 @@ I_{\textsl{баз,n}}=\frac{S_{\textsl{баз}}}{\sqrt{3} \cdot U_{\textsl{ба�
 % ФОРМУЛА №3
 \begin{equation*}
 %\label{eq:formula3}
-I_{\textsl{диф.ph}} = \left | \sum_{n=1}^{m} \vec I_{ph,n*} \right |,
+I_{\textsl{диф.ph}} = \left | \sum_{n=1}^{m} \dot I_{ph,n*} \right |,
 \end{equation*}
 \begin{eqexpl}[25mm]
 \item{$ph$}контролируемая фаза (A,B,C);
-\item{$\vec I_{ph,n*}$}вектор тока основной гармоники $n$-го плеча, определенного с учетом коэффициентов выравниваний, о.е.;
+\item{$\dot I_{ph,n*}$}вектор тока основной гармоники $n$-го плеча, определенного с учетом коэффициентов выравниваний, о.е.;
 \item{$m$}число сторон (до трёх).
 \end{eqexpl}
 
@@ -265,9 +265,9 @@ I_{\textsl{диф.ph}} = \left | \sum_{n=1}^{m} \vec I_{ph,n*} \right |,
 \begin{equation*}
 %\label{eq:formula4}
 \begin{split}
-I_{\textsl{диф.A}} = \left | \vec I_{A,1*}+\vec I_{A,2*}+\vec I_{A,3*} \right |,\\
-I_{\textsl{диф.B}} = \left | \vec I_{B,1*}+\vec I_{B,2*}+\vec I_{B,3*} \right |,\\
-I_{\textsl{диф.C}} = \left | \vec I_{C,1*}+\vec I_{C,2*}+\vec I_{C,3*} \right |.
+I_{\textsl{диф.A}} = \left | \dot I_{A,1*}+\dot I_{A,2*}+\dot I_{A,3*} \right |,\\
+I_{\textsl{диф.B}} = \left | \dot I_{B,1*}+\dot I_{B,2*}+\dot I_{B,3*} \right |,\\
+I_{\textsl{диф.C}} = \left | \dot I_{C,1*}+\dot I_{C,2*}+\dot I_{C,3*} \right |.
 \end{split}
 \end{equation*}
 
@@ -275,11 +275,11 @@ I_{\textsl{диф.C}} = \left | \vec I_{C,1*}+\vec I_{C,2*}+\vec I_{C,3*} \right
 В общем виде тормозной ток ДТЗт (выраженный в о.е.) равен арифметической полусумме входных токов плеч, определенных с учетом коэффициентов выравниваний по формуле:
 \begin{equation*}
 %\label{eq:formula5}
-I_{\textsl{торм.ph}} = \frac{1}{2} \sum_{n=1}^{m}\left |\vec I_{ph,n*} \right |,
+I_{\textsl{торм.ph}} = \frac{1}{2} \sum_{n=1}^{m}\left |\dot I_{ph,n*} \right |,
 \end{equation*}
 \begin{eqexpl}[25mm]
 \item{$ph$}контролируемая фаза (A,B,C);
-\item{$\vec I_{ph,n*}$}вектор тока основной гармоники n-го плеча, определенного с учетом коэффициентов выравниваний, о.е.;
+\item{$\dot I_{ph,n*}$}вектор тока основной гармоники n-го плеча, определенного с учетом коэффициентов выравниваний, о.е.;
 \item{$m$}число сторон (до трёх).
 \end{eqexpl}
 
@@ -288,9 +288,9 @@ I_{\textsl{торм.ph}} = \frac{1}{2} \sum_{n=1}^{m}\left |\vec I_{ph,n*} \righ
 \begin{equation*}
 %\label{eq:formula4}
 \begin{split}
-I_{\textsl{торм.A}} = \frac{1}{2}(\left |\vec I_{A,1*}|+|\vec I_{A,2*}|+|\vec I_{A,3*} \right |),\\
-I_{\textsl{торм.B}} = \frac{1}{2}(\left |\vec I_{B,1*}|+|\vec I_{B,2*}|+|\vec I_{B,3*} \right |),\\
-I_{\textsl{торм.C}} = \frac{1}{2}(\left |\vec I_{C,1*}|+|\vec I_{C,2*}|+|\vec I_{C,3*} \right |).
+I_{\textsl{торм.A}} = \frac{1}{2}(\left |\dot I_{A,1*}|+|\dot I_{A,2*}|+|\dot I_{A,3*} \right |),\\
+I_{\textsl{торм.B}} = \frac{1}{2}(\left |\dot I_{B,1*}|+|\dot I_{B,2*}|+|\dot I_{B,3*} \right |),\\
+I_{\textsl{торм.C}} = \frac{1}{2}(\left |\dot I_{C,1*}|+|\dot I_{C,2*}|+|\dot I_{C,3*} \right |).
 \end{split}
 \end{equation*}
 
