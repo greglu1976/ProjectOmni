@@ -57,12 +57,14 @@
 
 \fancypagestyle{plain}{%
   \fancyhf{}%
-  \renewcommand{\headrulewidth}{1pt}%
-  \renewcommand{\footrulewidth}{1pt}%
+  \renewcommand{\headrulewidth}{1.5pt}%
+  \renewcommand{\footrulewidth}{1.5pt}%
+  \renewcommand{\headrule}{{\color{unidarkgreen}\hrule height \headrulewidth}}%
+  \renewcommand{\footrule}{{\color{unidarkgreen}\hrule height \footrulewidth}}%
   \lhead{\color{black}\devicecode}%
   \chead{\color{unigray}Редакция \rev~от~\revdate}%
-  \rhead{\color{unigreen}\devicetype}%
-  \lfoot{\color{unigreen}Руководство по эксплуатации}%
+  \rhead{\color{black}\devicetype}%
+  \lfoot{\color{black}Руководство по эксплуатации}%
   \rfoot{\thepage}%
 }
 
@@ -225,4 +227,5 @@
 \def\TNVED{Код ТН ВЭД: 8537 10 980 0 } % ТУ 27.12.31-304-61775353-2025
 \def\ManualUnitGeneral{ЮТКБ.656122.611 РЭ «Устройства защиты и автоматики серии ЮНИТ-М500»}
 \def\ManualTechSpec{ТУ 27.12.31-304-61775353-2025 «Низ\-ко\-вольт\-ные комплектные устройства систем защиты и автоматики серии ШЭТ»}
-\def\twodoorcab{ЮТКБ.656463.300-001 РЭ, ЮТКБ.656463.300-002 РЭ, ЮТКБ.656463.300-003 РЭ, ЮТКБ.656463.300-004 РЭ}
+\def\twodoorcab{ЮТКБ.656463.300-001 РЭ, ЮТКБ.656463.300-002 РЭ, ЮТКБ.656463.300-003 РЭ, ЮТКБ.656463.300-004 РЭ,
+ ЮТКБ.656463.300-031 РЭ, ЮТКБ.656463.300-032 РЭ, ЮТКБ.656463.300-033 РЭ, ЮТКБ.656463.300-051 РЭ}

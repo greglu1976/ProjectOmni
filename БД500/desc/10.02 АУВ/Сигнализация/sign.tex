@@ -1,0 +1,34 @@
+\color{unidarkgreen}{\subsection{Логика сигнализации}}
+\color{black}
+
+\begin{enumerate}
+
+\item
+Устройство формирует выходное воздействие на сигнализацию «Срабатывание» по схеме «ИЛИ» в следующих случаях:
+\begin{itemize}
+    \item срабатывание УРОВ В1(В) на себя;
+    \item срабатывание УРОВ В1(В) на смежные выключатели.
+\end{itemize}
+
+\item
+Устройство формирует выходное воздействие на сигнализацию «Неисправность» по схеме «ИЛИ» в следующих случаях:
+\begin{itemize}
+    \item неисправность ТТ;
+    \item неисправность выключателя;
+	\item неисправность ОТ терминала.
+\end{itemize}
+
+\item
+Сброс выходных сигналов \textit{«Срабатывание фикс.»} и \textit{«Неисправность фикс.»}, выполненных с фиксацией производится подачей сигнала \textit{«Сброс»}.
+
+\item
+Функциональная схема блока логики сигнализации приведена на рисунке \ref{pict_sign:log_sign}.
+
+\vspace{2mm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,height=0.8\textheight,keepaspectratio]{\fbpath/10.02 АУВ/Сигнализация/img/log_sign.pdf}
+\captionof{figure}{Функциональная схема блока логики сигнализации}\label{pict_sign:log_sign}
+\end{figure}
+
+\end{enumerate}

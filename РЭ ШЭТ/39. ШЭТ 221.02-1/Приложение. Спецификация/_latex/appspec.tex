@@ -1,0 +1,20 @@
+\color{unidarkgreen}{\section[(обязательное) Перечень элементов шкафа]{(обязательное)\\Перечень элементов шкафа}\label{app:spec}}
+\color{black}
+
+\newcount\figcounter
+\figcounter=1
+\loop
+  \IfFileExists{\apppath/Приложение. Спецификация/_latex/img/ПЭ_\the\figcounter.pdf}{%
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1\textwidth,height=1\textheight,keepaspectratio]{\apppath/Приложение. Спецификация/_latex/img/ПЭ_\the\figcounter.pdf}
+      \caption{Перечень элементов шкафа (часть \the\figcounter)}
+      \label{appspec:fig_\the\figcounter}
+    \end{figure}
+    \advance\figcounter by 1
+  }{%
+    \figcounter=0
+  }%
+\ifnum\figcounter>0 \repeat
+
+\clearpage

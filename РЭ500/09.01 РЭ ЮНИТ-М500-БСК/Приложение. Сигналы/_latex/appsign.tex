@@ -1,0 +1,526 @@
+\KOMAoption{paper}{a4, portrait}
+\areaset{267mm}{180mm}
+\fancyheadoffset{0pt} % обновляем хедер и футер
+
+\newgeometry{
+  top=14mm,
+  bottom=11mm,
+  right=10mm,
+  left=22mm,
+}
+
+\begin{landscape}
+
+\setlength{\footskip}{15.5pt}
+
+\color{unidarkgreen}{\section[(справочное) Перечень сигналов ФСУ, предназначенных для \newline конфигурирования устройства «\devicetype»]{(справочное)\\Перечень сигналов ФСУ, предназначенных для конфигурирования устройства «\devicetype»}\label{app:signals}}
+\color{black}
+
+\begin{enumerate}[label=\ref{app:signals}.\arabic*] % Без глобального влияния
+  \item Перечень сигналов самодиагностики, доступных для конфигурирования, приведен в документации \ManualUnitGeneral.
+  \item Условные обозначения, применяемые в таблице перечня сигналов:
+  \begin{itemize}
+    \item[$\text{(--)}$] { - сигнал не имеет возможности конфигурации;}
+    \item[$\text{(+)}$] { - сигнал имеет возможность конфигурации;}
+    \item[$\text{(*)}$] { - конфигурация сигнала предустановлена по умолчанию в сервисном ПО «ЮНИТ-СЕРВИС РЗА» и не может быть изменена.}
+  \end{itemize}
+\end{enumerate}
+
+\small
+\begin{longtable}{
+>{\centering\arraybackslash}m{6.0cm}
+|>{\centering\arraybackslash}m{3.45cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2cm}
+|>{\centering\arraybackslash}m{2.09cm}
+}
+
+\caption{Перечень сигналов ФСУ, предназначенных для конфигурирования устройства\hfill\vspace{-0.5\baselineskip}}\label{appA:tbl1}\\ 
+
+\hline
+\rowcolor{unidarkgreen!40}
+Полное наименование сигнала & Наименование сигнала на ФСУ & Дискретные входы & Выходные реле & Светодиоды & Функционал. клавиши & Регистратор событий & Аварийный осциллограф & Пуск авар. осциллографа \\ 
+\hline
+\endfirsthead
+%\caption{\emph{Продолжение\vspace{-0.5\baselineskip}}} \\ % Отступ обозначения таблицы от таблицы и выравнивание надписи слева
+\caption*{\hspace{3pt}\emph{Продолжение таблицы \ref{appA:tbl1}\hfill\vspace{-0.5\baselineskip}}} \\ % сделано по ГОСТ 2.105 п.6.8.7
+\hline
+\rowcolor{unidarkgreen!40}
+Полное наименование сигнала & Наименование сигнала на ФСУ & Дискретные входы & Выходные реле & Светодиоды & Функционал. клавиши & Регистратор событий & Аварийный осциллограф & Пуск авар. осциллографа \\ 
+
+\endhead
+
+\endfoot
+
+\endlastfoot
+
+%===t2
+\multicolumn{9}{c}{\textbf{Общие сигналы функциональной логики}} \\
+\hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{БКУ. Опер. } \\
+\hline
+\multicolumn{9}{c}{\text{БКУ}} \\
+\hline
+\raggedright БКУ. Опер./ БКУ: РКО & \centering БКУ. Опер./ БКУ: РКО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БКУ. Опер./ БКУ: РКВ & \centering БКУ. Опер./ БКУ: РКВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{БКУ ав. СКРМ } \\
+\hline
+\multicolumn{9}{c}{\text{БКУ}} \\
+\hline
+\raggedright БКУ ав. СКРМ/ БКУ: РКО & \centering БКУ ав. СКРМ/ БКУ: РКО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БКУ ав. СКРМ/ БКУ: РКВ & \centering БКУ ав. СКРМ/ БКУ: РКВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{БНН } \\
+\hline
+\multicolumn{9}{c}{\text{БНН}} \\
+\hline
+\raggedright БНН/ БНН: Обрыв 3 фаз & \centering БНН/ БНН: Обрыв 3 фаз & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО dI1 & \centering БНН/ БНН: ИО dI1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО dU1 & \centering БНН/ БНН: ИО dU1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО Uф мин & \centering БНН/ БНН: ИО Uф мин & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО I1 & \centering БНН/ БНН: ИО I1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО UI1 мин & \centering БНН/ БНН: ИО UI1 мин & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: Обрыв 1/2 фаз & \centering БНН/ БНН: Обрыв 1/2 фаз & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО I2/I1 макс & \centering БНН/ БНН: ИО I2/I1 макс & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО 3I0/I1 макс & \centering БНН/ БНН: ИО 3I0/I1 макс & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО U2 макс & \centering БНН/ БНН: ИО U2 макс & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО U2/U1 макс & \centering БНН/ БНН: ИО U2/U1 макс & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО БНН & \centering БНН/ БНН: ИО БНН & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО 3U0 макс & \centering БНН/ БНН: ИО 3U0 макс & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: Обрыв НП & \centering БНН/ БНН: Обрыв НП & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: ИО БНН-ф & \centering БНН/ БНН: ИО БНН-ф & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: Неиспр. ЦН & \centering БНН/ БНН: Неиспр. ЦН & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: Срабатывание & \centering БНН/ БНН: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright БНН/ БНН: БНН-ф & \centering БНН/ БНН: БНН-ф & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ДТЗ } \\
+\hline
+\multicolumn{9}{c}{ Общие сигналы блока } \\
+\hline
+\raggedright ДТЗ: Срабатывание фА & \centering ДТЗ: Срабатывание фА & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ: Срабатывание фВ & \centering ДТЗ: Срабатывание фВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ: Срабатывание фС & \centering ДТЗ: Срабатывание фС & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ: Срабатывание & \centering ДТЗ: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Д2г}} \\
+\hline
+\raggedright ДТЗ/ Д2г: Срабатывание фB & \centering ДТЗ/ Д2г: Срабатывание фB & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ Д2г: Срабатывание фA & \centering ДТЗ/ Д2г: Срабатывание фA & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ Д2г: Выведено & \centering ДТЗ/ Д2г: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ Д2г: Срабатывание фC & \centering ДТЗ/ Д2г: Срабатывание фC & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Д5г}} \\
+\hline
+\raggedright ДТЗ/ Д5г: Срабатывание фB & \centering ДТЗ/ Д5г: Срабатывание фB & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ Д5г: Срабатывание фA & \centering ДТЗ/ Д5г: Срабатывание фA & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ Д5г: Срабатывание фC & \centering ДТЗ/ Д5г: Срабатывание фC & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ Д5г: Выведено & \centering ДТЗ/ Д5г: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ДТЗт}} \\
+\hline
+\raggedright ДТЗ/ ДТЗт: Срабатывание фА & \centering ДТЗ/ ДТЗт: Срабатывание фА & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТЗт: ИО фB & \centering ДТЗ/ ДТЗт: ИО фB & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТЗт: Срабатывание фB & \centering ДТЗ/ ДТЗт: Срабатывание фB & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТЗт: ИО фC & \centering ДТЗ/ ДТЗт: ИО фC & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТЗт: Выведено & \centering ДТЗ/ ДТЗт: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТЗт: Срабатывание фC & \centering ДТЗ/ ДТЗт: Срабатывание фC & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТЗт: ИО фА & \centering ДТЗ/ ДТЗт: ИО фА & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ДТО}} \\
+\hline
+\raggedright ДТЗ/ ДТО: ИО фА & \centering ДТЗ/ ДТО: ИО фА & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТО: Срабатывание фА & \centering ДТЗ/ ДТО: Срабатывание фА & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТО: Срабатывание фB & \centering ДТЗ/ ДТО: Срабатывание фB & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТО: ИО фB & \centering ДТЗ/ ДТО: ИО фB & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТО: Выведено & \centering ДТЗ/ ДТО: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТО: Срабатывание фC & \centering ДТЗ/ ДТО: Срабатывание фC & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ/ ДТО: ИО фC & \centering ДТЗ/ ДТО: ИО фC & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{КЦТ}} \\
+\hline
+\raggedright ДТЗ/ КЦТ: Срабатывание & \centering ДТЗ/ КЦТ: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ДТЗ НП } \\
+\hline
+\multicolumn{9}{c}{\text{ДТЗ НП}} \\
+\hline
+\raggedright ДТЗ НП/ ДТЗ НП: Пуск & \centering ДТЗ НП/ ДТЗ НП: Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ НП/ ДТЗ НП: Неиспр.ЦТ ДТЗ НП & \centering ДТЗ НП/ ДТЗ НП: Неиспр.ЦТ ДТЗ НП & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ДТЗ НП/ ДТЗ НП: Срабатываине & \centering ДТЗ НП/ ДТЗ НП: Срабатываине & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ЗВП } \\
+\hline
+\multicolumn{9}{c}{\text{ЗВП сигн.ст}} \\
+\hline
+\raggedright ЗВП/ ЗВП сигн.ст: Пуск фА & \centering ЗВП/ ЗВП сигн.ст: Пуск фА & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП сигн.ст: Пуск фВ & \centering ЗВП/ ЗВП сигн.ст: Пуск фВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП сигн.ст: Срабатывание фА & \centering ЗВП/ ЗВП сигн.ст: Срабатывание фА & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП сигн.ст: Срабатывание фС & \centering ЗВП/ ЗВП сигн.ст: Срабатывание фС & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП сигн.ст: Пуск фС & \centering ЗВП/ ЗВП сигн.ст: Пуск фС & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП сигн.ст: Срабатывание фВ & \centering ЗВП/ ЗВП сигн.ст: Срабатывание фВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП сигн.ст: Срабатывание & \centering ЗВП/ ЗВП сигн.ст: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП сигн.ст: Выведено & \centering ЗВП/ ЗВП сигн.ст: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП сигн.ст: Пуск & \centering ЗВП/ ЗВП сигн.ст: Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ЗВП откл.ст }} \\
+\hline
+\raggedright ЗВП/ ЗВП откл.ст : Пуск & \centering ЗВП/ ЗВП откл.ст : Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП откл.ст : Пуск фА & \centering ЗВП/ ЗВП откл.ст : Пуск фА & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП откл.ст : Срабатывание фА & \centering ЗВП/ ЗВП откл.ст : Срабатывание фА & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП откл.ст : Выведено & \centering ЗВП/ ЗВП откл.ст : Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП откл.ст : Срабатывание & \centering ЗВП/ ЗВП откл.ст : Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП откл.ст : Срабатывание фС & \centering ЗВП/ ЗВП откл.ст : Срабатывание фС & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП откл.ст : Пуск фС & \centering ЗВП/ ЗВП откл.ст : Пуск фС & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП откл.ст : Срабатывание фВ & \centering ЗВП/ ЗВП откл.ст : Срабатывание фВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗВП/ ЗВП откл.ст : Пуск фВ & \centering ЗВП/ ЗВП откл.ст : Пуск фВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ЗН БСК } \\
+\hline
+\multicolumn{9}{c}{ Общие сигналы блока } \\
+\hline
+\raggedright ЗН БСК: В. Отключены & \centering ЗН БСК: В. Отключены & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ЗМН }} \\
+\hline
+\raggedright ЗН БСК/ ЗМН : Пуск & \centering ЗН БСК/ ЗМН : Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗН БСК/ ЗМН : Срабатывание & \centering ЗН БСК/ ЗМН : Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗН БСК/ ЗМН : Выведено & \centering ЗН БСК/ ЗМН : Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ЗПН сигн.ст}} \\
+\hline
+\raggedright ЗН БСК/ ЗПН сигн.ст: Срабатывание & \centering ЗН БСК/ ЗПН сигн.ст: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗН БСК/ ЗПН сигн.ст: Выведено & \centering ЗН БСК/ ЗПН сигн.ст: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗН БСК/ ЗПН сигн.ст: Пуск & \centering ЗН БСК/ ЗПН сигн.ст: Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ЗПН откл.ст}} \\
+\hline
+\raggedright ЗН БСК/ ЗПН откл.ст: Пуск & \centering ЗН БСК/ ЗПН откл.ст: Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗН БСК/ ЗПН откл.ст: Выведено & \centering ЗН БСК/ ЗПН откл.ст: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗН БСК/ ЗПН откл.ст: Срабатывание & \centering ЗН БСК/ ЗПН откл.ст: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ЗНР ВН } \\
+\hline
+\multicolumn{9}{c}{\text{ЗНР}} \\
+\hline
+\raggedright ЗНР ВН/ ЗНР: ИО & \centering ЗНР ВН/ ЗНР: ИО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗНР ВН/ ЗНР: Срабатывание (Э1) & \centering ЗНР ВН/ ЗНР: Срабатывание (Э1) & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗНР ВН/ ЗНР: Срабатывание (Э2) & \centering ЗНР ВН/ ЗНР: Срабатывание (Э2) & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗНР ВН/ ЗНР: Срабатывание & \centering ЗНР ВН/ ЗНР: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗНР ВН/ ЗНР: Выведено & \centering ЗНР ВН/ ЗНР: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ЗНФ ВН } \\
+\hline
+\multicolumn{9}{c}{\text{ЗНФ}} \\
+\hline
+\raggedright ЗНФ ВН/ ЗНФ: Срабатывание & \centering ЗНФ ВН/ ЗНФ: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗНФ ВН/ ЗНФ: Выведено & \centering ЗНФ ВН/ ЗНФ: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ЗПВГ } \\
+\hline
+\multicolumn{9}{c}{\text{ЗПВГ сигн. ст.}} \\
+\hline
+\raggedright ЗПВГ/ ЗПВГ сигн. ст.: Срабатывание & \centering ЗПВГ/ ЗПВГ сигн. ст.: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗПВГ/ ЗПВГ сигн. ст.: Пуск & \centering ЗПВГ/ ЗПВГ сигн. ст.: Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ЗПВГ откл. ст.}} \\
+\hline
+\raggedright ЗПВГ/ ЗПВГ откл. ст.: Пуск & \centering ЗПВГ/ ЗПВГ откл. ст.: Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЗПВГ/ ЗПВГ откл. ст.: Срабатывание & \centering ЗПВГ/ ЗПВГ откл. ст.: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{КСВ } \\
+\hline
+\multicolumn{9}{c}{ Общие сигналы блока } \\
+\hline
+\raggedright КСВ: Запр. вкл.ШР(БСК) & \centering КСВ: Запр. вкл.ШР(БСК) & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ: Ожид. разряда БСК & \centering КСВ: Ожид. разряда БСК & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ: Выведено & \centering КСВ: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Блокировка управления}} \\
+\hline
+\raggedright КСВ/ Блокировка управления: Блок. отключения & \centering КСВ/ Блокировка управления: Блок. отключения & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Блокировка управления: Блок. включения & \centering КСВ/ Блокировка управления: Блок. включения & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Блокировка управления: Блок. включения ф.С & \centering КСВ/ Блокировка управления: Блок. включения ф.С & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Блокировка управления: Блок. отключения ф.В & \centering КСВ/ Блокировка управления: Блок. отключения ф.В & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Блокировка управления: Блок. включения ф.В & \centering КСВ/ Блокировка управления: Блок. включения ф.В & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Блокировка управления: Блок. отключения ф.А & \centering КСВ/ Блокировка управления: Блок. отключения ф.А & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Блокировка управления: Блок. включения ф.А & \centering КСВ/ Блокировка управления: Блок. включения ф.А & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Блокировка управления: Блок. отключения ф.С & \centering КСВ/ Блокировка управления: Блок. отключения ф.С & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Защита ЭМУ}} \\
+\hline
+\raggedright КСВ/ Защита ЭМУ: Реле тока ЭМО1 & \centering КСВ/ Защита ЭМУ: Реле тока ЭМО1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Защита ЭМУ: Реле тока ЭМВ & \centering КСВ/ Защита ЭМУ: Реле тока ЭМВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Защита ЭМУ: Обест. ЭМО1 и ЭМВ & \centering КСВ/ Защита ЭМУ: Обест. ЭМО1 и ЭМВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Защита ЭМУ: Реле тока ЭМО1 и ЭМО2 & \centering КСВ/ Защита ЭМУ: Реле тока ЭМО1 и ЭМО2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Защита ЭМУ: Реле тока ЭМО2 & \centering КСВ/ Защита ЭМУ: Реле тока ЭМО2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Защита ЭМУ: Обест. ЭМО2 & \centering КСВ/ Защита ЭМУ: Обест. ЭМО2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Контроль В}} \\
+\hline
+\raggedright КСВ/ Контроль В: Ср. Авар. давл. SF6 & \centering КСВ/ Контроль В: Ср. Авар. давл. SF6 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль В: Ср. Пруж. не заведены & \centering КСВ/ Контроль В: Ср. Пруж. не заведены & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль В: Неиспр. ОТ ЭМО1 & \centering КСВ/ Контроль В: Неиспр. ОТ ЭМО1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль В: Неиспр. ОТ ЭМО2 & \centering КСВ/ Контроль В: Неиспр. ОТ ЭМО2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль В: Готовность ЦО1 & \centering КСВ/ Контроль В: Готовность ЦО1 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль В: Готовность ЦВ & \centering КСВ/ Контроль В: Готовность ЦВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль В: Неиспр. ЦУ & \centering КСВ/ Контроль В: Неиспр. ЦУ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль В: Ср. Низк. давл. SF6 & \centering КСВ/ Контроль В: Ср. Низк. давл. SF6 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль В: Авт. ШП откл. & \centering КСВ/ Контроль В: Авт. ШП откл. & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль В: Неисправность В & \centering КСВ/ Контроль В: Неисправность В & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль В: Готовность ЦО2 & \centering КСВ/ Контроль В: Готовность ЦО2 & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль В: Неисп. обогр. & \centering КСВ/ Контроль В: Неисп. обогр. & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Контроль ТТ}} \\
+\hline
+\raggedright КСВ/ Контроль ТТ: Откл. от Авар. давл. SF6 ТТ & \centering КСВ/ Контроль ТТ: Откл. от Авар. давл. SF6 ТТ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль ТТ: Ср. Авар. давл. SF6 ТТ & \centering КСВ/ Контроль ТТ: Ср. Авар. давл. SF6 ТТ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль ТТ: Неисправность ТТ & \centering КСВ/ Контроль ТТ: Неисправность ТТ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль ТТ: Ср. Низк. давл. SF6 ТТ & \centering КСВ/ Контроль ТТ: Ср. Низк. давл. SF6 ТТ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Контроль ТТ: Ср. Неиспр. обогр. ТТ & \centering КСВ/ Контроль ТТ: Ср. Неиспр. обогр. ТТ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Реле фиксации}} \\
+\hline
+\raggedright КСВ/ Реле фиксации: Фиксация & \centering КСВ/ Реле фиксации: Фиксация & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright КСВ/ Реле фиксации: Сигнал несоотв. & \centering КСВ/ Реле фиксации: Сигнал несоотв. & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ЛО БСК } \\
+\hline
+\multicolumn{9}{c}{\text{ЛО Внеш. З}} \\
+\hline
+\raggedright ЛО БСК/ ЛО Внеш. З: Срабатывание & \centering ЛО БСК/ ЛО Внеш. З: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ЛО ОС}} \\
+\hline
+\raggedright ЛО БСК/ ЛО ОС: Срабатывание & \centering ЛО БСК/ ЛО ОС: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ЛО РЗ}} \\
+\hline
+\raggedright ЛО БСК/ ЛО РЗ: Срабатывание & \centering ЛО БСК/ ЛО РЗ: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ЛО Реж.З}} \\
+\hline
+\raggedright ЛО БСК/ ЛО Реж.З: Откл.реж.защ. & \centering ЛО БСК/ ЛО Реж.З: Откл.реж.защ. & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ЛО В1(ЛВ) } \\
+\hline
+\multicolumn{9}{c}{\text{ЛО}} \\
+\hline
+\raggedright ЛО В1(ЛВ)/ ЛО: Выведено & \centering ЛО В1(ЛВ)/ ЛО: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЛО В1(ЛВ)/ ЛО: Запрет АПВ & \centering ЛО В1(ЛВ)/ ЛО: Запрет АПВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЛО В1(ЛВ)/ ЛО: Отключение & \centering ЛО В1(ЛВ)/ ЛО: Отключение & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ЛО В2(ОВ) } \\
+\hline
+\multicolumn{9}{c}{\text{ЛО}} \\
+\hline
+\raggedright ЛО В2(ОВ)/ ЛО: Выведено & \centering ЛО В2(ОВ)/ ЛО: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЛО В2(ОВ)/ ЛО: Запрет АПВ & \centering ЛО В2(ОВ)/ ЛО: Запрет АПВ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ЛО В2(ОВ)/ ЛО: Отключение & \centering ЛО В2(ОВ)/ ЛО: Отключение & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{МТЗ ВВ } \\
+\hline
+\multicolumn{9}{c}{ Общие сигналы блока } \\
+\hline
+\raggedright МТЗ ВВ: Пуск & \centering МТЗ ВВ: Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright МТЗ ВВ: Срабатывание & \centering МТЗ ВВ: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{МТЗ-1}} \\
+\hline
+\raggedright МТЗ ВВ/ МТЗ-1: Выведено & \centering МТЗ ВВ/ МТЗ-1: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright МТЗ ВВ/ МТЗ-1: ИО МТЗ & \centering МТЗ ВВ/ МТЗ-1: ИО МТЗ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{МТЗ-2}} \\
+\hline
+\raggedright МТЗ ВВ/ МТЗ-2: ИО МТЗ & \centering МТЗ ВВ/ МТЗ-2: ИО МТЗ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright МТЗ ВВ/ МТЗ-2: Выведено & \centering МТЗ ВВ/ МТЗ-2: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ОВ БНТ ВВ } \\
+\hline
+\multicolumn{9}{c}{\text{ОВ БНТ}} \\
+\hline
+\raggedright ОВ БНТ ВВ/ ОВ БНТ: Срабатывание фC(CA) & \centering ОВ БНТ ВВ/ ОВ БНТ: Срабатывание фC(CA) & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ОВ БНТ ВВ/ ОВ БНТ: Срабатывание фB(BC) & \centering ОВ БНТ ВВ/ ОВ БНТ: Срабатывание фB(BC) & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ОВ БНТ ВВ/ ОВ БНТ: Срабатывание фA(AB) & \centering ОВ БНТ ВВ/ ОВ БНТ: Срабатывание фA(AB) & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ОВ БНТ ВВ/ ОВ БНТ: Выведено & \centering ОВ БНТ ВВ/ ОВ БНТ: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ОВ БНТ ВВ/ ОВ БНТ: Срабатывание & \centering ОВ БНТ ВВ/ ОВ БНТ: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{Общая логика } \\
+\hline
+\multicolumn{9}{c}{ Общие сигналы блока } \\
+\hline
+\raggedright Общая логика: Выв. терминала & \centering Общая логика: Выв. терминала & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Общая логика: Неиспр. терминала & \centering Общая логика: Неиспр. терминала & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Общая логика: Неиспр. ОТ терм & \centering Общая логика: Неиспр. ОТ терм & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Общая логика: БИ выведены & \centering Общая логика: БИ выведены & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Общая логика: Несоответ. ПУ & \centering Общая логика: Несоответ. ПУ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Общая логика: Вых. цепи разобраны & \centering Общая логика: Вых. цепи разобраны & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{Сигнализация } \\
+\hline
+\multicolumn{9}{c}{ Общие сигналы блока } \\
+\hline
+\raggedright Сигнализация: Срабатывание фикс. & \centering Сигнализация: Срабатывание фикс. & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Сигнализация: Срабатывание & \centering Сигнализация: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Сигнализация: Вызов (лампа) & \centering Сигнализация: Вызов (лампа) & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Сигнализация: Неисправность & \centering Сигнализация: Неисправность & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Сигнализация: Неисправность фикс. & \centering Сигнализация: Неисправность фикс. & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Сигнализация: Дверь шкафа открыта  & \centering Сигнализация: Дверь шкафа открыта  & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright Сигнализация: Ниспр. ОТ терм. & \centering Сигнализация: Ниспр. ОТ терм. & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ТЗНП ВВ } \\
+\hline
+\multicolumn{9}{c}{\text{ТЗНП-1}} \\
+\hline
+\raggedright ТЗНП ВВ/ ТЗНП-1: Срабатывание & \centering ТЗНП ВВ/ ТЗНП-1: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП ВВ/ ТЗНП-1: Выведено & \centering ТЗНП ВВ/ ТЗНП-1: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП ВВ/ ТЗНП-1: ИО & \centering ТЗНП ВВ/ ТЗНП-1: ИО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП ВВ/ ТЗНП-1: Пуск & \centering ТЗНП ВВ/ ТЗНП-1: Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ТЗНП-2}} \\
+\hline
+\raggedright ТЗНП ВВ/ ТЗНП-2: Выведено & \centering ТЗНП ВВ/ ТЗНП-2: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП ВВ/ ТЗНП-2: ИО & \centering ТЗНП ВВ/ ТЗНП-2: ИО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП ВВ/ ТЗНП-2: Пуск & \centering ТЗНП ВВ/ ТЗНП-2: Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП ВВ/ ТЗНП-2: Срабатывание & \centering ТЗНП ВВ/ ТЗНП-2: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ТЗНП НВ } \\
+\hline
+\multicolumn{9}{c}{\text{ТЗНП-1}} \\
+\hline
+\raggedright ТЗНП НВ/ ТЗНП-1: Срабатывание & \centering ТЗНП НВ/ ТЗНП-1: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП НВ/ ТЗНП-1: Выведено & \centering ТЗНП НВ/ ТЗНП-1: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП НВ/ ТЗНП-1: ИО & \centering ТЗНП НВ/ ТЗНП-1: ИО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП НВ/ ТЗНП-1: Пуск & \centering ТЗНП НВ/ ТЗНП-1: Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ТЗНП-2}} \\
+\hline
+\raggedright ТЗНП НВ/ ТЗНП-2: Выведено & \centering ТЗНП НВ/ ТЗНП-2: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП НВ/ ТЗНП-2: ИО & \centering ТЗНП НВ/ ТЗНП-2: ИО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП НВ/ ТЗНП-2: Пуск & \centering ТЗНП НВ/ ТЗНП-2: Пуск & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗНП НВ/ ТЗНП-2: Срабатывание & \centering ТЗНП НВ/ ТЗНП-2: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ТЗОП ВВ } \\
+\hline
+\multicolumn{9}{c}{\text{ТЗОП}} \\
+\hline
+\raggedright ТЗОП ВВ/ ТЗОП: ИО ТЗНП & \centering ТЗОП ВВ/ ТЗОП: ИО ТЗНП & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗОП ВВ/ ТЗОП: Срабатывание & \centering ТЗОП ВВ/ ТЗОП: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТЗОП ВВ/ ТЗОП: Выведено & \centering ТЗОП ВВ/ ТЗОП: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ТС ТТ БСК } \\
+\hline
+\multicolumn{9}{c}{\text{КИ ТТ}} \\
+\hline
+\raggedright ТС ТТ БСК/ КИ ТТ: Неиспр. ТТ & \centering ТС ТТ БСК/ КИ ТТ: Неиспр. ТТ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ТС ТТ БСК/ КИ ТТ: Откл.авар.ур.изол.ТТ & \centering ТС ТТ БСК/ КИ ТТ: Откл.авар.ур.изол.ТТ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{УВ } \\
+\hline
+\multicolumn{9}{c}{\text{УВ}} \\
+\hline
+\raggedright УВ/ УВ: Отключить & \centering УВ/ УВ: Отключить & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УВ/ УВ: Включить & \centering УВ/ УВ: Включить & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УВ/ УВ: Отключить ф.А & \centering УВ/ УВ: Отключить ф.А & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УВ/ УВ: Включить ф.А & \centering УВ/ УВ: Включить ф.А & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УВ/ УВ: Отключить ф.В & \centering УВ/ УВ: Отключить ф.В & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УВ/ УВ: Включить ф.В & \centering УВ/ УВ: Включить ф.В & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УВ/ УВ: Отключить ф.С & \centering УВ/ УВ: Отключить ф.С & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УВ/ УВ: Включить ф.С & \centering УВ/ УВ: Включить ф.С & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УВ/ УВ: Выведно & \centering УВ/ УВ: Выведно & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{УВ УПКМ } \\
+\hline
+\multicolumn{9}{c}{\text{УВ УПНКП}} \\
+\hline
+\raggedright УВ УПКМ/ УВ УПНКП: Выведно & \centering УВ УПКМ/ УВ УПНКП: Выведно & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УВ УПКМ/ УВ УПНКП: Включить & \centering УВ УПКМ/ УВ УПНКП: Включить & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УВ УПКМ/ УВ УПНКП: Отключить & \centering УВ УПКМ/ УВ УПНКП: Отключить & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{УРОВ В1(ЛВ) } \\
+\hline
+\multicolumn{9}{c}{\text{УРОВ}} \\
+\hline
+\raggedright УРОВ В1(ЛВ)/ УРОВ: Срабатывание на себя & \centering УРОВ В1(ЛВ)/ УРОВ: Срабатывание на себя & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УРОВ В1(ЛВ)/ УРОВ: ИО & \centering УРОВ В1(ЛВ)/ УРОВ: ИО & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УРОВ В1(ЛВ)/ УРОВ: Выведено & \centering УРОВ В1(ЛВ)/ УРОВ: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright УРОВ В1(ЛВ)/ УРОВ: Срабатывание & \centering УРОВ В1(ЛВ)/ УРОВ: Срабатывание & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ФПВ В1(ЛВ) } \\
+\hline
+\multicolumn{9}{c}{ Общие сигналы блока } \\
+\hline
+\raggedright ФПВ В1(ЛВ): Р включены & \centering ФПВ В1(ЛВ): Р включены & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В1(ЛВ): Выведено & \centering ФПВ В1(ЛВ): Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В1(ЛВ): Р отключены & \centering ФПВ В1(ЛВ): Р отключены & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ФПВ}} \\
+\hline
+\raggedright ФПВ В1(ЛВ)/ ФПВ: Б/К В включен & \centering ФПВ В1(ЛВ)/ ФПВ: Б/К В включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В1(ЛВ)/ ФПВ: Внутр. пуск ЗНФ & \centering ФПВ В1(ЛВ)/ ФПВ: Внутр. пуск ЗНФ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В1(ЛВ)/ ФПВ: Б/К В отключен & \centering ФПВ В1(ЛВ)/ ФПВ: Б/К В отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В1(ЛВ)/ ФПВ: В включен & \centering ФПВ В1(ЛВ)/ ФПВ: В включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В1(ЛВ)/ ФПВ: В в ремонте & \centering ФПВ В1(ЛВ)/ ФПВ: В в ремонте & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В1(ЛВ)/ ФПВ: В отключен & \centering ФПВ В1(ЛВ)/ ФПВ: В отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Р2}} \\
+\hline
+\raggedright ФПВ В1(ЛВ)/ Р2: Р отключен & \centering ФПВ В1(ЛВ)/ Р2: Р отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В1(ЛВ)/ Р2: Р включен & \centering ФПВ В1(ЛВ)/ Р2: Р включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Р3}} \\
+\hline
+\raggedright ФПВ В1(ЛВ)/ Р3: Р отключен & \centering ФПВ В1(ЛВ)/ Р3: Р отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В1(ЛВ)/ Р3: Р включен & \centering ФПВ В1(ЛВ)/ Р3: Р включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Р1}} \\
+\hline
+\raggedright ФПВ В1(ЛВ)/ Р1: Р отключен & \centering ФПВ В1(ЛВ)/ Р1: Р отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В1(ЛВ)/ Р1: Р включен & \centering ФПВ В1(ЛВ)/ Р1: Р включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ФПВ В3 } \\
+\hline
+\multicolumn{9}{c}{ Общие сигналы блока } \\
+\hline
+\raggedright ФПВ В3: Р включены & \centering ФПВ В3: Р включены & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В3: Выведено & \centering ФПВ В3: Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В3: Р отключены & \centering ФПВ В3: Р отключены & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ФПВ}} \\
+\hline
+\raggedright ФПВ В3/ ФПВ: Б/К В включен & \centering ФПВ В3/ ФПВ: Б/К В включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В3/ ФПВ: Внутр. пуск ЗНФ & \centering ФПВ В3/ ФПВ: Внутр. пуск ЗНФ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В3/ ФПВ: Б/К В отключен & \centering ФПВ В3/ ФПВ: Б/К В отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В3/ ФПВ: В включен & \centering ФПВ В3/ ФПВ: В включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В3/ ФПВ: В в ремонте & \centering ФПВ В3/ ФПВ: В в ремонте & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В3/ ФПВ: В отключен & \centering ФПВ В3/ ФПВ: В отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Р3}} \\
+\hline
+\raggedright ФПВ В3/ Р3: Р отключен & \centering ФПВ В3/ Р3: Р отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В3/ Р3: Р включен & \centering ФПВ В3/ Р3: Р включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Р1}} \\
+\hline
+\raggedright ФПВ В3/ Р1: Р отключен & \centering ФПВ В3/ Р1: Р отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В3/ Р1: Р включен & \centering ФПВ В3/ Р1: Р включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Р2}} \\
+\hline
+\raggedright ФПВ В3/ Р2: Р отключен & \centering ФПВ В3/ Р2: Р отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В3/ Р2: Р включен & \centering ФПВ В3/ Р2: Р включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\rowcolor{gray!15}
+\multicolumn{9}{c}{ФПВ В2(ОВ) } \\
+\hline
+\multicolumn{9}{c}{ Общие сигналы блока } \\
+\hline
+\raggedright ФПВ В2(ОВ): Р включены & \centering ФПВ В2(ОВ): Р включены & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В2(ОВ): Выведено & \centering ФПВ В2(ОВ): Выведено & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В2(ОВ): Р отключены & \centering ФПВ В2(ОВ): Р отключены & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{ФПВ}} \\
+\hline
+\raggedright ФПВ В2(ОВ)/ ФПВ: Б/К В включен & \centering ФПВ В2(ОВ)/ ФПВ: Б/К В включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В2(ОВ)/ ФПВ: Внутр. пуск ЗНФ & \centering ФПВ В2(ОВ)/ ФПВ: Внутр. пуск ЗНФ & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В2(ОВ)/ ФПВ: Б/К В отключен & \centering ФПВ В2(ОВ)/ ФПВ: Б/К В отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В2(ОВ)/ ФПВ: В включен & \centering ФПВ В2(ОВ)/ ФПВ: В включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В2(ОВ)/ ФПВ: В в ремонте & \centering ФПВ В2(ОВ)/ ФПВ: В в ремонте & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В2(ОВ)/ ФПВ: В отключен & \centering ФПВ В2(ОВ)/ ФПВ: В отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Р4}} \\
+\hline
+\raggedright ФПВ В2(ОВ)/ Р4: Р включен & \centering ФПВ В2(ОВ)/ Р4: Р включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В2(ОВ)/ Р4: Р отключен & \centering ФПВ В2(ОВ)/ Р4: Р отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Р1}} \\
+\hline
+\raggedright ФПВ В2(ОВ)/ Р1: Р отключен & \centering ФПВ В2(ОВ)/ Р1: Р отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В2(ОВ)/ Р1: Р включен & \centering ФПВ В2(ОВ)/ Р1: Р включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Р2}} \\
+\hline
+\raggedright ФПВ В2(ОВ)/ Р2: Р отключен & \centering ФПВ В2(ОВ)/ Р2: Р отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В2(ОВ)/ Р2: Р включен & \centering ФПВ В2(ОВ)/ Р2: Р включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\multicolumn{9}{c}{\text{Р3}} \\
+\hline
+\raggedright ФПВ В2(ОВ)/ Р3: Р отключен & \centering ФПВ В2(ОВ)/ Р3: Р отключен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+\raggedright ФПВ В2(ОВ)/ Р3: Р включен & \centering ФПВ В2(ОВ)/ Р3: Р включен & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering -- & \centering \arraybackslash -- \\ \hline
+%===t2
+\end{longtable} 
+
+\clearpage
+\normalsize
+
+\end{landscape}
+\restoregeometry

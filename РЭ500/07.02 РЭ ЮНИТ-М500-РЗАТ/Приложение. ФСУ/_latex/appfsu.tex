@@ -1,0 +1,53 @@
+\color{unidarkgreen}{\section[(рекомендуемое) Структурно-функциональная схема устройства]{(рекомендуемое)\\Структурно-функциональная схема устройства}\label{app:fsu}}
+\color{black}
+
+\IfFileExists{\apppath/Приложение. ФСУ/_latex/img/0.pdf}{%
+    \begin{figure}[H]
+    \centering
+    \resizebox{!}{0.9\textheight}{\includegraphics{\apppath/Приложение. ФСУ/_latex/img/0.pdf}}
+    \end{figure}
+    \clearpage
+}{}
+
+% Переключаем на A3 landscape
+\KOMAoptions{paper=A3,paper=landscape}
+\areaset{390mm}{270mm}
+\fancyheadoffset{0pt} % обновляем хедер и футер
+
+\topmargin=-2.6cm
+\oddsidemargin=0cm
+\headsep=0cm
+\footskip=-0.8cm
+\setlength{\headheight}{1cm}
+
+
+\newcounter{filecounter}
+\setcounter{filecounter}{1}
+\loop
+    \edef\filename{\apppath/Приложение. ФСУ/_latex/img/\arabic{filecounter}.pdf}
+    \IfFileExists{\filename}{%
+        \begin{figure}[H]
+        \centering
+        \resizebox{!}{\textheight}{\includegraphics{\filename}}
+        \end{figure}
+        \clearpage
+        \stepcounter{filecounter}
+    }{%
+        \setcounter{filecounter}{0}
+    }
+    \ifnum\value{filecounter}>0
+\repeat
+
+\clearpage
+
+% Восстановление A4
+\KOMAoption{paper}{a4, portrait}
+\areaset{267mm}{180mm}
+\fancyheadoffset{0pt}
+
+\newgeometry{
+  top=14mm,
+  bottom=11mm,
+  right=10mm,
+  left=22mm,
+}
