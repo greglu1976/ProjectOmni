@@ -7,17 +7,22 @@
   \IfFileExists{\apppath/Приложение. Схема Э4.1/_latex/img/СЭС_\the\figcounter.pdf}{%
     \begin{figure}[H]
       \centering
+      % Для первой схемы чуть меньше запаса, для остальных - максимум
       \ifnum\figcounter=1
-        \def\scalefactor{0.9}%
+        \def\scalefactor{0.85}%
       \else
         \def\scalefactor{0.95}%
       \fi
-      \includegraphics[width=\scalefactor\textwidth,
-                       height=\scalefactor\textheight,
-                       keepaspectratio,
-                       trim=5pt 5pt 5pt 5pt,
-                       clip]{%
-        \apppath/Приложение. Схема Э4.1/_latex/img/СЭС_\the\figcounter.pdf}%
+      
+      % Убрали trim и clip, так как Python уже сделал идеальный отступ
+      \includegraphics[
+        width=\scalefactor\textwidth,
+        height=\scalefactor\textheight,
+        keepaspectratio
+      ]{%
+        \apppath/Приложение. Схема Э4.1/_latex/img/СЭС_\the\figcounter.pdf
+      }%
+      
       \caption{Схема электрическая соединений рядов зажимов (часть \the\figcounter)}%
       \label{appvo:fig_\the\figcounter}%
     \end{figure}%
