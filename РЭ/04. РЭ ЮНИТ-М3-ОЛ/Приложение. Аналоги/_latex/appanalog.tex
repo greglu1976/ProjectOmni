@@ -1,0 +1,39 @@
+\KOMAoption{paper}{a4, portrait}
+\areaset{267mm}{180mm}
+\fancyheadoffset{0pt} % обновляем хедер и футер
+
+\newgeometry{
+  top=14mm,
+  bottom=11mm,
+  right=10mm,
+  left=22mm,
+}
+
+\begin{landscape}
+
+%\setlength{\headsep}{7.5mm} 
+%\setlength{\topmargin}{-27mm}
+\setlength{\footskip}{15.5pt}
+
+\color{unimain}{\section[(рекомендуемое) Подключение аналоговых цепей трансформаторов тока и напряжения к устройству]{(рекомендуемое)\\Подключение аналоговых цепей трансформаторов тока и напряжения к устройству}\label{app:analogs}}
+\color{black}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.82\textwidth]{\apppath/Приложение. Аналоги/_latex/img/1.pdf}
+  \caption{Пример подключения аналоговых цепей трансформаторов тока и напряжения для РУ 6-10 кВ}
+  \label{analogs:fig1} % Опционально: ссылка на рисунок
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{\apppath/Приложение. Аналоги/_latex/img/2.pdf}
+  \caption{Пример подключения аналоговых цепей трансформаторов тока и напряжения для РУ 35 кВ}
+  \label{analogs:fig2} % Опционально: ссылка на рисунок
+\end{figure}
+
+\clearpage
+\end{landscape}
+\restoregeometry
+
+

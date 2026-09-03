@@ -1,0 +1,233 @@
+% Подключение пути к файлу преамбулы
+\input{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/99. Общие разделы РЭ/preamble.tex}
+
+% Подключение пути к файлам тех. каталога описания функциональных блоков
+\newcommand{\fbpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/БД/desc/}
+
+% Подключение пути к файлам тех. каталога общей части
+\newcommand{\genpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/99. Общие разделы РЭ/}
+
+% Подключение пути к файлам тех. приложений
+\newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/06. РЭ ЮНИТ-М3-ВВ/}
+
+% Основные параметры РЭ
+\def\rev{1.4} 
+\def\revdate{03.09.2026}
+\def\devicetype{ЮНИТ-М300-ВВ}
+\def\devicecode{ЮТКБ.656122.609 РЭ3}
+\def\devicename{Микропроцессорное устройство \\ защиты и автоматики вводного выключателя}
+
+% ЗАДАЕМ ПЕРЕМЕННЫЕ УКАЗЫВАЮЩИЕ КАКИЕ ФУНКЦИИ СОБИРАТЬ
+% isOL, isVV, isSV
+\newbool{isOL}
+\boolfalse{isOL}
+\newbool{isVV}
+\booltrue{isVV}  % выбираем устройство М300-ВВ
+\newbool{isSV}
+\boolfalse{isSV} 
+
+% МЕТАДАННЫЕ
+\hypersetup{
+    pdftitle={Микропроцессорное устройство защиты и автоматики вводного выключателя 6-35 кВ ЮНИТ-М300-ВВ. Руководство по эксплуатации},
+    pdfauthor={ООО "Юнител Инжиниринг"},
+    pdfsubject={Описание функций РЗА в составе устройства ЮНИТ-М300-ВВ},
+    pdfkeywords={ЮНИТ-М300-ВВ, Юнител, РЗА, Релейная защита и автоматика},
+}
+
+\begin{document}
+
+% Титульный лист
+\input{\genpath/title0.tex}
+\clearpage
+
+% Выходные сведения (оборот титула)
+\input{\genpath/title1.tex}
+\clearpage
+
+% Содержание
+\input{\genpath/toc.tex}
+\clearpage
+
+% Перечень сокращений
+\newpage
+\input{toa_general.tex}
+
+% Соответствие СТО
+\newpage
+\input{\genpath/section0.tex}
+
+% Описание и работа
+\newpage
+\input{section1.tex}
+
+% Основные функции -> Общие сведения
+\newpage
+\input{section2.tex}
+
+%===f
+\input{\fbpath/301. ДЗ ВВ/_latex/dz.tex}
+
+\input{\fbpath/102. БК/_latex/bk.tex}
+
+\input{\fbpath/302. ЛЗШ/_latex/lzsh.tex}
+
+\input{\fbpath/105. АУ/_latex/au.tex}
+
+\input{\fbpath/104. МТЗ ОЛ/_latex/mtz.tex}
+
+\input{\fbpath/108. ЗДЗ/_latex/zdz.tex}
+
+\input{\fbpath/12. ТК ЗДЗ 35/_latex/tkzdz.tex}
+
+\input{\fbpath/55. ЗОП/_latex/zop.tex}
+
+\input{\fbpath/109. ЗП ОЛ/_latex/zp.tex}
+
+\input{\fbpath/106. ТЗНП ОЛ/_latex/tznp.tex}
+
+\input{\fbpath/111. УРОВ ОЛ/_latex/urov.tex}
+
+\input{\fbpath/303. ЗМН ВВ/_latex/zmn.tex}
+
+\input{\fbpath/114. БННш/_latex/bnnsh.tex}
+
+\input{\fbpath/304. БННвв/_latex/bnnvv.tex}
+
+\input{\fbpath/305. АПВ ВВ/_latex/apv.tex}
+
+\input{\fbpath/122. КННш/_latex/knnsh.tex}
+
+\input{\fbpath/306. КННвв/_latex/knnvv.tex}
+
+\input{\fbpath/124. КОНш/_latex/konsh.tex}
+
+\input{\fbpath/307. КОНвв/_latex/konvv.tex}
+
+\input{\fbpath/308. АВР/_latex/avr.tex}
+
+\input{\fbpath/310. ВНР/_latex/vnr.tex}
+
+\input{\fbpath/126. КС/_latex/ks.tex}
+
+\input{\fbpath/311. ЛОВ ВВ/_latex/lov.tex}
+
+\input{\fbpath/312. КП ВВ/_latex/kp.tex}
+
+\input{\fbpath/129. УВ ОЛ/_latex/uv.tex}
+
+\input{\fbpath/313. КА ВВ/_latex/ka.tex}
+
+\input{\fbpath/314. КСВ ВВ/_latex/ksv.tex}
+
+\input{\fbpath/30. КРВ/_latex/krv.tex}
+
+\input{\fbpath/315. ПС ВВ/_latex/ps.tex}
+
+\input{\fbpath/316. СС ВВ/_latex/ss.tex}
+
+%===f
+
+
+
+% ============================================================
+% 3 Использование по назначению
+% 4 Техническое обслуживание и ремонт
+% 5 Транспортирование, хранение и консервация
+% 6 Утилизация
+% 7 Гарантия изготовителя
+% 8 Техническая поддержка
+% ============================================================
+
+% Использование по назначению
+\newpage
+\input{section3.tex}
+
+% ТЕХОБСЛУЖИВАНИЕ И РЕМОНТ
+\newpage
+\input{\genpath/Тех обсл и ремонт/_latex/repair.tex}
+
+% ТРАНСПОРТИРОВАНИЕ
+%\newpage
+\input{\genpath/Трансп и хранение/_latex/trans.tex}
+
+% УТИЛИЗАЦИЯ
+%\newpage
+\input{\genpath/Утилизация/_latex/util.tex}
+
+% ГАРАНТИЯ
+%\newpage
+\input{\genpath/Гарантия/_latex/garant.tex}
+
+% ТЕХПОДДЕРЖКА
+%\newpage
+\input{\genpath/Тех поддержка/_latex/support.tex}
+
+
+% ============================================================
+% Приложения
+% ============================================================
+
+% Установки для приложений (начало)
+\input{startapp.tex}
+
+%===a
+
+\newpage
+\input{\apppath/Приложение. Уставки/settings.tex}
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Карта/_latex/apporder.tex}
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. ФСУ/_latex/app2.tex}
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Аналоги/_latex/appanalog.tex}
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Размеры/_latex/app1.tex}
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\genpath/Элементы ФС/_latex/appElmtFSU.tex}
+
+% ПРИЛОЖЕНИЕ
+%===a1
+\newpage
+\input{\apppath/Приложение А. Сигналы/_latex/app1.tex}
+%===a1
+
+% ПРИЛОЖЕНИЕ 
+\newpage
+\input{\apppath/Приложение. ЛЗШ/_latex/app.tex}
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Характеристики/appchars.tex}
+
+% ПРИЛОЖЕНИЕ 
+\newpage
+\input{\apppath/Приложение. АВР/_latex/app.tex}
+
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. ПС/_latex/app.tex}
+
+%===a
+
+% Установки для приложений (конец)
+\input{endapp.tex}
+
+
+% ============================================================
+% Лист регистрации изменений
+% ============================================================
+\newpage
+\input{\genpath/revsheet.tex}
+
+\end{document}

@@ -20,16 +20,23 @@
   \IfFileExists{\apppath/Приложение. Схема Э3/_latex/img/СЭП_\the\figcounter.pdf}{%
     \begin{figure}[H]
       \centering
-      % Размеры: для первого чуть меньше, для остальных больше
+      % Безопасные пределы: 95% от доступной ширины и высоты
+      % Это гарантирует, что рисунок НИКОГДА не вылезет за поля
       \ifnum\figcounter=1
-        \def\figwidth{1.1\textwidth}%
-        \def\figheight{1.1\textheight}%
+        \def\maxdim{0.8}% Для первой схемы чуть больше запаса
       \else
-        \def\figwidth{1.3\textwidth}%
-        \def\figheight{1.3\textheight}%
+        \def\maxdim{0.95}% Для остальных — максимум
       \fi
-      \includegraphics[width=\figwidth,height=\figheight,keepaspectratio,trim=5pt 5pt 5pt 5pt,clip,angle=0]{%
-        \apppath/Приложение. Схема Э3/_latex/img/СЭП_\the\figcounter.pdf}%
+      
+      \includegraphics[
+        width=\maxdim\linewidth,   % \linewidth в landscape = ширина альбомного листа
+        height=\maxdim\textheight, % \textheight в landscape = высота альбомного листа
+        keepaspectratio,
+        angle=0
+      ]{%
+        \apppath/Приложение. Схема Э3/_latex/img/СЭП_\the\figcounter.pdf
+      }%
+      
       \captionof{figure}{Схема электрическая принципиальная (часть \the\figcounter)}%
       \label{appvo:fig_\the\figcounter}%
     \end{figure}%

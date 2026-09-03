@@ -1,0 +1,180 @@
+% Подключение пути к файлу преамбулы
+\input{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/99. Общие разделы РЭ/preamble.tex}
+
+% Подключение пути к файлам тех. каталога описания функциональных блоков
+\newcommand{\fbpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/БД/desc/}
+
+% Подключение пути к файлам тех. каталога общей части
+\newcommand{\genpath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/99. Общие разделы РЭ/}
+
+% Подключение пути к файлам тех. приложений
+\newcommand{\apppath}{//uni-eng.ru/unit/Ivanovo/Документация ЮНИТ М300/Разработка/Схемы ФБ ЮНИТ-М300/Проект/РЭ/08. РЭ ЮНИТ-М3-АРНТ/}
+
+% Основные параметры РЭ
+\def\rev{1.4} 
+\def\revdate{03.09.2026}
+\def\devicetype{ЮНИТ-М300-АРНТ}
+\def\devicecode{ЮТКБ.656122.609 РЭ9}
+\def\devicename{Микропроцессорное устройство \\ автоматического регулирования напряжения}
+
+% ЗАДАЕМ ПЕРЕМЕННЫЕ УКАЗЫВАЮЩИЕ КАКИЕ ФУНКЦИИ СОБИРАТЬ
+% isOL, isVV, isSV
+\newbool{isOL}
+\boolfalse{isOL}
+\newbool{isVV}
+\boolfalse{isVV}  % выбираем устройство М300-ВВ
+\newbool{isSV}
+\booltrue{isSV} 
+
+% МЕТАДАННЫЕ
+\hypersetup{
+    pdftitle={Микропроцессорное устройство автоматического регулирования напряжения трансформатора ЮНИТ-М300-АРНТ. Руководство по эксплуатации},
+    pdfauthor={ООО "Юнител Инжиниринг"},
+    pdfsubject={Описание функций РЗА в составе устройства ЮНИТ-М300-АРНТ},
+    pdfkeywords={ЮНИТ-М300-АРНТ, Юнител, РЗА, Релейная защита и автоматика, Режимная автоматика},
+}
+
+\begin{document}
+
+% Титульный лист
+\input{\genpath/title0.tex}
+\clearpage
+
+% Выходные сведения (оборот титула)
+\input{\genpath/title1.tex}
+\clearpage
+
+% Содержание
+\input{\genpath/toc.tex}
+\clearpage
+
+% Перечень сокращений
+\newpage
+\input{toa_general.tex}
+
+% Соответствие СТО
+\newpage
+\input{\genpath/section0.tex}
+
+% Описание и работа
+\newpage
+\input{section1.tex}
+
+% Основные функции -> Общие сведения
+\newpage
+\input{section2.tex}
+
+%===f
+\input{\fbpath/500. АРН общ/_latex/obsh.tex}
+
+\input{\fbpath/501. Контроль РПН/_latex/kontrrpn.tex}
+
+\input{\fbpath/502. Авт рег/_latex/avtreg.tex}
+
+\input{\fbpath/503. Привод РПН/_latex/privod.tex}
+
+\input{\fbpath/504. Положение РПН/_latex/polrpn.tex}
+
+\input{\fbpath/505. Паралл/_latex/regU.tex}
+
+\input{\fbpath/506. Сигнализация/_latex/sign.tex}
+
+%===f
+
+
+
+% ============================================================
+% 3 Использование по назначению
+% 4 Техническое обслуживание и ремонт
+% 5 Транспортирование, хранение и консервация
+% 6 Утилизация
+% 7 Гарантия изготовителя
+% 8 Техническая поддержка
+% ============================================================
+
+% Использование по назначению
+\newpage
+\input{section3.tex}
+
+% ТЕХОБСЛУЖИВАНИЕ И РЕМОНТ
+\newpage
+\input{\genpath/Тех обсл и ремонт/_latex/repair.tex}
+
+% ТРАНСПОРТИРОВАНИЕ
+%\newpage
+\input{\genpath/Трансп и хранение/_latex/trans.tex}
+
+%УТИЛИЗАЦИЯ
+%\newpage
+\input{\genpath/Утилизация/_latex/util.tex}
+
+%ГАРАНТИЯ
+%\newpage
+\input{\genpath/Гарантия/_latex/garant.tex}
+
+%ТЕХПОДДЕРЖКА
+%\newpage
+\input{\genpath/Тех поддержка/_latex/support.tex}
+
+
+% ============================================================
+% Приложения
+% ============================================================
+
+% Установки для приложений (начало)
+\input{startapp.tex}
+
+%===a
+
+\newpage
+\input{\apppath/Приложение. Уставки/settings.tex}
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Карта/_latex/apporder.tex}
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. ФСУ/_latex/app2.tex}
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Аналоги/_latex/appanalog.tex}
+
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Подкл вх и вых/_latex/appins.tex}
+
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Размеры/_latex/app1.tex}
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\genpath/Элементы ФС/_latex/appElmtFSU.tex}
+
+% ПРИЛОЖЕНИЕ
+%===a1
+\newpage
+\input{\apppath/Приложение А. Сигналы/_latex/app1.tex}
+%===a1
+
+% ПРИЛОЖЕНИЕ
+\newpage
+\input{\apppath/Приложение. Паралл/_latex/app1.tex}
+
+%===a
+
+% Установки для приложений (конец)
+\input{endapp.tex}
+
+
+% ============================================================
+% Лист регистрации изменений
+% ============================================================
+\newpage
+\input{\genpath/revsheet.tex}
+
+\end{document}
