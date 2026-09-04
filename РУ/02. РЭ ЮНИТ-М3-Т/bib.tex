@@ -1,7 +1,11 @@
-% даём указание на включение данного место в оглавление как секции (\section)
-%\color{uniblue}{\addcontentsline{toc}{section}{{Список используемых источников}}}
-\phantomsection % Создаем невидимый якорь для ссылок
-%далее сам список используевой литературы
+{\color{unimain}\section[Список литературы]{Список литературы}}
+\color{black}
+
+\phantomsection
+\makeatletter
+\providecommand{\bibsection}{}   % определяем, если ещё не определена
+\renewcommand{\bibsection}{}      % делаем её пустой (подавляем автоматический заголовок)
+\makeatother
 \begin{thebibliography}{10}
 
     \bibitem{prikaz546} 
@@ -14,5 +18,3 @@
 	Приложение №1 к приказу Минэнерго России от 4 октября 2022 года №1070. Правила технической эксплуатации электрических станций и сетей Российской Федерации.
 
 \end{thebibliography}
-
-

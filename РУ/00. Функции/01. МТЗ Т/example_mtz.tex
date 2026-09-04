@@ -1,10 +1,7 @@
-\item \textbf{Выбор уставок максимальной токовой защиты}
+\color{uniblue}\subsection[Выбор уставок максимальной токовой защиты]{Выбор уставок максимальной токовой защиты}
+\color{black}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{enumi}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=3pt]
-%\begin{enumerate}[label={}, labelsep=4pt, leftmargin=0pt, itemindent=57pt]
-    
-\item Выбор уставок ступени МТЗ
-\begin{enumerate}[label=\arabic{section}.\arabic{enumi}.\arabic{enumii}.\arabic*, labelsep=4pt, leftmargin=0em, itemindent=65pt, parsep=0pt]
+\begin{enumerate}
 \item
 Первичный ток срабатывания ступени $I_{\textsl{с.з.МТЗ}}^I$ определяется по условию отстройки от максимального рабочего тока трансформатора по выражению (\ref{eq:mtz1}):
 \begin{equation*}
@@ -24,6 +21,7 @@ k_{\textsl{ч}} = \frac{I_{\textsl{к.мин.}}^{(2)}}{I_{\textsl{с.з. МТЗ}
 \end{equation*}
 \item
 Ступень МТЗ не удовлетворяет не требованиям по чувствительности, при недостаточной чувствительности используется пуск по напряжению со стороны НН трансформатора, расчет тока срабатывания ступени МТЗ в этом случае происходит по выражению (\ref{eq:mtz6}).
+\newpage
 \begin{equation*}
 I_{\textsl{с.з.МТЗ}}^{I} = \frac {k_{\textsl{н}}}{k_{\textsl{в}}}I_{\textsl{раб.макс.тр}} = \frac{1,2}{0,95} \cdot 1,05 \cdot 250 = 332\; (\textsl{А}),
 \end{equation*}
@@ -59,8 +57,5 @@ U_{\textsl{с.з.НН}} = \frac {U_{\textsl{р.мин.}}}{k_{\textsl{н}} \cdot 
 \end{equation*}
 \item
 Параметр \textbf{$U_{\textsl{ср}}$} <<Напряжение срабатывания>> функции КПОН принимается \textbf{равным 47,6 В}.
-
-\end{enumerate}
-
 
 \end{enumerate}
